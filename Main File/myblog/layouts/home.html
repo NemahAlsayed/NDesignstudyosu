@@ -1,5 +1,15 @@
 {{- define "main" -}}
 
+<header class="navbar">
+  <div class="container">
+    <img src="/Images/logo.png" alt="N Design Studio Logo" class="navbar-logo">
+    <nav class="navbar-nav">
+      <a href="/en/posts/" class="nav-link">Explore the Blog</a>
+      <a href="/en/page/2024/03/2024-03-10-about/" class="nav-link">About Me</a>
+    </nav>
+  </div>
+</header>
+
 <div class="container">
 <div class="row gx-5 gy-3 mb-5">
   <div class="col-lg-4">
@@ -24,20 +34,10 @@
         {{ .Site.Params.homepage.intro | markdownify}}
       </p>
     </div>
-    <div
-      class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-lg-start mt-3 mt-lg-5"
-    >
-      <!-- button -->
-      <a
-        class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder shadow-sm"
-        href="{{ .Site.Params.homepage.mainButtonRef }}"
-        >{{ .Site.Params.homepage.mainButton }}</a
-      >
-      <a
-        class="btn btn-secondary btn-lg px-5 py-3 fs-6 fw-bolder shadow-sm"
-        href="{{ .Site.Params.homepage.secondButtonRef }}"
-        >{{ .Site.Params.homepage.secondButton }}</a
-      >
+    <div class="language-tabs">
+      <a href="/ar/" class="lang-tab">العربية</a>
+      <a href="/en/" class="lang-tab active">English</a>
+      <a href="/tr/" class="lang-tab">Türkçe</a>
     </div>
   </div>
   <br />
