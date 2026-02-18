@@ -1,11 +1,68 @@
-/* Center homepage content */
-.homepage-hero {
+/* English Homepage Hero Section */
+
+.hero-english {
+  background: $background;
+  color: $text-color;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;   /* vertical center */
-  align-items: center;       /* horizontal center */
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.5rem;
   text-align: center;
-  min-height: 100vh;         /* full screen height */
-  padding: 2rem;
 }
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-english h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: $primary-lighter;
+  font-weight: 700;
+}
+
+.hero-english p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: $primary-light;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: $primary;
+  color: $text-color;
+}
+
+.btn-primary:hover {
+  background: $primary-dark;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid $primary;
+  color: $primary;
+}
+
+.btn-secondary:hover {
+  background: $primary;
+  color: $text-color;
+}
+
 
