@@ -1,0 +1,75 @@
+/* ============================
+   HERO SECTION — N DESIGN STUDIO
+   Using your red palette
+   ============================ */
+
+.hero {
+  padding: 5rem 0;
+  background: linear-gradient(
+    135deg,
+    #250902 0%,
+    #38040e 35%,
+    #640D14 70%,
+    #800e13 100%
+  );
+  color: #f8f8f8;
+  border-bottom: 6px solid #AD2831;
+}
+
+/* Pre-title */
+.hero .pre-title {
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  color: #AD2831;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Main title */
+.hero h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+/* Intro paragraph */
+.hero p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  color: #f3f3f3;
+  opacity: 0.95;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #AD2831;
+  border-color: #AD2831;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #800e13;
+  border-color: #800e13;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #AD2831;
+  color: #AD2831;
+}
+
+.btn-secondary:hover {
+  background-color: #AD2831;
+  color: #fff;
+}
+
+/* Logo styling */
+.profile-img {
+  max-width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  border: 3px solid #AD2831;
+}

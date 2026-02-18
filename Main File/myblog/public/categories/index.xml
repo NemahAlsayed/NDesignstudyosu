@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on My New Hugo Site</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Marketing-Automation</title>
+      <link>http://localhost:1313/categories/marketing-automation/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/marketing-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sql-System</title>
+      <link>http://localhost:1313/categories/sql-system/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/sql-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Makeup</title>
+      <link>http://localhost:1313/categories/makeup/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/makeup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Call-Center</title>
+      <link>http://localhost:1313/categories/call-center/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/call-center/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud-Services</title>
+      <link>http://localhost:1313/categories/cloud-services/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/cloud-services/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Art</title>
+      <link>http://localhost:1313/categories/art/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/art/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Etsy</title>
+      <link>http://localhost:1313/categories/etsy/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/etsy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>My-Paintings</title>
+      <link>http://localhost:1313/categories/my-paintings/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/my-paintings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arabic</title>
+      <link>http://localhost:1313/categories/arabic/</link>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/arabic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arabic-Designs</title>
+      <link>http://localhost:1313/categories/arabic-designs/</link>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/arabic-designs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Birthday-Cards</title>
+      <link>http://localhost:1313/categories/birthday-cards/</link>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/birthday-cards/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Canva-Template</title>
+      <link>http://localhost:1313/categories/canva-template/</link>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/canva-template/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Invoice</title>
+      <link>http://localhost:1313/categories/invoice/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/invoice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Server-Management</title>
+      <link>http://localhost:1313/categories/server-management/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/server-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Hosting</title>
+      <link>http://localhost:1313/categories/web-hosting/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/web-hosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esim</title>
+      <link>http://localhost:1313/categories/esim/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/esim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>http://localhost:1313/categories/travel/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Idrive</title>
+      <link>http://localhost:1313/categories/idrive/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/idrive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storage</title>
+      <link>http://localhost:1313/categories/storage/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/storage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Website</title>
+      <link>http://localhost:1313/categories/website/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/website/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Subscription-Service</title>
+      <link>http://localhost:1313/categories/subscription-service/</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/subscription-service/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manychat</title>
+      <link>http://localhost:1313/categories/manychat/</link>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/manychat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marketing</title>
+      <link>http://localhost:1313/categories/marketing/</link>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/marketing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Middle-East</title>
+      <link>http://localhost:1313/categories/middle-east/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/middle-east/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Noon</title>
+      <link>http://localhost:1313/categories/noon/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/noon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Online-Shopping</title>
+      <link>http://localhost:1313/categories/online-shopping/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/online-shopping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Phones</title>
+      <link>http://localhost:1313/categories/phones/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/phones/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shopping</title>
+      <link>http://localhost:1313/categories/shopping/</link>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/shopping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apps</title>
+      <link>http://localhost:1313/categories/apps/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/apps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Custom-Designs</title>
+      <link>http://localhost:1313/categories/custom-designs/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/custom-designs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design</title>
+      <link>http://localhost:1313/categories/design/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web-Design</title>
+      <link>http://localhost:1313/categories/web-design/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/web-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webydo</title>
+      <link>http://localhost:1313/categories/webydo/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/webydo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software</title>
+      <link>http://localhost:1313/categories/software/</link>
+      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Onboarding-System</title>
+      <link>http://localhost:1313/categories/onboarding-system/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/onboarding-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ip</title>
+      <link>http://localhost:1313/categories/ip/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/ip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxy-Provider</title>
+      <link>http://localhost:1313/categories/proxy-provider/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/proxy-provider/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drawings</title>
+      <link>http://localhost:1313/categories/drawings/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/drawings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nft</title>
+      <link>http://localhost:1313/categories/nft/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/nft/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dyson</title>
+      <link>http://localhost:1313/categories/dyson/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/dyson/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hair</title>
+      <link>http://localhost:1313/categories/hair/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/hair/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hair-Styling</title>
+      <link>http://localhost:1313/categories/hair-styling/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/hair-styling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E-Commerce</title>
+      <link>http://localhost:1313/categories/e-commerce/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/e-commerce/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Online-Selling</title>
+      <link>http://localhost:1313/categories/online-selling/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/online-selling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fashion</title>
+      <link>http://localhost:1313/categories/fashion/</link>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/fashion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shipping</title>
+      <link>http://localhost:1313/categories/shipping/</link>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/shipping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai</title>
+      <link>http://localhost:1313/categories/ai/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Email</title>
+      <link>http://localhost:1313/categories/email/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/email/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lead-Generation</title>
+      <link>http://localhost:1313/categories/lead-generation/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/lead-generation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event</title>
+      <link>http://localhost:1313/categories/event/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/event/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Online-Courses</title>
+      <link>http://localhost:1313/categories/online-courses/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/online-courses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Laptops</title>
+      <link>http://localhost:1313/categories/laptops/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/laptops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hotels-and-Resorts</title>
+      <link>http://localhost:1313/categories/hotels-and-resorts/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/hotels-and-resorts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dolap</title>
+      <link>http://localhost:1313/categories/dolap/</link>
+      <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/dolap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jewelry</title>
+      <link>http://localhost:1313/categories/jewelry/</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/jewelry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kitchen</title>
+      <link>http://localhost:1313/categories/kitchen/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/kitchen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feature</title>
+      <link>http://localhost:1313/categories/feature/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/feature/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sticker</title>
+      <link>http://localhost:1313/categories/sticker/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/sticker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Friendship-Bracelets</title>
+      <link>http://localhost:1313/categories/friendship-bracelets/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/friendship-bracelets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Review</title>
+      <link>http://localhost:1313/categories/review/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/review/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
