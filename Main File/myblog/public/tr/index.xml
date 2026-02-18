@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>N Design Studio</title>
-    <link>http://localhost:1313/tr/</link>
+    <link>http://localhost:36861/tr/</link>
     <description>Recent content on N Design Studio</description>
     <generator>Hugo</generator>
     <language>tr</language>
-    <atom:link href="http://localhost:1313/tr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:36861/tr/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
