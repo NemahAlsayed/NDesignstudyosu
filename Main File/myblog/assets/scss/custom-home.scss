@@ -1,5 +1,14 @@
 /* English Homepage Hero Section */
 
+body {
+  background: $background;
+  color: $text-color;
+  background-image: url('/Images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .hero-english {
   background: $background;
   color: $text-color;
