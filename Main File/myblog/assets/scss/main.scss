@@ -1,3 +1,9 @@
+/* Load custom variables BEFORE the theme */
 @import "variables";
+
+/* Load your homepage styling */
 @import "custom-home";
-@import "theme"; // loads Magnolia after your overrides
+
+/* Now load the Magnolia theme */
+@import "../../themes/magnolia/src/scss/main";
+
