@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center mb-5">{{ .Title }}</h1>
+    </div>
+  </div>
+
+  {{ $postsByCategory := dict }}
+  {{ range .Pages }}
+    {{ $category := .Params.category | default "Uncategorized" }}
+    {{ $posts := index $postsByCategory $category | default slice }}
+    {{ $posts = $posts | append . }}
+    {{ $postsByCategory = merge $postsByCategory (dict $category $posts) }}
+  {{ end }}
+
+  {{ range $category, $posts := $postsByCategory }}
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="mb-4">{{ $category }}</h2>
+        <div class="row">
+          {{ range $posts }}
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100">
+                {{ with .Params.featured_image }}
+                  <img src="{{ . }}" class="card-img-top" alt="{{ $.Title }}">
+                {{ end }}
+                <div class="card-body">
+                  <h5 class="card-title">{{ .Title }}</h5>
+                  <p class="card-text">{{ .Summary }}</p>
+                  <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="card-footer text-muted">
+                  {{ .Date.Format "Jan 2, 2006" }}
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
+{{ end }}
