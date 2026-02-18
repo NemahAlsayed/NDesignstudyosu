@@ -9,6 +9,52 @@
   align-items: center;
   padding: 3rem 1.5rem;
   text-align: center;
+  background-image: url('/Images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: parallax effect */
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-lg-4, .col-lg-8 {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.col-lg-4 {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+
+.col-lg-8 {
+  flex: 0 0 66.667%;
+  max-width: 66.667%;
+}
+
+@media (max-width: 991px) {
+  .col-lg-4, .col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .hero-english {
+    text-align: center;
+  }
+  .col-lg-8 {
+    text-align: center !important;
+  }
+  .hero-buttons {
+    justify-content: center !important;
+  }
 }
 
 .hero-content {
@@ -17,47 +63,45 @@
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  text-align: center;
+  text-align: left;
 }
 
-.logo {
-  max-width: 300px;
-  height: auto;
-  margin-bottom: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid $primary; /* Add border to make it visible */
+.pre-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: $gray;
+  margin-bottom: 1rem;
 }
 
 .hero-english h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  color: $primary-lighter;
-  font-weight: 700;
+  color: $primary;
+  font-weight: 800;
 }
 
 .hero-english p {
   font-size: 1.25rem;
   line-height: 1.7;
   margin-bottom: 2rem;
-  color: $primary-light;
+  color: $dark-gray;
 }
 
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.btn-primary,
-.btn-secondary {
+.btn {
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -78,6 +122,14 @@
 .btn-secondary:hover {
   background: $primary;
   color: $text-color;
+}
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid $primary;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
 
