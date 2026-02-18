@@ -16,12 +16,13 @@
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
   margin-bottom: 2rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid $primary; /* Add border to make it visible */
 }
 
 .hero-english h1 {
