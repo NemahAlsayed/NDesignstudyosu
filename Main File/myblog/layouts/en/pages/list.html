@@ -1,0 +1,21 @@
+{{ define "main"}}
+
+<section class="pages-section">
+  <div class="container">
+    <h1 class="text-center mb-5">All Pages</h1>
+    <div class="row">
+      {{ range .Site.Pages }}
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">{{ .Title }}</h5>
+              <p class="card-text">{{ .Summary }}</p>
+              <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -52,6 +52,13 @@ link = "https://twitter.com/yourhandle"
 name = "instagram"
 link = "https://instagram.com/youraccount"
 
+[params.office]
+title = "Our Office"
+description = "Visit us at our office location. We are located in a convenient spot."
+buttonText = "Get Directions"
+buttonLink = "https://maps.google.com"
+mapLink = "https://www.google.com/maps/embed?pb=..."
+
 [languages]
 
 [languages.en]
