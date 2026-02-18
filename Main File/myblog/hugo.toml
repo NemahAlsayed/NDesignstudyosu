@@ -10,3 +10,21 @@ secondButton = "About Me"
 secondButtonRef = "/page/2024/03/2024-03-10-about/" 
 blogTitle = "Latest Posts" 
 blogButton = "View All Posts"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+[languages.ar]
+languageName = "العربية"
+weight = 2
+direction = "rtl"
+
+[languages.tr]
+languageName = "Türkçe"
+weight = 3

@@ -150,3 +150,56 @@ footer a:hover {
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
+/* ============================================
+   MULTILINGUAL SECTION — N DESIGN STUDIO
+   ============================================ */
+
+.language-section {
+  padding: 3rem 0;
+}
+
+.language-logo {
+  max-width: 180px;
+  border-radius: 12px;
+  border: 3px solid var(--red-5);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Header bar */
+.language-header {
+  background-color: var(--red-1);
+  padding: 1rem 0;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 1.5rem auto 0 auto;
+}
+
+.language-title {
+  color: var(--red-5);
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Language links */
+.language-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.lang-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--red-3);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.lang-link:hover {
+  color: var(--red-5);
+  border-bottom: 2px solid var(--red-5);
+}
