@@ -2,17 +2,20 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'N Design Studio'
 theme = "magnolia"
-preTitle = "Creative Vision. Human Stories. Purposeful Design." 
-intro = """Welcome to a space where art, storytelling, and thoughtful design come together. I create visual narratives, marketing awareness content, and multilingual messages that empower communities and celebrate culture. Explore my latest work, insights, and creative journeys — crafted with intention, clarity, and heart.""" 
-mainButton = "Explore the Blog" 
-mainButtonRef = "/post/" 
-secondButton = "About Me" 
-secondButtonRef = "/page/2024/03/2024-03-10-about/" 
-blogTitle = "Latest Posts" 
-blogButton = "View All Posts"
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+
+[params.homepage]
+preTitle = "Creative Vision. Human Stories. Purposeful Design."
+title = "N Design Studio"
+intro = """Welcome to a space where art, storytelling, and thoughtful design come together. I create visual narratives, marketing awareness content, and multilingual messages that empower communities and celebrate culture. Explore my latest work, insights, and creative journeys — crafted with intention, clarity, and heart."""
+mainButton = "Explore the Blog"
+mainButtonRef = "/post/"
+secondButton = "About Me"
+secondButtonRef = "/page/2024/03/2024-03-10-about/"
+blogTitle = "Latest Posts"
+blogButton = "View All Posts"
 
 [languages]
 
