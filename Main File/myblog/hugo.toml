@@ -17,6 +17,41 @@ secondButtonRef = "/page/2024/03/2024-03-10-about/"
 blogTitle = "Latest Posts"
 blogButton = "View All Posts"
 
+[params.contacts]
+title = "Contact Us"
+formCallToAction = "Get in touch with us"
+socialCallToAction = "Follow us on social media"
+
+[params.contacts.form]
+formspreeLink = "https://formspree.io/f/your-form-id"
+firstname = "First Name"
+lastname = "Last Name"
+email = "Email"
+phone = "Phone"
+inquiry = "Inquiry"
+checkbox = "I agree to the terms and conditions"
+submitBtn = "Send Message"
+
+[params.schedules]
+enabledContacts = true
+title = "Business Hours"
+days = ["Mon-Fri 9am-5pm", "Sat 10am-4pm", "Sun Closed"]
+
+[params.socials]
+enabled = true
+
+[[params.socials.link]]
+name = "facebook"
+link = "https://facebook.com/yourpage"
+
+[[params.socials.link]]
+name = "twitter"
+link = "https://twitter.com/yourhandle"
+
+[[params.socials.link]]
+name = "instagram"
+link = "https://instagram.com/youraccount"
+
 [languages]
 
 [languages.en]

@@ -209,3 +209,59 @@ body {
   color: $white;
 }
 
+/* Contact Form Styles */
+.form-control {
+  border: 1px solid $light-gray;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: $primary;
+  box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+}
+
+.btn-send {
+  background-color: $primary;
+  color: $white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.btn-send:hover {
+  background-color: $primary-dark;
+}
+
+.form-check-input:checked {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+}
+
+.card.bg-light {
+  background-color: $offwhite !important;
+}
+
+.text-muted {
+  color: $gray !important;
+}
+
+.display-2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: $primary;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
