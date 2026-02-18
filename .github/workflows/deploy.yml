@@ -38,6 +38,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build Hugo site
+        working-directory: "Main File/myblog"
         env:
           HUGO_ENVIRONMENT: production
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -47,7 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: "Main File/myblog/public"
 
   deploy:
     needs: build
@@ -63,3 +64,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
