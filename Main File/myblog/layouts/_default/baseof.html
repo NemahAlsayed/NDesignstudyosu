@@ -1,0 +1,13 @@
+{{- $css := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ $css.Permalink }}">
+</head>
+<body>
+    {{ block "main" . }}{{ end }}
+</body>
+</html>
