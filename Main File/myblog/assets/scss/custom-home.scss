@@ -34,11 +34,12 @@ body {
 }
 
 /* Logo */
-@media (max-width: 600px) {
-  .nds-logo {
-    height: 38px;
-  }
+.nds-logo {
+  width: 140px;   /* fixed width */
+  height: auto;   /* keeps proportions correct */
+  object-fit: contain;
 }
+
 
 
 /* Center Title */
