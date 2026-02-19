@@ -7,12 +7,13 @@
   <p class="english-intro mb-4">
     {{ .Site.Params.homepage.intro | markdownify }}
   </p>
+  
+<div class="language-tabs mt-3">
+  <a href="/ar/" class="lang-tab{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
+  <a href="/en/post/" class="lang-tab{{ if eq .Lang "en" }} active{{ end }}">English</a>
+  <a href="/tr/" class="lang-tab{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
+</div>
 
-  <div class="language-tabs mt-3">
-    <a href="/ar/" class="lang-tab{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
-    <a href="/en/" class="lang-tab{{ if eq .Lang "en" }} active{{ end }}">English</a>
-    <a href="/tr/" class="lang-tab{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
-  </div>
 
 </section>
 
