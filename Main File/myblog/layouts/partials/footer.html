@@ -124,7 +124,7 @@
 
   <!-- JavaScript and dependencies -->
 
-  {{ $js := resources.Get "js/main.js" | resources.Minify }}
+  {{ $js := resources.Get "js/main.js" | minify }}
 
   <script src="{{ $js.RelPermalink }}" defer></script>
 </footer>
