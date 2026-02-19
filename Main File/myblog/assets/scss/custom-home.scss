@@ -279,3 +279,37 @@ body {
 .text-center {
   text-align: center;
 }
+
+.english-hero {
+  min-height: 70vh;
+  padding: 4rem 1.5rem;
+}
+
+.english-intro {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.language-tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.lang-tab {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: $primary-light;
+  border: 1px solid $primary-light;
+  transition: 0.3s ease;
+}
+
+.lang-tab.active,
+.lang-tab:hover {
+  background: $primary;
+  color: $text-color;
+}

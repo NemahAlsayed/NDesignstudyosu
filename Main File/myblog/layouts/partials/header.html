@@ -1,71 +1,29 @@
-<!-- Navigation-->
-<header class="shadow-sm sticky-lg-top" style="z-index: 10000;">
-  <nav class="navbar navbar-expand-lg navbar-light py-3">
-    <div class="container px-5">
-      <a class="navbar-brand" href="{{ absLangURL "" }}"
-        >
-        <img src="/images/logo.png" alt="Logo" class="me-2" style="height: 30px;">
-        <span class="fw-bolder"
-          >{{ .Site.Title}} <br />
-          <span class="fw-light text-muted"
-            >{{ .Site.Params.subtitle}}</span
-          ></span
-        >
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0 fw-bolder"
-        >
-          {{- range .Site.Menus.main }}
-          <li class="nav-item">
-            <a class="nav-link nav-menu text-nowrap" href="{{ .URL }}">{{.Name}}</a>
-          </li>
-          {{ end }}
-          <li class="vr ms-1 d-none d-lg-block"></li>
-          {{ if hugo.IsMultilingual}}
-          {{if .IsTranslated}}
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link nav-trad dropdown-toggle d-flex align-items-center justify-content-center"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="bi bi-globe me-1"></i>
-              {{.Site.Language.LanguageName}}
-              <!-- <i class="bi bi-caret-down-fill ms-1"></i> -->
-            </a>
+<header class="main-header py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
 
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              
-              
-              {{ range .Translations }}
-              
-              <a class="dropdown-item nav-item nav-link nav-trad text-center" href="{{.Permalink}}">
-                {{.Site.Language.LanguageName}}
-              </a>
-              {{end}}
-              {{end}}
-            </div>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
+    <!-- Left: Logo + Title -->
+    <div class="header-brand text-center text-md-start mb-3 mb-md-0">
+      <img src="/images/logo.png" alt="N Design Studio Logo" class="header-logo mb-2">
+      <h1 class="site-title m-0">N Design Studio</h1>
+      <p class="site-tagline m-0">Creative Vision. Human Stories. Purposeful Design.</p>
     </div>
-  </nav>
-  
+
+    <!-- Right: Navigation -->
+    <nav class="header-nav d-flex flex-column align-items-center">
+      <ul class="nav mb-2">
+        <li class="nav-item"><a href="/{{ .Lang }}/" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/{{ .Lang }}/page/2024/03/2024-03-10-about/" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="/{{ .Lang }}/posts/" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="/{{ .Lang }}/contact/" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Language Switcher -->
+      <div class="language-switcher d-flex gap-3">
+        <a href="/ar/" class="lang-link{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
+        <a href="/en/" class="lang-link{{ if eq .Lang "en" }} active{{ end }}">English</a>
+        <a href="/tr/" class="lang-link{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
+      </div>
+    </nav>
+
+  </div>
 </header>
