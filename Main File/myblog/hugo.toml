@@ -59,6 +59,9 @@ name = "instagram"
 link = "https://instagram.com/youraccount"
 
 [params.footer]
+extradescription1 = "Empowering creativity through design"
+extraDescription2 = "Multilingual and multicultural focus"
+
 [params.footer.navigate]
 heading = "Navigate"
 
@@ -68,10 +71,6 @@ heading = "Contact Us"
 address = "123 Design Street, Creative City"
 mail = "info@ndesignstudio.com"
 phone = "+1 234 567 890"
-
-[params.footer]
-extradescription1 = "Empowering creativity through design"
-extraDescription2 = "Multilingual and multicultural focus"
 
 [[menu.main]]
 name = "Home"
