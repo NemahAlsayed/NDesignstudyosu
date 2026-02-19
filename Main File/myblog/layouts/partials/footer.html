@@ -1,12 +1,11 @@
 <footer class="footer bg-dark text-light pt-5 pb-3">
 
-  <!-- Social Section -->
+  <!-- Social Icons (Top Line) -->
   {{ if .Site.Params.socials.enabled }}
   <section class="footer-social text-center mb-4">
-    <p class="mb-2">{{ .Site.Params.socials.callToAction }}</p>
-    <div class="d-flex justify-content-center gap-3">
+    <div class="d-flex justify-content-center gap-4">
       {{ range .Site.Params.socials.link }}
-      <a href="{{ .link }}" class="text-light fs-4">
+      <a href="{{ .link }}" class="text-light fs-3">
         <i class="bi bi-{{ .name }}"></i>
       </a>
       {{ end }}
@@ -14,75 +13,49 @@
   </section>
   {{ end }}
 
-  <!-- Main Footer Content -->
-  <div class="container">
-    <div class="row justify-content-center text-center">
+  <!-- Studio Info (Centered) -->
+  <div class="container text-center">
 
-      <!-- Studio Info (Centered) -->
-      <div class="col-12 col-md-6 mb-4">
-        <h3 class="fw-bold mb-2">{{ .Site.Title }}</h3>
-        <p class="mb-2">{{ .Site.Params.subtitle }}</p>
+    <h3 class="fw-bold mb-2">{{ .Site.Title }}</h3>
 
-        <div class="fw-light mb-2">
-          {{ .Site.Params.footer.contacts.address }} <br />
-          {{ .Site.Params.footer.extradescription1 }} <br />
-          {{ .Site.Params.footer.extraDescription2 }}
-        </div>
+    {{ if .Site.Params.subtitle }}
+    <p class="mb-3">{{ .Site.Params.subtitle }}</p>
+    {{ end }}
 
-        {{ if .Site.Params.schedules.enabledFooter }}
-        <div class="footer-hours mt-2">
-          {{ range .Site.Params.schedules.days }}
-          <div class="fw-light">{{ . }}</div>
-          {{ end }}
-        </div>
-        {{ end }}
-      </div>
+    <!-- Optional: Contact Info (only if enabled) -->
+    {{ if .Site.Params.footer.contacts.enabled }}
+    <div class="footer-contact text-center mb-3">
 
-      <!-- Contact Info (Centered) -->
-      {{ if .Site.Params.footer.contacts.enabled }}
-      <div class="col-12 col-md-6 mb-4">
+      {{ if .Site.Params.footer.contacts.mail }}
+      <p class="mb-1">
+        <i class="bi bi-envelope me-2"></i>
+        <a class="text-muted" href="mailto:{{ .Site.Params.footer.contacts.mail }}">
+          {{ .Site.Params.footer.contacts.mail }}
+        </a>
+      </p>
+      {{ end }}
 
-        <h6 class="text-uppercase fw-bold mb-3">
-          {{ .Site.Params.footer.contacts.heading }}
-        </h6>
-
-        {{ if .Site.Params.footer.contacts.address }}
-        <p class="text-muted mb-1">
-          <i class="bi bi-building me-2"></i>{{ .Site.Params.footer.contacts.address }}
-        </p>
-        {{ end }}
-
-        {{ if .Site.Params.footer.contacts.mail }}
-        <p class="mb-1">
-          <i class="bi bi-envelope me-2"></i>
-          <a class="text-muted" href="mailto:{{ .Site.Params.footer.contacts.mail }}">
-            {{ .Site.Params.footer.contacts.mail }}
-          </a>
-        </p>
-        {{ end }}
-
-        {{ if .Site.Params.footer.contacts.mail2 }}
-        <p class="mb-1">
-          <i class="bi bi-envelope me-2"></i>
-          <a class="text-muted" href="mailto:{{ .Site.Params.footer.contacts.mail2 }}">
-            {{ .Site.Params.footer.contacts.mail2 }}
-          </a>
-        </p>
-        {{ end }}
-
-        {{ if .Site.Params.footer.contacts.phone }}
-        <p class="mb-1">
-          <i class="bi bi-telephone me-2"></i>
-          <a class="text-muted" href="callto:{{ .Site.Params.footer.contacts.phone }}">
-            {{ .Site.Params.footer.contacts.phone }}
-          </a>
-        </p>
-        {{ end }}
-
-      </div>
+      {{ if .Site.Params.footer.contacts.phone }}
+      <p class="mb-1">
+        <i class="bi bi-telephone me-2"></i>
+        <a class="text-muted" href="callto:{{ .Site.Params.footer.contacts.phone }}">
+          {{ .Site.Params.footer.contacts.phone }}
+        </a>
+      </p>
       {{ end }}
 
     </div>
+    {{ end }}
+
+    <!-- Optional: Business Hours -->
+    {{ if .Site.Params.schedules.enabledFooter }}
+    <div class="footer-hours text-center mb-3">
+      {{ range .Site.Params.schedules.days }}
+      <div class="fw-light">{{ . }}</div>
+      {{ end }}
+    </div>
+    {{ end }}
+
   </div>
 
   <!-- Copyright -->
