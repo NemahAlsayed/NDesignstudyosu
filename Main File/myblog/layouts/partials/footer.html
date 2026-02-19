@@ -42,19 +42,21 @@
           {{ end }}
         </div>
         <!-- Grid column 2-->
-        <div class="d-none d-xl-block col-xl-4 text-center mb-3">
-          <h3>{{.Site.Title}}</h3>
-          <p class="mb-2">{{ .Site.Params.subtitle}}</p>
+        <div class="col-12 col-md-12 col-xl-4 d-flex flex-column align-items-center text-center mb-3">
+          <h3>{{ .Site.Title }}</h3>
+          <p class="mb-2">{{ .Site.Params.subtitle }}</p>
+
           <div class="fw-light mb-2">
             {{ .Site.Params.footer.contacts.address }} <br />
             {{ .Site.Params.footer.extradescription1 }} <br />
             {{ .Site.Params.footer.extraDescription2 }}
           </div>
 
-          {{if .Site.Params.schedules.enabledFooter }} {{range
-          .Site.Params.schedules.days}}
-          <div class="fw-light my-2">{{.}}</div>
-          {{end}} {{end}}
+          {{ if .Site.Params.schedules.enabledFooter }}
+            {{ range .Site.Params.schedules.days }}
+              <div class="fw-light my-2">{{ . }}</div>
+            {{ end }}
+          {{ end }}
         </div>
         <!-- Grid column 3-->
         {{ if .Site.Params.footer.contacts.enabled }}
