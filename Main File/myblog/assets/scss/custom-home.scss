@@ -1,4 +1,6 @@
-/* English Homepage Hero Section */
+/* --------------------------------------------- */
+/* GLOBAL BACKGROUND + BODY */
+/* --------------------------------------------- */
 
 body {
   background: $background;
@@ -9,6 +11,73 @@ body {
   background-attachment: fixed;
   padding-top: 80px; /* Space for fixed header */
 }
+
+/* --------------------------------------------- */
+/* NEW HEADER (Logo Left • Title Center • Nav Right) */
+/* --------------------------------------------- */
+
+.nds-header {
+  background: rgba(180, 20, 30, 0.65); /* semi-transparent red */
+  backdrop-filter: blur(6px);
+  padding: 0.75rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nds-header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nds-logo {
+  height: 48px;
+  width: auto;
+}
+
+/* Center Title */
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nds-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation */
+.nds-nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nds-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  transition: 0.3s ease;
+}
+
+.nds-nav .nav-link:hover {
+  color: #ffe6e6;
+  text-decoration: underline;
+}
+
+/* --------------------------------------------- */
+/* HERO + PAGE LAYOUT (your existing code) */
+/* --------------------------------------------- */
 
 .hero-english {
   background: $background;
@@ -22,7 +91,7 @@ body {
   background-image: url('/Images/background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Optional: parallax effect */
+  background-attachment: fixed;
 }
 
 .container {
@@ -69,7 +138,7 @@ body {
 
 .hero-content {
   max-width: 700px;
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white box */
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -142,128 +211,10 @@ body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-/* Header/Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
+/* --------------------------------------------- */
+/* HOMEPAGE INTRO + HERO TEXT */
+/* --------------------------------------------- */
 
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 15px;
-}
-
-.navbar-logo {
-  height: 50px;
-  width: auto;
-}
-
-.navbar-nav {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-link {
-  color: $primary;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: $primary-dark;
-}
-
-/* Language Tabs */
-.language-tabs {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.lang-tab {
-  padding: 0.5rem 1rem;
-  background-color: $light-gray;
-  color: $dark-gray;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.lang-tab:hover, .lang-tab.active {
-  background-color: $light-gray;
-  color: $primary;
-}
-
-/* Contact Form Styles */
-.form-control {
-  border: 1px solid $light-gray;
-  border-radius: 4px;
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-.form-control:focus {
-  border-color: $primary;
-  box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
-}
-
-.btn-send {
-  background-color: $primary;
-  color: $white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 4px;
-  width: 100%;
-}
-
-.btn-send:hover {
-  background-color: $primary-dark;
-}
-
-.form-check-input:checked {
-  background-color: $primary;
-  border-color: $primary;
-}
-
-.card {
-  border: none;
-  border-radius: 8px;
-}
-
-.card.bg-light {
-  background-color: $offwhite !important;
-}
-
-.text-muted {
-  color: $gray !important;
-}
-
-.display-2 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: $primary;
-}
-
-.display-4 {
-  font-size: 2.5rem;
-}
 .site-logo {
   width: 180px;
   margin-bottom: 2rem;
@@ -276,6 +227,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.8;
 }
+
 .text-center {
   text-align: center;
 }
@@ -293,23 +245,3 @@ body {
   text-align: justify;
 }
 
-.language-tabs {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.lang-tab {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  color: $primary-light;
-  border: 1px solid $primary-light;
-  transition: 0.3s ease;
-}
-
-.lang-tab.active,
-.lang-tab:hover {
-  background: $primary;
-  color: $text-color;
-}

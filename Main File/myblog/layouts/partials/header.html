@@ -1,28 +1,24 @@
-<header class="main-header py-4">
-  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+<header class="nds-header">
+  <div class="container d-flex justify-content-between align-items-center">
 
-    <!-- Left: Logo + Title -->
-    <div class="header-brand text-center text-md-start mb-3 mb-md-0">
-      <img src="/images/logo.png" alt="N Design Studio Logo" class="header-logo mb-2">
-      <h1 class="site-title m-0">N Design Studio</h1>
-      <p class="site-tagline m-0">Creative Vision. Human Stories. Purposeful Design.</p>
+    <!-- Left: Logo -->
+    <div class="header-left d-flex align-items-center">
+      <img src="/images/logo.png" alt="N Design Studio Logo" class="nds-logo">
+    </div>
+
+    <!-- Center: Title -->
+    <div class="header-center text-center">
+      <h1 class="nds-title m-0">N Design Studio</h1>
     </div>
 
     <!-- Right: Navigation -->
-    <nav class="header-nav d-flex flex-column align-items-center">
-      <ul class="nav mb-2">
+    <nav class="header-right">
+      <ul class="nav nds-nav">
         <li class="nav-item"><a href="/{{ .Lang }}/" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="/{{ .Lang }}/page/2024/03/2024-03-10-about/" class="nav-link">About</a></li>
         <li class="nav-item"><a href="/{{ .Lang }}/posts/" class="nav-link">Blog</a></li>
         <li class="nav-item"><a href="/{{ .Lang }}/contact/" class="nav-link">Contact</a></li>
       </ul>
-
-      <!-- Language Switcher -->
-      <div class="language-switcher d-flex gap-3">
-        <a href="/ar/" class="lang-link{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
-        <a href="/en/" class="lang-link{{ if eq .Lang "en" }} active{{ end }}">English</a>
-        <a href="/tr/" class="lang-link{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
-      </div>
     </nav>
 
   </div>
