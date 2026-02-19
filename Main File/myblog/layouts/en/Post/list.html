@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section class="container py-5">
+
+  <h1 class="text-center mb-4">English Posts</h1>
+
+  <div class="row g-4">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+
+</section>
+
+{{ end }}
