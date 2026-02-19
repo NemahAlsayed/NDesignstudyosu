@@ -2,12 +2,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }}</title>
-    <link rel="stylesheet" href="{{ $css.Permalink }}">
-    <img src="/images/logo.png" alt="N Design Studio Logo" class="site-logo">
-
+    {{ partial "head.html" . }}
 </head>
 <body>
     {{ block "main" . }}{{ end }}

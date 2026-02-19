@@ -2,9 +2,13 @@ baseURL = 'https://NemahAlsayed.github.io/NDesignstudyosu/'
 languageCode = 'en-us'
 title = 'N Design Studio'
 theme = "magnolia"
+copyright = "&copy; 2026 N Design Studio. All rights reserved."
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+
+[params]
+subtitle = "Creative Design Solutions"
 
 [params.homepage]
 preTitle = "Creative Vision. Human Stories. Purposeful Design."
@@ -34,11 +38,13 @@ submitBtn = "Send Message"
 
 [params.schedules]
 enabledContacts = true
+enabledFooter = true
 title = "Business Hours"
 days = ["Mon-Fri 9am-5pm", "Sat 10am-4pm", "Sun Closed"]
 
 [params.socials]
 enabled = true
+callToAction = "Follow us on social media"
 
 [[params.socials.link]]
 name = "facebook"
@@ -51,6 +57,41 @@ link = "https://twitter.com/yourhandle"
 [[params.socials.link]]
 name = "instagram"
 link = "https://instagram.com/youraccount"
+
+[params.footer]
+[params.footer.navigate]
+heading = "Navigate"
+
+[params.footer.contacts]
+enabled = true
+heading = "Contact Us"
+address = "123 Design Street, Creative City"
+mail = "info@ndesignstudio.com"
+phone = "+1 234 567 890"
+
+[params.footer]
+extradescription1 = "Empowering creativity through design"
+extraDescription2 = "Multilingual and multicultural focus"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/page/2024/03/2024-03-10-about/"
+weight = 2
+
+[[menu.main]]
+name = "Blog"
+url = "/posts/"
+weight = 3
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 4
 
 [params.office]
 title = "Our Office"

@@ -1,14 +1,4 @@
-<header class="navbar">
-  <div class="container d-flex justify-content-between align-items-center">
-    <img src="/images/logo.png" alt="N Design Studio Logo" class="site-logo">
-
-    <nav class="navbar-nav d-flex gap-4">
-      <a href="/{{ .Lang }}/posts/" class="nav-link">Explore the Blog</a>
-      <a href="/{{ .Lang }}/page/2024/03/2024-03-10-about/" class="nav-link">About Me</a>
-      <a href="/{{ .Lang }}/contact/" class="nav-link">Contact Us</a>
-    </nav>
-  </div>
-</header>
+{{ partial "header.html" . }}
 
 <div class="container">
   <div class="row gx-5 gy-3 mb-5">
@@ -24,7 +14,7 @@
           <span class="d-inline">{{ .Site.Params.homepage.title }}</span>
         </h1>
 
-        <p class="homepage-intro">
+        <p class="homepage-intro text-justify">
           {{ .Site.Params.homepage.intro | markdownify }}
         </p>
       </div>
@@ -49,19 +39,7 @@
 
   <div class="row g-3 mb-3">
     {{ range first 4 .Pages }}
-    <div class="col-md-6 col-lg-3">
-      <div class="card p-0 bg-secondary shadow-sm border-none h-100">
-        {{ with .Resources.GetMatch "featured*" }}
-        <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ .Title }}">
-        {{ end }}
-
-        <div class="card-body">
-          <h5 class="card-title">{{ .Title }}</h5>
-          <p class="card-text">{{ .Summary }}</p>
-          <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
-        </div>
-      </div>
-    </div>
+    {{ partial "post-card.html" . }}
     {{ end }}
   </div>
 
@@ -74,3 +52,5 @@
 
   {{ end }}
 </div>
+
+{{ partial "footer.html" . }}
