@@ -1,6 +1,6 @@
 <header class="navbar">
   <div class="container">
-    <img src="/Images/N Design Studyosu Logo.png" alt="N Design Studio Logo" class="navbar-logo">
+    <img src="/images/logo.png" alt="N Design Studio Logo" class="site-logo">
     <nav class="navbar-nav">
       <a href="/{{ .Lang }}/posts/" class="nav-link">Explore the Blog</a>
       <a href="/{{ .Lang }}/page/2024/03/2024-03-10-about/" class="nav-link">About Me</a>
@@ -12,7 +12,7 @@
 <div class="container">
 <div class="row gx-5 gy-3 mb-5">
   <div class="col-12">
-    <div class="text-center text-lg-start">
+    <div class="text-center">
       <div class="badge mb-4"></div>
       <div class="fs-3 fw-light text-muted">
         {{ .Site.Params.homepage.preTitle }}
@@ -20,7 +20,7 @@
       <h1 class="display-1 fw-bolder">
         <span class="d-inline">{{ .Site.Params.homepage.title }} </span>
       </h1>
-      <p class="text-justify text-lg-start">
+      <p class="text-justify">
         {{ .Site.Params.homepage.intro | markdownify}}
       </p>
     </div>
