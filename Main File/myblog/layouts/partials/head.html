@@ -1,11 +1,7 @@
 <head>
-  {{ if .IsHome }}
-    <title>
-      {{ .Page.Title }}
-      {{ .Site.Title }}
-      {{ .Site.Params.subtitle }}
-    </title>
-  {{ else }}
+ {{ if .IsHome }} <title> 
+  {{ .Site.Title }} — {{ .Site.Params.subtitle }} </title> 
+ {{ else }}
     <title>
       {{ .Page.Title }} |
       {{ .Site.Title }}
