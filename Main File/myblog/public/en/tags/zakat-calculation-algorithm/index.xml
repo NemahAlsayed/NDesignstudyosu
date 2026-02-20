@@ -1,19 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Zakat-Calculation-Algorithm on N Design Studio</title>
-    <link>http://localhost:1313/NDesignstudyosu/en/tags/zakat-calculation-algorithm/</link>
-    <description>Recent content in Zakat-Calculation-Algorithm on N Design Studio</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/NDesignstudyosu/en/tags/zakat-calculation-algorithm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</title>
-      <link>http://localhost:1313/NDesignstudyosu/en/en/post/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/NDesignstudyosu/en/en/post/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</guid>
-      <description>&lt;p&gt;Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a &lt;strong&gt;Sharia‑Compliant Banking Management System (SCBMS)&lt;/strong&gt;: a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.&lt;/p&gt;&#xA;&lt;p&gt;This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-why-build-a-shariacompliant-banking-system&#34;&gt;🌐 Why Build a Sharia‑Compliant Banking System?&lt;/h2&gt;&#xA;&lt;p&gt;Islamic finance operates on principles fundamentally different from conventional banking:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zakat-calculation-algorithm on N Design Studio</title><link>https://nemahalsayed.github.io/NDesignstudyosu/en/tags/zakat-calculation-algorithm/</link><description>Recent content in zakat-calculation-algorithm on N Design Studio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright><lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://nemahalsayed.github.io/NDesignstudyosu/en/tags/zakat-calculation-algorithm/index.xml" rel="self" type="application/rss+xml"/><item><title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</title><link>https://nemahalsayed.github.io/NDesignstudyosu/en/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</link><pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate><guid>https://nemahalsayed.github.io/NDesignstudyosu/en/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</guid><description>Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
+This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.
+🌐 Why Build a Sharia‑Compliant Banking System?</description></item></channel></rss>
