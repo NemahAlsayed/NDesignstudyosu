@@ -10,7 +10,7 @@
 
   <div class="language-tabs mt-3">
     <a href="/ar/" class="lang-tab{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
-    <a href="/en/posts/" class="lang-tab{{ if eq .Lang "en" }} active{{ end }}">English</a>
+    <a href="{{ (site.GetPage (printf "/%s/posts" .Lang)).RelPermalink }}" class="lang-tab{{ if eq .Lang "en" }} active{{ end }}"> English </a> 
     <a href="/tr/" class="lang-tab{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
   </div>
 
