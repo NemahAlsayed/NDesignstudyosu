@@ -5,7 +5,7 @@ theme = "magnolia"
 copyright = "&copy; 2026 N Design Studio. All rights reserved."
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 [params]
 subtitle = "Creative Design for Purposeful Impact"
