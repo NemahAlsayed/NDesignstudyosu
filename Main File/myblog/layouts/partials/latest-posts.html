@@ -1,0 +1,22 @@
+<!-- Latest posts section -->
+{{ with (site.GetPage (printf "/%s/posts" .Lang)) }}
+
+  <hr />
+  <h2 class="text-center my-4">{{ $.Site.Params.homepage.blogTitle }}</h2>
+
+  <!-- Show the latest 3 posts using post-card.html -->
+  <div class="row g-4 mb-4">
+    {{ range first 3 .Pages.ByDate.Reverse }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+
+  <!-- Button linking to the full posts page -->
+  <div class="d-flex justify-content-center">
+    <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder shadow-sm"
+       href="{{ .RelPermalink }}">
+       {{ $.Site.Params.homepage.blogButton }}
+    </a>
+  </div>
+
+{{ end }}
