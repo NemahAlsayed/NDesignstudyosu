@@ -5,9 +5,12 @@
 
     <!-- Build taxonomy-based category dictionary -->
     {{ $postsByCategory := dict }}
+    {{ $allPosts := slice }}
 
     {{ range .Pages }}
       {{ $page := . }}
+      {{ $allPosts = $allPosts | append $page }}
+
       {{ $categories := .Params.categories | default (slice "Uncategorized") }}
 
       {{ range $categories }}
@@ -18,7 +21,7 @@
       {{ end }}
     {{ end }}
 
-    <!-- GitHub Pages–safe alphabetical sorting -->
+    <!-- Sort categories alphabetically -->
     {{ $sortedCats := slice }}
     {{ range $k, $_ := $postsByCategory }}
       {{ $sortedCats = $sortedCats | append $k }}
@@ -27,7 +30,7 @@
 
     <div class="row">
 
-      <!-- LEFT SIDEBAR: Vertical Category List -->
+      <!-- LEFT SIDEBAR -->
       <div class="col-md-3">
         <div class="category-sidebar">
           <h4 class="mb-3">Categories</h4>
@@ -44,35 +47,38 @@
         </div>
       </div>
 
-      <!-- RIGHT COLUMN: Posts Grid -->
+      <!-- RIGHT COLUMN: UNIQUE POSTS -->
       <div class="col-md-9">
         <h1 class="text-center mb-4">{{ .Title }}</h1>
 
         <div class="row justify-content-center" id="posts-grid">
 
-          {{ range $category, $posts := $postsByCategory }}
-            {{ range $posts }}
-              <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper" data-category="{{ $category }}">
-                <div class="card post-card h-100">
+          {{ range $allPosts }}
+            {{ $page := . }}
+            {{ $categories := .Params.categories | default (slice "Uncategorized") }}
 
-                  <!-- Page bundle image support -->
-                  {{ with .Resources.GetMatch .Params.featured_image }}
-                    <img src="{{ .RelPermalink }}" class="card-img-top post-card-image" alt="{{ $.Title }}">
-                  {{ end }}
+            <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper"
+                 data-category="{{ index $categories 0 }}">
 
-                  <div class="card-body">
-                    <h5 class="card-title">{{ .Title }}</h5>
-                    <p class="card-text">{{ .Summary }}</p>
-                    <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
-                  </div>
+              <div class="card post-card h-100">
 
-                  <div class="card-footer text-muted">
-                    {{ .Date.Format "Jan 2, 2006" }}
-                  </div>
+                <!-- Correct image loading for page bundles -->
+                {{ with .Resources.GetMatch .Params.featured_image }}
+                  <img src="{{ .RelPermalink }}" class="card-img-top post-card-image" alt="{{ $page.Title }}">
+                {{ end }}
 
+                <div class="card-body">
+                  <h5 class="card-title">{{ .Title }}</h5>
+                  <p class="card-text">{{ .Summary }}</p>
+                  <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
                 </div>
+
+                <div class="card-footer text-muted">
+                  {{ .Date.Format "Jan 2, 2006" }}
+                </div>
+
               </div>
-            {{ end }}
+            </div>
           {{ end }}
 
         </div>
@@ -80,8 +86,8 @@
 
     </div> <!-- end row -->
 
-  </div> <!-- end posts-wrapper -->
-</div> <!-- end container -->
+  </div>
+</div>
 
 <!-- JavaScript Filtering -->
 <script>
@@ -102,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         card.style.opacity = "0";
         setTimeout(() => {
-          if (filter === "all" || filter === category) {
+          if (filter === "all" || category === filter) {
             card.style.display = "block";
           } else {
             card.style.display = "none";
@@ -119,3 +125,4 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 {{ end }}
+
