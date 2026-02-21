@@ -25,7 +25,7 @@
     {{ end }}
   {{ end }}
 
-  <!-- SORT CATEGORIES -->
+  <!-- SORT CATEGORIES (GitHub Pages safe) -->
   {{ $sortedCats := slice }}
   {{ range $k, $_ := $postsByCategory }}
     {{ $sortedCats = $sortedCats | append $k }}
@@ -55,14 +55,18 @@
 
         <div class="card post-card h-100">
 
-          <!-- SMART IMAGE FALLBACK -->
+          <!-- SMART IMAGE FALLBACK (GitHub Pages safe) -->
           {{ $img := .Resources.GetMatch .Params.featured_image }}
+
           {{ if not $img }}
-            {{ $img = .Resources.ByType "image" | first }}
+            {{ $fallback := .Resources.ByType "image" }}
+            {{ if gt (len $fallback) 0 }}
+              {{ $img = index $fallback 0 }}
+            {{ end }}
           {{ end }}
 
           {{ with $img }}
-            <img loading="lazy" src="{{ .RelPermalink }}" class="post-card-image" alt="{{ $page.Title }}">
+            <img loading="lazy" src="{{ .RelPermalink }}" class="post-card-image" alt="{{ $.Title }}">
           {{ end }}
 
           <div class="card-body">
