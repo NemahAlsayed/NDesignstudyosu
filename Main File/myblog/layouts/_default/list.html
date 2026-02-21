@@ -21,7 +21,7 @@
       {{ end }}
     {{ end }}
 
-    <!-- Sort categories alphabetically -->
+    <!-- GitHub Pages–safe alphabetical sorting -->
     {{ $sortedCats := slice }}
     {{ range $k, $_ := $postsByCategory }}
       {{ $sortedCats = $sortedCats | append $k }}
@@ -51,7 +51,7 @@
       <div class="col-md-9">
         <h1 class="text-center mb-4">{{ .Title }}</h1>
 
-        <div class="row justify-content-center" id="posts-grid">
+        <div class="row" id="posts-grid">
 
           {{ range $allPosts }}
             {{ $page := . }}
