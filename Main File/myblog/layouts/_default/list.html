@@ -40,7 +40,7 @@
     {{ end }}
   </div>
 
-  <!-- TITLE -->
+  <!-- PAGE TITLE -->
   <h1 class="text-center mb-4">{{ .Title }}</h1>
 
   <!-- POSTS GRID -->
@@ -55,8 +55,13 @@
 
         <div class="card post-card h-100">
 
-          <!-- PAGE BUNDLE IMAGE: requires `featured_image` in front matter -->
-          {{ with .Resources.GetMatch .Params.featured_image }}
+          <!-- SMART IMAGE FALLBACK -->
+          {{ $img := .Resources.GetMatch .Params.featured_image }}
+          {{ if not $img }}
+            {{ $img = .Resources.ByType "image" | first }}
+          {{ end }}
+
+          {{ with $img }}
             <img loading="lazy" src="{{ .RelPermalink }}" class="post-card-image" alt="{{ $page.Title }}">
           {{ end }}
 
@@ -86,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".post-card-wrapper");
   const searchInput = document.getElementById("searchInput");
 
-  // CATEGORY FILTERING
+  /* CATEGORY FILTERING */
   chips.forEach(chip => {
     chip.addEventListener("click", () => {
 
@@ -109,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // SEARCH FILTERING
+  /* SEARCH FILTERING */
   searchInput.addEventListener("input", function () {
     const query = this.value.toLowerCase();
 
