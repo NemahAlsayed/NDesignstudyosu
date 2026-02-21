@@ -67,3 +67,12 @@
   padding: 12px 18px;
 }
 
+.category-buttons .btn {
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-size: 0.9rem;
+}
+
+.category-buttons .btn-outline-secondary:hover {
+  background-color: #f0f0f0;
+}

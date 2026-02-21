@@ -1,11 +1,15 @@
 {{ define "main" }}
+
 <div class="container">
+
+  <!-- Page Title -->
   <div class="row">
     <div class="col-12">
-      <h1 class="text-center mb-5">{{ .Title }}</h1>
+      <h1 class="text-center mb-4">{{ .Title }}</h1>
     </div>
   </div>
 
+  <!-- Build category dictionary -->
   {{ $postsByCategory := dict }}
   {{ range .Pages }}
     {{ $category := .Params.category | default "Uncategorized" }}
@@ -14,31 +18,56 @@
     {{ $postsByCategory = merge $postsByCategory (dict $category $posts) }}
   {{ end }}
 
-  {{ range $category, $posts := $postsByCategory }}
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2 class="mb-4">{{ $category }}</h2>
-        <div class="row">
-          {{ range $posts }}
-            <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card post-card h-100">
-                  {{ with .Params.featured_image }}
-                  <img src="{{ . }}" class="card-img-top" alt="{{ $.Title }}">
-                {{ end }}
-                <div class="card-body">
-                  <h5 class="card-title">{{ .Title }}</h5>
-                  <p class="card-text">{{ .Summary }}</p>
-                  <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
-                </div>
-                <div class="card-footer text-muted">
-                  {{ .Date.Format "Jan 2, 2006" }}
-                </div>
-              </div>
-            </div>
-          {{ end }}
-        </div>
-      </div>
+  <!-- Selected category from URL -->
+  {{ $selectedCategory := .Request.URL.Query.Get "category" }}
+
+  <!-- Category Buttons -->
+  <div class="row mb-4">
+    <div class="col-12 text-center category-buttons">
+      <a href="{{ .Permalink }}" class="btn btn-outline-primary mx-1">All</a>
+
+      {{ range $category, $_ := $postsByCategory }}
+        <a href="?category={{ $category }}" 
+           class="btn btn-outline-secondary mx-1">
+          {{ $category }}
+        </a>
+      {{ end }}
     </div>
-  {{ end }}
+  </div>
+
+  <!-- Posts Grid -->
+  <div class="row justify-content-center">
+
+    {{ range $category, $posts := $postsByCategory }}
+      {{ if or (eq $selectedCategory "") (eq $selectedCategory $category) }}
+
+        {{ range $posts }}
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card post-card h-100">
+
+              {{ with .Params.featured_image }}
+                <img src="{{ . }}" class="card-img-top post-card-image" alt="{{ $.Title }}">
+              {{ end }}
+
+              <div class="card-body">
+                <h5 class="card-title">{{ .Title }}</h5>
+                <p class="card-text">{{ .Summary }}</p>
+                <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
+              </div>
+
+              <div class="card-footer text-muted">
+                {{ .Date.Format "Jan 2, 2006" }}
+              </div>
+
+            </div>
+          </div>
+        {{ end }}
+
+      {{ end }}
+    {{ end }}
+
+  </div>
+
 </div>
+
 {{ end }}
