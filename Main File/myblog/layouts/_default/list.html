@@ -1,128 +1,133 @@
 {{ define "main" }}
 
-<div class="container">
-  <div class="posts-wrapper mx-auto">
+<div class="container posts-wrapper">
 
-    <!-- Build taxonomy-based category dictionary -->
-    {{ $postsByCategory := dict }}
-    {{ $allPosts := slice }}
+  <!-- SEARCH BAR -->
+  <div class="posts-search">
+    <input type="text" id="searchInput" placeholder="Search posts...">
+  </div>
 
-    {{ range .Pages }}
+  <!-- BUILD CATEGORY DICTIONARY -->
+  {{ $postsByCategory := dict }}
+  {{ $allPosts := slice }}
+
+  {{ range .Pages }}
+    {{ $page := . }}
+    {{ $allPosts = $allPosts | append $page }}
+
+    {{ $categories := .Params.categories | default (slice "Uncategorized") }}
+
+    {{ range $categories }}
+      {{ $cat := . }}
+      {{ $posts := index $postsByCategory $cat | default slice }}
+      {{ $posts = $posts | append $page }}
+      {{ $postsByCategory = merge $postsByCategory (dict $cat $posts) }}
+    {{ end }}
+  {{ end }}
+
+  <!-- SORT CATEGORIES -->
+  {{ $sortedCats := slice }}
+  {{ range $k, $_ := $postsByCategory }}
+    {{ $sortedCats = $sortedCats | append $k }}
+  {{ end }}
+  {{ $sortedCats = sort $sortedCats }}
+
+  <!-- CATEGORY CHIPS -->
+  <div class="category-chips">
+    <button class="chip active" data-filter="all">All</button>
+    {{ range $sortedCats }}
+      <button class="chip" data-filter="{{ . }}">{{ . }}</button>
+    {{ end }}
+  </div>
+
+  <!-- TITLE -->
+  <h1 class="text-center mb-4">{{ .Title }}</h1>
+
+  <!-- POSTS GRID -->
+  <div class="row" id="posts-grid">
+
+    {{ range $allPosts }}
       {{ $page := . }}
-      {{ $allPosts = $allPosts | append $page }}
-
       {{ $categories := .Params.categories | default (slice "Uncategorized") }}
 
-      {{ range $categories }}
-        {{ $cat := . }}
-        {{ $posts := index $postsByCategory $cat | default slice }}
-        {{ $posts = $posts | append $page }}
-        {{ $postsByCategory = merge $postsByCategory (dict $cat $posts) }}
-      {{ end }}
-    {{ end }}
+      <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper"
+           data-category="{{ index $categories 0 }}">
 
-    <!-- GitHub Pages–safe alphabetical sorting -->
-    {{ $sortedCats := slice }}
-    {{ range $k, $_ := $postsByCategory }}
-      {{ $sortedCats = $sortedCats | append $k }}
-    {{ end }}
-    {{ $sortedCats = sort $sortedCats }}
+        <div class="card post-card h-100">
 
-    <div class="row">
-
-      <!-- LEFT SIDEBAR -->
-      <div class="col-md-3">
-        <div class="category-sidebar">
-          <h4 class="mb-3">Categories</h4>
-
-          {{ range $sortedCats }}
-            <button class="btn filter-btn w-100 text-start mb-2" data-filter="{{ . }}">
-              {{ . }}
-            </button>
+          <!-- PAGE BUNDLE IMAGE: requires `featured_image` in front matter -->
+          {{ with .Resources.GetMatch .Params.featured_image }}
+            <img loading="lazy" src="{{ .RelPermalink }}" class="post-card-image" alt="{{ $page.Title }}">
           {{ end }}
 
-          <button class="btn filter-btn w-100 text-start mt-3 active" data-filter="all">
-            All Posts
-          </button>
-        </div>
-      </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ .Title }}</h5>
+            <p class="card-text">{{ .Summary }}</p>
+            <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
+          </div>
 
-      <!-- RIGHT COLUMN: UNIQUE POSTS -->
-      <div class="col-md-9">
-        <h1 class="text-center mb-4">{{ .Title }}</h1>
-
-        <div class="row" id="posts-grid">
-
-          {{ range $allPosts }}
-            {{ $page := . }}
-            {{ $categories := .Params.categories | default (slice "Uncategorized") }}
-
-            <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper"
-                 data-category="{{ index $categories 0 }}">
-
-              <div class="card post-card h-100">
-
-                <!-- Correct image loading for page bundles -->
-                {{ with .Resources.GetMatch .Params.featured_image }}
-                  <img src="{{ .RelPermalink }}" class="card-img-top post-card-image" alt="{{ $page.Title }}">
-                {{ end }}
-
-                <div class="card-body">
-                  <h5 class="card-title">{{ .Title }}</h5>
-                  <p class="card-text">{{ .Summary }}</p>
-                  <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
-                </div>
-
-                <div class="card-footer text-muted">
-                  {{ .Date.Format "Jan 2, 2006" }}
-                </div>
-
-              </div>
-            </div>
-          {{ end }}
+          <div class="card-footer text-muted">
+            {{ .Date.Format "Jan 2, 2006" }}
+          </div>
 
         </div>
       </div>
-
-    </div> <!-- end row -->
+    {{ end }}
 
   </div>
+
 </div>
 
-<!-- JavaScript Filtering -->
+<!-- FILTER + SEARCH JS -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".filter-btn");
+
+  const chips = document.querySelectorAll(".chip");
   const cards = document.querySelectorAll(".post-card-wrapper");
+  const searchInput = document.getElementById("searchInput");
 
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
+  // CATEGORY FILTERING
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
 
-      buttons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
+      chips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
 
-      const filter = btn.dataset.filter;
+      const filter = chip.dataset.filter.toLowerCase();
 
       cards.forEach(card => {
-        const category = card.dataset.category;
+        const category = card.dataset.category.toLowerCase();
 
-        card.style.opacity = "0";
-        setTimeout(() => {
-          if (filter === "all" || category === filter) {
-            card.style.display = "block";
-          } else {
-            card.style.display = "none";
-          }
-          setTimeout(() => {
-            card.style.opacity = "1";
-          }, 50);
-        }, 200);
+        if (filter === "all" || category === filter) {
+          card.style.display = "block";
+          card.style.opacity = "1";
+        } else {
+          card.style.opacity = "0";
+          setTimeout(() => card.style.display = "none", 200);
+        }
       });
-
     });
   });
+
+  // SEARCH FILTERING
+  searchInput.addEventListener("input", function () {
+    const query = this.value.toLowerCase();
+
+    cards.forEach(card => {
+      const title = card.querySelector(".card-title").textContent.toLowerCase();
+      const text = card.querySelector(".card-text").textContent.toLowerCase();
+
+      if (title.includes(query) || text.includes(query)) {
+        card.style.display = "block";
+        card.style.opacity = "1";
+      } else {
+        card.style.opacity = "0";
+        setTimeout(() => card.style.display = "none", 200);
+      }
+    });
+  });
+
 });
 </script>
 
 {{ end }}
-

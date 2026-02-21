@@ -20,7 +20,7 @@
    Posts Page Layout
 ----------------------------------------------------------- */
 .posts-wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,69 +43,115 @@
 }
 
 /* -----------------------------------------------------------
+   Search Bar
+----------------------------------------------------------- */
+.posts-search {
+  margin: 25px 0;
+}
+
+.posts-search input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #a23e58;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.posts-search input:focus {
+  border-color: #7b1e3a;
+  box-shadow: 0 0 0 3px rgba(123, 30, 58, 0.15);
+}
+
+/* -----------------------------------------------------------
+   Category Chips (Horizontal)
+----------------------------------------------------------- */
+.category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.chip {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #a23e58;
+  background: #fff;
+  color: #7b1e3a;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.chip:hover {
+  background: #a23e58;
+  color: #fff;
+}
+
+.chip.active {
+  background: #7b1e3a;
+  color: #fff;
+  border-color: #7b1e3a;
+}
+
+/* -----------------------------------------------------------
    Post Cards
 ----------------------------------------------------------- */
 .post-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .25s ease, box-shadow .25s ease;
+  background: #fff;
 }
 
 .post-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
+/* Card image (lazy-loaded in HTML) */
 .post-card-image {
   height: 220px;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
+/* Card body */
 .post-card .card-body {
-  padding: 18px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  padding: 18px;
   gap: 12px;
 }
 
+/* 3-line clamping for description */
+.post-card .card-text {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Push Read More button to bottom */
+.post-card .btn {
+  margin-top: auto;
+}
+
+/* Card footer */
 .post-card .card-footer {
   background: transparent;
   border-top: none;
   padding: 12px 18px;
-}
-
-/* -----------------------------------------------------------
-   Category Buttons (Maroon Palette)
------------------------------------------------------------ */
-.category-buttons .btn {
-  border-radius: 20px;
-  padding: 6px 18px;
-  font-size: 0.9rem;
-}
-
-/* Default outline buttons */
-.filter-btn {
-  border-color: #a23e58;   /* lighter maroon */
-  color: #7b1e3a;          /* deep maroon text */
-}
-
-/* Hover */
-.filter-btn:hover {
-  background-color: #a23e58; /* soft maroon */
-  color: #fff;
-  border-color: #a23e58;
-}
-
-/* Active state */
-.filter-btn.active {
-  background-color: #7b1e3a; /* deep maroon */
-  color: #fff;
-  border-color: #7b1e3a;
+  font-size: 0.85rem;
+  color: #555;
 }
 
 /* -----------------------------------------------------------
@@ -113,82 +159,4 @@
 ----------------------------------------------------------- */
 .post-card-wrapper {
   transition: opacity 0.25s ease;
-}
-
-/* Sidebar container */
-.category-sidebar {
-  background: #faf7f8;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #e8d5db;
-}
-
-/* Sidebar title */
-.category-sidebar h4 {
-  color: #7b1e3a;
-  font-weight: 600;
-}
-
-/* Vertical category buttons */
-.category-sidebar .filter-btn {
-  border-radius: 10px;
-  padding: 8px 14px;
-  border: 1px solid #a23e58;
-  color: #7b1e3a;
-  background: #fff;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.category-sidebar .filter-btn:hover {
-  background: #a23e58;
-  color: #fff;
-}
-
-.category-sidebar .filter-btn.active {
-  background: #7b1e3a;
-  color: #fff;
-  border-color: #7b1e3a;
-}
-
-/* Fade animation */
-.post-card-wrapper {
-  transition: opacity 0.25s ease;
-}
-
-/* Centered layout */
-.posts-wrapper {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Make all card descriptions justified */
-.post-card .card-text {
-  text-align: justify;
-}
-
-/* Force all cards to be equal height */
-.post-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-/* Make the body stretch so footer stays aligned */
-.post-card .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Push the Read More button to the bottom */
-.post-card .btn {
-  margin-top: auto;
-}
-
-/* Ensure consistent image height */
-.post-card-image {
-  height: 220px;
-  width: 100%;
-  object-fit: cover;
 }
