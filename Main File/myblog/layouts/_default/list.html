@@ -3,13 +3,19 @@
 <div class="container">
   <div class="posts-wrapper mx-auto">
 
-    <!-- Build category dictionary FIRST -->
+    <!-- Build taxonomy-based category dictionary -->
     {{ $postsByCategory := dict }}
+
     {{ range .Pages }}
-      {{ $category := .Params.category | default "Uncategorized" }}
-      {{ $posts := index $postsByCategory $category | default slice }}
-      {{ $posts = $posts | append . }}
-      {{ $postsByCategory = merge $postsByCategory (dict $category $posts) }}
+      {{ $page := . }}
+      {{ $categories := .Params.categories | default (slice "Uncategorized") }}
+
+      {{ range $categories }}
+        {{ $cat := . }}
+        {{ $posts := index $postsByCategory $cat | default slice }}
+        {{ $posts = $posts | append $page }}
+        {{ $postsByCategory = merge $postsByCategory (dict $cat $posts) }}
+      {{ end }}
     {{ end }}
 
     <!-- Page Title -->
@@ -40,7 +46,8 @@
           <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper" data-category="{{ $category }}">
             <div class="card post-card h-100">
 
-              {{ with .Params.featured_image }}
+              <!-- Page bundle image support -->
+              {{ with .Resources.GetMatch .Params.featured_image }}
                 <img src="{{ .RelPermalink }}" class="card-img-top post-card-image" alt="{{ $.Title }}">
               {{ end }}
 
@@ -73,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
 
-      // Highlight active button
       buttons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
@@ -82,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
       cards.forEach(card => {
         const category = card.dataset.category;
 
-        // Fade out
         card.style.opacity = "0";
         setTimeout(() => {
           if (filter === "all" || filter === category) {
@@ -90,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
           } else {
             card.style.display = "none";
           }
-          // Fade in
           setTimeout(() => {
             card.style.opacity = "1";
           }, 50);

@@ -1,13 +1,13 @@
-/* Load custom variables BEFORE the theme */
+/* -----------------------------------------------------------
+   Imports
+----------------------------------------------------------- */
 @import "variables";
-
-/* Load your homepage styling */
 @import "custom-home";
-
-/* Load style */
 @import "style";
 
-/* Footer styles */
+/* -----------------------------------------------------------
+   Footer
+----------------------------------------------------------- */
 .footer {
   text-align: center;
 }
@@ -16,7 +16,16 @@
   justify-content: center;
 }
 
-/* en/posts Style */
+/* -----------------------------------------------------------
+   Posts Page Layout
+----------------------------------------------------------- */
+.posts-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero (optional if you use it) */
 .posts-hero {
   background: linear-gradient(135deg, #f8f9fa, #ffffff);
   border-bottom: 1px solid #e5e5e5;
@@ -33,6 +42,9 @@
   font-size: 1.15rem;
 }
 
+/* -----------------------------------------------------------
+   Post Cards
+----------------------------------------------------------- */
 .post-card {
   display: flex;
   flex-direction: column;
@@ -50,8 +62,8 @@
 
 .post-card-image {
   height: 220px;
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
 }
 
 .post-card .card-body {
@@ -67,43 +79,38 @@
   padding: 12px 18px;
 }
 
+/* -----------------------------------------------------------
+   Category Buttons (Maroon Palette)
+----------------------------------------------------------- */
 .category-buttons .btn {
   border-radius: 20px;
   padding: 6px 18px;
   font-size: 0.9rem;
 }
 
-.category-buttons .btn-outline-secondary:hover {
-  background-color: #f0f0f0;
-}
-
-/* Smooth fade animation */
-.post-card-wrapper {
-  transition: opacity 0.25s ease;
-}
-
-/* Active button highlight — deep maroon */
-.filter-btn.active {
-  background-color: #7b1e3a;   /* deep maroon */
-  color: #fff;
-  border-color: #7b1e3a;
-}
-
-/* Default outline buttons in maroon family */
+/* Default outline buttons */
 .filter-btn {
-  border-color: #a23e58;       /* lighter maroon */
-  color: #7b1e3a;
+  border-color: #a23e58;   /* lighter maroon */
+  color: #7b1e3a;          /* deep maroon text */
 }
 
+/* Hover */
 .filter-btn:hover {
-  background-color: #a23e58;   /* soft maroon hover */
+  background-color: #a23e58; /* soft maroon */
   color: #fff;
   border-color: #a23e58;
 }
 
-.posts-wrapper {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+/* Active state */
+.filter-btn.active {
+  background-color: #7b1e3a; /* deep maroon */
+  color: #fff;
+  border-color: #7b1e3a;
 }
 
+/* -----------------------------------------------------------
+   Animations
+----------------------------------------------------------- */
+.post-card-wrapper {
+  transition: opacity 0.25s ease;
+}
