@@ -1,66 +1,68 @@
 {{ define "main" }}
 
 <div class="container">
+  <div class="posts-wrapper mx-auto">
 
-  <!-- Page Title -->
-  <div class="row">
-    <div class="col-12">
-      <h1 class="text-center mb-4">{{ .Title }}</h1>
-    </div>
-  </div>
-
-  <!-- Build category dictionary BEFORE using it -->
-  {{ $postsByCategory := dict }}
-  {{ range .Pages }}
-    {{ $category := .Params.category | default "Uncategorized" }}
-    {{ $posts := index $postsByCategory $category | default slice }}
-    {{ $posts = $posts | append . }}
-    {{ $postsByCategory = merge $postsByCategory (dict $category $posts) }}
-  {{ end }}
-
-  <!-- Category Buttons -->
-  <div class="row mb-4">
-    <div class="col-12 text-center category-buttons">
-      <button class="btn btn-outline-primary mx-1 filter-btn active" data-filter="all">All</button>
-
-      {{ range $category, $_ := $postsByCategory }}
-        <button class="btn btn-outline-secondary mx-1 filter-btn" data-filter="{{ $category }}">
-          {{ $category }}
-        </button>
-      {{ end }}
-    </div>
-  </div>
-
-  <!-- Posts Grid -->
-  <div class="row justify-content-center" id="posts-grid">
-
-    {{ range $category, $posts := $postsByCategory }}
-      {{ range $posts }}
-        <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper" data-category="{{ $category }}">
-          <div class="card post-card h-100">
-
-            {{ with .Params.featured_image }}
-              <img src="{{ . }}" class="card-img-top post-card-image" alt="{{ $.Title }}">
-            {{ end }}
-
-            <div class="card-body">
-              <h5 class="card-title">{{ .Title }}</h5>
-              <p class="card-text">{{ .Summary }}</p>
-              <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
-            </div>
-
-            <div class="card-footer text-muted">
-              {{ .Date.Format "Jan 2, 2006" }}
-            </div>
-
-          </div>
-        </div>
-      {{ end }}
+    <!-- Build category dictionary FIRST -->
+    {{ $postsByCategory := dict }}
+    {{ range .Pages }}
+      {{ $category := .Params.category | default "Uncategorized" }}
+      {{ $posts := index $postsByCategory $category | default slice }}
+      {{ $posts = $posts | append . }}
+      {{ $postsByCategory = merge $postsByCategory (dict $category $posts) }}
     {{ end }}
 
-  </div>
+    <!-- Page Title -->
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mb-4">{{ .Title }}</h1>
+      </div>
+    </div>
 
-</div>
+    <!-- Category Buttons -->
+    <div class="row mb-4">
+      <div class="col-12 text-center category-buttons">
+        <button class="btn btn-outline-primary mx-1 filter-btn active" data-filter="all">All</button>
+
+        {{ range $category, $_ := $postsByCategory }}
+          <button class="btn btn-outline-secondary mx-1 filter-btn" data-filter="{{ $category }}">
+            {{ $category }}
+          </button>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="row justify-content-center" id="posts-grid">
+
+      {{ range $category, $posts := $postsByCategory }}
+        {{ range $posts }}
+          <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper" data-category="{{ $category }}">
+            <div class="card post-card h-100">
+
+              {{ with .Params.featured_image }}
+                <img src="{{ .RelPermalink }}" class="card-img-top post-card-image" alt="{{ $.Title }}">
+              {{ end }}
+
+              <div class="card-body">
+                <h5 class="card-title">{{ .Title }}</h5>
+                <p class="card-text">{{ .Summary }}</p>
+                <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
+              </div>
+
+              <div class="card-footer text-muted">
+                {{ .Date.Format "Jan 2, 2006" }}
+              </div>
+
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+
+    </div> <!-- end posts-grid -->
+
+  </div> <!-- end posts-wrapper -->
+</div> <!-- end container -->
 
 <!-- JavaScript Filtering -->
 <script>
