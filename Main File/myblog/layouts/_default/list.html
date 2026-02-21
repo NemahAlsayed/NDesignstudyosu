@@ -18,12 +18,16 @@
       {{ end }}
     {{ end }}
 
-    <!-- Sort categories alphabetically -->
-    {{ $sortedCats := sort (keys $postsByCategory) }}
+    <!-- GitHub Pages–safe alphabetical sorting -->
+    {{ $sortedCats := slice }}
+    {{ range $k, $_ := $postsByCategory }}
+      {{ $sortedCats = $sortedCats | append $k }}
+    {{ end }}
+    {{ $sortedCats = sort $sortedCats }}
 
     <div class="row">
 
-      <!-- LEFT COLUMN: Vertical Category List -->
+      <!-- LEFT SIDEBAR: Vertical Category List -->
       <div class="col-md-3">
         <div class="category-sidebar">
           <h4 class="mb-3">Categories</h4>
@@ -51,6 +55,7 @@
               <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper" data-category="{{ $category }}">
                 <div class="card post-card h-100">
 
+                  <!-- Page bundle image support -->
                   {{ with .Resources.GetMatch .Params.featured_image }}
                     <img src="{{ .RelPermalink }}" class="card-img-top post-card-image" alt="{{ $.Title }}">
                   {{ end }}
