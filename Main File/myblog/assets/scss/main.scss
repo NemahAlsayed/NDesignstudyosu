@@ -161,3 +161,34 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Make all card descriptions justified */
+.post-card .card-text {
+  text-align: justify;
+}
+
+/* Force all cards to be equal height */
+.post-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Make the body stretch so footer stays aligned */
+.post-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push the Read More button to the bottom */
+.post-card .btn {
+  margin-top: auto;
+}
+
+/* Ensure consistent image height */
+.post-card-image {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}

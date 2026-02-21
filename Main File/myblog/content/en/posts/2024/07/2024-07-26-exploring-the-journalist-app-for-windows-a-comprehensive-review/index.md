@@ -21,7 +21,7 @@ tags:
   - "windows-journalist-software"
   - "windows-writing-and-editing-software"
   - "writing-tool-for-journalists"
-coverImage: "bird-and-rose-colored-sketch.png"
+featured_image: "bird-and-rose-colored-sketch.png"
 ---
 
 In the ever-evolving landscape of digital journalism, tools that streamline the writing, editing, and publishing process are invaluable. One such tool that has garnered attention is the Journalist app for Windows. This article delves into the features, benefits, and potential drawbacks of the Journalist app, providing a comprehensive review for those considering integrating it into their workflow.
