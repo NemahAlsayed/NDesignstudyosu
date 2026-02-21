@@ -9,7 +9,7 @@
     </div>
   </div>
 
-  <!-- Build category dictionary -->
+  <!-- Build category dictionary BEFORE using it -->
   {{ $postsByCategory := dict }}
   {{ range .Pages }}
     {{ $category := .Params.category | default "Uncategorized" }}
@@ -62,8 +62,7 @@
 
 </div>
 
-{{ end }}
-
+<!-- JavaScript Filtering -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".filter-btn");
@@ -100,3 +99,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
+{{ end }}
