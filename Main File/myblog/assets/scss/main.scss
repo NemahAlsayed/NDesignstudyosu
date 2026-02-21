@@ -166,3 +166,8 @@
   transition: opacity 0.25s ease;
 }
 
+/* Vertical spacing between rows */
+#posts-grid {
+  row-gap: 24px;
+}
+
