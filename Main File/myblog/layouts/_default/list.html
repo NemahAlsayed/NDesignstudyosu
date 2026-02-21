@@ -18,20 +18,24 @@
     {{ $postsByCategory = merge $postsByCategory (dict $category $posts) }}
   {{ end }}
 
-  <!-- Selected category from URL -->
-  {{ $selectedCategory := .Request.URL.Query.Get "category" }}
+  <!-- Read selected category safely -->
+  {{ $selectedCategory := .Site.Params.selectedCategory | default "" }}
 
   <!-- Category Buttons -->
   <div class="row mb-4">
     <div class="col-12 text-center category-buttons">
+
+      <!-- All button resets filter -->
       <a href="{{ .Permalink }}" class="btn btn-outline-primary mx-1">All</a>
 
+      <!-- Category buttons -->
       {{ range $category, $_ := $postsByCategory }}
-        <a href="?category={{ $category }}" 
+        <a href="{{ $.Permalink }}?category={{ $category }}" 
            class="btn btn-outline-secondary mx-1">
           {{ $category }}
         </a>
       {{ end }}
+
     </div>
   </div>
 
@@ -39,6 +43,8 @@
   <div class="row justify-content-center">
 
     {{ range $category, $posts := $postsByCategory }}
+
+      <!-- Show all if no filter OR match filter -->
       {{ if or (eq $selectedCategory "") (eq $selectedCategory $category) }}
 
         {{ range $posts }}
@@ -64,6 +70,7 @@
         {{ end }}
 
       {{ end }}
+
     {{ end }}
 
   </div>

@@ -9,6 +9,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
 subtitle = "Creative Design for Purposeful Impact"
+selectedCategory = ""
 
 [params.homepage]
 preTitle = "Creative Vision. Human Stories. Purposeful Design."
