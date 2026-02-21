@@ -114,3 +114,50 @@
 .post-card-wrapper {
   transition: opacity 0.25s ease;
 }
+
+/* Sidebar container */
+.category-sidebar {
+  background: #faf7f8;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e8d5db;
+}
+
+/* Sidebar title */
+.category-sidebar h4 {
+  color: #7b1e3a;
+  font-weight: 600;
+}
+
+/* Vertical category buttons */
+.category-sidebar .filter-btn {
+  border-radius: 10px;
+  padding: 8px 14px;
+  border: 1px solid #a23e58;
+  color: #7b1e3a;
+  background: #fff;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.category-sidebar .filter-btn:hover {
+  background: #a23e58;
+  color: #fff;
+}
+
+.category-sidebar .filter-btn.active {
+  background: #7b1e3a;
+  color: #fff;
+  border-color: #7b1e3a;
+}
+
+/* Fade animation */
+.post-card-wrapper {
+  transition: opacity 0.25s ease;
+}
+
+/* Centered layout */
+.posts-wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
