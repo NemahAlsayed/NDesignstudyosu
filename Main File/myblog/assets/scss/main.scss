@@ -76,3 +76,27 @@
 .category-buttons .btn-outline-secondary:hover {
   background-color: #f0f0f0;
 }
+
+/* Smooth fade animation */
+.post-card-wrapper {
+  transition: opacity 0.25s ease;
+}
+
+/* Active button highlight — deep maroon */
+.filter-btn.active {
+  background-color: #7b1e3a;   /* deep maroon */
+  color: #fff;
+  border-color: #7b1e3a;
+}
+
+/* Default outline buttons in maroon family */
+.filter-btn {
+  border-color: #a23e58;       /* lighter maroon */
+  color: #7b1e3a;
+}
+
+.filter-btn:hover {
+  background-color: #a23e58;   /* soft maroon hover */
+  color: #fff;
+  border-color: #a23e58;
+}

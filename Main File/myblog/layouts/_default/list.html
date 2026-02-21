@@ -18,59 +18,44 @@
     {{ $postsByCategory = merge $postsByCategory (dict $category $posts) }}
   {{ end }}
 
-  <!-- Read selected category safely -->
-  {{ $selectedCategory := .Site.Params.selectedCategory | default "" }}
-
   <!-- Category Buttons -->
   <div class="row mb-4">
     <div class="col-12 text-center category-buttons">
+      <button class="btn btn-outline-primary mx-1 filter-btn active" data-filter="all">All</button>
 
-      <!-- All button resets filter -->
-      <a href="{{ .Permalink }}" class="btn btn-outline-primary mx-1">All</a>
-
-      <!-- Category buttons -->
       {{ range $category, $_ := $postsByCategory }}
-        <a href="{{ $.Permalink }}?category={{ $category }}" 
-           class="btn btn-outline-secondary mx-1">
+        <button class="btn btn-outline-secondary mx-1 filter-btn" data-filter="{{ $category }}">
           {{ $category }}
-        </a>
+        </button>
       {{ end }}
-
     </div>
   </div>
 
   <!-- Posts Grid -->
-  <div class="row justify-content-center">
+  <div class="row justify-content-center" id="posts-grid">
 
     {{ range $category, $posts := $postsByCategory }}
+      {{ range $posts }}
+        <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper" data-category="{{ $category }}">
+          <div class="card post-card h-100">
 
-      <!-- Show all if no filter OR match filter -->
-      {{ if or (eq $selectedCategory "") (eq $selectedCategory $category) }}
+            {{ with .Params.featured_image }}
+              <img src="{{ . }}" class="card-img-top post-card-image" alt="{{ $.Title }}">
+            {{ end }}
 
-        {{ range $posts }}
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card post-card h-100">
-
-              {{ with .Params.featured_image }}
-                <img src="{{ . }}" class="card-img-top post-card-image" alt="{{ $.Title }}">
-              {{ end }}
-
-              <div class="card-body">
-                <h5 class="card-title">{{ .Title }}</h5>
-                <p class="card-text">{{ .Summary }}</p>
-                <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
-              </div>
-
-              <div class="card-footer text-muted">
-                {{ .Date.Format "Jan 2, 2006" }}
-              </div>
-
+            <div class="card-body">
+              <h5 class="card-title">{{ .Title }}</h5>
+              <p class="card-text">{{ .Summary }}</p>
+              <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
             </div>
+
+            <div class="card-footer text-muted">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </div>
+
           </div>
-        {{ end }}
-
+        </div>
       {{ end }}
-
     {{ end }}
 
   </div>
@@ -78,3 +63,40 @@
 </div>
 
 {{ end }}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".post-card-wrapper");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+      // Highlight active button
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.dataset.filter;
+
+      cards.forEach(card => {
+        const category = card.dataset.category;
+
+        // Fade out
+        card.style.opacity = "0";
+        setTimeout(() => {
+          if (filter === "all" || filter === category) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+          // Fade in
+          setTimeout(() => {
+            card.style.opacity = "1";
+          }, 50);
+        }, 200);
+      });
+
+    });
+  });
+});
+</script>
