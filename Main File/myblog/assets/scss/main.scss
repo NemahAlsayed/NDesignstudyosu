@@ -99,7 +99,7 @@
    Post Cards
 ----------------------------------------------------------- */
 .post-card-wrapper {
-  padding: 17px; /* spacing around each card */
+  padding: 20px; /* spacing around each card */
 }
 
 .post-card {
@@ -111,7 +111,7 @@
   background: #fff;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   transition: transform .25s ease, box-shadow .25s ease;
-  margin-bottom: 24px; /* vertical spacing between rows */
+  margin-bottom: 24px; /* vertical spacing */
 }
 
 .post-card:hover {
@@ -157,14 +157,6 @@
   padding: 12px 18px;
   font-size: 0.85rem;
   color: #555;
-}
-
-/* -----------------------------------------------------------
-   Grid Spacing Override (Bootstrap fix)
------------------------------------------------------------ */
-#posts-grid {
-  row-gap: 32px;     /* vertical spacing between rows */
-  column-gap: 20px;  /* horizontal spacing between columns */
 }
 
 /* -----------------------------------------------------------
