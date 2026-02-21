@@ -21,8 +21,8 @@
         <div class="row">
           {{ range $posts }}
             <div class="col-md-6 col-lg-4 mb-4">
-              <div class="card h-100">
-                {{ with .Params.featured_image }}
+            <div class="card post-card h-100">
+                  {{ with .Params.featured_image }}
                   <img src="{{ . }}" class="card-img-top" alt="{{ $.Title }}">
                 {{ end }}
                 <div class="card-body">
