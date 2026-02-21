@@ -107,6 +107,7 @@
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   transition: transform .25s ease, box-shadow .25s ease;
   background: #fff;
+  margin-bottom: 16px; /* NEW: vertical spacing */
 }
 
 .post-card:hover {
@@ -155,9 +156,10 @@
 }
 
 /* -----------------------------------------------------------
-   Animations
+   Animations + Spacing Fix
 ----------------------------------------------------------- */
 .post-card-wrapper {
   transition: opacity 0.25s ease;
-  padding: 20px;
+  padding: 20px; /* NEW: horizontal spacing between cards */
 }
+
