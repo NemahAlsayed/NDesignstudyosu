@@ -4,13 +4,31 @@
 <head>
     {{ partial "head.html" . }}
 </head>
+
 <body>
 
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress"></div>
+
+    <!-- Global Header -->
     {{ partial "header.html" . }}
 
+    <!-- Page Content -->
     {{ block "main" . }}{{ end }}
 
+    <!-- Global Footer -->
     {{ partial "footer.html" . }}
+
+    <!-- Reading Progress Script -->
+    <script>
+      document.addEventListener("scroll", function () {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / docHeight) * 100;
+        document.getElementById("reading-progress").style.width = progress + "%";
+      });
+    </script>
 
 </body>
 </html>
+
