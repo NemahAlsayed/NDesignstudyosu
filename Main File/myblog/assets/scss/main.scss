@@ -98,16 +98,20 @@
 /* -----------------------------------------------------------
    Post Cards
 ----------------------------------------------------------- */
+.post-card-wrapper {
+  padding: 20px; /* spacing around each card */
+}
+
 .post-card {
   display: flex;
   flex-direction: column;
   height: 100%;
   border-radius: 14px;
   overflow: hidden;
+  background: #fff;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   transition: transform .25s ease, box-shadow .25s ease;
-  background: #fff;
-  margin-bottom: 16px; /* NEW: vertical spacing */
+  margin-bottom: 24px; /* vertical spacing between rows */
 }
 
 .post-card:hover {
@@ -115,7 +119,7 @@
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
-/* Card image (lazy-loaded in HTML) */
+/* Card image */
 .post-card-image {
   height: 220px;
   width: 100%;
@@ -132,7 +136,7 @@
   gap: 12px;
 }
 
-/* 3-line clamping for description */
+/* 3-line clamping */
 .post-card .card-text {
   text-align: justify;
   display: -webkit-box;
@@ -141,7 +145,7 @@
   overflow: hidden;
 }
 
-/* Push Read More button to bottom */
+/* Push Read More button down */
 .post-card .btn {
   margin-top: auto;
 }
@@ -156,10 +160,17 @@
 }
 
 /* -----------------------------------------------------------
-   Animations + Spacing Fix
+   Grid Spacing Override (Bootstrap fix)
+----------------------------------------------------------- */
+#posts-grid {
+  row-gap: 32px;     /* vertical spacing between rows */
+  column-gap: 32px;  /* horizontal spacing between columns */
+}
+
+/* -----------------------------------------------------------
+   Animations
 ----------------------------------------------------------- */
 .post-card-wrapper {
   transition: opacity 0.25s ease;
-  padding: 20px; /* NEW: horizontal spacing between cards */
 }
 
