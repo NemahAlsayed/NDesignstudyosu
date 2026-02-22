@@ -12,7 +12,6 @@
   --rosewood: #640D14;
   --dark-sienna: #250902;
 
-  /* Balanced radial gradient with slight transparency */
   --brand-gradient: radial-gradient(
     circle at center,
     rgba(100, 13, 20, 0.85) 0%,
@@ -313,29 +312,30 @@ header.site-header .nav-link:hover {
   }
 }
 
-/* RTL Support */
-html.rtl {
+/* -----------------------------------------------------------
+   RTL Support (Safe + Layout-Preserving)
+----------------------------------------------------------- */
+
+/* Only content becomes RTL */
+html.rtl main,
+html.rtl .single-post-wrapper,
+html.rtl .posts-wrapper {
   direction: rtl;
   text-align: right;
 }
 
-html.rtl body {
-  direction: rtl;
-}
-
-html.rtl p,
-html.rtl h1,
-html.rtl h2,
-html.rtl h3,
-html.rtl h4,
-html.rtl h5,
-html.rtl h6,
-html.rtl li {
-  text-align: right;
-}
-
-html.rtl nav,
+/* Keep header + footer centered */
 html.rtl header,
-html.rtl footer {
-  direction: rtl;
+html.rtl nav,
+html.rtl footer,
+html.rtl .footer,
+html.rtl .nds-footer {
+  direction: ltr !important;
+  text-align: center !important;
 }
+
+/* Fix flexbox centering */
+html.rtl footer .d-flex {
+  justify-content: center !important;
+}
+
