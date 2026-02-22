@@ -1,8 +1,7 @@
-<ul class="language-switcher">
+<ul class="nds-lang-switcher">
 
   {{ range .Site.Languages }}
     {{ if eq .Lang "ar" }}
-      <!-- Force Arabic to go directly to /ar/posts/ -->
       <li>
         <a href="/NDesignstudyosu/ar/posts/">
           {{ .LanguageName }}
@@ -10,7 +9,6 @@
       </li>
 
     {{ else }}
-      <!-- Default behavior for all other languages -->
       <li>
         <a href="{{ .Lang | relLangURL }}">
           {{ .LanguageName }}
