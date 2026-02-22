@@ -1,6 +1,6 @@
 {{- $css := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
 <!DOCTYPE html>
-<html lang="{{ .Lang }}">
+<html lang="{{ .Lang }}" {{ if eq .Lang "ar" }}dir="rtl" class="rtl"{{ end }}>
 <head>
     {{ partial "head.html" . }}
 </head>
@@ -31,4 +31,3 @@
 
 </body>
 </html>
-

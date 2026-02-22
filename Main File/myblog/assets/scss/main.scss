@@ -312,3 +312,30 @@ header.site-header .nav-link:hover {
     line-height: 1.65;
   }
 }
+
+/* RTL Support */
+html.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+html.rtl body {
+  direction: rtl;
+}
+
+html.rtl p,
+html.rtl h1,
+html.rtl h2,
+html.rtl h3,
+html.rtl h4,
+html.rtl h5,
+html.rtl h6,
+html.rtl li {
+  text-align: right;
+}
+
+html.rtl nav,
+html.rtl header,
+html.rtl footer {
+  direction: rtl;
+}
