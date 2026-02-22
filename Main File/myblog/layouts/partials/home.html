@@ -1,29 +1,30 @@
 {{ define "main" }}
 
-<section class="english-hero d-flex flex-column justify-content-center align-items-center text-center py-5">
-  
-  <h1 class="display-3 fw-bold mb-4">{{ .Site.Params.homepage.title }}</h1>
+<div class="container py-5">
 
-  <p class="english-intro mb-4">
-    {{ .Site.Params.homepage.intro | markdownify }}
-  </p>
+  <section class="english-hero d-flex flex-column justify-content-center align-items-center text-center py-5">
+    
+    <h1 class="display-3 fw-bold mb-4">{{ .Site.Params.homepage.title }}</h1>
 
-  <!-- LANGUAGE TABS (RESTORED) -->
-  <div class="language-tabs mt-3">
-    <a href="/NDesignstudyosu/ar/posts"
-       class="lang-tab{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
+    <p class="english-intro mb-4">
+      {{ .Site.Params.homepage.intro | markdownify }}
+    </p>
 
-    <a href="/NDesignstudyosu/en/posts"
-       class="lang-tab{{ if eq .Lang "en" }} active{{ end }}">English</a>
+    <div class="language-tabs mt-3">
+      <a href="/NDesignstudyosu/ar/posts"
+         class="lang-tab{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
 
-    <a href="/NDesignstudyosu/tr/"
-       class="lang-tab{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
-  </div>
+      <a href="/NDesignstudyosu/en/posts"
+         class="lang-tab{{ if eq .Lang "en" }} active{{ end }}">English</a>
 
-</section>
+      <a href="/NDesignstudyosu/tr/"
+         class="lang-tab{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
+    </div>
 
-<div class="container">
-  <div class="mt-5 align-items-center">{{ .Content }}</div>
+  </section>
+
+  <div class="mt-5">{{ .Content }}</div>
+
 </div>
 
 {{ end }}

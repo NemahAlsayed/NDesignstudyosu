@@ -7,19 +7,18 @@
 
 <body>
 
-    <!-- Reading Progress Bar -->
     <div id="reading-progress"></div>
 
-    <!-- Global Header -->
     {{ partial "header.html" . }}
 
-    <!-- Page Content -->
-    {{ block "main" . }}{{ end }}
+    <main class="site-main">
+      <div class="container content-area py-5">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </main>
 
-    <!-- Global Footer -->
     {{ partial "footer.html" . }}
 
-    <!-- Reading Progress Script -->
     <script>
       document.addEventListener("scroll", function () {
         const scrollTop = window.scrollY;
