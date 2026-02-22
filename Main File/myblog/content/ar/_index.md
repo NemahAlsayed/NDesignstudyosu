@@ -1,3 +1,8 @@
+---
 title: "المدونة"
-lang: "ar"
+url: "/ar/posts/"
+redirect: "/ar/posts/"
+---
+
+
 
