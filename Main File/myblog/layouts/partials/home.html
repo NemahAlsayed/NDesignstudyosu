@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
 <section class="english-hero d-flex flex-column justify-content-center align-items-center text-center py-5">
   
@@ -8,16 +8,16 @@
     {{ .Site.Params.homepage.intro | markdownify }}
   </p>
 
- <div class="language-tabs mt-3">
-  <a href="https://nemahalsayed.github.io/NDesignstudyosu/ar/posts" 
-     class="lang-tab{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
+  <div class="language-tabs mt-3">
+    <a href="/NDesignstudyosu/ar/posts" 
+       class="lang-tab{{ if eq .Lang "ar" }} active{{ end }}">العربية</a>
 
- <a href="{{ "en/posts/" | relURL }}" class="lang-tab{{ if eq .Lang "en" }} active{{ end }}"> English </a>
- 
-  <a href="https://nemahalsayed.github.io/NDesignstudyosu/tr/" 
-     class="lang-tab{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
-</div>
+    <a href="/NDesignstudyosu/en/posts" 
+       class="lang-tab{{ if eq .Lang "en" }} active{{ end }}">English</a>
 
+    <a href="/NDesignstudyosu/tr/" 
+       class="lang-tab{{ if eq .Lang "tr" }} active{{ end }}">Türkçe</a>
+  </div>
 
 </section>
 
@@ -25,4 +25,4 @@
   <div class="mt-5 align-items-center">{{ .Content }}</div>
 </div>
 
-{{ partial "footer.html" . }}
+{{ end }}
