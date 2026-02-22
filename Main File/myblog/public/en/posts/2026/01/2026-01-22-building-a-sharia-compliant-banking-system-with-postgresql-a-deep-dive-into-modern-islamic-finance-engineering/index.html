@@ -1,9 +1,359 @@
-<!doctype html><html lang=en><head><head><title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering | N Design Studio</title><meta charset=utf-8><meta name=description content="Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <head>
+
+  
+    <title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering | N Design Studio</title>
+  
+
+  <meta charset="utf-8" />
+
+  <meta
+    name="description"
+    
+      content="Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
 This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.
-🌐 Why Build a Sharia‑Compliant Banking System?"><meta name=dc.relation content="https://nemahalsayed.github.io/NDesignstudyosu/"><meta name=robots content="index,follow"><meta itemprop=name content="Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering — N Design Studio"><meta itemprop=description content="Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
+🌐 Why Build a Sharia‑Compliant Banking System?"
+    
+  />
+
+  <meta name="dc.relation" content="https://nemahalsayed.github.io/NDesignstudyosu/" />
+  <meta name="robots" content="index,follow" />
+
+  
+  
+    <meta itemprop="name" content="Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering — N Design Studio" />
+  
+
+  <meta
+    itemprop="description"
+    
+      content="Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
 This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.
-🌐 Why Build a Sharia‑Compliant Banking System?"><meta itemprop=image content="https://nemahalsayed.github.io/NDesignstudyosu/"><meta property="og:url" content="https://nemahalsayed.github.io/NDesignstudyosu/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/"><meta property="og:type" content="website"><meta property="og:title" content="Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering — N Design Studio"><meta property="og:description" content="Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
+🌐 Why Build a Sharia‑Compliant Banking System?"
+    
+  />
+
+  
+    <meta itemprop="image" content="https://nemahalsayed.github.io/NDesignstudyosu/" />
+  
+
+  
+  <meta property="og:url" content="https://nemahalsayed.github.io/NDesignstudyosu/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/" />
+  <meta property="og:type" content="website" />
+
+  
+    <meta property="og:title" content="Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering — N Design Studio" />
+  
+
+  <meta
+    property="og:description"
+    
+      content="Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
 This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.
-🌐 Why Build a Sharia‑Compliant Banking System?"><meta property="og:image" content="https://nemahalsayed.github.io/NDesignstudyosu/"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering — N Design Studio"><meta name=twitter:description content="Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
+🌐 Why Build a Sharia‑Compliant Banking System?"
+    
+  />
+
+  
+    <meta property="og:image" content="https://nemahalsayed.github.io/NDesignstudyosu/" />
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+
+  
+    <meta name="twitter:title" content="Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering — N Design Studio" />
+  
+
+  <meta
+    name="twitter:description"
+    
+      content="Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.
 This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.
-🌐 Why Build a Sharia‑Compliant Banking System?"><meta name=twitter:image content="https://nemahalsayed.github.io/NDesignstudyosu/"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=theme-color content="#1A94D2"><link rel=stylesheet href=/NDesignstudyosu/css/styles.min.css media=screen><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css></head></head><body><div class=container><div class=row><div class=col-12><article class=post><header class=post-header><h1 class=post-title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</h1><div class=post-meta><time datetime=2026-01-22>Jan 22, 2026</time></div></header><div class=post-content><p>Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a <strong>Sharia‑Compliant Banking Management System (SCBMS)</strong>: a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.</p><p>This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.</p><h2 id=-why-build-a-shariacompliant-banking-system>🌐 Why Build a Sharia‑Compliant Banking System?</h2><p>Islamic finance operates on principles fundamentally different from conventional banking:</p><ul><li><p>No interest (riba)</p></li><li><p>No uncertainty (gharar)</p></li><li><p>No prohibited activities</p></li><li><p>Profit‑loss sharing</p></li><li><p>Asset‑backed financing</p></li></ul><p>Designing a system that respects these rules requires more than tables — it requires <strong>business logic</strong>, <strong>automation</strong>, and <strong>auditability</strong>.</p><p>That’s where PostgreSQL shines.</p><h2 id=-system-architecture-at-a-glance>🏗️ System Architecture at a Glance</h2><p>The system is built using a layered architecture that mirrors real banking backends:</p><h3 id=database-layer><strong>Database Layer</strong></h3><ul><li><p><strong>customers</strong></p></li><li><p><strong>accounts</strong></p></li><li><p><strong>transactions</strong></p></li><li><p><strong>murabahacontracts</strong></p></li><li><p><strong>ijaracontracts</strong></p></li><li><p><strong>mudarabainvestments</strong></p></li><li><p><strong>zakatcalculations</strong></p></li></ul><h3 id=stored-procedures><strong>Stored Procedures</strong></h3><ul><li><p><strong>calculate_zakat()</strong></p></li><li><p><strong>generate_murabaha_payment_plan()</strong></p></li><li><p><strong>generate_ijara_schedule()</strong></p></li></ul><h3 id=triggers><strong>Triggers</strong></h3><ul><li><p><strong>audit_prohibited_transactions</strong></p></li><li><p><strong>update_account_balance</strong></p></li></ul><h3 id=views><strong>Views</strong></h3><ul><li><p><strong>CustomerPortfolioView</strong></p></li><li><p><strong>ZakatSummaryView</strong></p></li></ul><h3 id=future-api-layer><strong>Future API Layer</strong></h3><ul><li><p><strong>REST endpoints</strong></p></li><li><p><strong>authentication</strong></p></li><li><p><strong>business logic services</strong></p></li></ul><p>This structure makes the system scalable, maintainable, and ready for integration with Python, Node.js, or a full web application.</p><h2 id=example-creating-a-customer-and-opening-accounts>Example: Creating a Customer and Opening Accounts</h2><p>Here’s a simple SQL snippet that demonstrates how the system handles customer onboarding:</p><p>INSERT INTO islamic_finance.customers<br>(full_name, national_id_or_passport, date_of_birth, customer_type, email, phone_number, zakat_eligible)<br>VALUES<br>(&lsquo;Demo User&rsquo;, &lsquo;A123456789&rsquo;, &lsquo;1990-01-01&rsquo;, &lsquo;Individual&rsquo;, &lsquo;<a href=mailto:demo@example.com>demo@example.com</a>&rsquo;, &lsquo;555-1234&rsquo;, TRUE)<br>RETURNING customer_id;</p><h2 id=automating-murabaha-financing>Automating Murabaha Financing</h2><p>Murabaha is a cost‑plus financing model where the bank buys an asset and sells it to the customer at a profit.</p><p>The system includes a stored procedure that automatically generates the payment schedule:</p><p>CALL islamic_finance.generate_murabaha_payment_plan(1, 6);</p><h2 id=realtime-shariah-compliance-with-triggers>Real‑Time Shariah Compliance with Triggers</h2><p>Triggers enforce rules automatically:</p><ul><li><p><strong>audit_prohibited_transactions</strong> logs any suspicious activity</p></li><li><p><strong>update_account_balance</strong> keeps balances accurate</p></li><li><p><strong>log_shariah_violations</strong> ensures transparency</p></li></ul><p>This mirrors how real Islamic banks maintain compliance.</p><h2 id=bonus-python-integration>Bonus: Python Integration</h2><p>To demonstrate full‑stack capability, the project includes a small Python script that connects to PostgreSQL and runs queries:</p><p>cur.execute(&lsquo;SET search_path TO islamic_finance, public;&rsquo;)<br>cur.execute(&lsquo;SELECT full_name, email FROM customers LIMIT 5;&rsquo;)</p><h2 id=final-thoughts>Final Thoughts</h2><p>This project is more than a database — it’s a <strong>complete Islamic banking backend</strong>, built with:</p><ul><li><p>Clean architecture</p></li><li><p>Real business logic</p></li><li><p>Automated compliance</p></li><li><p>Expandability for future APIs</p></li></ul><p>It demonstrates how modern engineering can support ethical, Sharia‑compliant financial systems.</p><p>If you’re exploring Islamic finance, backend engineering, or database architecture, this project is a powerful foundation to build on.</p><p>Here is my github project link:</p><p><a href=https://github.com/NemahAlsayed/Sharia-Compliant-Banking-Management-System-SCBMS->https://github.com/NemahAlsayed/Sharia-Compliant-Banking-Management-System-SCBMS-</a></p><p>To request any project ideas from me in open source SQL, please contact me. I do technology related blog posts. I post the source code on Github.</p></div></article></div></div></div></body></html>
+🌐 Why Build a Sharia‑Compliant Banking System?"
+    
+  />
+
+  
+    <meta name="twitter:image" content="https://nemahalsayed.github.io/NDesignstudyosu/" />
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#1A94D2" />
+
+  
+  
+  
+  <link rel="stylesheet" href="/NDesignstudyosu/css/styles.min.css" media="screen" />
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  
+  
+
+  
+  
+
+</head>
+
+</head>
+
+<body>
+
+    
+    <div id="reading-progress"></div>
+
+    
+    <header class="nds-header">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    
+    <div class="header-left d-flex align-items-center">
+    <img src="/NDesignstudyosu/images/logo.png" alt="N Design Studio Logo" class="nds-logo">
+    </div>
+
+
+    
+    <nav class="header-right">
+      <ul class="nav nds-nav">
+        <li class="nav-item"><a href="/en/" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/en/page/2024/03/2024-03-10-about/" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="/en/posts/" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="/en/contact/" class="nav-link">Contact</a></li>
+      </ul>
+
+    </nav>
+
+  </div>
+</header>
+
+
+    
+    
+
+<div class="single-post-wrapper">
+
+  <article class="post">
+
+    <header class="post-header">
+      <h1 class="post-title">Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</h1>
+
+      <div class="post-meta">
+        <time datetime="2026-01-22">
+          Jan 22, 2026
+        </time>
+
+        
+      </div>
+    </header>
+
+    <div class="post-content">
+      <p>Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a <strong>Sharia‑Compliant Banking Management System (SCBMS)</strong>: a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.</p>
+<p>This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.</p>
+<h2 id="-why-build-a-shariacompliant-banking-system">🌐 Why Build a Sharia‑Compliant Banking System?</h2>
+<p>Islamic finance operates on principles fundamentally different from conventional banking:</p>
+<ul>
+<li>
+<p>No interest (riba)</p>
+</li>
+<li>
+<p>No uncertainty (gharar)</p>
+</li>
+<li>
+<p>No prohibited activities</p>
+</li>
+<li>
+<p>Profit‑loss sharing</p>
+</li>
+<li>
+<p>Asset‑backed financing</p>
+</li>
+</ul>
+<p>Designing a system that respects these rules requires more than tables — it requires <strong>business logic</strong>, <strong>automation</strong>, and <strong>auditability</strong>.</p>
+<p>That’s where PostgreSQL shines.</p>
+<h2 id="-system-architecture-at-a-glance">🏗️ System Architecture at a Glance</h2>
+<p>The system is built using a layered architecture that mirrors real banking backends:</p>
+<h3 id="database-layer"><strong>Database Layer</strong></h3>
+<ul>
+<li>
+<p><strong>customers</strong></p>
+</li>
+<li>
+<p><strong>accounts</strong></p>
+</li>
+<li>
+<p><strong>transactions</strong></p>
+</li>
+<li>
+<p><strong>murabahacontracts</strong></p>
+</li>
+<li>
+<p><strong>ijaracontracts</strong></p>
+</li>
+<li>
+<p><strong>mudarabainvestments</strong></p>
+</li>
+<li>
+<p><strong>zakatcalculations</strong></p>
+</li>
+</ul>
+<h3 id="stored-procedures"><strong>Stored Procedures</strong></h3>
+<ul>
+<li>
+<p><strong>calculate_zakat()</strong></p>
+</li>
+<li>
+<p><strong>generate_murabaha_payment_plan()</strong></p>
+</li>
+<li>
+<p><strong>generate_ijara_schedule()</strong></p>
+</li>
+</ul>
+<h3 id="triggers"><strong>Triggers</strong></h3>
+<ul>
+<li>
+<p><strong>audit_prohibited_transactions</strong></p>
+</li>
+<li>
+<p><strong>update_account_balance</strong></p>
+</li>
+</ul>
+<h3 id="views"><strong>Views</strong></h3>
+<ul>
+<li>
+<p><strong>CustomerPortfolioView</strong></p>
+</li>
+<li>
+<p><strong>ZakatSummaryView</strong></p>
+</li>
+</ul>
+<h3 id="future-api-layer"><strong>Future API Layer</strong></h3>
+<ul>
+<li>
+<p><strong>REST endpoints</strong></p>
+</li>
+<li>
+<p><strong>authentication</strong></p>
+</li>
+<li>
+<p><strong>business logic services</strong></p>
+</li>
+</ul>
+<p>This structure makes the system scalable, maintainable, and ready for integration with Python, Node.js, or a full web application.</p>
+<h2 id="example-creating-a-customer-and-opening-accounts">Example: Creating a Customer and Opening Accounts</h2>
+<p>Here’s a simple SQL snippet that demonstrates how the system handles customer onboarding:</p>
+<p>INSERT INTO islamic_finance.customers<br>
+(full_name, national_id_or_passport, date_of_birth, customer_type, email, phone_number, zakat_eligible)<br>
+VALUES<br>
+(&lsquo;Demo User&rsquo;, &lsquo;A123456789&rsquo;, &lsquo;1990-01-01&rsquo;, &lsquo;Individual&rsquo;, &lsquo;<a href="mailto:demo@example.com">demo@example.com</a>&rsquo;, &lsquo;555-1234&rsquo;, TRUE)<br>
+RETURNING customer_id;</p>
+<h2 id="automating-murabaha-financing">Automating Murabaha Financing</h2>
+<p>Murabaha is a cost‑plus financing model where the bank buys an asset and sells it to the customer at a profit.</p>
+<p>The system includes a stored procedure that automatically generates the payment schedule:</p>
+<p>CALL islamic_finance.generate_murabaha_payment_plan(1, 6);</p>
+<h2 id="realtime-shariah-compliance-with-triggers">Real‑Time Shariah Compliance with Triggers</h2>
+<p>Triggers enforce rules automatically:</p>
+<ul>
+<li>
+<p><strong>audit_prohibited_transactions</strong> logs any suspicious activity</p>
+</li>
+<li>
+<p><strong>update_account_balance</strong> keeps balances accurate</p>
+</li>
+<li>
+<p><strong>log_shariah_violations</strong> ensures transparency</p>
+</li>
+</ul>
+<p>This mirrors how real Islamic banks maintain compliance.</p>
+<h2 id="bonus-python-integration">Bonus: Python Integration</h2>
+<p>To demonstrate full‑stack capability, the project includes a small Python script that connects to PostgreSQL and runs queries:</p>
+<p>cur.execute(&lsquo;SET search_path TO islamic_finance, public;&rsquo;)<br>
+cur.execute(&lsquo;SELECT full_name, email FROM customers LIMIT 5;&rsquo;)</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>This project is more than a database — it’s a <strong>complete Islamic banking backend</strong>, built with:</p>
+<ul>
+<li>
+<p>Clean architecture</p>
+</li>
+<li>
+<p>Real business logic</p>
+</li>
+<li>
+<p>Automated compliance</p>
+</li>
+<li>
+<p>Expandability for future APIs</p>
+</li>
+</ul>
+<p>It demonstrates how modern engineering can support ethical, Sharia‑compliant financial systems.</p>
+<p>If you’re exploring Islamic finance, backend engineering, or database architecture, this project is a powerful foundation to build on.</p>
+<p>Here is my github project link:</p>
+<p><a href="https://github.com/NemahAlsayed/Sharia-Compliant-Banking-Management-System-SCBMS-">https://github.com/NemahAlsayed/Sharia-Compliant-Banking-Management-System-SCBMS-</a></p>
+<p>To request any project ideas from me in open source SQL, please contact me. I do technology related blog posts. I post the source code on Github.</p>
+
+    </div>
+
+  </article>
+
+</div>
+
+
+
+    
+    <footer class="footer bg-dark text-light pt-5 pb-3">
+
+  
+  
+  <section class="footer-social text-center mb-4">
+    <div class="d-flex justify-content-center gap-4">
+      
+      <a href="https://facebook.com/yourpage" class="text-light fs-3">
+        <i class="bi bi-facebook"></i>
+      </a>
+      
+      <a href="https://twitter.com/yourhandle" class="text-light fs-3">
+        <i class="bi bi-twitter"></i>
+      </a>
+      
+      <a href="https://instagram.com/youraccount" class="text-light fs-3">
+        <i class="bi bi-instagram"></i>
+      </a>
+      
+    </div>
+  </section>
+   <p class="footer-tagline mb-3 text-center w-100"> 
+    Creative Design for Purposeful Impact </p>
+  
+
+
+    
+    
+
+    
+    
+
+  </div>
+
+  
+  <div class="text-center mt-4">
+    <p class="my-1 fs-6 text-muted">© 2026 N Design Studio. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+    
+    <script>
+      document.addEventListener("scroll", function () {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / docHeight) * 100;
+        document.getElementById("reading-progress").style.width = progress + "%";
+      });
+    </script>
+
+</body>
+</html>
