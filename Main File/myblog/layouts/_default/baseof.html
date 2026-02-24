@@ -12,7 +12,7 @@
     {{ partial "header.html" . }}
 
     <main class="site-main">
-      <div class="container content-area {{ if .IsHome }}vh-100 d-flex align-items-center{{ else }}py-5{{ end }}">
+      <div class="container content-area {{ if .IsHome }}vh-100 d-flex align-items-center justify-content-center{{ else }}py-5{{ end }}">
         {{ block "main" . }}{{ end }}
       </div>
     </main>
