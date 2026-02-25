@@ -84,7 +84,7 @@ weight = 3
 
 [[menu.main]]
 name = "Contact"
-url = "/contact/"
+url = "https://nemahalsayed.github.io/en/contact/"
 weight = 4
 
 [params.office]
