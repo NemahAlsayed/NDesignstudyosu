@@ -319,3 +319,12 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
+
+.hero-section {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.hero-card {
+  margin: 0 auto; /* ensures perfect centering inside container */
+}
