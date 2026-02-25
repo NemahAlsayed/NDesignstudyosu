@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>N Design Studio</title>
-    <link>https://nemahalsayed.github.io/tr/</link>
+    <link>https://nemahalsayed.github.io/NDesignstudyosu/tr/</link>
     <description>Recent content on N Design Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr</language>
     <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
-    <atom:link href="https://nemahalsayed.github.io/tr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nemahalsayed.github.io/NDesignstudyosu/tr/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
