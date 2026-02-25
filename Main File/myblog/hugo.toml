@@ -67,32 +67,17 @@ heading = "Navigate"
 enabled = false
 
 
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
 
 [[menu.main]]
 name = "About"
 url = "/page/2024/03/2024-03-10-about/"
-weight = 2
-
-[[menu.main]]
-name = "Blog"
-url = "/posts/"
-weight = 3
+weight = 1
 
 [[menu.main]]
 name = "Contact"
-url = "/contact/"
-weight = 4
+url = "https://nemahalsayed.github.io/en/contact/"
+weight = 2
 
-[params.office]
-title = "Our Office"
-description = "Visit us at our office location. We are located in a convenient spot."
-buttonText = "Get Directions"
-buttonLink = "https://maps.google.com"
-mapLink = "https://www.google.com/maps/embed?pb=..."
 
 [languages]
 
