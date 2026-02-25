@@ -321,10 +321,13 @@ body {
 }
 
 .hero-section {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding: 40px 0; /* equal top and bottom space */
 }
 
 .hero-card {
-  margin: 0 auto; /* ensures perfect centering inside container */
+  margin: 0 auto;          /* centers horizontally */
+  max-width: 800px;        /* prevents stretching */
+  width: 100%;             /* responsive */
+  text-align: center;      /* centers text */
 }
+
