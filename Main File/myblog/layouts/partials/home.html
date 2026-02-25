@@ -1,8 +1,10 @@
-<section class="d-flex justify-content-center align-items-center vh-100 w-100">
+<section class="d-flex align-items-center justify-content-center vh-100 w-100">
 
   <div class="hero-card text-center p-5">
 
-    <h1 class="display-3 fw-bold mb-4">{{ .Site.Params.homepage.title }}</h1>
+    <h1 class="display-3 fw-bold mb-4">
+      {{ .Site.Params.homepage.title }}
+    </h1>
 
     <p class="english-intro mb-4">
       {{ .Site.Params.homepage.intro | markdownify }}
