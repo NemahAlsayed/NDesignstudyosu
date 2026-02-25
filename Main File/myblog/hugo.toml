@@ -70,12 +70,12 @@ enabled = false
 
 [[menu.main]]
 name = "About"
-url = "/page/2024/03/2024-03-10-about/"
+url = "https://nemahalsayed.github.io/NDesignstudyosu/en/pages/2024/03/2024-03-10-about/"
 weight = 1
 
 [[menu.main]]
 name = "Contact"
-url = "https://nemahalsayed.github.io/en/contact/"
+url = "https://nemahalsayed.github.io/NDesignstudyosu/en/contact/"
 weight = 2
 
 
