@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Financial-Backend-Architecture on N Design Studio</title>
+    <link>https://nemahalsayed.github.io/en/tags/financial-backend-architecture/</link>
+    <description>Recent content in Financial-Backend-Architecture on N Design Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nemahalsayed.github.io/en/tags/financial-backend-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</title>
+      <link>https://nemahalsayed.github.io/en/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://nemahalsayed.github.io/en/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</guid>
+      <description>Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a Sharia‑Compliant Banking Management System (SCBMS): a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.&#xA;This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.&#xA;🌐 Why Build a Sharia‑Compliant Banking System?</description>
+    </item>
+  </channel>
+</rss>

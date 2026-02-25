@@ -1,11 +1,11 @@
-baseURL = "https://nemahalsayed.github.io/NDesignstudyosu/"
+baseURL = "https://nemahalsayed.github.io/"
 languageCode = 'en-us'
 title = 'N Design Studio'
 theme = "magnolia"
 copyright = "&copy; 2026 N Design Studio. All rights reserved."
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [params]
 subtitle = "Creative Design for Purposeful Impact"
@@ -84,7 +84,7 @@ weight = 3
 
 [[menu.main]]
 name = "Contact"
-url = "https://nemahalsayed.github.io/en/contact/"
+url = "/contact/"
 weight = 4
 
 [params.office]
