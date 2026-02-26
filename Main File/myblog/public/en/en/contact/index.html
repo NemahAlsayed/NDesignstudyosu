@@ -12,7 +12,7 @@
   <meta
     name="description"
     
-      content=""
+      content="Welcome to our contact page. Get in touch!"
     
   />
 
@@ -27,7 +27,7 @@
   <meta
     itemprop="description"
     
-      content=""
+      content="Welcome to our contact page. Get in touch!"
     
   />
 
@@ -46,7 +46,7 @@
   <meta
     property="og:description"
     
-      content=""
+      content="Welcome to our contact page. Get in touch!"
     
   />
 
@@ -64,7 +64,7 @@
   <meta
     name="twitter:description"
     
-      content=""
+      content="Welcome to our contact page. Get in touch!"
     
   />
 
@@ -133,93 +133,30 @@
       <div class="content-area py-5">
         
 
-<div class="container posts-wrapper">
+<div class="single-post-wrapper">
 
-  
-  <div class="posts-search">
-    <input type="text" id="searchInput" placeholder="Search posts...">
-  </div>
+  <article class="post">
 
-  
-  
-  
+    <header class="post-header">
+      <h1 class="post-title">Contact</h1>
 
-  
+      <div class="post-meta">
+        <time datetime="0001-01-01">
+          Jan 1, 0001
+        </time>
 
-  
-  
-  
-  
+        
+      </div>
+    </header>
 
-  
-  <div class="category-chips">
-    <button class="chip active" data-filter="all">All</button>
-    
-  </div>
+    <div class="post-content">
+      <p>Welcome to our contact page. Get in touch!</p>
 
-  
-  <h1 class="text-center mb-4">Contact</h1>
+    </div>
 
-  
-  <div class="row" id="posts-grid">
-
-    
-
-  </div>
+  </article>
 
 </div>
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const chips = document.querySelectorAll(".chip");
-  const cards = document.querySelectorAll(".post-card-wrapper");
-  const searchInput = document.getElementById("searchInput");
-
-   
-  chips.forEach(chip => {
-    chip.addEventListener("click", () => {
-
-      chips.forEach(c => c.classList.remove("active"));
-      chip.classList.add("active");
-
-      const filter = chip.dataset.filter.toLowerCase();
-
-      cards.forEach(card => {
-        const category = card.dataset.category.toLowerCase();
-
-        if (filter === "all" || category === filter) {
-          card.style.display = "block";
-          card.style.opacity = "1";
-        } else {
-          card.style.opacity = "0";
-          setTimeout(() => card.style.display = "none", 200);
-        }
-      });
-    });
-  });
-
-   
-  searchInput.addEventListener("input", function () {
-    const query = this.value.toLowerCase();
-
-    cards.forEach(card => {
-      const title = card.querySelector(".card-title").textContent.toLowerCase();
-      const text = card.querySelector(".card-text").textContent.toLowerCase();
-
-      if (title.includes(query) || text.includes(query)) {
-        card.style.display = "block";
-        card.style.opacity = "1";
-      } else {
-        card.style.opacity = "0";
-        setTimeout(() => card.style.display = "none", 200);
-      }
-    });
-  });
-
-});
-</script>
 
 
       </div>
