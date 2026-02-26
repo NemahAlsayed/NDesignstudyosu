@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paintings on N Design Studio</title>
+    <link>http://localhost:1313/NDesignstudyosu/en/tags/paintings/</link>
+    <description>Recent content in Paintings on N Design Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/NDesignstudyosu/en/tags/paintings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monthly Review; July Drawings.</title>
+      <link>http://localhost:1313/NDesignstudyosu/en/en/posts/_drafts/2024/07/2024-07-31-monthly-review-july-drawings/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/NDesignstudyosu/en/en/posts/_drafts/2024/07/2024-07-31-monthly-review-july-drawings/</guid>
+      <description>In this monthly review we will show the drawings of our studio for the month of July. The drawings are created by the journalist app.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<!-- Hero section for contact form -->
+<section class="hero py-5 bg-light">
+  <div class="container">
+    {{/* reuse the contact partial which already contains a styled card */}}
+    {{ partial "contact.html" . }}
+  </div>
+</section>
+
+{{ end }}
