@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/NDesignstudyosu/tr/categories/</loc>
+    <loc>https://nemahalsayed.github.io/NDesignstudyosu/tr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/NDesignstudyosu/en/categories/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/NDesignstudyosu/ar/categories/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="http://localhost:1313/NDesignstudyosu/tr/categories/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/tr/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/NDesignstudyosu/tr/</loc>
+    <loc>https://nemahalsayed.github.io/NDesignstudyosu/tr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/NDesignstudyosu/en/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/NDesignstudyosu/ar/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="http://localhost:1313/NDesignstudyosu/tr/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/tr/"
                 />
   </url><url>
-    <loc>http://localhost:1313/NDesignstudyosu/tr/tags/</loc>
+    <loc>https://nemahalsayed.github.io/NDesignstudyosu/tr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/NDesignstudyosu/en/tags/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/NDesignstudyosu/ar/tags/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="http://localhost:1313/NDesignstudyosu/tr/tags/"
+                href="https://nemahalsayed.github.io/NDesignstudyosu/tr/tags/"
                 />
   </url>
 </urlset>
