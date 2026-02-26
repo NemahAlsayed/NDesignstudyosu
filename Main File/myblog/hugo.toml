@@ -75,7 +75,7 @@ weight = 1
 
 [[menu.main]]
 name = "Contact"
-url = "https://nemahalsayed.github.io/NDesignstudyosu/en/contact/"
+url = "/en/contact/"
 weight = 2
 
 

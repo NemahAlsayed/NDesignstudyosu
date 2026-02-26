@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Items on N Design Studio</title>
-    <link>https://nemahalsayed.github.io/NDesignstudyosu/en/tags/items/</link>
+    <link>http://localhost:1313/NDesignstudyosu/en/tags/items/</link>
     <description>Recent content in Items on N Design Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Thu, 27 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nemahalsayed.github.io/NDesignstudyosu/en/tags/items/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/NDesignstudyosu/en/tags/items/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🌟 Discover Unique Treasures at My Dolap Mini Store! 🌟</title>
-      <link>https://nemahalsayed.github.io/NDesignstudyosu/en/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/</link>
+      <link>http://localhost:1313/NDesignstudyosu/en/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://nemahalsayed.github.io/NDesignstudyosu/en/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/</guid>
+      <guid>http://localhost:1313/NDesignstudyosu/en/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/</guid>
       <description>Are you on the hunt for one-of-a-kind art, creative coloring books, stylish clothing, or high-quality cosmetics? Look no further! My Dolap mini store is your go-to destination for unique and handcrafted items that add a special touch to your life.&#xA;🎨 Handmade Art Paintings Bring beauty into your home with my original art pieces! Each painting is crafted with passion, perfect for adding a personal and artistic vibe to any space.</description>
     </item>
   </channel>
