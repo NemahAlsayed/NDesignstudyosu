@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-layout: "contact"
+layout: "pages/contact"
 ---
 
 Welcome to our contact page. Get in touch!
