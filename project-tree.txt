@@ -1,0 +1,129 @@
+.
+├── LICENSE
+├── Main File
+│   ├── imports
+│   │   └── Arabic.xml
+│   ├── myblog
+│   │   ├── Data
+│   │   │   └── ndesignstudyosu.wordpress.com.2026-02-18.000.xml
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── archetypes
+│   │   │   └── default.md
+│   │   ├── assets
+│   │   │   └── scss
+│   │   │       ├── _variables.scss
+│   │   │       ├── custom-home.scss
+│   │   │       ├── main.scss
+│   │   │       └── style.scss
+│   │   ├── content
+│   │   │   ├── ar
+│   │   │   │   ├── _index.md
+│   │   │   │   ├── custom
+│   │   │   │   │   └── jp_pay_product
+│   │   │   │   ├── pages
+│   │   │   │   │   └── 2024
+│   │   │   │   └── posts
+│   │   │   │       ├── 2024
+│   │   │   │       ├── 2025
+│   │   │   │       ├── 2026
+│   │   │   │       └── _drafts
+│   │   │   ├── en
+│   │   │   │   ├── contact.md
+│   │   │   │   ├── pages
+│   │   │   │   │   ├── 2024
+│   │   │   │   │   ├── 2025
+│   │   │   │   │   └── _index.md
+│   │   │   │   └── posts
+│   │   │   │       ├── 2024
+│   │   │   │       ├── 2025
+│   │   │   │       ├── 2026
+│   │   │   │       ├── _drafts
+│   │   │   │       └── _index.md
+│   │   │   └── tr
+│   │   │       └── _index.md
+│   │   ├── data
+│   │   ├── hugo.toml
+│   │   ├── hugo_extended_0.111.3_Linux-64bit.tar.gz
+│   │   ├── i18n
+│   │   ├── layouts
+│   │   │   ├── _default
+│   │   │   │   ├── baseof.html
+│   │   │   │   ├── list.html
+│   │   │   │   ├── redirect.html
+│   │   │   │   ├── single.html
+│   │   │   │   └── taxonomy.html
+│   │   │   ├── ar
+│   │   │   │   └── contact
+│   │   │   │       └── single.html
+│   │   │   ├── contact
+│   │   │   ├── en
+│   │   │   │   ├── contact
+│   │   │   │   │   └── single.html
+│   │   │   │   └── posts
+│   │   │   │       └── list.html
+│   │   │   ├── index.html
+│   │   │   ├── pages
+│   │   │   │   ├── contact.html
+│   │   │   │   └── list.html
+│   │   │   ├── partials
+│   │   │   │   ├── footer.html
+│   │   │   │   ├── head.html
+│   │   │   │   ├── header.html
+│   │   │   │   ├── home.html
+│   │   │   │   ├── languages.html
+│   │   │   │   ├── latest-posts.html
+│   │   │   │   └── post-card.html
+│   │   │   └── tr
+│   │   │       └── contact
+│   │   │           └── single.html
+│   │   ├── package-lock.json
+│   │   ├── static
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   ├── images
+│   │   │   │   └── logo.png
+│   │   │   └── js
+│   │   │       └── main.js
+│   │   ├── themes
+│   │   │   └── magnolia
+│   │   │       ├── LICENSE
+│   │   │       ├── Makefile
+│   │   │       ├── README.md
+│   │   │       ├── doc
+│   │   │       │   ├── comments.md
+│   │   │       │   ├── getting-started.md
+│   │   │       │   ├── media.md
+│   │   │       │   ├── shortcodes.md
+│   │   │       │   └── translation.md
+│   │   │       └── src
+│   │   │           └── wp2hugo
+│   │   └── wordpress-export-to-markdown
+│   │       ├── LICENSE.md
+│   │       ├── README.md
+│   │       ├── app.js
+│   │       ├── output
+│   │       │   ├── pages
+│   │       │   │   ├── 2024
+│   │       │   │   └── 2025
+│   │       │   └── posts
+│   │       │       ├── 2024
+│   │       │       ├── 2025
+│   │       │       ├── 2026
+│   │       │       └── _drafts
+│   │       ├── package-lock.json
+│   │       ├── package.json
+│   │       └── src
+│   │           ├── data.js
+│   │           ├── frontmatter.js
+│   │           ├── intake.js
+│   │           ├── normalizers.js
+│   │           ├── parser.js
+│   │           ├── questions.js
+│   │           ├── shared.js
+│   │           ├── translator.js
+│   │           └── writer.js
+│   └── wp-ar-output
+└── project-tree.txt
+
+64 directories, 63 files
