@@ -19,6 +19,7 @@
 │   │   ├── content
 │   │   │   ├── ar
 │   │   │   │   ├── _index.md
+│   │   │   │   ├── contact.md
 │   │   │   │   ├── custom
 │   │   │   │   │   └── jp_pay_product
 │   │   │   │   ├── pages
@@ -41,7 +42,8 @@
 │   │   │   │       ├── _drafts
 │   │   │   │       └── _index.md
 │   │   │   └── tr
-│   │   │       └── _index.md
+│   │   │       ├── _index.md
+│   │   │       └── contact.md
 │   │   ├── data
 │   │   ├── hugo.toml
 │   │   ├── hugo_extended_0.111.3_Linux-64bit.tar.gz
@@ -53,15 +55,6 @@
 │   │   │   │   ├── redirect.html
 │   │   │   │   ├── single.html
 │   │   │   │   └── taxonomy.html
-│   │   │   ├── ar
-│   │   │   │   └── contact
-│   │   │   │       └── single.html
-│   │   │   ├── contact
-│   │   │   ├── en
-│   │   │   │   ├── contact
-│   │   │   │   │   └── single.html
-│   │   │   │   └── posts
-│   │   │   │       └── list.html
 │   │   │   ├── index.html
 │   │   │   ├── pages
 │   │   │   │   ├── contact.html
@@ -75,8 +68,6 @@
 │   │   │   │   ├── latest-posts.html
 │   │   │   │   └── post-card.html
 │   │   │   └── tr
-│   │   │       └── contact
-│   │   │           └── single.html
 │   │   ├── package-lock.json
 │   │   ├── static
 │   │   │   ├── css
@@ -126,4 +117,4 @@
 │   └── wp-ar-output
 └── project-tree.txt
 
-64 directories, 63 files
+57 directories, 61 files

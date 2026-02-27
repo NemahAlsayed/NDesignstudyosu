@@ -74,9 +74,9 @@ url = "https://nemahalsayed.github.io/NDesignstudyosu/en/pages/2024/03/2024-03-1
 weight = 1
 
 [[menu.main]]
-name = "Contact"
-url = "/en/contact/"
-weight = 2
+name = "Contact" 
+url = "contact" 
+weight = 4
 
 
 [languages]
