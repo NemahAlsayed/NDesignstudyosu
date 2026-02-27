@@ -1,11 +1,15 @@
 baseURL = "https://nemahalsayed.github.io/NDesignstudyosu/"
-languageCode = 'en-us'
-title = 'N Design Studio'
+languageCode = "en-us"
+title = "N Design Studio"
 theme = "magnolia"
 copyright = "&copy; 2026 N Design Studio. All rights reserved."
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+
+############################################
+# GLOBAL PARAMS
+############################################
 
 [params]
 subtitle = "Creative Design for Purposeful Impact"
@@ -57,42 +61,68 @@ link = "https://twitter.com/yourhandle"
 name = "instagram"
 link = "https://instagram.com/youraccount"
 
-[params.footer]
-enabled = false
-
-[params.footer.navigate]
-heading = "Navigate"
-
-[params.footer.contacts]
-enabled = false
-
-
-
-[[menu.main]]
-name = "About"
-url = "https://nemahalsayed.github.io/NDesignstudyosu/en/pages/2024/03/2024-03-10-about/"
-weight = 1
-
-[[menu.main]]
-name = "Contact" 
-url = "contact" 
-weight = 4
-
+############################################
+# MULTILINGUAL CONFIGURATION
+############################################
 
 [languages]
 
+############################################
+# ENGLISH
+############################################
 [languages.en]
 languageName = "English"
 weight = 1
+contentDir = "content/en"
 
+[languages.en.menu]
+  [[languages.en.menu.main]]
+  name = "About"
+  url = "pages/2024/03/2024-03-10-about/"
+  weight = 1
+
+  [[languages.en.menu.main]]
+  name = "Contact"
+  url = "contact"
+  weight = 4
+
+############################################
+# ARABIC
+############################################
 [languages.ar]
 languageName = "العربية"
 weight = 2
-contentDir = "content/ar" 
+contentDir = "content/ar"
 
 [languages.ar.params]
 direction = "rtl"
 
+[languages.ar.menu]
+  [[languages.ar.menu.main]]
+  name = "حول"
+  url = "pages/2024/03/2024-03-10-about/"
+  weight = 1
+
+  [[languages.ar.menu.main]]
+  name = "اتصل بنا"
+  url = "contact"
+  weight = 4
+
+############################################
+# TURKISH
+############################################
 [languages.tr]
 languageName = "Türkçe"
 weight = 3
+contentDir = "content/tr"
+
+[languages.tr.menu]
+  [[languages.tr.menu.main]]
+  name = "Hakkında"
+  url = "pages/2024/03/2024-03-10-about/"
+  weight = 1
+
+  [[languages.tr.menu.main]]
+  name = "İletişim"
+  url = "contact"
+  weight = 4
