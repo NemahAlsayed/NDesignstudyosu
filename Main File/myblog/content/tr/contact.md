@@ -1,4 +1,5 @@
 ---
 title: "İletişim"
-layout: "contact"
+type: "contact" 
+layout: "single"
 ---

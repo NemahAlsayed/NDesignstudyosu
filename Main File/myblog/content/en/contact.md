@@ -1,6 +1,7 @@
 ---
 title: "Contact"
-layout: "contact"
+type: "contact" 
+layout: "single"
 ---
 
 Welcome to our contact page. Get in touch!

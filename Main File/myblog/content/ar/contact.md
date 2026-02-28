@@ -1,4 +1,5 @@
 ---
 title: "اتصل بنا"
-layout: "contact"
+type: "contact" 
+layout: "single"
 ---
