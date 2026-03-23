@@ -72,16 +72,36 @@ link = "https://instagram.com/youraccount"
 ############################################
 [languages.en]
 languageName = "English"
-weight = 2
+weight = 1
 contentDir = "content/en"
 
 [languages.en.menu]
   [[languages.en.menu.main]]
   name = "About"
-  weight = 2
+  url = "about"
+  weight = 1
 
   [[languages.en.menu.main]]
   name = "Contact"
+  url = "contact"
+  weight = 2
+
+############################################
+# TURKISH
+############################################
+[languages.tr]
+languageName = "Türkçe"
+weight = 2
+contentDir = "content/tr"
+
+[languages.tr.menu]
+  [[languages.tr.menu.main]]
+  name = "Hakkında"
+  url = "about"
+  weight = 1
+
+  [[languages.tr.menu.main]]
+  name = "İletişim"
   url = "contact"
   weight = 2
 
@@ -90,7 +110,7 @@ contentDir = "content/en"
 ############################################
 [languages.ar]
 languageName = "العربية"
-weight = 4
+weight = 3
 contentDir = "content/ar"
 
 [languages.ar.params]
@@ -99,27 +119,10 @@ direction = "rtl"
 [languages.ar.menu]
   [[languages.ar.menu.main]]
   name = "حول"
-  weight = 4
+  url = "about"
+  weight = 1
 
   [[languages.ar.menu.main]]
   name = "اتصل بنا"
   url = "contact"
-  weight = 4
-
-############################################
-# TURKISH
-############################################
-[languages.tr]
-languageName = "Türkçe"
-weight = 3
-contentDir = "content/tr"
-
-[languages.tr.menu]
-  [[languages.tr.menu.main]]
-  name = "Hakkında"
-  weight = 3
-
-  [[languages.tr.menu.main]]
-  name = "İletişim"
-  url = "contact"
-  weight = 3
+  weight = 2
