@@ -12,3 +12,11 @@ invalidEmail: "Please enter a valid email address."
 invalidPhone: "Please enter a valid phone number."
 successMessage: "Your message has been sent successfully!"
 errorMessage: "An error occurred while sending your message. Please try again later."
+
+aboutTitle: "About Us"
+aboutSubtitle: "Who we are and what we do"
+
+aboutParagraph1: "We are a multidisciplinary studio dedicated to clarity, creativity, and meaningful communication."
+aboutParagraph2: "Our work spans legal awareness, multilingual content creation, and strategic storytelling."
+aboutParagraph3: "We believe in empowering communities through accessible knowledge and thoughtful design."
+aboutParagraph4: "Through collaboration with nonprofits, educational institutions, and businesses, we aim to make a positive impact through our work."

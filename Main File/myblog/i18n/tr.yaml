@@ -12,3 +12,11 @@ invalidEmail: "Lütfen geçerli bir e‑posta adresi girin."
 invalidPhone: "Lütfen geçerli bir telefon numarası girin."
 successMessage: "Mesajınız başarıyla gönderildi!"
 errorMessage: "Mesajınız gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+
+aboutTitle: "Hakkımızda"
+aboutSubtitle: "Kim olduğumuz ve ne yaptığımız"
+
+aboutParagraph1: "Açıklık, yaratıcılık ve anlamlı iletişime adanmış çok disiplinli bir stüdyoyuz."
+aboutParagraph2: "Çalışmalarımız hukuki farkındalık, çok dilli içerik üretimi ve stratejik hikâye anlatımını kapsar."
+aboutParagraph3: "Toplulukları erişilebilir bilgi ve düşünceli tasarım yoluyla güçlendirmeye inanıyoruz."
+aboutParagraph4: "Kar amacı gütmeyen kuruluşlar, eğitim kurumları ve işletmelerle işbirliği yaparak, çalışmalarımızla olumlu bir etki yaratmayı hedefliyoruz."
