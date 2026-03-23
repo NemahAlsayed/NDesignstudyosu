@@ -72,26 +72,25 @@ link = "https://instagram.com/youraccount"
 ############################################
 [languages.en]
 languageName = "English"
-weight = 1
+weight = 2
 contentDir = "content/en"
 
 [languages.en.menu]
   [[languages.en.menu.main]]
   name = "About"
-  url = "pages/2024/03/2024-03-10-about/"
-  weight = 1
+  weight = 2
 
   [[languages.en.menu.main]]
   name = "Contact"
   url = "contact"
-  weight = 4
+  weight = 2
 
 ############################################
 # ARABIC
 ############################################
 [languages.ar]
 languageName = "العربية"
-weight = 2
+weight = 4
 contentDir = "content/ar"
 
 [languages.ar.params]
@@ -100,8 +99,7 @@ direction = "rtl"
 [languages.ar.menu]
   [[languages.ar.menu.main]]
   name = "حول"
-  url = "pages/2024/03/2024-03-10-about/"
-  weight = 1
+  weight = 4
 
   [[languages.ar.menu.main]]
   name = "اتصل بنا"
@@ -119,7 +117,6 @@ contentDir = "content/tr"
 [languages.tr.menu]
   [[languages.tr.menu.main]]
   name = "Hakkında"
-  url = "pages/2024/03/2024-03-10-about/"
   weight = 3
 
   [[languages.tr.menu.main]]
