@@ -22,7 +22,6 @@ intro = """Welcome to a space where art, storytelling, and thoughtful design com
 mainButton = "Explore the Blog"
 mainButtonRef = "/posts/"
 secondButton = "About Me"
-secondButtonRef = "/page/2024/03/2024-03-10-about/"
 blogTitle = "Latest Posts"
 blogButton = "View All Posts"
 
