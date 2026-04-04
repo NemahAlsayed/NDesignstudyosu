@@ -96,7 +96,7 @@ contentDir = "content/tr"
 
 [languages.tr.params.homepage]
 preTitle = "Yaratıcı Vizyon. İnsan Hikayeleri. Amaçlı Tasarım."
-title = "N Tasarım Stüdyosu"
+title = "N Design Studyosu"
 intro = """Sanat, hikaye anlatımı ve düşünceli tasarımın bir araya geldiği bir alana hoş geldiniz. Toplulukları güçlendiren ve kültürü kutlayan görsel anlatılar, pazarlama farkındalık içeriği ve çok dilli mesajlar oluşturuyorum. En son çalışmalarımı, içgörülerimi ve yaratıcı yolculuklarımı keşfedin — niyet, netlik ve kalp ile tasarlandı."""
 mainButton = "Bloğu Keşfet"
 mainButtonRef = "/posts/"
@@ -129,7 +129,7 @@ direction = "rtl"
 
 [languages.ar.params.homepage]
 preTitle = "رؤية إبداعية. قصص بشرية. تصميم هادف."
-title = "استوديو N للتصميم"
+title = "ستوديو نون للتصميم"
 intro = """مرحباً بك في فضاء يلتقي فيه الفن والسرد والتصميم المدروس. أقوم بإنشاء روايات بصرية، محتوى توعية تسويقية، ورسائل متعددة اللغات تمكن المجتمعات وتحتفل بالثقافة. استكشف أحدث أعمالي، الرؤى، والرحلات الإبداعية — مصممة بعناية، وضوح، وقلب."""
 mainButton = "استكشف المدونة"
 mainButtonRef = "/posts/"
