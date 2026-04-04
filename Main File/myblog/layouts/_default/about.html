@@ -1,28 +1,21 @@
 {{ define "main" }}
 
-<section class="d-flex justify-content-center align-items-center w-100"
+<section class="d-flex align-items-center w-100"
          style="min-height: calc(100vh - 80px);">
+  <div class="hero-card text-center p-5">
+    <h1 class="display-3 fw-bold mb-4">{{ i18n "aboutTitle" }}</h1>
+    <h5 class="text-muted mb-4">{{ i18n "aboutSubtitle" }}</h5>
 
-  <div class="card bg-light shadow-lg p-5"
-       style="max-width: 850px; width: 90%; border-radius: 14px;">
-
-    <div class="text-center mb-4">
-      <h1 class="display-4">{{ i18n "aboutTitle" }}</h1>
-      <h5 class="text-muted">{{ i18n "aboutSubtitle" }}</h5>
-    </div>
-
-    <p class="lead mb-4" style="text-align: center;">{{ i18n "aboutParagraph1" }}</p>
-    <p class="mb-4" style="text-align: center;">{{ i18n "aboutParagraph2" }}</p>
-    <p class="mb-4" style="text-align: center;">{{ i18n "aboutParagraph3" }}</p>
-    <p class="mb-4" style="text-align: center;">{{ i18n "aboutParagraph4" }}</p>
+    <p class="english-intro mb-4">{{ i18n "aboutParagraph1" }}</p>
+    <p class="mb-4">{{ i18n "aboutParagraph2" }}</p>
+    <p class="mb-4">{{ i18n "aboutParagraph3" }}</p>
+    <p class="mb-4">{{ i18n "aboutParagraph4" }}</p>
 
     <div class="text-center mt-4">
       <a href="/NDesignstudyosu/{{ .Lang }}/contact/" class="btn btn-primary me-3">{{ i18n "contactTitle" }}</a>
       <a href="/NDesignstudyosu/{{ .Lang }}/posts/" class="btn btn-outline-primary">{{ i18n "blogButton" }}</a>
     </div>
-
   </div>
-
 </section>
 
 {{ end }}
