@@ -51,15 +51,23 @@ callToAction = "Follow us on social media"
 
 [[params.socials.link]]
 name = "facebook"
-link = "https://facebook.com/yourpage"
+link = "https://www.facebook.com/profile.php?id=61584092261123"
 
 [[params.socials.link]]
 name = "twitter"
-link = "https://twitter.com/yourhandle"
+link = "https://twitter.com/NDesignStudyosu"
 
 [[params.socials.link]]
 name = "instagram"
-link = "https://instagram.com/youraccount"
+link = "https://instagram.com/ndesignstudyosu"
+
+[[params.socials.link]]
+name = "youtube"
+link = "https://www.youtube.com/@ndesignstudio7937"
+
+[[params.socials.link]]
+name = "tiktok"
+link = "https://www.tiktok.com/@ndesignstudyosu"
 
 ############################################
 # MULTILINGUAL CONFIGURATION
