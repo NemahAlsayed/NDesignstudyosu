@@ -7,7 +7,7 @@ keywords: ["كود noon", "noon cashback", "كود خصم noon السعودية"
 author: "فريق عروض noon"
 categories: ["عروض", "تسوق", "كاش باك"]
 tags: ["noon", "كود خصم", "كوبون", "تسوق أونلاين", "Saudi deals", "UAE offers"]
-coverImage: "Noon_Code.png"
+coverImage: "Secret_Code.png"
 ---
 
 {{< rawhtml >}}
@@ -219,7 +219,7 @@ coverImage: "Noon_Code.png"
             <span class="cate">🎮 بلاي ستيشن وألعاب إلكترونية</span>
             <span class="cate">💄 مكياج وكير بشرى فاخر</span>
         </div>
-        <p>هذه الفئات هي الأعلى مبيعًا استنادًا إلى بيانات noon الداخلية للأسبوع الجاري. وعند استخدام الكود <strong>NDX184</strong>، ستحصل على نسبة كاش باك معادلة تراوح بين 5% إلى 10% حسب قيمة الطلب وأهلية المنتج.</p>
+        <p>هذه الفئات هي الأعلى مبيعًا استنادًا إلى بيانات noon الداخلية للأسبوع الجاري. وعند استخدام الكود، ستحصل على نسبة كاش باك معادلة تراوح بين 5% إلى 10% حسب قيمة الطلب وأهلية المنتج.</p>
 
         <!-- interactive reveal block: same as email but extended -->
         <div class="curiosity-block">
@@ -239,7 +239,7 @@ coverImage: "Noon_Code.png"
 
         <h2 style="color:#d10000; margin-top: 1rem;">كيف تستفيد من كود كاش باك noon ؟</h2>
         <ul style="margin-right: 1.8rem; margin-bottom: 1rem;">
-            <li>انسخ الكود <strong>NDX184</strong> بعد الضغط على الزر أعلاه.</li>
+            <li>انسخ الكود بعد الضغط على الزر أعلاه.</li>
             <li>توجه إلى تطبيق noon أو موقع noon الرسمي (السعودية / الإمارات).</li>
             <li>أضف المنتجات المفضلة لديك (يفضل أجهزة وأزياء ذات قيمة عالية لتعظيم الكاش باك).</li>
             <li>في صفحة الدفع، الصق الكود في خانة "الرمز الترويجي / الكوبون".</li>
@@ -253,7 +253,7 @@ coverImage: "Noon_Code.png"
         <hr>
         <p style="font-size:0.9rem;">🛡️ <strong>الشفافية والمصداقية:</strong> هذه الصفحة مدعومة من شركاء noon المعتمدين، ونحن نتبع معايير التسويق بالعمولة. تم تصميم المحتوى لمساعدة المتسوقين في الخليج للحصول على أفضل كاش باك. جميع الألوان المستخدمة (#800000 ، #960018 ، #a70000 ، #d10000 ، #ff0033) تعكس هوية العلامة التجارية الديناميكية.</p>
         <div class="footer-blog">
-            © 2026 – كود noon السري | NDX184 | عروض كاش باك حصرية للمحترفين على LinkedIn. noon Marks are property of Noon.com
+            © 2026 – كود noon السري عروض كاش باك حصرية للمحترفين على LinkedIn. noon Marks are property of Noon.com
         </div>
     </div>
 </div>
