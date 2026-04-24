@@ -1,6 +1,7 @@
 ---
 title: "🎉 عرض لا يُفوّت اليوم على مجفف الشعر Dyson Supersonic™"
 date: 2025-09-24
+draft: true
 categories: 
   - "دايسون"
 tags: 
