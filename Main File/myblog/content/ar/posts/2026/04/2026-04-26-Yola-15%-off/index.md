@@ -2,7 +2,7 @@
 title: "BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%"
 date: 2026-04-26T10:00:00+03:00
 draft: false
-coverImage: "Yola.jpg"
+coverImage: "/images/Yola.jpg"
 description: "اكتشفي كود BEXR السري لخصم 15% على تشكيلات Yola في السعودية. إطلالات Vogue-style تناسب المرأة العصرية والرجل الذي يبحث عن هدية مميزة لشريكة حياته."
 keywords:
   - "كود BEXR"
@@ -363,7 +363,9 @@ categories:
             <div class="code-elegant">رمز العصر: BEXR | خصم 15% على أول طلب</div>
         </div>
         <div class="hero-image">
-            <img src="Yola.jpg" alt="موديل أنيقة YOLA تشكيلة ربيع" style="width:100%;" onerror="this.src='https://placehold.co/600x800/f8efe5/c2a580?text=YOLA+Hero+Editorial'">
+            <a href="https://shopatyola.com/">
+                <img src="/images/Yola.jpg" alt="موديل أنيقة YOLA تشكيلة ربيع" style="width:100%;" onerror="this.src='https://placehold.co/600x800/f8efe5/c2a580?text=YOLA+Hero+Editorial'">
+            </a>
         </div>
     </div>
 
@@ -373,28 +375,36 @@ categories:
     <div class="product-grid">
         <div class="product-card">
             <div class="product-img">
-                <img src="Dress1.jpg" alt="فستان ميدي " onerror="this.src='https://placehold.co/500x667/f4e8de/b48c60?text=Frock+with+belt'">
+                <a href="https://shopatyola.com/collections/womens-dresses/products/ml0237">
+                    <img src="/images/Dress1.jpg" alt="فستان ميدي " onerror="this.src='https://placehold.co/500x667/f4e8de/b48c60?text=Frock+with+belt'">
+                </a>
             </div>
             <div class="product-title">فستان ميدي · روز كاشميري</div>
             <div class="product-desc">لنصيبك من الأنوثة العصرية. قصة تبرز الخصر، قماش ناعم مثالي للسهرات أو الكوفي شوب في جدة.</div>
         </div>
         <div class="product-card">
             <div class="product-img">
-                <img src="Jacket1.jpg" alt="طقم بليزر و بنطلون واسع" onerror="this.src='https://placehold.co/500x667/e8dfd4/a5724b?text=Blazer+set'">
+                <a href="https://shopatyola.com/collections/womens-jackets/products/iye233w254jh">
+                    <img src="/images/Jacket1.jpg" alt="طقم بليزر و بنطلون واسع" onerror="this.src='https://placehold.co/500x667/e8dfd4/a5724b?text=Blazer+set'">
+                </a>
             </div>
             <div class="product-title">طقم Power Suit · رمادي أنيق</div>
             <div class="product-desc">إطلالة قيادية في العمل أو الاجتماعات. قصة أوفر سايز عصرية، تناسب المرأة السعودية الطموحة.</div>
         </div>
         <div class="product-card">
             <div class="product-img">
-                <img src="Kaftan1.jpg" alt="كفتان مطرز بتطريز شعار النخلة" onerror="this.src='https://placehold.co/500x667/eedfcb/b77e4a?text=Caftan+Emirati'">
+                <a href="https://shopatyola.com/collections/womens-dresses/products/iy913s261jh">
+                    <img src="/images/Kaftan1.jpg" alt="كفتان مطرز بتطريز شعار النخلة" onerror="this.src='https://placehold.co/500x667/eedfcb/b77e4a?text=Caftan+Emirati'">
+                </a>
             </div>
             <div class="product-title">كفتان ليلي · تطريز شعار النخلة</div>
             <div class="product-desc">لمسة تراثية معاصرة. محبوك من أقمشة فاخرة، مثالي لحفلات العشاء أو رمضانيات الرياض.</div>
         </div>
         <div class="product-card">
             <div class="product-img">
-                <img src="Dress2.jpg" alt="فستان شيفون بقصة كللوش" onerror="this.src='https://placehold.co/500x667/f3e3d4/a54922?text=Satin+slip+dress'">
+                <a href="https://shopatyola.com/collections/womens-dresses/products/iy829w254cdy">
+                    <img src="/images/Dress2.jpg" alt="فستان شيفون بقصة كلوش" onerror="this.src='https://placehold.co/500x667/f3e3d4/a54922?text=Satin+slip+dress'">
+                </a>
             </div>
             <div class="product-title">فستان بقصة شيفون · عُود وردي</div>
             <div class="product-desc">لمسة جريئة وناعمة. يمكن ارتداؤه مع جاكيت جينز أو بمفرده لإطلالة حالمة.</div>
@@ -407,19 +417,19 @@ categories:
         <h3>إلى من يبحث عن لمسة حب</h3>
         <p>نعم، الرجال الكرام يمكنكم أيضًا أن تكونوا جزءًا من هذه القصة. اهدوا شريكات حياتكم قطعة من YOLA تحمل توقيع <strong>BEXR</strong> — فستاناً يلامس روحها، أو طقماً يعزز ثقتها.<br>
         الهدية الأنسب لمن تحب: 15% خصم يمنحها حرية اختيار ما يليق بجمالها. صدق المشاعر يبدأ باختيار راقٍ.</p>
-        <div style="font-size:0.85rem; margin-top:0.8rem;">💌 "اشتريت فستان الكفتان لزوجتي .. كانت دموع فرحها أجمل هدية." – أحد عملائنا من الرياض</div>
+        <div style="font-size:0.85rem; margin-top:0.8rem;">💌 "اشتريت فستان الكفتان لزوجتي .. كانت كلمات شكرها لي أجمل هدية." – أحد عملائنا من الرياض</div>
     </div>
 
     <!-- كود BEXR الخفي -->
     <div class="coupon-mystery">
-        <div>🎁 مفاجأة التحرير: كود الخصم معلق بين السطور 🎁</div>
+        <div>🎁 مفاجأة: كود الخصم معلق بين السطور 🎁</div>
         <button id="revealBexrBtn" class="btn-reveal">✧ اضغط لاستلام خصمك السري ✧</button>
         <div id="couponRevealBlock" class="coupon-hidden">
             <div style="background:#fcf6f0; border-radius: 32px; padding: 1rem;">
                 <div class="code-block">BEXR</div>
                 <p style="margin-top: 12px; font-size: 1rem;"><strong>15% خصم شامل</strong> على كل تشكيلات Yola في السعودية.<br>
                 ساري عند إدخال الكود في صفحة الدفع. الحد الأدنى للطلب 99 ريال. لا تفوّتي إطلالتك الخاصة.</p>
-                <div style="font-size: 12px;">✔ هدايا رجال العشق : استخدموا الكود لشراء قطعة مميزة لشريكاتكم.</div>
+                <div style="font-size: 12px;">✔ هدايا رجال الرومانسية : استخدموا الكود لشراء قطعة مميزة لشريكاتكم.</div>
             </div>
         </div>
         <div style="font-size: 13px; margin-top: 13px;">كود BEXR = بوابتك لعالم Yola حيث الأناقة تصنع الذكريات.</div>
@@ -437,15 +447,15 @@ categories:
     <!-- معرض إلهامي إضافي -->
     <div style="margin: 2rem 2rem 0;">
         <div style="display: flex; gap: 1.2rem; overflow-x: auto; padding-bottom: 1rem;">
-            <div style="min-width: 160px;"><img src="/images/yola-knit.jpg" onerror="this.src='https://placehold.co/300x400/e7d5c2/a86f3d?text=Knit+Pullover'" style="width:100%; border-radius: 20px;" alt="كنزة صوفية ناعمة"><p style="font-size:13px; margin-top:6px;">كنزة كشمير · هدية مثالية</p></div>
-            <div style="min-width: 160px;"><img src="/images/yola-trench.jpg" onerror="this.src='https://placehold.co/300x400/f2e1cf/b4682e?text=Trench+Coat'" style="width:100%; border-radius: 20px;" alt="ترنش كلاسيكي"><p style="font-size:13px;">ترنش بيج · أناقة زمانية</p></div>
-            <div style="min-width: 160px;"><img src="/images/yola-abaya.jpg" onerror="this.src='https://placehold.co/300x400/eedbc8/b35e2e?text=Embroidered+Abaya'" style="width:100%; border-radius: 20px;" alt="عباية مطرزة بتفاصيل عصرية"><p style="font-size:13px;">عباية راقية · تفصيل سعودي</p></div>
+            <div style="min-width: 160px;"><a href="https://shopatyola.com/collections/womens-tops/products/iye447s261jh"><img src="/images/Blouse1.jpg" onerror="this.src='https://placehold.co/300x400/e7d5c2/a86f3d?text=Knit+Pullover'" style="width:100%; border-radius: 20px;" alt="بلوزة مطرزة ناعمة"></a><p style="font-size:13px; margin-top:6px;">بلوزة مطرزة ناعمة · هدية مثالية</p></div>
+            <div style="min-width: 160px;"><a href="https://shopatyola.com/collections/womens-jackets/products/iye074w254jg"><img src="/images/Coat1.jpg" onerror="this.src='https://placehold.co/300x400/f2e1cf/b4682e?text=Trench+Coat'" style="width:100%; border-radius: 20px;" alt="ترنش كلاسيكي"></a><p style="font-size:13px;">ترنش أسود· أناقة زمانية</p></div>
+            <div style="min-width: 160px;"><a href="https://shopatyola.com/collections/womens-jackets/products/iy732s252to"><img src="/images/Abaya1.jpg" onerror="this.src='https://placehold.co/300x400/eedbc8/b35e2e?text=Embroidered+Abaya'" style="width:100%; border-radius: 20px;" alt="عباية ملونة بتفاصيل عصرية"></a><p style="font-size:13px;">عباية راقية · تفصيل سعودي</p></div>
         </div>
     </div>
 
     <div class="footer-editorial">
         <p>Yola – وجهتك الأولى للتصاميم الفريدة في السعودية. نحن نصنع فرادة لكل أمرأة، ونساعد الرجال على اختيار الهدية التي تترك أثراً. استخدم كود <strong>BEXR</strong> في أول طلب لك أو لشخص تحبه. التسوق متاح في جميع أنحاء المملكة مع شحن سريع.</p>
-        <p style="margin-top: 1rem;">© YOLA MODERN EDIT | الكود BEXR صالح لفترة محدودة. لا يفوتك أسلوبك الخاص.</p>
+        <p style="margin-top: 1rem;">© NDesignStudyosu - 2026 | الكود BEXR صالح لفترة محدودة. لا يفوتك أسلوبك الخاص.</p>
     </div>
 </div>
 
