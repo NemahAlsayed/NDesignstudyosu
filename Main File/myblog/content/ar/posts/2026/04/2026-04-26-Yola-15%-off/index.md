@@ -2,7 +2,7 @@
 title: "BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%"
 date: 2026-04-26T10:00:00+03:00
 draft: false
-coverImage: "/images/yola-bexr-editorial-cover.jpg"
+coverImage: "Yola.jpg"
 description: "اكتشفي كود BEXR السري لخصم 15% على تشكيلات Yola في السعودية. إطلالات Vogue-style تناسب المرأة العصرية والرجل الذي يبحث عن هدية مميزة لشريكة حياته."
 keywords:
   - "كود BEXR"
@@ -363,7 +363,7 @@ categories:
             <div class="code-elegant">رمز العصر: BEXR | خصم 15% على أول طلب</div>
         </div>
         <div class="hero-image">
-            <img src="/images/yola-hero-editorial.jpg" alt="موديل أنيقة YOLA تشكيلة ربيع" style="width:100%;" onerror="this.src='https://placehold.co/600x800/f8efe5/c2a580?text=YOLA+Hero+Editorial'">
+            <img src="Yola.jpg" alt="موديل أنيقة YOLA تشكيلة ربيع" style="width:100%;" onerror="this.src='https://placehold.co/600x800/f8efe5/c2a580?text=YOLA+Hero+Editorial'">
         </div>
     </div>
 
@@ -373,30 +373,30 @@ categories:
     <div class="product-grid">
         <div class="product-card">
             <div class="product-img">
-                <img src="/images/yola-midi-dress.jpg" alt="فستان ميدي بحزام" onerror="this.src='https://placehold.co/500x667/f4e8de/b48c60?text=Frock+with+belt'">
+                <img src="Dress1.jpg" alt="فستان ميدي " onerror="this.src='https://placehold.co/500x667/f4e8de/b48c60?text=Frock+with+belt'">
             </div>
-            <div class="product-title">فستان ميدي بحزام · روز كاشميري</div>
+            <div class="product-title">فستان ميدي · روز كاشميري</div>
             <div class="product-desc">لنصيبك من الأنوثة العصرية. قصة تبرز الخصر، قماش ناعم مثالي للسهرات أو الكوفي شوب في جدة.</div>
         </div>
         <div class="product-card">
             <div class="product-img">
-                <img src="/images/yola-power-suit.jpg" alt="طقم بليزر و بنطلون واسع" onerror="this.src='https://placehold.co/500x667/e8dfd4/a5724b?text=Blazer+set'">
+                <img src="Jacket1.jpg" alt="طقم بليزر و بنطلون واسع" onerror="this.src='https://placehold.co/500x667/e8dfd4/a5724b?text=Blazer+set'">
             </div>
-            <div class="product-title">طقم Power Suit · كحلي أنيق</div>
+            <div class="product-title">طقم Power Suit · رمادي أنيق</div>
             <div class="product-desc">إطلالة قيادية في العمل أو الاجتماعات. قصة أوفر سايز عصرية، تناسب المرأة السعودية الطموحة.</div>
         </div>
         <div class="product-card">
             <div class="product-img">
-                <img src="/images/yola-caftan.jpg" alt="كفتان مطرز بتطريز ذهبي" onerror="this.src='https://placehold.co/500x667/eedfcb/b77e4a?text=Caftan+Emirati'">
+                <img src="Kaftan1.jpg" alt="كفتان مطرز بتطريز شعار النخلة" onerror="this.src='https://placehold.co/500x667/eedfcb/b77e4a?text=Caftan+Emirati'">
             </div>
-            <div class="product-title">كفتان ليلي · تطريز ذهبي</div>
+            <div class="product-title">كفتان ليلي · تطريز شعار النخلة</div>
             <div class="product-desc">لمسة تراثية معاصرة. محبوك من أقمشة فاخرة، مثالي لحفلات العشاء أو رمضانيات الرياض.</div>
         </div>
         <div class="product-card">
             <div class="product-img">
-                <img src="/images/yola-satin-dress.jpg" alt="فستان ساتان بقصة مستقيمة" onerror="this.src='https://placehold.co/500x667/f3e3d4/a54922?text=Satin+slip+dress'">
+                <img src="Dress2.jpg" alt="فستان شيفون بقصة كللوش" onerror="this.src='https://placehold.co/500x667/f3e3d4/a54922?text=Satin+slip+dress'">
             </div>
-            <div class="product-title">فستان ساتان · عُود وردي</div>
+            <div class="product-title">فستان بقصة شيفون · عُود وردي</div>
             <div class="product-desc">لمسة جريئة وناعمة. يمكن ارتداؤه مع جاكيت جينز أو بمفرده لإطلالة حالمة.</div>
         </div>
     </div>
