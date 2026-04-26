@@ -2,7 +2,7 @@
 title: "BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%"
 date: 2026-04-26T10:00:00+03:00
 draft: false
-coverImage: "images/Yola.png"
+coverImage: "Yola.png"
 description: "اكتشفي كود BEXR السري لخصم 15% على تشكيلات Yola في السعودية. إطلالات تناسب المرأة العصرية والرجل الذي يبحث عن هدية مميزة لشريكة حياته."
 keywords:
   - "كود BEXR"
