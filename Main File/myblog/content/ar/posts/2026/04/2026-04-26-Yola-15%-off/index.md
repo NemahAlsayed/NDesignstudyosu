@@ -2,7 +2,7 @@
 title: "BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%"
 date: 2026-04-26T10:00:00+03:00
 draft: false
-coverImage: "Yola.png"
+featured_image: "images/featured.png"
 description: "اكتشفي كود BEXR السري لخصم 15% على تشكيلات Yola في السعودية. إطلالات تناسب المرأة العصرية والرجل الذي يبحث عن هدية مميزة لشريكة حياته."
 keywords:
   - "كود BEXR"
@@ -359,7 +359,7 @@ categories:
         </div>
         <div class="hero-image">
             <a href="https://shopatyola.com/">
-                <img src="images/Yola.png" alt="موديل أنيقة YOLA تشكيلة ربيع" style="width:100%;" onerror="this.src='https://placehold.co/600x800/f8efe5/c2a580?text=YOLA+Hero+Editorial'">
+                <img src="images/featured.png" alt="موديل أنيقة YOLA تشكيلة ربيع" style="width:100%;" onerror="this.src='https://placehold.co/600x800/f8efe5/c2a580?text=YOLA+Hero+Editorial'">
             </a>
         </div>
     </div>
