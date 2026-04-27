@@ -113,12 +113,11 @@ tags: ["hm", "كود خصم", "b2g1", "موضة", "سعودية"]
     </ul>
 
     <div style="border-top: 2px dashed #e2cfb3; margin: 2rem 0; text-align: center; padding-top: 1.5rem;">
-        <a href="https://www2.hm.com/ar_ar/index.html" class="btn-hm" target="_blank">🛒 انقر لتسوق H&M الآن واستخدم A0N5 🛒</a>
+        <a href="https://sa.hm.com/en/" class="btn-hm" target="_blank">🛒 انقر لتسوق H&M الآن واستخدم A0N5 🛒</a>
         <p style="margin-top: 0.8rem;">✔ ينطق على القطع المخفضة + الأساسية. لا يحتاج إلى طباعة كوبون، فقط الصقه عند الخروج.</p>
     </div>
 
     <h2>📌 الأسئلة الشائعة (FAQ)</h2>
-    <p><strong>س: هل يمكن استخدام A0N5 في المتاجر الفعلية؟</strong><br>نعم، في جميع فروع H&M بالمملكة والإمارات، أخبر الكاشير بالكود عند الدفع.</p>
     <p><strong>س: ماذا لو أشتري 6 قطع؟</strong><br>يحسب العرض تلقائياً: كل 3 قطع = أرخص واحدة مجانية، ثم 5% على الإجمالي. أفضل شيء لتوفير كبير.</p>
     <p><strong>س: هل العرض للجنسين؟</strong><br>نعم، رجال ونساء وأطفال – الكود شامل كل الأقسام.</p>
 
