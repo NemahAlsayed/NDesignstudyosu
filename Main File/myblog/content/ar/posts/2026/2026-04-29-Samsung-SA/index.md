@@ -9,6 +9,41 @@ tags: ["سامسونج", "كود خصم", "AFM117", "الكترونيات", "ه�
 categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
+<style>
+/* Fix dark backgrounds - make all cards readable */
+.product-card {
+    background: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+    margin: 20px 0 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+.product-card h3, .product-card h4 {
+    color: #1a1a2e !important;
+}
+.product-card p, .product-card li {
+    color: #333333 !important;
+}
+table {
+    background: #ffffff !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 12px !important;
+    text-align: right !important;
+}
+th {
+    background: #f5f5f5 !important;
+    color: #1a1a2e !important;
+}
+td {
+    color: #333333 !important;
+}
+</style>
+
 ## كود خصم سامسونج السعودية الحصري: `AFM117`
 
 هل تبحث عن أحدث عروض سامسونج في السعودية؟ سواء كنت ترغب في اقتناء **هاتف Galaxy جديد**، أو **شاشة Neo QLED**، أو **ثلاجة Bespoke ذكية**، أو **ساعة Galaxy Fit3** – لدينا لك عرض لا يُفوت.
@@ -30,69 +65,91 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 
 ## 📱 أفضل منتجات سامسونج مبيعاً في السعودية
 
+<div class="product-card">
+
 ### 1. Galaxy S24 Ultra – الأفضل في فئة الفخامة
 
-{{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2401/gallery/sa-en-galaxy-s24-ultra-s928-534770-2401-534770-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy S24 Ultra" width="300" >}}
+<img src="https://images.samsung.com/sa_en/smartphones/galaxy-s26-ultra/images/galaxy-s26-ultra-features-kv.jpg?imbypass=true" alt="Galaxy S24 Ultra" width="250" style="border-radius: 12px;">
 
 - خصم **5%** مع كود `AFM117`
-- [اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/smartphones/galaxy-s24-ultra/ "Galaxy S24 Ultra")
+- 📱 شاشة 6.8 بوصة – كاميرا 200 ميجابكسل – قلم S Pen مدمج
+- [▶ اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/smartphones/galaxy-s24-ultra/ "Galaxy S24 Ultra")
 
----
+</div>
 
-### 2. Galaxy A55 5G – الأعلى مبيعاً في السعودية
+<div class="product-card">
 
-{{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2403/gallery/sa-en-galaxy-a55-5g-a556-533954-2403-533954-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy A55 5G" width="300" >}}
+### 2. Galaxy A57 – الأعلى مبيعاً في السعودية
+
+<img src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/feature/166996881/sa_en-feature--nbsp-551972495?$FB_TYPE_K_JPG$" width="250" style="border-radius: 12px;">
 
 - خصم **5%** مع كود `AFM117`
-- [اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/smartphones/galaxy-a55-5g/ "Galaxy A55 5G")
+- 📱 سعر ممتاز – أداء قوي – بطارية تدوم طويلاً
+- [▶ اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/smartphones/galaxy-a/galaxy-a57-5g-awesome-navy-128gb-sm-a576bdbmmea/ "Galaxy A57")
 
----
+</div>
+
+<div class="product-card">
 
 ### 3. شاشة Neo QLED 4K – خصم 15% رائع
 
-{{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2303/gallery/sa-en-neo-qled-4k-qn85c-534577-2303-534577-65-zoom-01-pc?$684_547_JPG$" alt="Neo QLED 4K" width="300" >}}
+<img src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/qa55qn1efauxsa/gallery/sa-en-qled-qn1ef-qa55qn1efauxsa-552025520?$1164_776_PNG$" alt="Neo QLED 4K" width="250" style="border-radius: 12px;">
 
 - 🔥 خصم **15%** مع كود `AFM117` – أقوى خصم في الحملة
-- [اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/tvs/qled-tv/neo-qled-4k-qn85c-55-inch-qe1d/ "شاشة Neo QLED")
+- 📺 جودة صورة مذهلة – تقنية Mini LED – ذكاء اصطناعي
+- [▶ اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/tvs/qled-tv/qn1ef-55-inch-neo-qled-4k-mini-led-smart-tv-qa55qn1efauxsa/ "شاشة Neo QLED")
 
----
+</div>
+
+<div class="product-card">
 
 ### 4. Galaxy Z Fold6 – للفاخرين وعشاق التقنية
 
-{{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2407/gallery/sa-en-galaxy-z-fold6-f956-543338-2407-543338-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy Z Fold6" width="300" >}}
+<img src="https://images.samsung.com/sa_en/smartphones/galaxy-z-fold6/images/galaxy-z-fold6-features-kv.jpg?imbypass=true" alt="Galaxy Z Fold6" width="250" style="border-radius: 12px;">
 
 - خصم **5%** مع كود `AFM117`
-- [اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/smartphones/galaxy-z-fold6/ "Galaxy Z Fold6")
+- 📱 هاتف قابل للطي – شاشة ضخمة – تعدد المهام باحترافية
+- [▶ اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/smartphones/galaxy-z-fold6/ "Galaxy Z Fold6")
 
----
+</div>
+
+<div class="product-card">
 
 ### 5. Galaxy Fit3 – صحتك في معصمك
 
-{{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2402/gallery/sa-en-galaxy-fit3-sm-r390-534683-2402-534683-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy Fit3" width="300" >}}
+<img src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/feature/165019756/sa_en-feature--nbsp--539972694?$FB_TYPE_K_JPG$" alt="Galaxy Fit3" width="250" style="border-radius: 12px;">
 
 > *"راقب صحتك بذكاء، كل يوم"*
 
 - خصم **5%** مع كود `AFM117`
-- خفيف (18.5 جم) – بطارية 13 يوم – تتبع نوم وتمارين
-- [اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/watches/galaxy-fit/galaxy-fit3-gray-bluetooth-v5-3-sm-r390nzaamea/ "Galaxy Fit3")
+- ⌚ خفيف (18.5 جم) – بطارية 13 يوم – تتبع نوم وتمارين – أكثر من 100 تمرين
+- [▶ اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/watches/galaxy-fit/galaxy-fit3-gray-bluetooth-v5-3-sm-r390nzaamea/ "Galaxy Fit3")
 
----
+</div>
+
+<div class="product-card">
 
 ### 6. ثلاجة Bespoke – خصم 15% على الأجهزة المنزلية
 
-{{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2206/gallery/sa-en-bespoke-rf65c95c1ap-532278-2206-532278-65-zoom-01-pc?$684_547_JPG$" alt="Bespoke Refrigerator" width="300" >}}
+<img src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/rf59a70t1sr-za/gallery/sa-en-twist-ice-maker-rf59a70t1sr-za-550413692?$1164_776_PNG$" alt="Bespoke Refrigerator" width="250" style="border-radius: 12px;">
 
 - 🔥 خصم **15%** مع كود `AFM117`
-- [اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/refrigerators/bespoke-refrigerator/ "ثلاجة Bespoke")
+- 🧺 تصميم عصري – يمكن تخصيص الألوان – تقنية تبريد ذكية
+- [▶ اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/refrigerators/bespoke-refrigerator/ "ثلاجة Bespoke")
 
----
+</div>
+
+<div class="product-card">
 
 ### 7. Galaxy Tab S9 – للدراسة والعمل عن بُعد
 
-{{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2307/gallery/sa-en-galaxy-tab-s9-x710-533877-2307-533877-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy Tab S9" width="300" >}}
+<img src="https://images.samsung.com/is/image/samsung/assets/sa_en/tablets/galaxy-tab-s11/buy/TS11SeeActualSize_PC_inch_1440x547.jpg?$ORIGIN_JPG$" alt="Galaxy Tab S9" width="250" style="border-radius: 12px;">
 
 - خصم **5%** مع كود `AFM117`
-- [اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/tablets/galaxy-tab-s9/ "Galaxy Tab S9")
+- 📝 شاشة 11 بوصة – قلم S Pen مرفق – أداء قوي للمهام المتعددة
+- [▶ اشتري الآن من سامسونج السعودية](https://www.samsung.com/sa_en/tablets/galaxy-tab-s11/buy/ "Galaxy Tab S11 Ultra")
+
+</div>
 
 ---
 
@@ -122,6 +179,6 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 - الأكواد محدودة في كل دورة
 - الميزانية محددة – بمجرد استهلاك الحد الأقصى، قد تتوقف الأكواد عن العمل
 
-> **نصيحة:** إذا كنت تريد أعلى قيمة خصم، ركز على **الإلكترونيات الاستهلاكية** (شاشات، ثلاجات، غسالات) لأنها تحصل على خصم **15%**.
+> **💡 نصيحة:** إذا كنت تريد أعلى قيمة خصم، ركز على **الإلكترونيات الاستهلاكية** (شاشات، ثلاجات، غسالات) لأنها تحصل على خصم **15%**.
 
 ---
