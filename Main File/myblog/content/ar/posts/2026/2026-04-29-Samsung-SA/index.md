@@ -208,7 +208,8 @@ categories: ["سامسونج", "عروض", "إلكترونيات"]
 
 ### تحميل الملف
 
-[**⬇️ اضغط هنا لتحميل الملف (PPTX)**](https://nemahalsayed.github.io/NDesignstudyosu/files/Coffee_Shop_Feasibility_Study.pptx)
+[📥 تحميل ملف دراسة جدوى مقهى (PPTX)](files/ملف%20دراسة%20جدوى%20مقهى%20_%20دليلك%20إلى%20عالم%20الدراسات_%20قابل%20للتعديل.pptx)
+
 
 - الملف آمن  
 - قابل للتعديل  
