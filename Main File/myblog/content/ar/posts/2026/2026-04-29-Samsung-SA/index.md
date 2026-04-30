@@ -1,227 +1,193 @@
 ---
-title: "سامسونج السعودية: خصم حتى 15% مع كود AFM117 + عروض حصرية"
+title: "سامسونج السعودية: كود AFM117 بخصم حتى 15% — نسخة Tech‑Savvy"
 date: 2026-04-30T10:00:00+03:00
 draft: false
 featured_image: "images/Samsung.png"
-description: "خصم يصل إلى 15% على منتجات سامسونج في السعودية باستخدام كود AFM117. هواتف، شاشات، أجهزة منزلية وساعات ذكية. عرض محدود الميزانية."
+description: "خصم يصل إلى 15% على منتجات سامسونج في السعودية باستخدام كود AFM117. تصميم تقني، مقارنات واضحة، وجداول احترافية."
 keywords: ["سامسونج", "خصم", "AFM117", "Galaxy", "عروض سامسونج"]
 tags: ["سامسونج", "خصم", "AFM117", "الكترونيات", "تسوق"]
 categories: ["سامسونج", "عروض", "إلكترونيات"]
 ---
 
-## كود خصم سامسونج السعودية: **AFM117**
+<div style="
+background:linear-gradient(135deg,#800000,#a70000);
+padding:22px;
+border-radius:14px;
+color:#fff;
+font-size:1.3rem;
+font-weight:700;
+text-align:center;
+box-shadow:0 0 15px rgba(255,0,51,0.25);
+">
+🔥 كود خصم سامسونج السعودية: <span style='color:#ff0033;'>AFM117</span> — خصم حتى 15%
+</div>
 
-إذا كنت تبحث عن أفضل عروض سامسونج في السعودية، سواء لشراء **هاتف Galaxy جديد**، أو **شاشة Neo QLED**، أو **ثلاجة Bespoke**، أو **ساعة Fit3**، فالكود **AFM117** يمنحك خصماً يصل إلى **15%** حسب نوع المنتج.
+## لماذا هذا العرض مهم؟
 
----
-
-## تفاصيل الخصم
-
-| الفئة | نسبة الخصم | أمثلة المنتجات |
-|------|------------|----------------|
-| **الإلكترونيات الاستهلاكية** | **15%** | شاشات، ثلاجات، غسالات، مكيفات |
-| **فئة MX (الأجهزة الذكية)** | **5%** | هواتف Galaxy – أجهزة لوحية – Wearables |
-
-> ⚠️ **تنبيه:** الكود محدود الميزانية وقد يتوقف عند استهلاك الحد المخصص.
-
----
-
-## الفرق بين أجهزة التابلت 5G و WiFi
-
-كثير من المستخدمين يتساءلون عن سبب اختلاف السعر بين النسختين رغم تشابه المواصفات. إليك التوضيح المختصر:
-
-### الفرق الأساسي
-
-| الإصدار | الاتصال | شريحة SIM | الاستخدام |
-|---------|----------|------------|-----------|
-| **WiFi** | عبر WiFi فقط | لا | مناسب للاستخدام المنزلي |
-| **5G** | WiFi + شبكة الجوال | نعم | مناسب للتنقل والعمل الميداني |
-
-### لماذا نسخة 5G أغلى؟
-
-| السبب | التوضيح |
-|-------|----------|
-| **مودم 5G إضافي** | تكلفة تصنيع أعلى |
-| **رسوم ترخيص** | تدفعها سامسونج لشركات مثل كوالكوم |
-
-**فارق السعر المعتاد:** بين **150 – 400 ريال** حسب الطراز.
-
-### أيهما يناسبك؟
-
-| استخدامك | الخيار الأفضل | السبب |
-|----------|----------------|--------|
-| استخدام منزلي أو مكتبي | **WiFi** | لا تحتاج اتصالاً خلوياً |
-| تنقل ودراسة | **5G** | إنترنت دائم |
-| لديك باقة بيانات كبيرة | **WiFi** | استخدم Hotspot |
-| سفر أو عمل ميداني | **5G** | اتصال مستمر |
+إذا كنت تفكر في شراء **هاتف Galaxy جديد**، أو **شاشة Neo QLED**، أو **ثلاجة Bespoke**، فهذا المقال يقدم لك كل شيء بأسلوب تقني واضح، مع مقارنة دقيقة بين المنتجات، وجداول محسّنة، وروابط مباشرة للشراء.
 
 ---
 
-## مثال واقعي — Galaxy Tab A9+
+# 🎯 تفاصيل الخصم — بنمط Tech‑UI
 
-| الإصدار | السعر |
-|---------|--------|
-| WiFi 128GB | ~ 650 ريال |
-| 5G 128GB | ~ 760 ريال |
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:#960018; color:#fff;">
+<th style="padding:12px; border:1px solid #a70000;">الفئة</th>
+<th style="padding:12px; border:1px solid #a70000;">نسبة الخصم</th>
+<th style="padding:12px; border:1px solid #a70000;">أمثلة المنتجات</th>
+</tr>
+<tr>
+<td style="padding:12px; border:1px solid #a70000;">الإلكترونيات الاستهلاكية</td>
+<td style="padding:12px; border:1px solid #a70000; color:#ff0033; font-weight:700;">15%</td>
+<td style="padding:12px; border:1px solid #a70000;">شاشات، ثلاجات، غسالات، مكيفات</td>
+</tr>
+<tr>
+<td style="padding:12px; border:1px solid #a70000;">فئة MX (الأجهزة الذكية)</td>
+<td style="padding:12px; border:1px solid #a70000; color:#ff0033; font-weight:700;">5%</td>
+<td style="padding:12px; border:1px solid #a70000;">هواتف Galaxy – أجهزة لوحية – Wearables</td>
+</tr>
+</table>
 
----
-
-## أفضل منتجات سامسونج مبيعاً في السعودية
-
-### مقارنة سريعة
-
-| المنتج | الفئة | الخصم | السعر | الأفضل لـ |
-|--------|--------|--------|--------|-----------|
-| **Galaxy S24 Ultra** | هواتف | 5% | ~ 4500 ريال | الفخامة |
-| **Galaxy A57** | هواتف | 5% | ~ 1200 ريال | الميزانية |
-| **Neo QLED 4K** | شاشات | 15% | ~ 3500 ريال | مشاهدة فاخرة |
-| **Galaxy Z Fold6** | هواتف | 5% | ~ 7000 ريال | الإنتاجية |
-| **Galaxy Fit3** | Wearables | 5% | ~ 300 ريال | اللياقة |
-| **ثلاجة Bespoke** | أجهزة منزلية | 15% | ~ 4000 ريال | التصميم |
-| **Galaxy Tab S11** | لوحي | 5% | ~ 3000 ريال | العمل |
-| **Galaxy Tab S10 Lite** | لوحي | 5% | ~ 1500 ريال | الطلاب |
-
----
-
-## Galaxy S24 Ultra
-
-![Galaxy S24 Ultra](images/Galaxy_s24.png)
-
-- خصم **5%** مع الكود  
-- شاشة 6.8 بوصة – كاميرا 200MP – قلم S Pen  
-- [شراء الآن](https://www.samsung.com/sa_en/smartphones/galaxy-s24-ultra/)
+<div style="
+background:linear-gradient(135deg,#800000,#d10000);
+color:#fff;
+padding:18px;
+border-radius:12px;
+margin:25px 0;
+border-left:6px solid #ff0033;
+box-shadow:0 0 12px rgba(255,0,51,0.25);
+">
+⚠️ <strong>تنبيه:</strong> الكود AFM117 محدود الميزانية وقد يتوقف عند استهلاك الحد المخصص.
+</div>
 
 ---
 
-## Galaxy A57
+# 💡 الفرق بين تابلت 5G و WiFi — نسخة تقنية
 
-![Galaxy A57](images/Galaxy_A57.png)
+## مقارنة الاتصال
 
-- خصم **5%**  
-- أداء ممتاز وسعر مناسب  
-- [شراء الآن](https://www.samsung.com/sa_en/smartphones/galaxy-a/galaxy-a57-5g-awesome-navy-128gb-sm-a576bdbmmea/)
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:#800000; color:#fff;">
+<th style="padding:12px; border:1px solid #960018;">الإصدار</th>
+<th style="padding:12px; border:1px solid #960018;">الاتصال</th>
+<th style="padding:12px; border:1px solid #960018;">شريحة SIM</th>
+<th style="padding:12px; border:1px solid #960018;">الاستخدام</th>
+</tr>
+<tr>
+<td style="padding:12px; border:1px solid #960018;">WiFi</td>
+<td style="padding:12px; border:1px solid #960018;">WiFi فقط</td>
+<td style="padding:12px; border:1px solid #960018;">لا</td>
+<td style="padding:12px; border:1px solid #960018;">منزل/مكتب</td>
+</tr>
+<tr>
+<td style="padding:12px; border:1px solid #960018;">5G</td>
+<td style="padding:12px; border:1px solid #960018;">WiFi + شبكة الجوال</td>
+<td style="padding:12px; border:1px solid #960018;">نعم</td>
+<td style="padding:12px; border:1px solid #960018;">تنقل/ميدان</td>
+</tr>
+</table>
 
----
+## لماذا نسخة 5G أغلى؟
 
-## شاشة Neo QLED 4K
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:#a70000; color:#fff;">
+<th style="padding:12px; border:1px solid #d10000;">السبب</th>
+<th style="padding:12px; border:1px solid #d10000;">التوضيح</th>
+</tr>
+<tr>
+<td style="padding:12px; border:1px solid #d10000;">مودم 5G إضافي</td>
+<td style="padding:12px; border:1px solid #d10000;">تكلفة تصنيع أعلى</td>
+</tr>
+<tr>
+<td style="padding:12px; border:1px solid #d10000;">رسوم ترخيص</td>
+<td style="padding:12px; border:1px solid #d10000;">رسوم تدفعها سامسونج لشركات مثل كوالكوم</td>
+</tr>
+</table>
 
-![Neo QLED 4K](images/Neo.png)
-
-- خصم **15%**  
-- Mini LED – ذكاء اصطناعي  
-- [شراء الآن](https://www.samsung.com/sa_en/tvs/qled-tv/qn1ef-55-inch-neo-qled-4k-mini-led-smart-tv-qa55qn1efauxsa/)
-
----
-
-## Galaxy Z Fold6
-
-![Galaxy Z Fold6](images/Z_Fold.png)
-
-- خصم **5%**  
-- شاشة قابلة للطي – إنتاجية عالية  
-- [شراء الآن](https://www.samsung.com/sa_en/smartphones/galaxy-z-fold6/)
-
----
-
-## Galaxy Fit3
-
-![Galaxy Fit3](images/Fit_3.png)
-
-> "راقب صحتك بذكاء، كل يوم"
-
-- خصم **5%**  
-- بطارية 13 يوم – أكثر من 100 تمرين  
-- [شراء الآن](https://www.samsung.com/sa_en/watches/galaxy-fit/galaxy-fit3-gray-bluetooth-v5-3-sm-r390nzaamea/)
-
----
-
-## ثلاجة Bespoke
-
-![Bespoke Refrigerator](images/Fridge.png)
-
-- خصم **15%**  
-- تصميم قابل للتخصيص  
-- [شراء الآن](https://www.samsung.com/sa_en/refrigerators/bespoke-refrigerator/)
-
----
-
-## Galaxy Tab S11
-
-![Galaxy Tab S11](images/TabS11.png)
-
-- خصم **5%**  
-- شاشة 11 بوصة – قلم S Pen  
-- [شراء الآن](https://www.samsung.com/sa_en/tablets/galaxy-tab-s11/buy/)
+<div style="
+background:#1a1a1a;
+color:#ff0033;
+padding:18px;
+border-radius:12px;
+margin:25px 0;
+border:1px solid #ff0033;
+font-weight:700;
+">
+💡 الخلاصة: إذا كان استخدامك داخل المنزل أو المكتب، نسخة WiFi تكفي تماماً.
+</div>
 
 ---
 
-## Galaxy Tab S10 Lite
+# 📊 أفضل منتجات سامسونج — لوحة مقارنة تقنية
 
-![Galaxy Tab S10](images/Tab_S10.png)
-
-- خصم **5%**  
-- مناسب للطلاب  
-- [شراء الآن](https://www.samsung.com/sa_en/tablets/galaxy-tab-s/galaxy-tab-s10-lite-coralred-128gb-sm-x400nzramea/)
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:#960018; color:#fff;">
+<th style="padding:12px; border:1px solid #a70000;">المنتج</th>
+<th style="padding:12px; border:1px solid #a70000;">الفئة</th>
+<th style="padding:12px; border:1px solid #a70000;">الخصم</th>
+<th style="padding:12px; border:1px solid #a70000;">السعر</th>
+<th style="padding:12px; border:1px solid #a70000;">الأفضل لـ</th>
+</tr>
+<tr>
+<td style="padding:12px; border:1px solid #a70000;">Galaxy S24 Ultra</td>
+<td style="padding:12px; border:1px solid #a70000;">هواتف</td>
+<td style="padding:12px; border:1px solid #a70000;">5%</td>
+<td style="padding:12px; border:1px solid #a70000;">~4500 ريال</td>
+<td style="padding:12px; border:1px solid #a70000;">الفخامة</td>
+</tr>
+<tr>
+<td style="padding:12px; border:1px solid #a70000;">Neo QLED 4K</td>
+<td style="padding:12px; border:1px solid #a70000;">شاشات</td>
+<td style="padding:12px; border:1px solid #a70000; color:#ff0033; font-weight:700;">15%</td>
+<td style="padding:12px; border:1px solid #a70000;">~3500 ريال</td>
+<td style="padding:12px; border:1px solid #a70000;">مشاهدة فاخرة</td>
+</tr>
+</table>
 
 ---
 
-## شروط استخدام الكود
-
-- صالح مرة واحدة لكل مستخدم  
-- يعمل فقط طالما الميزانية متوفرة  
-- صالح على متجر سامسونج السعودية  
-- غير صالح على الإكسسوارات
-
----
-
-## طريقة استخدام الكود
+# 🚀 كيفية استخدام الكود AFM117
 
 1. اختر المنتج  
 2. أضفه للسلة  
 3. أدخل الكود: **AFM117**  
-4. سيظهر الخصم تلقائياً  
+4. يظهر الخصم تلقائياً  
 5. أكمل الدفع  
 
 ---
 
-## لا تنتظر — الميزانية محدودة
+# 🎁 هدية مجانية — ملف دراسة جدوى مقهى (PPTX)
 
-- الأكواد محدودة  
-- الميزانية تُستهلك بسرعة  
-- الأفضل استخدام الكود فوراً  
-
-> 💡 **نصيحة:** أعلى خصم تحصل عليه يكون على **الإلكترونيات الاستهلاكية** (15%).
-
----
-
-## اقتباس ملهم
-
-> **"لا تبيع المنتج… بل الحلم الذي يصنعه في ذهن العميل."**  
-> – راي ليونيل
-
----
-
-## هدية مجانية لك 🎁 — ملف دراسة جدوى مقهى (PPTX)
-
-**ملف دراسة جدوى مقهى – نسخة قابلة للتعديل (PPTX)**  
-مناسب للطلاب ورواد الأعمال.
-
-### تحميل الملف
-
-[📥 تحميل ملف دراسة جدوى مقهى (PPTX)](files/ملف%20دراسة%20جدوى%20مقهى%20_%20دليلك%20إلى%20عالم%20الدراسات_%20قابل%20للتعديل.pptx)
-
-
-- الملف آمن  
-- قابل للتعديل  
-- جاهز للاستخدام  
+<a href="files/ملف%20دراسة%20جدوى%20مقهى%20_%20دليلك%20إلى%20عالم%20الدراسات_%20قابل%20للتعديل.pptx"
+style="
+display:inline-block;
+background:linear-gradient(135deg,#800000,#ff0033);
+color:#fff;
+padding:14px 22px;
+border-radius:10px;
+font-weight:700;
+text-decoration:none;
+box-shadow:0 0 12px rgba(255,0,51,0.35);
+margin:20px 0;
+">
+⬇️ تحميل ملف دراسة جدوى مقهى (PPTX)
+</a>
 
 ---
 
-## لماذا أقدّم هذا الملف مجاناً؟
-
-- **أنا:** أحصل على عمولة بسيطة عند الشراء بالكود  
-- **أنت:** تحصل على خصم + ملف مجاني  
-- **الجميع يستفيد**  
+<div style="
+background:linear-gradient(135deg,#960018,#d10000);
+color:#fff;
+padding:25px;
+border-radius:18px;
+margin:35px 0;
+text-align:center;
+font-size:1.25rem;
+border-right:6px solid #ff0033;
+box-shadow:0 0 15px rgba(150,0,24,0.35);
+">
+<strong>“لا تبيع المنتج… بل الحلم الذي يصنعه في ذهن العميل.”</strong><br>
+<span style="opacity:0.8;">– راي ليونيل</span>
+</div>
 
 ---
-
