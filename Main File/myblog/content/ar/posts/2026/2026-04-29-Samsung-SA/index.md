@@ -31,6 +31,7 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ## 📱 أفضل منتجات سامسونج مبيعاً في السعودية
 
 ### 1. Galaxy S24 Ultra – الأفضل في فئة الفخامة
+
 {{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2401/gallery/sa-en-galaxy-s24-ultra-s928-534770-2401-534770-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy S24 Ultra" width="300" >}}
 
 - خصم **5%** مع كود `AFM117`
@@ -39,6 +40,7 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
 ### 2. Galaxy A55 5G – الأعلى مبيعاً في السعودية
+
 {{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2403/gallery/sa-en-galaxy-a55-5g-a556-533954-2403-533954-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy A55 5G" width="300" >}}
 
 - خصم **5%** مع كود `AFM117`
@@ -47,6 +49,7 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
 ### 3. شاشة Neo QLED 4K – خصم 15% رائع
+
 {{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2303/gallery/sa-en-neo-qled-4k-qn85c-534577-2303-534577-65-zoom-01-pc?$684_547_JPG$" alt="Neo QLED 4K" width="300" >}}
 
 - 🔥 خصم **15%** مع كود `AFM117` – أقوى خصم في الحملة
@@ -55,6 +58,7 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
 ### 4. Galaxy Z Fold6 – للفاخرين وعشاق التقنية
+
 {{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2407/gallery/sa-en-galaxy-z-fold6-f956-543338-2407-543338-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy Z Fold6" width="300" >}}
 
 - خصم **5%** مع كود `AFM117`
@@ -63,9 +67,10 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
 ### 5. Galaxy Fit3 – صحتك في معصمك
+
 {{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2402/gallery/sa-en-galaxy-fit3-sm-r390-534683-2402-534683-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy Fit3" width="300" >}}
 
-> *"لا تترك الحرارة تفوتك صحتك"*
+> *"راقب صحتك بذكاء، كل يوم"*
 
 - خصم **5%** مع كود `AFM117`
 - خفيف (18.5 جم) – بطارية 13 يوم – تتبع نوم وتمارين
@@ -74,6 +79,7 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
 ### 6. ثلاجة Bespoke – خصم 15% على الأجهزة المنزلية
+
 {{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2206/gallery/sa-en-bespoke-rf65c95c1ap-532278-2206-532278-65-zoom-01-pc?$684_547_JPG$" alt="Bespoke Refrigerator" width="300" >}}
 
 - 🔥 خصم **15%** مع كود `AFM117`
@@ -82,6 +88,7 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
 ### 7. Galaxy Tab S9 – للدراسة والعمل عن بُعد
+
 {{< figure src="https://images.samsung.com/is/image/samsung/p6pim/sa_en/2307/gallery/sa-en-galaxy-tab-s9-x710-533877-2307-533877-65-zoom-01-pc?$684_547_JPG$" alt="Galaxy Tab S9" width="300" >}}
 
 - خصم **5%** مع كود `AFM117`
