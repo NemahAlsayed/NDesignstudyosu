@@ -138,10 +138,8 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ✅ الملف نظيف 100% – لا يحتوي على فيروسات
 
 {{< rawhtml >}}
-<a href="https://nemahalsayed.github.io/NDesignstudyosu/files/ملف%20دراسة%20جدوى%20مقهى%20_%20دليلك%20إلى%20عالم%20الدراسات_%20قابل%20للتعديل.pptx" 
-   style="display:inline-block; background:linear-gradient(135deg,#1a3a4a,#0d2c3c); color:#fff; padding:14px 22px; border-radius:10px; font-weight:700; text-decoration:none; box-shadow:0 0 12px rgba(0,160,255,0.35); margin:20px 0; border:1px solid #00aaff;">
-📥 تحميل ملف دراسة جدوى مقهى (PPTX) – اضغط هنا
-</a>
+[📥 تحميل ملف دراسة جدوى مقهى (PPTX)](files/ملف%20دراسة%20جدوى%20مقهى%20_%20دليلك%20إلى%20عالم%20الدراسات_%20قابل%20للتعديل.pptx)
+
 {{< /rawhtml >}}
 
 **ملاحظة:** الملف قابل للتعديل بالكامل دراسة متكاملة أكثر من 50 صفحة. أتمنى أن تستفيد منه، وأذكرني بدعوة طيبة إذا أفادك. 🤲
