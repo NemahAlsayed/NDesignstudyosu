@@ -4,23 +4,16 @@ date: 2026-04-30T10:00:00+03:00
 draft: false
 featured_image: "images/Samsung.png"
 description: "خصم يصل إلى 15% على منتجات سامسونج في السعودية باستخدام كود AFM117. تصميم تقني، مقارنات واضحة، وجداول احترافية."
-keywords: ["سامسونج", "خصم", "AFM117", "Galaxy", "عروض سامسونج"]
-tags: ["سامسونج", "خصم", "AFM117", "الكترونيات", "تسوق"]
-categories: ["سامسونج", "عروض", "إلكترونيات"]
+keywords: ["سامسونج", "خصم", "AFM117", "Galaxy", "عروض سامسونج", "راي ليونيل", "دراسة جدوى مقهى"]
+tags: ["سامسونج", "خصم", "AFM117", "الكترونيات", "تسوق", "هدية مجانية"]
+categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
-<div style="
-background:linear-gradient(135deg,#800000,#a70000);
-padding:22px;
-border-radius:14px;
-color:#fff;
-font-size:1.3rem;
-font-weight:700;
-text-align:center;
-box-shadow:0 0 15px rgba(255,0,51,0.25);
-">
-🔥 كود خصم سامسونج السعودية: <span style='color:#ff0033;'>AFM117</span> — خصم حتى 15%
+{{< rawhtml >}}
+<div style="background:linear-gradient(135deg,#1a2a3a,#0d1c2c); padding:22px; border-radius:14px; color:#fff; font-size:1.3rem; font-weight:700; text-align:center; box-shadow:0 0 15px rgba(0,160,255,0.25); margin:20px 0;">
+🔥 كود خصم سامسونج السعودية: <span style="color:#00aaff;">AFM117</span> — خصم حتى 15%
 </div>
+{{< /rawhtml >}}
 
 ## لماذا هذا العرض مهم؟
 
@@ -28,166 +21,131 @@ box-shadow:0 0 15px rgba(255,0,51,0.25);
 
 ---
 
-# 🎯 تفاصيل الخصم — بنمط Tech‑UI
+## 🎯 تفاصيل الخصم — بنمط Tech‑UI
 
-<table style="width:100%; border-collapse:collapse; margin:20px 0;">
-<tr style="background:#960018; color:#fff;">
-<th style="padding:12px; border:1px solid #a70000;">الفئة</th>
-<th style="padding:12px; border:1px solid #a70000;">نسبة الخصم</th>
-<th style="padding:12px; border:1px solid #a70000;">أمثلة المنتجات</th>
-</tr>
-<tr>
-<td style="padding:12px; border:1px solid #a70000;">الإلكترونيات الاستهلاكية</td>
-<td style="padding:12px; border:1px solid #a70000; color:#ff0033; font-weight:700;">15%</td>
-<td style="padding:12px; border:1px solid #a70000;">شاشات، ثلاجات، غسالات، مكيفات</td>
-</tr>
-<tr>
-<td style="padding:12px; border:1px solid #a70000;">فئة MX (الأجهزة الذكية)</td>
-<td style="padding:12px; border:1px solid #a70000; color:#ff0033; font-weight:700;">5%</td>
-<td style="padding:12px; border:1px solid #a70000;">هواتف Galaxy – أجهزة لوحية – Wearables</td>
-</tr>
-</table>
+| الفئة | نسبة الخصم | أمثلة المنتجات |
+| :--- | :---: | :--- |
+| **الإلكترونيات الاستهلاكية** | **15%** | شاشات، ثلاجات، غسالات، مكيفات |
+| **فئة MX (الأجهزة الذكية)** | **5%** | هواتف Galaxy – أجهزة لوحية – Wearables |
 
-<div style="
-background:linear-gradient(135deg,#800000,#d10000);
-color:#fff;
-padding:18px;
-border-radius:12px;
-margin:25px 0;
-border-left:6px solid #ff0033;
-box-shadow:0 0 12px rgba(255,0,51,0.25);
-">
+{{< rawhtml >}}
+<div style="background:linear-gradient(135deg,#1a3a4a,#0d2c3c); color:#fff; padding:18px; border-radius:12px; margin:25px 0; border-right:6px solid #00aaff; box-shadow:0 0 12px rgba(0,160,255,0.25);">
 ⚠️ <strong>تنبيه:</strong> الكود AFM117 محدود الميزانية وقد يتوقف عند استهلاك الحد المخصص.
 </div>
+{{< /rawhtml >}}
 
 ---
 
-# 💡 الفرق بين تابلت 5G و WiFi — نسخة تقنية
+## 💡 الفرق بين تابلت 5G و WiFi — نسخة تقنية
 
-## مقارنة الاتصال
+### مقارنة الاتصال
 
-<table style="width:100%; border-collapse:collapse; margin:20px 0;">
-<tr style="background:#800000; color:#fff;">
-<th style="padding:12px; border:1px solid #960018;">الإصدار</th>
-<th style="padding:12px; border:1px solid #960018;">الاتصال</th>
-<th style="padding:12px; border:1px solid #960018;">شريحة SIM</th>
-<th style="padding:12px; border:1px solid #960018;">الاستخدام</th>
-</tr>
-<tr>
-<td style="padding:12px; border:1px solid #960018;">WiFi</td>
-<td style="padding:12px; border:1px solid #960018;">WiFi فقط</td>
-<td style="padding:12px; border:1px solid #960018;">لا</td>
-<td style="padding:12px; border:1px solid #960018;">منزل/مكتب</td>
-</tr>
-<tr>
-<td style="padding:12px; border:1px solid #960018;">5G</td>
-<td style="padding:12px; border:1px solid #960018;">WiFi + شبكة الجوال</td>
-<td style="padding:12px; border:1px solid #960018;">نعم</td>
-<td style="padding:12px; border:1px solid #960018;">تنقل/ميدان</td>
-</tr>
-</table>
+| الإصدار | الاتصال | شريحة SIM | الاستخدام الأنسب |
+| :--- | :--- | :---: | :--- |
+| **WiFi** | WiFi فقط | ❌ | منزل / مكتب |
+| **5G** | WiFi + شبكة الجوال | ✅ | تنقل / ميدان / سفر |
 
-## لماذا نسخة 5G أغلى؟
+### لماذا نسخة 5G أغلى؟
 
-<table style="width:100%; border-collapse:collapse; margin:20px 0;">
-<tr style="background:#a70000; color:#fff;">
-<th style="padding:12px; border:1px solid #d10000;">السبب</th>
-<th style="padding:12px; border:1px solid #d10000;">التوضيح</th>
-</tr>
-<tr>
-<td style="padding:12px; border:1px solid #d10000;">مودم 5G إضافي</td>
-<td style="padding:12px; border:1px solid #d10000;">تكلفة تصنيع أعلى</td>
-</tr>
-<tr>
-<td style="padding:12px; border:1px solid #d10000;">رسوم ترخيص</td>
-<td style="padding:12px; border:1px solid #d10000;">رسوم تدفعها سامسونج لشركات مثل كوالكوم</td>
-</tr>
-</table>
+| السبب | التوضيح |
+| :--- | :--- |
+| **مودم 5G إضافي** | تكلفة تصنيع أعلى بسبب شريحة اتصال إضافية |
+| **رسوم ترخيص** | رسوم تدفعها سامسونج لشركات مثل كوالكوم |
 
-<div style="
-background:#1a1a1a;
-color:#ff0033;
-padding:18px;
-border-radius:12px;
-margin:25px 0;
-border:1px solid #ff0033;
-font-weight:700;
-">
-💡 الخلاصة: إذا كان استخدامك داخل المنزل أو المكتب، نسخة WiFi تكفي تماماً.
+{{< rawhtml >}}
+<div style="background:#1a1a2e; color:#00aaff; padding:18px; border-radius:12px; margin:25px 0; border:1px solid #00aaff; font-weight:700;">
+💡 <strong>الخلاصة:</strong> إذا كان استخدامك داخل المنزل أو المكتب، نسخة WiFi تكفي تماماً وتوفر مالك.
 </div>
+{{< /rawhtml >}}
 
 ---
 
-# 📊 أفضل منتجات سامسونج — لوحة مقارنة تقنية
+## 📊 أفضل منتجات سامسونج — لوحة مقارنة تقنية
 
-<table style="width:100%; border-collapse:collapse; margin:20px 0;">
-<tr style="background:#960018; color:#fff;">
-<th style="padding:12px; border:1px solid #a70000;">المنتج</th>
-<th style="padding:12px; border:1px solid #a70000;">الفئة</th>
-<th style="padding:12px; border:1px solid #a70000;">الخصم</th>
-<th style="padding:12px; border:1px solid #a70000;">السعر</th>
-<th style="padding:12px; border:1px solid #a70000;">الأفضل لـ</th>
-</tr>
-<tr>
-<td style="padding:12px; border:1px solid #a70000;">Galaxy S24 Ultra</td>
-<td style="padding:12px; border:1px solid #a70000;">هواتف</td>
-<td style="padding:12px; border:1px solid #a70000;">5%</td>
-<td style="padding:12px; border:1px solid #a70000;">~4500 ريال</td>
-<td style="padding:12px; border:1px solid #a70000;">الفخامة</td>
-</tr>
-<tr>
-<td style="padding:12px; border:1px solid #a70000;">Neo QLED 4K</td>
-<td style="padding:12px; border:1px solid #a70000;">شاشات</td>
-<td style="padding:12px; border:1px solid #a70000; color:#ff0033; font-weight:700;">15%</td>
-<td style="padding:12px; border:1px solid #a70000;">~3500 ريال</td>
-<td style="padding:12px; border:1px solid #a70000;">مشاهدة فاخرة</td>
-</tr>
-</table>
+| المنتج | الفئة | الخصم | السعر التقريبي | الأفضل لـ |
+| :--- | :--- | :---: | :--- | :--- |
+| **Galaxy S24 Ultra** | هواتف | 5% | ~4,500 ريال | الفخامة والأداء |
+| **Galaxy A57** | هواتف | 5% | ~1,200 ريال | الميزانية المناسبة |
+| **Neo QLED 4K** | شاشات | **15%** | ~3,500 ريال | مشاهدة فاخرة |
+| **Galaxy Z Fold6** | هواتف | 5% | ~7,000 ريال | التقنية والإبداع |
+| **Galaxy Fit3** | Wearables | 5% | ~300 ريال | تتبع الصحة |
+| **ثلاجة Bespoke** | أجهزة منزلية | **15%** | ~4,000 ريال | التصميم والتخصيص |
+| **Galaxy Tab S11** | أجهزة لوحية | 5% | ~3,000 ريال | الإنتاجية والعمل |
+| **Galaxy Tab S10 Lite** | أجهزة لوحية | 5% | ~1,500 ريال | الطلاب والميزانية |
 
 ---
 
-# 🚀 كيفية استخدام الكود AFM117
+## 📱 روابط شراء سريعة
 
-1. اختر المنتج  
-2. أضفه للسلة  
-3. أدخل الكود: **AFM117**  
-4. يظهر الخصم تلقائياً  
-5. أكمل الدفع  
+| المنتج | الرابط |
+| :--- | :--- |
+| **Galaxy S24 Ultra** | [اشتري الآن](https://www.samsung.com/sa_en/smartphones/galaxy-s24-ultra/) |
+| **Galaxy A57** | [اشتري الآن](https://www.samsung.com/sa_en/smartphones/galaxy-a/galaxy-a57-5g-awesome-navy-128gb-sm-a576bdbmmea/) |
+| **Neo QLED 4K** | [اشتري الآن](https://www.samsung.com/sa_en/tvs/qled-tv/qn1ef-55-inch-neo-qled-4k-mini-led-smart-tv-qa55qn1efauxsa/) |
+| **Galaxy Z Fold6** | [اشتري الآن](https://www.samsung.com/sa_en/smartphones/galaxy-z-fold6/) |
+| **Galaxy Fit3** | [اشتري الآن](https://www.samsung.com/sa_en/watches/galaxy-fit/galaxy-fit3-gray-bluetooth-v5-3-sm-r390nzaamea/) |
+| **ثلاجة Bespoke** | [اشتري الآن](https://www.samsung.com/sa_en/refrigerators/bespoke-refrigerator/) |
+| **Galaxy Tab S11** | [اشتري الآن](https://www.samsung.com/sa_en/tablets/galaxy-tab-s11/buy/) |
+| **Galaxy Tab S10 Lite** | [اشتري الآن](https://www.samsung.com/sa_en/tablets/galaxy-tab-s/galaxy-tab-s10-lite-coralred-128gb-sm-x400nzramea/) |
 
 ---
 
-# 🎁 هدية مجانية — ملف دراسة جدوى مقهى (PPTX)
+## ✅ شروط استخدام كود AFM117
 
-<a href="files/ملف%20دراسة%20جدوى%20مقهى%20_%20دليلك%20إلى%20عالم%20الدراسات_%20قابل%20للتعديل.pptx"
-style="
-display:inline-block;
-background:linear-gradient(135deg,#800000,#ff0033);
-color:#fff;
-padding:14px 22px;
-border-radius:10px;
-font-weight:700;
-text-decoration:none;
-box-shadow:0 0 12px rgba(255,0,51,0.35);
-margin:20px 0;
-">
-⬇️ تحميل ملف دراسة جدوى مقهى (PPTX)
+| الشرط | التفاصيل |
+| :--- | :--- |
+| **الاستخدام** | مرة واحدة لكل مستخدم |
+| **الصلاحية** | طالما أن الأكواد والميزانية متوفرة |
+| **المتجر** | متجر سامسونج السعودية فقط (`samsung.com/sa_en`) |
+| **الاستثناءات** | غير صالح على الإكسسوارات |
+
+---
+
+## 🚀 كيفية استخدام الكود AFM117
+
+1. اختر المنتج من القائمة أعلاه
+2. أضفه إلى سلة التسوق
+3. في صفحة الدفع، أدخل الكود: **`AFM117`**
+4. سيظهر الخصم تلقائياً (15% أو 5% حسب الفئة)
+5. أكمل الدفع واستلم منتجك
+
+{{< rawhtml >}}
+<div style="background:linear-gradient(135deg,#1a3a4a,#0d2c3c); color:#00aaff; padding:18px; border-radius:12px; margin:25px 0; border-right:6px solid #00aaff;">
+💡 <strong>نصيحة:</strong> إذا كنت تريد أعلى قيمة خصم، ركز على <strong>الإلكترونيات الاستهلاكية</strong> (شاشات، ثلاجات، غسالات) لأنها تحصل على خصم <strong>15%</strong>.
+</div>
+{{< /rawhtml >}}
+
+---
+
+{{< rawhtml >}}
+<div style="background:linear-gradient(135deg,#1a2a3a,#0d1c2c); color:#fff; padding:25px; border-radius:18px; margin:35px 0; text-align:center; font-size:1.25rem; border-right:6px solid #00aaff; box-shadow:0 0 15px rgba(0,160,255,0.25);">
+<strong>“لا تبيع أبداً المنتج. بع الحلم الذي يصنعه المنتج في ذهن العميل. فالعقول تشتري الخيال قبل أن تشتري الأيدي السلعة.”</strong><br>
+<span style="opacity:0.8;">– راي ليونيل، أسرار مسار المبيعات</span>
+</div>
+{{< /rawhtml >}}
+
+---
+
+## 🎁 هدية مجانية مني لك
+
+طيب، أنا وش أستفيد؟
+
+- **أنا:** أحصل على عمولة بسيطة على كل عملية شراء تتم عبر الكود الخاص بي
+- **أنت:** تحصل على خصم يصل إلى 15% على منتج رائع من سامسونج
+- **وكلنا:** نكسب بعض. وإذا ما اشتريت، أذكرني بدعوة بظهر الغيب تكفي 😊👍
+
+📄 **ملف "دراسة جدوى مقهى – دليلك إلى عالم الدراسات" (قابل للتعديل - PPTX)**
+
+✅ الملف نظيف 100% – لا يحتوي على فيروسات
+
+{{< rawhtml >}}
+<a href="https://nemahalsayed.github.io/NDesignstudyosu/files/Coffee_Shop_Feasibility_Study.pptx" 
+   style="display:inline-block; background:linear-gradient(135deg,#1a3a4a,#0d2c3c); color:#fff; padding:14px 22px; border-radius:10px; font-weight:700; text-decoration:none; box-shadow:0 0 12px rgba(0,160,255,0.35); margin:20px 0; border:1px solid #00aaff;">
+📥 تحميل ملف دراسة جدوى مقهى (PPTX) – اضغط هنا
 </a>
+{{< /rawhtml >}}
+
+**ملاحظة:** الملف قابل للتعديل بالكامل. أتمنى أن تستفيد منه، وأذكرني بدعوة طيبة إذا أفادك. 🤲
 
 ---
 
-<div style="
-background:linear-gradient(135deg,#960018,#d10000);
-color:#fff;
-padding:25px;
-border-radius:18px;
-margin:35px 0;
-text-align:center;
-font-size:1.25rem;
-border-right:6px solid #ff0033;
-box-shadow:0 0 15px rgba(150,0,24,0.35);
-">
-<strong>“لا تبيع المنتج… بل الحلم الذي يصنعه في ذهن العميل.”</strong><br>
-<span style="opacity:0.8;">– راي ليونيل</span>
-</div>
-
----
