@@ -219,15 +219,10 @@ categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق", "
 
 🔗 **رابط تحميل الملف (مجاني بالكامل):**
 
-<a href="/workspaces/NDesignstudyosu/Main File/myblog/content/ar/posts/2026/2026-04-29-Samsung-SA/files/ملف دراسة جدوى مقهى _ دليلك إلى عالم الدراسات_ قابل للتعديل.pptx" 
-download style="display: inline-block; background-color: #1f3e48; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 15px 0;">
-    📥 تحميل ملف دراسة جدوى مقهى (PPTX) – اضغط هنا
-</a>
-
+[📥 تحميل ملف دراسة جدوى مقهى (PPTX) – اضغط هنا](files/دراسة_جدوى_مقهى_دليلك_إلى_عالم_الدراسات_قابل_للتعديل.pptx)
 
 ---
 
 **ملاحظة:** الملف قابل للتعديل بالكامل. أتمنى أن تستفيد منه، وأذكرني بدعوة طيبة إذا أفادك. 🤲
 
 ---
-
