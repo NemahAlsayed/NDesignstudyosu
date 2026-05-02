@@ -2,7 +2,7 @@
 title: "هلال بوكنج: عرض حصري لدول الخليج — خصم 25$ على أي حجز بقيمة 500$+"
 date: 2026-05-02T11:30:00+03:00
 draft: false
-featured_image: "images/halalbooking.png"
+featured_image: "images/Halal_Booking.png"
 description: "منصّة HalalBooking تقدّم خصماً حصرياً لدول الخليج: 25$ على أي حجز بقيمة 500$+. اكتشف أفضل المنتجعات والوجهات الحلال حول العالم."
 keywords: ["هلال بوكنج", "سفر حلال", "خصم الخليج", "فنادق للمسلمين", "عروض السفر"]
 tags: ["HalalBooking", "السفر", "العروض", "الخليج"]
