@@ -1,4 +1,4 @@
-<a href="https://gohugo.io/"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="Hugo" width="565"></a>
+[![Hugo](https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true)](https://gohugo.io/)
 
 A Fast and Flexible Static Site Generator built with love by [bep](https://github.com/bep), [spf13](https://spf13.com/) and [friends](https://github.com/gohugoio/hugo/graphs/contributors) in [Go](https://go.dev/).
 
@@ -7,7 +7,7 @@ A Fast and Flexible Static Site Generator built with love by [bep](https://githu
 [Documentation](https://gohugo.io/getting-started/) |
 [Installation Guide](https://gohugo.io/getting-started/installing/) |
 [Contribution Guide](CONTRIBUTING.md) |
-[Twitter](https://twitter.com/gohugoio)
+[Twitter](https://twitter.com/hugoio)
 
 [![GoDoc](https://godoc.org/github.com/gohugoio/hugo?status.svg)](https://godoc.org/github.com/gohugoio/hugo)
 [![Tests on Linux, MacOS and Windows](https://github.com/gohugoio/hugo/workflows/Test/badge.svg)](https://github.com/gohugoio/hugo/actions?query=workflow%3ATest)
@@ -38,14 +38,12 @@ A good rule of thumb is that each piece of content renders in around 1 milliseco
 Hugo is designed to work well for any kind of website including blogs, tumbles, and docs.
 
 ## Banner Sponsors
-<p>&nbsp;</p>
-<p float="left">
-  <a href="https://www.linode.com/?utm_campaign=hugosponsor&utm_medium=banner&utm_source=hugogithub" target="_blank"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/linode-logo_standard_light_medium.png" width="200" alt="Linode"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://buttercms.com/hugo-cms/?utm_campaign=sponsorship&utm_medium=banner&utm_source=hugogithub" target="_blank"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/butter-dark.svg?sanitize=true" width="280" alt="ButterCMS"></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.gravitykit.com/?ref=532&campaign=hugo&utm_campaign=hugosponsor&utm_medium=banner&utm_source=hugogithub" target="_blank"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/graitykit-dark.svg?sanitize=true" width="160" alt="Gravity Kit"></a>
-</p>
-<p>&nbsp;</p>
+
+[![Linode](https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/linode-logo_standard_light_medium.png)](https://www.linode.com/?utm_campaign=hugosponsor&utm_medium=banner&utm_source=hugogithub)
+
+[![ButterCMS](https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/butter-dark.svg?sanitize=true)](https://buttercms.com/hugo-cms/?utm_campaign=sponsorship&utm_medium=banner&utm_source=hugogithub)
+
+[![Gravity Kit](https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/graitykit-dark.svg?sanitize=true)](https://www.gravitykit.com/?ref=532&campaign=hugo&utm_campaign=hugosponsor&utm_medium=banner&utm_source=hugogithub)
 
 ## Supported Architectures
 

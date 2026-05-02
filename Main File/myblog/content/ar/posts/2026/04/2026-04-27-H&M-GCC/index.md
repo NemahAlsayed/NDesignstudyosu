@@ -8,6 +8,8 @@ keywords: ["كود H&M", "A0N5", "خصم H&M السعودية", "buy 2 get 1 fre
 tags: ["hm", "كود خصم", "b2g1", "موضة", "سعودية"]
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 {{< rawhtml >}}
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">

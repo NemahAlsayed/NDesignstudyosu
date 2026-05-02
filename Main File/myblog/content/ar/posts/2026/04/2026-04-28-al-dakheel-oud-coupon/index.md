@@ -9,6 +9,8 @@ tags: ["عطور", "عود", "كود خصم", "الدخيل", "DO64", "تخفي�
 categories: ["عود-الدخيل","عروض", "عطور", "تسوق"]
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 {{< rawhtml >}}
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">

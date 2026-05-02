@@ -30,6 +30,7 @@ categories:
   - "إطلالات"
 ---
 
+<!-- markdownlint-disable MD033 -->
 
 {{< rawhtml >}}
 <!DOCTYPE html>

@@ -10,6 +10,8 @@ tags: ["noon", "كود خصم", "كوبون", "تسوق أونلاين", "Saudi 
 coverImage: "Secret_Code.png"
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 {{< rawhtml >}}
 <style>
         * {

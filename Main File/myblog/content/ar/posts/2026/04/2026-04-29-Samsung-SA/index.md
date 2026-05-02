@@ -9,6 +9,8 @@ tags: ["سامسونج", "خصم", "AFM117", "الكترونيات", "تسوق",
 categories: ["سامسونج", "عروض", "إلكترونيات", "تسوق"]
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 {{< rawhtml >}}
 <div style="background:linear-gradient(135deg,#1a2a3a,#0d1c2c); padding:22px; border-radius:14px; color:#fff; font-size:1.3rem; font-weight:700; text-align:center; box-shadow:0 0 15px rgba(0,160,255,0.25); margin:20px 0;">
 🔥 كود خصم سامسونج السعودية: <span style="color:#00aaff;">AFM117</span> — خصم حتى 15%
