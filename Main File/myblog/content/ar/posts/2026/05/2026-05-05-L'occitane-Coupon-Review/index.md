@@ -166,22 +166,22 @@ categories: ["جمال", "مراجعات", "تجارب شخصية"]
 <!-- ——— PRODUCT 1 ——— -->
 <div class="product-card">
     <div class="img-placeholder">
-        <img src="images/almond-milk-concentrate.jpg" alt="Almond Milk Concentrate">
+        <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw482f441c/images/almond-amande-shower-oil-refill-duo-500ml.png?sw=600&sh=600" alt="ِAlmond-amande-shower-oil-refill-duo">
     </div>
     <div style="padding: 1rem 1.2rem;">
-        <h3 style="color:#5c3b1f;">كريم الجسم بزيت اللوز</h3>
+        <h3 style="color:#5c3b1f;">ثنائي زيت اللوز للاستحمام الفاخر</h3>
         <p style="font-size:0.85rem; color:#6b4a2a;">
-        أول منتج جعلني أشعر أن الترطيب يمكن أن يكون “طقسًا فاخرًا”.  
+        أول منتج جعلني أشعر أن الاستحمام يمكن أن يكون “طقسًا فاخرًا”.  
         ملمس مخملي، رائحة سبا، ونتيجة تُرى وتُحس.
         </p>
-        <a href="https://sa.loccitane.com/almond-milk-concentrate" class="btn-shop">تسوق المنتج →</a>
+        <a href="https://sa.loccitane.com/%D8%A7%D9%84%D9%87%D8%AF%D8%A7%D9%8A%D8%A7-%D9%88%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D9%82%D9%8A%D9%91%D9%85%D8%A9/%D8%AB%D9%86%D8%A7%D8%A6%D9%8A-%D8%B2%D9%8A%D8%AA-%D8%A7%D9%84%D9%84%D9%88%D8%B2-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AD%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1/almond-amande-shower-oil-refill-duo.html?lang=ar_SA" class="btn-shop">تسوق المنتج →</a>
     </div>
 </div>
 
 <!-- ——— PRODUCT 2 ——— -->
 <div class="product-card">
     <div class="img-placeholder">
-        <img src="images/shea-intensive-hand-balm.jpg" alt="Shea Intensive Hand Balm">
+        <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw36c2449d/images/pdp%20images/01MA150K26-7.jpg?sw=600&sh=600" alt="Shea Intensive Hand Balm">
     </div>
     <div style="padding: 1rem 1.2rem;">
         <h3 style="color:#5c3b1f;">بلسم اليدين بزبدة الشيا 25%</h3>
@@ -189,14 +189,14 @@ categories: ["جمال", "مراجعات", "تجارب شخصية"]
         اليدين مرآة التعب… وهذا البلسم يعيد لهما حياة جديدة.  
         علاج حقيقي، وليس مجرد كريم.
         </p>
-        <a href="https://sa.loccitane.com/shea-intensive-hand-balm" class="btn-shop">تسوق المنتج →</a>
+        <a href="https://sa.loccitane.com/%D8%A7%D9%84%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D9%8B/%D9%83%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D8%B4%D9%8A%D8%A7-%D9%84%D9%84%D9%8A%D8%AF%D9%8A%D9%86/01MA150K26.html?lang=ar_SA" class="btn-shop">تسوق المنتج →</a>
     </div>
 </div>
 
 <!-- ——— PRODUCT 3 ——— -->
 <div class="product-card">
     <div class="img-placeholder">
-        <img src="images/immortelle-divine-cream.jpg" alt="Immortelle Divine Cream">
+        <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw364d1889/images/27DC050I23_6.jpg?sw=600&sh=600" alt="Immortelle Divine Cream">
     </div>
     <div style="padding: 1rem 1.2rem;">
         <h3 style="color:#5c3b1f;">كريم الخلود الماسي</h3>
@@ -204,44 +204,44 @@ categories: ["جمال", "مراجعات", "تجارب شخصية"]
         كريم العمر… بكل معنى الكلمة.  
         إشراقة، شدّ، وثقة تظهر على وجهك كل صباح.
         </p>
-        <a href="https://sa.loccitane.com/immortelle-divine-cream" class="btn-shop">تسوق المنتج →</a>
+        <a href="https://sa.loccitane.com/%D9%85%D8%B1%D8%B7%D8%A8%D8%A7%D8%AA-%D9%88%D9%83%D8%B1%D9%8A%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D8%AC%D9%87/%D9%85%D8%B1%D8%B7%D8%A8-%D8%A5%D9%8A%D9%85%D9%88%D8%B1%D8%AA%D9%84-%D8%AF%D9%8A%D9%81%D8%A7%D9%8A%D9%86/27DC050I23.html?lang=ar_SA" class="btn-shop">تسوق المنتج →</a>
     </div>
 </div>
 
 <!-- ——— PRODUCT 4 ——— -->
 <div class="product-card">
     <div class="img-placeholder">
-        <img src="images/intensive-repair-shampoo.jpg" alt="Intensive Repair Shampoo">
+        <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw586223f9/images/les%20classiques/1200x1200_23EP050AMR25.jpg?sw=600&sh=600" alt="EP050AMR25">
     </div>
     <div style="padding: 1rem 1.2rem;">
-        <h3 style="color:#5c3b1f;">شامبو علاج التلف 500ml</h3>
+        <h3 style="color:#5c3b1f;">أو دو بيرفيوم آمبر 500ml</h3>
         <p style="font-size:0.85rem; color:#6b4a2a;">
-        كل غسلة شعر تتحول إلى جلسة علاج.  
-        لمعان، نعومة، ورائحة تبقى معك.
+         نفحات منعشة من البرغموت، مع قاعدة دافئة من الفانيليا والمسك والباتشولي.أذا بغيتي الكل يسألك عن عطرك، جربي هذا ولن تندمي! رائحة أنثوية وثبات يدوم.
         </p>
-        <a href="https://sa.loccitane.com/intensive-repair-shampoo" class="btn-shop">تسوق المنتج →</a>
+        <a href="https://sa.loccitane.com/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/%D8%A3%D9%88-%D8%AF%D9%88-%D8%A8%D9%8A%D8%B1%D9%81%D9%8A%D9%88%D9%85-%D8%A2%D9%85%D8%A8%D8%B1/23EP050AMR25.html?lang=ar_SA" class="btn-shop">تسوق المنتج →</a>
     </div>
 </div>
 
 <!-- ——— PRODUCT 5 ——— -->
 <div class="product-card">
     <div class="img-placeholder">
-        <img src="images/terre-de-lumiere.jpg" alt="Terre de Lumière EDP">
+        <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw28966a7d/images/23EP050IPR25-3.jpg?sw=600&sh=600" alt="أو دو بيرفيوم أو دي باري">
     </div>
     <div style="padding: 1rem 1.2rem;">
-        <h3 style="color:#5c3b1f;">عطر تير دو لوميير</h3>
+        <h3 style="color:#5c3b1f;">ع</h3>
         <p style="font-size:0.85rem; color:#6b4a2a;">
         رائحة غروب ذهبي… دافئة، أنثوية، لا تُنسى.  
-        عطر توقيع بكل معنى الكلمة.
+        عطر توقيع بكل معنى الكلمة
+         نوتات دافئة تجمع بين التوابل والزهور والخشب، بلمسة فاخرة وحسية.من المنتجات الكلاسيكية من لوكسيتان.
         </p>
-        <a href="https://sa.loccitane.com/terre-de-lumiere" class="btn-shop">تسوق العطر →</a>
+        <a href="https://sa.loccitane.com/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9/%D8%A3%D9%88-%D8%AF%D9%88-%D8%A8%D9%8A%D8%B1%D9%81%D9%8A%D9%88%D9%85-%D8%A3%D9%88-%D8%AF%D9%8A-%D8%A8%D8%A7%D8%B1%D9%8A/23EP050IPR25.html?lang=ar_SA" class="btn-shop">تسوق العطر →</a>
     </div>
 </div>
 
 <!-- ——— PRODUCT 6 (NEW) ——— -->
 <div class="product-card">
     <div class="img-placeholder">
-        <img src="images/cedrat-deodorant.jpg" alt="Cedrat Deodorant">
+        <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw3065c276/images/20DO070BX25-1.jpg?sw=600&sh=600" alt="Cedrat Deodorant">
     </div>
     <div style="padding: 1rem 1.2rem;">
         <h3 style="color:#5c3b1f;">مزيل عرق سدرات الرجالي</h3>
@@ -249,7 +249,7 @@ categories: ["جمال", "مراجعات", "تجارب شخصية"]
         منعش، ثابت، ورائحة رجولية نظيفة.  
         إضافة مثالية لهدية أو للاستخدام اليومي.
         </p>
-        <a href="https://sa.loccitane.com/cedrat-deodorant" class="btn-shop">تسوق المنتج →</a>
+        <a href="https://sa.loccitane.com/%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%AC%D8%B3%D9%85/%D9%85%D8%B2%D9%8A%D9%84-%D8%B1%D8%A7%D8%A6%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D9%82-%D8%B3%D9%8A%D8%AF%D8%B1-%D8%A3%D9%88%D9%86%D8%B3%D9%88-%28%D8%A3%D9%88-%D8%AF%D9%88-%D8%A8%D9%88%29/20DO070BX25.html?lang=ar_SA" class="btn-shop">تسوق المنتج →</a>
     </div>
 </div>
 
