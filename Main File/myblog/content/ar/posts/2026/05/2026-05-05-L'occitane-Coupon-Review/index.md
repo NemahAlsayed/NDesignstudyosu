@@ -254,7 +254,7 @@ categories: ["جمال", "مراجعات", "تجارب شخصية"]
         <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw586223f9/images/les%20classiques/1200x1200_23EP050AMR25.jpg?sw=600&sh=600" alt="EP050AMR25">
     </div>
     <div style="padding: 1rem 1.2rem;">
-        <h3 style="color:#5c3b1f;">أو دو بيرفيوم آمبر 500ml</h3>
+        <h3 style="color:#5c3b1f;">أو دو بيرفيوم آمبر 50ml</h3>
         <p style="font-size:0.85rem; color:#6b4a2a;">
          نفحات منعشة من البرغموت، مع قاعدة دافئة من الفانيليا والمسك والباتشولي.أذا بغيتي الكل يسألك عن عطرك، جربي هذا ولن تندمي! رائحة أنثوية وثبات يدوم.
         </p>
