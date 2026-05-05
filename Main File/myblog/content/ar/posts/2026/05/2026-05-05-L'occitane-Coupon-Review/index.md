@@ -175,7 +175,8 @@ categories: ["جمال", "مراجعات", "تجارب شخصية"]
     <p style="margin-top:1rem;">
     <strong>لماذا أشارككِ هذه المنتجات تحديدًا؟</strong>  
     لأنها الأجود في فئتها… والأكثر تأثيرًا.  
-    العميل الذي يختار الفاخر هو الأقرب للشراء عندما يجد خصمًا ذكيًا — وهذا بالضبط ما يقدمه لكِ <strong>A162</strong>.
+    العميل الذي يختار الفاخر هو الأقرب للشراء عندما يجد 
+    خصمًا ذكيًا — وهذا بالضبط ما يقدمه لكِ. لماذا؟ لأنه بمنطق كود الخصم يعمل على المنتجات الغير المخفضة، يعني اللي من النادر تحصلي تخفيض عليها والفاخرة والأكثر جودة في فئتها. راسلت لوكستان قبل نشر في مدونتي وجبت لكم كود الخصم. إذا استفدتوا منه اذكروني بالخير.<strong>A162</strong>.
     </p>
 
     <div style="background: #fef8e7; padding: 1rem; border-radius: 24px; margin: 1rem 0; border-right: 4px solid #b8860b;">
@@ -194,7 +195,7 @@ categories: ["جمال", "مراجعات", "تجارب شخصية"]
 <!-- ——— FEATURED IMAGE PLACEHOLDER INSIDE THE POST ——— -->
 <div style="padding: 0 2rem 1rem; text-align: center;">
     <div class="img-placeholder" style="border-radius: 28px; overflow: hidden; border: 1px solid rgba(184,134,11,0.3);">
-        <img src="/images/Loccitane.png" alt="لوكسيتان - المنتجات الفاخرة" style="width:100%; height:auto; display:block;">
+        <img src="images/Loccitane.png" alt="لوكسيتان - المنتجات الفاخرة" style="width:100%; height:auto; display:block;">
     </div>
     <p style="font-size:0.7rem; color:#a28b6f; margin-top:0.3rem;">أفخم تشكيلة لوكسيتان في السعودية – مع كود خصم A162</p>
 </div>
