@@ -232,7 +232,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
 <!-- PRODUCT 3 -->
 <div class="product-card">
     <div class="img-placeholder">
-        <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw364d1889/images/27DC050I23_6.jpg?sw=600&sh=600" alt="Immortelle Divine Cream">
+        <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw1ddc1b1c/images/27DC050I23_2.jpg?sw=600&sh=600" alt="Immortelle Divine Cream">
     </div>
     <div style="padding: 1rem 1.2rem;">
         <h3 style="color:#5c3b1f;">Immortelle Divine Cream</h3>
