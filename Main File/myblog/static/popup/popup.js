@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             body: JSON.stringify({
                 access_key: "aecf5170-80f0-4c48-8e28-71d5f1dfc993",
                 email: email,
+                group: "Loccitane PDF Leads",
                 subject: "L'Occitane PDF Guide Request",
                 message: "User requested the L'Occitane PDF guide."
             })
