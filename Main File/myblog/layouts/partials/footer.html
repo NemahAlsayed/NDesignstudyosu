@@ -11,51 +11,52 @@
       {{ end }}
     </div>
   </section>
-  <!-- Tagline --> <p class="footer-tagline mb-3 text-center w-100"> 
-    Creative Design for Purposeful Impact </p>
+
+  <!-- Tagline -->
+  <p class="footer-tagline mb-3 text-center w-100">
+    Creative Design for Purposeful Impact
+  </p>
   {{ end }}
 
+  <!-- Optional: Contact Info (only if enabled) -->
+  {{ if .Site.Params.footer.contacts.enabled }}
+  <div class="footer-contact text-center mb-3">
 
-    <!-- Optional: Contact Info (only if enabled) -->
-    {{ if .Site.Params.footer.contacts.enabled }}
-    <div class="footer-contact text-center mb-3">
-
-      {{ if .Site.Params.footer.contacts.mail }}
-      <p class="mb-1">
-        <i class="bi bi-envelope me-2"></i>
-        <a class="text-muted" href="mailto:{{ .Site.Params.footer.contacts.mail }}">
-          {{ .Site.Params.footer.contacts.mail }}
-        </a>
-      </p>
-      {{ end }}
-
-      {{ if .Site.Params.footer.contacts.phone }}
-      <p class="mb-1">
-        <i class="bi bi-telephone me-2"></i>
-        <a class="text-muted" href="callto:{{ .Site.Params.footer.contacts.phone }}">
-          {{ .Site.Params.footer.contacts.phone }}
-        </a>
-      </p>
-      {{ end }}
-
-    </div>
+    {{ if .Site.Params.footer.contacts.mail }}
+    <p class="mb-1">
+      <i class="bi bi-envelope me-2"></i>
+      <a class="text-muted" href="mailto:{{ .Site.Params.footer.contacts.mail }}">
+        {{ .Site.Params.footer.contacts.mail }}
+      </a>
+    </p>
     {{ end }}
 
-    <!-- Optional: Business Hours -->
-    {{ if .Site.Params.schedules.enabledFooter }}
-    <div class="footer-hours text-center mb-3">
-      {{ range .Site.Params.schedules.days }}
-      <div class="fw-light">{{ . }}</div>
-      {{ end }}
-    </div>
+    {{ if .Site.Params.footer.contacts.phone }}
+    <p class="mb-1">
+      <i class="bi bi-telephone me-2"></i>
+      <a class="text-muted" href="callto:{{ .Site.Params.footer.contacts.phone }}">
+        {{ .Site.Params.footer.contacts.phone }}
+      </a>
+    </p>
     {{ end }}
-   <!-- loccitane post signup popup -->  
-{{ if eq .File.BaseFileName "loccitane-top-5-ksa-a162-en" }}
-<link rel="stylesheet" href="/popup/popup.css">
-<script src="/popup/popup.js"></script>
-{{ end }}
 
   </div>
+  {{ end }}
+
+  <!-- Optional: Business Hours -->
+  {{ if .Site.Params.schedules.enabledFooter }}
+  <div class="footer-hours text-center mb-3">
+    {{ range .Site.Params.schedules.days }}
+    <div class="fw-light">{{ . }}</div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- L'Occitane post signup popup (only on that single post) -->
+  {{ if and .IsPage (eq .File.BaseFileName "loccitane-top-5-ksa-a162-en") }}
+  <link rel="stylesheet" href="/popup/popup.css">
+  <script src="/popup/popup.js"></script>
+  {{ end }}
 
   <!-- Copyright -->
   <div class="text-center mt-4">
