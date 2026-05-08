@@ -53,9 +53,9 @@
   {{ end }}
 
   <!-- L'Occitane post signup popup (only on that single post) -->
-  {{ if and .IsPage (eq .File.BaseFileName "06-05-2026-L'occitane-Coupon") }}
-  <link rel="stylesheet" href="/popup/popup.css">
-  <script src="/popup/popup.js"></script>
+  {{ if and .IsPage (strings.Contains .File.Path "06-05-2026-L'occitane-Coupon") }}
+  <link rel="stylesheet" href="{{ "popup/popup.css" | relURL }}">
+  <script src="{{ "popup/popup.js" | relURL }}"></script>
   {{ end }}
 
   <!-- Copyright -->
