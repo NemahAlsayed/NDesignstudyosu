@@ -30,7 +30,13 @@
                 {{end}}
                 {{end}}
               </div>
-              <div class="card-text d-none d-lg-block">{{.Summary | plainify}}</div>
+              <div class="card-text d-none d-lg-block">
+                {{ with .Params.description }}
+                  {{ . | plainify | truncate 180 }}
+                {{ else }}
+                  {{ .Summary | plainify | truncate 180 }}
+                {{ end }}
+              </div>
               <div>
                 <p class="card-text"></p>
                 <small class="">{{.ReadingTime}} minutes read</small>
