@@ -31,13 +31,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: Build Hugo site
+        run: |
+          cd "Main File/myblog"
+          hugo --minify
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: 'Main File/myblog/public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
