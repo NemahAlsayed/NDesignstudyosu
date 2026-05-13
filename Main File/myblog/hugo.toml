@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "N Design Studio"
 theme = "magnolia"
 copyright = "&copy; 2026 N Design Studio. All rights reserved."
-
+googleAnalytics = "G-MG76R19NGW"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
@@ -160,3 +160,8 @@ blogButton = "عرض جميع المنشورات"
   name = "اتصل بنا"
   url = "contact"
   weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

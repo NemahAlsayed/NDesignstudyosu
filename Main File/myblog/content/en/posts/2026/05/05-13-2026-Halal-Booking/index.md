@@ -4,10 +4,10 @@ description: "A visually stunning, premium halal luxury travel guide featuring 3
 date: 2026-05-13
 featured_image: "images/Halal_Booking.png"
 tags: ["halal travel", "luxury travel", "GCC", "halalbooking", "PDF guide"]
+comments: true
 ---
 
 <style>
-/* Elegant magazine-style typography */
 .post-title {
   font-family: 'Playfair Display', serif;
   font-size: 3.2rem;
@@ -52,17 +52,18 @@ tags: ["halal travel", "luxury travel", "GCC", "halalbooking", "PDF guide"]
 }
 
 .img-placeholder {
-      width: 100%;
-    aspect-ratio: 1 / 1.1;
-    background: #e1f0ed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid #b5e6e8;
+  width: 100%;
+  aspect-ratio: 1 / 1.1;
+  background: #e1f0ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #b5e6e8;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 1.5rem 0;
 }
 
-
-/* Optional: Add max-width to prevent overflow on mobile */
 img {
   max-width: 100%;
   height: auto;
@@ -80,7 +81,7 @@ img {
 *Where privacy meets elegance — and every detail respects your values.*
 
 <div class="img-placeholder">
-<img src="Halal_Booking_Guide.png" alt="Ultimate Halal Luxury Travel Guide">
+  <img src="images/Halal_Booking_Guide.png" alt="Ultimate Halal Luxury Travel Guide">
 </div>
 
 ---
@@ -93,16 +94,11 @@ Curated with love, precision, and a deep understanding of what halal‑conscious
 </p>
 </div>
 
-{{< rawhtml >}}
 <a href="https://drive.google.com/uc?export=download&id=1BusZwe0CzxbQgfMEuGpJfOJ-PP1lTIAM"
-   onclick="gtag('event', 'Download_PDF', {
-     event_category: 'PDF',
-     event_label: 'Halal Luxury Travel Guide'
-   });"
+   onclick="gtag('event', 'Download_PDF', { event_category: 'PDF', event_label: 'Halal Luxury Travel Guide' });"
    class="cta-button">
    📥 Download the Halal Luxury Travel Guide (Free PDF)
 </a>
-{{< /rawhtml >}}
 
 ---
 
@@ -120,7 +116,7 @@ This guide solves that with:
 - ✔ **GCC‑exclusive benefits**  
 
 <div class="img-placeholder">
-<img src="Halal_Booking1.png" alt="Luxury Halal Travel">
+  <img src="images/Halal_Booking1.png" alt="Luxury Halal Travel">
 </div>
 
 ---
@@ -157,7 +153,7 @@ Each resort includes:
 Women‑only beaches, private coves, forest retreats, and Ottoman‑style luxury — curated for GCC travelers.
 
 <div class="img-placeholder">
-<img src="Turkey_Guide.png" alt="Türkiye Halal Travel Guide">
+  <img src="images/Turkey_Guide.png" alt="Türkiye Halal Travel Guide">
 </div>
 
 ---
@@ -167,21 +163,21 @@ You receive:
 
 - **$25 wallet credit**  
 - **Valid for bookings above $500**  
-- **Valid only for booking from GCC**  
+- **Valid only for GCC travelers**  
 - **No promo code needed**  
 - **Automatically applied after registration**  
-- **Special Discount "My Affiliate Link" is a Gift inside the PDF**  
+- **Special Discount “My Affiliate Link” is a Gift inside the PDF**  
 
 ---
 
 # A Glimpse Inside the PDF  
 
 <div class="img-placeholder">
-<img src="PDF_Preview.png" alt="PDF Preview">
+  <img src="images/PDF_Preview.png" alt="PDF Preview">
 </div>
 
 <div class="img-placeholder">
-<img src="PDF_Preview1.png" alt="PDF Preview 2">
+  <img src="images/PDF_Preview1.png" alt="PDF Preview 2">
 </div>
 
 ---
@@ -205,20 +201,13 @@ Ultra‑premium riads, desert palaces, overwater villas.
 # 📥 Download the Guide  
 Your next halal‑friendly luxury escape starts here.
 
-{{< rawhtml >}}
 <a href="https://drive.google.com/uc?export=download&id=1BusZwe0CzxbQgfMEuGpJfOJ-PP1lTIAM"
-   onclick="gtag('event', 'Download_PDF', {
-     event_category: 'PDF',
-     event_label: 'Halal Luxury Travel Guide'
-   });"
+   onclick="gtag('event', 'Download_PDF', { event_category: 'PDF', event_label: 'Halal Luxury Travel Guide' });"
    class="cta-button">
    📥 Download the Halal Luxury Travel Guide (Free PDF)
 </a>
-{{< /rawhtml >}}
 
 ---
 
 # 💛 Travel Well. Travel Halal. Travel Beautifully.  
 *Your journey begins with one click — and ends with unforgettable memories.*
-
----
