@@ -51,20 +51,16 @@ tags: ["halal travel", "luxury travel", "GCC", "halalbooking", "PDF guide"]
   box-shadow: 0 8px 22px rgba(176,143,95,0.45);
 }
 
-.image-frame {
-  margin: 2rem 0;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+.img-placeholder {
+      width: 100%;
+    aspect-ratio: 1 / 1.1;
+    background: #e1f0ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #b5e6e8;
 }
 
-/* FIX: Ensure images display properly inside frames */
-.image-frame img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
 
 /* Optional: Add max-width to prevent overflow on mobile */
 img {
@@ -83,7 +79,7 @@ img {
 # 🌍 A New Era of Halal Luxury Travel  
 *Where privacy meets elegance — and every detail respects your values.*
 
-<div class="image-frame">
+<div class="img-placeholder">
 <img src="Halal_Booking_Guide.png" alt="Ultimate Halal Luxury Travel Guide">
 </div>
 
@@ -123,7 +119,7 @@ This guide solves that with:
 - ✔ **Family privacy**  
 - ✔ **GCC‑exclusive benefits**  
 
-<div class="image-frame">
+<div class="img-placeholder">
 <img src="Halal_Booking1.png" alt="Luxury Halal Travel">
 </div>
 
@@ -160,7 +156,7 @@ Each resort includes:
 ## **2. Exclusive Türkiye Section (10 Resorts)**  
 Women‑only beaches, private coves, forest retreats, and Ottoman‑style luxury — curated for GCC travelers.
 
-<div class="image-frame">
+<div class="img-placeholder">
 <img src="Turkey_Guide.png" alt="Türkiye Halal Travel Guide">
 </div>
 
@@ -180,11 +176,11 @@ You receive:
 
 # A Glimpse Inside the PDF  
 
-<div class="image-frame">
+<div class="img-placeholder">
 <img src="PDF_Preview.png" alt="PDF Preview">
 </div>
 
-<div class="image-frame">
+<div class="img-placeholder">
 <img src="PDF_Preview1.png" alt="PDF Preview 2">
 </div>
 
