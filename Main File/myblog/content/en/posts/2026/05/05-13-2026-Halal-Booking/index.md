@@ -70,7 +70,7 @@ tags: ["halal travel", "luxury travel", "GCC", "halalbooking", "PDF guide"]
 *Where privacy meets elegance — and every detail respects your values.*
 
 <div class="image-frame">
-<img src="./images/Halal_Booking_Guide.png" alt="Ultimate Halal Luxury Travel Guide">
+<img src="/images/Halal_Booking_Guide.png" alt="Ultimate Halal Luxury Travel Guide">
 </div>
 
 ---
@@ -110,7 +110,7 @@ This guide solves that with:
 - ✔ **GCC‑exclusive benefits**  
 
 <div class="image-frame">
-<img src="./images/Halal_Booking(1).png" alt="Luxury Halal Travel" style="width:100%; height:auto; display:block;">
+<img src="/images/Halal_Booking(1).png" alt="Luxury Halal Travel" style="width:100%; height:auto; display:block;">
     </div>
 ---
 
@@ -146,7 +146,7 @@ Each resort includes:
 Women‑only beaches, private coves, forest retreats, and Ottoman‑style luxury — curated for GCC travelers.
 
 <div class="image-frame">
-<img src="./images/Turkey_Guide.png" alt="Türkiye Halal Travel Guide">
+<img src="/images/Turkey_Guide.png" alt="Türkiye Halal Travel Guide">
 </div>
 
 ---
@@ -166,11 +166,11 @@ You receive:
 # A Glimpse Inside the PDF  
 
 <div class="image-frame">
-<img src="./images/PDF_Preview.png" alt="PDF Preview">
+<img src="/images/PDF_Preview.png" alt="PDF Preview">
 </div>
 
 <div class="image-frame">
-<img src="./images/PDF_Preview(1).png" alt="PDF Preview 2">
+<img src="/images/PDF_Preview(1).png" alt="PDF Preview 2">
 </div>
 
 ---
