@@ -1,4 +1,4 @@
-{{- $css := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
+{{- $css := resources.Get "scss/main.scss" | toCSS | minify | fingerprint -}}
 <!DOCTYPE html>
 <html lang="{{ .Lang }}" {{ if eq .Lang "ar" }}dir="rtl" class="rtl"{{ end }}>
 <head>

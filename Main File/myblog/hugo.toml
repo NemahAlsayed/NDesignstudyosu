@@ -79,9 +79,11 @@ link = "https://www.tiktok.com/@ndesignstudyosu"
 # ENGLISH
 ############################################
 [languages.en]
-languageName = "English"
 weight = 1
 contentDir = "content/en"
+
+[languages.en.params]
+label = "English"
 
 [languages.en.menu]
   [[languages.en.menu.main]]
@@ -98,9 +100,11 @@ contentDir = "content/en"
 # TURKISH
 ############################################
 [languages.tr]
-languageName = "Türkçe"
 weight = 2
 contentDir = "content/tr"
+
+[languages.tr.params]
+label = "Türkçe"
 
 [languages.tr.params.homepage]
 preTitle = "Yaratıcı Vizyon. İnsan Hikayeleri. Amaçlı Tasarım."
@@ -128,11 +132,11 @@ blogButton = "Tüm Gönderileri Görüntüle"
 # ARABIC
 ############################################
 [languages.ar]
-languageName = "العربية"
 weight = 3
 contentDir = "content/ar"
 
 [languages.ar.params]
+label = "العربية"
 direction = "rtl"
 
 [languages.ar.params.homepage]
