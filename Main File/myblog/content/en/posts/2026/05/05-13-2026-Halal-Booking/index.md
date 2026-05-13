@@ -57,6 +57,20 @@ tags: ["halal travel", "luxury travel", "GCC", "halalbooking", "PDF guide"]
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
+
+/* FIX: Ensure images display properly inside frames */
+.image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Optional: Add max-width to prevent overflow on mobile */
+img {
+  max-width: 100%;
+  height: auto;
+}
 </style>
 
 <div class="post-title">
@@ -110,8 +124,9 @@ This guide solves that with:
 - ✔ **GCC‑exclusive benefits**  
 
 <div class="image-frame">
-<img src="Halal_Booking1.png" alt="Luxury Halal Travel" style="width:100%; height:auto; display:block;">
-    </div>
+<img src="Halal_Booking1.png" alt="Luxury Halal Travel">
+</div>
+
 ---
 
 # What’s Inside the Guide
@@ -159,7 +174,7 @@ You receive:
 - **Valid only for booking from GCC**  
 - **No promo code needed**  
 - **Automatically applied after registration**  
-- **Special Discount “My Affiliate Link” is a Gift inside the PDF**  
+- **Special Discount "My Affiliate Link" is a Gift inside the PDF**  
 
 ---
 
@@ -181,7 +196,7 @@ You receive:
 Private pools, romantic escapes, Maldives villas, Türkiye coves.
 
 ### **For Families**
-Large suites, kids’ clubs, family‑friendly beaches.
+Large suites, kids' clubs, family‑friendly beaches.
 
 ### **For Women Travelers**
 Women‑only beaches, women‑only spa times, privacy‑focused resorts.
