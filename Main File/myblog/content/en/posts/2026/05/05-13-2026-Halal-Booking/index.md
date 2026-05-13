@@ -1,10 +1,9 @@
 ---
 title: "The Ultimate Halal Luxury Travel Guide — 30 Resorts Curated for GCC Travelers (Free PDF)"
 description: "A visually stunning, premium halal luxury travel guide featuring 30 handpicked resorts with private pools, women‑only facilities, and exclusive GCC benefits."
-date: 2025-05-13
+date: 2026-05-13
 featured_image: "images/Halal_Booking.png"
 tags: ["halal travel", "luxury travel", "GCC", "halalbooking", "PDF guide"]
-comments: true
 ---
 
 <style>
@@ -71,7 +70,7 @@ comments: true
 *Where privacy meets elegance — and every detail respects your values.*
 
 <div class="image-frame">
-<img src="Halal_Booking_Guide.png" alt="Ultimate Halal Luxury Travel Guide">
+<img src="images/Halal_Booking_Guide.png" alt="Ultimate Halal Luxury Travel Guide">
 </div>
 
 ---
@@ -111,7 +110,7 @@ This guide solves that with:
 - ✔ **GCC‑exclusive benefits**  
 
 <div class="image-frame">
-<img src="Halal_Booking(1).jpg" alt="Luxury Halal Travel">
+<img src="images/Halal_Booking(1).png" alt="Luxury Halal Travel">
 </div>
 
 ---
@@ -148,7 +147,7 @@ Each resort includes:
 Women‑only beaches, private coves, forest retreats, and Ottoman‑style luxury — curated for GCC travelers.
 
 <div class="image-frame">
-<img src="Turkey_Guide.jpg" alt="Türkiye Halal Travel Guide">
+<img src="images/Turkey_Guide.png" alt="Türkiye Halal Travel Guide">
 </div>
 
 ---
@@ -168,11 +167,11 @@ You receive:
 # A Glimpse Inside the PDF  
 
 <div class="image-frame">
-<img src="PDF_Preview.png" alt="PDF Preview">
+<img src="images/PDF_Preview.png" alt="PDF Preview">
 </div>
 
 <div class="image-frame">
-<img src="PDF_Preview(1).png" alt="PDF Preview 2">
+<img src="images/PDF_Preview(1).png" alt="PDF Preview 2">
 </div>
 
 ---
