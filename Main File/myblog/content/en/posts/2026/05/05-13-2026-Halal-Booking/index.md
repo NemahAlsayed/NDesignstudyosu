@@ -71,8 +71,13 @@ img {
 </style>
 
 <div class="post-title">
-✨ The Ultimate Halal Luxury Travel Guide  
-<span style="font-size:1.6rem;color:#c5a572;">30 Resorts • Private Pools • Women‑Only Facilities • GCC Exclusive Benefits</span>
+  The Ultimate Halal Luxury Travel Guide
+</div>
+
+<div style="text-align:center; margin-top:-0.8rem;">
+  <span style="font-size:1.6rem; color:#c5a572; font-weight:500;">
+    30 Resorts • Private Pools • Women‑Only Facilities • GCC Exclusive Benefits
+  </span>
 </div>
 
 ---
