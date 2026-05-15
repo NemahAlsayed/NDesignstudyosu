@@ -313,3 +313,33 @@ header img {
   height: auto;
   margin: 0 auto;
 }
+
+/* Force Logo Size - Override all other styles */
+.nds-logo {
+  max-width: 120px !important;
+  width: 120px !important;
+  height: auto !important;
+  display: block !important;
+}
+
+.header-left .nds-logo {
+  max-width: 120px !important;
+  width: 120px !important;
+}
+
+/* Ensure header doesn't grow too tall */
+.nds-header {
+  padding: 0.5rem 0 !important;
+}
+
+.nds-header .container {
+  min-height: 70px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .nds-logo {
+    max-width: 80px !important;
+    width: 80px !important;
+  }
+}
