@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on N Design Studio</title>
     <link>https://ndesignstudyosu.com.tr/en/pages/</link>
     <description>Recent content in Pages on N Design Studio</description>
-    <image>
-      <title>N Design Studio</title>
-      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
-      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/en/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,15 +14,7 @@
       <link>https://ndesignstudyosu.com.tr/en/pages/2025/04/2025-04-29-art-gallery/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/pages/2025/04/2025-04-29-art-gallery/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/abstract-seasells.jpeg?w=1024&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/autumn-roses.jpeg?w=721&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/free-palestine.jpeg?w=727&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/galata-tower.jpeg?w=720&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/galaxy-night.jpeg?w=1024&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/impressionist-boat.jpeg?w=799&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/impressionist-town.jpeg?w=832&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/purple-lotus.jpeg?w=695&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/spring-roses.jpeg?w=696&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/abstract-seasells.jpeg?w=1024&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/autumn-roses.jpeg?w=721&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/free-palestine.jpeg?w=727&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/galata-tower.jpeg?w=720&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/galaxy-night.jpeg?w=1024&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/impressionist-boat.jpeg?w=799&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/impressionist-town.jpeg?w=832&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/purple-lotus.jpeg?w=695&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2025/04/spring-roses.jpeg?w=696&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Browse</title>

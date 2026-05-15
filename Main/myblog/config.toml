@@ -9,70 +9,21 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 relativeURLs = true
 
-# PaperMod settings
-enableRobotsTXT = true
-buildDrafts = false
-buildFuture = false
-buildExpired = false
-
-[minify]
-  disableXML = true
-  minifyOutput = true
-
 [params]
-  env = "production"
-  title = "N Design Studio"
-  description = "Creative Design for Purposeful Impact"
-  author = "N Design Studio"
-  images = ["images/logo.png"]
-  DateFormat = "January 2, 2006"
-  defaultTheme = "auto"
-  disableThemeToggle = false
-  
-  [params.profileMode]
-    enabled = true
-    title = "N Design Studio"
-    subtitle = "Creative Design for Purposeful Impact"
-    imageUrl = "images/logo.png"
-    imageTitle = "N Design Studio"
-    imageWidth = 120
-    imageHeight = 120
-    buttons = [
-      { name = "Blog", url = "/posts/" },
-      { name = "About", url = "/about/" }
-    ]
+  subtitle = "Creative Design for Purposeful Impact"
 
-  [params.homeInfoParams]
-    enabled = true
-    title = "Welcome to N Design Studio"
-    content = "Creative Design for Purposeful Impact"
+[params.social]
+  twitter = "https://twitter.com/NDesignStudyosu"
+  instagram = "https://instagram.com/ndesignstudyosu"
+  facebook = "https://www.facebook.com/profile.php?id=61584092261123"
+  youtube = "https://www.youtube.com/@ndesignstudio7937"
+  tiktok = "https://www.tiktok.com/@ndesignstudyosu"
 
-  [[params.socialIcons]]
-    name = "instagram"
-    url = "https://instagram.com/ndesignstudyosu"
-  [[params.socialIcons]]
-    name = "twitter"
-    url = "https://twitter.com/NDesignStudyosu"
-  [[params.socialIcons]]
-    name = "facebook"
-    url = "https://www.facebook.com/profile.php?id=61584092261123"
-  [[params.socialIcons]]
-    name = "youtube"
-    url = "https://www.youtube.com/@ndesignstudio7937"
-  [[params.socialIcons]]
-    name = "tiktok"
-    url = "https://www.tiktok.com/@ndesignstudyosu"
-
-# Multilingual settings
 [languages]
 [languages.en]
-  languageName = "English"
-  title = "N Design Studio"
   weight = 1
   contentDir = "content/en"
-  
-  [languages.en.params]
-    subtitle = "Creative Design for Purposeful Impact"
+  languageName = "English"
   
   [[languages.en.menu.main]]
     name = "About"
@@ -84,13 +35,9 @@ buildExpired = false
     weight = 2
 
 [languages.tr]
-  languageName = "Türkçe"
-  title = "N Design Studyosu"
   weight = 2
   contentDir = "content/tr"
-  
-  [languages.tr.params]
-    subtitle = "Yaratıcı Vizyon. İnsan Hikayeleri. Amaçlı Tasarım."
+  languageName = "Türkçe"
   
   [[languages.tr.menu.main]]
     name = "Hakkında"
@@ -102,13 +49,9 @@ buildExpired = false
     weight = 2
 
 [languages.ar]
-  languageName = "العربية"
-  title = "ستوديو نون للتصميم"
   weight = 3
   contentDir = "content/ar"
-  
-  [languages.ar.params]
-    subtitle = "رؤية إبداعية. قصص بشرية. تصميم هادف."
+  languageName = "العربية"
   
   [[languages.ar.menu.main]]
     name = "حول"
@@ -123,5 +66,3 @@ buildExpired = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.highlight]
-    noClasses = false

@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ai on N Design Studio</title>
     <link>https://ndesignstudyosu.com.tr/en/tags/ai/</link>
     <description>Recent content in Ai on N Design Studio</description>
-    <image>
-      <title>N Design Studio</title>
-      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
-      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/en/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,48 +14,35 @@
       <link>https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</guid>
-      <description>&lt;p&gt;Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a &lt;strong&gt;Sharia‑Compliant Banking Management System (SCBMS)&lt;/strong&gt;: a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.&lt;/p&gt;
-&lt;p&gt;This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.&lt;/p&gt;
-&lt;h2 id=&#34;-why-build-a-shariacompliant-banking-system&#34;&gt;🌐 Why Build a Sharia‑Compliant Banking System?&lt;/h2&gt;
-&lt;p&gt;Islamic finance operates on principles fundamentally different from conventional banking:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a &lt;strong&gt;Sharia‑Compliant Banking Management System (SCBMS)&lt;/strong&gt;: a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.&lt;/p&gt;&#xA;&lt;p&gt;This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-why-build-a-shariacompliant-banking-system&#34;&gt;🌐 Why Build a Sharia‑Compliant Banking System?&lt;/h2&gt;&#xA;&lt;p&gt;Islamic finance operates on principles fundamentally different from conventional banking:&lt;/p&gt;</description>
     </item>
     <item>
       <title>🌐 From Dreamer to Digital Creator: How SitesGPT Empowers Non-Techies to Build Stunning Websites.</title>
       <link>https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/</guid>
-      <description>&lt;h2 id=&#34;-meet-layla-the-dreamer-who-thought-she-couldnt-build-a-website&#34;&gt;✨ Meet Layla: The Dreamer Who Thought She Couldn’t Build a Website&lt;/h2&gt;
-&lt;p&gt;Layla always had a vision. A small online shop selling handmade jewelry inspired by Turkish poetry and Mediterranean colors. But every time she tried to build a website, she hit a wall—HTML, CSS, hosting plans, plugins&amp;hellip; it was overwhelming.&lt;/p&gt;
-&lt;p&gt;She wasn’t a developer. She wasn’t a designer. She was a creator with a dream.&lt;/p&gt;
-&lt;p&gt;Then she discovered &lt;strong&gt;&lt;a href=&#34;https://affiliate.sitesgpt.com/le2sv5ta5t35&#34;&gt;SitesGPT&lt;/a&gt;&lt;/strong&gt;—an AI-powered website builder that changed everything.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;-meet-layla-the-dreamer-who-thought-she-couldnt-build-a-website&#34;&gt;✨ Meet Layla: The Dreamer Who Thought She Couldn’t Build a Website&lt;/h2&gt;&#xA;&lt;p&gt;Layla always had a vision. A small online shop selling handmade jewelry inspired by Turkish poetry and Mediterranean colors. But every time she tried to build a website, she hit a wall—HTML, CSS, hosting plans, plugins&amp;hellip; it was overwhelming.&lt;/p&gt;&#xA;&lt;p&gt;She wasn’t a developer. She wasn’t a designer. She was a creator with a dream.&lt;/p&gt;&#xA;&lt;p&gt;Then she discovered &lt;strong&gt;&lt;a href=&#34;https://affiliate.sitesgpt.com/le2sv5ta5t35&#34;&gt;SitesGPT&lt;/a&gt;&lt;/strong&gt;—an AI-powered website builder that changed everything.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🚀 What Is Lead Generation &amp;amp; The Best Free Tool to Supercharge Your Marketing.</title>
       <link>https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-28--what-is-lead-generation-the-best-free-tool-to-supercharge-your-marketing/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-28--what-is-lead-generation-the-best-free-tool-to-supercharge-your-marketing/</guid>
-      <description>&lt;p&gt;In today’s hyper-competitive digital landscape, one challenge haunts every business owner, marketer, and sales professional: &lt;strong&gt;how do you consistently generate quality leads&lt;/strong&gt;?&lt;/p&gt;
-&lt;p&gt;Whether you&amp;rsquo;re launching a new product, scaling your startup, or simply trying to grow your email list, lead generation is the lifeblood of your marketing efforts. But what exactly is lead generation—and how can you do it effectively without burning through your budget?&lt;/p&gt;
-&lt;p&gt;Let’s break it down.&lt;/p&gt;
-&lt;h2 id=&#34;-what-is-lead-generation&#34;&gt;💡 What Is Lead Generation?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Lead generation&lt;/strong&gt; is the process of attracting and converting strangers into potential customers who have shown interest in your product or service. These leads can come from various channels—social media, search engines, webinars, or even cold outreach.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In today’s hyper-competitive digital landscape, one challenge haunts every business owner, marketer, and sales professional: &lt;strong&gt;how do you consistently generate quality leads&lt;/strong&gt;?&lt;/p&gt;&#xA;&lt;p&gt;Whether you&amp;rsquo;re launching a new product, scaling your startup, or simply trying to grow your email list, lead generation is the lifeblood of your marketing efforts. But what exactly is lead generation—and how can you do it effectively without burning through your budget?&lt;/p&gt;&#xA;&lt;p&gt;Let’s break it down.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-what-is-lead-generation&#34;&gt;💡 What Is Lead Generation?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lead generation&lt;/strong&gt; is the process of attracting and converting strangers into potential customers who have shown interest in your product or service. These leads can come from various channels—social media, search engines, webinars, or even cold outreach.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🚀 Most Popular AI Prompts That Boost Business Creativity in Marketing.</title>
       <link>https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/</link>
       <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/</guid>
-      <description>&lt;p&gt;In today’s fast-paced digital landscape, creativity is the lifeblood of successful marketing. But even the most brilliant minds hit creative blocks. That’s where AI steps in—not to replace marketers, but to supercharge their imagination. With the right prompts, AI tools can become powerful collaborators, helping businesses generate fresh ideas, streamline workflows, and connect more deeply with their audience.&lt;/p&gt;
-&lt;p&gt;In this post, we’ll explore the &lt;strong&gt;most popular AI prompts&lt;/strong&gt; that marketers are using to &lt;strong&gt;boost creativity and drive results&lt;/strong&gt;. Whether you&amp;rsquo;re crafting campaigns, writing content, or analyzing performance, these prompts will help you unlock new possibilities.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In today’s fast-paced digital landscape, creativity is the lifeblood of successful marketing. But even the most brilliant minds hit creative blocks. That’s where AI steps in—not to replace marketers, but to supercharge their imagination. With the right prompts, AI tools can become powerful collaborators, helping businesses generate fresh ideas, streamline workflows, and connect more deeply with their audience.&lt;/p&gt;&#xA;&lt;p&gt;In this post, we’ll explore the &lt;strong&gt;most popular AI prompts&lt;/strong&gt; that marketers are using to &lt;strong&gt;boost creativity and drive results&lt;/strong&gt;. Whether you&amp;rsquo;re crafting campaigns, writing content, or analyzing performance, these prompts will help you unlock new possibilities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exploring the Journalist App for Windows: A Comprehensive Review.</title>
       <link>https://ndesignstudyosu.com.tr/en/posts/2024/07/2024-07-26-exploring-the-journalist-app-for-windows-a-comprehensive-review/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2024/07/2024-07-26-exploring-the-journalist-app-for-windows-a-comprehensive-review/</guid>
-      <description>&lt;p&gt;In the ever-evolving landscape of digital journalism, tools that streamline the writing, editing, and publishing process are invaluable. One such tool that has garnered attention is the Journalist app for Windows. This article delves into the features, benefits, and potential drawbacks of the Journalist app, providing a comprehensive review for those considering integrating it into their workflow.&lt;/p&gt;
-&lt;h2 id=&#34;introduction-to-the-journalist-app&#34;&gt;Introduction to the Journalist App&lt;/h2&gt;
-&lt;p&gt;The Journalist app is a dedicated software designed to cater to the needs of modern journalists, writers, and content creators. Available on the Windows platform, this app aims to simplify the complexities of content creation, offering a suite of features that enhance productivity and ensure high-quality output.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In the ever-evolving landscape of digital journalism, tools that streamline the writing, editing, and publishing process are invaluable. One such tool that has garnered attention is the Journalist app for Windows. This article delves into the features, benefits, and potential drawbacks of the Journalist app, providing a comprehensive review for those considering integrating it into their workflow.&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction-to-the-journalist-app&#34;&gt;Introduction to the Journalist App&lt;/h2&gt;&#xA;&lt;p&gt;The Journalist app is a dedicated software designed to cater to the needs of modern journalists, writers, and content creators. Available on the Windows platform, this app aims to simplify the complexities of content creation, offering a suite of features that enhance productivity and ensure high-quality output.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beauty on N Design Studio</title>
     <link>https://ndesignstudyosu.com.tr/en/categories/beauty/</link>
     <description>Recent content in Beauty on N Design Studio</description>
-    <image>
-      <title>N Design Studio</title>
-      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
-      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Tue, 05 May 2026 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/en/categories/beauty/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,7 +14,7 @@
       <link>https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0300</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/</guid>
-      <description>A luxurious, story-driven review of the finest L’OCCITANE products in Saudi Arabia — with an exclusive discount code A162 that makes luxury smarter and closer.</description>
+      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&#xA;&lt;head&gt;&#xA;&lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0, viewport-fit=cover&#34;&gt;&#xA;&#xA;&lt;style&gt;&#xA;/* RESET */&#xA;* { margin: 0; padding: 0; box-sizing: border-box; }&#xA;&#xA;/* GLOBAL */&#xA;.loccitane-luxury {&#xA;    font-family: &#39;Segoe UI&#39;, system-ui, sans-serif;&#xA;    background: linear-gradient(145deg, #faf6ef 0%, #f5ede0 100%);&#xA;    padding: 2rem 1rem;&#xA;    line-height: 1.7;&#xA;    color: #4a3724;&#xA;}&#xA;&#xA;.blog-card {&#xA;    max-width: 1200px;&#xA;    margin: 0 auto;&#xA;    background: #ffffff;&#xA;    border-radius: 48px;&#xA;    overflow: hidden;&#xA;    box-shadow: 0 35px 50px -25px rgba(0, 0, 0, 0.2);&#xA;}&#xA;&#xA;/* HERO */&#xA;.hero-luxury {&#xA;    background: linear-gradient(135deg, #f3e5c9 0%, #e8d5b5 50%, #dcc49a 100%);&#xA;    padding: 2.8rem 2rem;&#xA;    text-align: center;&#xA;    border-bottom: 3px solid #b8860b;&#xA;    animation: softGlow 3s infinite alternate;&#xA;}&#xA;@keyframes softGlow {&#xA;    0% { background: linear-gradient(135deg, #f3e5c9, #e8d5b5, #dcc49a); }&#xA;    100% { background: linear-gradient(135deg, #f7efdf, #ede1c6, #e0cdad); }&#xA;}&#xA;&#xA;.hero-luxury h1 {&#xA;    font-size: 2.4rem;&#xA;    color: #5c3b1f;&#xA;    margin-bottom: 0.5rem;&#xA;    animation: fadeSlideUp 0.8s ease-out;&#xA;}&#xA;@keyframes fadeSlideUp {&#xA;    from { opacity: 0; transform: translateY(20px); }&#xA;    to { opacity: 1; transform: translateY(0); }&#xA;}&#xA;&#xA;/* PRODUCT GRID */&#xA;.product-grid {&#xA;    display: grid;&#xA;    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));&#xA;    gap: 2rem;&#xA;    padding: 2rem;&#xA;}&#xA;&#xA;.product-card {&#xA;    background: #fffef8;&#xA;    border-radius: 32px;&#xA;    overflow: hidden;&#xA;    transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);&#xA;    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);&#xA;    border: 1px solid rgba(184, 134, 11, 0.15);&#xA;    animation: cardFloat 0.6s ease-out backwards;&#xA;}&#xA;.product-card:hover {&#xA;    transform: translateY(-12px) scale(1.01);&#xA;    box-shadow: 0 28px 35px -15px rgba(0, 0, 0, 0.2);&#xA;    border-color: rgba(184, 134, 11, 0.4);&#xA;}&#xA;@keyframes cardFloat {&#xA;    from { opacity: 0; transform: translateY(30px); }&#xA;    to { opacity: 1; transform: translateY(0); }&#xA;}&#xA;&#xA;/* IMAGE */&#xA;.img-placeholder {&#xA;    width: 100%;&#xA;    aspect-ratio: 1 / 1.1;&#xA;    background: #f9f2e6;&#xA;    display: flex;&#xA;    align-items: center;&#xA;    justify-content: center;&#xA;    border-bottom: 2px solid #e8d5b5;&#xA;}&#xA;.img-placeholder img {&#xA;    width: 100%;&#xA;    height: 100%;&#xA;    object-fit: cover;&#xA;}&#xA;&#xA;/* BUTTON */&#xA;.btn-shop {&#xA;    display: inline-block;&#xA;    background: #5c3b1f;&#xA;    color: #fef3e2;&#xA;    padding: 0.5rem 1.2rem;&#xA;    border-radius: 40px;&#xA;    text-decoration: none;&#xA;    font-weight: 500;&#xA;    transition: all 0.25s;&#xA;    margin-top: 0.6rem;&#xA;}&#xA;.btn-shop:hover {&#xA;    background: #b8860b;&#xA;    transform: scale(0.96);&#xA;}&#xA;&#xA;/* FOOTER */&#xA;.footer-note {&#xA;    background: #2c241a;&#xA;    color: #ddcfb2;&#xA;    text-align: center;&#xA;    padding: 1rem;&#xA;    font-size: 0.7rem;&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;/head&gt;&#xA;&#xA;&lt;body&gt;&#xA;&lt;div class=&#34;loccitane-luxury&#34;&gt;&#xA;&lt;div class=&#34;blog-card&#34;&gt;&#xA;&#xA;&lt;!-- HERO --&gt;&#xA;&lt;div class=&#34;hero-luxury&#34;&gt;&#xA;    &lt;h1&gt;The Most Luxurious L’OCCITANE Products in Saudi Arabia&lt;/h1&gt;&#xA;    &lt;p style=&#34;color:#7a552e;&#34;&gt;A luxury ritual… with an exclusive discount code &lt;strong&gt;A162&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
