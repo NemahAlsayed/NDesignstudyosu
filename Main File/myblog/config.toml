@@ -1,0 +1,44 @@
+baseURL = "https://ndesignstudyosu.com.tr/"
+languageCode = "en-us"
+title = "N Design Studio"
+theme = "magnolia"
+copyright = "&copy; 2026 N Design Studio. All rights reserved."
+googleAnalytics = "G-MG76R19NGW"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+# ... (keep your params sections as they are) ...
+
+############################################
+# MULTILINGUAL CONFIGURATION
+############################################
+
+[languages]
+
+############################################
+# ENGLISH
+############################################
+[languages.en]
+weight = 1
+contentDir = "content/en"
+# REMOVE or COMMENT OUT this line - it's causing the problem:
+# baseURL = "https://ndesignstudyosu.com.tr/en/"
+
+############################################
+# TURKISH
+############################################
+[languages.tr]
+weight = 2
+contentDir = "content/tr"
+# REMOVE or COMMENT OUT this line:
+# baseURL = "https://ndesignstudyosu.com.tr/tr/"
+
+############################################
+# ARABIC
+############################################
+[languages.ar]
+weight = 3
+contentDir = "content/ar"
+# REMOVE or COMMENT OUT this line:
+# baseURL = "https://ndesignstudyosu.com.tr/ar/"
