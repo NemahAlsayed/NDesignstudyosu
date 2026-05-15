@@ -18,7 +18,6 @@
             min-width: 50px !important;
         }
         
-        /* Fix header height */
         .nds-header {
             padding: 8px 0 !important;
         }
@@ -27,7 +26,6 @@
             flex-shrink: 0 !important;
         }
         
-        /* Mobile */
         @media (max-width: 768px) {
             .nds-logo,
             img[alt="N Design Studio Logo"],
@@ -40,7 +38,7 @@
     </style>
     
     {{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
-    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint }}
+    {{ $style := resources.Get "scss/main.scss" | css.Sass $options | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     
     {{ block "head" . }}{{ end }}
