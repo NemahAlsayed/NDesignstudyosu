@@ -288,3 +288,28 @@ body {
 .hero-section {
   padding: 80px 24px;
 }
+
+/* Fix Logo Size */
+.nds-logo,
+.site-logo,
+.logo img,
+header img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* If logo is in navigation */
+.navbar-brand img {
+  max-height: 60px;
+  width: auto;
+}
+
+/* Hero section logo if present */
+.hero-logo img,
+.homepage-logo img {
+  max-width: 180px;
+  height: auto;
+  margin: 0 auto;
+}
