@@ -1,32 +1,55 @@
-{{- $css := resources.Get "scss/main.scss" | toCSS | minify | fingerprint -}}
 <!DOCTYPE html>
-<html lang="{{ .Lang }}" {{ if eq .Lang "ar" }}dir="rtl" class="rtl"{{ end }}>
+<html lang="{{ .Site.LanguageCode }}">
 <head>
-    {{ partial "head.html" . }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    
+    <!-- Critical inline CSS for logo -->
+    <style>
+        /* Force logo size - highest priority */
+        .nds-logo,
+        img[alt="N Design Studio Logo"],
+        .header-left img,
+        header img {
+            width: 100px !important;
+            max-width: 100px !important;
+            height: auto !important;
+            min-width: 50px !important;
+        }
+        
+        /* Fix header height */
+        .nds-header {
+            padding: 8px 0 !important;
+        }
+        
+        .header-left {
+            flex-shrink: 0 !important;
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .nds-logo,
+            img[alt="N Design Studio Logo"],
+            .header-left img,
+            header img {
+                width: 70px !important;
+                max-width: 70px !important;
+            }
+        }
+    </style>
+    
+    {{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    
+    {{ block "head" . }}{{ end }}
 </head>
-
 <body>
-
-    <div id="reading-progress"></div>
-
     {{ partial "header.html" . }}
-
-    <main class="site-main">
-      <div class="content-area {{ if .IsHome }}vh-100 d-flex align-items-center justify-content-center{{ else }}py-5{{ end }}">
+    <main>
         {{ block "main" . }}{{ end }}
-      </div>
     </main>
-
     {{ partial "footer.html" . }}
-
-    <script>
-      document.addEventListener("scroll", function () {
-        const scrollTop = window.scrollY;
-        const docHeight = document.body.scrollHeight - window.innerHeight;
-        const progress = (scrollTop / docHeight) * 100;
-        document.getElementById("reading-progress").style.width = progress + "%";
-      });
-    </script>
-
 </body>
 </html>
