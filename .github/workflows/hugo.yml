@@ -34,12 +34,12 @@ jobs:
 
       - name: Build Hugo site
         run: hugo --minify
-        working-directory: "Main File/myblog"
+        working-directory: "Main/myblog"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "Main File/myblog/public"
+          path: "Main/myblog/public"
 
   deploy:
     needs: build
