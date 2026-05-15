@@ -27,8 +27,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true   # 🔥 REQUIRED for Magnolia theme
-          fetch-depth: 0     # 🔥 Prevents git 128 errors
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -37,12 +37,12 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        run: hugo --minify
+        run: hugo --minify --source "Main File/myblog"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: "Main File/myblog/public"
 
   deploy:
     needs: build
