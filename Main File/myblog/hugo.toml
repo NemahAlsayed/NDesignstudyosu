@@ -1,9 +1,10 @@
-baseURL = "https://nemahalsayed.github.io/NDesignstudyosu/"
+baseURL = "https://ndesignstudyosu.com.tr/"
 languageCode = "en-us"
 title = "N Design Studio"
 theme = "magnolia"
 copyright = "&copy; 2026 N Design Studio. All rights reserved."
 googleAnalytics = "G-MG76R19NGW"
+
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
@@ -81,6 +82,7 @@ link = "https://www.tiktok.com/@ndesignstudyosu"
 [languages.en]
 weight = 1
 contentDir = "content/en"
+baseURL = "https://ndesignstudyosu.com.tr/en/"
 
 [languages.en.params]
 label = "English"
@@ -88,12 +90,12 @@ label = "English"
 [languages.en.menu]
   [[languages.en.menu.main]]
   name = "About"
-  url = "about"
+  url = "/about/"
   weight = 1
 
   [[languages.en.menu.main]]
   name = "Contact"
-  url = "contact"
+  url = "/contact/"
   weight = 2
 
 ############################################
@@ -102,6 +104,7 @@ label = "English"
 [languages.tr]
 weight = 2
 contentDir = "content/tr"
+baseURL = "https://ndesignstudyosu.com.tr/tr/"
 
 [languages.tr.params]
 label = "Türkçe"
@@ -120,12 +123,12 @@ blogButton = "Tüm Gönderileri Görüntüle"
 [languages.tr.menu]
   [[languages.tr.menu.main]]
   name = "Hakkında"
-  url = "about"
+  url = "/about/"
   weight = 1
 
   [[languages.tr.menu.main]]
   name = "İletişim"
-  url = "contact"
+  url = "/contact/"
   weight = 2
 
 ############################################
@@ -134,6 +137,7 @@ blogButton = "Tüm Gönderileri Görüntüle"
 [languages.ar]
 weight = 3
 contentDir = "content/ar"
+baseURL = "https://ndesignstudyosu.com.tr/ar/"
 
 [languages.ar.params]
 label = "العربية"
@@ -153,12 +157,12 @@ blogButton = "عرض جميع المنشورات"
 [languages.ar.menu]
   [[languages.ar.menu.main]]
   name = "حول"
-  url = "about"
+  url = "/about/"
   weight = 1
 
   [[languages.ar.menu.main]]
   name = "اتصل بنا"
-  url = "contact"
+  url = "/contact/"
   weight = 2
 
 [markup]
