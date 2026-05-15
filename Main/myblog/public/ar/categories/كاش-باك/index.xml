@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>كاش باك on N Design Studio</title>
+    <title>كاش باك on ستوديو نون للتصميم</title>
     <link>https://ndesignstudyosu.com.tr/ar/categories/%D9%83%D8%A7%D8%B4-%D8%A8%D8%A7%D9%83/</link>
-    <description>Recent content in كاش باك on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in كاش باك on ستوديو نون للتصميم</description>
+    <image>
+      <title>ستوديو نون للتصميم</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>ar</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Fri, 24 Apr 2026 10:00:00 +0300</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/ar/categories/%D9%83%D8%A7%D8%B4-%D8%A8%D8%A7%D9%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,7 @@
       <link>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/</link>
       <pubDate>Fri, 24 Apr 2026 10:00:00 +0300</pubDate>
       <guid>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/</guid>
-      <description>🎁 كود noon السري: لغز الصندوق المذهل وكاش باك يصل إلى 10% كوبون – تم تصميمه خصيصًا للمتسوقين الأذكياء في السعودية والإمارات&#xA;في عصر يتغير فيه مفهوم التسوق، أطلقنا لعبة &#34;الكود السري&#34; الحصرية مع noon – أكبر منصة تسوق في الشرق الأوسط. هل تريد معرفة الكود الذي يمنحك حتى 10% كاش باك؟ تابع القراءة، فهناك زر مخفي سيكشف لك الهدية.&#xA;🚀 لماذا هذا العرض مختلف؟ الدراسات الحديثة تثبت أن &#34;</description>
+      <description>اكتشف كود noon المخفي : استراتيجية الصندوق السحري والفضول يقودك إلى كاش باك حتى 10%. عرض حصري للمحترفين على LinkedIn في السعودية والإمارات – أجهزة، إلكترونيات، عطور وأكثر.</description>
     </item>
   </channel>
 </rss>

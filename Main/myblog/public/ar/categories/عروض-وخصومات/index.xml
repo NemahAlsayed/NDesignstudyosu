@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>عروض وخصومات on N Design Studio</title>
+    <title>عروض وخصومات on ستوديو نون للتصميم</title>
     <link>https://ndesignstudyosu.com.tr/ar/categories/%D8%B9%D8%B1%D9%88%D8%B6-%D9%88%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA/</link>
-    <description>Recent content in عروض وخصومات on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in عروض وخصومات on ستوديو نون للتصميم</description>
+    <image>
+      <title>ستوديو نون للتصميم</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>ar</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Sun, 26 Apr 2026 10:00:00 +0300</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B9%D8%B1%D9%88%D8%B6-%D9%88%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,7 @@
       <link>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/</link>
       <pubDate>Sun, 26 Apr 2026 10:00:00 +0300</pubDate>
       <guid>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/</guid>
-      <description>&lt;!DOCTYPE html&gt; BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15% • YOLA EDITORIAL • THE STYLE CHRONICLE عدد خاص — ربيع الرياض | أبريل 2026 ✦ إصدار الكود السري BEXR ✦ جاذبية التوقيع&#xA;إطلالة mohra باللون الفريد في عالم يتسارع مع الموضة العابرة، تظل قطعة Yola مرفأً للأنوثة والثقة. مصممة للمرأة التي تعرف ما تريد: حريرية التفاصيل، جاذبية القصات، ولمسة سعودية عصرية. نحتفي اليوم بقصة أزياء تتحدث عنكِ، وعن هدايا الحب التي تبقى ذكرى.</description>
+      <description>اكتشفي كود BEXR السري لخصم 15% على تشكيلات Yola في السعودية. إطلالات تناسب المرأة العصرية والرجل الذي يبحث عن هدية مميزة لشريكة حياته.</description>
     </item>
   </channel>
 </rss>

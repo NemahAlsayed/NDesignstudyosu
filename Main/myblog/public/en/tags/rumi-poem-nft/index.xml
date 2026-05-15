@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rumi-Poem-Nft on N Design Studio</title>
     <link>https://ndesignstudyosu.com.tr/en/tags/rumi-poem-nft/</link>
     <description>Recent content in Rumi-Poem-Nft on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <image>
+      <title>N Design Studio</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Fri, 29 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/en/tags/rumi-poem-nft/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,10 @@
       <link>https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-29--breathing-digital-life-into-rumi-my-nft-tribute-to-any-lifetime/</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-29--breathing-digital-life-into-rumi-my-nft-tribute-to-any-lifetime/</guid>
-      <description>In a world increasingly shaped by pixels and blockchain, I wanted to create something that transcends the digital — something that speaks to the soul. That’s how my latest NFT artwork was born: a visual meditation on Mewlana Jalaluddin Rumi’s poem “Any Lifetime.”&#xA;🧠 The Poem That Sparked a Vision “Any lifetime that is spent without seeing the master Is either death in disguise or a deep sleep. The water that pollutes you is poison; The poison that purifies you is water.</description>
+      <description>&lt;p&gt;In a world increasingly shaped by pixels and blockchain, I wanted to create something that transcends the digital — something that speaks to the soul. That’s how my latest NFT artwork was born: a visual meditation on Mewlana Jalaluddin Rumi’s poem &lt;em&gt;“Any Lifetime.”&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-the-poem-that-sparked-a-vision&#34;&gt;🧠 The Poem That Sparked a Vision&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“Any lifetime that is spent without seeing the master&lt;/em&gt; &lt;em&gt;Is either death in disguise or a deep sleep.&lt;/em&gt; &lt;em&gt;The water that pollutes you is poison;&lt;/em&gt; &lt;em&gt;The poison that purifies you is water.”&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

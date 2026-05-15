@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>L&#39;Occitane on N Design Studio</title>
     <link>https://ndesignstudyosu.com.tr/en/tags/loccitane/</link>
     <description>Recent content in L&#39;Occitane on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <image>
+      <title>N Design Studio</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Tue, 05 May 2026 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/en/tags/loccitane/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,7 @@
       <link>https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0300</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/</guid>
-      <description>&lt;!DOCTYPE html&gt; The Most Luxurious L’OCCITANE Products in Saudi Arabia A luxury ritual… with an exclusive discount code A162&#xA;15% OFF in Saudi Arabia • 10% OFF in UAE &amp; Kuwait&#xA;There are moments in life when your daily routine needs a “golden touch.” Not because you don’t take care of yourself — but because you deserve something different. Something that feels like opening a luxurious box whose scent calms you before it even touches your skin.</description>
+      <description>A luxurious, story-driven review of the finest L’OCCITANE products in Saudi Arabia — with an exclusive discount code A162 that makes luxury smarter and closer.</description>
     </item>
   </channel>
 </rss>

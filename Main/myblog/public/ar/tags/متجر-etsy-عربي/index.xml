@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>متجر-Etsy-عربي on N Design Studio</title>
+    <title>متجر-Etsy-عربي on ستوديو نون للتصميم</title>
     <link>https://ndesignstudyosu.com.tr/ar/tags/%D9%85%D8%AA%D8%AC%D8%B1-etsy-%D8%B9%D8%B1%D8%A8%D9%8A/</link>
-    <description>Recent content in متجر-Etsy-عربي on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in متجر-Etsy-عربي on ستوديو نون للتصميم</description>
+    <image>
+      <title>ستوديو نون للتصميم</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>ar</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/ar/tags/%D9%85%D8%AA%D8%AC%D8%B1-etsy-%D8%B9%D8%B1%D8%A8%D9%8A/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,18 @@
       <link>https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/</guid>
-      <description>✨ مقدمة يسرّنا أن نعلن عن افتتاح متجرنا الجديد على منصة Etsy – NDesignStudyosu، حيث يجتمع الإبداع مع الجودة لتقديم منتجات فريدة من نوعها لعشّاق التصميم والفن اليدوي. إذا كنت تبحث عن هدايا مميزة أو عناصر ديكور تضيف لمسة شخصية إلى منزلك، فأنت في المكان الصحيح.&#xA;🛍️ ماذا يقدّم متجر NDesignStudyosu؟ تصاميم كانفا عالية الجودة: كل تصميم مصنوع بعناية لتلبي ذوقك الخاص.&#xA;تصاميم فريدة: لا تجدها في الأسواق التقليدية.&#xA;خيارات مثالية للهدايا: مناسبة للأصدقاء، العائلة، والمناسبات الخاصة.</description>
+      <description>&lt;h2 id=&#34;-مقدمة&#34;&gt;✨ مقدمة&lt;/h2&gt;
+&lt;p&gt;يسرّنا أن نعلن عن افتتاح متجرنا الجديد على منصة &lt;strong&gt;Etsy – NDesignStudyosu&lt;/strong&gt;، حيث يجتمع الإبداع مع الجودة لتقديم منتجات فريدة من نوعها لعشّاق التصميم والفن اليدوي. إذا كنت تبحث عن هدايا مميزة أو عناصر ديكور تضيف لمسة شخصية إلى منزلك، فأنت في المكان الصحيح.&lt;/p&gt;
+&lt;h2 id=&#34;-ماذا-يقدم-متجر-ndesignstudyosu&#34;&gt;🛍️ ماذا يقدّم متجر NDesignStudyosu؟&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;تصاميم كانفا عالية الجودة&lt;/strong&gt;: كل تصميم مصنوع بعناية لتلبي ذوقك الخاص.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;تصاميم فريدة&lt;/strong&gt;: لا تجدها في الأسواق التقليدية.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;خيارات مثالية للهدايا&lt;/strong&gt;: مناسبة للأصدقاء، العائلة، والمناسبات الخاصة.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

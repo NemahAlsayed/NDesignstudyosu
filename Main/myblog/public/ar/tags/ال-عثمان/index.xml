@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ال-عثمان on N Design Studio</title>
+    <title>ال-عثمان on ستوديو نون للتصميم</title>
     <link>https://ndesignstudyosu.com.tr/ar/tags/%D8%A7%D9%84-%D8%B9%D8%AB%D9%85%D8%A7%D9%86/</link>
-    <description>Recent content in ال-عثمان on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in ال-عثمان on ستوديو نون للتصميم</description>
+    <image>
+      <title>ستوديو نون للتصميم</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>ar</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/ar/tags/%D8%A7%D9%84-%D8%B9%D8%AB%D9%85%D8%A7%D9%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,14 @@
       <link>https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/</guid>
-      <description>بسم الله الرحمن الرحيم، نبتدأ مقالة اليوم برحلة من خلال أزقة اسطنبول الساحرة، حيث خلال شهر رمضان المبارك يمكنكم زيارة العديد من الأماكن التاريخية في جولة قبل موعد الإفطار ومن ثم إيجاد المكان المناسب للإفطار.&#xA;بدأت جولتي من خلال زيارة متحف إيش بنك التاريخي الذي ابتدأ به مؤسس الجمهورية التركية الحديثة مصطفى كمال أتاتورك:&#xA;هذه التحف الفنية شاهد على انه في عام 1924كانت اللغة العثمانية مازالت سارية .&#xA;نكمل جولتنا في متحف الفن والحضارة حيث تمتزج أعلى الأساليب المهنية في هندسة وتصميم وجدولة البنوك:</description>
+      <description>&lt;p&gt;بسم الله الرحمن الرحيم، نبتدأ مقالة اليوم برحلة من خلال أزقة اسطنبول الساحرة، حيث خلال شهر رمضان المبارك يمكنكم زيارة العديد من الأماكن التاريخية في جولة قبل موعد الإفطار ومن ثم إيجاد المكان المناسب للإفطار.&lt;/p&gt;
+&lt;p&gt;بدأت جولتي من خلال زيارة متحف إيش بنك التاريخي الذي ابتدأ به مؤسس الجمهورية التركية الحديثة مصطفى كمال أتاتورك:&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;images/img_8666.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;images/img_8665.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;images/img_8669.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;images/img_8667.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;images/img_8668.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;هذه التحف الفنية شاهد على انه في عام 1924كانت اللغة العثمانية مازالت سارية .&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

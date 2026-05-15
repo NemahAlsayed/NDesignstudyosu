@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Modern-Digital-Templates on N Design Studio</title>
     <link>https://ndesignstudyosu.com.tr/en/tags/modern-digital-templates/</link>
     <description>Recent content in Modern-Digital-Templates on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <image>
+      <title>N Design Studio</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/en/tags/modern-digital-templates/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,12 @@
       <link>https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-04--grand-opening-of-ndesignstudyosu-on-etsy-your-destination-for-arabic-digital-design-products/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-04--grand-opening-of-ndesignstudyosu-on-etsy-your-destination-for-arabic-digital-design-products/</guid>
-      <description>✨ Introduction We are excited to announce the launch of our brand‑new Etsy store, NDesignStudyosu, where creativity meets convenience. Our shop specializes in Arabic digital design products that are ready to download and use instantly. Whether you’re looking for unique artwork, printable templates, or digital files to elevate your projects, you’ll find something inspiring here.&#xA;🛍️ What You’ll Find in NDesignStudyosu High‑quality digital designs: Professionally crafted files for personal and commercial use.</description>
+      <description>&lt;h2 id=&#34;-introduction&#34;&gt;✨ Introduction&lt;/h2&gt;
+&lt;p&gt;We are excited to announce the launch of our brand‑new Etsy store, &lt;strong&gt;NDesignStudyosu&lt;/strong&gt;, where creativity meets convenience. Our shop specializes in &lt;strong&gt;Arabic&lt;/strong&gt; &lt;strong&gt;digital design products&lt;/strong&gt; that are ready to download and use instantly. Whether you’re looking for unique artwork, printable templates, or digital files to elevate your projects, you’ll find something inspiring here.&lt;/p&gt;
+&lt;h2 id=&#34;-what-youll-find-in-ndesignstudyosu&#34;&gt;🛍️ What You’ll Find in NDesignStudyosu&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;High‑quality digital designs&lt;/strong&gt;: Professionally crafted files for personal and commercial use.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

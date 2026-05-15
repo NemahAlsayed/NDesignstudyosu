@@ -1,6 +1,0 @@
----
-rules:
-  unpinned-uses:  # Too noisy
-    config:
-      policies:
-        '*': ref-pin

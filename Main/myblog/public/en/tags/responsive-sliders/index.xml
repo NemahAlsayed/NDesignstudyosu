@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Responsive-Sliders on N Design Studio</title>
     <link>https://ndesignstudyosu.com.tr/en/tags/responsive-sliders/</link>
     <description>Recent content in Responsive-Sliders on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <image>
+      <title>N Design Studio</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/en/tags/responsive-sliders/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,9 @@
       <link>https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-how-to-create-design-brief-for-design-project-made-for-production/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-how-to-create-design-brief-for-design-project-made-for-production/</guid>
-      <description>In today&amp;rsquo;s post I will share with you how to create a design brief to participate in international competition held by an Italian university called Poli.Design; Save this post for future competition dates, specially if you are a design or industrial design student;&#xA;The challenge of this competition was to design different types of chairs, interpreting values and identity of Porada, and the guidelines that will inspire the partecipants will be innovation, originality and search of new design solutions for woodworking.</description>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://ndesignstudyosu.wordpress.com/wp-content/uploads/2024/03/design-brief.png?w=500&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In today&amp;rsquo;s post I will share with you how to create a design brief to participate in international competition held by an Italian university called Poli.Design; Save this post for future competition dates, specially if you are a design or industrial design student;&lt;/p&gt;
+&lt;p&gt;The challenge of this competition was to design &lt;strong&gt;different types of chairs&lt;/strong&gt;, interpreting values and identity of Porada, and the guidelines that will inspire the partecipants will be &lt;strong&gt;innovation, originality and search of new design solutions for woodworking&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

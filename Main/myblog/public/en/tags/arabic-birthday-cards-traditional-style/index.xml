@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Arabic-Birthday-Cards-Traditional-Style on N Design Studio</title>
     <link>https://ndesignstudyosu.com.tr/en/tags/arabic-birthday-cards-traditional-style/</link>
     <description>Recent content in Arabic-Birthday-Cards-Traditional-Style on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <image>
+      <title>N Design Studio</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/en/tags/arabic-birthday-cards-traditional-style/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,29 @@
       <link>https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-18--celebrate-in-style-arabic-birthday-card-design-templates-on-canva-coupon-code-dec10-for-10-off-whole-store/</link>
       <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-18--celebrate-in-style-arabic-birthday-card-design-templates-on-canva-coupon-code-dec10-for-10-off-whole-store/</guid>
-      <description>✨ Why Choose Arabic Birthday Card Templates? Cultural authenticity: Celebrate birthdays with designs that reflect Arabic calligraphy and traditions.&#xA;Affordable bundle: 10 premium Canva templates for only $10.&#xA;Easy customization: Edit text, colors, and layouts directly in Canva.&#xA;Instant download: No waiting—get your designs immediately after purchase.&#xA;Perfect for all occasions: From kids’ birthdays to milestone celebrations.&#xA;🎨 What’s Included in the Bundle? You’ll receive:&#xA;10 unique Arabic birthday card designs</description>
+      <description>&lt;h2 id=&#34;-why-choose-arabic-birthday-card-templates&#34;&gt;✨ Why Choose Arabic Birthday Card Templates?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cultural authenticity: Celebrate birthdays with designs that reflect Arabic calligraphy and traditions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Affordable bundle: 10 premium Canva templates for only $10.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Easy customization: Edit text, colors, and layouts directly in Canva.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Instant download: No waiting—get your designs immediately after purchase.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Perfect for all occasions: From kids’ birthdays to milestone celebrations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-whats-included-in-the-bundle&#34;&gt;🎨 What’s Included in the Bundle?&lt;/h2&gt;
+&lt;p&gt;You’ll receive:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;10 unique Arabic birthday card designs&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

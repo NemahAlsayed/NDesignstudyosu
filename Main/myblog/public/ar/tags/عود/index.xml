@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>عود on N Design Studio</title>
+    <title>عود on ستوديو نون للتصميم</title>
     <link>https://ndesignstudyosu.com.tr/ar/tags/%D8%B9%D9%88%D8%AF/</link>
-    <description>Recent content in عود on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in عود on ستوديو نون للتصميم</description>
+    <image>
+      <title>ستوديو نون للتصميم</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>ar</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Tue, 28 Apr 2026 10:00:00 +0300</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/ar/tags/%D8%B9%D9%88%D8%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,7 @@
       <link>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/</link>
       <pubDate>Tue, 28 Apr 2026 10:00:00 +0300</pubDate>
       <guid>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/</guid>
-      <description>&lt;!DOCTYPE html&gt; عطور الدخيل | خصم 5% إضافي كود DO64 عطور الدخيل: إرث العطر الأصيل اكتشف أرقى توليفات دهن العود، المسك والعنبر — بخصم إضافي 5% مع كود DO64&#xA;كود: DO64 ينطبق على جميع العروض الحالية اللوتس والورد الدمشقي الفانيلا والباتشولي مع خشب الأرز الخوخ وزهر التفاح اليوسفي الحلو باقة اوسكار باقة أوسكار تجربة متكاملة من عائلة أوسكار تجمع بين الكلاسيكيات والإصدار الجديد كليًا تضم الباقة: أوسكار الذهبي | أوسكار الفضي | أوسكار شيك (الجديد) تسوق العطر → الزعفران المترف ورد الجوري المسك الناعم العنبر الفاخر اورينتال عود 50مل أورينتال عود: رحلة عطرية من الفخامة والتألق&#34;</description>
+      <description>اكتشف عطور الدخيل الأصيلة في السعودية ودول الخليج. استخدم كود DO64 للحصول على خصم 5% إضافي فوق العروض الحالية. دهن عود، مسك، وعطور شرقية فاخرة.</description>
     </item>
   </channel>
 </rss>

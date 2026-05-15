@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>السعودية on N Design Studio</title>
+    <title>السعودية on ستوديو نون للتصميم</title>
     <link>https://ndesignstudyosu.com.tr/ar/tags/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/</link>
-    <description>Recent content in السعودية on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in السعودية on ستوديو نون للتصميم</description>
+    <image>
+      <title>ستوديو نون للتصميم</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>ar</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Tue, 05 May 2026 00:00:00 +0300</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/ar/tags/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,7 @@
       <link>https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0300</pubDate>
       <guid>https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/</guid>
-      <description>&lt;!DOCTYPE html&gt; أفخم منتجات لوكسيتان في السعودية قصة روتين فاخر… مع كود خصم A162&#xA;15% خصم في السعودية • 10% في الإمارات والكويت&#xA;هناك لحظات في حياتك تشعرين فيها أن روتينك اليومي يحتاج “لمسة ذهبية”. ليس لأنكِ لا تهتمين بنفسك… بل لأنكِ تستحقين إحساسًا مختلفًا. إحساس يشبه فتح علبة فاخرة، رائحتها تهدّئك قبل أن تلمس بشرتك. هذه ليست مراجعة عادية. هذه قصة تجربتي الشخصية مع منتجات لوكسيتان التي غيرت روتيني — ومع كود الخصم A162، أصبحت الرفاهية أقرب مما تتوقعين.</description>
+      <description>مراجعة فاخرة وقصصية لأجود منتجات لوكسيتان في السعودية، مع كود خصم حصري A162 يجعل الرفاهية أذكى وأقرب.</description>
     </item>
   </channel>
 </rss>

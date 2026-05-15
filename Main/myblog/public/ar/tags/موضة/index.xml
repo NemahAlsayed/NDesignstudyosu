@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>موضة on N Design Studio</title>
+    <title>موضة on ستوديو نون للتصميم</title>
     <link>https://ndesignstudyosu.com.tr/ar/tags/%D9%85%D9%88%D8%B6%D8%A9/</link>
-    <description>Recent content in موضة on N Design Studio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in موضة on ستوديو نون للتصميم</description>
+    <image>
+      <title>ستوديو نون للتصميم</title>
+      <url>https://ndesignstudyosu.com.tr/images/logo.png</url>
+      <link>https://ndesignstudyosu.com.tr/images/logo.png</link>
+    </image>
+    <generator>Hugo</generator>
     <language>ar</language>
-    <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
+    <copyright>2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Mon, 27 Apr 2026 09:00:00 +0300</lastBuildDate>
     <atom:link href="https://ndesignstudyosu.com.tr/ar/tags/%D9%85%D9%88%D8%B6%D8%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -14,7 +19,7 @@
       <link>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/</link>
       <pubDate>Mon, 27 Apr 2026 09:00:00 +0300</pubDate>
       <guid>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/</guid>
-      <description>&lt;!DOCTYPE html&gt; H&amp;M Buy 2 Get 1 + A0N5 | المقال الكامل A0N5: سرّ التسوق الذكي في H&amp;M – إشتري 2 وخذ الثالث مجاناً + 5% إضافية السعودية والإمارات – لأول مرة، H&amp;M تطلق عرضاً تراكمياً نادراً: كود A0N5 يمنحك خصم 5% على كامل المشتريات، يُضاف إلى ميكانيكية &#34;اشتري 2 وخذ الثالث مجاناً&#34;. عملياً: كل 3 قطع تصبح بسعر قطعتين (الأقل سعراً مجانية) ثم يطبق الخصم 5% على الإجمالي.</description>
+      <description>كود A0N5 يمنحك 5% خصم متراكم مع عرض إشتري 2 واحصلي على الثالث مجاناً في أتش آند أم. كيف تستفيد كسيدة وكهدية للرجل.</description>
     </item>
   </channel>
 </rss>
