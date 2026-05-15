@@ -1,21 +1,62 @@
-/* Brand Color Palette — N Design Studio */
+// ============================================
+// N Design Studio - Premium Color Palette
+// ============================================
 
-$primary:   #AD2831;   // Main brand red (brightest)
-$secondary: #800e13;   // Deep supporting red
-$accent:    #640D14;   // Accent for buttons, highlights
-$background:#250902;   // Dark background tone
-$text-color:#f8f5f5;   // Light text for contrast on dark backgrounds
+// Primary Colors (Your Crimson Palette)
+$deep-crimson: #800000;
+$ruby: #960018;
+$scarlet: #a70000;
+$vibrant-red: #d10000;
+$electric-crimson: #ff0033;
 
-/* Optional extended palette */
-$primary-dark:   #38040e;
-$primary-darker: #250902;
-$primary-light:  #800e13;
-$primary-lighter:#AD2831;
+// Gold Accents for Luxury Feel
+$gold-light: #E2C28B;
+$gold-primary: #C6A43F;
+$gold-dark: #8B7332;
 
-/* Additional colors */
-$white: #ffffff;
-$offwhite: #f7f7f7;
-$light-gray: #e5e5e5;
-$gray: #777;
-$dark-gray: #333;
-$black: #111;
+// Background Colors
+$dark-bg: #0A0808;
+$surface-dark: #1A1515;
+$surface-medium: #2A2020;
+
+// Text Colors
+$cream: #F5F0E8;
+$white: #FFFFFF;
+$text-light: #E8E0D5;
+$text-muted: #B8A99A;
+
+// Gradients
+$gradient-crimson: linear-gradient(135deg, $deep-crimson 0%, $ruby 50%, $vibrant-red 100%);
+$gradient-gold: linear-gradient(135deg, $gold-light 0%, $gold-primary 50%, $gold-dark 100%);
+$gradient-dark: linear-gradient(135deg, $dark-bg 0%, $surface-dark 100%);
+
+// Typography
+$font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+$font-sans: 'Montserrat', 'Helvetica Neue', 'Segoe UI', sans-serif;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 5rem;
+
+// Breakpoints
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$wide: 1200px;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+$shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.3);
+$shadow-glow: 0 0 30px rgba($vibrant-red, 0.3);
+$shadow-gold-glow: 0 0 30px rgba($gold-primary, 0.3);

@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://ndesignstudyosu.com.tr/sitemap.xml

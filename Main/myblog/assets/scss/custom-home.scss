@@ -1,331 +1,311 @@
-/* --------------------------------------------- */
-/* GLOBAL BACKGROUND + BODY */
-/* --------------------------------------------- */
+// ============================================
+// Custom Homepage Styles - Premium Luxury Design
+// ============================================
 
-body {
-  background: $background;
-  color: $text-color;
-  background-image: url('/Images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding-top: 80px; /* Space for fixed header */
-}
+@import 'variables';
 
-/* --------------------------------------------- */
-/* NEW HEADER (Logo Left • Title Center • Nav Right) */
-/* --------------------------------------------- */
-
-.nds-header {
-  background: rgba(180, 20, 30, 0.65); /* semi-transparent red */
-  backdrop-filter: blur(6px);
-  padding: 0.75rem 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-}
-
-.nds-header .container {
+/* Hero Section */
+.hero-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  background: $gradient-dark;
+  overflow: hidden;
+  padding: $spacing-xl 0;
 
-/* Logo */
-.nds-logo {
-  width: 140px;   /* fixed width */
-  height: auto;   /* keeps proportions correct */
-  object-fit: contain;
-}
-
-
-
-/* Center Title */
-.header-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.nds-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.5px;
-}
-
-/* Navigation */
-.nds-nav {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nds-nav .nav-link {
-  color: #fff;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  transition: 0.3s ease;
-}
-
-.nds-nav .nav-link:hover {
-  color: #ffe6e6;
-  text-decoration: underline;
-}
-
-/* --------------------------------------------- */
-/* HERO + PAGE LAYOUT (your existing code) */
-/* --------------------------------------------- */
-
-.hero-english {
-  background: $background;
-  color: $text-color;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 1.5rem;
-  text-align: center;
-  background-image: url('/Images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
-}
-
-.col-lg-4, .col-lg-8 {
-  padding: 0 15px;
-  box-sizing: border-box;
-}
-
-.col-lg-4 {
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
-}
-
-.col-lg-8 {
-  flex: 0 0 66.667%;
-  max-width: 66.667%;
-}
-
-@media (max-width: 991px) {
-  .col-lg-4, .col-lg-8 {
-    flex: 0 0 100%;
-    max-width: 100%;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 25% 50%, rgba($deep-crimson, 0.15) 0%, transparent 50%),
+      repeating-linear-gradient(45deg, rgba($electric-crimson, 0.03) 0px, rgba($electric-crimson, 0.03) 2px, transparent 2px, transparent 8px);
+    pointer-events: none;
   }
-  .hero-english {
-    text-align: center;
-  }
-  .col-lg-8 {
-    text-align: center !important;
-  }
-  .hero-buttons {
-    justify-content: center !important;
+}
+
+/* Hero Card */
+.hero-card {
+  background: rgba($cream, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  max-width: 850px;
+  width: 90%;
+  margin: 0 auto;
+  padding: $spacing-xl;
+  box-shadow: $shadow-xl;
+  transition: transform $transition-normal, box-shadow $transition-normal;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba($gold-primary, 0.2);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl, $shadow-gold-glow;
+    border-color: rgba($gold-primary, 0.4);
   }
 }
 
 .hero-content {
-  max-width: 700px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  text-align: left;
+  text-align: center;
 }
 
 .pre-title {
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: $gray;
-  margin-bottom: 1rem;
+  font-family: $font-sans;
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: $vibrant-red;
+  margin-bottom: $spacing-sm;
+  font-weight: 500;
 }
 
-.hero-english h1 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  color: $primary;
-  font-weight: 800;
+.hero-card h1 {
+  font-family: $font-serif;
+  font-size: 3.8rem;
+  font-weight: 600;
+  background: $gradient-crimson;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: $spacing-md;
+  letter-spacing: -0.02em;
 }
 
-.hero-english p {
-  font-size: 1.25rem;
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  color: $dark-gray;
+.homepage-intro {
+  font-family: $font-serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: $surface-dark;
+  margin-bottom: $spacing-lg;
+  text-align: center;
+  font-weight: 400;
 }
 
+/* Premium Buttons */
 .hero-buttons {
   display: flex;
-  gap: 1rem;
-  justify-content: flex-start;
+  gap: $spacing-md;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  display: inline-block;
+  padding: $spacing-sm $spacing-xl;
+  border-radius: 40px;
+  font-family: $font-sans;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s ease;
-  border: none;
+  transition: all $transition-normal;
   cursor: pointer;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
 }
 
 .btn-primary {
-  background: $primary;
-  color: $text-color;
-}
+  background: $gradient-crimson;
+  color: $white;
+  border: none;
+  position: relative;
+  overflow: hidden;
 
-.btn-primary:hover {
-  background: $primary-dark;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba($white, 0.3), transparent);
+    transition: left $transition-normal;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-glow;
+  }
 }
 
 .btn-secondary {
   background: transparent;
-  border: 2px solid $primary;
-  color: $primary;
+  border: 2px solid $vibrant-red;
+  color: $vibrant-red;
+
+  &:hover {
+    background: $gradient-crimson;
+    color: $white;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: $shadow-glow;
+  }
 }
 
-.btn-secondary:hover {
-  background: $primary;
-  color: $text-color;
+/* Blog Section */
+.blog-section {
+  padding: $spacing-xxl 0;
+  background: $dark-bg;
 }
 
-.profile-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  border: 3px solid $primary;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-}
-
-/* --------------------------------------------- */
-/* HOMEPAGE INTRO + HERO TEXT */
-/* --------------------------------------------- */
-
-.site-logo {
-  width: 180px;
-  margin-bottom: 2rem;
-}
-
-.homepage-intro {
-  text-align: justify;
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
-
-.text-center {
+.section-title {
+  font-family: $font-sans;
+  font-size: 2.2rem;
   text-align: center;
+  color: $gold-primary;
+  letter-spacing: 0.1em;
+  margin-bottom: $spacing-xl;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -$spacing-sm;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: $gradient-crimson;
+  }
 }
 
-.english-hero {
-  padding: 2rem 1.5rem;
+/* Blog Cards */
+.card-premium {
+  background: $surface-dark;
+  border-radius: 16px;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  transition: all $transition-normal;
+  border: 1px solid rgba($gold-primary, 0.1);
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: rgba($gold-primary, 0.3);
+    box-shadow: $shadow-lg;
+  }
+
+  h3 {
+    font-family: $font-serif;
+    font-size: 1.5rem;
+    margin-bottom: $spacing-sm;
+
+    a {
+      color: $cream;
+      text-decoration: none;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $gold-primary;
+      }
+    }
+  }
+
+  p {
+    color: $text-muted;
+    line-height: 1.6;
+    margin-bottom: $spacing-md;
+  }
+
+  .read-more {
+    color: $vibrant-red;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $gold-primary;
+    }
+  }
 }
 
-.english-intro {
-  max-width: 750px;
-  margin: 0 auto;
-  font-size: 1.25rem;
-  line-height: 1.8;
-  text-align: justify;
-  text-align-last: center;
-}
-
-.hero-card {
-  max-width: 800px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-/* ------------------------------------------------------ */
-/* BEAUTIFUL BOXED LANGUAGE TABS — OVERRIDE EVERYTHING    */
-/* ------------------------------------------------------ */
-
+/* Language Tabs */
 .language-tabs {
-  display: flex !important;
-  gap: 1.4rem !important;
-  justify-content: center !important;
-  margin-top: 2.2rem !important;
+  display: flex;
+  gap: $spacing-md;
+  justify-content: center;
+  margin: $spacing-xl 0;
 }
 
 .lang-tab {
-  padding: 0.7rem 1.6rem !important;
-  border-radius: 12px !important;
-  text-decoration: none !important;
-  font-weight: 600 !important;
-  font-size: 1.1rem !important;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: 40px;
+  text-decoration: none;
+  font-family: $font-sans;
+  font-weight: 500;
+  font-size: 0.9rem;
+  background: rgba($cream, 0.1);
+  color: $cream;
+  border: 1px solid rgba($gold-primary, 0.3);
+  transition: all $transition-normal;
 
-  background: rgba(255, 255, 255, 0.85) !important;
-  color: #b4141e !important; /* your red */
-  border: 2px solid rgba(180, 20, 30, 0.45) !important;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
-  transition: all 0.25s ease !important;
+  &:hover,
+  &.active {
+    background: $gradient-crimson;
+    color: $white;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: $shadow-glow;
+  }
 }
 
-/* Hover + Active */
-.lang-tab:hover,
-.lang-tab.active {
-  background: rgba(180, 20, 30, 0.85) !important;
-  color: #fff !important;
-  border-color: rgba(180, 20, 30, 1) !important;
-  transform: translateY(-3px) !important;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25) !important;
+/* Responsive Design */
+@media (max-width: $tablet) {
+  .hero-card {
+    padding: $spacing-lg;
+    
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  .homepage-intro {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: $spacing-xs $spacing-lg;
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .card-premium h3 {
+    font-size: 1.2rem;
+  }
+
+  .language-tabs {
+    gap: $spacing-sm;
+    flex-wrap: wrap;
+  }
+
+  .lang-tab {
+    padding: $spacing-xs $spacing-md;
+    font-size: 0.8rem;
+  }
 }
 
-/* Footer Tagline */
-.footer-tagline {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #cccccc;
-  letter-spacing: 0.5px;
-  margin-top: 0.5rem;
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-/* new home-card styling */
 
 .hero-card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  max-width: 800px;
-  width: 90%;
-  margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-}
-
-.hero-section {
-  padding: 80px 24px; /* equal top/bottom and left/right spacing */
-}
-
-.hero-card {
-  max-width: 800px;
-  margin: 0 auto; /* centers the card inside the container */
-  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
 }

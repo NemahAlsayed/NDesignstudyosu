@@ -1,341 +1,55 @@
-/* -----------------------------------------------------------
-   Imports
------------------------------------------------------------ */
-@import "variables";
-@import "custom-home";
-@import "style";
+// ============================================
+// N Design Studio - Main Stylesheet
+// ============================================
 
-/* -----------------------------------------------------------
-   Color System (Rosewood + Dark Sienna)
------------------------------------------------------------ */
-:root {
-  --rosewood: #640D14;
-  --dark-sienna: #250902;
+// 1. Variables
+@import 'variables';
 
-  --brand-gradient: radial-gradient(
-    circle at center,
-    rgba(100, 13, 20, 0.85) 0%,
-    rgba(37, 9, 2, 0.85) 100%
-  );
+// 2. Base Styles
+@import 'style';
 
-  --text-dark: #222;
-  --text-muted: #666;
-  --bg-light: #ffffff;
+// 3. Custom Homepage
+@import 'custom-home';
+
+// 4. Additional Components (add as needed)
+// @import 'navigation';
+// @import 'footer';
+// @import 'forms';
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* -----------------------------------------------------------
-   Header (kept original colors)
------------------------------------------------------------ */
-header.site-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 18px 0;
-}
-
-header.site-header .navbar-brand {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #7b1e3a;
-}
-
-header.site-header .nav-link {
-  color: #7b1e3a;
-  font-weight: 500;
-  margin: 0 10px;
-  transition: color 0.2s ease;
-}
-
-header.site-header .nav-link:hover {
-  color: #a23e58;
-}
-
-/* -----------------------------------------------------------
-   Footer (kept original colors)
------------------------------------------------------------ */
-.footer {
-  padding: 40px 20px;
-  background: #7b1e3a;
-  color: #fff;
-  text-align: center;
-}
-
-.footer p,
-.footer small {
-  margin: 8px 0;
+body {
+  font-family: $font-serif;
+  background: $dark-bg;
+  color: $text-light;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* -----------------------------------------------------------
-   Posts Page Layout
------------------------------------------------------------ */
-.posts-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
+::selection {
+  background: $vibrant-red;
+  color: $white;
 }
 
-/* Hero */
-.posts-hero {
-  background: var(--brand-gradient);
-  color: #fff;
-  padding: 60px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.posts-hero h1 {
-  font-size: 2.8rem;
-  letter-spacing: -0.5px;
+::-webkit-scrollbar-track {
+  background: $surface-dark;
 }
 
-.posts-hero p {
-  max-width: 650px;
-  margin: 0 auto;
-  font-size: 1.15rem;
-}
+::-webkit-scrollbar-thumb {
+  background: $vibrant-red;
+  border-radius: 4px;
 
-/* -----------------------------------------------------------
-   Search Bar
------------------------------------------------------------ */
-.posts-search {
-  margin: 25px 0;
-}
-
-.posts-search input {
-  width: 100%;
-  padding: 14px 18px;
-  border-radius: 12px;
-  border: 1px solid var(--rosewood);
-  font-size: 1rem;
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.posts-search input:focus {
-  border-color: var(--dark-sienna);
-  box-shadow: 0 0 0 3px rgba(100, 13, 20, 0.25);
-}
-
-/* -----------------------------------------------------------
-   Category Chips
------------------------------------------------------------ */
-.category-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 25px;
-}
-
-.chip {
-  padding: 8px 16px;
-  border-radius: 20px;
-  background: var(--brand-gradient);
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.chip:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
-
-.chip.active {
-  outline: 2px solid var(--rosewood);
-}
-
-/* -----------------------------------------------------------
-   Post Cards
------------------------------------------------------------ */
-.post-card-wrapper {
-  padding: 20px;
-  transition: opacity 0.25s ease;
-}
-
-.post-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.post-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-}
-
-.post-card-image {
-  height: 220px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.post-card .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 18px;
-  gap: 12px;
-}
-
-.post-card .card-text {
-  text-align: justify;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.post-card .btn {
-  margin-top: auto;
-  background: var(--brand-gradient);
-  color: #fff;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 10px;
-  transition: opacity 0.2s ease;
-}
-
-.post-card .btn:hover {
-  opacity: 0.9;
-}
-
-.post-card .card-footer {
-  background: transparent;
-  border-top: none;
-  padding: 12px 18px;
-  font-size: 0.85rem;
-  color: #555;
-}
-
-/* Vertical spacing between rows */
-#posts-grid {
-  row-gap: 24px;
-}
-
-/* -----------------------------------------------------------
-   Single Post Layout
------------------------------------------------------------ */
-.single-post-wrapper {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.single-post-wrapper h1,
-.single-post-wrapper h2,
-.single-post-wrapper h3 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.single-post-wrapper p {
-  text-align: justify;
-  line-height: 1.8;
-  font-size: 1.15rem;
-  margin-bottom: 24px;
-}
-
-/* Images */
-.single-post-wrapper img {
-  display: block;
-  margin: 30px auto;
-  max-width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-  transition: transform .25s ease;
-}
-
-.single-post-wrapper img:hover {
-  transform: scale(1.02);
-}
-
-.single-post-wrapper figcaption {
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
-
-/* Blockquotes */
-.single-post-wrapper blockquote {
-  margin: 30px 0;
-  padding: 20px 30px;
-  background: var(--brand-gradient);
-  color: #fff;
-  border-radius: 12px;
-  font-style: italic;
-}
-
-/* -----------------------------------------------------------
-   Reading Progress Bar
------------------------------------------------------------ */
-#reading-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 0%;
-  background: var(--brand-gradient);
-  z-index: 9999;
-  transition: width 0.15s ease-out;
-}
-
-/* -----------------------------------------------------------
-   Mobile Layout
------------------------------------------------------------ */
-@media (max-width: 768px) {
-  .post-card-wrapper {
-    padding: 12px;
-  }
-
-  .post-card-image {
-    height: 180px;
-  }
-
-  .single-post-wrapper {
-    padding: 25px 16px;
-  }
-
-  .single-post-wrapper h1 {
-    font-size: 1.8rem;
-  }
-
-  .single-post-wrapper p {
-    font-size: 1rem;
-    line-height: 1.65;
+  &:hover {
+    background: $gold-primary;
   }
 }
-
-/* -----------------------------------------------------------
-   RTL Support (Safe + Layout-Preserving)
------------------------------------------------------------ */
-
-/* Only content becomes RTL */
-html.rtl main,
-html.rtl .single-post-wrapper,
-html.rtl .posts-wrapper {
-  direction: rtl;
-  text-align: right;
-}
-
-/* Keep header + footer centered */
-html.rtl header,
-html.rtl nav,
-html.rtl footer,
-html.rtl .footer,
-html.rtl .nds-footer {
-  direction: ltr !important;
-  text-align: center !important;
-}
-
-/* Fix flexbox centering */
-html.rtl footer .d-flex {
-  justify-content: center !important;
-}
-
