@@ -8,6 +8,7 @@ googleAnalytics = "G-MG76R19NGW"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 relativeURLs = true
+canonifyURLs = false
 
 [params]
 subtitle = "Creative Design for Purposeful Impact"
