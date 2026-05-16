@@ -1,12 +1,80 @@
-{{ define "main" }}
-<div style="min-height: 80vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px;">
-    <div style="max-width: 600px; background: white; border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-        <h1 style="font-size: 2.5rem; margin-bottom: 20px; color: #333;">{{ .Site.Title }}</h1>
-        <p style="font-size: 1.1rem; color: #666; margin-bottom: 30px; line-height: 1.6;">Creative Design for Purposeful Impact. Explore my work and stories.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }} - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 600px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin: 0 8px;
+            font-weight: 500;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #667eea;
+            color: #667eea;
+        }
+        .btn-primary:hover, .btn-secondary:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s;
+        }
+        @media (max-width: 600px) {
+            .hero-card { padding: 30px; }
+            h1 { font-size: 1.8rem; }
+            .btn { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-card">
+        <h1>{{ .Site.Title }}</h1>
+        <p>Creative Design for Purposeful Impact.<br>Explore my work, stories, and creative journey.</p>
         <div>
-            <a href="/{{ .Lang }}/posts/" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 28px; border-radius: 30px; text-decoration: none; margin: 0 8px;">Explore Blog</a>
-            <a href="/{{ .Lang }}/about/" style="display: inline-block; background: transparent; border: 2px solid #667eea; color: #667eea; padding: 12px 28px; border-radius: 30px; text-decoration: none; margin: 0 8px;">About Me</a>
+            <a href="/{{ .Lang }}/posts/" class="btn btn-primary">Explore Blog →</a>
+            <a href="/{{ .Lang }}/about/" class="btn btn-secondary">About Me</a>
         </div>
     </div>
-</div>
-{{ end }}
+</body>
+</html>
+{{ define "main" }}{{ end }}
