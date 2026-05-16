@@ -1,7 +1,7 @@
 <header class="nds-header">
   <div class="header-container">
 
-    <!-- Logo -->
+    <!-- Logo - Same for ALL languages -->
     <div class="logo-wrapper">
       <a href="/{{ .Lang }}/">
         <img src="/images/logo.png" 
@@ -23,15 +23,9 @@
           {{ .Lang | upper }} <i>▼</i>
         </button>
         <div class="lang-dropdown" id="langDropdown">
-          {{ if .IsTranslated }}
-            {{ range .Translations }}
-              <a href="{{ .Permalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a>
-            {{ end }}
-          {{ else }}
-            {{ range .Site.Languages }}
-              {{ if ne .Lang $.Lang }}
-                <a href="/{{ .Lang }}{{ $.RelPermalink | relLangURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a>
-              {{ end }}
+          {{ range .Site.Languages }}
+            {{ if ne .Lang $.Lang }}
+              <a href="/{{ .Lang }}{{ $.RelPermalink | relLangURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a>
             {{ end }}
           {{ end }}
         </div>
@@ -49,7 +43,7 @@
 </header>
 <div class="header-spacer"></div>
 
-<!-- Mobile Menu JavaScript -->
+<!-- Mobile Menu + Language Dropdown JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile menu toggle
@@ -87,12 +81,14 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Scroll effect for header
   const header = document.querySelector('.nds-header');
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
+  if (header) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  }
 });
 </script>

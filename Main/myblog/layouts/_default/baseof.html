@@ -50,3 +50,38 @@
     {{ partial "footer.html" . }}
 </body>
 </html>
+<style>
+/* ULTIMATE LOGO FIX - Works on ALL pages, ALL languages */
+.nds-logo,
+.header-left img,
+.logo-wrapper img,
+header img,
+img[src*="logo.png"] {
+    width: 110px !important;
+    max-width: 110px !important;
+    height: auto !important;
+    min-width: 50px !important;
+}
+
+@media (max-width: 768px) {
+    .nds-logo,
+    .header-left img,
+    .logo-wrapper img,
+    header img,
+    img[src*="logo.png"] {
+        width: 85px !important;
+        max-width: 85px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .nds-logo,
+    .header-left img,
+    .logo-wrapper img,
+    header img,
+    img[src*="logo.png"] {
+        width: 65px !important;
+        max-width: 65px !important;
+    }
+}
+</style>
