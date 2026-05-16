@@ -1,0 +1,79 @@
+name: Deploy Hugo Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.124.1'
+          extended: true
+
+      - name: Setup Node.js (for PostCSS/SCSS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: Main/myblog/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: Main/myblog
+
+      - name: Build Hugo site
+        run: hugo --minify --gc --enableGitInfo
+        working-directory: Main/myblog
+        env:
+          HUGO_ENV: production
+
+      - name: Add CNAME file
+        run: echo "ndesignstudyosu.com.tr" > Main/myblog/public/CNAME
+
+      - name: Check public folder
+        run: |
+          echo "=== Public folder contents ==="
+          ls -la Main/myblog/public/
+          echo "=== English folder ==="
+          ls -la Main/myblog/public/en/ || echo "en folder not found"
+          echo "=== Turkish folder ==="
+          ls -la Main/myblog/public/tr/ || echo "tr folder not found"
+          echo "=== Arabic folder ==="
+          ls -la Main/myblog/public/ar/ || echo "ar folder not found"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: Main/myblog/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
