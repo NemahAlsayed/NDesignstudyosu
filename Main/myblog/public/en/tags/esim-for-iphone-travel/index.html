@@ -133,106 +133,52 @@
     
 </head>
 <body>
-    <header class="nds-header">
-  <div class="header-container">
-
+    <header style="background: rgba(5, 4, 6, 0.95); backdrop-filter: blur(12px); position: fixed; top: 0; left: 0; width: 100%; z-index: 9999; border-bottom: 1px solid rgba(209, 0, 0, 0.3);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; min-height: 72px;">
     
-    <div class="logo-wrapper">
+    
+    <div style="flex-shrink: 0;">
       <a href="../../../en/">
         <img src="../../../images/logo.png" 
              alt="N Design Studio" 
-             class="nds-logo">
+             width="100" 
+             height="auto"
+             style="width: 100px; height: auto; display: block; max-width: 100px; min-width: 60px;">
       </a>
     </div>
 
     
-    <nav class="header-right">
-      <ul class="nav-links">
-        <li class="nav-item"><a href="../../../en/about/">About</a></li>
-        <li class="nav-item"><a href="../../../en/contact/">Contact</a></li>
+    <nav>
+      <ul style="display: flex; gap: 30px; list-style: none; margin: 0; padding: 0;">
+        <li><a href="../../../en/about/" style="color: #E8E0D5; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500;">About</a></li>
+        <li><a href="../../../en/contact/" style="color: #E8E0D5; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500;">Contact</a></li>
       </ul>
-
-      
-      <div class="lang-switcher">
-        <button class="lang-toggle" id="langToggle">
-          EN <i>▼</i>
-        </button>
-        <div class="lang-dropdown" id="langDropdown">
-          
-            
-          
-            
-              <a href="../../../tr/en/tags/esim-for-iphone-travel/" hreflang="tr" lang="tr">Türkçe</a>
-            
-          
-            
-              <a href="../../../ar/en/tags/esim-for-iphone-travel/" hreflang="ar" lang="ar">العربية</a>
-            
-          
-        </div>
-      </div>
     </nav>
-
-    
-    <button class="mobile-menu-toggle" id="mobileMenuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
 
   </div>
 </header>
-<div class="header-spacer"></div>
+<div style="height: 72px;"></div>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  
-  const mobileToggle = document.getElementById('mobileMenuToggle');
-  const navMenu = document.querySelector('.header-right');
-  
-  if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('open');
-      document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
-    });
+<style>
+@media (max-width: 768px) {
+  header > div {
+    min-height: 60px !important;
   }
-  
-  
-  const langToggle = document.getElementById('langToggle');
-  const langDropdown = document.getElementById('langDropdown');
-  
-  if (langToggle && langDropdown) {
-    langToggle.addEventListener('click', function(e) {
-      e.stopPropagation();
-      langDropdown.classList.toggle('active');
-      langToggle.classList.toggle('active');
-    });
-    
-    
-    document.addEventListener('click', function() {
-      langDropdown.classList.remove('active');
-      langToggle.classList.remove('active');
-    });
-    
-    langDropdown.addEventListener('click', function(e) {
-      e.stopPropagation();
-    });
+  [width="100"] {
+    width: 70px !important;
   }
-  
-  
-  const header = document.querySelector('.nds-header');
-  if (header) {
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
+  div[style*="height: 72px"] {
+    height: 60px !important;
   }
-});
-</script>
+  nav ul {
+    gap: 15px !important;
+  }
+  nav ul li a {
+    font-size: 0.75rem !important;
+  }
+}
+</style>
 
     <main>
         
