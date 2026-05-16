@@ -3,179 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#800000">
+    <meta name="theme-color" content="#667eea">
     <title>N Design Studio</title>
     
     
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
     
-    <link rel="stylesheet" href="../../../css/main.css">
-    <link rel="stylesheet" href="../../../css/custom.css">
-    
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    
     <style>
-         
-        .nds-logo,
-        .logo-wrapper img,
-        header img,
-        img.nds-logo,
-        div.logo-wrapper img,
-        a img.nds-logo,
-        img[src*="logo.png"] {
-            width: 100px !important;
-            max-width: 100px !important;
-            height: auto !important;
-            min-width: 60px !important;
-        }
-        
-         
-        .nds-header {
-            background: rgba(5, 4, 6, 0.95) !important;
-            backdrop-filter: blur(12px) !important;
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            width: 100% !important;
-            z-index: 9999 !important;
-            border-bottom: 1px solid rgba(209, 0, 0, 0.3) !important;
-        }
-        
-        .header-container {
-            max-width: 1200px !important;
-            margin: 0 auto !important;
-            padding: 0 20px !important;
-            display: flex !important;
-            justify-content: space-between !important;
-            align-items: center !important;
-            min-height: 72px !important;
-        }
-        
-         
-        .nav-links {
-            display: flex !important;
-            gap: 30px !important;
-            list-style: none !important;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-        
-        .nav-links a {
-            color: #E8E0D5 !important;
-            text-decoration: none !important;
-            font-family: 'Montserrat', sans-serif !important;
-            font-size: 0.85rem !important;
-            font-weight: 500 !important;
-            transition: color 0.2s ease !important;
-        }
-        
-        .nav-links a:hover {
-            color: #d10000 !important;
-        }
-        
-         
-        body {
-            padding-top: 72px !important;
-        }
-        
-         
-        .language-tabs {
-            display: flex !important;
-            gap: 1rem !important;
-            justify-content: center !important;
-            margin: 2rem 0 !important;
-        }
-        
-        .lang-tab {
-            padding: 0.5rem 1.5rem !important;
-            background: rgba(209, 0, 0, 0.1) !important;
-            color: #E8E0D5 !important;
-            text-decoration: none !important;
-            border-radius: 30px !important;
-            transition: all 0.2s ease !important;
-        }
-        
-        .lang-tab:hover {
-            background: #d10000 !important;
-            color: white !important;
-        }
-        
-         
-        @media (max-width: 768px) {
-            .nds-logo,
-            .logo-wrapper img,
-            img[src*="logo.png"] {
-                width: 70px !important;
-                max-width: 70px !important;
-            }
-            
-            .header-container {
-                min-height: 60px !important;
-            }
-            
-            body {
-                padding-top: 60px !important;
-            }
-            
-            .nav-links {
-                gap: 15px !important;
-            }
-            
-            .nav-links a {
-                font-size: 0.75rem !important;
-            }
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Cormorant Garamond', serif;
+        background: #f7fafc;
+        color: #1a1a2e;
+        line-height: 1.6;
+      }
+      
+       
+      html {
+        scroll-behavior: smooth;
+      }
+      
+       
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #e2e8f0;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #667eea;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #764ba2;
+      }
     </style>
     
     
 </head>
 <body>
-    <header style="background: rgba(5, 4, 6, 0.95); backdrop-filter: blur(12px); position: fixed; top: 0; left: 0; width: 100%; z-index: 9999; border-bottom: 1px solid rgba(209, 0, 0, 0.3);">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; min-height: 72px;">
+    <header style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); position: fixed; top: 0; left: 0; width: 100%; z-index: 9999; border-bottom: 1px solid rgba(0,0,0,0.05); box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; min-height: 70px;">
     
     
     <div style="flex-shrink: 0;">
       <a href="../../../ar/">
         <img src="../../../images/logo.png" 
              alt="N Design Studio" 
-             width="100" 
+             width="80" 
              height="auto"
-             style="width: 100px; height: auto; display: block; max-width: 100px; min-width: 60px;">
+             style="width: 80px; height: auto; display: block;">
       </a>
     </div>
 
     
     <nav>
-      <ul style="display: flex; gap: 30px; list-style: none; margin: 0; padding: 0;">
-        <li><a href="../../../ar/about/" style="color: #E8E0D5; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500;">حول</a></li>
-        <li><a href="../../../ar/contact/" style="color: #E8E0D5; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500;">اتصل بنا</a></li>
+      <ul style="display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; align-items: center;">
+        <li><a href="../../../ar/posts/" style="color: #4a5568; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 500; transition: color 0.2s ease;">Blog</a></li>
+        <li><a href="../../../ar/about/" style="color: #4a5568; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 500; transition: color 0.2s ease;">About</a></li>
+        <li><a href="../../../ar/contact/" style="color: #4a5568; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 500; transition: color 0.2s ease;">Contact</a></li>
+        
+        
+        <li style="position: relative;">
+          <button id="langDropdownBtn" style="background: #f7fafc; border: 1px solid #e2e8f0; color: #4a5568; padding: 8px 16px; border-radius: 30px; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 8px;">
+            AR <span style="font-size: 0.7rem;">▼</span>
+          </button>
+          <div id="langDropdown" style="position: absolute; top: 100%; right: 0; margin-top: 10px; background: white; border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); min-width: 130px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 1000; border: 1px solid #e2e8f0; overflow: hidden;">
+            
+              
+                <a href="../../../en/ar/tags/%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A/" style="display: block; padding: 10px 20px; color: #4a5568; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; transition: all 0.2s ease;">English</a>
+              
+            
+              
+                <a href="../../../tr/ar/tags/%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A/" style="display: block; padding: 10px 20px; color: #4a5568; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; transition: all 0.2s ease;">Türkçe</a>
+              
+            
+              
+            
+          </div>
+        </li>
       </ul>
     </nav>
 
   </div>
 </header>
-<div style="height: 72px;"></div>
+<div style="height: 70px;"></div>
 
+<script>
+
+const btn = document.getElementById('langDropdownBtn');
+const dropdown = document.getElementById('langDropdown');
+if (btn && dropdown) {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const isActive = dropdown.style.opacity === '1';
+    dropdown.style.opacity = isActive ? '0' : '1';
+    dropdown.style.visibility = isActive ? 'hidden' : 'visible';
+    dropdown.style.transform = isActive ? 'translateY(-10px)' : 'translateY(0)';
+  });
+  document.addEventListener('click', function() {
+    dropdown.style.opacity = '0';
+    dropdown.style.visibility = 'hidden';
+    dropdown.style.transform = 'translateY(-10px)';
+  });
+  dropdown.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+}
+</script>
 
 <style>
 @media (max-width: 768px) {
-  header > div {
+  [style*="min-height: 70px"] {
     min-height: 60px !important;
   }
-  [width="100"] {
-    width: 70px !important;
+  [width="80"] {
+    width: 60px !important;
   }
-  div[style*="height: 72px"] {
+  div[style*="height: 70px"] {
     height: 60px !important;
   }
   nav ul {
     gap: 15px !important;
   }
-  nav ul li a {
+  nav ul li a, #langDropdownBtn {
     font-size: 0.75rem !important;
+    padding: 6px 12px !important;
   }
 }
 </style>

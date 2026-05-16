@@ -1,148 +1,37 @@
 {{ define "main" }}
-
-<div class="container posts-wrapper">
-
-  <!-- SEARCH BAR -->
-  <div class="posts-search">
-    <input type="text" id="searchInput" placeholder="Search posts...">
-  </div>
-
-  <!-- BUILD CATEGORY DICTIONARY -->
-  {{ $postsByCategory := dict }}
-  {{ $allPosts := slice }}
-
-  {{ range .Pages }}
-    {{ $page := . }}
-    {{ $allPosts = $allPosts | append $page }}
-
-    {{ $categories := .Params.categories | default (slice "Uncategorized") }}
-
-    {{ range $categories }}
-      {{ $cat := . }}
-      {{ $posts := index $postsByCategory $cat | default slice }}
-      {{ $posts = $posts | append $page }}
-      {{ $postsByCategory = merge $postsByCategory (dict $cat $posts) }}
-    {{ end }}
-  {{ end }}
-
-  <!-- SORT CATEGORIES (GitHub Pages safe) -->
-  {{ $sortedCats := slice }}
-  {{ range $k, $_ := $postsByCategory }}
-    {{ $sortedCats = $sortedCats | append $k }}
-  {{ end }}
-  {{ $sortedCats = sort $sortedCats }}
-
-  <!-- CATEGORY CHIPS -->
-  <div class="category-chips">
-    <button class="chip active" data-filter="all">All</button>
-    {{ range $sortedCats }}
-      <button class="chip" data-filter="{{ . }}">{{ . }}</button>
-    {{ end }}
-  </div>
-
-  <!-- PAGE TITLE -->
-  <h1 class="text-center mb-4">{{ .Title }}</h1>
-
-  <!-- POSTS GRID -->
-  <div class="row" id="posts-grid">
-
-    {{ range $allPosts }}
-      {{ $page := . }}
-      {{ $categories := .Params.categories | default (slice "Uncategorized") }}
-
-      <div class="col-md-6 col-lg-4 mb-4 post-card-wrapper"
-           data-category="{{ index $categories 0 }}">
-
-        <div class="card post-card h-100">
-
-          <!-- SMART IMAGE FALLBACK (GitHub Pages safe) -->
-          {{ $img := .Resources.GetMatch .Params.featured_image }}
-
-          {{ if not $img }}
-            {{ $fallback := .Resources.ByType "image" }}
-            {{ if gt (len $fallback) 0 }}
-              {{ $img = index $fallback 0 }}
+<section style="padding: 60px 20px; background: #f5f5f5; min-height: 100vh;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; text-align: center; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 48px;">{{ .Title }}</h1>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+      {{ range .Pages }}
+      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
+        {{ $img := .Resources.GetMatch .Params.featured_image }}
+        {{ if not $img }}
+          {{ $img = index (.Resources.ByType "image") 0 }}
+        {{ end }}
+        {{ with $img }}
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="width: 100%; height: 220px; object-fit: cover;">
+        {{ else }}
+          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
+          </div>
+        {{ end }}
+        <div style="padding: 24px;">
+          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
+            <a href="{{ .Permalink }}" style="color: #1a1a1a; text-decoration: none;">{{ .Title }}</a>
+          </h2>
+          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+            {{ range .Params.categories }}
+              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">{{ . }}</span>
             {{ end }}
-          {{ end }}
-
-          {{ with $img }}
-            <img loading="lazy" src="{{ .RelPermalink }}" class="post-card-image" alt="{{ $.Title }}">
-          {{ end }}
-
-          <div class="card-body">
-            <h5 class="card-title">{{ .Title }}</h5>
-            <p class="card-text">
-              {{ with .Params.description }}
-                {{ . | plainify | truncate 180 }}
-              {{ else }}
-                {{ .Summary | plainify | truncate 180 }}
-              {{ end }}
-            </p>
-            <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
           </div>
-
-          <div class="card-footer text-muted">
-            {{ .Date.Format "Jan 2, 2006" }}
-          </div>
-
+          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;">{{ .Summary | truncate 120 }}</p>
+          <a href="{{ .Permalink }}" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
         </div>
       </div>
-    {{ end }}
-
+      {{ end }}
+    </div>
   </div>
-
-</div>
-
-<!-- FILTER + SEARCH JS -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const chips = document.querySelectorAll(".chip");
-  const cards = document.querySelectorAll(".post-card-wrapper");
-  const searchInput = document.getElementById("searchInput");
-
-  /* CATEGORY FILTERING */
-  chips.forEach(chip => {
-    chip.addEventListener("click", () => {
-
-      chips.forEach(c => c.classList.remove("active"));
-      chip.classList.add("active");
-
-      const filter = chip.dataset.filter.toLowerCase();
-
-      cards.forEach(card => {
-        const category = card.dataset.category.toLowerCase();
-
-        if (filter === "all" || category === filter) {
-          card.style.display = "block";
-          card.style.opacity = "1";
-        } else {
-          card.style.opacity = "0";
-          setTimeout(() => card.style.display = "none", 200);
-        }
-      });
-    });
-  });
-
-  /* SEARCH FILTERING */
-  searchInput.addEventListener("input", function () {
-    const query = this.value.toLowerCase();
-
-    cards.forEach(card => {
-      const title = card.querySelector(".card-title").textContent.toLowerCase();
-      const text = card.querySelector(".card-text").textContent.toLowerCase();
-
-      if (title.includes(query) || text.includes(query)) {
-        card.style.display = "block";
-        card.style.opacity = "1";
-      } else {
-        card.style.opacity = "0";
-        setTimeout(() => card.style.display = "none", 200);
-      }
-    });
-  });
-
-});
-</script>
-
+</section>
 {{ end }}
