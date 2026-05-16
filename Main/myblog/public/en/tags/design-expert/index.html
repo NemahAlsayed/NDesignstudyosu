@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#800000">
+    <title>N Design Studio</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/custom.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+         
+        .nds-logo,
+        .header-left img,
+        .logo-wrapper img {
+            width: 110px !important;
+            max-width: 110px !important;
+            height: auto !important;
+        }
+        
+        @media (max-width: 768px) {
+            .nds-logo,
+            .header-left img,
+            .logo-wrapper img {
+                width: 70px !important;
+                max-width: 70px !important;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header class="nds-header">
+  <div class="header-container">
+
+    
+    <div class="logo-wrapper">
+      <a href="../../../en/">
+        <img src="../../../images/logo.png" 
+             alt="N Design Studio" 
+             class="nds-logo">
+      </a>
+    </div>
+
+    
+    <nav class="header-right">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="../../../en/about/">About</a></li>
+        <li class="nav-item"><a href="../../../en/contact/">Contact</a></li>
+      </ul>
+
+      
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="langToggle">
+          EN <i>▼</i>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          
+            
+              
+            
+              
+                <a href="../../../tr/en/tags/design-expert/" hreflang="tr" lang="tr">Türkçe</a>
+              
+            
+              
+                <a href="../../../ar/en/tags/design-expert/" hreflang="ar" lang="ar">العربية</a>
+              
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+<div class="header-spacer"></div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mobileToggle = document.getElementById('mobileMenuToggle');
+  const navMenu = document.querySelector('.header-right');
+  
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('open');
+      document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+    });
+  }
+  
+  
+  const langToggle = document.getElementById('langToggle');
+  const langDropdown = document.getElementById('langDropdown');
+  
+  if (langToggle && langDropdown) {
+    langToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDropdown.classList.toggle('active');
+      langToggle.classList.toggle('active');
+    });
+    
+    
+    document.addEventListener('click', function() {
+      langDropdown.classList.remove('active');
+      langToggle.classList.remove('active');
+    });
+    
+    langDropdown.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+  
+  
+  const header = document.querySelector('.nds-header');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+</script>
+
+    <main>
+        
+
+<h1 class="text-center mb-4">Design-Expert</h1>
+<hr />
+
+<div class="row justify-content-center mt-4">
+  <div class="col-12 text-center">
+
+    
+      <a href="../../../en/posts/2024/03/2024-03-10-welcome-to-n-design-studyosu/" class="btn btn-sm btn-light border-primary m-2">
+        #Welcome to N Design Studyosu;
+      </a>
+    
+
+  </div>
+</div>
+
+
+    </main>
+    <footer class="nds-footer">
+
+  
+  
+  <div class="nds-footer-social">
+    
+      <a href="https://www.facebook.com/profile.php?id=61584092261123" class="nds-footer-icon">
+        <i class="bi bi-facebook"></i>
+      </a>
+    
+      <a href="https://twitter.com/NDesignStudyosu" class="nds-footer-icon">
+        <i class="bi bi-twitter"></i>
+      </a>
+    
+      <a href="https://instagram.com/ndesignstudyosu" class="nds-footer-icon">
+        <i class="bi bi-instagram"></i>
+      </a>
+    
+      <a href="https://www.youtube.com/@ndesignstudio7937" class="nds-footer-icon">
+        <i class="bi bi-youtube"></i>
+      </a>
+    
+      <a href="https://www.tiktok.com/@ndesignstudyosu" class="nds-footer-icon">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    
+  </div>
+
+  
+  <p class="nds-footer-tagline">
+    Creative Design for Purposeful Impact
+  </p>
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="nds-footer-copy">
+    <p>© 2026 N Design Studio. All rights reserved.</p>
+  </div>
+
+</footer>
+
+</body>
+</html>

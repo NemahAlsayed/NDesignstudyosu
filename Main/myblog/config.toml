@@ -7,88 +7,152 @@ googleAnalytics = "G-MG76R19NGW"
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-
-# FIXED
-relativeURLs = false
-canonifyURLs = true
+relativeURLs = true
+canonifyURLs = false
 
 [params]
-  subtitle = "Creative Design for Purposeful Impact"
+subtitle = "Creative Design for Purposeful Impact"
+selectedCategory = ""
 
-[params.social]
-  twitter = "https://twitter.com/NDesignStudyosu"
-  instagram = "https://instagram.com/ndesignstudyosu"
-  facebook = "https://www.facebook.com/profile.php?id=61584092261123"
-  youtube = "https://www.youtube.com/@ndesignstudio7937"
-  tiktok = "https://www.tiktok.com/@ndesignstudyosu"
+[params.homepage]
+preTitle = "Creative Vision. Human Stories. Purposeful Design."
+title = "N Design Studio"
+intro = """Welcome to a space where art, storytelling, and thoughtful design come together. I create visual narratives, marketing awareness content, and multilingual messages that empower communities and celebrate culture. Explore my latest work, insights, and creative journeys — crafted with intention, clarity, and heart."""
+mainButton = "Explore the Blog"
+mainButtonRef = "/posts/"
+secondButton = "About Me"
+secondButtonRef = "/about/"
+blogTitle = "Latest Posts"
+blogButton = "View All Posts"
+
+[params.contacts]
+title = "Contact Us"
+formCallToAction = "Get in touch with us"
+socialCallToAction = "Follow us on social media"
+
+[params.contacts.form]
+formspreeLink = "https://formspree.io/f/mkovywgj"
+firstname = "First Name"
+lastname = "Last Name"
+email = "Email"
+phone = "Phone"
+inquiry = "Inquiry"
+checkbox = "I agree to the terms and conditions"
+submitBtn = "Send Message"
+
+[params.schedules]
+enabledContacts = true
+enabledFooter = false
+
+[params.socials]
+enabled = true
+callToAction = "Follow us on social media"
+
+[[params.socials.link]]
+name = "facebook"
+link = "https://www.facebook.com/profile.php?id=61584092261123"
+
+[[params.socials.link]]
+name = "twitter"
+link = "https://twitter.com/NDesignStudyosu"
+
+[[params.socials.link]]
+name = "instagram"
+link = "https://instagram.com/ndesignstudyosu"
+
+[[params.socials.link]]
+name = "youtube"
+link = "https://www.youtube.com/@ndesignstudio7937"
+
+[[params.socials.link]]
+name = "tiktok"
+link = "https://www.tiktok.com/@ndesignstudyosu"
 
 [languages]
 [languages.en]
-  weight = 1
-  contentDir = "content/en"
-  languageName = "English"
-  
-  [[languages.en.menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 1
-  [[languages.en.menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 2
+weight = 1
+contentDir = "content/en"
+languageName = "English"
+
+[languages.en.params]
+label = "English"
+
+[languages.en.menu]
+[[languages.en.menu.main]]
+name = "About"
+url = "/about/"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 2
 
 [languages.tr]
-  weight = 2
-  contentDir = "content/tr"
-  languageName = "Türkçe"
-  
-  [[languages.tr.menu.main]]
-    name = "Hakkında"
-    url = "/about/"
-    weight = 1
-  [[languages.tr.menu.main]]
-    name = "İletişim"
-    url = "/contact/"
-    weight = 2
+weight = 2
+contentDir = "content/tr"
+languageName = "Türkçe"
+
+[languages.tr.params]
+label = "Türkçe"
+
+[languages.tr.params.homepage]
+preTitle = "Yaratıcı Vizyon. İnsan Hikayeleri. Amaçlı Tasarım."
+title = "N Design Studyosu"
+intro = """Sanat, hikaye anlatımı ve düşünceli tasarımın bir araya geldiği bir alana hoş geldiniz. Toplulukları güçlendiren ve kültürü kutlayan görsel anlatılar, pazarlama farkındalık içeriği ve çok dilli mesajlar oluşturuyorum. En son çalışmalarımı, içgörülerimi ve yaratıcı yolculuklarımı keşfedin — niyet, netlik ve kalp ile tasarlandı."""
+mainButton = "Bloğu Keşfet"
+mainButtonRef = "/posts/"
+secondButton = "Hakkımda"
+secondButtonRef = "/about/"
+blogTitle = "Son Gönderiler"
+blogButton = "Tüm Gönderileri Görüntüle"
+
+[languages.tr.menu]
+[[languages.tr.menu.main]]
+name = "Hakkında"
+url = "/about/"
+weight = 1
+
+[[languages.tr.menu.main]]
+name = "İletişim"
+url = "/contact/"
+weight = 2
 
 [languages.ar]
-  weight = 3
-  contentDir = "content/ar"
-  languageName = "العربية"
-  
-  [[languages.ar.menu.main]]
-    name = "حول"
-    url = "/about/"
-    weight = 1
-  [[languages.ar.menu.main]]
-    name = "اتصل بنا"
-    url = "/contact/"
-    weight = 2
+weight = 3
+contentDir = "content/ar"
+languageName = "العربية"
+
+[languages.ar.params]
+label = "العربية"
+direction = "rtl"
+
+[languages.ar.params.homepage]
+preTitle = "رؤية إبداعية. قصص بشرية. تصميم هادف."
+title = "ستوديو نون للتصميم"
+intro = """مرحباً بك في فضاء يلتقي فيه الفن والسرد والتصميم المدروس. أقوم بإنشاء روايات بصرية، محتوى توعية تسويقية، ورسائل متعددة اللغات تمكن المجتمعات وتحتفل بالثقافة. استكشف أحدث أعمالي، الرؤى، والرحلات الإبداعية — مصممة بعناية، وضوح، وقلب."""
+mainButton = "استكشف المدونة"
+mainButtonRef = "/posts/"
+secondButton = "حولي"
+secondButtonRef = "/about/"
+blogTitle = "أحدث المنشورات"
+blogButton = "عرض جميع المنشورات"
+
+[languages.ar.menu]
+[[languages.ar.menu.main]]
+name = "حول"
+url = "/about/"
+weight = 1
+
+[[languages.ar.menu.main]]
+name = "اتصل بنا"
+url = "/contact/"
+weight = 2
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
-[module]
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-
-[build]
-  writeStats = true
-
-[module]
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-
-[build]
-  writeStats = true
-  noJSConfigInAssets = false
+[markup.highlight]
+noClasses = false

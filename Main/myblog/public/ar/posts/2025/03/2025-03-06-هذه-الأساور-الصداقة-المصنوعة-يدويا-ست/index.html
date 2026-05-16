@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#800000">
+    <title>N Design Studio</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../../../../../css/main.css">
+    <link rel="stylesheet" href="../../../../../css/custom.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+         
+        .nds-logo,
+        .header-left img,
+        .logo-wrapper img {
+            width: 110px !important;
+            max-width: 110px !important;
+            height: auto !important;
+        }
+        
+        @media (max-width: 768px) {
+            .nds-logo,
+            .header-left img,
+            .logo-wrapper img {
+                width: 70px !important;
+                max-width: 70px !important;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header class="nds-header">
+  <div class="header-container">
+
+    
+    <div class="logo-wrapper">
+      <a href="../../../../../ar/">
+        <img src="../../../../../images/logo.png" 
+             alt="N Design Studio" 
+             class="nds-logo">
+      </a>
+    </div>
+
+    
+    <nav class="header-right">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="../../../../../ar/about/">حول</a></li>
+        <li class="nav-item"><a href="../../../../../ar/contact/">اتصل بنا</a></li>
+      </ul>
+
+      
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="langToggle">
+          AR <i>▼</i>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          
+            
+              
+                <a href="../../../../../en/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" hreflang="en" lang="en">English</a>
+              
+            
+              
+                <a href="../../../../../tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" hreflang="tr" lang="tr">Türkçe</a>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+<div class="header-spacer"></div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mobileToggle = document.getElementById('mobileMenuToggle');
+  const navMenu = document.querySelector('.header-right');
+  
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('open');
+      document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+    });
+  }
+  
+  
+  const langToggle = document.getElementById('langToggle');
+  const langDropdown = document.getElementById('langDropdown');
+  
+  if (langToggle && langDropdown) {
+    langToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDropdown.classList.toggle('active');
+      langToggle.classList.toggle('active');
+    });
+    
+    
+    document.addEventListener('click', function() {
+      langDropdown.classList.remove('active');
+      langToggle.classList.remove('active');
+    });
+    
+    langDropdown.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+  
+  
+  const header = document.querySelector('.nds-header');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+</script>
+
+    <main>
+        
+
+<div class="nds-single-wrapper">
+
+  
+  
+
+  <article class="nds-single-article container">
+
+    
+    <header class="nds-single-header">
+      <h1 class="nds-single-title">هذه الأساور الصداقة المصنوعة يدويا ستغزو اسطنبول عام 2025!</h1>
+
+      <div class="nds-single-meta">
+        <time datetime="2025-03-06">
+          Mar 6, 2025
+        </time>
+
+        
+
+        <span class="nds-single-reading">
+          2 min read
+        </span>
+      </div>
+
+      <div class="nds-single-divider"></div>
+    </header>
+
+    
+    <div class="nds-single-content">
+      <p>في عالم يبدو غالبًا شاسعًا ومنفصلًا، تعمل NDesignstudio على تقريب الناس من بعضهم البعض - سوارًا تلو الآخر. أسستها صاحبة الرؤية المبدعة نعمة السيد، وتتخصص NDesignstudio في أساور الصداقة المصنوعة يدويًا والتي تعد أكثر من مجرد إكسسوارات؛ فهي قصص يمكن ارتداؤها ورموز للوحدة واحتفالات بالتنوع العالمي.</p>
+<p>يتم تصنيع كل سوار بعناية باستخدام الخرز والخيوط، والتي تم اختيارها بعناية لتمثل الألوان الفريدة والحمض النووي الثقافي للدول في جميع أنحاء العالم. سواء كانت الألوان النابضة بالحياة للمكسيك، أو النغمات الهادئة لإسكندنافيا، أو الأنماط الجريئة لأفريقيا، فإن كل قطعة تحكي قصة. ولكن هذا ليس كل شيء - تضيف نعمة لمسة شخصية من خلال تضمين ملصقات واقتباسات ملهمة مع كل عملية شراء، مما يجعل هذه الأساور ليست مجرد هدية، بل تجربة ذات مغزى.</p>
+<p>لماذا تختار NDesignstudio؟</p>
+<p>احتفال بالثقافة<br>
+كل سوار هو تكريم للتراث والتقاليد الغنية لبلد معين. من خلال ارتداء سوار، فإنك تحمل قطعة من العالم معك، مما يعزز الشعور بالارتباط والتقدير للثقافات العالمية.<br>
+مصنوع يدويًا بحب<br>
+تبذل نيما قلبها في كل قطعة، مما يضمن أن يكون كل سوار فريدًا ومصنوعًا بعناية. هذه ليست مجوهرات يتم إنتاجها بكميات كبيرة - إنها فن مصنوع بقصد وشغف.<br>
+مثالي لكل مناسبة<br>
+سواء كنت تبحث عن هدية مدروسة لصديق، أو تذكار لتذكر رحلاتك، أو هدية لنفسك، فإن هذه الأساور متعددة الاستخدامات وذات مغزى. إنها مثالية لأعياد الميلاد والذكرى السنوية أو ببساطة كتذكير بجمال التنوع.<br>
+فخامة بأسعار معقولة<br>
+تتراوح أسعار هذه الأساور بين 250 و500 ليرة تركية، وهي طريقة ميسورة التكلفة لامتلاك قطعة فنية مصنوعة يدويًا. كل عملية شراء تدعم شركة صغيرة وحلم مبدع متحمس.<br>
+أكثر من مجرد سوار<br>
+مع كل طلب، ستتلقى ملصقات وعبارات مقتبسة تضيف طبقة إضافية من الإلهام. هذه اللمسات الصغيرة تجعل إبداعات NDesignstudio مميزة، وتحول الإكسسوار البسيط إلى تذكار.</p>
+<p>رسالة من نعمة السيد</p>
+<p>&ldquo;بدأت NDesignstudio لأنني أردت أن أبتكر شيئًا يجمع الناس معًا. في عالم يمكن أن يشعر فيه المرء بالانقسام، تُعد هذه الأساور تذكيرًا بإنسانيتنا المشتركة وجمال اختلافاتنا. يتم اختيار كل خيط وكل حبة وكل لون بعناية لتكريم الثقافات التي تمثلها. عندما ترتدي أحد هذه الأساور، فأنت لا تكتفي بإضافة الإكسسوارات فحسب، بل تروي قصة.&rdquo;</p>
+<p>كيفية الطلب<br>
+هل أنت مستعد لإضافة قطعة من العالم إلى مجموعتك؟ قم بزيارة NDesignstudio على [www.ndesignstudyosu.com] لتصفح أحدث التصميمات. يتم تصنيع كل سوار حسب الطلب، لذا يمكنك التأكد من أن قطعتك فريدة مثلك تمامًا. متوفر للشحن داخل تركيا عن طريق Ptt أو التسليم باليد في الجانب الآسيوي من إسطنبول.<br>
+تابع NDesignstudio على [@NDesignstudyosu/NDesignstudio] للبقاء على اطلاع دائم بالتصميمات الجديدة والعروض الترويجية والقصص الملهمة من جميع أنحاء العالم.</p>
+<hr>
+<p>NDesignstudio: أساور الصداقة المصنوعة يدويًا لعالم متصل.</p>
+<hr>
+<p><a href="https://youtube.com/shorts/awT2nvM9iEI?si=dvqAJopeWZ">https://youtube.com/shorts/awT2nvM9iEI?si=dvqAJopeWZ</a>_it5ZT</p>
+
+    </div>
+
+  </article>
+
+</div>
+
+
+    </main>
+    <footer class="nds-footer">
+
+  
+  
+  <div class="nds-footer-social">
+    
+      <a href="https://www.facebook.com/profile.php?id=61584092261123" class="nds-footer-icon">
+        <i class="bi bi-facebook"></i>
+      </a>
+    
+      <a href="https://twitter.com/NDesignStudyosu" class="nds-footer-icon">
+        <i class="bi bi-twitter"></i>
+      </a>
+    
+      <a href="https://instagram.com/ndesignstudyosu" class="nds-footer-icon">
+        <i class="bi bi-instagram"></i>
+      </a>
+    
+      <a href="https://www.youtube.com/@ndesignstudio7937" class="nds-footer-icon">
+        <i class="bi bi-youtube"></i>
+      </a>
+    
+      <a href="https://www.tiktok.com/@ndesignstudyosu" class="nds-footer-icon">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    
+  </div>
+
+  
+  <p class="nds-footer-tagline">
+    Creative Design for Purposeful Impact
+  </p>
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="nds-footer-copy">
+    <p>© 2026 N Design Studio. All rights reserved.</p>
+  </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#800000">
+    <title>N Design Studio</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../../../../../css/main.css">
+    <link rel="stylesheet" href="../../../../../css/custom.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+         
+        .nds-logo,
+        .header-left img,
+        .logo-wrapper img {
+            width: 110px !important;
+            max-width: 110px !important;
+            height: auto !important;
+        }
+        
+        @media (max-width: 768px) {
+            .nds-logo,
+            .header-left img,
+            .logo-wrapper img {
+                width: 70px !important;
+                max-width: 70px !important;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header class="nds-header">
+  <div class="header-container">
+
+    
+    <div class="logo-wrapper">
+      <a href="../../../../../ar/">
+        <img src="../../../../../images/logo.png" 
+             alt="N Design Studio" 
+             class="nds-logo">
+      </a>
+    </div>
+
+    
+    <nav class="header-right">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="../../../../../ar/about/">حول</a></li>
+        <li class="nav-item"><a href="../../../../../ar/contact/">اتصل بنا</a></li>
+      </ul>
+
+      
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="langToggle">
+          AR <i>▼</i>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          
+            
+              
+                <a href="../../../../../en/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" hreflang="en" lang="en">English</a>
+              
+            
+              
+                <a href="../../../../../tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" hreflang="tr" lang="tr">Türkçe</a>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+<div class="header-spacer"></div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mobileToggle = document.getElementById('mobileMenuToggle');
+  const navMenu = document.querySelector('.header-right');
+  
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('open');
+      document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+    });
+  }
+  
+  
+  const langToggle = document.getElementById('langToggle');
+  const langDropdown = document.getElementById('langDropdown');
+  
+  if (langToggle && langDropdown) {
+    langToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDropdown.classList.toggle('active');
+      langToggle.classList.toggle('active');
+    });
+    
+    
+    document.addEventListener('click', function() {
+      langDropdown.classList.remove('active');
+      langToggle.classList.remove('active');
+    });
+    
+    langDropdown.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+  
+  
+  const header = document.querySelector('.nds-header');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+</script>
+
+    <main>
+        
+
+<div class="nds-single-wrapper">
+
+  
+  
+
+  <article class="nds-single-article container">
+
+    
+    <header class="nds-single-header">
+      <h1 class="nds-single-title">اكتشف سحر يومك الخاص مع دعوات زفاف مخصصة من نعمه في NDesignstudio!</h1>
+
+      <div class="nds-single-meta">
+        <time datetime="2025-03-07">
+          Mar 7, 2025
+        </time>
+
+        
+
+        <span class="nds-single-reading">
+          2 min read
+        </span>
+      </div>
+
+      <div class="nds-single-divider"></div>
+    </header>
+
+    
+    <div class="nds-single-content">
+      <p>يوم زفافك هو احتفال لا يتكرر، وكل تفصيلة يجب أن تعكس قصة حبك وفرحتك وتميزك. في <strong>NDesignstudio</strong>، نؤمن بأن دعوات زفافك ليست مجرد أوراق—بل هي لمحة أولى عن يومك الكبير، وهي التي تحدد طابع الاحتفال القادم. لذلك، يسعدنا أن نقدم لكم <strong>دعوات زفاف مخصصة التصميم والطباعة</strong>، المصنوعة بحب وإتقان وإبداع من قبل نعمه نفسها.</p>
+<h3 id="ndesignstudio-لدعوات-زفافك"><strong>NDesignstudio لدعوات زفافك؟</strong></h3>
+<ol>
+<li>
+<p><strong>مصنوعة يدوياً بإتقان</strong><br>
+كل دعوة تُصنع <strong>يدوياً وتُقطع يدوياً</strong> بعناية فائقة، مما يضمن لمسة شخصية لا يمكن لأي آلة أن تنافسها. نعمه تضع شغفها في كل تفصيلة، لتصنع دعوات فريدة تعكس قصة حبكم.</p>
+</li>
+<li>
+<p><strong>رفاهية بأسعار معقولة</strong><br>
+مقابل <strong>50 دولاراً فقط</strong>، ستحصلون على <strong>20 دعوة</strong>، كل دعوة تتكون من <strong>5 صفحات</strong> (بإجمالي 4 صفحات A4 لكل دعوة). هذه القيمة المذهلة لا تعني التنازل عن الجودة—فكل قطعة هي عمل فني مصمم لإبهار ضيوفكم.</p>
+</li>
+<li>
+<p><strong>ألوان زاهية وتصاميم مذهلة</strong><br>
+تُنشر الدعوات بألوان زاهية وتصاميم دقيقة، مصممة بعناية لتتناسب مع طابع زفافكم. سواء كنتم تحلمون بلمسة من الأناقة البسيطة، أو الأزهار الجريئة، أو شيء فريد تماماً، نيمه ستجعل رؤيتكم حقيقة.</p>
+</li>
+<li>
+<p><strong>عينة مجانية</strong><br>
+ما زلتم غير متأكدين؟ نحن واثقون جداً من أنكم ستحبون عملنا، لذا نقدم لكم <strong>عينة مجانية</strong> من أفضل تصاميمنا. جربوا جودة وإبداع NDesignstudio قبل الالتزام!</p>
+</li>
+</ol>
+<hr>
+<h3 id="كيف-تعمل-الخدمة"><strong>كيف تعمل الخدمة</strong></h3>
+<ol>
+<li>
+<p><strong>شاركوا رؤيتكم</strong><br>
+أخبرونا عن طابع زفافكم، الألوان التي تفضلونها، وأي أفكار محددة لديكم. ستعمل نيمه معكم عن كثب لإنشاء تصميم يعكس شخصيتكم.</p>
+</li>
+<li>
+<p><strong>الموافقة والتخصيص</strong><br>
+بمجرد انتهاء التصميم، سنشارككم نموذجاً للموافقة عليه. سنقوم بإجراء أي تعديلات حتى يصبح التصميم مثالياً.</p>
+</li>
+<li>
+<p><strong>إتقان يدوي</strong><br>
+بعد الموافقة النهائية، ستقوم نيمه بصنع دعواتكم يدوياً بدقة وعناية، لضمان أن كل تفصيلة تكون مثالية.</p>
+</li>
+<li>
+<p><strong>التوصيل إلى باب منزلكم</strong><br>
+ستصل دعوات زفافكم الفريدة والمذهلة إليكم، جاهزة لإبهار ضيوفكم ووضع الأساس ليومكم الخاص.</p>
+</li>
+</ol>
+<hr>
+<h3 id="اجعلوا-زفافكم-لا-ينسى"><strong>اجعلوا زفافكم لا يُنسى</strong></h3>
+<p>دعوات زفافكم ليست مجرد أوراق—بل هي تذكار، ذكرى، ووعد باليوم الجميل القادم. دعوا نيمه وNDesignstudio تساعدكم في صنع شيء سحري حقاً. مع دعواتنا <strong>المصنوعة يدوياً، المقطوعة يدوياً، والمزينة بألوان زاهية</strong>، سيبدأ زفافكم بتأثير مبهر لن ينساه ضيوفكم أبداً.</p>
+<hr>
+<p><strong>مستعدون للبدء؟</strong><br>
+اتصلوا بنا اليوم لوضع طلبكم أو طلب العينة المجانية. لنصنع معاً شيئاً استثنائياً!</p>
+<p><a href="https://arabicndesignstudyosu.wordpress.com/wp-content/uploads/2025/03/ndesignstudio-10-wedding-invites.pdf">NDesignStudio 10 Wedding Invites</a><a href="https://arabicndesignstudyosu.wordpress.com/wp-content/uploads/2025/03/ndesignstudio-10-wedding-invites.pdf">Download</a></p>
+<p><strong>NDesignstudio</strong><br>
+<em>نصنع الذكريات، دعوة تلو الأخرى.</em><br>
+📩 البريد الإلكتروني: <a href="mailto:nemah.alsayed@gmail.com">nemah.alsayed@gmail.com</a></p>
+<p>لا تنتظروا—دعوات زفاف أحلامكم على بعد نقرة واحدة! 💌</p>
+
+    </div>
+
+  </article>
+
+</div>
+
+
+    </main>
+    <footer class="nds-footer">
+
+  
+  
+  <div class="nds-footer-social">
+    
+      <a href="https://www.facebook.com/profile.php?id=61584092261123" class="nds-footer-icon">
+        <i class="bi bi-facebook"></i>
+      </a>
+    
+      <a href="https://twitter.com/NDesignStudyosu" class="nds-footer-icon">
+        <i class="bi bi-twitter"></i>
+      </a>
+    
+      <a href="https://instagram.com/ndesignstudyosu" class="nds-footer-icon">
+        <i class="bi bi-instagram"></i>
+      </a>
+    
+      <a href="https://www.youtube.com/@ndesignstudio7937" class="nds-footer-icon">
+        <i class="bi bi-youtube"></i>
+      </a>
+    
+      <a href="https://www.tiktok.com/@ndesignstudyosu" class="nds-footer-icon">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    
+  </div>
+
+  
+  <p class="nds-footer-tagline">
+    Creative Design for Purposeful Impact
+  </p>
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="nds-footer-copy">
+    <p>© 2026 N Design Studio. All rights reserved.</p>
+  </div>
+
+</footer>
+
+</body>
+</html>

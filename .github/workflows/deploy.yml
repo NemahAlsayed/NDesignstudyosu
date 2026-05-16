@@ -28,11 +28,11 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.124.1'
+          hugo-version: '0.157.0'
           extended: true
 
       - name: Build Hugo site
-        run: hugo --minify --gc
+        run: hugo --minify --gc --enableGitInfo
         working-directory: Main/myblog
         env:
           HUGO_ENV: production
@@ -42,10 +42,10 @@ jobs:
 
       - name: List built files (debug)
         run: |
-          echo "=== Built files ==="
-          ls -la Main/myblog/public/
           echo "=== CSS files ==="
           find Main/myblog/public -name "*.css" -type f | head -10
+          echo "=== SCSS compiled check ==="
+          ls -la Main/myblog/public/css/ || echo "No css folder"
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

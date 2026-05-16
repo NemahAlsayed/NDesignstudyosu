@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#800000">
+    <title>N Design Studio</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/custom.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+         
+        .nds-logo,
+        .header-left img,
+        .logo-wrapper img {
+            width: 110px !important;
+            max-width: 110px !important;
+            height: auto !important;
+        }
+        
+        @media (max-width: 768px) {
+            .nds-logo,
+            .header-left img,
+            .logo-wrapper img {
+                width: 70px !important;
+                max-width: 70px !important;
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header class="nds-header">
+  <div class="header-container">
+
+    
+    <div class="logo-wrapper">
+      <a href="../../../ar/">
+        <img src="../../../images/logo.png" 
+             alt="N Design Studio" 
+             class="nds-logo">
+      </a>
+    </div>
+
+    
+    <nav class="header-right">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="../../../ar/about/">حول</a></li>
+        <li class="nav-item"><a href="../../../ar/contact/">اتصل بنا</a></li>
+      </ul>
+
+      
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="langToggle">
+          AR <i>▼</i>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          
+            
+              
+                <a href="../../../en/ar/tags/%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/" hreflang="en" lang="en">English</a>
+              
+            
+              
+                <a href="../../../tr/ar/tags/%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/" hreflang="tr" lang="tr">Türkçe</a>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+<div class="header-spacer"></div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mobileToggle = document.getElementById('mobileMenuToggle');
+  const navMenu = document.querySelector('.header-right');
+  
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('open');
+      document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+    });
+  }
+  
+  
+  const langToggle = document.getElementById('langToggle');
+  const langDropdown = document.getElementById('langDropdown');
+  
+  if (langToggle && langDropdown) {
+    langToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDropdown.classList.toggle('active');
+      langToggle.classList.toggle('active');
+    });
+    
+    
+    document.addEventListener('click', function() {
+      langDropdown.classList.remove('active');
+      langToggle.classList.remove('active');
+    });
+    
+    langDropdown.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+  
+  
+  const header = document.querySelector('.nds-header');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+</script>
+
+    <main>
+        
+
+<h1 class="text-center mb-4">نمشي-السعودية</h1>
+<hr />
+
+<div class="row justify-content-center mt-4">
+  <div class="col-12 text-center">
+
+    
+      <a href="../../../ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/" class="btn btn-sm btn-light border-primary m-2">
+        #أقوى عروض نمشي الشرق الأوسط، مع كوبون خصم &#34;BFF158&#34;
+      </a>
+    
+      <a href="../../../ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/" class="btn btn-sm btn-light border-primary m-2">
+        #تسوّق بأناقة مع نمشي في الخليج: خصومات حصرية باستخدام كوبون BFF158 🛍️
+      </a>
+    
+
+  </div>
+</div>
+
+
+    </main>
+    <footer class="nds-footer">
+
+  
+  
+  <div class="nds-footer-social">
+    
+      <a href="https://www.facebook.com/profile.php?id=61584092261123" class="nds-footer-icon">
+        <i class="bi bi-facebook"></i>
+      </a>
+    
+      <a href="https://twitter.com/NDesignStudyosu" class="nds-footer-icon">
+        <i class="bi bi-twitter"></i>
+      </a>
+    
+      <a href="https://instagram.com/ndesignstudyosu" class="nds-footer-icon">
+        <i class="bi bi-instagram"></i>
+      </a>
+    
+      <a href="https://www.youtube.com/@ndesignstudio7937" class="nds-footer-icon">
+        <i class="bi bi-youtube"></i>
+      </a>
+    
+      <a href="https://www.tiktok.com/@ndesignstudyosu" class="nds-footer-icon">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    
+  </div>
+
+  
+  <p class="nds-footer-tagline">
+    Creative Design for Purposeful Impact
+  </p>
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="nds-footer-copy">
+    <p>© 2026 N Design Studio. All rights reserved.</p>
+  </div>
+
+</footer>
+
+</body>
+</html>

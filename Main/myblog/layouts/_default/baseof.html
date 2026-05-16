@@ -13,13 +13,32 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Compiled SCSS -->
-    {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
-    {{ $style := resources.Get "scss/main.scss" | css.Sass $options | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+    <!-- Pre-compiled CSS (no SCSS compilation needed) -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/custom.css">
     
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* Emergency logo fix - always applies */
+        .nds-logo,
+        .header-left img,
+        .logo-wrapper img {
+            width: 110px !important;
+            max-width: 110px !important;
+            height: auto !important;
+        }
+        
+        @media (max-width: 768px) {
+            .nds-logo,
+            .header-left img,
+            .logo-wrapper img {
+                width: 70px !important;
+                max-width: 70px !important;
+            }
+        }
+    </style>
     
     {{ block "head" . }}{{ end }}
 </head>
