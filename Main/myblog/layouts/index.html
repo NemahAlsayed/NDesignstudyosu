@@ -1,14 +1,12 @@
 {{ define "main" }}
-<div style="min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; padding: 20px;">
-  <div style="max-width: 700px; width: 100%;">
-    <div style="background: white; border-radius: 20px; padding: 50px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-      <h1 style="font-size: 3rem; margin-bottom: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">{{ .Site.Title }}</h1>
-      <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">Creative Design for Purposeful Impact</p>
-      <div>
-        <a href="/{{ .Lang }}/posts/" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; margin-right: 10px;">Explore Blog</a>
-        <a href="/{{ .Lang }}/about/" style="display: inline-block; background: transparent; border: 2px solid #667eea; color: #667eea; padding: 12px 30px; border-radius: 30px; text-decoration: none;">About Me</a>
-      </div>
+<div style="min-height: 80vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px;">
+    <div style="max-width: 600px; background: white; border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+        <h1 style="font-size: 2.5rem; margin-bottom: 20px; color: #333;">{{ .Site.Title }}</h1>
+        <p style="font-size: 1.1rem; color: #666; margin-bottom: 30px; line-height: 1.6;">Creative Design for Purposeful Impact. Explore my work and stories.</p>
+        <div>
+            <a href="/{{ .Lang }}/posts/" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 28px; border-radius: 30px; text-decoration: none; margin: 0 8px;">Explore Blog</a>
+            <a href="/{{ .Lang }}/about/" style="display: inline-block; background: transparent; border: 2px solid #667eea; color: #667eea; padding: 12px 28px; border-radius: 30px; text-decoration: none; margin: 0 8px;">About Me</a>
+        </div>
     </div>
-  </div>
 </div>
 {{ end }}
