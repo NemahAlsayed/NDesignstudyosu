@@ -1,79 +1,14 @@
 {{ define "main" }}
-<!-- Hero Section -->
-<section style="min-height: 80vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 20px;">
-  <div style="max-width: 800px; width: 100%;">
-    <div style="background: white; border-radius: 24px; padding: 48px 40px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-      
-      <!-- Small Label -->
-      <div style="margin-bottom: 16px;">
-        <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 6px 16px; border-radius: 50px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; display: inline-block;">
-          {{ .Site.Params.homepage.preTitle | default "WELCOME TO" }}
-        </span>
-      </div>
-      
-      <!-- Title -->
-      <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 700; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 20px;">
-        {{ .Site.Params.homepage.title | default .Site.Title }}
-      </h1>
-      
-      <!-- Description -->
-      <p style="font-size: 1.2rem; color: #4a5568; margin-bottom: 32px; line-height: 1.6;">
-        {{ .Site.Params.homepage.intro | default "Creative Design for Purposeful Impact" }}
-      </p>
-      
-      <!-- Buttons -->
-      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-        <a href="/{{ .Lang }}/posts/" 
-           style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 32px; border-radius: 40px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 600; transition: transform 0.2s ease; display: inline-block;">
-          {{ .Site.Params.homepage.mainButton | default "Explore Blog" }} →
-        </a>
-        <a href="/{{ .Lang }}/about/" 
-           style="background: transparent; border: 2px solid #667eea; color: #667eea; padding: 12px 32px; border-radius: 40px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 600; transition: all 0.2s ease; display: inline-block;">
-          {{ .Site.Params.homepage.secondButton | default "About Me" }}
-        </a>
+<div style="min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; padding: 20px;">
+  <div style="max-width: 700px; width: 100%;">
+    <div style="background: white; border-radius: 20px; padding: 50px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+      <h1 style="font-size: 3rem; margin-bottom: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">{{ .Site.Title }}</h1>
+      <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">Creative Design for Purposeful Impact</p>
+      <div>
+        <a href="/{{ .Lang }}/posts/" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; margin-right: 10px;">Explore Blog</a>
+        <a href="/{{ .Lang }}/about/" style="display: inline-block; background: transparent; border: 2px solid #667eea; color: #667eea; padding: 12px 30px; border-radius: 30px; text-decoration: none;">About Me</a>
       </div>
     </div>
   </div>
-</section>
-
-<!-- Latest Posts Preview -->
-<section style="padding: 60px 20px; background: #f7fafc;">
-  <div style="max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #1a1a2e; margin-bottom: 16px;">
-      {{ .Site.Params.homepage.blogTitle | default "Latest Articles" }}
-    </h2>
-    <p style="text-align: center; color: #4a5568; margin-bottom: 50px;">Discover our most recent stories</p>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px;">
-      {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
-      <a href="{{ .Permalink }}" style="text-decoration: none;">
-        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s ease; height: 100%;">
-          {{ $img := .Resources.GetMatch .Params.featured_image }}
-          {{ if not $img }}
-            {{ $img = index (.Resources.ByType "image") 0 }}
-          {{ end }}
-          {{ with $img }}
-            <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="width: 100%; height: 200px; object-fit: cover;">
-          {{ else }}
-            <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
-              <span style="font-size: 3rem;">📝</span>
-            </div>
-          {{ end }}
-          <div style="padding: 24px;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; color: #1a1a2e; margin-bottom: 12px;">{{ .Title }}</h3>
-            <p style="color: #4a5568; line-height: 1.5;">{{ .Summary | truncate 100 }}</p>
-          </div>
-        </div>
-      </a>
-      {{ end }}
-    </div>
-    
-    <div style="text-align: center; margin-top: 50px;">
-      <a href="/{{ .Lang }}/posts/" 
-         style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 32px; border-radius: 40px; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 600; display: inline-block;">
-        {{ .Site.Params.homepage.blogButton | default "View All Posts" }} →
-      </a>
-    </div>
-  </div>
-</section>
+</div>
 {{ end }}
