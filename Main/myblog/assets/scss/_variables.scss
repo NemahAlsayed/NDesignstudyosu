@@ -3,28 +3,28 @@
 // ============================================
 
 // Brand Crimson Palette
-$deep-crimson:   #800000;
-$ruby:           #960018;
-$scarlet:        #a70000;
-$vibrant-red:    #d10000;
+$deep-crimson:    #800000;
+$ruby:            #960018;
+$scarlet:         #a70000;
+$vibrant-red:     #d10000;
 $electric-crimson: #ff0033;
 
 // Gold Accents (Luxury)
-$gold-light:   #E2C28B;
-$gold-primary: #C6A43F;
-$gold-dark:    #8B7332;
+$gold-light:      #E2C28B;
+$gold-primary:    #C6A43F;
+$gold-dark:       #8B7332;
 
 // Neutrals & Backgrounds
-$dark-bg:        #050406;
-$surface-dark:   #151015;
-$surface-medium: #241A1F;
-$surface-soft:   #2F2328;
+$dark-bg:         #050406;
+$surface-dark:    #151015;
+$surface-medium:  #241A1F;
+$surface-soft:    #2F2328;
 
 // Text Colors
-$cream:       #F5F0E8;
-$white:       #FFFFFF;
-$text-light:  #E8E0D5;
-$text-muted:  #B8A99A;
+$cream:           #F5F0E8;
+$white:           #FFFFFF;
+$text-light:      #E8E0D5;
+$text-muted:      #B8A99A;
 
 // Gradients
 $gradient-crimson: linear-gradient(135deg, $deep-crimson 0%, $ruby 45%, $vibrant-red 100%);
@@ -33,7 +33,16 @@ $gradient-dark:    linear-gradient(135deg, $dark-bg 0%, $surface-dark 100%);
 
 // Typography
 $font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-$font-sans:  'Montserrat', 'Helvetica Neue', 'Segoe UI', system-ui, -apple-system, sans-serif;
+$font-sans:  'Montserrat', 'Helvetica Neue', 'Segoe UI', system-ui, sans-serif;
+
+// Logo Sizes
+$logo-width-desktop: 110px;
+$logo-width-tablet:  85px;
+$logo-width-mobile:  65px;
+
+// Header Heights
+$header-height-desktop: 72px;
+$header-height-mobile:  60px;
 
 // Spacing Scale
 $spacing-xs:   0.4rem;
@@ -56,6 +65,13 @@ $wide:    1200px;
 $transition-fast:   0.18s ease-out;
 $transition-normal: 0.28s ease;
 $transition-slow:   0.45s ease;
+
+// Z-index layers
+$z-dropdown:   1000;
+$z-sticky:     1020;
+$z-fixed:      1030;
+$z-modal:      1040;
+$z-popover:    1050;
 
 // Shadows
 $shadow-sm:        0 2px 4px rgba(0, 0, 0, 0.18);

@@ -1,0 +1,7 @@
+@import '../variables';
+.card-premium {
+  background: $surface-dark;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all $transition-normal;
+}

@@ -1,70 +1,22 @@
 // ============================================
-// N Design Studio — Main SCSS Entry
+// N Design Studio - Main Stylesheet
 // ============================================
-// 1. Variables (must load first)
+
+// 1. Variables
 @import 'variables';
 
-// 2. Global Base Styles (your style.scss)
-@import 'style';
+// 2. Base & Reset
+@import 'base';
 
-// 3. Homepage (hero, language tabs, etc.)
-@import 'custom-home';
+// 3. Layout Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/cards';
 
-// 4. Post Components
-@import 'post-card';
-@import 'list';
-@import 'single';
+// 4. Page Specific
+@import 'pages/home';
+@import 'pages/list';
+@import 'pages/single';
 
-// 5. Footer Component
-@import 'footer';
-
-// 6. Additional Components (optional)
-// @import 'navigation';
-// @import 'forms';
-
-/* ============================================
-   GLOBAL RESET & BODY
-============================================ */
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: $font-sans;
-  background: $dark-bg;
-  color: $text-light;
-  line-height: 1.7;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-::selection {
-  background: $vibrant-red;
-  color: $white;
-}
-
-/* ============================================
-   CUSTOM SCROLLBAR
-============================================ */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: $surface-dark;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $vibrant-red;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: $gold-primary;
-}
+// 5. Utilities
+@import 'utilities';

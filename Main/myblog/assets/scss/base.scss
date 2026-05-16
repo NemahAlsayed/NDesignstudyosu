@@ -1,0 +1,152 @@
+// ============================================
+// Base Styles & Reset
+// ============================================
+
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $font-serif;
+  background: $dark-bg;
+  color: $text-light;
+  line-height: 1.7;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+::selection {
+  background: $vibrant-red;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $vibrant-red;
+  color: $white;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  margin-bottom: $spacing-md;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3rem;
+  background: $gradient-crimson;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  @media (max-width: $tablet) {
+    font-size: 2.2rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  color: $vibrant-red;
+
+  @media (max-width: $tablet) {
+    font-size: 1.6rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Links */
+a {
+  color: $vibrant-red;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $electric-crimson;
+  }
+}
+
+/* Container */
+.container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+
+  @media (max-width: $tablet) {
+    padding: 0 $spacing-md;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: $spacing-sm $spacing-xl;
+  border-radius: 40px;
+  font-family: $font-sans;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all $transition-normal;
+  cursor: pointer;
+  border: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.btn-primary {
+  background: $gradient-crimson;
+  color: $white;
+
+  &:hover {
+    box-shadow: $shadow-glow;
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid $vibrant-red;
+  color: $vibrant-red;
+
+  &:hover {
+    background: $vibrant-red;
+    color: $white;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $surface-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $vibrant-red;
+  border-radius: 4px;
+
+  &:hover {
+    background: $electric-crimson;
+  }
+}

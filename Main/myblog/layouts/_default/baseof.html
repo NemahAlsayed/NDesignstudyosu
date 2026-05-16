@@ -2,133 +2,24 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#800000">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     
-    <!-- Direct CSS files - no SCSS compilation needed -->
-    <link rel="stylesheet" href="/css/custom.css">
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Critical inline styles that MUST work -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        /* Force logo size */
-        .nds-logo,
-        img[alt="N Design Studio Logo"],
-        .header-left img,
-        header img {
-            width: 100px !important;
-            max-width: 100px !important;
-            height: auto !important;
-        }
-        
-        .nds-header {
-            background: rgba(180, 20, 30, 0.65) !important;
-            backdrop-filter: blur(6px) !important;
-            padding: 8px 0 !important;
-            position: fixed !important;
-            top: 0 !important;
-            width: 100% !important;
-            z-index: 999 !important;
-        }
-        
-        body {
-            padding-top: 80px !important;
-            background: #0A0808;
-            color: #E8E0D5;
-            font-family: 'Georgia', 'Times New Roman', serif;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        .hero-card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 2rem;
-            margin: 2rem auto;
-            max-width: 800px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary {
-            background: #d10000;
-            color: white;
-            border: none;
-        }
-        
-        .btn-primary:hover {
-            background: #800000;
-            transform: translateY(-2px);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: #d10000;
-            border: 2px solid #d10000;
-        }
-        
-        .btn-secondary:hover {
-            background: #d10000;
-            color: white;
-        }
-        
-        /* Language tabs */
-        .language-tabs {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-        
-        .lang-tab {
-            padding: 0.5rem 1rem;
-            background: rgba(255,255,255,0.1);
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        .lang-tab:hover,
-        .lang-tab.active {
-            background: #d10000;
-            color: white;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nds-logo,
-            header img {
-                width: 70px !important;
-            }
-            
-            .hero-card {
-                padding: 1rem;
-            }
-            
-            .btn {
-                padding: 0.5rem 1rem;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Compiled SCSS -->
+    {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
+    {{ $style := resources.Get "scss/main.scss" | css.Sass $options | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     {{ block "head" . }}{{ end }}
 </head>

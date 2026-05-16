@@ -1,24 +1,98 @@
 <header class="nds-header">
-  <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+  <div class="header-container">
 
     <!-- Logo -->
-    <div class="header-left">
+    <div class="logo-wrapper">
       <a href="/{{ .Lang }}/">
         <img src="/images/logo.png" 
-             alt="N Design Studio Logo" 
-             class="nds-logo"
-             style="width: 100px; height: auto; display: block;">
+             alt="{{ .Site.Title }}" 
+             class="nds-logo">
       </a>
     </div>
 
-    <!-- Navigation -->
+    <!-- Desktop Navigation -->
     <nav class="header-right">
-      <ul style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
-        <li><a href="/{{ .Lang }}/about/" style="color: #fff; text-decoration: none; font-weight: 500;">{{ i18n "navAbout" }}</a></li>
-        <li><a href="/{{ .Lang }}/contact/" style="color: #fff; text-decoration: none; font-weight: 500;">{{ i18n "navContact" }}</a></li>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/{{ .Lang }}/about/">{{ i18n "navAbout" }}</a></li>
+        <li class="nav-item"><a href="/{{ .Lang }}/contact/">{{ i18n "navContact" }}</a></li>
       </ul>
+
+      <!-- Language Switcher Dropdown -->
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="langToggle">
+          {{ .Lang | upper }} <i>▼</i>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          {{ if .IsTranslated }}
+            {{ range .Translations }}
+              <a href="{{ .Permalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a>
+            {{ end }}
+          {{ else }}
+            {{ range .Site.Languages }}
+              {{ if ne .Lang $.Lang }}
+                <a href="/{{ .Lang }}{{ $.RelPermalink | relLangURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
     </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
   </div>
 </header>
-<div style="height: 80px;"></div>
+<div class="header-spacer"></div>
+
+<!-- Mobile Menu JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const mobileToggle = document.getElementById('mobileMenuToggle');
+  const navMenu = document.querySelector('.header-right');
+  
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('open');
+      document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+    });
+  }
+  
+  // Language dropdown toggle
+  const langToggle = document.getElementById('langToggle');
+  const langDropdown = document.getElementById('langDropdown');
+  
+  if (langToggle && langDropdown) {
+    langToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDropdown.classList.toggle('active');
+      langToggle.classList.toggle('active');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function() {
+      langDropdown.classList.remove('active');
+      langToggle.classList.remove('active');
+    });
+    
+    langDropdown.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+  
+  // Scroll effect for header
+  const header = document.querySelector('.nds-header');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+</script>
