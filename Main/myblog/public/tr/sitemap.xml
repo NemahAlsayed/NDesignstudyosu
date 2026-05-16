@@ -2,106 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ndesignstudyosu.com.tr/tr/categories/</loc>
+    <loc>http://localhost:1313/tr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/categories/"
+                href="http://localhost:1313/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/categories/"
+                href="http://localhost:1313/tr/categories/"
                 />
   </url><url>
-    <loc>https://ndesignstudyosu.com.tr/tr/posts/</loc>
+    <loc>http://localhost:1313/tr/posts/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/posts/"
+                href="http://localhost:1313/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/posts/"
+                href="http://localhost:1313/ar/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/posts/"
+                href="http://localhost:1313/tr/posts/"
                 />
   </url><url>
-    <loc>https://ndesignstudyosu.com.tr/tr/about/</loc>
+    <loc>http://localhost:1313/tr/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/about/"
+                href="http://localhost:1313/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/about/"
+                href="http://localhost:1313/ar/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/about/"
+                href="http://localhost:1313/tr/about/"
                 />
   </url><url>
-    <loc>https://ndesignstudyosu.com.tr/tr/</loc>
+    <loc>http://localhost:1313/tr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/"
+                href="http://localhost:1313/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/"
+                href="http://localhost:1313/tr/"
                 />
   </url><url>
-    <loc>https://ndesignstudyosu.com.tr/tr/contact/</loc>
+    <loc>http://localhost:1313/tr/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/contact/"
+                href="http://localhost:1313/en/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/contact/"
+                href="http://localhost:1313/ar/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/contact/"
+                href="http://localhost:1313/tr/contact/"
                 />
   </url><url>
-    <loc>https://ndesignstudyosu.com.tr/tr/tags/</loc>
+    <loc>http://localhost:1313/tr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/tags/"
+                href="http://localhost:1313/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/tags/"
+                href="http://localhost:1313/tr/tags/"
                 />
   </url>
 </urlset>

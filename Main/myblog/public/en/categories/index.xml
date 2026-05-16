@@ -2,319 +2,319 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on N Design Studio</title>
-    <link>https://ndesignstudyosu.com.tr/en/categories/</link>
+    <link>http://localhost:1313/en/categories/</link>
     <description>Recent content in Categories on N Design Studio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Tue, 05 May 2026 00:00:00 +0300</lastBuildDate>
-    <atom:link href="https://ndesignstudyosu.com.tr/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beauty</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/beauty/</link>
+      <link>http://localhost:1313/en/categories/beauty/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0300</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/beauty/</guid>
+      <guid>http://localhost:1313/en/categories/beauty/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal Experience</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/personal-experience/</link>
+      <link>http://localhost:1313/en/categories/personal-experience/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0300</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/personal-experience/</guid>
+      <guid>http://localhost:1313/en/categories/personal-experience/</guid>
       <description></description>
     </item>
     <item>
       <title>Reviews</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/reviews/</link>
+      <link>http://localhost:1313/en/categories/reviews/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0300</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/reviews/</guid>
+      <guid>http://localhost:1313/en/categories/reviews/</guid>
       <description></description>
     </item>
     <item>
       <title>Sql-System</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/sql-system/</link>
+      <link>http://localhost:1313/en/categories/sql-system/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/sql-system/</guid>
+      <guid>http://localhost:1313/en/categories/sql-system/</guid>
       <description></description>
     </item>
     <item>
       <title>Art</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/art/</link>
+      <link>http://localhost:1313/en/categories/art/</link>
       <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/art/</guid>
+      <guid>http://localhost:1313/en/categories/art/</guid>
       <description></description>
     </item>
     <item>
       <title>Etsy</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/etsy/</link>
+      <link>http://localhost:1313/en/categories/etsy/</link>
       <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/etsy/</guid>
+      <guid>http://localhost:1313/en/categories/etsy/</guid>
       <description></description>
     </item>
     <item>
       <title>My-Paintings</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/my-paintings/</link>
+      <link>http://localhost:1313/en/categories/my-paintings/</link>
       <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/my-paintings/</guid>
+      <guid>http://localhost:1313/en/categories/my-paintings/</guid>
       <description></description>
     </item>
     <item>
       <title>Arabic</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/arabic/</link>
+      <link>http://localhost:1313/en/categories/arabic/</link>
       <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/arabic/</guid>
+      <guid>http://localhost:1313/en/categories/arabic/</guid>
       <description></description>
     </item>
     <item>
       <title>Arabic-Designs</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/arabic-designs/</link>
+      <link>http://localhost:1313/en/categories/arabic-designs/</link>
       <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/arabic-designs/</guid>
+      <guid>http://localhost:1313/en/categories/arabic-designs/</guid>
       <description></description>
     </item>
     <item>
       <title>Birthday-Cards</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/birthday-cards/</link>
+      <link>http://localhost:1313/en/categories/birthday-cards/</link>
       <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/birthday-cards/</guid>
+      <guid>http://localhost:1313/en/categories/birthday-cards/</guid>
       <description></description>
     </item>
     <item>
       <title>Canva-Template</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/canva-template/</link>
+      <link>http://localhost:1313/en/categories/canva-template/</link>
       <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/canva-template/</guid>
+      <guid>http://localhost:1313/en/categories/canva-template/</guid>
       <description></description>
     </item>
     <item>
       <title>Invoice</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/invoice/</link>
+      <link>http://localhost:1313/en/categories/invoice/</link>
       <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/invoice/</guid>
+      <guid>http://localhost:1313/en/categories/invoice/</guid>
       <description></description>
     </item>
     <item>
       <title>Esim</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/esim/</link>
+      <link>http://localhost:1313/en/categories/esim/</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/esim/</guid>
+      <guid>http://localhost:1313/en/categories/esim/</guid>
       <description></description>
     </item>
     <item>
       <title>Travel</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/travel/</link>
+      <link>http://localhost:1313/en/categories/travel/</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/travel/</guid>
+      <guid>http://localhost:1313/en/categories/travel/</guid>
       <description></description>
     </item>
     <item>
       <title>Middle-East</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/middle-east/</link>
+      <link>http://localhost:1313/en/categories/middle-east/</link>
       <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/middle-east/</guid>
+      <guid>http://localhost:1313/en/categories/middle-east/</guid>
       <description></description>
     </item>
     <item>
       <title>Noon</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/noon/</link>
+      <link>http://localhost:1313/en/categories/noon/</link>
       <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/noon/</guid>
+      <guid>http://localhost:1313/en/categories/noon/</guid>
       <description></description>
     </item>
     <item>
       <title>Online-Shopping</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/online-shopping/</link>
+      <link>http://localhost:1313/en/categories/online-shopping/</link>
       <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/online-shopping/</guid>
+      <guid>http://localhost:1313/en/categories/online-shopping/</guid>
       <description></description>
     </item>
     <item>
       <title>Phones</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/phones/</link>
+      <link>http://localhost:1313/en/categories/phones/</link>
       <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/phones/</guid>
+      <guid>http://localhost:1313/en/categories/phones/</guid>
       <description></description>
     </item>
     <item>
       <title>Shopping</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/shopping/</link>
+      <link>http://localhost:1313/en/categories/shopping/</link>
       <pubDate>Sun, 16 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/shopping/</guid>
+      <guid>http://localhost:1313/en/categories/shopping/</guid>
       <description></description>
     </item>
     <item>
       <title>Drawings</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/drawings/</link>
+      <link>http://localhost:1313/en/categories/drawings/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/drawings/</guid>
+      <guid>http://localhost:1313/en/categories/drawings/</guid>
       <description></description>
     </item>
     <item>
       <title>Nft</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/nft/</link>
+      <link>http://localhost:1313/en/categories/nft/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/nft/</guid>
+      <guid>http://localhost:1313/en/categories/nft/</guid>
       <description></description>
     </item>
     <item>
       <title>Dyson</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/dyson/</link>
+      <link>http://localhost:1313/en/categories/dyson/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/dyson/</guid>
+      <guid>http://localhost:1313/en/categories/dyson/</guid>
       <description></description>
     </item>
     <item>
       <title>Hair</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/hair/</link>
+      <link>http://localhost:1313/en/categories/hair/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/hair/</guid>
+      <guid>http://localhost:1313/en/categories/hair/</guid>
       <description></description>
     </item>
     <item>
       <title>Hair-Styling</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/hair-styling/</link>
+      <link>http://localhost:1313/en/categories/hair-styling/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/hair-styling/</guid>
+      <guid>http://localhost:1313/en/categories/hair-styling/</guid>
       <description></description>
     </item>
     <item>
       <title>E-Commerce</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/e-commerce/</link>
+      <link>http://localhost:1313/en/categories/e-commerce/</link>
       <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/e-commerce/</guid>
+      <guid>http://localhost:1313/en/categories/e-commerce/</guid>
       <description></description>
     </item>
     <item>
       <title>Fashion</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/fashion/</link>
+      <link>http://localhost:1313/en/categories/fashion/</link>
       <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/fashion/</guid>
+      <guid>http://localhost:1313/en/categories/fashion/</guid>
       <description></description>
     </item>
     <item>
       <title>Shipping</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/shipping/</link>
+      <link>http://localhost:1313/en/categories/shipping/</link>
       <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/shipping/</guid>
+      <guid>http://localhost:1313/en/categories/shipping/</guid>
       <description></description>
     </item>
     <item>
       <title>Custom-Designs</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/custom-designs/</link>
+      <link>http://localhost:1313/en/categories/custom-designs/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/custom-designs/</guid>
+      <guid>http://localhost:1313/en/categories/custom-designs/</guid>
       <description></description>
     </item>
     <item>
       <title>Design</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/design/</link>
+      <link>http://localhost:1313/en/categories/design/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/design/</guid>
+      <guid>http://localhost:1313/en/categories/design/</guid>
       <description></description>
     </item>
     <item>
       <title>Web-Hosting</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/web-hosting/</link>
+      <link>http://localhost:1313/en/categories/web-hosting/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/web-hosting/</guid>
+      <guid>http://localhost:1313/en/categories/web-hosting/</guid>
       <description></description>
     </item>
     <item>
       <title>Website</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/website/</link>
+      <link>http://localhost:1313/en/categories/website/</link>
       <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/website/</guid>
+      <guid>http://localhost:1313/en/categories/website/</guid>
       <description></description>
     </item>
     <item>
       <title>Email</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/email/</link>
+      <link>http://localhost:1313/en/categories/email/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/email/</guid>
+      <guid>http://localhost:1313/en/categories/email/</guid>
       <description></description>
     </item>
     <item>
       <title>Lead-Generation</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/lead-generation/</link>
+      <link>http://localhost:1313/en/categories/lead-generation/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/lead-generation/</guid>
+      <guid>http://localhost:1313/en/categories/lead-generation/</guid>
       <description></description>
     </item>
     <item>
       <title>Marketing-Automation</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/marketing-automation/</link>
+      <link>http://localhost:1313/en/categories/marketing-automation/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/marketing-automation/</guid>
+      <guid>http://localhost:1313/en/categories/marketing-automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Marketing</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/marketing/</link>
+      <link>http://localhost:1313/en/categories/marketing/</link>
       <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/marketing/</guid>
+      <guid>http://localhost:1313/en/categories/marketing/</guid>
       <description></description>
     </item>
     <item>
       <title>Laptops</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/laptops/</link>
+      <link>http://localhost:1313/en/categories/laptops/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/laptops/</guid>
+      <guid>http://localhost:1313/en/categories/laptops/</guid>
       <description></description>
     </item>
     <item>
       <title>Dolap</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/dolap/</link>
+      <link>http://localhost:1313/en/categories/dolap/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/dolap/</guid>
+      <guid>http://localhost:1313/en/categories/dolap/</guid>
       <description></description>
     </item>
     <item>
       <title>Jewelry</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/jewelry/</link>
+      <link>http://localhost:1313/en/categories/jewelry/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/jewelry/</guid>
+      <guid>http://localhost:1313/en/categories/jewelry/</guid>
       <description></description>
     </item>
     <item>
       <title>Kitchen</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/kitchen/</link>
+      <link>http://localhost:1313/en/categories/kitchen/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/kitchen/</guid>
+      <guid>http://localhost:1313/en/categories/kitchen/</guid>
       <description></description>
     </item>
     <item>
       <title>Feature</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/feature/</link>
+      <link>http://localhost:1313/en/categories/feature/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/feature/</guid>
+      <guid>http://localhost:1313/en/categories/feature/</guid>
       <description></description>
     </item>
     <item>
       <title>Sticker</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/sticker/</link>
+      <link>http://localhost:1313/en/categories/sticker/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/sticker/</guid>
+      <guid>http://localhost:1313/en/categories/sticker/</guid>
       <description></description>
     </item>
     <item>
       <title>Friendship-Bracelets</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/friendship-bracelets/</link>
+      <link>http://localhost:1313/en/categories/friendship-bracelets/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/friendship-bracelets/</guid>
+      <guid>http://localhost:1313/en/categories/friendship-bracelets/</guid>
       <description></description>
     </item>
     <item>
       <title>Review</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/review/</link>
+      <link>http://localhost:1313/en/categories/review/</link>
       <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/review/</guid>
+      <guid>http://localhost:1313/en/categories/review/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>https://ndesignstudyosu.com.tr/en/categories/software/</link>
+      <link>http://localhost:1313/en/categories/software/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/categories/software/</guid>
+      <guid>http://localhost:1313/en/categories/software/</guid>
       <description></description>
     </item>
   </channel>
