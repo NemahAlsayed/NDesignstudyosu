@@ -31,19 +31,8 @@ jobs:
           hugo-version: '0.124.1'
           extended: true
 
-      - name: Setup Node.js (for PostCSS/SCSS)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: Main/myblog/package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
-        working-directory: Main/myblog
-
       - name: Build Hugo site
-        run: hugo --minify --gc --enableGitInfo
+        run: hugo --minify --gc
         working-directory: Main/myblog
         env:
           HUGO_ENV: production
@@ -51,17 +40,13 @@ jobs:
       - name: Add CNAME file
         run: echo "ndesignstudyosu.com.tr" > Main/myblog/public/CNAME
 
-      - name: Check public folder
+      - name: List built files (debug)
         run: |
-          echo "=== Public folder contents ==="
+          echo "=== Built files ==="
           ls -la Main/myblog/public/
-          echo "=== English folder ==="
-          ls -la Main/myblog/public/en/ || echo "en folder not found"
-          echo "=== Turkish folder ==="
-          ls -la Main/myblog/public/tr/ || echo "tr folder not found"
-          echo "=== Arabic folder ==="
-          ls -la Main/myblog/public/ar/ || echo "ar folder not found"
-
+          echo "=== CSS files ==="
+          find Main/myblog/public -name "*.css" -type f | head -10
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
