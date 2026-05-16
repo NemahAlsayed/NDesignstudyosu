@@ -1,17 +1,18 @@
-<header class="nds-header" style="background: rgba(180, 20, 30, 0.65); backdrop-filter: blur(6px); padding: 8px 0; position: fixed; top: 0; width: 100%; z-index: 999;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px; display: flex; justify-content: space-between; align-items: center;">
+<header class="nds-header">
+  <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
 
-    <!-- Logo - fixed size with inline styles -->
-    <div style="flex-shrink: 0;">
+    <!-- Logo -->
+    <div class="header-left">
       <a href="/{{ .Lang }}/">
         <img src="/images/logo.png" 
              alt="N Design Studio Logo" 
-             style="width: 100px; height: auto; display: block; max-width: 100px;">
+             class="nds-logo"
+             style="width: 100px; height: auto; display: block;">
       </a>
     </div>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="header-right">
       <ul style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
         <li><a href="/{{ .Lang }}/about/" style="color: #fff; text-decoration: none; font-weight: 500;">{{ i18n "navAbout" }}</a></li>
         <li><a href="/{{ .Lang }}/contact/" style="color: #fff; text-decoration: none; font-weight: 500;">{{ i18n "navContact" }}</a></li>
