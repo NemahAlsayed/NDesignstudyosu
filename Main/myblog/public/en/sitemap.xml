@@ -590,6 +590,16 @@
   </url><url>
     <loc>http://localhost:1313/en/tags/infinix-zero-40/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/infinix-zero-40/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/infinix-zero-40/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/categories/middle-east/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
@@ -599,6 +609,16 @@
   </url><url>
     <loc>http://localhost:1313/en/tags/ndx184/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/ndx184/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ndx184/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/categories/noon/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
@@ -629,12 +649,32 @@
   </url><url>
     <loc>http://localhost:1313/en/tags/oneplus-nord-ce5/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/oneplus-nord-ce5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/oneplus-nord-ce5/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/categories/online-shopping/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/tags/oppo-a38/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/oppo-a38/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/oppo-a38/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/categories/phones/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
@@ -666,18 +706,58 @@
   </url><url>
     <loc>http://localhost:1313/en/tags/tecno-camon-40-pro/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/tecno-camon-40-pro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/tecno-camon-40-pro/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/tags/tecno-spark-30/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/tecno-spark-30/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/tecno-spark-30/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/tags/vivo-v50-lite/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/vivo-v50-lite/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/vivo-v50-lite/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/tags/xiaomi-poco-x7/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/tags/xiaomi-redmi-note-13/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/tags/xiaomi-redmi-note-13/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/xiaomi-redmi-note-13/"
+                />
   </url><url>
     <loc>http://localhost:1313/en/posts/2025/10/2025-10-22--the-way-of-the-heart-the-way-of-the-rubbles-nfts-that-speak-for-palestine/</loc>
     <lastmod>2025-10-22T00:00:00+00:00</lastmod>
@@ -1513,7 +1593,19 @@
     <lastmod>2025-04-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/tags/2025/</loc>
-    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/mavlana/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/ndesignstudyosu/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/posts/_drafts/2025/04/2025-04-13-new-nft-art-april-2025/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/nft/</loc>
+    <lastmod>2025-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/tags/art-work/</loc>
     <lastmod>2025-04-07T00:00:00+00:00</lastmod>
@@ -1525,9 +1617,6 @@
     <lastmod>2025-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/posts/2025/04/2025-04-07-latest-months-artwork-by-nemah/</loc>
-    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/ndesignstudyosu/</loc>
     <lastmod>2025-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/</loc>
@@ -1772,6 +1861,21 @@
   </url><url>
     <loc>http://localhost:1313/en/posts/2024/08/2024-08-30-review-of-ndesignstudios-drawings-of-the-month-of-august/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/july/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/posts/_drafts/2024/07/2024-07-31-monthly-review-july-drawings/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/monthlyreview/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/paintings/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/thejournalistapp/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/tags/apps/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
