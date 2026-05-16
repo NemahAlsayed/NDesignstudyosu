@@ -1,122 +1,151 @@
 <head>
-
-  {{ if .IsHome }}
-    <title>{{ .Site.Title }} — {{ .Site.Params.subtitle }}</title>
-  {{ else }}
-    <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
-  {{ end }}
-
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta
-    name="description"
-    {{ if .Page.Description }}
-      content="{{ .Page.Description }}"
+  <!-- ============================================================
+       PAGE TITLE
+  ============================================================ -->
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Title }} — {{ .Site.Params.subtitle }}
     {{ else }}
-      content="{{ .Page.Summary }}"
+      {{ .Title }} | {{ .Site.Title }}
     {{ end }}
-  />
+  </title>
 
-  <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
-  <meta name="robots" content="index,follow" />
+  <!-- ============================================================
+       DESCRIPTION (smart fallback)
+  ============================================================ -->
+  {{ $desc := cond (isset .Page.Params "description") .Page.Description .Summary }}
+  <meta name="description" content="{{ $desc }}" />
 
-  <!-- Google / Search Engine Tags -->
-  {{ if .IsHome }}
-    <meta itemprop="name" content="{{ .Site.Title }} — {{ .Site.Params.subtitle }}" />
-  {{ else }}
-    <meta itemprop="name" content="{{ .Page.Title }} — {{ .Site.Title }}" />
+  <!-- ============================================================
+       FEATURED IMAGE (fallback to meta-image)
+  ============================================================ -->
+  {{ $featured := .Resources.GetMatch "images/featured*" }}
+  {{ if not $featured }}
+    {{ $featured = resources.GetMatch "img/meta-image*" }}
   {{ end }}
 
-  <meta
-    itemprop="description"
-    {{ if .Page.Description }}
-      content="{{ .Page.Description }}"
-    {{ else }}
-      content="{{ .Page.Summary }}"
-    {{ end }}
-  />
+  <!-- ============================================================
+       CANONICAL URL
+  ============================================================ -->
+  <link rel="canonical" href="{{ .Permalink }}" />
 
-  {{ with .Resources.GetMatch "images/featured.*" }}
-    <meta itemprop="image" content="{{ . }}" />
-  {{ else }}
-    <meta itemprop="image" content="{{ resources.GetMatch "img/meta-image.*" | absURL }}" />
+  <!-- ============================================================
+       MULTILINGUAL HREFLANG (ar / en / tr)
+  ============================================================ -->
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
   {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
 
-  <!-- Facebook / OpenGraph -->
+  <!-- ============================================================
+       OPEN GRAPH (Facebook / LinkedIn)
+  ============================================================ -->
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
-  <meta property="og:type" content="website" />
+  <meta property="og:title"
+        content="{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.subtitle }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+  <meta property="og:description" content="{{ $desc }}" />
+  <meta property="og:image" content="{{ $featured.Permalink }}" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
 
-  {{ if .IsHome }}
-    <meta property="og:title" content="{{ .Site.Title }} — {{ .Site.Params.subtitle }}" />
-  {{ else }}
-    <meta property="og:title" content="{{ .Page.Title }} — {{ .Site.Title }}" />
-  {{ end }}
-
-  <meta
-    property="og:description"
-    {{ if .Page.Description }}
-      content="{{ .Page.Description }}"
-    {{ else }}
-      content="{{ .Page.Summary }}"
-    {{ end }}
-  />
-
-  {{ with .Resources.GetMatch "images/featured.*" }}
-    <meta property="og:image" content="{{ . }}" />
-  {{ else }}
-    <meta property="og:image" content="{{ resources.GetMatch "img/meta-image.*" | absURL }}" />
-  {{ end }}
-
-  <!-- Twitter -->
+  <!-- ============================================================
+       TWITTER CARDS
+  ============================================================ -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+        content="{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.subtitle }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+  <meta name="twitter:description" content="{{ $desc }}" />
+  <meta name="twitter:image" content="{{ $featured.Permalink }}" />
 
+  <!-- ============================================================
+       SEO META
+  ============================================================ -->
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#800000" />
+
+  <!-- ============================================================
+       JSON-LD — HOMEPAGE SCHEMA
+  ============================================================ -->
   {{ if .IsHome }}
-    <meta name="twitter:title" content="{{ .Site.Title }} — {{ .Site.Params.subtitle }}" />
-  {{ else }}
-    <meta name="twitter:title" content="{{ .Page.Title }} — {{ .Site.Title }}" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "{{ .Site.Params.subtitle }}",
+    "inLanguage": "{{ .Site.Language.Lang }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "N Design Studio",
+      "url": "{{ .Site.BaseURL }}",
+      "logo": "{{ (resources.GetMatch "img/favicon*" ).Permalink }}"
+    }
+  }
+  </script>
   {{ end }}
 
-  <meta
-    name="twitter:description"
-    {{ if .Page.Description }}
-      content="{{ .Page.Description }}"
-    {{ else }}
-      content="{{ .Page.Summary }}"
-    {{ end }}
-  />
-
-  {{ with .Resources.GetMatch "images/featured.*" }}
-    <meta name="twitter:image" content="{{ . }}" />
-  {{ else }}
-    <meta name="twitter:image" content="{{ resources.GetMatch "img/meta-image.*" | absURL }}" />
+  <!-- ============================================================
+       JSON-LD — ARTICLE SCHEMA
+  ============================================================ -->
+  {{ if .IsPage }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ .Title }}",
+    "description": "{{ $desc }}",
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+    "author": {
+      "@type": "Person",
+      "name": "N Design Studio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "N Design Studio",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ (resources.GetMatch "img/favicon*" ).Permalink }}"
+      }
+    },
+    "image": "{{ $featured.Permalink }}",
+    "mainEntityOfPage": "{{ .Permalink }}",
+    "inLanguage": "{{ .Lang }}"
+  }
+  </script>
   {{ end }}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="theme-color" content="#1A94D2" />
-
-  <!-- Bootstrap CSS -->
-  {{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
+  <!-- ============================================================
+       CSS (Hugo Pipes)
+  ============================================================ -->
+  {{ $options := dict "targetPath" "css/styles.css" "outputStyle" "compressed" }}
   {{ $style := resources.Get "/scss/main.scss" | toCSS $options | minify }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen" />
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- ============================================================
+       ICONS
+  ============================================================ -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-  <!-- Favicon -->
-  {{ with resources.GetMatch "img/favicon.*" }}
-    <link rel="shortcut icon" type="image/x-icon" href="{{ .RelPermalink }}" />
+  {{ with resources.GetMatch "img/favicon*" }}
+    <link rel="icon" href="{{ .RelPermalink }}" type="image/x-icon" />
   {{ end }}
 
-  <!-- Google Analytics -->
+  <!-- ============================================================
+       GOOGLE ANALYTICS + GTM
+  ============================================================ -->
   {{ template "_internal/google_analytics.html" . }}
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG76R19NGW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-MG76R19NGW');
   </script>
 

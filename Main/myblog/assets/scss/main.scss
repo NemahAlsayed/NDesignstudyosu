@@ -11,23 +11,33 @@
 // 3. Custom Homepage
 @import 'custom-home';
 
-// 4. Additional Components (add as needed)
+// 4. Post Components
+@import 'footer';
+
+// 5. Post Components
+@import 'post-card';
+@import 'list';
+@import 'single';
+
+// 5. Additional Components (optional)
 // @import 'navigation';
 // @import 'footer';
 // @import 'forms';
 
 /* Global Styles */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: $font-serif;
+  font-family: $font-sans;
   background: $dark-bg;
   color: $text-light;
-  line-height: 1.6;
+  line-height: 1.7;
   overflow-x: hidden;
 }
 
@@ -36,20 +46,17 @@ body {
   color: $white;
 }
 
-/* Custom Scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: $surface-dark;
 }
-
 ::-webkit-scrollbar-thumb {
   background: $vibrant-red;
   border-radius: 4px;
-
-  &:hover {
-    background: $gold-primary;
-  }
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $gold-primary;
 }

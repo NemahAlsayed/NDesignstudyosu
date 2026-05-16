@@ -1,21 +1,37 @@
-{{ define "main"}}
+{{ define "main" }}
 
-<section class="pages-section">
+<section class="nds-list-section">
   <div class="container">
-    <h1 class="text-center mb-5">All Pages</h1>
-    <div class="row">
-      {{ range .Site.Pages }}
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">{{ .Title }}</h5>
-              <p class="card-text">{{ .Summary }}</p>
-              <a href="{{ .RelPermalink }}" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
+
+    <h1 class="nds-list-title text-center">
+      {{ .Title }}
+    </h1>
+
+    <div class="row g-4 mt-4">
+
+      {{ range .Pages }}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="nds-list-card">
+
+          <h3 class="nds-list-card-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+
+          <p class="nds-list-card-excerpt">
+            {{ .Summary | plainify | truncate 160 }}
+          </p>
+
+          <a href="{{ .RelPermalink }}" class="nds-list-readmore">
+            Read More →
+          </a>
+
         </div>
+      </div>
       {{ end }}
+
     </div>
+
   </div>
 </section>
+
 {{ end }}

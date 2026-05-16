@@ -1,66 +1,60 @@
-<footer class="footer bg-dark text-light pt-5 pb-3">
+<footer class="nds-footer">
 
-  <!-- Social Icons (Top Line) -->
+  <!-- Social Icons -->
   {{ if .Site.Params.socials.enabled }}
-  <section class="footer-social text-center mb-4">
-    <div class="d-flex justify-content-center gap-4">
-      {{ range .Site.Params.socials.link }}
-      <a href="{{ .link }}" class="text-light fs-3">
+  <div class="nds-footer-social">
+    {{ range .Site.Params.socials.link }}
+      <a href="{{ .link }}" class="nds-footer-icon">
         <i class="bi bi-{{ .name }}"></i>
       </a>
-      {{ end }}
-    </div>
-  </section>
+    {{ end }}
+  </div>
 
   <!-- Tagline -->
-  <p class="footer-tagline mb-3 text-center w-100">
-    Creative Design for Purposeful Impact
+  <p class="nds-footer-tagline">
+    {{ .Site.Params.footer.tagline | default "Creative Design for Purposeful Impact" }}
   </p>
   {{ end }}
 
-  <!-- Optional: Contact Info (only if enabled) -->
+  <!-- Contact Info -->
   {{ if .Site.Params.footer.contacts.enabled }}
-  <div class="footer-contact text-center mb-3">
+  <div class="nds-footer-contact">
 
-    {{ if .Site.Params.footer.contacts.mail }}
-    <p class="mb-1">
-      <i class="bi bi-envelope me-2"></i>
-      <a class="text-muted" href="mailto:{{ .Site.Params.footer.contacts.mail }}">
-        {{ .Site.Params.footer.contacts.mail }}
-      </a>
+    {{ with .Site.Params.footer.contacts.mail }}
+    <p>
+      <i class="bi bi-envelope"></i>
+      <a href="mailto:{{ . }}">{{ . }}</a>
     </p>
     {{ end }}
 
-    {{ if .Site.Params.footer.contacts.phone }}
-    <p class="mb-1">
-      <i class="bi bi-telephone me-2"></i>
-      <a class="text-muted" href="callto:{{ .Site.Params.footer.contacts.phone }}">
-        {{ .Site.Params.footer.contacts.phone }}
-      </a>
+    {{ with .Site.Params.footer.contacts.phone }}
+    <p>
+      <i class="bi bi-telephone"></i>
+      <a href="callto:{{ . }}">{{ . }}</a>
     </p>
     {{ end }}
 
   </div>
   {{ end }}
 
-  <!-- Optional: Business Hours -->
+  <!-- Business Hours -->
   {{ if .Site.Params.schedules.enabledFooter }}
-  <div class="footer-hours text-center mb-3">
+  <div class="nds-footer-hours">
     {{ range .Site.Params.schedules.days }}
-    <div class="fw-light">{{ . }}</div>
+      <div>{{ . }}</div>
     {{ end }}
   </div>
   {{ end }}
 
-  <!-- L'Occitane post signup popup (only on that single post) -->
+  <!-- Conditional Popup -->
   {{ if and .IsPage (strings.Contains .File.Path "06-05-2026-L'occitane-Coupon") }}
-  <link rel="stylesheet" href="{{ "popup/popup.css" | relURL }}">
-  <script src="{{ "popup/popup.js" | relURL }}"></script>
+    <link rel="stylesheet" href="{{ "popup/popup.css" | relURL }}">
+    <script src="{{ "popup/popup.js" | relURL }}"></script>
   {{ end }}
 
   <!-- Copyright -->
-  <div class="text-center mt-4">
-    <p class="my-1 fs-6 text-muted">{{ .Site.Copyright | markdownify }}</p>
+  <div class="nds-footer-copy">
+    <p>{{ .Site.Copyright | markdownify }}</p>
   </div>
 
 </footer>

@@ -1,24 +1,40 @@
 {{ define "main" }}
 
-<div class="single-post-wrapper">
+<div class="nds-single-wrapper">
 
-  <article class="post">
+  <!-- Featured Image Banner -->
+  {{ with .Resources.GetMatch "images/featured*" }}
+  <div class="nds-single-banner">
+    <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+    <div class="nds-single-banner-overlay"></div>
+  </div>
+  {{ end }}
 
-    <header class="post-header">
-      <h1 class="post-title">{{ .Title }}</h1>
+  <article class="nds-single-article container">
 
-      <div class="post-meta">
+    <!-- Title Block -->
+    <header class="nds-single-header">
+      <h1 class="nds-single-title">{{ .Title }}</h1>
+
+      <div class="nds-single-meta">
         <time datetime="{{ .Date.Format "2006-01-02" }}">
           {{ .Date.Format "Jan 2, 2006" }}
         </time>
 
         {{ with .Params.category }}
-          <span class="category">{{ . }}</span>
+        <span class="nds-single-category">{{ . }}</span>
         {{ end }}
+
+        <span class="nds-single-reading">
+          {{ .ReadingTime }} min read
+        </span>
       </div>
+
+      <div class="nds-single-divider"></div>
     </header>
 
-    <div class="post-content">
+    <!-- Content -->
+    <div class="nds-single-content">
       {{ .Content }}
     </div>
 

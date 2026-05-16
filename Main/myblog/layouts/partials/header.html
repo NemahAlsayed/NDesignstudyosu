@@ -1,25 +1,23 @@
-<header class="nds-header" style="background: rgba(180, 20, 30, 0.65); backdrop-filter: blur(6px); padding: 0.5rem 0; position: fixed; top: 0; width: 100%; z-index: 999;">
-  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px; display: flex; justify-content: space-between; align-items: center;">
+<header class="nds-header">
+  <div class="nds-container">
 
     <!-- Left: Logo -->
-    <div class="header-left">
+    <div class="nds-logo">
       <a href="/{{ .Lang }}/">
-        <img src="/images/logo.png" 
-             alt="N Design Studio Logo" 
-             style="width: 100px !important; height: auto !important; max-width: 100px !important; display: block;">
+        <img src="/images/logo.png" alt="N Design Studio Logo">
       </a>
     </div>
 
     <!-- Right: Navigation -->
-    <nav class="header-right">
-      <ul style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
-        <li><a href="/{{ .Lang }}/about/" style="color: #fff; font-weight: 500; text-decoration: none; padding: 0.25rem 0.5rem; transition: 0.3s ease;">{{ i18n "navAbout" }}</a></li>
-        <li><a href="/{{ .Lang }}/contact/" style="color: #fff; font-weight: 500; text-decoration: none; padding: 0.25rem 0.5rem; transition: 0.3s ease;">{{ i18n "navContact" }}</a></li>
+    <nav class="nds-nav">
+      <ul>
+        <li><a href="/{{ .Lang }}/about/">{{ i18n "navAbout" }}</a></li>
+        <li><a href="/{{ .Lang }}/contact/">{{ i18n "navContact" }}</a></li>
       </ul>
     </nav>
 
   </div>
 </header>
 
-<!-- Add space for fixed header -->
-<div style="height: 80px;"></div>
+<!-- Spacer for fixed header -->
+<div class="nds-header-spacer"></div>
