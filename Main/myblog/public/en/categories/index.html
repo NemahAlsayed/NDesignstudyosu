@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#800000">
     <title>N Design Studio</title>
-    
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,22 +16,116 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
+    
     <style>
          
         .nds-logo,
-        .header-left img,
-        .logo-wrapper img {
-            width: 110px !important;
-            max-width: 110px !important;
+        .logo-wrapper img,
+        header img,
+        img.nds-logo,
+        div.logo-wrapper img,
+        a img.nds-logo,
+        img[src*="logo.png"] {
+            width: 100px !important;
+            max-width: 100px !important;
             height: auto !important;
+            min-width: 60px !important;
         }
         
+         
+        .nds-header {
+            background: rgba(5, 4, 6, 0.95) !important;
+            backdrop-filter: blur(12px) !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            z-index: 9999 !important;
+            border-bottom: 1px solid rgba(209, 0, 0, 0.3) !important;
+        }
+        
+        .header-container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            min-height: 72px !important;
+        }
+        
+         
+        .nav-links {
+            display: flex !important;
+            gap: 30px !important;
+            list-style: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .nav-links a {
+            color: #E8E0D5 !important;
+            text-decoration: none !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 0.85rem !important;
+            font-weight: 500 !important;
+            transition: color 0.2s ease !important;
+        }
+        
+        .nav-links a:hover {
+            color: #d10000 !important;
+        }
+        
+         
+        body {
+            padding-top: 72px !important;
+        }
+        
+         
+        .language-tabs {
+            display: flex !important;
+            gap: 1rem !important;
+            justify-content: center !important;
+            margin: 2rem 0 !important;
+        }
+        
+        .lang-tab {
+            padding: 0.5rem 1.5rem !important;
+            background: rgba(209, 0, 0, 0.1) !important;
+            color: #E8E0D5 !important;
+            text-decoration: none !important;
+            border-radius: 30px !important;
+            transition: all 0.2s ease !important;
+        }
+        
+        .lang-tab:hover {
+            background: #d10000 !important;
+            color: white !important;
+        }
+        
+         
         @media (max-width: 768px) {
             .nds-logo,
-            .header-left img,
-            .logo-wrapper img {
+            .logo-wrapper img,
+            img[src*="logo.png"] {
                 width: 70px !important;
                 max-width: 70px !important;
+            }
+            
+            .header-container {
+                min-height: 60px !important;
+            }
+            
+            body {
+                padding-top: 60px !important;
+            }
+            
+            .nav-links {
+                gap: 15px !important;
+            }
+            
+            .nav-links a {
+                font-size: 0.75rem !important;
             }
         }
     </style>
@@ -70,9 +160,13 @@
         <div class="lang-dropdown" id="langDropdown">
           
             
-              <a href="http://localhost:1313/tr/categories/" hreflang="tr" lang="tr">Türkçe</a>
+          
             
-              <a href="http://localhost:1313/ar/categories/" hreflang="ar" lang="ar">العربية</a>
+              <a href="../../tr/en/categories/" hreflang="tr" lang="tr">Türkçe</a>
+            
+          
+            
+              <a href="../../ar/en/categories/" hreflang="ar" lang="ar">العربية</a>
             
           
         </div>
@@ -128,13 +222,15 @@ document.addEventListener('DOMContentLoaded', function() {
   
   
   const header = document.querySelector('.nds-header');
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
+  if (header) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  }
 });
 </script>
 
@@ -150,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/arabic/">arabic [3]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/arabic/">arabic [3]</a>
           </li>
         
       
@@ -158,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/arabic-designs/">arabic-designs [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/arabic-designs/">arabic-designs [1]</a>
           </li>
         
       
@@ -166,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/art/">art [2]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/art/">art [2]</a>
           </li>
         
       
@@ -174,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/beauty/">Beauty [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/beauty/">Beauty [1]</a>
           </li>
         
       
@@ -182,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/birthday-cards/">birthday-cards [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/birthday-cards/">birthday-cards [1]</a>
           </li>
         
       
@@ -190,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/canva-template/">canva-template [2]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/canva-template/">canva-template [2]</a>
           </li>
         
       
@@ -198,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/custom-designs/">custom-designs [2]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/custom-designs/">custom-designs [2]</a>
           </li>
         
       
@@ -206,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/design/">design [4]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/design/">design [4]</a>
           </li>
         
       
@@ -214,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/dolap/">dolap [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/dolap/">dolap [1]</a>
           </li>
         
       
@@ -222,7 +318,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/drawings/">drawings [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/drawings/">drawings [1]</a>
           </li>
         
       
@@ -230,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/dyson/">dyson [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/dyson/">dyson [1]</a>
           </li>
         
       
@@ -238,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/e-commerce/">e-commerce [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/e-commerce/">e-commerce [1]</a>
           </li>
         
       
@@ -246,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/email/">email [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/email/">email [1]</a>
           </li>
         
       
@@ -254,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/esim/">esim [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/esim/">esim [1]</a>
           </li>
         
       
@@ -262,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/etsy/">etsy [3]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/etsy/">etsy [3]</a>
           </li>
         
       
@@ -270,7 +366,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/fashion/">fashion [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/fashion/">fashion [1]</a>
           </li>
         
       
@@ -278,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/feature/">feature [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/feature/">feature [1]</a>
           </li>
         
       
@@ -286,7 +382,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/friendship-bracelets/">friendship-bracelets [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/friendship-bracelets/">friendship-bracelets [1]</a>
           </li>
         
       
@@ -294,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/hair/">hair [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/hair/">hair [1]</a>
           </li>
         
       
@@ -302,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/hair-styling/">hair-styling [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/hair-styling/">hair-styling [1]</a>
           </li>
         
       
@@ -310,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/invoice/">invoice [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/invoice/">invoice [1]</a>
           </li>
         
       
@@ -318,7 +414,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/jewelry/">jewelry [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/jewelry/">jewelry [1]</a>
           </li>
         
       
@@ -326,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/kitchen/">kitchen [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/kitchen/">kitchen [1]</a>
           </li>
         
       
@@ -334,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/laptops/">laptops [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/laptops/">laptops [1]</a>
           </li>
         
       
@@ -342,7 +438,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/lead-generation/">lead-generation [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/lead-generation/">lead-generation [1]</a>
           </li>
         
       
@@ -350,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/marketing/">marketing [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/marketing/">marketing [1]</a>
           </li>
         
       
@@ -358,7 +454,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/marketing-automation/">marketing-automation [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/marketing-automation/">marketing-automation [1]</a>
           </li>
         
       
@@ -366,7 +462,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/middle-east/">middle-east [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/middle-east/">middle-east [1]</a>
           </li>
         
       
@@ -374,7 +470,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/my-paintings/">my-paintings [2]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/my-paintings/">my-paintings [2]</a>
           </li>
         
       
@@ -382,7 +478,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/nft/">nft [5]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/nft/">nft [5]</a>
           </li>
         
       
@@ -390,7 +486,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/noon/">noon [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/noon/">noon [1]</a>
           </li>
         
       
@@ -398,7 +494,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/online-shopping/">online-shopping [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/online-shopping/">online-shopping [1]</a>
           </li>
         
       
@@ -406,7 +502,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/personal-experience/">Personal Experience [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/personal-experience/">Personal Experience [1]</a>
           </li>
         
       
@@ -414,7 +510,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/phones/">phones [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/phones/">phones [1]</a>
           </li>
         
       
@@ -422,7 +518,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/review/">review [3]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/review/">review [3]</a>
           </li>
         
       
@@ -430,7 +526,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/reviews/">Reviews [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/reviews/">Reviews [1]</a>
           </li>
         
       
@@ -438,7 +534,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/shipping/">shipping [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/shipping/">shipping [1]</a>
           </li>
         
       
@@ -446,7 +542,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/shopping/">shopping [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/shopping/">shopping [1]</a>
           </li>
         
       
@@ -454,7 +550,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/software/">software [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/software/">software [1]</a>
           </li>
         
       
@@ -462,7 +558,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/sql-system/">sql-system [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/sql-system/">sql-system [1]</a>
           </li>
         
       
@@ -470,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/sticker/">sticker [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/sticker/">sticker [1]</a>
           </li>
         
       
@@ -478,7 +574,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/travel/">travel [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/travel/">travel [1]</a>
           </li>
         
       
@@ -486,7 +582,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/web-hosting/">web-hosting [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/web-hosting/">web-hosting [1]</a>
           </li>
         
       
@@ -494,7 +590,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
           <li>
-            <a class="terms-title" href="http://localhost:1313/en/categories/website/">website [1]</a>
+            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/website/">website [1]</a>
           </li>
         
       

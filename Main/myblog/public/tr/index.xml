@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hoş Geldiniz on N Design Studio</title>
-    <link>http://localhost:1313/tr/</link>
+    <link>https://ndesignstudyosu.com.tr/tr/</link>
     <description>Recent content in Hoş Geldiniz on N Design Studio</description>
     <generator>Hugo</generator>
     <language>tr</language>
     <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
-    <atom:link href="http://localhost:1313/tr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ndesignstudyosu.com.tr/tr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hakkımızda</title>
-      <link>http://localhost:1313/tr/about/</link>
+      <link>https://ndesignstudyosu.com.tr/tr/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tr/about/</guid>
+      <guid>https://ndesignstudyosu.com.tr/tr/about/</guid>
       <description></description>
     </item>
     <item>
       <title>İletişim</title>
-      <link>http://localhost:1313/tr/contact/</link>
+      <link>https://ndesignstudyosu.com.tr/tr/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tr/contact/</guid>
+      <guid>https://ndesignstudyosu.com.tr/tr/contact/</guid>
       <description></description>
     </item>
   </channel>

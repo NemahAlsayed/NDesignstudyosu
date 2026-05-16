@@ -2,40 +2,130 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#800000">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    
-    <!-- Preconnect for Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Pre-compiled CSS (no SCSS compilation needed) -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/custom.css">
     
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
+    <!-- CRITICAL: Force logo size on EVERY page, EVERY language -->
     <style>
-        /* Emergency logo fix - always applies */
+        /* ULTIMATE LOGO FIX - Applied to ALL pages */
         .nds-logo,
-        .header-left img,
-        .logo-wrapper img {
-            width: 110px !important;
-            max-width: 110px !important;
+        .logo-wrapper img,
+        header img,
+        img.nds-logo,
+        div.logo-wrapper img,
+        a img.nds-logo,
+        img[src*="logo.png"] {
+            width: 100px !important;
+            max-width: 100px !important;
             height: auto !important;
+            min-width: 60px !important;
         }
         
+        /* Header styling */
+        .nds-header {
+            background: rgba(5, 4, 6, 0.95) !important;
+            backdrop-filter: blur(12px) !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            z-index: 9999 !important;
+            border-bottom: 1px solid rgba(209, 0, 0, 0.3) !important;
+        }
+        
+        .header-container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            min-height: 72px !important;
+        }
+        
+        /* Navigation links */
+        .nav-links {
+            display: flex !important;
+            gap: 30px !important;
+            list-style: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .nav-links a {
+            color: #E8E0D5 !important;
+            text-decoration: none !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 0.85rem !important;
+            font-weight: 500 !important;
+            transition: color 0.2s ease !important;
+        }
+        
+        .nav-links a:hover {
+            color: #d10000 !important;
+        }
+        
+        /* Body padding for fixed header */
+        body {
+            padding-top: 72px !important;
+        }
+        
+        /* Language tabs */
+        .language-tabs {
+            display: flex !important;
+            gap: 1rem !important;
+            justify-content: center !important;
+            margin: 2rem 0 !important;
+        }
+        
+        .lang-tab {
+            padding: 0.5rem 1.5rem !important;
+            background: rgba(209, 0, 0, 0.1) !important;
+            color: #E8E0D5 !important;
+            text-decoration: none !important;
+            border-radius: 30px !important;
+            transition: all 0.2s ease !important;
+        }
+        
+        .lang-tab:hover {
+            background: #d10000 !important;
+            color: white !important;
+        }
+        
+        /* Mobile responsive */
         @media (max-width: 768px) {
             .nds-logo,
-            .header-left img,
-            .logo-wrapper img {
+            .logo-wrapper img,
+            img[src*="logo.png"] {
                 width: 70px !important;
                 max-width: 70px !important;
+            }
+            
+            .header-container {
+                min-height: 60px !important;
+            }
+            
+            body {
+                padding-top: 60px !important;
+            }
+            
+            .nav-links {
+                gap: 15px !important;
+            }
+            
+            .nav-links a {
+                font-size: 0.75rem !important;
             }
         }
     </style>
@@ -50,38 +140,3 @@
     {{ partial "footer.html" . }}
 </body>
 </html>
-<style>
-/* ULTIMATE LOGO FIX - Works on ALL pages, ALL languages */
-.nds-logo,
-.header-left img,
-.logo-wrapper img,
-header img,
-img[src*="logo.png"] {
-    width: 110px !important;
-    max-width: 110px !important;
-    height: auto !important;
-    min-width: 50px !important;
-}
-
-@media (max-width: 768px) {
-    .nds-logo,
-    .header-left img,
-    .logo-wrapper img,
-    header img,
-    img[src*="logo.png"] {
-        width: 85px !important;
-        max-width: 85px !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .nds-logo,
-    .header-left img,
-    .logo-wrapper img,
-    header img,
-    img[src*="logo.png"] {
-        width: 65px !important;
-        max-width: 65px !important;
-    }
-}
-</style>

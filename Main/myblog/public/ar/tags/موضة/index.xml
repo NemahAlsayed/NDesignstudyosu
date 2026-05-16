@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>موضة on N Design Studio</title>
-    <link>http://localhost:1313/ar/tags/%D9%85%D9%88%D8%B6%D8%A9/</link>
+    <link>https://ndesignstudyosu.com.tr/ar/tags/%D9%85%D9%88%D8%B6%D8%A9/</link>
     <description>Recent content in موضة on N Design Studio</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <copyright>&amp;copy; 2026 N Design Studio. All rights reserved.</copyright>
     <lastBuildDate>Mon, 27 Apr 2026 09:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/ar/tags/%D9%85%D9%88%D8%B6%D8%A9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ndesignstudyosu.com.tr/ar/tags/%D9%85%D9%88%D8%B6%D8%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A0N5: لماذا تشتري 2 وتأخذ الثالث مجاناً في H&amp;M السعودية والإمارات؟</title>
-      <link>http://localhost:1313/ar/posts/2026/04/2026-04-27-hm-gcc/</link>
+      <link>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/</link>
       <pubDate>Mon, 27 Apr 2026 09:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/ar/posts/2026/04/2026-04-27-hm-gcc/</guid>
+      <guid>https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/</guid>
       <description>&lt;!-- markdownlint-disable MD033 --&gt;&#xA;&#xA;&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;ar&#34; dir=&#34;rtl&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;&#xA;    &lt;title&gt;H&amp;M Buy 2 Get 1 + A0N5 | المقال الكامل&lt;/title&gt;&#xA;    &lt;style&gt;&#xA;        body {&#xA;            background: #fefaf5;&#xA;            font-family: &#39;Tajawal&#39;, &#39;Cairo&#39;, system-ui;&#xA;            direction: rtl;&#xA;            padding: 2rem 1rem;&#xA;            line-height: 1.7;&#xA;        }&#xA;        .editorial-container {&#xA;            max-width: 880px;&#xA;            margin: 0 auto;&#xA;            background: white;&#xA;            border-radius: 48px;&#xA;            padding: 2rem;&#xA;            box-shadow: 0 20px 35px rgba(0,0,0,0.03);&#xA;        }&#xA;        h1 {&#xA;            font-size: 2.5rem;&#xA;            font-weight: 800;&#xA;            background: linear-gradient(135deg, #1f3a1c, #b47c48);&#xA;            -webkit-background-clip: text;&#xA;            background-clip: text;&#xA;            color: transparent;&#xA;        }&#xA;        .highlight-code {&#xA;            background: #f3efea;&#xA;            padding: 0.2rem 1rem;&#xA;            border-radius: 60px;&#xA;            font-family: monospace;&#xA;            font-weight: bold;&#xA;            display: inline-block;&#xA;        }&#xA;        .grid-3col {&#xA;            display: flex;&#xA;            gap: 1.2rem;&#xA;            margin: 2rem 0;&#xA;            flex-wrap: wrap;&#xA;        }&#xA;        .card-idea {&#xA;            background: #faf6f0;&#xA;            border-radius: 28px;&#xA;            padding: 1.2rem;&#xA;            flex: 1;&#xA;        }&#xA;        .btn-hm {&#xA;            background: #1f3a1c;&#xA;            color: white;&#xA;            padding: 1rem 2rem;&#xA;            border-radius: 60px;&#xA;            text-decoration: none;&#xA;            font-weight: bold;&#xA;            display: inline-block;&#xA;        }&#xA;        @media (max-width: 600px) {&#xA;            .editorial-container { padding: 1rem; }&#xA;            h1 { font-size: 1.8rem; }&#xA;        }&#xA;    &lt;/style&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;div class=&#34;editorial-container&#34;&gt;&#xA;    &lt;h1&gt;A0N5: سرّ التسوق الذكي في H&amp;M – إشتري 2 وخذ الثالث مجاناً + 5% إضافية&lt;/h1&gt;&#xA;    &lt;p style=&#34;font-size: 1.1rem; margin-top: 1rem;&#34;&gt;&lt;strong&gt;السعودية والإمارات&lt;/strong&gt; – لأول مرة، H&amp;M تطلق عرضاً تراكمياً نادراً: كود &lt;span class=&#34;highlight-code&#34;&gt;A0N5&lt;/span&gt; يمنحك خصم 5% على كامل المشتريات، يُضاف إلى ميكانيكية &#34;اشتري 2 وخذ الثالث مجاناً&#34;. عملياً: كل 3 قطع تصبح بسعر قطعتين (الأقل سعراً مجانية) ثم يطبق الخصم 5% على الإجمالي.&lt;/p&gt;</description>
     </item>
   </channel>
