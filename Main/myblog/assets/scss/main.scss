@@ -1,30 +1,32 @@
 // ============================================
-// N Design Studio - Main Stylesheet
+// N Design Studio — Main SCSS Entry
 // ============================================
 
-// 1. Variables
+// 1. Variables (must load first)
 @import 'variables';
 
-// 2. Base Styles
+// 2. Global Base Styles (your style.scss)
 @import 'style';
 
-// 3. Custom Homepage
+// 3. Homepage (hero, language tabs, etc.)
 @import 'custom-home';
 
 // 4. Post Components
-@import 'footer';
-
-// 5. Post Components
 @import 'post-card';
 @import 'list';
 @import 'single';
 
-// 5. Additional Components (optional)
+// 5. Footer Component
+@import 'footer';
+
+// 6. Additional Components (optional)
 // @import 'navigation';
-// @import 'footer';
 // @import 'forms';
 
-/* Global Styles */
+/* ============================================
+   GLOBAL RESET & BODY
+============================================ */
+
 *,
 *::before,
 *::after {
@@ -39,6 +41,7 @@ body {
   color: $text-light;
   line-height: 1.7;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
@@ -46,17 +49,23 @@ body {
   color: $white;
 }
 
-/* Scrollbar */
+/* ============================================
+   CUSTOM SCROLLBAR
+============================================ */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: $surface-dark;
 }
+
 ::-webkit-scrollbar-thumb {
   background: $vibrant-red;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: $gold-primary;
 }
