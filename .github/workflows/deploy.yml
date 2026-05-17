@@ -18,6 +18,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,25 +33,18 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        run: hugo --minify --gc --enableGitInfo
-        working-directory: Main/myblog
+        working-directory: "Main File/myblog"
+        run: hugo --cleanDestinationDir --minify --gc --enableGitInfo
         env:
           HUGO_ENV: production
 
       - name: Add CNAME file
-        run: echo "ndesignstudyosu.com.tr" > Main/myblog/public/CNAME
+        run: echo "ndesignstudyosu.com.tr" > "Main File/myblog/public/CNAME"
 
-      - name: List built files (debug)
-        run: |
-          echo "=== CSS files ==="
-          find Main/myblog/public -name "*.css" -type f | head -10
-          echo "=== SCSS compiled check ==="
-          ls -la Main/myblog/public/css/ || echo "No css folder"
-          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Main/myblog/public
+          path: "Main File/myblog/public"
 
   deploy:
     needs: build
@@ -58,6 +52,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
