@@ -1,7 +1,6 @@
 baseURL = "https://ndesignstudyosu.com.tr/"
 languageCode = "en-us"
 title = "N Design Studio"
-copyright = "&copy; 2026 N Design Studio. All rights reserved."
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 relativeURLs = true
@@ -14,43 +13,16 @@ relativeURLs = true
   weight = 1
   contentDir = "content/en"
   languageName = "English"
-  
-  [[languages.en.menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 1
-  [[languages.en.menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 2
 
 [languages.tr]
   weight = 2
   contentDir = "content/tr"
   languageName = "Türkçe"
-  
-  [[languages.tr.menu.main]]
-    name = "Hakkında"
-    url = "/about/"
-    weight = 1
-  [[languages.tr.menu.main]]
-    name = "İletişim"
-    url = "/contact/"
-    weight = 2
 
 [languages.ar]
   weight = 3
   contentDir = "content/ar"
   languageName = "العربية"
-  
-  [[languages.ar.menu.main]]
-    name = "حول"
-    url = "/about/"
-    weight = 1
-  [[languages.ar.menu.main]]
-    name = "اتصل بنا"
-    url = "/contact/"
-    weight = 2
 
 [markup]
   [markup.goldmark]
