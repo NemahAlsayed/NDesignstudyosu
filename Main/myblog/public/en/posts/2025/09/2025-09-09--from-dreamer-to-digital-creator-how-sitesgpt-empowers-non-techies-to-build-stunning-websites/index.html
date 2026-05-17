@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N Design Studio</title>
     <style>
-         
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #f5f5f5;
             color: #333;
+            line-height: 1.6;
         }
-        main { padding: 40px 20px; min-height: calc(100vh - 200px); }
-        footer { background: #1a1a2e; color: #888; text-align: center; padding: 30px; margin-top: 60px; }
-        .container { max-width: 1200px; margin: 0 auto; }
+        main {
+            min-height: calc(100vh - 200px);
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            main { padding: 20px; }
+        }
     </style>
     
 </head>
 <body>
     <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-        <a href="../../../../../" style="font-size: 1.2rem; font-weight: 700; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
+        <a href="../../../../../" style="font-size: 1.3rem; font-weight: bold; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
             N Design Studio
         </a>
         
@@ -33,48 +41,27 @@
             </nav>
             
             
-            <div style="position: relative; display: inline-block;">
-                <button id="langDropdownBtn" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
-                    🌐 EN <span style="font-size: 0.7rem;">▼</span>
-                </button>
-                <div id="langDropdown" style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); min-width: 130px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 1001;">
-                    <a href="../../../../../en/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇬🇧 English</a>
-                    <a href="../../../../../tr/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇹🇷 Türkçe</a>
-                    <a href="../../../../../ar/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">🇸🇦 العربية</a>
-                </div>
+            <div style="position: relative;">
+                <select onchange="location = this.value;" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem;">
+                    <option value="/en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/">🇬🇧 English</option>
+                    <option value="/tr//en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/">🇹🇷 Türkçe</option>
+                    <option value="/ar//en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/">🇸🇦 العربية</option>
+                </select>
             </div>
         </div>
     </div>
 </header>
 
-<script>
-    const btn = document.getElementById('langDropdownBtn');
-    const dropdown = document.getElementById('langDropdown');
-    if (btn && dropdown) {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const isActive = dropdown.style.opacity === '1';
-            dropdown.style.opacity = isActive ? '0' : '1';
-            dropdown.style.visibility = isActive ? 'hidden' : 'visible';
-            dropdown.style.transform = isActive ? 'translateY(-10px)' : 'translateY(0)';
-        });
-        document.addEventListener('click', function() {
-            dropdown.style.opacity = '0';
-            dropdown.style.visibility = 'hidden';
-            dropdown.style.transform = 'translateY(-10px)';
-        });
-        dropdown.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
-    }
-</script>
-
     <main>
         <div class="container">
             
-    <article>
-        <h1>🌐 From Dreamer to Digital Creator: How SitesGPT Empowers Non-Techies to Build Stunning Websites.</h1>
-        <div><h2 id="-meet-layla-the-dreamer-who-thought-she-couldnt-build-a-website">✨ Meet Layla: The Dreamer Who Thought She Couldn’t Build a Website</h2>
+    <article style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h1 style="font-size: 2rem; margin-bottom: 1rem;">🌐 From Dreamer to Digital Creator: How SitesGPT Empowers Non-Techies to Build Stunning Websites.</h1>
+        <div style="color: #888; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+            September 9, 2025 · 3 min read
+        </div>
+        <div style="line-height: 1.8;">
+            <h2 id="-meet-layla-the-dreamer-who-thought-she-couldnt-build-a-website">✨ Meet Layla: The Dreamer Who Thought She Couldn’t Build a Website</h2>
 <p>Layla always had a vision. A small online shop selling handmade jewelry inspired by Turkish poetry and Mediterranean colors. But every time she tried to build a website, she hit a wall—HTML, CSS, hosting plans, plugins&hellip; it was overwhelming.</p>
 <p>She wasn’t a developer. She wasn’t a designer. She was a creator with a dream.</p>
 <p>Then she discovered <strong><a href="https://affiliate.sitesgpt.com/le2sv5ta5t35">SitesGPT</a></strong>—an AI-powered website builder that changed everything.</p>
@@ -159,13 +146,32 @@
 <p>Layla’s story isn’t unique. Every day, creators, educators, artists, and entrepreneurs are turning their ideas into digital reality with <a href="https://affiliate.sitesgpt.com/le2sv5ta5t35">SitesGPT</a>. You don’t need to be tech-savvy. You just need a vision—and the right tool.</p>
 <p>So if you’ve been waiting for the “perfect moment” to start your website, this is it.</p>
 <p><strong>Let <a href="https://affiliate.sitesgpt.com/le2sv5ta5t35">SitesGPT</a> turn your dream into a domain.</strong></p>
-</div>
+
+        </div>
     </article>
 
         </div>
     </main>
-    <footer>
-        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
-    </footer>
+    <footer class="nds-footer">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="nds-footer-copy">
+    <p></p>
+  </div>
+
+</footer>
+
 </body>
 </html>

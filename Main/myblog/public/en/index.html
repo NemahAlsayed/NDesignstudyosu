@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N Design Studio</title>
     <style>
-         
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #f5f5f5;
             color: #333;
+            line-height: 1.6;
         }
-        main { padding: 40px 20px; min-height: calc(100vh - 200px); }
-        footer { background: #1a1a2e; color: #888; text-align: center; padding: 30px; margin-top: 60px; }
-        .container { max-width: 1200px; margin: 0 auto; }
+        main {
+            min-height: calc(100vh - 200px);
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            main { padding: 20px; }
+        }
     </style>
     
 </head>
 <body>
     <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-        <a href="../" style="font-size: 1.2rem; font-weight: 700; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
+        <a href="../" style="font-size: 1.3rem; font-weight: bold; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
             N Design Studio
         </a>
         
@@ -34,93 +42,70 @@
             </nav>
             
             
-            <div style="position: relative; display: inline-block;">
-                <button id="langDropdownBtn" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
-                    🌐 EN <span style="font-size: 0.7rem;">▼</span>
-                </button>
-                <div id="langDropdown" style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); min-width: 130px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 1001;">
-                    <a href="../en/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇬🇧 English</a>
-                    <a href="../tr/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇹🇷 Türkçe</a>
-                    <a href="../ar/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">🇸🇦 العربية</a>
-                </div>
+            <div style="position: relative;">
+                <select onchange="location = this.value;" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem;">
+                    <option value="/en/">🇬🇧 English</option>
+                    <option value="/tr//en/">🇹🇷 Türkçe</option>
+                    <option value="/ar//en/">🇸🇦 العربية</option>
+                </select>
             </div>
         </div>
     </div>
 </header>
 
-<script>
-    const btn = document.getElementById('langDropdownBtn');
-    const dropdown = document.getElementById('langDropdown');
-    if (btn && dropdown) {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const isActive = dropdown.style.opacity === '1';
-            dropdown.style.opacity = isActive ? '0' : '1';
-            dropdown.style.visibility = isActive ? 'hidden' : 'visible';
-            dropdown.style.transform = isActive ? 'translateY(-10px)' : 'translateY(0)';
-        });
-        document.addEventListener('click', function() {
-            dropdown.style.opacity = '0';
-            dropdown.style.visibility = 'hidden';
-            dropdown.style.transform = 'translateY(-10px)';
-        });
-        dropdown.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
-    }
-</script>
-
     <main>
         <div class="container">
             
-    <h1>Welcome to N Design Studio</h1>
+    <div style="text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; color: white; margin-bottom: 3rem;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">N Design Studio</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Creative Design for Purposeful Impact</p>
+    </div>
     
-    <h2>Latest Posts</h2>
-    <div class="posts-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+    <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Latest Posts</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
         
-            <div class="post-card" style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
-                <h2><a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/05-13-2026-halal-booking/">The Ultimate Halal Luxury Travel Guide — 30 Resorts Curated for GCC Travelers (Free PDF)</a></h2>
-                <p><style>
-.post-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  color: …</style></p>
-                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/05-13-2026-halal-booking/">Read More →</a>
+            <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="margin-bottom: 0.5rem;"><a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/05-13-2026-halal-booking/" style="text-decoration: none; color: #333;">The Ultimate Halal Luxury Travel Guide — 30 Resorts Curated for GCC Travelers (Free PDF)</a></h3>
+                <p style="color: #666;"> The Ultimate Halal Luxury Travel Guide 30 Resorts • Private Pools • Women‑Only Facilities • GCC …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/05-13-2026-halal-booking/" style="color: #667eea; text-decoration: none; margin-top: 1rem; display: inline-block;">Read More →</a>
             </div>
         
-            <div class="post-card" style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
-                <h2><a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/">Top 5 Luxury L’OCCITANE Products in Saudi Arabia (With Exclusive Discount Code A162)</a></h2>
-                <p><!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-<style>
-/* RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* GLOBAL */
-.loccitane-luxury {
-    font-family: 'Segoe UI', system-ui, …</style></meta></meta></head></html></!DOCTYPE></p>
-                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/">Read More →</a>
+            <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="margin-bottom: 0.5rem;"><a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/" style="text-decoration: none; color: #333;">Top 5 Luxury L’OCCITANE Products in Saudi Arabia (With Exclusive Discount Code A162)</a></h3>
+                <p style="color: #666;"><!DOCTYPE html> The Most Luxurious L’OCCITANE Products in Saudi Arabia A luxury ritual… with an exclusive discount …</!DOCTYPE></p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/" style="color: #667eea; text-decoration: none; margin-top: 1rem; display: inline-block;">Read More →</a>
             </div>
         
-            <div class="post-card" style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
-                <h2><a href="https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/">Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</a></h2>
-                <p><p>Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant …</p></p>
-                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/">Read More →</a>
+            <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <h3 style="margin-bottom: 0.5rem;"><a href="https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/" style="text-decoration: none; color: #333;">Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</a></h3>
+                <p style="color: #666;">Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/" style="color: #667eea; text-decoration: none; margin-top: 1rem; display: inline-block;">Read More →</a>
             </div>
         
     </div>
 
         </div>
     </main>
-    <footer>
-        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
-    </footer>
+    <footer class="nds-footer">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="nds-footer-copy">
+    <p></p>
+  </div>
+
+</footer>
+
 </body>
 </html>

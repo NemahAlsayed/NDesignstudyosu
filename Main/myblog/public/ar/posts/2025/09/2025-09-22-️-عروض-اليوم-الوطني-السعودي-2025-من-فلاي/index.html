@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N Design Studio</title>
     <style>
-         
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #f5f5f5;
             color: #333;
+            line-height: 1.6;
         }
-        main { padding: 40px 20px; min-height: calc(100vh - 200px); }
-        footer { background: #1a1a2e; color: #888; text-align: center; padding: 30px; margin-top: 60px; }
-        .container { max-width: 1200px; margin: 0 auto; }
+        main {
+            min-height: calc(100vh - 200px);
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            main { padding: 20px; }
+        }
     </style>
     
 </head>
 <body>
     <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-        <a href="../../../../../" style="font-size: 1.2rem; font-weight: 700; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
+        <a href="../../../../../" style="font-size: 1.3rem; font-weight: bold; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
             N Design Studio
         </a>
         
@@ -33,48 +41,27 @@
             </nav>
             
             
-            <div style="position: relative; display: inline-block;">
-                <button id="langDropdownBtn" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
-                    🌐 AR <span style="font-size: 0.7rem;">▼</span>
-                </button>
-                <div id="langDropdown" style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); min-width: 130px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 1001;">
-                    <a href="../../../../../en/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇬🇧 English</a>
-                    <a href="../../../../../tr/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇹🇷 Türkçe</a>
-                    <a href="../../../../../ar/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">🇸🇦 العربية</a>
-                </div>
+            <div style="position: relative;">
+                <select onchange="location = this.value;" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem;">
+                    <option value="/en//ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/">🇬🇧 English</option>
+                    <option value="/tr//ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/">🇹🇷 Türkçe</option>
+                    <option value="/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/">🇸🇦 العربية</option>
+                </select>
             </div>
         </div>
     </div>
 </header>
 
-<script>
-    const btn = document.getElementById('langDropdownBtn');
-    const dropdown = document.getElementById('langDropdown');
-    if (btn && dropdown) {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const isActive = dropdown.style.opacity === '1';
-            dropdown.style.opacity = isActive ? '0' : '1';
-            dropdown.style.visibility = isActive ? 'hidden' : 'visible';
-            dropdown.style.transform = isActive ? 'translateY(-10px)' : 'translateY(0)';
-        });
-        document.addEventListener('click', function() {
-            dropdown.style.opacity = '0';
-            dropdown.style.visibility = 'hidden';
-            dropdown.style.transform = 'translateY(-10px)';
-        });
-        dropdown.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
-    }
-</script>
-
     <main>
         <div class="container">
             
-    <article>
-        <h1>✈️ عروض اليوم الوطني السعودي 2025 من فلاي ناس – سافر بأسعار لا تُقاوم!</h1>
-        <div><p>مع اقتراب اليوم الوطني السعودي الـ95، تقدم شركة الطيران السعودية الرائدة <a href="https://go.urtrackinglink.com/aff_c?offer_id=1799&amp;aff_id=140889">&ldquo;فلاي ناس&rdquo;</a> مجموعة من العروض الحصرية التي تجعل السفر داخل المملكة وخارجها أكثر سهولة ووفرة. سواء كنت تخطط لرحلة عائلية، أو مغامرة فردية، أو سفر عمل، فإن فلاي ناس تجمع بين الأسعار الاقتصادية والخدمة المتميزة بروح وطنية أصيلة.</p>
+    <article style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h1 style="font-size: 2rem; margin-bottom: 1rem;">✈️ عروض اليوم الوطني السعودي 2025 من فلاي ناس – سافر بأسعار لا تُقاوم!</h1>
+        <div style="color: #888; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+            September 22, 2025 · 2 min read
+        </div>
+        <div style="line-height: 1.8;">
+            <p>مع اقتراب اليوم الوطني السعودي الـ95، تقدم شركة الطيران السعودية الرائدة <a href="https://go.urtrackinglink.com/aff_c?offer_id=1799&amp;aff_id=140889">&ldquo;فلاي ناس&rdquo;</a> مجموعة من العروض الحصرية التي تجعل السفر داخل المملكة وخارجها أكثر سهولة ووفرة. سواء كنت تخطط لرحلة عائلية، أو مغامرة فردية، أو سفر عمل، فإن فلاي ناس تجمع بين الأسعار الاقتصادية والخدمة المتميزة بروح وطنية أصيلة.</p>
 <p>👉 <strong><a href="https://go.urtrackinglink.com/aff_c?offer_id=1799&amp;aff_id=140889">فلاي ناس</a></strong> للحجز الآن والاستفادة من التخفيضات المحدودة!</p>
 <h2 id="-قصة-فلاي-ناس--طيران-سعودي-برؤية-وطنية">🇸🇦 قصة فلاي ناس – طيران سعودي برؤية وطنية</h2>
 <p>تأسست <a href="https://go.urtrackinglink.com/aff_c?offer_id=1799&amp;aff_id=140889">فلاي ناس</a> عام 2007 كأول شركة طيران اقتصادي في المملكة العربية السعودية، بهدف جعل السفر الجوي متاحًا للجميع. ومنذ ذلك الحين، أحدثت نقلة نوعية في قطاع الطيران من خلال تقديم رحلات بأسعار منافسة دون التنازل عن معايير السلامة أو جودة الخدمة.</p>
@@ -132,13 +119,32 @@
 <h2 id="-لا-تفوت-الفرصة">🛫 لا تفوّت الفرصة!</h2>
 <p>اليوم الوطني السعودي ليس مجرد مناسبة، بل فرصة للتواصل والاستكشاف والاحتفاء برحلة المملكة. فلاي ناس تجعل السفر في هذه الفترة أكثر سهولة واحترافية، مع عروض لا تُضاهى.</p>
 <p>👉<strong><a href="https://go.urtrackinglink.com/aff_c?offer_id=1799&amp;aff_id=140889">مع فلاي ناس</a></strong> واحجز رحلتك مع فلاي ناس الآن واحتفل في السماء!</p>
-</div>
+
+        </div>
     </article>
 
         </div>
     </main>
-    <footer>
-        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
-    </footer>
+    <footer class="nds-footer">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="nds-footer-copy">
+    <p></p>
+  </div>
+
+</footer>
+
 </body>
 </html>

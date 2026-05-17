@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N Design Studio</title>
     <style>
-         
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #f5f5f5;
             color: #333;
+            line-height: 1.6;
         }
-        main { padding: 40px 20px; min-height: calc(100vh - 200px); }
-        footer { background: #1a1a2e; color: #888; text-align: center; padding: 30px; margin-top: 60px; }
-        .container { max-width: 1200px; margin: 0 auto; }
+        main {
+            min-height: calc(100vh - 200px);
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            main { padding: 20px; }
+        }
     </style>
     
 </head>
 <body>
     <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-        <a href="../../../../../" style="font-size: 1.2rem; font-weight: 700; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
+        <a href="../../../../../" style="font-size: 1.3rem; font-weight: bold; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
             N Design Studio
         </a>
         
@@ -33,48 +41,27 @@
             </nav>
             
             
-            <div style="position: relative; display: inline-block;">
-                <button id="langDropdownBtn" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
-                    🌐 EN <span style="font-size: 0.7rem;">▼</span>
-                </button>
-                <div id="langDropdown" style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); min-width: 130px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 1001;">
-                    <a href="../../../../../en/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇬🇧 English</a>
-                    <a href="../../../../../tr/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇹🇷 Türkçe</a>
-                    <a href="../../../../../ar/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">🇸🇦 العربية</a>
-                </div>
+            <div style="position: relative;">
+                <select onchange="location = this.value;" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem;">
+                    <option value="/en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/">🇬🇧 English</option>
+                    <option value="/tr//en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/">🇹🇷 Türkçe</option>
+                    <option value="/ar//en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/">🇸🇦 العربية</option>
+                </select>
             </div>
         </div>
     </div>
 </header>
 
-<script>
-    const btn = document.getElementById('langDropdownBtn');
-    const dropdown = document.getElementById('langDropdown');
-    if (btn && dropdown) {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const isActive = dropdown.style.opacity === '1';
-            dropdown.style.opacity = isActive ? '0' : '1';
-            dropdown.style.visibility = isActive ? 'hidden' : 'visible';
-            dropdown.style.transform = isActive ? 'translateY(-10px)' : 'translateY(0)';
-        });
-        document.addEventListener('click', function() {
-            dropdown.style.opacity = '0';
-            dropdown.style.visibility = 'hidden';
-            dropdown.style.transform = 'translateY(-10px)';
-        });
-        dropdown.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
-    }
-</script>
-
     <main>
         <div class="container">
             
-    <article>
-        <h1>🚀 Most Popular AI Prompts That Boost Business Creativity in Marketing.</h1>
-        <div><p>In today’s fast-paced digital landscape, creativity is the lifeblood of successful marketing. But even the most brilliant minds hit creative blocks. That’s where AI steps in—not to replace marketers, but to supercharge their imagination. With the right prompts, AI tools can become powerful collaborators, helping businesses generate fresh ideas, streamline workflows, and connect more deeply with their audience.</p>
+    <article style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h1 style="font-size: 2rem; margin-bottom: 1rem;">🚀 Most Popular AI Prompts That Boost Business Creativity in Marketing.</h1>
+        <div style="color: #888; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+            August 17, 2025 · 4 min read
+        </div>
+        <div style="line-height: 1.8;">
+            <p>In today’s fast-paced digital landscape, creativity is the lifeblood of successful marketing. But even the most brilliant minds hit creative blocks. That’s where AI steps in—not to replace marketers, but to supercharge their imagination. With the right prompts, AI tools can become powerful collaborators, helping businesses generate fresh ideas, streamline workflows, and connect more deeply with their audience.</p>
 <p>In this post, we’ll explore the <strong>most popular AI prompts</strong> that marketers are using to <strong>boost creativity and drive results</strong>. Whether you&rsquo;re crafting campaigns, writing content, or analyzing performance, these prompts will help you unlock new possibilities.</p>
 <h3 id="-1-brand-strategy-prompts">🧠 1. Brand Strategy Prompts</h3>
 <p><strong>Prompt:</strong></p>
@@ -154,13 +141,32 @@
 <h2 id="-final-thoughts">✨ Final Thoughts</h2>
 <p>AI isn’t just a tool—it’s a creative partner. With the right prompts, marketers can unlock new levels of innovation, efficiency, and impact. Whether you&rsquo;re a solo entrepreneur or part of a large team, these prompts can help you stay ahead of the curve and turn ideas into results.</p>
 <p>Ready to experiment? Try a few of these prompts today and see how AI can elevate your marketing game.</p>
-</div>
+
+        </div>
     </article>
 
         </div>
     </main>
-    <footer>
-        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
-    </footer>
+    <footer class="nds-footer">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <div class="nds-footer-copy">
+    <p></p>
+  </div>
+
+</footer>
+
 </body>
 </html>
