@@ -1,7 +1,6 @@
 baseURL = "https://ndesignstudyosu.com.tr/"
 languageCode = "en-us"
 title = "N Design Studio"
-theme = "magnolia"
 copyright = "&copy; 2026 N Design Studio. All rights reserved."
 googleAnalytics = "G-MG76R19NGW"
 
