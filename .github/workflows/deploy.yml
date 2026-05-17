@@ -33,18 +33,18 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        working-directory: "Main File/myblog"
+        working-directory: "Main/myblog"
         run: hugo --cleanDestinationDir --minify --gc --enableGitInfo
         env:
           HUGO_ENV: production
 
       - name: Add CNAME file
-        run: echo "ndesignstudyosu.com.tr" > "Main File/myblog/public/CNAME"
+        run: echo "ndesignstudyosu.com.tr" > "Main/myblog/public/CNAME"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "Main File/myblog/public"
+          path: "Main/myblog/public"
 
   deploy:
     needs: build
