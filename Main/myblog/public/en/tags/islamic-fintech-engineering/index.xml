@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Islamic-Fintech-Engineering on N Design Studio</title>
-    <link>https://ndesignstudyosu.com.tr/en/tags/islamic-fintech-engineering/</link>
+    <link>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/tags/islamic-fintech-engineering/</link>
     <description>Recent content in Islamic-Fintech-Engineering on N Design Studio</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ndesignstudyosu.com.tr/en/tags/islamic-fintech-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/tags/islamic-fintech-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</title>
-      <link>https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</link>
+      <link>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</guid>
+      <guid>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/</guid>
       <description>&lt;p&gt;Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that model real Sharia‑compliant workflows are rare. To bridge that gap, I built a &lt;strong&gt;Sharia‑Compliant Banking Management System (SCBMS)&lt;/strong&gt;: a fully structured PostgreSQL backend that models Islamic banking operations with accuracy, automation, and transparency.&lt;/p&gt;&#xA;&lt;p&gt;This post walks through the key ideas behind the project, the architecture, and some of the SQL powering it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-why-build-a-shariacompliant-banking-system&#34;&gt;🌐 Why Build a Sharia‑Compliant Banking System?&lt;/h2&gt;&#xA;&lt;p&gt;Islamic finance operates on principles fundamentally different from conventional banking:&lt;/p&gt;</description>
     </item>
   </channel>
