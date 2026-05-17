@@ -4,27 +4,18 @@
             {{ .Site.Title }}
         </a>
         
-        <div style="display: flex; align-items: center; gap: 20px;">
+        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
             <nav>
-                <a href="/{{ .Lang }}/posts/" style="margin-left: 20px; text-decoration: none; color: #555;">Blog</a>
-                <a href="/{{ .Lang }}/about/" style="margin-left: 20px; text-decoration: none; color: #555;">About</a>
-                <a href="/{{ .Lang }}/contact/" style="margin-left: 20px; text-decoration: none; color: #555;">Contact</a>
+                <a href="/{{ $.Lang }}/posts/" style="margin-left: 20px; text-decoration: none; color: #555;">Blog</a>
+                <a href="/{{ $.Lang }}/about/" style="margin-left: 20px; text-decoration: none; color: #555;">About</a>
+                <a href="/{{ $.Lang }}/contact/" style="margin-left: 20px; text-decoration: none; color: #555;">Contact</a>
             </nav>
             
-            <select id="lang-switcher" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer;">
-                <option value="en" {{ if eq .Lang "en" }}selected{{ end }}>🇬🇧 English</option>
-                <option value="tr" {{ if eq .Lang "tr" }}selected{{ end }}>🇹🇷 Türkçe</option>
-                <option value="ar" {{ if eq .Lang "ar" }}selected{{ end }}>🇸🇦 العربية</option>
-            </select>
+            <div style="display: flex; gap: 8px;">
+                <a href="/en{{ strings.TrimPrefix "/en" .RelPermalink }}" style="text-decoration: none; padding: 8px 16px; background: {{ if eq $.Lang "en" }}#667eea{{ else }}#f0f0f0{{ end }}; color: {{ if eq $.Lang "en" }}white{{ else }}#333{{ end }}; border-radius: 20px;">English</a>
+                <a href="/tr{{ strings.TrimPrefix "/tr" .RelPermalink }}" style="text-decoration: none; padding: 8px 16px; background: {{ if eq $.Lang "tr" }}#667eea{{ else }}#f0f0f0{{ end }}; color: {{ if eq $.Lang "tr" }}white{{ else }}#333{{ end }}; border-radius: 20px;">Türkçe</a>
+                <a href="/ar{{ strings.TrimPrefix "/ar" .RelPermalink }}" style="text-decoration: none; padding: 8px 16px; background: {{ if eq $.Lang "ar" }}#667eea{{ else }}#f0f0f0{{ end }}; color: {{ if eq $.Lang "ar" }}white{{ else }}#333{{ end }}; border-radius: 20px;">العربية</a>
+            </div>
         </div>
     </div>
 </header>
-
-<script>
-    document.getElementById('lang-switcher').addEventListener('change', function(e) {
-        var newLang = e.target.value;
-        var path = window.location.pathname;
-        var newPath = path.replace(/^\/[a-z]{2}\//, '/' + newLang + '/');
-        window.location.href = newPath;
-    });
-</script>

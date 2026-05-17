@@ -50,30 +50,21 @@
             N Design Studio
         </a>
         
-        <div style="display: flex; align-items: center; gap: 20px;">
+        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
             <nav>
                 <a href="../../../ar/posts/" style="margin-left: 20px; text-decoration: none; color: #555;">Blog</a>
                 <a href="../../../ar/about/" style="margin-left: 20px; text-decoration: none; color: #555;">About</a>
                 <a href="../../../ar/contact/" style="margin-left: 20px; text-decoration: none; color: #555;">Contact</a>
             </nav>
             
-            <select id="lang-switcher" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer;">
-                <option value="en" >🇬🇧 English</option>
-                <option value="tr" >🇹🇷 Türkçe</option>
-                <option value="ar" selected>🇸🇦 العربية</option>
-            </select>
+            <div style="display: flex; gap: 8px;">
+                <a href="../../../en/ar/tags/%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D8%B1%D8%A8%D8%AD/" style="text-decoration: none; padding: 8px 16px; background: #f0f0f0; color: #333; border-radius: 20px;">English</a>
+                <a href="../../../tr/ar/tags/%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D8%B1%D8%A8%D8%AD/" style="text-decoration: none; padding: 8px 16px; background: #f0f0f0; color: #333; border-radius: 20px;">Türkçe</a>
+                <a href="../../../ar/tags/%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D8%B1%D8%A8%D8%AD/" style="text-decoration: none; padding: 8px 16px; background: #667eea; color: white; border-radius: 20px;">العربية</a>
+            </div>
         </div>
     </div>
 </header>
-
-<script>
-    document.getElementById('lang-switcher').addEventListener('change', function(e) {
-        var newLang = e.target.value;
-        var path = window.location.pathname;
-        var newPath = path.replace(/^\/[a-z]{2}\//, '/' + newLang + '/');
-        window.location.href = newPath;
-    });
-</script>
 
     <main>
         <div class="container">

@@ -50,36 +50,34 @@
             N Design Studio
         </a>
         
-        <div style="display: flex; align-items: center; gap: 20px;">
+        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
             <nav>
                 <a href="../../tr/posts/" style="margin-left: 20px; text-decoration: none; color: #555;">Blog</a>
                 <a href="../../tr/about/" style="margin-left: 20px; text-decoration: none; color: #555;">About</a>
                 <a href="../../tr/contact/" style="margin-left: 20px; text-decoration: none; color: #555;">Contact</a>
             </nav>
             
-            <select id="lang-switcher" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer;">
-                <option value="en" >🇬🇧 English</option>
-                <option value="tr" selected>🇹🇷 Türkçe</option>
-                <option value="ar" >🇸🇦 العربية</option>
-            </select>
+            <div style="display: flex; gap: 8px;">
+                <a href="../../en/tr/posts/" style="text-decoration: none; padding: 8px 16px; background: #f0f0f0; color: #333; border-radius: 20px;">English</a>
+                <a href="../../tr/posts/" style="text-decoration: none; padding: 8px 16px; background: #667eea; color: white; border-radius: 20px;">Türkçe</a>
+                <a href="../../ar/tr/posts/" style="text-decoration: none; padding: 8px 16px; background: #f0f0f0; color: #333; border-radius: 20px;">العربية</a>
+            </div>
         </div>
     </div>
 </header>
-
-<script>
-    document.getElementById('lang-switcher').addEventListener('change', function(e) {
-        var newLang = e.target.value;
-        var path = window.location.pathname;
-        var newPath = path.replace(/^\/[a-z]{2}\//, '/' + newLang + '/');
-        window.location.href = newPath;
-    });
-</script>
 
     <main>
         <div class="container">
             
     <h1 style="font-size: 2rem; margin-bottom: 2rem;">Gönderiler</h1>
     <div class="posts-grid">
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/tr/posts/2026/05/05-17-2026/">Deneme Post</a></h2>
+                <div class="post-meta">May 17, 2026 · 0 min read</div>
+                <p></p>
+                <a href="https://ndesignstudyosu.com.tr/tr/posts/2026/05/05-17-2026/" class="read-more">Read More →</a>
+            </div>
         
     </div>
 

@@ -2,6 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ndesignstudyosu.com.tr/tr/posts/2026/05/05-17-2026/</loc>
+    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ndesignstudyosu.com.tr/tr/tags/false/</loc>
+    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ndesignstudyosu.com.tr/tr/posts/</loc>
+    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ndesignstudyosu.com.tr/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://ndesignstudyosu.com.tr/ar/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://ndesignstudyosu.com.tr/tr/posts/"
+                />
+  </url><url>
+    <loc>https://ndesignstudyosu.com.tr/tr/</loc>
+    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ndesignstudyosu.com.tr/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://ndesignstudyosu.com.tr/ar/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://ndesignstudyosu.com.tr/tr/"
+                />
+  </url><url>
+    <loc>https://ndesignstudyosu.com.tr/tr/tags/</loc>
+    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ndesignstudyosu.com.tr/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://ndesignstudyosu.com.tr/ar/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://ndesignstudyosu.com.tr/tr/tags/"
+                />
+  </url><url>
     <loc>https://ndesignstudyosu.com.tr/tr/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -17,23 +77,6 @@
                 rel="alternate"
                 hreflang="tr"
                 href="https://ndesignstudyosu.com.tr/tr/categories/"
-                />
-  </url><url>
-    <loc>https://ndesignstudyosu.com.tr/tr/posts/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/posts/"
                 />
   </url><url>
     <loc>https://ndesignstudyosu.com.tr/tr/about/</loc>
@@ -53,23 +96,6 @@
                 href="https://ndesignstudyosu.com.tr/tr/about/"
                 />
   </url><url>
-    <loc>https://ndesignstudyosu.com.tr/tr/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/"
-                />
-  </url><url>
     <loc>https://ndesignstudyosu.com.tr/tr/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -85,23 +111,6 @@
                 rel="alternate"
                 hreflang="tr"
                 href="https://ndesignstudyosu.com.tr/tr/contact/"
-                />
-  </url><url>
-    <loc>https://ndesignstudyosu.com.tr/tr/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ndesignstudyosu.com.tr/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://ndesignstudyosu.com.tr/ar/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="https://ndesignstudyosu.com.tr/tr/tags/"
                 />
   </url>
 </urlset>
