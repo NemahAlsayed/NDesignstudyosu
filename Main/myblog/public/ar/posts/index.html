@@ -20,11 +20,28 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .post-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .post-card:hover { transform: translateY(-5px); }
+        .post-card h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .post-card h2 a { text-decoration: none; color: #333; }
+        .post-meta { color: #888; font-size: 0.85rem; margin-bottom: 1rem; }
+        .read-more { color: #667eea; text-decoration: none; font-weight: 500; }
         @media (max-width: 768px) {
+            .posts-grid { grid-template-columns: 1fr; }
             main { padding: 20px; }
         }
     </style>
-    
 </head>
 <body>
     <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
@@ -40,472 +57,274 @@
                 <a href="../../ar/contact/" style="margin-left: 20px; text-decoration: none; color: #555;">Contact</a>
             </nav>
             
-            
-            <div style="position: relative;">
-                <select onchange="location = this.value;" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem;">
-                    <option value="/en//ar/posts/">🇬🇧 English</option>
-                    <option value="/tr//ar/posts/">🇹🇷 Türkçe</option>
-                    <option value="/ar/posts/">🇸🇦 العربية</option>
-                </select>
-            </div>
+            <select id="lang-switcher" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer;">
+                <option value="en" >🇬🇧 English</option>
+                <option value="tr" >🇹🇷 Türkçe</option>
+                <option value="ar" selected>🇸🇦 العربية</option>
+            </select>
         </div>
     </div>
 </header>
 
+<script>
+    document.getElementById('lang-switcher').addEventListener('change', function(e) {
+        var newLang = e.target.value;
+        var path = window.location.pathname;
+        var newPath = path.replace(/^\/[a-z]{2}\//, '/' + newLang + '/');
+        window.location.href = newPath;
+    });
+</script>
+
     <main>
         <div class="container">
             
-<h1 style="font-size: 2.5rem; margin-bottom: 40px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">All Posts</h1>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/" style="text-decoration: none; color: #333;">أفخم 5 منتجات من لوكسيتان في السعودية (مع كود خصم حصري A162)</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                May 5, 2026 · 3 min read
-            </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"><!DOCTYPE html> أفخم منتجات لوكسيتان في السعودية قصة روتين فاخر… مع كود خصم A162
+    <h1 style="font-size: 2rem; margin-bottom: 2rem;">Posts</h1>
+    <div class="posts-grid">
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/">أفخم 5 منتجات من لوكسيتان في السعودية (مع كود خصم حصري A162)</a></h2>
+                <div class="post-meta">May 5, 2026 · 3 min read</div>
+                <p><!DOCTYPE html> أفخم منتجات لوكسيتان في السعودية قصة روتين فاخر… مع كود خصم A162
 </p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/2026-05-02-halal-booking/" style="text-decoration: none; color: #333;">هلال بوكنج: عرض حصري لدول الخليج — خصم 25$ على أي حجز بقيمة 500$&#43;</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                May 2, 2026 · 2 min read
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">🌙 هلال بوكنج — منصّة السفر التي تفهم أسلوب حياتك هلال بوكنج ليست مجرد موقع حجز فنادق. إنها منصّة عالمية صُممت خصيصاً …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/2026-05-02-halal-booking/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-29-samsung-sa/" style="text-decoration: none; color: #333;">سامسونج السعودية: كود AFM117 بخصم حتى 15% — نسخة Tech‑Savvy</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                April 30, 2026 · 3 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/2026-05-02-halal-booking/">هلال بوكنج: عرض حصري لدول الخليج — خصم 25$ على أي حجز بقيمة 500$&#43;</a></h2>
+                <div class="post-meta">May 2, 2026 · 2 min read</div>
+                <p>🌙 هلال بوكنج — منصّة السفر التي تفهم أسلوب حياتك هلال بوكنج ليست مجرد موقع حجز فنادق. إنها منصّة عالمية صُممت خصيصاً …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/2026-05-02-halal-booking/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> 🔥 كود خصم سامسونج السعودية: AFM117 — خصم حتى 15% لماذا هذا العرض مهم؟ إذا كنت تفكر في شراء هاتف Galaxy جديد، أو شاشة …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-29-samsung-sa/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/" style="text-decoration: none; color: #333;">عطور الدخيل: خصم 5% إضافي مع كود DO64 &#43; عروض حصرية</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                April 28, 2026 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-29-samsung-sa/">سامسونج السعودية: كود AFM117 بخصم حتى 15% — نسخة Tech‑Savvy</a></h2>
+                <div class="post-meta">Apr 30, 2026 · 3 min read</div>
+                <p> 🔥 كود خصم سامسونج السعودية: AFM117 — خصم حتى 15% لماذا هذا العرض مهم؟ إذا كنت تفكر في شراء هاتف Galaxy جديد، أو شاشة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-29-samsung-sa/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> <!DOCTYPE html> عطور الدخيل | خصم 5% إضافي كود DO64 عطور الدخيل: إرث العطر الأصيل اكتشف أرقى توليفات دهن العود، المسك والعنبر — بخصم …</!DOCTYPE></p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/" style="text-decoration: none; color: #333;">A0N5: لماذا تشتري 2 وتأخذ الثالث مجاناً في H&amp;M السعودية والإمارات؟</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                April 27, 2026 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/">عطور الدخيل: خصم 5% إضافي مع كود DO64 &#43; عروض حصرية</a></h2>
+                <div class="post-meta">Apr 28, 2026 · 2 min read</div>
+                <p> <!DOCTYPE html> عطور الدخيل | خصم 5% إضافي كود DO64 عطور الدخيل: إرث العطر الأصيل اكتشف أرقى توليفات دهن العود، المسك والعنبر — بخصم …</!DOCTYPE></p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> <!DOCTYPE html> H&M Buy 2 Get 1 + A0N5 | المقال الكامل A0N5: سرّ التسوق الذكي في H&M – إشتري 2 وخذ الثالث مجاناً + 5% إضافية السعودية …</!DOCTYPE></p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/" style="text-decoration: none; color: #333;">BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                April 26, 2026 · 3 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/">A0N5: لماذا تشتري 2 وتأخذ الثالث مجاناً في H&amp;M السعودية والإمارات؟</a></h2>
+                <div class="post-meta">Apr 27, 2026 · 2 min read</div>
+                <p> <!DOCTYPE html> H&M Buy 2 Get 1 + A0N5 | المقال الكامل A0N5: سرّ التسوق الذكي في H&M – إشتري 2 وخذ الثالث مجاناً + 5% إضافية السعودية …</!DOCTYPE></p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> <!DOCTYPE html> BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15% • YOLA EDITORIAL • THE STYLE CHRONICLE عدد خاص — ربيع الرياض | …</!DOCTYPE></p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/" style="text-decoration: none; color: #333;">كود noon السري: لغز الكاش باك | احصل على 10% كاش باك في السعودية والإمارات</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                April 24, 2026 · 3 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/">BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%</a></h2>
+                <div class="post-meta">Apr 26, 2026 · 3 min read</div>
+                <p> <!DOCTYPE html> BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15% • YOLA EDITORIAL • THE STYLE CHRONICLE عدد خاص — ربيع الرياض | …</!DOCTYPE></p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> 🎁 كود noon السري: لغز الصندوق المذهل وكاش باك يصل إلى 10% كوبون – تم تصميمه خصيصًا للمتسوقين الأذكياء في السعودية …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-20--%D9%84%D9%88%D8%AD%D8%A9-%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-%D9%81%D9%86-%D9%85%D8%B9/" style="text-decoration: none; color: #333;">🌸 لوحة معدنية تجريدية بالزهور – فن معاصر يضيء جدرانك</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                December 20, 2025 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/">كود noon السري: لغز الكاش باك | احصل على 10% كاش باك في السعودية والإمارات</a></h2>
+                <div class="post-meta">Apr 24, 2026 · 3 min read</div>
+                <p> 🎁 كود noon السري: لغز الصندوق المذهل وكاش باك يصل إلى 10% كوبون – تم تصميمه خصيصًا للمتسوقين الأذكياء في السعودية …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">مزيج بين المعدن والقماش الفن الحقيقي هو الذي يكسر الحدود ويبتكر الجديد، وهذه لوحة الزهور التجريدية المصنوعة من صفائح …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-20--%D9%84%D9%88%D8%AD%D8%A9-%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-%D9%81%D9%86-%D9%85%D8%B9/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-18--%D8%A7%D8%AD%D8%AA%D9%81%D9%84-%D8%A8%D8%A3%D8%B3%D9%84%D9%88%D8%A8%D9%83-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7/" style="text-decoration: none; color: #333;">🎉 احتفل بأسلوبك: قوالب بطاقات عيد ميلاد عربية على Canva</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                December 18, 2025 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-20--%D9%84%D9%88%D8%AD%D8%A9-%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-%D9%81%D9%86-%D9%85%D8%B9/">🌸 لوحة معدنية تجريدية بالزهور – فن معاصر يضيء جدرانك</a></h2>
+                <div class="post-meta">Dec 20, 2025 · 1 min read</div>
+                <p>مزيج بين المعدن والقماش الفن الحقيقي هو الذي يكسر الحدود ويبتكر الجديد، وهذه لوحة الزهور التجريدية المصنوعة من صفائح …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-20--%D9%84%D9%88%D8%AD%D8%A9-%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-%D9%81%D9%86-%D9%85%D8%B9/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">لماذا تختار قوالب بطاقات عيد الميلاد العربية؟ أصالة ثقافية: احتفل بأعياد الميلاد بتصاميم تعكس الخط العربي والتقاليد. …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-18--%D8%A7%D8%AD%D8%AA%D9%81%D9%84-%D8%A8%D8%A3%D8%B3%D9%84%D9%88%D8%A8%D9%83-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-16--%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D8%B9%D9%84%D9%89-canva-%D8%B9%D8%B1%D8%B6/" style="text-decoration: none; color: #333;">🧾 قوالب فواتير عربية جاهزة على Canva – عرض حصري عبر Etsy</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                December 16, 2025 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-18--%D8%A7%D8%AD%D8%AA%D9%81%D9%84-%D8%A8%D8%A3%D8%B3%D9%84%D9%88%D8%A8%D9%83-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7/">🎉 احتفل بأسلوبك: قوالب بطاقات عيد ميلاد عربية على Canva</a></h2>
+                <div class="post-meta">Dec 18, 2025 · 1 min read</div>
+                <p>لماذا تختار قوالب بطاقات عيد الميلاد العربية؟ أصالة ثقافية: احتفل بأعياد الميلاد بتصاميم تعكس الخط العربي والتقاليد. …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-18--%D8%A7%D8%AD%D8%AA%D9%81%D9%84-%D8%A8%D8%A3%D8%B3%D9%84%D9%88%D8%A8%D9%83-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">لماذا تحتاج إلى قوالب فواتير عربية؟ توفير الوقت والجهد: بدلاً من تصميم الفواتير من الصفر، ستحصل على 10 قوالب جاهزة …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-16--%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D8%B9%D9%84%D9%89-canva-%D8%B9%D8%B1%D8%B6/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-15-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%88%D9%82%D8%A7%D8%A8%D9%84/" style="text-decoration: none; color: #333;">قوالب سيرة ذاتية عربية احترافية وقابلة للتعديل - اعرض مهاراتك بأفضل شكل</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                December 15, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-16--%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D8%B9%D9%84%D9%89-canva-%D8%B9%D8%B1%D8%B6/">🧾 قوالب فواتير عربية جاهزة على Canva – عرض حصري عبر Etsy</a></h2>
+                <div class="post-meta">Dec 16, 2025 · 1 min read</div>
+                <p>لماذا تحتاج إلى قوالب فواتير عربية؟ توفير الوقت والجهد: بدلاً من تصميم الفواتير من الصفر، ستحصل على 10 قوالب جاهزة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-16--%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D8%B9%D9%84%D9%89-canva-%D8%B9%D8%B1%D8%B6/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">هل تبحث عن طريقة مميزة لعرض خبراتك ومهاراتك؟ في سوق العمل التنافسي اليوم، أصبحت السيرة الذاتية ليست مجرد صفحة تحتوي على …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-15-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%88%D9%82%D8%A7%D8%A8%D9%84/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-13-%D9%82%D8%A7%D9%84%D8%A8-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%82%D9%87%D9%89-canva-template-%D8%AC%D8%A7%D9%87%D8%B2-%D9%84/" style="text-decoration: none; color: #333;">قالب دراسة جدوى لمشروع مقهى – Canva Template جاهز للتحميل عبر Etsy</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                December 13, 2025 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-15-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%88%D9%82%D8%A7%D8%A8%D9%84/">قوالب سيرة ذاتية عربية احترافية وقابلة للتعديل - اعرض مهاراتك بأفضل شكل</a></h2>
+                <div class="post-meta">Dec 15, 2025 · 2 min read</div>
+                <p>هل تبحث عن طريقة مميزة لعرض خبراتك ومهاراتك؟ في سوق العمل التنافسي اليوم، أصبحت السيرة الذاتية ليست مجرد صفحة تحتوي على …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-15-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%88%D9%82%D8%A7%D8%A8%D9%84/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">لماذا هذا القالب مهم؟ توفير الوقت والجهد: بدلاً من البدء من الصفر، يمنحك القالب خطة جاهزة ومنسقة على Canva يمكن تعديلها …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-13-%D9%82%D8%A7%D9%84%D8%A8-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%82%D9%87%D9%89-canva-template-%D8%AC%D8%A7%D9%87%D8%B2-%D9%84/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/" style="text-decoration: none; color: #333;">🎉 افتتاح متجر NDesignStudyosu على Etsy – اكتشفوا عالم التصميم والإبداع</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                December 4, 2025 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-13-%D9%82%D8%A7%D9%84%D8%A8-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%82%D9%87%D9%89-canva-template-%D8%AC%D8%A7%D9%87%D8%B2-%D9%84/">قالب دراسة جدوى لمشروع مقهى – Canva Template جاهز للتحميل عبر Etsy</a></h2>
+                <div class="post-meta">Dec 13, 2025 · 1 min read</div>
+                <p>لماذا هذا القالب مهم؟ توفير الوقت والجهد: بدلاً من البدء من الصفر، يمنحك القالب خطة جاهزة ومنسقة على Canva يمكن تعديلها …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-13-%D9%82%D8%A7%D9%84%D8%A8-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%82%D9%87%D9%89-canva-template-%D8%AC%D8%A7%D9%87%D8%B2-%D9%84/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">✨ مقدمة يسرّنا أن نعلن عن افتتاح متجرنا الجديد على منصة Etsy – NDesignStudyosu، حيث يجتمع الإبداع مع الجودة لتقديم …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-28--%D9%84%D9%85%D8%A7%D8%B0%D8%A7-aliexpress-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/" style="text-decoration: none; color: #333;">🛒 لماذا AliExpress هو الخيار الأمثل للتسوق؟</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                November 28, 2025 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/">🎉 افتتاح متجر NDesignStudyosu على Etsy – اكتشفوا عالم التصميم والإبداع</a></h2>
+                <div class="post-meta">Dec 4, 2025 · 1 min read</div>
+                <p>✨ مقدمة يسرّنا أن نعلن عن افتتاح متجرنا الجديد على منصة Etsy – NDesignStudyosu، حيث يجتمع الإبداع مع الجودة لتقديم …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">تنوع المنتجات**:** أكثر من 100 مليون سلعة تشمل الإلكترونيات، الموضة، أدوات المنزل، ومستحضرات التجميل
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-28--%D9%84%D9%85%D8%A7%D8%B0%D8%A7-aliexpress-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/">🛒 لماذا AliExpress هو الخيار الأمثل للتسوق؟</a></h2>
+                <div class="post-meta">Nov 28, 2025 · 1 min read</div>
+                <p>تنوع المنتجات**:** أكثر من 100 مليون سلعة تشمل الإلكترونيات، الموضة، أدوات المنزل، ومستحضرات التجميل
 أسعار تنافسية**:** …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-28--%D9%84%D9%85%D8%A7%D8%B0%D8%A7-aliexpress-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-27--%D8%AF%D9%84%D9%8A%D9%84-nomad-esim-%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A3/" style="text-decoration: none; color: #333;">🌍 دليل Nomad eSIM: أفضل طريقة للبقاء على اتصال أثناء السفر</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                November 27, 2025 · 2 min read
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-28--%D9%84%D9%85%D8%A7%D8%B0%D8%A7-aliexpress-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">أصبح البقاء على اتصال أثناء السفر أسهل من أي وقت مضى. مع Nomad eSIM يمكنك الاستغناء عن بطاقات SIM التقليدية والاستمتاع …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-27--%D8%AF%D9%84%D9%8A%D9%84-nomad-esim-%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A3/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/" style="text-decoration: none; color: #333;">أقوى عروض نمشي الشرق الأوسط، مع كوبون خصم &#34;BFF158&#34;</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                November 23, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-27--%D8%AF%D9%84%D9%8A%D9%84-nomad-esim-%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A3/">🌍 دليل Nomad eSIM: أفضل طريقة للبقاء على اتصال أثناء السفر</a></h2>
+                <div class="post-meta">Nov 27, 2025 · 2 min read</div>
+                <p>أصبح البقاء على اتصال أثناء السفر أسهل من أي وقت مضى. مع Nomad eSIM يمكنك الاستغناء عن بطاقات SIM التقليدية والاستمتاع …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-27--%D8%AF%D9%84%D9%8A%D9%84-nomad-esim-%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A3/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">🛍️ مقدمة إذا كنت تبحث عن تجربة تسوّق إلكتروني فريدة في عالم الموضة والجمال، فإن نمشي (Namshi) هو وجهتك الأولى في الشرق …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-12--%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AE/" style="text-decoration: none; color: #333;">🎉 أفضل منتجات سامسونج في السعودية مع خصم حصري 200 ريال باستخدام الكوبون AFM117</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                November 12, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/">أقوى عروض نمشي الشرق الأوسط، مع كوبون خصم &#34;BFF158&#34;</a></h2>
+                <div class="post-meta">Nov 23, 2025 · 2 min read</div>
+                <p>🛍️ مقدمة إذا كنت تبحث عن تجربة تسوّق إلكتروني فريدة في عالم الموضة والجمال، فإن نمشي (Namshi) هو وجهتك الأولى في الشرق …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في السوق السعودي، تُعتبر سامسونج واحدة من العلامات التجارية الأكثر شعبية في مجال الهواتف الذكية والإلكترونيات، حيث تجمع …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-12--%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AE/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-08--%D8%A3%D9%81%D8%B6%D9%84-%D8%B9%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D8%B9%D9%88%D8%AF-%D8%A8%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D8%B0%D9%87%D9%84%D8%A9/" style="text-decoration: none; color: #333;">✨ أفضل عطور الدخيل عود بخصومات مذهلة</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                November 8, 2025 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-12--%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AE/">🎉 أفضل منتجات سامسونج في السعودية مع خصم حصري 200 ريال باستخدام الكوبون AFM117</a></h2>
+                <div class="post-meta">Nov 12, 2025 · 2 min read</div>
+                <p>في السوق السعودي، تُعتبر سامسونج واحدة من العلامات التجارية الأكثر شعبية في مجال الهواتف الذكية والإلكترونيات، حيث تجمع …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-12--%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AE/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">إذا كنت من عشاق العطور الشرقية الفاخرة، فإن شركة الدخيل عود تمنحك الآن فرصة لا تُفوّت! خصومات تصل إلى 50% على أكثر …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-08--%D8%A3%D9%81%D8%B6%D9%84-%D8%B9%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D8%B9%D9%88%D8%AF-%D8%A8%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D8%B0%D9%87%D9%84%D8%A9/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/" style="text-decoration: none; color: #333;">تسوّق بأناقة مع نمشي في الخليج: خصومات حصرية باستخدام كوبون BFF158 🛍️</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                November 1, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-08--%D8%A3%D9%81%D8%B6%D9%84-%D8%B9%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D8%B9%D9%88%D8%AF-%D8%A8%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D8%B0%D9%87%D9%84%D8%A9/">✨ أفضل عطور الدخيل عود بخصومات مذهلة</a></h2>
+                <div class="post-meta">Nov 8, 2025 · 1 min read</div>
+                <p>إذا كنت من عشاق العطور الشرقية الفاخرة، فإن شركة الدخيل عود تمنحك الآن فرصة لا تُفوّت! خصومات تصل إلى 50% على أكثر …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-08--%D8%A3%D9%81%D8%B6%D9%84-%D8%B9%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D8%B9%D9%88%D8%AF-%D8%A8%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D8%B0%D9%87%D9%84%D8%A9/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">إذا كنت من عشّاق الموضة وتبحث عن تجربة تسوّق إلكتروني تجمع بين الأناقة، التنوع، وسرعة التوصيل في دول الخليج، فإن منصة …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-05--%D8%B9%D8%B7%D9%88%D8%B1-%D9%81%D8%A7%D8%AE%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AE%D8%B5%D9%85-%D8%AD%D8%B5%D8%B1%D9%8A/" style="text-decoration: none; color: #333;">✨ عطور فاخرة من الدخيل للعود – خصم حصري بكوبون &#34;DO64&#34; في الخليج!</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                October 5, 2025 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/">تسوّق بأناقة مع نمشي في الخليج: خصومات حصرية باستخدام كوبون BFF158 🛍️</a></h2>
+                <div class="post-meta">Nov 1, 2025 · 2 min read</div>
+                <p>إذا كنت من عشّاق الموضة وتبحث عن تجربة تسوّق إلكتروني تجمع بين الأناقة، التنوع، وسرعة التوصيل في دول الخليج، فإن منصة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">هل تبحثين عن عطر أنثوي يُعبّر عن أناقتك؟ أو عطر رجالي يُجسّد الفخامة؟ إليك أفضل اختياراتنا من متجرالدخيل للعود التي نالت …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-05--%D8%B9%D8%B7%D9%88%D8%B1-%D9%81%D8%A7%D8%AE%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AE%D8%B5%D9%85-%D8%AD%D8%B5%D8%B1%D9%8A/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-01-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%8F%D8%B9%D8%AF-%D8%B4%D9%8A-%D8%A5%D9%86-%D8%A7%D9%84%D9%88%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B2%D9%8A/" style="text-decoration: none; color: #333;">لماذا تُعد شي إن الوجهة المثالية للأزياء العصرية بأسعار معقولة في عام 2025</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                October 1, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-05--%D8%B9%D8%B7%D9%88%D8%B1-%D9%81%D8%A7%D8%AE%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AE%D8%B5%D9%85-%D8%AD%D8%B5%D8%B1%D9%8A/">✨ عطور فاخرة من الدخيل للعود – خصم حصري بكوبون &#34;DO64&#34; في الخليج!</a></h2>
+                <div class="post-meta">Oct 5, 2025 · 1 min read</div>
+                <p>هل تبحثين عن عطر أنثوي يُعبّر عن أناقتك؟ أو عطر رجالي يُجسّد الفخامة؟ إليك أفضل اختياراتنا من متجرالدخيل للعود التي نالت …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-05--%D8%B9%D8%B7%D9%88%D8%B1-%D9%81%D8%A7%D8%AE%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AE%D8%B5%D9%85-%D8%AD%D8%B5%D8%B1%D9%8A/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">هل تبحثين عن أزياء أنيقة تُواكب أحدث الصيحات دون أن تُرهقي ميزانيتك؟ شي إن (Shein) أصبحت الخيار الأول لعشّاق الموضة حول …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-01-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%8F%D8%B9%D8%AF-%D8%B4%D9%8A-%D8%A5%D9%86-%D8%A7%D9%84%D9%88%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B2%D9%8A/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-30-%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D9%84%D9%88%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AA%D9%81%D8%B1%D9%91%D8%AF%D9%8C-%D9%81%D9%8A-%D8%B9/" style="text-decoration: none; color: #333;">عطور وكولونيا الدخيل للعود: تفرّدٌ في عالم العطور الشرقية 🌿</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                September 30, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-01-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%8F%D8%B9%D8%AF-%D8%B4%D9%8A-%D8%A5%D9%86-%D8%A7%D9%84%D9%88%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B2%D9%8A/">لماذا تُعد شي إن الوجهة المثالية للأزياء العصرية بأسعار معقولة في عام 2025</a></h2>
+                <div class="post-meta">Oct 1, 2025 · 2 min read</div>
+                <p>هل تبحثين عن أزياء أنيقة تُواكب أحدث الصيحات دون أن تُرهقي ميزانيتك؟ شي إن (Shein) أصبحت الخيار الأول لعشّاق الموضة حول …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-01-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%8F%D8%B9%D8%AF-%D8%B4%D9%8A-%D8%A5%D9%86-%D8%A7%D9%84%D9%88%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B2%D9%8A/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">تُعد شركة الدخيل للعود واحدة من أبرز العلامات التجارية في مجال العطور الشرقية الفاخرة، حيث تلتزم بأعلى معايير الجودة في …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-30-%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D9%84%D9%88%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AA%D9%81%D8%B1%D9%91%D8%AF%D9%8C-%D9%81%D9%8A-%D8%B9/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/" style="text-decoration: none; color: #333;">✈️ عروض اليوم الوطني السعودي 2025 من فلاي ناس – سافر بأسعار لا تُقاوم!</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                September 22, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-30-%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D9%84%D9%88%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AA%D9%81%D8%B1%D9%91%D8%AF%D9%8C-%D9%81%D9%8A-%D8%B9/">عطور وكولونيا الدخيل للعود: تفرّدٌ في عالم العطور الشرقية 🌿</a></h2>
+                <div class="post-meta">Sep 30, 2025 · 2 min read</div>
+                <p>تُعد شركة الدخيل للعود واحدة من أبرز العلامات التجارية في مجال العطور الشرقية الفاخرة، حيث تلتزم بأعلى معايير الجودة في …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-30-%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D9%84%D9%88%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AA%D9%81%D8%B1%D9%91%D8%AF%D9%8C-%D9%81%D9%8A-%D8%B9/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">مع اقتراب اليوم الوطني السعودي الـ95، تقدم شركة الطيران السعودية الرائدة &ldquo;فلاي ناس&rdquo; مجموعة من العروض الحصرية …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/" style="text-decoration: none; color: #333;">اكتشف الأناقة الخالدة: خاتمان استثنائيان مستوحيان من التاريخ والنبوءة، رحلتي المليئة بالفن في المنطقة التاريخية في اسطنبول الأوربية.</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                March 23, 2025 · 4 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/">✈️ عروض اليوم الوطني السعودي 2025 من فلاي ناس – سافر بأسعار لا تُقاوم!</a></h2>
+                <div class="post-meta">Sep 22, 2025 · 2 min read</div>
+                <p>مع اقتراب اليوم الوطني السعودي الـ95، تقدم شركة الطيران السعودية الرائدة &ldquo;فلاي ناس&rdquo; مجموعة من العروض الحصرية …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">بسم الله الرحمن الرحيم، نبتدأ مقالة اليوم برحلة من خلال أزقة اسطنبول الساحرة، حيث خلال شهر رمضان المبارك يمكنكم زيارة …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-22-%D9%85%D8%B0%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9-kumkapi/" style="text-decoration: none; color: #333;">مذاق التراث البحري في إسطنبول: مغامرة Kumkapı Balık Pazarı؛</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                March 22, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/">اكتشف الأناقة الخالدة: خاتمان استثنائيان مستوحيان من التاريخ والنبوءة، رحلتي المليئة بالفن في المنطقة التاريخية في اسطنبول الأوربية.</a></h2>
+                <div class="post-meta">Mar 23, 2025 · 4 min read</div>
+                <p>بسم الله الرحمن الرحيم، نبتدأ مقالة اليوم برحلة من خلال أزقة اسطنبول الساحرة، حيث خلال شهر رمضان المبارك يمكنكم زيارة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">يقع سوق كومكابي للأسماك (Kumkapı Balık Pazarı) على طول بحر مرمرة في قلب إسطنبول، وهو ليس مجرد سوق عادي، بل شهادة حية على …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-22-%D9%85%D8%B0%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9-kumkapi/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" style="text-decoration: none; color: #333;">اكتشف سحر يومك الخاص مع دعوات زفاف مخصصة من نعمه في NDesignstudio!</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                March 7, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-22-%D9%85%D8%B0%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9-kumkapi/">مذاق التراث البحري في إسطنبول: مغامرة Kumkapı Balık Pazarı؛</a></h2>
+                <div class="post-meta">Mar 22, 2025 · 2 min read</div>
+                <p>يقع سوق كومكابي للأسماك (Kumkapı Balık Pazarı) على طول بحر مرمرة في قلب إسطنبول، وهو ليس مجرد سوق عادي، بل شهادة حية على …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-22-%D9%85%D8%B0%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9-kumkapi/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">يوم زفافك هو احتفال لا يتكرر، وكل تفصيلة يجب أن تعكس قصة حبك وفرحتك وتميزك. في NDesignstudio، نؤمن بأن دعوات زفافك ليست …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" style="text-decoration: none; color: #333;">هذه الأساور الصداقة المصنوعة يدويا ستغزو اسطنبول عام 2025!</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                March 6, 2025 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/">اكتشف سحر يومك الخاص مع دعوات زفاف مخصصة من نعمه في NDesignstudio!</a></h2>
+                <div class="post-meta">Mar 7, 2025 · 2 min read</div>
+                <p>يوم زفافك هو احتفال لا يتكرر، وكل تفصيلة يجب أن تعكس قصة حبك وفرحتك وتميزك. في NDesignstudio، نؤمن بأن دعوات زفافك ليست …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في عالم يبدو غالبًا شاسعًا ومنفصلًا، تعمل NDesignstudio على تقريب الناس من بعضهم البعض - سوارًا تلو الآخر. أسستها صاحبة …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/" style="text-decoration: none; color: #333;">القوة التحويلية لـ NFT: مستقبل الأصول الرقمية</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                December 4, 2024 · 3 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/">هذه الأساور الصداقة المصنوعة يدويا ستغزو اسطنبول عام 2025!</a></h2>
+                <div class="post-meta">Mar 6, 2025 · 2 min read</div>
+                <p>في عالم يبدو غالبًا شاسعًا ومنفصلًا، تعمل NDesignstudio على تقريب الناس من بعضهم البعض - سوارًا تلو الآخر. أسستها صاحبة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في عصرنا الرقمي الحالي، تتغير الطريقة التي ندرك بها الملكية والإبداع بسرعة كبيرة. واحدة من أبرز التحولات التكنولوجية …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/" style="text-decoration: none; color: #333;">رسومات شهر أكتوبر.</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                October 31, 2024 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/">القوة التحويلية لـ NFT: مستقبل الأصول الرقمية</a></h2>
+                <div class="post-meta">Dec 4, 2024 · 3 min read</div>
+                <p>في عصرنا الرقمي الحالي، تتغير الطريقة التي ندرك بها الملكية والإبداع بسرعة كبيرة. واحدة من أبرز التحولات التكنولوجية …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في هذا المنشور، نقدم لكم رسومات شهر أكتوبر التي تم تصميمها من خلال ستديو نون.
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/">رسومات شهر أكتوبر.</a></h2>
+                <div class="post-meta">Oct 31, 2024 · 1 min read</div>
+                <p>في هذا المنشور، نقدم لكم رسومات شهر أكتوبر التي تم تصميمها من خلال ستديو نون.
 </p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/" style="text-decoration: none; color: #333;">لماذا موقع نون هو الخيار الأمثل؟ &#43; كوبون خصم &#34;NDX184&#34;.</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                October 11, 2024 · 2 min read
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">موقع نون هو واحد من أكبر منصات التسوق الإلكتروني في العالم العربي، ويُعتبر الوجهة المفضلة لملايين المتسوقين الذين يبحثون …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/" style="text-decoration: none; color: #333;">كيف بدأت مدونة وردبريس الخاصة بي.</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                October 3, 2024 · 2 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/">لماذا موقع نون هو الخيار الأمثل؟ &#43; كوبون خصم &#34;NDX184&#34;.</a></h2>
+                <div class="post-meta">Oct 11, 2024 · 2 min read</div>
+                <p>موقع نون هو واحد من أكبر منصات التسوق الإلكتروني في العالم العربي، ويُعتبر الوجهة المفضلة لملايين المتسوقين الذين يبحثون …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">البدء في مدونة ووردبريس تركز على التسويق يمكن أن يكون مشروعًا مثيرًا ومجزيًا. سواء كنت مسوقًا متمرسًا يرغب في مشاركة …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/" style="text-decoration: none; color: #333;">معرض رسومات شهر سبتمبر 2024.</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                September 30, 2024 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/">كيف بدأت مدونة وردبريس الخاصة بي.</a></h2>
+                <div class="post-meta">Oct 3, 2024 · 2 min read</div>
+                <p>البدء في مدونة ووردبريس تركز على التسويق يمكن أن يكون مشروعًا مثيرًا ومجزيًا. سواء كنت مسوقًا متمرسًا يرغب في مشاركة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في هذا المنشور سنعرض رسومات شهر سبتمبر اللتي تمم تصميمها بواسطة ستوديو نون . شكرا لدعمكم.
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/">معرض رسومات شهر سبتمبر 2024.</a></h2>
+                <div class="post-meta">Sep 30, 2024 · 1 min read</div>
+                <p>في هذا المنشور سنعرض رسومات شهر سبتمبر اللتي تمم تصميمها بواسطة ستوديو نون . شكرا لدعمكم.
 </p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/" style="text-decoration: none; color: #333;">تجربة التسوق الدولية مع Yollando.</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                September 29, 2024 · 2 min read
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">لماذا تشتري من تركيا مع Yollando؟ إذا كنت تبحث عن تجربة تسوق دولية مميزة تجمع بين الجودة العالية والأسعار المعقولة، فإن …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
-    </div>
-    
-    <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-        <div style="padding: 25px;">
-            <h2 style="font-size: 1.3rem; margin-bottom: 12px;">
-                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="text-decoration: none; color: #333;">مرحبا بكم بصفحة مدونة ستوديو نون باللغة العربية.</a>
-            </h2>
-            <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
-                September 26, 2024 · 1 min read
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/">تجربة التسوق الدولية مع Yollando.</a></h2>
+                <div class="post-meta">Sep 29, 2024 · 2 min read</div>
+                <p>لماذا تشتري من تركيا مع Yollando؟ إذا كنت تبحث عن تجربة تسوق دولية مميزة تجمع بين الجودة العالية والأسعار المعقولة، فإن …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/" class="read-more">Read More →</a>
             </div>
-            <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">مرحبًا بكم في ستوديو نون للتصميم!
+        
+            <div class="post-card">
+                <h2><a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/">مرحبا بكم بصفحة مدونة ستوديو نون باللغة العربية.</a></h2>
+                <div class="post-meta">Sep 26, 2024 · 1 min read</div>
+                <p>مرحبًا بكم في ستوديو نون للتصميم!
 نحن هنا لنأخذكم في رحلة ملهمة إلى عالم التسويق بالعمولة بطريقة مبتكرة وسلسة. سواء كنت …</p>
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
-        </div>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" class="read-more">Read More →</a>
+            </div>
+        
     </div>
-    
-</div>
 
         </div>
     </main>

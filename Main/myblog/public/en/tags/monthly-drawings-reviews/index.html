@@ -20,11 +20,28 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .post-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .post-card:hover { transform: translateY(-5px); }
+        .post-card h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .post-card h2 a { text-decoration: none; color: #333; }
+        .post-meta { color: #888; font-size: 0.85rem; margin-bottom: 1rem; }
+        .read-more { color: #667eea; text-decoration: none; font-weight: 500; }
         @media (max-width: 768px) {
+            .posts-grid { grid-template-columns: 1fr; }
             main { padding: 20px; }
         }
     </style>
-    
 </head>
 <body>
     <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
@@ -40,17 +57,23 @@
                 <a href="../../../en/contact/" style="margin-left: 20px; text-decoration: none; color: #555;">Contact</a>
             </nav>
             
-            
-            <div style="position: relative;">
-                <select onchange="location = this.value;" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem;">
-                    <option value="/en/tags/monthly-drawings-reviews/">🇬🇧 English</option>
-                    <option value="/tr//en/tags/monthly-drawings-reviews/">🇹🇷 Türkçe</option>
-                    <option value="/ar//en/tags/monthly-drawings-reviews/">🇸🇦 العربية</option>
-                </select>
-            </div>
+            <select id="lang-switcher" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer;">
+                <option value="en" selected>🇬🇧 English</option>
+                <option value="tr" >🇹🇷 Türkçe</option>
+                <option value="ar" >🇸🇦 العربية</option>
+            </select>
         </div>
     </div>
 </header>
+
+<script>
+    document.getElementById('lang-switcher').addEventListener('change', function(e) {
+        var newLang = e.target.value;
+        var path = window.location.pathname;
+        var newPath = path.replace(/^\/[a-z]{2}\//, '/' + newLang + '/');
+        window.location.href = newPath;
+    });
+</script>
 
     <main>
         <div class="container">
