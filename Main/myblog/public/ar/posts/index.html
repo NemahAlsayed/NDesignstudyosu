@@ -6,1004 +6,527 @@
     <title>N Design Studio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Georgia', serif; background: #f0f0f0; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: #667eea; }
+        main { min-height: calc(100vh - 200px); }
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; gap: 15px; }
+            .nav-links a { margin: 0 15px; }
+        }
     </style>
+    
 </head>
 <body>
-    <header style="background: white; padding: 15px 20px; position: fixed; top: 0; width: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;">
-        <a href="../../ar/" style="text-decoration: none; font-size: 1.2rem; font-weight: bold; color: #333;">N Design Studio</a>
-        <nav>
-            <a href="../../ar/posts/" style="margin-left: 20px; text-decoration: none; color: #666;">Blog</a>
-            <a href="../../ar/about/" style="margin-left: 20px; text-decoration: none; color: #666;">About</a>
-            <a href="../../ar/contact/" style="margin-left: 20px; text-decoration: none; color: #666;">Contact</a>
-        </nav>
-    </div>
-</header>
-<div style="height: 80px;"></div>
-
+    <header>
+        <div class="header-container">
+            <a href="../../ar/" class="logo">N Design Studio</a>
+            <div class="nav-links">
+                <a href="../../ar/posts/">Blog</a>
+                <a href="../../ar/about/">About</a>
+                <a href="../../ar/contact/">Contact</a>
+            </div>
+        </div>
+    </header>
     <main>
         
-<section style="padding: 60px 20px; background: #f5f5f5; min-height: 100vh;">
-  <div style="max-width: 1200px; margin: 0 auto;">
-    <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; text-align: center; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 48px;">Posts</h1>
-    
+<div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 50px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">All Posts</h1>
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-        
-          <img src="../../ar/posts/2026/05/loccitane-top-5-ksa-a162/images/Loccitane.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/" style="color: #1a1a1a; text-decoration: none;">أفخم 5 منتجات من لوكسيتان في السعودية (مع كود خصم حصري A162)</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">جمال</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">مراجعات</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">تجارب شخصية</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-<style>
-/* ——— RESET ——— */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* ——— GLOBAL ——— */
-.loccitane-luxury …</style></meta></meta></head></html></!DOCTYPE></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/" style="text-decoration: none; color: #333;">أفخم 5 منتجات من لوكسيتان في السعودية (مع كود خصم حصري A162)</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    May 5, 2026 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"><!DOCTYPE html> أفخم منتجات لوكسيتان في السعودية قصة روتين فاخر… مع كود خصم A162
+</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/loccitane-top-5-ksa-a162/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-        
-          <img src="../../ar/posts/2026/05/2026-05-02-halal-booking/images/Halal_Booking.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/2026-05-02-halal-booking/" style="color: #1a1a1a; text-decoration: none;">هلال بوكنج: عرض حصري لدول الخليج — خصم 25$ على أي حجز بقيمة 500$&#43;</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">السفر</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">العروض</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h1 id="-هلال-بوكنج--منصة-السفر-التي-تفهم-أسلوب-حياتك">🌙 هلال بوكنج — منصّة السفر التي تفهم أسلوب حياتك</h1>
-<p>هلال بوكنج ليست مجرد موقع حجز فنادق. إنها منصّة عالمية صُممت خصيصاً …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/2026-05-02-halal-booking/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/2026-05-02-halal-booking/" style="text-decoration: none; color: #333;">هلال بوكنج: عرض حصري لدول الخليج — خصم 25$ على أي حجز بقيمة 500$&#43;</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    May 2, 2026 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">🌙 هلال بوكنج — منصّة السفر التي تفهم أسلوب حياتك هلال بوكنج ليست مجرد موقع حجز فنادق. إنها منصّة عالمية صُممت خصيصاً …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/05/2026-05-02-halal-booking/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-29-samsung-sa/" style="text-decoration: none; color: #333;">سامسونج السعودية: كود AFM117 بخصم حتى 15% — نسخة Tech‑Savvy</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    April 30, 2026 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> 🔥 كود خصم سامسونج السعودية: AFM117 — خصم حتى 15% لماذا هذا العرض مهم؟ إذا كنت تفكر في شراء هاتف Galaxy جديد، أو شاشة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-29-samsung-sa/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
         
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/" style="text-decoration: none; color: #333;">عطور الدخيل: خصم 5% إضافي مع كود DO64 &#43; عروض حصرية</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    April 28, 2026 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> <!DOCTYPE html> عطور الدخيل | خصم 5% إضافي كود DO64 عطور الدخيل: إرث العطر الأصيل اكتشف أرقى توليفات دهن العود، المسك والعنبر — بخصم …</!DOCTYPE></p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
         
-          <img src="../../ar/posts/2026/04/2026-04-29-samsung-sa/images/Samsung.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/" style="text-decoration: none; color: #333;">A0N5: لماذا تشتري 2 وتأخذ الثالث مجاناً في H&amp;M السعودية والإمارات؟</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    April 27, 2026 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> <!DOCTYPE html> H&M Buy 2 Get 1 + A0N5 | المقال الكامل A0N5: سرّ التسوق الذكي في H&M – إشتري 2 وخذ الثالث مجاناً + 5% إضافية السعودية …</!DOCTYPE></p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
         
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-29-samsung-sa/" style="color: #1a1a1a; text-decoration: none;">سامسونج السعودية: كود AFM117 بخصم حتى 15% — نسخة Tech‑Savvy</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">سامسونج</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عروض</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">إلكترونيات</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">تسوق</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><!-- markdownlint-disable MD033 -->
-
-<div style="background:linear-gradient(135deg,#1a2a3a,#0d1c2c); padding:22px; border-radius:14px; color:#fff; font-size:1.3rem; font-weight:700; text-align:center; box-shadow:0 0 15px rgba(0,160,255,0.25); margin:20px 0;">
-🔥 كود خصم سامسونج السعودية: <span style="color:#00aaff;">AFM117</span> — خصم حتى 15%
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/" style="text-decoration: none; color: #333;">BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    April 26, 2026 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> <!DOCTYPE html> BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15% • YOLA EDITORIAL • THE STYLE CHRONICLE عدد خاص — ربيع الرياض | …</!DOCTYPE></p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/" style="text-decoration: none; color: #333;">كود noon السري: لغز الكاش باك | احصل على 10% كاش باك في السعودية والإمارات</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    April 24, 2026 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> 🎁 كود noon السري: لغز الصندوق المذهل وكاش باك يصل إلى 10% كوبون – تم تصميمه خصيصًا للمتسوقين الأذكياء في السعودية …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-20--%D9%84%D9%88%D8%AD%D8%A9-%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-%D9%81%D9%86-%D9%85%D8%B9/" style="text-decoration: none; color: #333;">🌸 لوحة معدنية تجريدية بالزهور – فن معاصر يضيء جدرانك</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 20, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">مزيج بين المعدن والقماش الفن الحقيقي هو الذي يكسر الحدود ويبتكر الجديد، وهذه لوحة الزهور التجريدية المصنوعة من صفائح …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-20--%D9%84%D9%88%D8%AD%D8%A9-%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-%D9%81%D9%86-%D9%85%D8%B9/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-18--%D8%A7%D8%AD%D8%AA%D9%81%D9%84-%D8%A8%D8%A3%D8%B3%D9%84%D9%88%D8%A8%D9%83-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7/" style="text-decoration: none; color: #333;">🎉 احتفل بأسلوبك: قوالب بطاقات عيد ميلاد عربية على Canva</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 18, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">لماذا تختار قوالب بطاقات عيد الميلاد العربية؟ أصالة ثقافية: احتفل بأعياد الميلاد بتصاميم تعكس الخط العربي والتقاليد. …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-18--%D8%A7%D8%AD%D8%AA%D9%81%D9%84-%D8%A8%D8%A3%D8%B3%D9%84%D9%88%D8%A8%D9%83-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-16--%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D8%B9%D9%84%D9%89-canva-%D8%B9%D8%B1%D8%B6/" style="text-decoration: none; color: #333;">🧾 قوالب فواتير عربية جاهزة على Canva – عرض حصري عبر Etsy</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 16, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">لماذا تحتاج إلى قوالب فواتير عربية؟ توفير الوقت والجهد: بدلاً من تصميم الفواتير من الصفر، ستحصل على 10 قوالب جاهزة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-16--%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D8%B9%D9%84%D9%89-canva-%D8%B9%D8%B1%D8%B6/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-15-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%88%D9%82%D8%A7%D8%A8%D9%84/" style="text-decoration: none; color: #333;">قوالب سيرة ذاتية عربية احترافية وقابلة للتعديل - اعرض مهاراتك بأفضل شكل</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 15, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">هل تبحث عن طريقة مميزة لعرض خبراتك ومهاراتك؟ في سوق العمل التنافسي اليوم، أصبحت السيرة الذاتية ليست مجرد صفحة تحتوي على …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-15-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%88%D9%82%D8%A7%D8%A8%D9%84/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-13-%D9%82%D8%A7%D9%84%D8%A8-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%82%D9%87%D9%89-canva-template-%D8%AC%D8%A7%D9%87%D8%B2-%D9%84/" style="text-decoration: none; color: #333;">قالب دراسة جدوى لمشروع مقهى – Canva Template جاهز للتحميل عبر Etsy</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 13, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">لماذا هذا القالب مهم؟ توفير الوقت والجهد: بدلاً من البدء من الصفر، يمنحك القالب خطة جاهزة ومنسقة على Canva يمكن تعديلها …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-13-%D9%82%D8%A7%D9%84%D8%A8-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%82%D9%87%D9%89-canva-template-%D8%AC%D8%A7%D9%87%D8%B2-%D9%84/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/" style="text-decoration: none; color: #333;">🎉 افتتاح متجر NDesignStudyosu على Etsy – اكتشفوا عالم التصميم والإبداع</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 4, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">✨ مقدمة يسرّنا أن نعلن عن افتتاح متجرنا الجديد على منصة Etsy – NDesignStudyosu، حيث يجتمع الإبداع مع الجودة لتقديم …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-28--%D9%84%D9%85%D8%A7%D8%B0%D8%A7-aliexpress-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/" style="text-decoration: none; color: #333;">🛒 لماذا AliExpress هو الخيار الأمثل للتسوق؟</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    November 28, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">تنوع المنتجات**:** أكثر من 100 مليون سلعة تشمل الإلكترونيات، الموضة، أدوات المنزل، ومستحضرات التجميل
+أسعار تنافسية**:** …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-28--%D9%84%D9%85%D8%A7%D8%B0%D8%A7-aliexpress-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-27--%D8%AF%D9%84%D9%8A%D9%84-nomad-esim-%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A3/" style="text-decoration: none; color: #333;">🌍 دليل Nomad eSIM: أفضل طريقة للبقاء على اتصال أثناء السفر</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    November 27, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">أصبح البقاء على اتصال أثناء السفر أسهل من أي وقت مضى. مع Nomad eSIM يمكنك الاستغناء عن بطاقات SIM التقليدية والاستمتاع …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-27--%D8%AF%D9%84%D9%8A%D9%84-nomad-esim-%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A3/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/" style="text-decoration: none; color: #333;">أقوى عروض نمشي الشرق الأوسط، مع كوبون خصم &#34;BFF158&#34;</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    November 23, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">🛍️ مقدمة إذا كنت تبحث عن تجربة تسوّق إلكتروني فريدة في عالم الموضة والجمال، فإن نمشي (Namshi) هو وجهتك الأولى في الشرق …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-12--%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AE/" style="text-decoration: none; color: #333;">🎉 أفضل منتجات سامسونج في السعودية مع خصم حصري 200 ريال باستخدام الكوبون AFM117</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    November 12, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في السوق السعودي، تُعتبر سامسونج واحدة من العلامات التجارية الأكثر شعبية في مجال الهواتف الذكية والإلكترونيات، حيث تجمع …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-12--%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AE/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-08--%D8%A3%D9%81%D8%B6%D9%84-%D8%B9%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D8%B9%D9%88%D8%AF-%D8%A8%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D8%B0%D9%87%D9%84%D8%A9/" style="text-decoration: none; color: #333;">✨ أفضل عطور الدخيل عود بخصومات مذهلة</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    November 8, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">إذا كنت من عشاق العطور الشرقية الفاخرة، فإن شركة الدخيل عود تمنحك الآن فرصة لا تُفوّت! خصومات تصل إلى 50% على أكثر …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-08--%D8%A3%D9%81%D8%B6%D9%84-%D8%B9%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D8%B9%D9%88%D8%AF-%D8%A8%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D8%B0%D9%87%D9%84%D8%A9/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/" style="text-decoration: none; color: #333;">تسوّق بأناقة مع نمشي في الخليج: خصومات حصرية باستخدام كوبون BFF158 🛍️</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    November 1, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">إذا كنت من عشّاق الموضة وتبحث عن تجربة تسوّق إلكتروني تجمع بين الأناقة، التنوع، وسرعة التوصيل في دول الخليج، فإن منصة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-05--%D8%B9%D8%B7%D9%88%D8%B1-%D9%81%D8%A7%D8%AE%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AE%D8%B5%D9%85-%D8%AD%D8%B5%D8%B1%D9%8A/" style="text-decoration: none; color: #333;">✨ عطور فاخرة من الدخيل للعود – خصم حصري بكوبون &#34;DO64&#34; في الخليج!</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    October 5, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">هل تبحثين عن عطر أنثوي يُعبّر عن أناقتك؟ أو عطر رجالي يُجسّد الفخامة؟ إليك أفضل اختياراتنا من متجرالدخيل للعود التي نالت …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-05--%D8%B9%D8%B7%D9%88%D8%B1-%D9%81%D8%A7%D8%AE%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AE%D8%B5%D9%85-%D8%AD%D8%B5%D8%B1%D9%8A/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-01-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%8F%D8%B9%D8%AF-%D8%B4%D9%8A-%D8%A5%D9%86-%D8%A7%D9%84%D9%88%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B2%D9%8A/" style="text-decoration: none; color: #333;">لماذا تُعد شي إن الوجهة المثالية للأزياء العصرية بأسعار معقولة في عام 2025</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    October 1, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">هل تبحثين عن أزياء أنيقة تُواكب أحدث الصيحات دون أن تُرهقي ميزانيتك؟ شي إن (Shein) أصبحت الخيار الأول لعشّاق الموضة حول …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-01-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%8F%D8%B9%D8%AF-%D8%B4%D9%8A-%D8%A5%D9%86-%D8%A7%D9%84%D9%88%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B2%D9%8A/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-30-%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D9%84%D9%88%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AA%D9%81%D8%B1%D9%91%D8%AF%D9%8C-%D9%81%D9%8A-%D8%B9/" style="text-decoration: none; color: #333;">عطور وكولونيا الدخيل للعود: تفرّدٌ في عالم العطور الشرقية 🌿</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 30, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">تُعد شركة الدخيل للعود واحدة من أبرز العلامات التجارية في مجال العطور الشرقية الفاخرة، حيث تلتزم بأعلى معايير الجودة في …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-30-%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D9%84%D9%88%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AA%D9%81%D8%B1%D9%91%D8%AF%D9%8C-%D9%81%D9%8A-%D8%B9/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/" style="text-decoration: none; color: #333;">✈️ عروض اليوم الوطني السعودي 2025 من فلاي ناس – سافر بأسعار لا تُقاوم!</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 22, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">مع اقتراب اليوم الوطني السعودي الـ95، تقدم شركة الطيران السعودية الرائدة &ldquo;فلاي ناس&rdquo; مجموعة من العروض الحصرية …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/" style="text-decoration: none; color: #333;">اكتشف الأناقة الخالدة: خاتمان استثنائيان مستوحيان من التاريخ والنبوءة، رحلتي المليئة بالفن في المنطقة التاريخية في اسطنبول الأوربية.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 23, 2025 · 4 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">بسم الله الرحمن الرحيم، نبتدأ مقالة اليوم برحلة من خلال أزقة اسطنبول الساحرة، حيث خلال شهر رمضان المبارك يمكنكم زيارة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-22-%D9%85%D8%B0%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9-kumkapi/" style="text-decoration: none; color: #333;">مذاق التراث البحري في إسطنبول: مغامرة Kumkapı Balık Pazarı؛</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 22, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">يقع سوق كومكابي للأسماك (Kumkapı Balık Pazarı) على طول بحر مرمرة في قلب إسطنبول، وهو ليس مجرد سوق عادي، بل شهادة حية على …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-22-%D9%85%D8%B0%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9-kumkapi/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" style="text-decoration: none; color: #333;">اكتشف سحر يومك الخاص مع دعوات زفاف مخصصة من نعمه في NDesignstudio!</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 7, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">يوم زفافك هو احتفال لا يتكرر، وكل تفصيلة يجب أن تعكس قصة حبك وفرحتك وتميزك. في NDesignstudio، نؤمن بأن دعوات زفافك ليست …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" style="text-decoration: none; color: #333;">هذه الأساور الصداقة المصنوعة يدويا ستغزو اسطنبول عام 2025!</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 6, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في عالم يبدو غالبًا شاسعًا ومنفصلًا، تعمل NDesignstudio على تقريب الناس من بعضهم البعض - سوارًا تلو الآخر. أسستها صاحبة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/" style="text-decoration: none; color: #333;">القوة التحويلية لـ NFT: مستقبل الأصول الرقمية</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 4, 2024 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في عصرنا الرقمي الحالي، تتغير الطريقة التي ندرك بها الملكية والإبداع بسرعة كبيرة. واحدة من أبرز التحولات التكنولوجية …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/" style="text-decoration: none; color: #333;">رسومات شهر أكتوبر.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    October 31, 2024 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في هذا المنشور، نقدم لكم رسومات شهر أكتوبر التي تم تصميمها من خلال ستديو نون.
+</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/" style="text-decoration: none; color: #333;">لماذا موقع نون هو الخيار الأمثل؟ &#43; كوبون خصم &#34;NDX184&#34;.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    October 11, 2024 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">موقع نون هو واحد من أكبر منصات التسوق الإلكتروني في العالم العربي، ويُعتبر الوجهة المفضلة لملايين المتسوقين الذين يبحثون …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/" style="text-decoration: none; color: #333;">كيف بدأت مدونة وردبريس الخاصة بي.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    October 3, 2024 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">البدء في مدونة ووردبريس تركز على التسويق يمكن أن يكون مشروعًا مثيرًا ومجزيًا. سواء كنت مسوقًا متمرسًا يرغب في مشاركة …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/" style="text-decoration: none; color: #333;">معرض رسومات شهر سبتمبر 2024.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 30, 2024 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">في هذا المنشور سنعرض رسومات شهر سبتمبر اللتي تمم تصميمها بواسطة ستوديو نون . شكرا لدعمكم.
+</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/" style="text-decoration: none; color: #333;">تجربة التسوق الدولية مع Yollando.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 29, 2024 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">لماذا تشتري من تركيا مع Yollando؟ إذا كنت تبحث عن تجربة تسوق دولية مميزة تجمع بين الجودة العالية والأسعار المعقولة، فإن …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="text-decoration: none; color: #333;">مرحبا بكم بصفحة مدونة ستوديو نون باللغة العربية.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 26, 2024 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">مرحبًا بكم في ستوديو نون للتصميم!
+نحن هنا لنأخذكم في رحلة ملهمة إلى عالم التسويق بالعمولة بطريقة مبتكرة وسلسة. سواء كنت …</p>
+                <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
+        </div>
+        
+    </div>
 </div>
 
-
-<h2 id="لماذا-هذا-العرض-مهم">لماذا هذا العرض مهم؟</h2>
-<p>إذا كنت تفكر في شراء <strong>هاتف Galaxy جديد</strong>، أو …</p></!--></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-29-samsung-sa/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/images/oscar1.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/" style="color: #1a1a1a; text-decoration: none;">عطور الدخيل: خصم 5% إضافي مع كود DO64 &#43; عروض حصرية</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عود-الدخيل</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عروض</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عطور</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">تسوق</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><!-- markdownlint-disable MD033 -->
-
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عطور الدخيل | خصم 5% إضافي كود DO64</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0; …</style></meta></meta></head></html></!DOCTYPE></!--></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-28-al-dakheel-oud-coupon/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-        
-          <img src="../../ar/posts/2026/04/2026-04-27-hm-gcc/images/H&amp;M.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/" style="color: #1a1a1a; text-decoration: none;">A0N5: لماذا تشتري 2 وتأخذ الثالث مجاناً في H&amp;M السعودية والإمارات؟</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><!-- markdownlint-disable MD033 -->
-
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H&M Buy 2 Get 1 + A0N5 | المقال الكامل</title>
-    <style>
-        body {
-            background: #fefaf5; …</style></meta></meta></head></html></!DOCTYPE></!--></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-27-hm-gcc/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-        
-          <img src="../../ar/posts/2026/04/2026-04-26-yola-15-off/images/featured.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/" style="color: #1a1a1a; text-decoration: none;">BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">موضة</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عروض وخصومات</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">إطلالات</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><!-- markdownlint-disable MD033 -->
-
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="اكتشفي كود BEXR السري لخصم 15% على تشكيلات Yola في السعودية. إطلالات Vogue-style تناسب المرأة العصرية والرجل الذي يبحث عن هدية مميزة لشريكة حياته.">
-    <meta name="keywords" content="كود BEXR, Yola خصم 15%, أزياء سعودية راقية, تسوق ملابس السعودية, هدية للحبيبة, BEXR promo, Yola coupon KSA">
-    <meta name="author" content="Yola Editorial Team">
-    <title>BEXR: إطلالتك الأيقونية | Yola مودرن فيوجن – خصم 15%</title>
-    <style>
-        * { …</style></meta></meta></meta></meta></meta></head></html></!DOCTYPE></!--></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-26-yola-15-off/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2026/04/2026-04-24-noon-secret-cashback/images/Secret_Code.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/" style="color: #1a1a1a; text-decoration: none;">كود noon السري: لغز الكاش باك | احصل على 10% كاش باك في السعودية والإمارات</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عروض</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">تسوق</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">كاش باك</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><!-- markdownlint-disable MD033 -->
-
-<style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body …</style></!--></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2026/04/2026-04-24-noon-secret-cashback/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-20--%D9%84%D9%88%D8%AD%D8%A9-%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-%D9%81%D9%86-%D9%85%D8%B9/" style="color: #1a1a1a; text-decoration: none;">🌸 لوحة معدنية تجريدية بالزهور – فن معاصر يضيء جدرانك</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">فن</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">لوحات</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">متجر-إيتسي</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="مزيج-بين-المعدن-والقماش">مزيج بين المعدن والقماش</h2>
-<p>الفن الحقيقي هو الذي يكسر الحدود ويبتكر الجديد، وهذه <strong>لوحة الزهور التجريدية المصنوعة من صفائح …</strong></p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-20--%D9%84%D9%88%D8%AD%D8%A9-%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9-%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-%D9%81%D9%86-%D9%85%D8%B9/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-18--%D8%A7%D8%AD%D8%AA%D9%81%D9%84-%D8%A8%D8%A3%D8%B3%D9%84%D9%88%D8%A8%D9%83-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7/" style="color: #1a1a1a; text-decoration: none;">🎉 احتفل بأسلوبك: قوالب بطاقات عيد ميلاد عربية على Canva</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">قوالب-كانفا</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">قوالب-كروت-عيد-ميلاد</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">تصاميم-عربية</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="لماذا-تختار-قوالب-بطاقات-عيد-الميلاد-العربية">لماذا تختار قوالب بطاقات عيد الميلاد العربية؟</h2>
-<ul>
-<li>
-<p><strong>أصالة ثقافية</strong>: احتفل بأعياد الميلاد بتصاميم تعكس الخط العربي والتقاليد. …</p></li></ul></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-18--%D8%A7%D8%AD%D8%AA%D9%81%D9%84-%D8%A8%D8%A3%D8%B3%D9%84%D9%88%D8%A8%D9%83-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-16--%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D8%B9%D9%84%D9%89-canva-%D8%B9%D8%B1%D8%B6/" style="color: #1a1a1a; text-decoration: none;">🧾 قوالب فواتير عربية جاهزة على Canva – عرض حصري عبر Etsy</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">قوالب-كانفا</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">قالب-فاتورة</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">متجر-إيتسي</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="لماذا-تحتاج-إلى-قوالب-فواتير-عربية">لماذا تحتاج إلى قوالب فواتير عربية؟</h2>
-<ul>
-<li>
-<p><strong>توفير الوقت والجهد</strong>: بدلاً من تصميم الفواتير من الصفر، ستحصل على 10 قوالب جاهزة …</p></li></ul></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-16--%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AC%D8%A7%D9%87%D8%B2%D8%A9-%D8%B9%D9%84%D9%89-canva-%D8%B9%D8%B1%D8%B6/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-15-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%88%D9%82%D8%A7%D8%A8%D9%84/" style="color: #1a1a1a; text-decoration: none;">قوالب سيرة ذاتية عربية احترافية وقابلة للتعديل - اعرض مهاراتك بأفضل شكل</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">canva-template</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">etsy</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">resume</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h3 id="هل-تبحث-عن-طريقة-مميزة-لعرض-خبراتك-ومهاراتك">هل تبحث عن طريقة مميزة لعرض خبراتك ومهاراتك؟</h3>
-<p>في سوق العمل التنافسي اليوم، أصبحت <strong>السيرة الذاتية</strong> ليست مجرد صفحة تحتوي على …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-15-%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%88%D9%82%D8%A7%D8%A8%D9%84/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-13-%D9%82%D8%A7%D9%84%D8%A8-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%82%D9%87%D9%89-canva-template-%D8%AC%D8%A7%D9%87%D8%B2-%D9%84/" style="color: #1a1a1a; text-decoration: none;">قالب دراسة جدوى لمشروع مقهى – Canva Template جاهز للتحميل عبر Etsy</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">قوالب-كانفا</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">متجر-إيتسي</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">دراسة-جدوى</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h3 id="لماذا-هذا-القالب-مهم">لماذا هذا القالب مهم؟</h3>
-<ul>
-<li>
-<p>توفير الوقت والجهد: بدلاً من البدء من الصفر، يمنحك القالب خطة جاهزة ومنسقة على Canva يمكن …</p></li></ul></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-13-%D9%82%D8%A7%D9%84%D8%A8-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%82%D9%87%D9%89-canva-template-%D8%AC%D8%A7%D9%87%D8%B2-%D9%84/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/" style="color: #1a1a1a; text-decoration: none;">🎉 افتتاح متجر NDesignStudyosu على Etsy – اكتشفوا عالم التصميم والإبداع</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">etsy</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">متجر-إيتسي</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="-مقدمة">✨ مقدمة</h2>
-<p>يسرّنا أن نعلن عن افتتاح متجرنا الجديد على منصة <strong>Etsy – NDesignStudyosu</strong>، حيث يجتمع الإبداع مع الجودة لتقديم …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/12/2025-12-04--%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD-%D9%85%D8%AA%D8%AC%D8%B1-ndesignstudyosu-%D8%B9%D9%84%D9%89-etsy-%D8%A7%D9%83%D8%AA%D8%B4%D9%81%D9%88%D8%A7-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-28--%D9%84%D9%85%D8%A7%D8%B0%D8%A7-aliexpress-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/" style="color: #1a1a1a; text-decoration: none;">🛒 لماذا AliExpress هو الخيار الأمثل للتسوق؟</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">علي-إكسبرس</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عروض</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عروض-الجمعة-السوداء</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>تنوع المنتجات**:** أكثر من 100 مليون سلعة تشمل الإلكترونيات، الموضة، أدوات المنزل، ومستحضرات التجميل</p>
-<p>أسعار تنافسية**:** …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-28--%D9%84%D9%85%D8%A7%D8%B0%D8%A7-aliexpress-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%84%D9%84%D8%AA%D8%B3%D9%88%D9%82/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-27--%D8%AF%D9%84%D9%8A%D9%84-nomad-esim-%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A3/" style="color: #1a1a1a; text-decoration: none;">🌍 دليل Nomad eSIM: أفضل طريقة للبقاء على اتصال أثناء السفر</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">esim</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">nomad-esim</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">السفر</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>أصبح البقاء على اتصال أثناء السفر أسهل من أي وقت مضى. مع <strong><a href="https://go.urtrackinglink.com/aff_c?offer_id=1904&amp;aff_id=140889">Nomad eSIM</a></strong> يمكنك الاستغناء عن بطاقات SIM التقليدية والاستمتاع …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-27--%D8%AF%D9%84%D9%8A%D9%84-nomad-esim-%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%82%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A3/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/" style="color: #1a1a1a; text-decoration: none;">أقوى عروض نمشي الشرق الأوسط، مع كوبون خصم &#34;BFF158&#34;</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">التسوق</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h3 id="-مقدمة">🛍️ مقدمة</h3>
-<p>إذا كنت تبحث عن تجربة تسوّق إلكتروني فريدة في عالم الموضة والجمال، فإن <strong>نمشي (Namshi)</strong> هو وجهتك الأولى في الشرق …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-23-%D8%A3%D9%82%D9%88%D9%89-%D8%B9%D8%B1%D9%88%D8%B6-%D9%86%D9%85%D8%B4%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D9%85%D8%B9-%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-12--%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AE/" style="color: #1a1a1a; text-decoration: none;">🎉 أفضل منتجات سامسونج في السعودية مع خصم حصري 200 ريال باستخدام الكوبون AFM117</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">كوبون-خصم</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">السعودية</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">سامسونج</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عروض</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>في السوق السعودي، تُعتبر <strong>سامسونج</strong> واحدة من العلامات التجارية الأكثر شعبية في مجال الهواتف الذكية والإلكترونيات، حيث تجمع …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-12--%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AE/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-08--%D8%A3%D9%81%D8%B6%D9%84-%D8%B9%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D8%B9%D9%88%D8%AF-%D8%A8%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D8%B0%D9%87%D9%84%D8%A9/" style="color: #1a1a1a; text-decoration: none;">✨ أفضل عطور الدخيل عود بخصومات مذهلة</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">براندات-عربية</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عود-الدخيل</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عطور</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>إذا كنت من عشاق العطور الشرقية الفاخرة، فإن <strong>شركة الدخيل عود</strong> تمنحك الآن فرصة لا تُفوّت! خصومات تصل إلى <strong>50%</strong> على أكثر …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-08--%D8%A3%D9%81%D8%B6%D9%84-%D8%B9%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D8%B9%D9%88%D8%AF-%D8%A8%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D8%B0%D9%87%D9%84%D8%A9/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/" style="color: #1a1a1a; text-decoration: none;">تسوّق بأناقة مع نمشي في الخليج: خصومات حصرية باستخدام كوبون BFF158 🛍️</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">الملابس</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">الموضة</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">الأحذية</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>إذا كنت من عشّاق الموضة وتبحث عن تجربة تسوّق إلكتروني تجمع بين الأناقة، التنوع، وسرعة التوصيل في دول الخليج، فإن منصة …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/11/2025-11-01-%D8%AA%D8%B3%D9%88%D9%91%D9%82-%D8%A8%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D9%85%D8%B9-%D9%86%D9%85%D8%B4%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA-%D8%AD/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-05--%D8%B9%D8%B7%D9%88%D8%B1-%D9%81%D8%A7%D8%AE%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AE%D8%B5%D9%85-%D8%AD%D8%B5%D8%B1%D9%8A/" style="color: #1a1a1a; text-decoration: none;">✨ عطور فاخرة من الدخيل للعود – خصم حصري بكوبون &#34;DO64&#34; في الخليج!</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عود-الدخيل</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>هل تبحثين عن عطر أنثوي يُعبّر عن أناقتك؟ أو عطر رجالي يُجسّد الفخامة؟ إليك أفضل اختياراتنا من <a href="https://shop.aldakheeloud.com/bestsellers">متجرالدخيل للعود</a> التي نالت …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-05--%D8%B9%D8%B7%D9%88%D8%B1-%D9%81%D8%A7%D8%AE%D8%B1%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AE%D8%B5%D9%85-%D8%AD%D8%B5%D8%B1%D9%8A/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-01-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%8F%D8%B9%D8%AF-%D8%B4%D9%8A-%D8%A5%D9%86-%D8%A7%D9%84%D9%88%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B2%D9%8A/" style="color: #1a1a1a; text-decoration: none;">لماذا تُعد شي إن الوجهة المثالية للأزياء العصرية بأسعار معقولة في عام 2025</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">التسوق</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>هل تبحثين عن أزياء أنيقة تُواكب أحدث الصيحات دون أن تُرهقي ميزانيتك؟ شي إن <a href="https://go.urtrackinglink.com/aff_c?offer_id=1882&amp;aff_id=140889">(Shein)</a> أصبحت الخيار الأول لعشّاق الموضة حول …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/10/2025-10-01-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%8F%D8%B9%D8%AF-%D8%B4%D9%8A-%D8%A5%D9%86-%D8%A7%D9%84%D9%88%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B2%D9%8A/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-30-%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D9%84%D9%88%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AA%D9%81%D8%B1%D9%91%D8%AF%D9%8C-%D9%81%D9%8A-%D8%B9/" style="color: #1a1a1a; text-decoration: none;">عطور وكولونيا الدخيل للعود: تفرّدٌ في عالم العطور الشرقية 🌿</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">عطور</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>تُعد شركة الدخيل للعود واحدة من أبرز العلامات التجارية في مجال العطور الشرقية الفاخرة، حيث تلتزم بأعلى معايير الجودة في …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-30-%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D9%83%D9%88%D9%84%D9%88%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84-%D9%84%D9%84%D8%B9%D9%88%D8%AF-%D8%AA%D9%81%D8%B1%D9%91%D8%AF%D9%8C-%D9%81%D9%8A-%D8%B9/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/" style="color: #1a1a1a; text-decoration: none;">✈️ عروض اليوم الوطني السعودي 2025 من فلاي ناس – سافر بأسعار لا تُقاوم!</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">فلاي-ناس</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">شركة-طيران</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>مع اقتراب اليوم الوطني السعودي الـ95، تقدم شركة الطيران السعودية الرائدة <a href="https://go.urtrackinglink.com/aff_c?offer_id=1799&amp;aff_id=140889">&ldquo;فلاي ناس&rdquo;</a> مجموعة من العروض الحصرية …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/09/2025-09-22-%EF%B8%8F-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2025-%D9%85%D9%86-%D9%81%D9%84%D8%A7%D9%8A/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/" style="color: #1a1a1a; text-decoration: none;">اكتشف الأناقة الخالدة: خاتمان استثنائيان مستوحيان من التاريخ والنبوءة، رحلتي المليئة بالفن في المنطقة التاريخية في اسطنبول الأوربية.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">مجوهرات</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>بسم الله الرحمن الرحيم، نبتدأ مقالة اليوم برحلة من خلال أزقة اسطنبول الساحرة، حيث خلال شهر رمضان المبارك يمكنكم زيارة …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-23-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%A7%D9%84%D8%A3%D9%86%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF%D8%A9-%D8%AE%D8%A7%D8%AA%D9%85%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-22-%D9%85%D8%B0%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9-kumkapi/" style="color: #1a1a1a; text-decoration: none;">مذاق التراث البحري في إسطنبول: مغامرة Kumkapı Balık Pazarı؛</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">سوق-السمك</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>يقع <strong>سوق كومكابي للأسماك</strong> (Kumkapı Balık Pazarı) على طول بحر مرمرة في قلب إسطنبول، وهو ليس مجرد سوق عادي، بل شهادة حية على …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-22-%D9%85%D8%B0%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84-%D9%85%D8%BA%D8%A7%D9%85%D8%B1%D8%A9-kumkapi/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/images/ndesignstudio-1-wedding-invite.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" style="color: #1a1a1a; text-decoration: none;">اكتشف سحر يومك الخاص مع دعوات زفاف مخصصة من نعمه في NDesignstudio!</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">دعوات-زفاف</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>يوم زفافك هو احتفال لا يتكرر، وكل تفصيلة يجب أن تعكس قصة حبك وفرحتك وتميزك. في <strong>NDesignstudio</strong>، نؤمن بأن دعوات زفافك ليست …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-07-%D8%A7%D9%83%D8%AA%D8%B4%D9%81-%D8%B3%D8%AD%D8%B1-%D9%8A%D9%88%D9%85%D9%83-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D9%85%D8%B9-%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81-%D9%85%D8%AE%D8%B5%D8%B5/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/images/whatsapp-image-2025-03-07-at-00.20.13_7e7b21d1.jpg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" style="color: #1a1a1a; text-decoration: none;">هذه الأساور الصداقة المصنوعة يدويا ستغزو اسطنبول عام 2025!</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">أساور-الصداقة</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>في عالم يبدو غالبًا شاسعًا ومنفصلًا، تعمل NDesignstudio على تقريب الناس من بعضهم البعض - سوارًا تلو الآخر. أسستها صاحبة …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2025/03/2025-03-06-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D9%86%D9%88%D8%B9%D8%A9-%D9%8A%D8%AF%D9%88%D9%8A%D8%A7-%D8%B3%D8%AA/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/images/autumn-roses.jpeg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/" style="color: #1a1a1a; text-decoration: none;">القوة التحويلية لـ NFT: مستقبل الأصول الرقمية</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">nft</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">رسومات</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>في عصرنا الرقمي الحالي، تتغير الطريقة التي ندرك بها الملكية والإبداع بسرعة كبيرة. واحدة من أبرز التحولات التكنولوجية …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/12/2024-12-04-%D8%A7%D9%84%D9%82%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D9%80-nft-%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A3%D8%B5%D9%88%D9%84-%D8%A7%D9%84%D8%B1/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/alhamd-sketch.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/" style="color: #1a1a1a; text-decoration: none;">رسومات شهر أكتوبر.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">رسومات</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>في هذا المنشور، نقدم لكم رسومات شهر أكتوبر التي تم تصميمها من خلال ستديو نون.</p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/alhamd-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/baby-yoda-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/cactus-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/circular-mosque-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-baby-yoda-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-cactus-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-circular-mosque-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-crystal-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-cute-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-flower-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/crystals-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/cute-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/flower-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-girl-line-art.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-ice-cream-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-lotus-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/girl-line-art.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/ice-cream-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/lotus-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/colored-walnut-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/walnut-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/lake-hut-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/lotous-sketch-1.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/lotous-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/whatsapp-image-2024-10-31-at-11.07.58-am.jpeg" alt=""></p>
-<p><img src="../../ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/images/whimsical-night-sketch.png" alt=""></p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-31-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/images/noon.jpg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/" style="color: #1a1a1a; text-decoration: none;">لماذا موقع نون هو الخيار الأمثل؟ &#43; كوبون خصم &#34;NDX184&#34;.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">shopping</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>موقع نون هو واحد من أكبر منصات التسوق الإلكتروني في العالم العربي، ويُعتبر الوجهة المفضلة لملايين المتسوقين الذين يبحثون …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-11-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%85%D9%88%D9%82%D8%B9-%D9%86%D9%88%D9%86-%D9%87%D9%88-%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%AB%D9%84-%D9%83%D9%88%D8%A8%D9%88%D9%86/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/images/arabic-blue-white-modern-marketing-blog-banner.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/" style="color: #1a1a1a; text-decoration: none;">كيف بدأت مدونة وردبريس الخاصة بي.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">blog</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>البدء في مدونة ووردبريس تركز على التسويق يمكن أن يكون مشروعًا مثيرًا ومجزيًا. سواء كنت مسوقًا متمرسًا يرغب في مشاركة …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/10/2024-10-03-%D9%83%D9%8A%D9%81-%D8%A8%D8%AF%D8%A3%D8%AA-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D9%8A/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/bird-sakura-sketch.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/" style="color: #1a1a1a; text-decoration: none;">معرض رسومات شهر سبتمبر 2024.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">رسومات</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>في هذا المنشور سنعرض رسومات شهر سبتمبر اللتي تمم تصميمها بواسطة ستوديو نون . شكرا لدعمكم.</p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/whatsapp-image-2024-09-30-at-10.54.56-am.jpeg" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/colored-bird-sakura-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/bird-sakura-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/butterfly-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/colored-butterfly-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/piano-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/vilion-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/violion-sketcj.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/colored-piano-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/dancing-girl-line-art.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/colored-shoes-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/shoes-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/hijabi-girl-line-art.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/magnolia-colored-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/magnolia-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/galaxy-whale.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/universe-girl.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/colored-pumpkin-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/pumpkin-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/fatih-sketch.png" alt=""></p>
-<p><img src="../../ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/images/noon.png" alt=""></p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-30-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D8%B4%D9%87%D8%B1-%D8%B3%D8%A8%D8%AA%D9%85%D8%A8%D8%B1-2024/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/images/yollando.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/" style="color: #1a1a1a; text-decoration: none;">تجربة التسوق الدولية مع Yollando.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">shipping</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="لماذا-تشتري-من-تركيا-مع-yollando">لماذا تشتري من تركيا مع Yollando؟</h2>
-<p>إذا كنت تبحث عن تجربة تسوق دولية مميزة تجمع بين الجودة العالية والأسعار المعقولة، فإن …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-29-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D9%85%D8%B9-yollando/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
-        
-        
-          
-        
-        
-          <img src="../../ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/images/d8b3d8aad988d8afd98ad988-d986d988d986.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="color: #1a1a1a; text-decoration: none;">مرحبا بكم بصفحة مدونة ستوديو نون باللغة العربية.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">welcome</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>مرحبًا بكم في <strong>ستوديو نون للتصميم</strong>!</p>
-<p>نحن هنا لنأخذكم في رحلة ملهمة إلى عالم <strong>التسويق بالعمولة</strong> بطريقة مبتكرة وسلسة. سواء كنت …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/ar/posts/2024/09/2024-09-26-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
     </main>
+    <footer>
+        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
+    </footer>
 </body>
 </html>

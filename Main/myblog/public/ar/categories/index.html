@@ -6,425 +6,282 @@
     <title>N Design Studio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Georgia', serif; background: #f0f0f0; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: #667eea; }
+        main { min-height: calc(100vh - 200px); }
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; gap: 15px; }
+            .nav-links a { margin: 0 15px; }
+        }
     </style>
+    
 </head>
 <body>
-    <header style="background: white; padding: 15px 20px; position: fixed; top: 0; width: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;">
-        <a href="../../ar/" style="text-decoration: none; font-size: 1.2rem; font-weight: bold; color: #333;">N Design Studio</a>
-        <nav>
-            <a href="../../ar/posts/" style="margin-left: 20px; text-decoration: none; color: #666;">Blog</a>
-            <a href="../../ar/about/" style="margin-left: 20px; text-decoration: none; color: #666;">About</a>
-            <a href="../../ar/contact/" style="margin-left: 20px; text-decoration: none; color: #666;">Contact</a>
-        </nav>
-    </div>
-</header>
-<div style="height: 80px;"></div>
-
+    <header>
+        <div class="header-container">
+            <a href="../../ar/" class="logo">N Design Studio</a>
+            <div class="nav-links">
+                <a href="../../ar/posts/">Blog</a>
+                <a href="../../ar/about/">About</a>
+                <a href="../../ar/contact/">Contact</a>
+            </div>
+        </div>
+    </header>
     <main>
         
-  <div class="terms">
-    <h1>Categories</h1>
+
+<h1 class="text-center mb-4">Categories</h1>
+<hr />
+
+<div class="row justify-content-center mt-4">
+  <div class="col-12 text-center">
+
     
-    <ul>
-      
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/blog/">blog [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/canva-template/">canva-template [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/esim/">esim [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/etsy/">etsy [2]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/nft/">nft [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/nomad-esim/">nomad-esim [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/resume/">resume [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/shipping/">shipping [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/shopping/">shopping [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/welcome/">welcome [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9/">أساور-الصداقة [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A5%D8%B7%D9%84%D8%A7%D9%84%D8%A7%D8%AA/">إطلالات [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A7%D8%AA/">إلكترونيات [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A7%D9%84%D8%A3%D8%AD%D8%B0%D9%8A%D8%A9/">الأحذية [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82/">التسوق [2]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/">السعودية [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A7%D9%84%D8%B3%D9%81%D8%B1/">السفر [2]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B6/">العروض [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3/">الملابس [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A7%D9%84%D9%85%D9%88%D8%B6%D8%A9/">الموضة [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%A8%D8%B1%D8%A7%D9%86%D8%AF%D8%A7%D8%AA-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/">براندات-عربية [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%AA%D8%AC%D8%A7%D8%B1%D8%A8-%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9/">تجارب شخصية [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%AA%D8%B3%D9%88%D9%82/">تسوق [3]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%AA%D8%B5%D8%A7%D9%85%D9%8A%D9%85-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/">تصاميم-عربية [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%AC%D9%85%D8%A7%D9%84/">جمال [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89/">دراسة-جدوى [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81/">دعوات-زفاف [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA/">رسومات [3]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC/">سامسونج [2]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B3%D9%85%D9%83/">سوق-السمك [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B7%D9%8A%D8%B1%D8%A7%D9%86/">شركة-طيران [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B9%D8%B1%D9%88%D8%B6/">عروض [5]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B9%D8%B1%D9%88%D8%B6-%D9%88%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA/">عروض وخصومات [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D8%A1/">عروض-الجمعة-السوداء [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B9%D8%B7%D9%88%D8%B1/">عطور [3]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B9%D9%84%D9%8A-%D8%A5%D9%83%D8%B3%D8%A8%D8%B1%D8%B3/">علي-إكسبرس [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D8%B9%D9%88%D8%AF-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84/">عود-الدخيل [3]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%81%D9%84%D8%A7%D9%8A-%D9%86%D8%A7%D8%B3/">فلاي-ناس [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%81%D9%86/">فن [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%82%D8%A7%D9%84%D8%A8-%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9/">قالب-فاتورة [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%83%D8%A7%D9%86%D9%81%D8%A7/">قوالب-كانفا [3]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%83%D8%B1%D9%88%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7%D8%AF/">قوالب-كروت-عيد-ميلاد [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%83%D8%A7%D8%B4-%D8%A8%D8%A7%D9%83/">كاش باك [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE%D8%B5%D9%85/">كوبون-خصم [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%84%D9%88%D8%AD%D8%A7%D8%AA/">لوحات [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A5%D9%8A%D8%AA%D8%B3%D9%8A/">متجر-إيتسي [4]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%85%D8%AC%D9%88%D9%87%D8%B1%D8%A7%D8%AA/">مجوهرات [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A7%D8%AA/">مراجعات [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/ar/categories/%D9%85%D9%88%D8%B6%D8%A9/">موضة [1]</a>
-          </li>
-        
-      
-    </ul>
+      <a href="../../ar/categories/%D8%AA%D8%AC%D8%A7%D8%B1%D8%A8-%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #تجارب شخصية
+      </a>
+    
+      <a href="../../ar/categories/%D8%AC%D9%85%D8%A7%D9%84/" class="btn btn-sm btn-light border-primary m-2">
+        #جمال
+      </a>
+    
+      <a href="../../ar/categories/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A7%D8%AA/" class="btn btn-sm btn-light border-primary m-2">
+        #مراجعات
+      </a>
+    
+      <a href="../../ar/categories/%D8%A7%D9%84%D8%B3%D9%81%D8%B1/" class="btn btn-sm btn-light border-primary m-2">
+        #السفر
+      </a>
+    
+      <a href="../../ar/categories/%D8%A7%D9%84%D8%B9%D8%B1%D9%88%D8%B6/" class="btn btn-sm btn-light border-primary m-2">
+        #العروض
+      </a>
+    
+      <a href="../../ar/categories/%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A7%D8%AA/" class="btn btn-sm btn-light border-primary m-2">
+        #إلكترونيات
+      </a>
+    
+      <a href="../../ar/categories/%D8%AA%D8%B3%D9%88%D9%82/" class="btn btn-sm btn-light border-primary m-2">
+        #تسوق
+      </a>
+    
+      <a href="../../ar/categories/%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC/" class="btn btn-sm btn-light border-primary m-2">
+        #سامسونج
+      </a>
+    
+      <a href="../../ar/categories/%D8%B9%D8%B1%D9%88%D8%B6/" class="btn btn-sm btn-light border-primary m-2">
+        #عروض
+      </a>
+    
+      <a href="../../ar/categories/%D8%B9%D8%B7%D9%88%D8%B1/" class="btn btn-sm btn-light border-primary m-2">
+        #عطور
+      </a>
+    
+      <a href="../../ar/categories/%D8%B9%D9%88%D8%AF-%D8%A7%D9%84%D8%AF%D8%AE%D9%8A%D9%84/" class="btn btn-sm btn-light border-primary m-2">
+        #عود-الدخيل
+      </a>
+    
+      <a href="../../ar/categories/%D8%A5%D8%B7%D9%84%D8%A7%D9%84%D8%A7%D8%AA/" class="btn btn-sm btn-light border-primary m-2">
+        #إطلالات
+      </a>
+    
+      <a href="../../ar/categories/%D8%B9%D8%B1%D9%88%D8%B6-%D9%88%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA/" class="btn btn-sm btn-light border-primary m-2">
+        #عروض وخصومات
+      </a>
+    
+      <a href="../../ar/categories/%D9%85%D9%88%D8%B6%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #موضة
+      </a>
+    
+      <a href="../../ar/categories/%D9%83%D8%A7%D8%B4-%D8%A8%D8%A7%D9%83/" class="btn btn-sm btn-light border-primary m-2">
+        #كاش باك
+      </a>
+    
+      <a href="../../ar/categories/%D9%81%D9%86/" class="btn btn-sm btn-light border-primary m-2">
+        #فن
+      </a>
+    
+      <a href="../../ar/categories/%D9%84%D9%88%D8%AD%D8%A7%D8%AA/" class="btn btn-sm btn-light border-primary m-2">
+        #لوحات
+      </a>
+    
+      <a href="../../ar/categories/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A5%D9%8A%D8%AA%D8%B3%D9%8A/" class="btn btn-sm btn-light border-primary m-2">
+        #متجر-إيتسي
+      </a>
+    
+      <a href="../../ar/categories/%D8%AA%D8%B5%D8%A7%D9%85%D9%8A%D9%85-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #تصاميم-عربية
+      </a>
+    
+      <a href="../../ar/categories/%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%83%D8%A7%D9%86%D9%81%D8%A7/" class="btn btn-sm btn-light border-primary m-2">
+        #قوالب-كانفا
+      </a>
+    
+      <a href="../../ar/categories/%D9%82%D9%88%D8%A7%D9%84%D8%A8-%D9%83%D8%B1%D9%88%D8%AA-%D8%B9%D9%8A%D8%AF-%D9%85%D9%8A%D9%84%D8%A7%D8%AF/" class="btn btn-sm btn-light border-primary m-2">
+        #قوالب-كروت-عيد-ميلاد
+      </a>
+    
+      <a href="../../ar/categories/%D9%82%D8%A7%D9%84%D8%A8-%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #قالب-فاتورة
+      </a>
+    
+      <a href="../../ar/categories/canva-template/" class="btn btn-sm btn-light border-primary m-2">
+        #Canva-Template
+      </a>
+    
+      <a href="../../ar/categories/etsy/" class="btn btn-sm btn-light border-primary m-2">
+        #Etsy
+      </a>
+    
+      <a href="../../ar/categories/resume/" class="btn btn-sm btn-light border-primary m-2">
+        #Resume
+      </a>
+    
+      <a href="../../ar/categories/%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%AC%D8%AF%D9%88%D9%89/" class="btn btn-sm btn-light border-primary m-2">
+        #دراسة-جدوى
+      </a>
+    
+      <a href="../../ar/categories/%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D8%A1/" class="btn btn-sm btn-light border-primary m-2">
+        #عروض-الجمعة-السوداء
+      </a>
+    
+      <a href="../../ar/categories/%D8%B9%D9%84%D9%8A-%D8%A5%D9%83%D8%B3%D8%A8%D8%B1%D8%B3/" class="btn btn-sm btn-light border-primary m-2">
+        #علي-إكسبرس
+      </a>
+    
+      <a href="../../ar/categories/esim/" class="btn btn-sm btn-light border-primary m-2">
+        #Esim
+      </a>
+    
+      <a href="../../ar/categories/nomad-esim/" class="btn btn-sm btn-light border-primary m-2">
+        #Nomad-Esim
+      </a>
+    
+      <a href="../../ar/categories/%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%82/" class="btn btn-sm btn-light border-primary m-2">
+        #التسوق
+      </a>
+    
+      <a href="../../ar/categories/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #السعودية
+      </a>
+    
+      <a href="../../ar/categories/%D9%83%D9%88%D8%A8%D9%88%D9%86-%D8%AE%D8%B5%D9%85/" class="btn btn-sm btn-light border-primary m-2">
+        #كوبون-خصم
+      </a>
+    
+      <a href="../../ar/categories/%D8%A8%D8%B1%D8%A7%D9%86%D8%AF%D8%A7%D8%AA-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #براندات-عربية
+      </a>
+    
+      <a href="../../ar/categories/%D8%A7%D9%84%D8%A3%D8%AD%D8%B0%D9%8A%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #الأحذية
+      </a>
+    
+      <a href="../../ar/categories/%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3/" class="btn btn-sm btn-light border-primary m-2">
+        #الملابس
+      </a>
+    
+      <a href="../../ar/categories/%D8%A7%D9%84%D9%85%D9%88%D8%B6%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #الموضة
+      </a>
+    
+      <a href="../../ar/categories/%D8%B4%D8%B1%D9%83%D8%A9-%D8%B7%D9%8A%D8%B1%D8%A7%D9%86/" class="btn btn-sm btn-light border-primary m-2">
+        #شركة-طيران
+      </a>
+    
+      <a href="../../ar/categories/%D9%81%D9%84%D8%A7%D9%8A-%D9%86%D8%A7%D8%B3/" class="btn btn-sm btn-light border-primary m-2">
+        #فلاي-ناس
+      </a>
+    
+      <a href="../../ar/categories/%D9%85%D8%AC%D9%88%D9%87%D8%B1%D8%A7%D8%AA/" class="btn btn-sm btn-light border-primary m-2">
+        #مجوهرات
+      </a>
+    
+      <a href="../../ar/categories/%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B3%D9%85%D9%83/" class="btn btn-sm btn-light border-primary m-2">
+        #سوق-السمك
+      </a>
+    
+      <a href="../../ar/categories/%D8%AF%D8%B9%D9%88%D8%A7%D8%AA-%D8%B2%D9%81%D8%A7%D9%81/" class="btn btn-sm btn-light border-primary m-2">
+        #دعوات-زفاف
+      </a>
+    
+      <a href="../../ar/categories/%D8%A3%D8%B3%D8%A7%D9%88%D8%B1-%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%82%D8%A9/" class="btn btn-sm btn-light border-primary m-2">
+        #أساور-الصداقة
+      </a>
+    
+      <a href="../../ar/categories/nft/" class="btn btn-sm btn-light border-primary m-2">
+        #Nft
+      </a>
+    
+      <a href="../../ar/categories/%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA/" class="btn btn-sm btn-light border-primary m-2">
+        #رسومات
+      </a>
+    
+      <a href="../../ar/categories/shopping/" class="btn btn-sm btn-light border-primary m-2">
+        #Shopping
+      </a>
+    
+      <a href="../../ar/categories/blog/" class="btn btn-sm btn-light border-primary m-2">
+        #Blog
+      </a>
+    
+      <a href="../../ar/categories/shipping/" class="btn btn-sm btn-light border-primary m-2">
+        #Shipping
+      </a>
+    
+      <a href="../../ar/categories/welcome/" class="btn btn-sm btn-light border-primary m-2">
+        #Welcome
+      </a>
+    
+
   </div>
+</div>
+
 
     </main>
+    <footer>
+        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
+    </footer>
 </body>
 </html>

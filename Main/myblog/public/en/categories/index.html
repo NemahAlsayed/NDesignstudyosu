@@ -6,385 +6,262 @@
     <title>N Design Studio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Georgia', serif; background: #f0f0f0; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: #667eea; }
+        main { min-height: calc(100vh - 200px); }
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; gap: 15px; }
+            .nav-links a { margin: 0 15px; }
+        }
     </style>
+    
 </head>
 <body>
-    <header style="background: white; padding: 15px 20px; position: fixed; top: 0; width: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;">
-        <a href="../../en/" style="text-decoration: none; font-size: 1.2rem; font-weight: bold; color: #333;">N Design Studio</a>
-        <nav>
-            <a href="../../en/posts/" style="margin-left: 20px; text-decoration: none; color: #666;">Blog</a>
-            <a href="../../en/about/" style="margin-left: 20px; text-decoration: none; color: #666;">About</a>
-            <a href="../../en/contact/" style="margin-left: 20px; text-decoration: none; color: #666;">Contact</a>
-        </nav>
-    </div>
-</header>
-<div style="height: 80px;"></div>
-
+    <header>
+        <div class="header-container">
+            <a href="../../en/" class="logo">N Design Studio</a>
+            <div class="nav-links">
+                <a href="../../en/posts/">Blog</a>
+                <a href="../../en/about/">About</a>
+                <a href="../../en/contact/">Contact</a>
+            </div>
+        </div>
+    </header>
     <main>
         
-  <div class="terms">
-    <h1>Categories</h1>
+
+<h1 class="text-center mb-4">Categories</h1>
+<hr />
+
+<div class="row justify-content-center mt-4">
+  <div class="col-12 text-center">
+
     
-    <ul>
-      
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/arabic/">arabic [3]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/arabic-designs/">arabic-designs [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/art/">art [2]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/beauty/">Beauty [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/birthday-cards/">birthday-cards [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/canva-template/">canva-template [2]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/custom-designs/">custom-designs [2]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/design/">design [4]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/dolap/">dolap [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/drawings/">drawings [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/dyson/">dyson [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/e-commerce/">e-commerce [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/email/">email [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/esim/">esim [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/etsy/">etsy [3]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/fashion/">fashion [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/feature/">feature [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/friendship-bracelets/">friendship-bracelets [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/hair/">hair [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/hair-styling/">hair-styling [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/invoice/">invoice [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/jewelry/">jewelry [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/kitchen/">kitchen [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/laptops/">laptops [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/lead-generation/">lead-generation [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/marketing/">marketing [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/marketing-automation/">marketing-automation [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/middle-east/">middle-east [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/my-paintings/">my-paintings [2]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/nft/">nft [5]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/noon/">noon [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/online-shopping/">online-shopping [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/personal-experience/">Personal Experience [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/phones/">phones [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/review/">review [3]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/reviews/">Reviews [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/shipping/">shipping [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/shopping/">shopping [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/software/">software [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/sql-system/">sql-system [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/sticker/">sticker [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/travel/">travel [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/web-hosting/">web-hosting [1]</a>
-          </li>
-        
-      
-        
-        
-        
-          <li>
-            <a class="terms-title" href="https://ndesignstudyosu.com.tr/en/categories/website/">website [1]</a>
-          </li>
-        
-      
-    </ul>
+      <a href="../../en/categories/beauty/" class="btn btn-sm btn-light border-primary m-2">
+        #Beauty
+      </a>
+    
+      <a href="../../en/categories/personal-experience/" class="btn btn-sm btn-light border-primary m-2">
+        #Personal Experience
+      </a>
+    
+      <a href="../../en/categories/reviews/" class="btn btn-sm btn-light border-primary m-2">
+        #Reviews
+      </a>
+    
+      <a href="../../en/categories/sql-system/" class="btn btn-sm btn-light border-primary m-2">
+        #Sql-System
+      </a>
+    
+      <a href="../../en/categories/art/" class="btn btn-sm btn-light border-primary m-2">
+        #Art
+      </a>
+    
+      <a href="../../en/categories/etsy/" class="btn btn-sm btn-light border-primary m-2">
+        #Etsy
+      </a>
+    
+      <a href="../../en/categories/my-paintings/" class="btn btn-sm btn-light border-primary m-2">
+        #My-Paintings
+      </a>
+    
+      <a href="../../en/categories/arabic/" class="btn btn-sm btn-light border-primary m-2">
+        #Arabic
+      </a>
+    
+      <a href="../../en/categories/arabic-designs/" class="btn btn-sm btn-light border-primary m-2">
+        #Arabic-Designs
+      </a>
+    
+      <a href="../../en/categories/birthday-cards/" class="btn btn-sm btn-light border-primary m-2">
+        #Birthday-Cards
+      </a>
+    
+      <a href="../../en/categories/canva-template/" class="btn btn-sm btn-light border-primary m-2">
+        #Canva-Template
+      </a>
+    
+      <a href="../../en/categories/invoice/" class="btn btn-sm btn-light border-primary m-2">
+        #Invoice
+      </a>
+    
+      <a href="../../en/categories/esim/" class="btn btn-sm btn-light border-primary m-2">
+        #Esim
+      </a>
+    
+      <a href="../../en/categories/travel/" class="btn btn-sm btn-light border-primary m-2">
+        #Travel
+      </a>
+    
+      <a href="../../en/categories/middle-east/" class="btn btn-sm btn-light border-primary m-2">
+        #Middle-East
+      </a>
+    
+      <a href="../../en/categories/noon/" class="btn btn-sm btn-light border-primary m-2">
+        #Noon
+      </a>
+    
+      <a href="../../en/categories/online-shopping/" class="btn btn-sm btn-light border-primary m-2">
+        #Online-Shopping
+      </a>
+    
+      <a href="../../en/categories/phones/" class="btn btn-sm btn-light border-primary m-2">
+        #Phones
+      </a>
+    
+      <a href="../../en/categories/shopping/" class="btn btn-sm btn-light border-primary m-2">
+        #Shopping
+      </a>
+    
+      <a href="../../en/categories/drawings/" class="btn btn-sm btn-light border-primary m-2">
+        #Drawings
+      </a>
+    
+      <a href="../../en/categories/nft/" class="btn btn-sm btn-light border-primary m-2">
+        #Nft
+      </a>
+    
+      <a href="../../en/categories/dyson/" class="btn btn-sm btn-light border-primary m-2">
+        #Dyson
+      </a>
+    
+      <a href="../../en/categories/hair/" class="btn btn-sm btn-light border-primary m-2">
+        #Hair
+      </a>
+    
+      <a href="../../en/categories/hair-styling/" class="btn btn-sm btn-light border-primary m-2">
+        #Hair-Styling
+      </a>
+    
+      <a href="../../en/categories/e-commerce/" class="btn btn-sm btn-light border-primary m-2">
+        #E-Commerce
+      </a>
+    
+      <a href="../../en/categories/fashion/" class="btn btn-sm btn-light border-primary m-2">
+        #Fashion
+      </a>
+    
+      <a href="../../en/categories/shipping/" class="btn btn-sm btn-light border-primary m-2">
+        #Shipping
+      </a>
+    
+      <a href="../../en/categories/custom-designs/" class="btn btn-sm btn-light border-primary m-2">
+        #Custom-Designs
+      </a>
+    
+      <a href="../../en/categories/design/" class="btn btn-sm btn-light border-primary m-2">
+        #Design
+      </a>
+    
+      <a href="../../en/categories/web-hosting/" class="btn btn-sm btn-light border-primary m-2">
+        #Web-Hosting
+      </a>
+    
+      <a href="../../en/categories/website/" class="btn btn-sm btn-light border-primary m-2">
+        #Website
+      </a>
+    
+      <a href="../../en/categories/email/" class="btn btn-sm btn-light border-primary m-2">
+        #Email
+      </a>
+    
+      <a href="../../en/categories/lead-generation/" class="btn btn-sm btn-light border-primary m-2">
+        #Lead-Generation
+      </a>
+    
+      <a href="../../en/categories/marketing-automation/" class="btn btn-sm btn-light border-primary m-2">
+        #Marketing-Automation
+      </a>
+    
+      <a href="../../en/categories/marketing/" class="btn btn-sm btn-light border-primary m-2">
+        #Marketing
+      </a>
+    
+      <a href="../../en/categories/laptops/" class="btn btn-sm btn-light border-primary m-2">
+        #Laptops
+      </a>
+    
+      <a href="../../en/categories/dolap/" class="btn btn-sm btn-light border-primary m-2">
+        #Dolap
+      </a>
+    
+      <a href="../../en/categories/jewelry/" class="btn btn-sm btn-light border-primary m-2">
+        #Jewelry
+      </a>
+    
+      <a href="../../en/categories/kitchen/" class="btn btn-sm btn-light border-primary m-2">
+        #Kitchen
+      </a>
+    
+      <a href="../../en/categories/feature/" class="btn btn-sm btn-light border-primary m-2">
+        #Feature
+      </a>
+    
+      <a href="../../en/categories/sticker/" class="btn btn-sm btn-light border-primary m-2">
+        #Sticker
+      </a>
+    
+      <a href="../../en/categories/friendship-bracelets/" class="btn btn-sm btn-light border-primary m-2">
+        #Friendship-Bracelets
+      </a>
+    
+      <a href="../../en/categories/review/" class="btn btn-sm btn-light border-primary m-2">
+        #Review
+      </a>
+    
+      <a href="../../en/categories/software/" class="btn btn-sm btn-light border-primary m-2">
+        #Software
+      </a>
+    
+
   </div>
+</div>
+
 
     </main>
+    <footer>
+        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
+    </footer>
 </body>
 </html>

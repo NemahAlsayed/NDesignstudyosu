@@ -6,891 +6,529 @@
     <title>N Design Studio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Georgia', serif; background: #f0f0f0; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: #667eea; }
+        main { min-height: calc(100vh - 200px); }
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; gap: 15px; }
+            .nav-links a { margin: 0 15px; }
+        }
     </style>
+    
 </head>
 <body>
-    <header style="background: white; padding: 15px 20px; position: fixed; top: 0; width: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;">
-        <a href="../../en/" style="text-decoration: none; font-size: 1.2rem; font-weight: bold; color: #333;">N Design Studio</a>
-        <nav>
-            <a href="../../en/posts/" style="margin-left: 20px; text-decoration: none; color: #666;">Blog</a>
-            <a href="../../en/about/" style="margin-left: 20px; text-decoration: none; color: #666;">About</a>
-            <a href="../../en/contact/" style="margin-left: 20px; text-decoration: none; color: #666;">Contact</a>
-        </nav>
-    </div>
-</header>
-<div style="height: 80px;"></div>
-
+    <header>
+        <div class="header-container">
+            <a href="../../en/" class="logo">N Design Studio</a>
+            <div class="nav-links">
+                <a href="../../en/posts/">Blog</a>
+                <a href="../../en/about/">About</a>
+                <a href="../../en/contact/">Contact</a>
+            </div>
+        </div>
+    </header>
     <main>
         
-<section style="padding: 60px 20px; background: #f5f5f5; min-height: 100vh;">
-  <div style="max-width: 1200px; margin: 0 auto;">
-    <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; text-align: center; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 48px;">Posts</h1>
-    
+<div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 50px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">All Posts</h1>
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-        
-          <img src="../../en/posts/2026/05/05-13-2026-halal-booking/images/Halal_Booking.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/05-13-2026-halal-booking/" style="color: #1a1a1a; text-decoration: none;">The Ultimate Halal Luxury Travel Guide — 30 Resorts Curated for GCC Travelers (Free PDF)</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><style>
-.post-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.2; …</style></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/05-13-2026-halal-booking/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/05-13-2026-halal-booking/" style="text-decoration: none; color: #333;">The Ultimate Halal Luxury Travel Guide — 30 Resorts Curated for GCC Travelers (Free PDF)</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    May 13, 2026 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"> The Ultimate Halal Luxury Travel Guide 30 Resorts • Private Pools • Women‑Only Facilities • GCC Exclusive Benefits 🌍 A …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/05-13-2026-halal-booking/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-        
-          <img src="../../en/posts/2026/05/loccitane-top-5-ksa-a162-en/images/Loccitane.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/" style="color: #1a1a1a; text-decoration: none;">Top 5 Luxury L’OCCITANE Products in Saudi Arabia (With Exclusive Discount Code A162)</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">Beauty</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">Reviews</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">Personal Experience</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-<style>
-/* RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* GLOBAL */
-.loccitane-luxury { …</style></meta></meta></head></html></!DOCTYPE></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/" style="text-decoration: none; color: #333;">Top 5 Luxury L’OCCITANE Products in Saudi Arabia (With Exclusive Discount Code A162)</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    May 5, 2026 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;"><!DOCTYPE html> The Most Luxurious L’OCCITANE Products in Saudi Arabia A luxury ritual… with an exclusive discount code A162
+</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-top-5-ksa-a162-en/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-newspaper" style="font-size: 3rem; color: white;"></i>
-          </div>
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/" style="color: #1a1a1a; text-decoration: none;">Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">sql-system</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/" style="text-decoration: none; color: #333;">Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    January 22, 2026 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Islamic finance is one of the fastest‑growing sectors in global banking — yet high‑quality, open‑source systems that …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2026/01/2026-01-22-building-a-sharia-compliant-banking-system-with-postgresql-a-deep-dive-into-modern-islamic-finance-engineering/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/12/2025-12-20--metal-art-sheet-flower-abstract-landscape-painting-a-modern-statement-piece/images/1-5.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-20--metal-art-sheet-flower-abstract-landscape-painting-a-modern-statement-piece/" style="color: #1a1a1a; text-decoration: none;">🌸 Metal Art Sheet Flower Abstract Landscape Painting – A Modern Statement Piece</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">art</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">etsy</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">my-paintings</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="a-fusion-of-metal-and-canvas">A Fusion of Metal and Canvas</h2>
-<p>Art has always been about pushing boundaries, and this <strong>Metal Art Sheet Flower Abstract …</strong></p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-20--metal-art-sheet-flower-abstract-landscape-painting-a-modern-statement-piece/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-20--metal-art-sheet-flower-abstract-landscape-painting-a-modern-statement-piece/" style="text-decoration: none; color: #333;">🌸 Metal Art Sheet Flower Abstract Landscape Painting – A Modern Statement Piece</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 20, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">A Fusion of Metal and Canvas Art has always been about pushing boundaries, and this Metal Art Sheet Flower Abstract …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-20--metal-art-sheet-flower-abstract-landscape-painting-a-modern-statement-piece/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/12/2025-12-18--celebrate-in-style-arabic-birthday-card-design-templates-on-canva-coupon-code-dec10-for-10-off-whole-store/images/1-4.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-18--celebrate-in-style-arabic-birthday-card-design-templates-on-canva-coupon-code-dec10-for-10-off-whole-store/" style="color: #1a1a1a; text-decoration: none;">🎉 Celebrate in Style: Arabic Birthday Card Design Templates on Canva- Coupon Code Dec10 for 10% off whole store</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">arabic</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">arabic-designs</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">birthday-cards</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">canva-template</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="-why-choose-arabic-birthday-card-templates">✨ Why Choose Arabic Birthday Card Templates?</h2>
-<ul>
-<li>
-<p>Cultural authenticity: Celebrate birthdays with designs that reflect …</p></li></ul></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-18--celebrate-in-style-arabic-birthday-card-design-templates-on-canva-coupon-code-dec10-for-10-off-whole-store/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-18--celebrate-in-style-arabic-birthday-card-design-templates-on-canva-coupon-code-dec10-for-10-off-whole-store/" style="text-decoration: none; color: #333;">🎉 Celebrate in Style: Arabic Birthday Card Design Templates on Canva- Coupon Code Dec10 for 10% off whole store</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 18, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">✨ Why Choose Arabic Birthday Card Templates? Cultural authenticity: Celebrate birthdays with designs that reflect Arabic …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-18--celebrate-in-style-arabic-birthday-card-design-templates-on-canva-coupon-code-dec10-for-10-off-whole-store/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/12/2025-12-16--arabic-invoice-templates-on-canva-exclusive-etsy-listing/images/image-1.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-16--arabic-invoice-templates-on-canva-exclusive-etsy-listing/" style="color: #1a1a1a; text-decoration: none;">🧾 Arabic Invoice Templates on Canva – Exclusive Etsy Listing.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">canva-template</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">etsy</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">invoice</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="why-do-you-need-arabic-invoice-templates">Why Do You Need Arabic Invoice Templates?</h2>
-<ul>
-<li>
-<p><strong>Save time and effort</strong>: No need to design invoices from scratch. Get 10 …</p></li></ul></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-16--arabic-invoice-templates-on-canva-exclusive-etsy-listing/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-16--arabic-invoice-templates-on-canva-exclusive-etsy-listing/" style="text-decoration: none; color: #333;">🧾 Arabic Invoice Templates on Canva – Exclusive Etsy Listing.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 16, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Why Do You Need Arabic Invoice Templates? Save time and effort: No need to design invoices from scratch. Get 10 …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-16--arabic-invoice-templates-on-canva-exclusive-etsy-listing/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/12/2025-12-04--grand-opening-of-ndesignstudyosu-on-etsy-your-destination-for-arabic-digital-design-products/images/1-1.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-04--grand-opening-of-ndesignstudyosu-on-etsy-your-destination-for-arabic-digital-design-products/" style="color: #1a1a1a; text-decoration: none;">🎉 Grand Opening of NDesignStudyosu on Etsy – Your Destination for Arabic Digital Design Products</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">arabic</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">etsy</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="-introduction">✨ Introduction</h2>
-<p>We are excited to announce the launch of our brand‑new Etsy store, <strong>NDesignStudyosu</strong>, where creativity …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-04--grand-opening-of-ndesignstudyosu-on-etsy-your-destination-for-arabic-digital-design-products/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-04--grand-opening-of-ndesignstudyosu-on-etsy-your-destination-for-arabic-digital-design-products/" style="text-decoration: none; color: #333;">🎉 Grand Opening of NDesignStudyosu on Etsy – Your Destination for Arabic Digital Design Products</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    December 4, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">✨ Introduction We are excited to announce the launch of our brand‑new Etsy store, NDesignStudyosu, where creativity …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/12/2025-12-04--grand-opening-of-ndesignstudyosu-on-etsy-your-destination-for-arabic-digital-design-products/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/11/2025-11-27--nomad-esim-the-ultimate-travel-connectivity-guide/images/image-8.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/11/2025-11-27--nomad-esim-the-ultimate-travel-connectivity-guide/" style="color: #1a1a1a; text-decoration: none;">🌍 Nomad eSIM: The Ultimate Travel Connectivity Guide</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">esim</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">travel</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Staying connected while traveling has never been easier. With <a href="https://go.urtrackinglink.com/aff_c?offer_id=1904&amp;aff_id=140889"><strong>Nomad eSIM</strong>,</a> you can skip the hassle of physical SIM cards …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/11/2025-11-27--nomad-esim-the-ultimate-travel-connectivity-guide/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/11/2025-11-27--nomad-esim-the-ultimate-travel-connectivity-guide/" style="text-decoration: none; color: #333;">🌍 Nomad eSIM: The Ultimate Travel Connectivity Guide</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    November 27, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Staying connected while traveling has never been easier. With Nomad eSIM, you can skip the hassle of physical SIM cards …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/11/2025-11-27--nomad-esim-the-ultimate-travel-connectivity-guide/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/11/2025-11-16-noon-11-11-sale-extended-grab-these-top-10-budget-phones-with-an-extra-15-off/images/image-4.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/11/2025-11-16-noon-11-11-sale-extended-grab-these-top-10-budget-phones-with-an-extra-15-off/" style="color: #1a1a1a; text-decoration: none;">Noon 11.11 Sale Extended! Grab These Top 10 Budget Phones with an Extra 15% Off</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">middle-east</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">noon</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">online-shopping</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">phones</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">shopping</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p><strong>Your Ultimate Guide to Smartphone Savings</strong></p>
-<p>The biggest sale of the year isn&rsquo;t over yet! <a href="https://Noon.com">Noon.com</a> has extended its …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/11/2025-11-16-noon-11-11-sale-extended-grab-these-top-10-budget-phones-with-an-extra-15-off/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/11/2025-11-16-noon-11-11-sale-extended-grab-these-top-10-budget-phones-with-an-extra-15-off/" style="text-decoration: none; color: #333;">Noon 11.11 Sale Extended! Grab These Top 10 Budget Phones with an Extra 15% Off</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    November 16, 2025 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Your Ultimate Guide to Smartphone Savings
+The biggest sale of the year isn&rsquo;t over yet! Noon.com has extended its …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/11/2025-11-16-noon-11-11-sale-extended-grab-these-top-10-budget-phones-with-an-extra-15-off/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/10/2025-10-22--the-way-of-the-heart-the-way-of-the-rubbles-nfts-that-speak-for-palestine/images/image-4.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/10/2025-10-22--the-way-of-the-heart-the-way-of-the-rubbles-nfts-that-speak-for-palestine/" style="color: #1a1a1a; text-decoration: none;">🌹 The Way of the Heart &amp;amp; The Way of the Rubbles: NFTs That Speak for Palestine</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">art</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">drawings</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">nft</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In a world where digital art meets activism, two NFTs emerge not just as visual statements—but as emotional testaments …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/10/2025-10-22--the-way-of-the-heart-the-way-of-the-rubbles-nfts-that-speak-for-palestine/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/10/2025-10-22--the-way-of-the-heart-the-way-of-the-rubbles-nfts-that-speak-for-palestine/" style="text-decoration: none; color: #333;">🌹 The Way of the Heart &amp;amp; The Way of the Rubbles: NFTs That Speak for Palestine</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    October 22, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In a world where digital art meets activism, two NFTs emerge not just as visual statements—but as emotional testaments …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/10/2025-10-22--the-way-of-the-heart-the-way-of-the-rubbles-nfts-that-speak-for-palestine/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/10/2025-10-19-celebrate-diwali-with-dyson-uae-exclusive-offers-extra-5-off-with-code-ff/images/image-3.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/10/2025-10-19-celebrate-diwali-with-dyson-uae-exclusive-offers-extra-5-off-with-code-ff/" style="color: #1a1a1a; text-decoration: none;">Celebrate Diwali with Dyson UAE: Exclusive Offers &#43; Extra 5% Off with Code &#34;FF&#34;!</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">dyson</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">hair</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">hair-styling</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Dyson UAE is lighting up Diwali 2025 with dazzling discounts on its most innovative products—from powerful cordless …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/10/2025-10-19-celebrate-diwali-with-dyson-uae-exclusive-offers-extra-5-off-with-code-ff/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/10/2025-10-19-celebrate-diwali-with-dyson-uae-exclusive-offers-extra-5-off-with-code-ff/" style="text-decoration: none; color: #333;">Celebrate Diwali with Dyson UAE: Exclusive Offers &#43; Extra 5% Off with Code &#34;FF&#34;!</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    October 19, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Dyson UAE is lighting up Diwali 2025 with dazzling discounts on its most innovative products—from powerful cordless …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/10/2025-10-19-celebrate-diwali-with-dyson-uae-exclusive-offers-extra-5-off-with-code-ff/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/09/2025-09-19-%EF%B8%8F-why-aliexpress-is-a-shoppers-paradise-affordable-finds-top-selling-categories/images/image-13.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-19-%EF%B8%8F-why-aliexpress-is-a-shoppers-paradise-affordable-finds-top-selling-categories/" style="color: #1a1a1a; text-decoration: none;">🛍️ Why AliExpress Is a Shopper’s Paradise: Affordable Finds &amp;amp; Top-Selling Categories.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">e-commerce</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">fashion</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">shipping</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p><a href="https://go.urtrackinglink.com/aff_c?offer_id=743&amp;aff_id=140889">AliExpress</a> has become a global go-to for savvy shoppers looking to score unbeatable deals on everything from tech …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-19-%EF%B8%8F-why-aliexpress-is-a-shoppers-paradise-affordable-finds-top-selling-categories/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-19-%EF%B8%8F-why-aliexpress-is-a-shoppers-paradise-affordable-finds-top-selling-categories/" style="text-decoration: none; color: #333;">🛍️ Why AliExpress Is a Shopper’s Paradise: Affordable Finds &amp;amp; Top-Selling Categories.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 19, 2025 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">AliExpress has become a global go-to for savvy shoppers looking to score unbeatable deals on everything from tech …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-19-%EF%B8%8F-why-aliexpress-is-a-shoppers-paradise-affordable-finds-top-selling-categories/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/09/2025-09-11--transcending-death-through-art-rumis-any-soul-that-drank-the-nectar-reimagined-as-nft/images/image-9.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-11--transcending-death-through-art-rumis-any-soul-that-drank-the-nectar-reimagined-as-nft/" style="color: #1a1a1a; text-decoration: none;">🌿 Transcending Death Through Art: Rumi’s “Any Soul That Drank the Nectar” Reimagined as NFT.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">nft</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In a world saturated with fleeting visuals, true art whispers to the soul. Our latest NFT release, inspired by Mewlana …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-11--transcending-death-through-art-rumis-any-soul-that-drank-the-nectar-reimagined-as-nft/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-11--transcending-death-through-art-rumis-any-soul-that-drank-the-nectar-reimagined-as-nft/" style="text-decoration: none; color: #333;">🌿 Transcending Death Through Art: Rumi’s “Any Soul That Drank the Nectar” Reimagined as NFT.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 11, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In a world saturated with fleeting visuals, true art whispers to the soul. Our latest NFT release, inspired by Mewlana …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-11--transcending-death-through-art-rumis-any-soul-that-drank-the-nectar-reimagined-as-nft/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/images/image-6.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/" style="color: #1a1a1a; text-decoration: none;">🌐 From Dreamer to Digital Creator: How SitesGPT Empowers Non-Techies to Build Stunning Websites.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">custom-designs</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">design</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">web-hosting</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">website</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h2 id="-meet-layla-the-dreamer-who-thought-she-couldnt-build-a-website">✨ Meet Layla: The Dreamer Who Thought She Couldn’t Build a Website</h2>
-<p>Layla always had a vision. A small online shop …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/" style="text-decoration: none; color: #333;">🌐 From Dreamer to Digital Creator: How SitesGPT Empowers Non-Techies to Build Stunning Websites.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 9, 2025 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">✨ Meet Layla: The Dreamer Who Thought She Couldn’t Build a Website Layla always had a vision. A small online shop …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--from-dreamer-to-digital-creator-how-sitesgpt-empowers-non-techies-to-build-stunning-websites/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/09/2025-09-09--at-the-twilight-a-soulful-nft-inspired-by-rumis-mystical-verse/images/image-7.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--at-the-twilight-a-soulful-nft-inspired-by-rumis-mystical-verse/" style="color: #1a1a1a; text-decoration: none;">🌙 At The Twilight: A Soulful NFT Inspired by Rumi’s Mystical Verse.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">nft</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><h3 id="-introduction-where-poetry-meets-the-blockchain">✨ Introduction: Where Poetry Meets the Blockchain</h3>
-<p>In a world increasingly digitized, the soul still seeks meaning. …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--at-the-twilight-a-soulful-nft-inspired-by-rumis-mystical-verse/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--at-the-twilight-a-soulful-nft-inspired-by-rumis-mystical-verse/" style="text-decoration: none; color: #333;">🌙 At The Twilight: A Soulful NFT Inspired by Rumi’s Mystical Verse.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 9, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">✨ Introduction: Where Poetry Meets the Blockchain In a world increasingly digitized, the soul still seeks meaning. …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-09--at-the-twilight-a-soulful-nft-inspired-by-rumis-mystical-verse/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/09/2025-09-07--mirror-as-nft-truth-reflection-and-the-eye-of-a-digital-spirit/images/image-4.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-07--mirror-as-nft-truth-reflection-and-the-eye-of-a-digital-spirit/" style="color: #1a1a1a; text-decoration: none;">🪞 &#34;Mirror&#34; as NFT: Truth, Reflection, and the Eye of a Digital Spirit.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">nft</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In a world obsessed with filters and curated realities, the mirror remains one of the few objects that refuses to lie. …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-07--mirror-as-nft-truth-reflection-and-the-eye-of-a-digital-spirit/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-07--mirror-as-nft-truth-reflection-and-the-eye-of-a-digital-spirit/" style="text-decoration: none; color: #333;">🪞 &#34;Mirror&#34; as NFT: Truth, Reflection, and the Eye of a Digital Spirit.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 7, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In a world obsessed with filters and curated realities, the mirror remains one of the few objects that refuses to lie. …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/09/2025-09-07--mirror-as-nft-truth-reflection-and-the-eye-of-a-digital-spirit/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/08/2025-08-29--breathing-digital-life-into-rumi-my-nft-tribute-to-any-lifetime/images/image-10.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-29--breathing-digital-life-into-rumi-my-nft-tribute-to-any-lifetime/" style="color: #1a1a1a; text-decoration: none;">🔮 Breathing Digital Life into Rumi: My NFT Tribute to “Any Lifetime”.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">nft</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In a world increasingly shaped by pixels and blockchain, I wanted to create something that transcends the digital — …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-29--breathing-digital-life-into-rumi-my-nft-tribute-to-any-lifetime/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-29--breathing-digital-life-into-rumi-my-nft-tribute-to-any-lifetime/" style="text-decoration: none; color: #333;">🔮 Breathing Digital Life into Rumi: My NFT Tribute to “Any Lifetime”.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    August 29, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In a world increasingly shaped by pixels and blockchain, I wanted to create something that transcends the digital — …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-29--breathing-digital-life-into-rumi-my-nft-tribute-to-any-lifetime/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/08/2025-08-28--what-is-lead-generation-the-best-free-tool-to-supercharge-your-marketing/images/image-9.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-28--what-is-lead-generation-the-best-free-tool-to-supercharge-your-marketing/" style="color: #1a1a1a; text-decoration: none;">🚀 What Is Lead Generation &amp;amp; The Best Free Tool to Supercharge Your Marketing.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">email</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">lead-generation</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">marketing-automation</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In today’s hyper-competitive digital landscape, one challenge haunts every business owner, marketer, and sales …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-28--what-is-lead-generation-the-best-free-tool-to-supercharge-your-marketing/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-28--what-is-lead-generation-the-best-free-tool-to-supercharge-your-marketing/" style="text-decoration: none; color: #333;">🚀 What Is Lead Generation &amp;amp; The Best Free Tool to Supercharge Your Marketing.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    August 28, 2025 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In today’s hyper-competitive digital landscape, one challenge haunts every business owner, marketer, and sales …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-28--what-is-lead-generation-the-best-free-tool-to-supercharge-your-marketing/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/images/image-4.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/" style="color: #1a1a1a; text-decoration: none;">🚀 Most Popular AI Prompts That Boost Business Creativity in Marketing.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">marketing</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In today’s fast-paced digital landscape, creativity is the lifeblood of successful marketing. But even the most …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/" style="text-decoration: none; color: #333;">🚀 Most Popular AI Prompts That Boost Business Creativity in Marketing.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    August 17, 2025 · 4 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In today’s fast-paced digital landscape, creativity is the lifeblood of successful marketing. But even the most …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/08/2025-08-17--most-popular-ai-prompts-that-boost-business-creativity-in-marketing/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/06/2025-06-04-the-ultimate-guide-to-the-best-laptops-in-the-middle-east-2025/images/image.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/06/2025-06-04-the-ultimate-guide-to-the-best-laptops-in-the-middle-east-2025/" style="color: #1a1a1a; text-decoration: none;">The Ultimate Guide to the Best Laptops in the Middle East (2025).</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">laptops</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Welcome back to our blog, we took a time off to finish our studies. In this blog post we have prepared for you a …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/06/2025-06-04-the-ultimate-guide-to-the-best-laptops-in-the-middle-east-2025/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/06/2025-06-04-the-ultimate-guide-to-the-best-laptops-in-the-middle-east-2025/" style="text-decoration: none; color: #333;">The Ultimate Guide to the Best Laptops in the Middle East (2025).</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    June 4, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Welcome back to our blog, we took a time off to finish our studies. In this blog post we have prepared for you a …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/06/2025-06-04-the-ultimate-guide-to-the-best-laptops-in-the-middle-east-2025/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/04/2025-04-07-latest-months-artwork-by-nemah/images/whatsapp-image-2025-04-07-at-8.00.40-pm.jpeg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/04/2025-04-07-latest-months-artwork-by-nemah/" style="color: #1a1a1a; text-decoration: none;">Latest Months artwork by nemah;</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">my-paintings</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Hello to all my new followers of my blog, in this post I will share with you the latest paintings I have been working on …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/04/2025-04-07-latest-months-artwork-by-nemah/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/04/2025-04-07-latest-months-artwork-by-nemah/" style="text-decoration: none; color: #333;">Latest Months artwork by nemah;</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    April 7, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Hello to all my new followers of my blog, in this post I will share with you the latest paintings I have been working on …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/04/2025-04-07-latest-months-artwork-by-nemah/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/images/abstract-seasells.jpeg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/" style="color: #1a1a1a; text-decoration: none;">🌟 Discover Unique Treasures at My Dolap Mini Store! 🌟</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">dolap</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Are you on the hunt for one-of-a-kind art, creative coloring books, stylish clothing, or high-quality cosmetics? Look no …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/" style="text-decoration: none; color: #333;">🌟 Discover Unique Treasures at My Dolap Mini Store! 🌟</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 27, 2025 · 2 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Are you on the hunt for one-of-a-kind art, creative coloring books, stylish clothing, or high-quality cosmetics? Look no …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-27--discover-unique-treasures-at-my-dolap-mini-store-/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/03/2025-03-23-discover-timeless-elegance-two-exceptional-rings-inspired-by-history-and-prophecy-my-artful-journey-through-the-historic-district-of-european-istanbul/images/img_8666.jpg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-23-discover-timeless-elegance-two-exceptional-rings-inspired-by-history-and-prophecy-my-artful-journey-through-the-historic-district-of-european-istanbul/" style="color: #1a1a1a; text-decoration: none;">Discover timeless elegance: two exceptional rings inspired by history and prophecy, my artful journey through the historic district of European Istanbul.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">jewelry</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In the name of God, the Most Gracious, the Most Merciful. We begin today&rsquo;s article with a journey through the …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-23-discover-timeless-elegance-two-exceptional-rings-inspired-by-history-and-prophecy-my-artful-journey-through-the-historic-district-of-european-istanbul/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-23-discover-timeless-elegance-two-exceptional-rings-inspired-by-history-and-prophecy-my-artful-journey-through-the-historic-district-of-european-istanbul/" style="text-decoration: none; color: #333;">Discover timeless elegance: two exceptional rings inspired by history and prophecy, my artful journey through the historic district of European Istanbul.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 23, 2025 · 5 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In the name of God, the Most Gracious, the Most Merciful. We begin today&rsquo;s article with a journey through the …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-23-discover-timeless-elegance-two-exceptional-rings-inspired-by-history-and-prophecy-my-artful-journey-through-the-historic-district-of-european-istanbul/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/03/2025-03-22-a-taste-of-istanbuls-maritime-heritage-my-kumkapi-balik-pazari-adventure/images/img_8695-1.jpg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-22-a-taste-of-istanbuls-maritime-heritage-my-kumkapi-balik-pazari-adventure/" style="color: #1a1a1a; text-decoration: none;">A Taste of Istanbul’s Maritime Heritage: My Kumkapı Balık Pazarı Adventure;</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">kitchen</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Nestled along the Marmara Sea in the heart of Istanbul, the <strong>Kumkapı Balık Pazarı</strong> (Kumkapı Fish Market) is more than just …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-22-a-taste-of-istanbuls-maritime-heritage-my-kumkapi-balik-pazari-adventure/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-22-a-taste-of-istanbuls-maritime-heritage-my-kumkapi-balik-pazari-adventure/" style="text-decoration: none; color: #333;">A Taste of Istanbul’s Maritime Heritage: My Kumkapı Balık Pazarı Adventure;</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 22, 2025 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Nestled along the Marmara Sea in the heart of Istanbul, the Kumkapı Balık Pazarı (Kumkapı Fish Market) is more than just …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-22-a-taste-of-istanbuls-maritime-heritage-my-kumkapi-balik-pazari-adventure/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/03/2025-03-15-discover-the-timeless-art-of-crochet-with-wedad-kn-a-journey-through-history-techniques-and-creativity/images/whatsapp-image-2025-03-07-at-1.47.13-pm.jpeg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-15-discover-the-timeless-art-of-crochet-with-wedad-kn-a-journey-through-history-techniques-and-creativity/" style="color: #1a1a1a; text-decoration: none;">Discover the Timeless Art of Crochet with Wedad Kn.: A Journey Through History, Techniques, and Creativity.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">feature</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Crochet is more than just a craft—it’s a timeless art form that weaves together history, culture, and creativity. If …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-15-discover-the-timeless-art-of-crochet-with-wedad-kn-a-journey-through-history-techniques-and-creativity/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-15-discover-the-timeless-art-of-crochet-with-wedad-kn-a-journey-through-history-techniques-and-creativity/" style="text-decoration: none; color: #333;">Discover the Timeless Art of Crochet with Wedad Kn.: A Journey Through History, Techniques, and Creativity.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 15, 2025 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Crochet is more than just a craft—it’s a timeless art form that weaves together history, culture, and creativity. If …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-15-discover-the-timeless-art-of-crochet-with-wedad-kn-a-journey-through-history-techniques-and-creativity/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/03/2025-03-07-order-your-custom-stickers-today/images/thank-you-army.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-07-order-your-custom-stickers-today/" style="color: #1a1a1a; text-decoration: none;">Order your custom stickers today.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">sticker</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>This is Nemah of NDesignstudio the author of this blog: Here is my today&rsquo;s message:</p>
-<p>Elevate your brand, …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-07-order-your-custom-stickers-today/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-07-order-your-custom-stickers-today/" style="text-decoration: none; color: #333;">Order your custom stickers today.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 7, 2025 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">This is Nemah of NDesignstudio the author of this blog: Here is my today&rsquo;s message:
+Elevate your brand, …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-07-order-your-custom-stickers-today/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/03/2025-03-07-unlock-the-magic-of-your-special-day-with-nemahs-custom-wedding-invites-by-ndesignstudio/images/ndesignstudio-1-wedding-invite.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-07-unlock-the-magic-of-your-special-day-with-nemahs-custom-wedding-invites-by-ndesignstudio/" style="color: #1a1a1a; text-decoration: none;">Unlock the Magic of Your Special Day with Nemah’s Custom Wedding Invites by NDesignstudio!</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">custom-designs</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>Your wedding day is a once-in-a-lifetime celebration, and every detail should reflect the love, joy, and uniqueness of …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-07-unlock-the-magic-of-your-special-day-with-nemahs-custom-wedding-invites-by-ndesignstudio/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-07-unlock-the-magic-of-your-special-day-with-nemahs-custom-wedding-invites-by-ndesignstudio/" style="text-decoration: none; color: #333;">Unlock the Magic of Your Special Day with Nemah’s Custom Wedding Invites by NDesignstudio!</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 7, 2025 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">Your wedding day is a once-in-a-lifetime celebration, and every detail should reflect the love, joy, and uniqueness of …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-07-unlock-the-magic-of-your-special-day-with-nemahs-custom-wedding-invites-by-ndesignstudio/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2025/03/2025-03-06-these-handmade-friendship-bracelets-are-taking-over-istanbul-2025/images/whatsapp-image-2025-03-07-at-00.20.12_b3bb3cf3.jpg" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-06-these-handmade-friendship-bracelets-are-taking-over-istanbul-2025/" style="color: #1a1a1a; text-decoration: none;">These Handmade Friendship Bracelets Are Taking Over Istanbul 2025!</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">friendship-bracelets</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In a world that often feels vast and disconnected, NDesignstudio brings people closer together—one bracelet at a time. …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-06-these-handmade-friendship-bracelets-are-taking-over-istanbul-2025/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-06-these-handmade-friendship-bracelets-are-taking-over-istanbul-2025/" style="text-decoration: none; color: #333;">These Handmade Friendship Bracelets Are Taking Over Istanbul 2025!</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 6, 2025 · 3 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In a world that often feels vast and disconnected, NDesignstudio brings people closer together—one bracelet at a time. …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2025/03/2025-03-06-these-handmade-friendship-bracelets-are-taking-over-istanbul-2025/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2024/10/2024-10-31-october-monthly-drawings-review/images/alhamd-sketch.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2024/10/2024-10-31-october-monthly-drawings-review/" style="color: #1a1a1a; text-decoration: none;">October Monthly Drawings Review.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">review</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In this post, we will review the drawings produced by NDesignstudio for the month of October.</p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/alhamd-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/circular-mosque-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-circular-mosque-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-crystal-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/crystals-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/walnut-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-walnut-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-cactus-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/cactus-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/baby-yoda-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-baby-yoda-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-cute-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/cute-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-girl-line-art.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/girl-line-art.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-flower-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/flower-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-ice-cream-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/ice-cream-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/colored-lotus-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/lotus-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/lotous-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/lotous-sketch-1.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/lake-hut-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/whimsical-night-sketch.png?w=518" alt=""></p>
-<p><img src="https://ndesignstudyosu.com/wp-content/uploads/2024/10/whatsapp-image-2024-10-31-at-11.07.58-am.jpeg?w=721" alt=""></p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2024/10/2024-10-31-october-monthly-drawings-review/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2024/10/2024-10-31-october-monthly-drawings-review/" style="text-decoration: none; color: #333;">October Monthly Drawings Review.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    October 31, 2024 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In this post, we will review the drawings produced by NDesignstudio for the month of October.
+</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2024/10/2024-10-31-october-monthly-drawings-review/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2024/09/2024-09-25-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/images/d8b3d8aad988d8afd98ad988-d986d988d986.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2024/09/2024-09-25-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="color: #1a1a1a; text-decoration: none;">مرحبا بكم بصفحة مدونة ستوديو نون باللغة العربية.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">arabic</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>مرحبًا بكم في <strong>ستوديو نون للتصميم</strong>!</p>
-<p>نحن هنا لنأخذكم في رحلة ملهمة إلى عالم <strong>التسويق بالعمولة</strong> بطريقة مبتكرة وسلسة. سواء كنت …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2024/09/2024-09-25-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2024/09/2024-09-25-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="text-decoration: none; color: #333;">مرحبا بكم بصفحة مدونة ستوديو نون باللغة العربية.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    September 25, 2024 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">مرحبًا بكم في ستوديو نون للتصميم!
+نحن هنا لنأخذكم في رحلة ملهمة إلى عالم التسويق بالعمولة بطريقة مبتكرة وسلسة. سواء كنت …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2024/09/2024-09-25-%D9%85%D8%B1%D8%AD%D8%A8%D8%A7-%D8%A8%D9%83%D9%85-%D8%A8%D8%B5%D9%81%D8%AD%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88-%D9%86%D9%88%D9%86-%D8%A8%D8%A7%D9%84%D9%84%D8%BA/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2024/08/2024-08-30-review-of-ndesignstudios-drawings-of-the-month-of-august/images/bee-sketch.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2024/08/2024-08-30-review-of-ndesignstudios-drawings-of-the-month-of-august/" style="color: #1a1a1a; text-decoration: none;">Review of NDesignStudio&#39;s Drawings of the Month of August.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">design</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">review</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In this article I will post the drawings I made in the month of august, created by the journalist app. Thank you for …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2024/08/2024-08-30-review-of-ndesignstudios-drawings-of-the-month-of-august/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2024/08/2024-08-30-review-of-ndesignstudios-drawings-of-the-month-of-august/" style="text-decoration: none; color: #333;">Review of NDesignStudio&#39;s Drawings of the Month of August.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    August 30, 2024 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In this article I will post the drawings I made in the month of august, created by the journalist app. Thank you for …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2024/08/2024-08-30-review-of-ndesignstudios-drawings-of-the-month-of-august/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2024/07/2024-07-26-exploring-the-journalist-app-for-windows-a-comprehensive-review/images/bird-and-rose-colored-sketch.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2024/07/2024-07-26-exploring-the-journalist-app-for-windows-a-comprehensive-review/" style="color: #1a1a1a; text-decoration: none;">Exploring the Journalist App for Windows: A Comprehensive Review.</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">design</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">review</span>
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">software</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p>In the ever-evolving landscape of digital journalism, tools that streamline the writing, editing, and publishing process …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2024/07/2024-07-26-exploring-the-journalist-app-for-windows-a-comprehensive-review/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2024/07/2024-07-26-exploring-the-journalist-app-for-windows-a-comprehensive-review/" style="text-decoration: none; color: #333;">Exploring the Journalist App for Windows: A Comprehensive Review.</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    July 26, 2024 · 4 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">In the ever-evolving landscape of digital journalism, tools that streamline the writing, editing, and publishing process …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2024/07/2024-07-26-exploring-the-journalist-app-for-windows-a-comprehensive-review/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2024/03/2024-03-10-how-to-create-design-brief-for-design-project-made-for-production/images/chair-design-.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-how-to-create-design-brief-for-design-project-made-for-production/" style="color: #1a1a1a; text-decoration: none;">How to Create Design Brief for Design Project Made for Production;</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-              <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;">design</span>
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p><img src="https://ndesignstudyosu.wordpress.com/wp-content/uploads/2024/03/design-brief.png?w=500" alt=""></p>
-<p>In today&rsquo;s post I will share with you how to create a design brief to participate in international competition …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-how-to-create-design-brief-for-design-project-made-for-production/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-how-to-create-design-brief-for-design-project-made-for-production/" style="text-decoration: none; color: #333;">How to Create Design Brief for Design Project Made for Production;</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 10, 2024 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">
+In today&rsquo;s post I will share with you how to create a design brief to participate in international competition …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-how-to-create-design-brief-for-design-project-made-for-production/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
-      <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
         
-        
-          
-        
-        
-          <img src="../../en/posts/2024/03/2024-03-10-welcome-to-n-design-studyosu/images/new-ndesignstudio-logo.png" alt="Posts" style="width: 100%; height: 220px; object-fit: cover;">
-        
-        <div style="padding: 24px;">
-          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.35rem; margin-bottom: 12px;">
-            <a href="https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-welcome-to-n-design-studyosu/" style="color: #1a1a1a; text-decoration: none;">Welcome to N Design Studyosu;</a>
-          </h2>
-          <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            
-          </div>
-          <p style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 20px;"><p><img src="https://ndesignstudyosu.wordpress.com/wp-content/uploads/2024/03/new-ndesignstudio-logo.png?w=500" alt=""></p>
-<p>At NDesignStudio &amp; Affiliate Partners, we work with you to optimize your business from the top down. As an …</p></p>
-          <a href="https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-welcome-to-n-design-studyosu/" style="color: #d10000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; display: inline-flex; align-items: center; gap: 8px;">Read More <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+        <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+            <div style="padding: 25px;">
+                <h2 style="font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4;">
+                    <a href="https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-welcome-to-n-design-studyosu/" style="text-decoration: none; color: #333;">Welcome to N Design Studyosu;</a>
+                </h2>
+                <div style="color: #888; font-size: 0.85rem; margin-bottom: 15px;">
+                    March 10, 2024 · 1 min read
+                </div>
+                <p style="color: #555; line-height: 1.6; margin-bottom: 20px;">
+At NDesignStudio &amp; Affiliate Partners, we work with you to optimize your business from the top down. As an …</p>
+                <a href="https://ndesignstudyosu.com.tr/en/posts/2024/03/2024-03-10-welcome-to-n-design-studyosu/" style="color: #667eea; text-decoration: none; font-weight: 500;">Read More →</a>
+            </div>
         </div>
-      </div>
-      
+        
     </div>
-  </div>
-</section>
+</div>
 
     </main>
+    <footer>
+        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
