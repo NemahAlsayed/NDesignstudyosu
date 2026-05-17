@@ -1,0 +1,159 @@
+@import "../variables";
+
+/* ============================================
+   MAGAZINE POST CARD — N DESIGN STUDIO
+============================================ */
+
+.nds-post-card {
+  display: flex;
+  background: var(--card-bg);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba($anthracite, 0.15);
+  box-shadow: 0 4px 20px rgba($anthracite, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 28px rgba($anthracite, 0.15);
+  }
+}
+
+/* ============================================
+   LEFT IMAGE
+============================================ */
+
+.nds-post-image {
+  width: 40%;
+  min-height: 220px;
+  max-height: 260px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================
+   RIGHT CONTENT
+============================================ */
+
+.nds-post-content {
+  width: 60%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Title */
+.nds-post-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  color: $anthracite;
+  line-height: 1.3;
+
+  a {
+    color: $anthracite;
+    text-decoration: none;
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+/* Meta */
+.nds-post-meta {
+  font-size: 0.85rem;
+  color: rgba($raw-umber, 0.8);
+  letter-spacing: 0.03em;
+}
+
+/* Excerpt */
+.nds-post-excerpt {
+  color: $raw-umber;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+/* Read More */
+.nds-readmore-btn {
+  margin-top: 12px;
+  align-self: flex-start;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: $gold;
+  color: $anthracite;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba($gold, 0.4);
+  }
+}
+
+/* ============================================
+   TAGS (optional)
+============================================ */
+
+.nds-post-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nds-tag {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba($gold, 0.15);
+  color: $anthracite;
+  font-size: 0.75rem;
+  border: 1px solid rgba($gold, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $gold;
+    color: $anthracite;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE STACKED
+============================================ */
+
+@media (max-width: 768px) {
+  .nds-post-card {
+    flex-direction: column;
+  }
+
+  .nds-post-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .nds-post-content {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .nds-post-title {
+    font-size: 1.3rem;
+  }
+}

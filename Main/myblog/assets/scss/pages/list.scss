@@ -1,1 +1,115 @@
-// List page styles
+@import "../variables";
+
+/* ============================================
+   LIST PAGE — N DESIGN STUDIO (MAGAZINE STYLE)
+============================================ */
+
+.nds-list-section {
+  padding: 100px 0;
+  background: var(--bg);
+}
+
+/* ============================================
+   PAGE TITLE
+============================================ */
+
+.nds-list-title {
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: $anthracite;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    font-size: 2.2rem;
+  }
+
+  &::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: $gold;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+}
+
+/* ============================================
+   POST CARD (GRID ITEM)
+============================================ */
+
+.nds-list-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 32px;
+  border: 1px solid rgba($anthracite, 0.12);
+  box-shadow: 0 4px 20px rgba($anthracite, 0.08);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 28px rgba($anthracite, 0.15);
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px;
+  }
+}
+
+/* ============================================
+   CARD TITLE
+============================================ */
+
+.nds-list-card-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+
+  a {
+    color: $anthracite;
+    text-decoration: none;
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+/* ============================================
+   EXCERPT
+============================================ */
+
+.nds-list-card-excerpt {
+  color: $raw-umber;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ============================================
+   READ MORE BUTTON
+============================================ */
+
+.nds-list-readmore {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: $gold;
+  color: $anthracite;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba($gold, 0.4);
+  }
+}

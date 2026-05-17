@@ -1,9 +1,10 @@
-// ============================================
-// Base Styles & Reset
-// ============================================
+@import "variables";
 
-@import 'variables';
+/* ============================================
+   BASE RESET & GLOBAL STYLES — N DESIGN STUDIO
+============================================ */
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -14,99 +15,111 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 
-  @media (max-width: $tablet) {
+  @media (max-width: 768px) {
     font-size: 14px;
   }
 }
 
 body {
-  font-family: $font-serif;
-  background: $dark-bg;
-  color: $text-light;
+  font-family: $font-main;
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.7;
   overflow-x: hidden;
   min-height: 100vh;
 }
 
+/* Text Selection */
 ::selection {
-  background: $vibrant-red;
-  color: $white;
+  background: $gold;
+  color: $anthracite;
 }
 
 ::-moz-selection {
-  background: $vibrant-red;
-  color: $white;
+  background: $gold;
+  color: $anthracite;
 }
 
-/* Typography */
+/* ============================================
+   TYPOGRAPHY
+============================================ */
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-sans;
+  font-family: $font-main;
   font-weight: 300;
-  letter-spacing: 0.08em;
-  margin-bottom: $spacing-md;
-  line-height: 1.3;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  color: $anthracite;
 }
 
 h1 {
   font-size: 3rem;
-  background: $gradient-crimson;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: $anthracite;
 
-  @media (max-width: $tablet) {
+  @media (max-width: 768px) {
     font-size: 2.2rem;
   }
 }
 
 h2 {
   font-size: 2rem;
-  color: $vibrant-red;
+  color: $raw-umber;
 
-  @media (max-width: $tablet) {
-    font-size: 1.6rem;
+  @media (max-width: 768px) {
+    font-size: 1.7rem;
   }
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: $anthracite;
 }
 
-/* Links */
+/* ============================================
+   LINKS
+============================================ */
+
 a {
-  color: $vibrant-red;
+  color: $raw-umber;
   text-decoration: none;
-  transition: color $transition-fast;
+  transition: color 0.25s ease;
 
   &:hover {
-    color: $electric-crimson;
+    color: $gold;
   }
 }
 
-/* Container */
+/* ============================================
+   CONTAINER
+============================================ */
+
 .container {
-  max-width: $container-max;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 $spacing-lg;
+  padding: 0 30px;
 
-  @media (max-width: $tablet) {
-    padding: 0 $spacing-md;
+  @media (max-width: 768px) {
+    padding: 0 20px;
   }
 }
 
-/* Buttons */
+/* ============================================
+   BUTTONS
+============================================ */
+
 .btn {
   display: inline-block;
-  padding: $spacing-sm $spacing-xl;
+  padding: 12px 32px;
   border-radius: 40px;
-  font-family: $font-sans;
+  font-family: $font-main;
   font-weight: 500;
   text-decoration: none;
-  transition: all $transition-normal;
+  transition: all 0.3s ease;
   cursor: pointer;
   border: none;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
 
   &:hover {
     transform: translateY(-2px);
@@ -114,39 +127,42 @@ a {
 }
 
 .btn-primary {
-  background: $gradient-crimson;
-  color: $white;
+  background: $gold;
+  color: $anthracite;
 
   &:hover {
-    box-shadow: $shadow-glow;
+    box-shadow: 0 0 20px rgba($gold, 0.4);
   }
 }
 
 .btn-secondary {
   background: transparent;
-  border: 2px solid $vibrant-red;
-  color: $vibrant-red;
+  border: 2px solid $gold;
+  color: $gold;
 
   &:hover {
-    background: $vibrant-red;
-    color: $white;
+    background: $gold;
+    color: $anthracite;
   }
 }
 
-/* Scrollbar */
+/* ============================================
+   SCROLLBAR
+============================================ */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: $surface-dark;
+  background: $timberwolf;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $vibrant-red;
+  background: $gold;
   border-radius: 4px;
 
   &:hover {
-    background: $electric-crimson;
+    background: darken($gold, 10%);
   }
 }

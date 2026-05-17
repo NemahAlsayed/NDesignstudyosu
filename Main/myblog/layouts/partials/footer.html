@@ -1,60 +1,18 @@
 <footer class="nds-footer">
 
-  <!-- Social Icons -->
-  {{ if .Site.Params.socials.enabled }}
-  <div class="nds-footer-social">
-    {{ range .Site.Params.socials.link }}
-      <a href="{{ .link }}" class="nds-footer-icon">
-        <i class="bi bi-{{ .name }}"></i>
-      </a>
-    {{ end }}
-  </div>
-
-  <!-- Tagline -->
   <p class="nds-footer-tagline">
-    {{ .Site.Params.footer.tagline | default "Creative Design for Purposeful Impact" }}
+    Creative Design for Purposeful Impact.
   </p>
-  {{ end }}
 
-  <!-- Contact Info -->
-  {{ if .Site.Params.footer.contacts.enabled }}
-  <div class="nds-footer-contact">
-
-    {{ with .Site.Params.footer.contacts.mail }}
-    <p>
-      <i class="bi bi-envelope"></i>
-      <a href="mailto:{{ . }}">{{ . }}</a>
-    </p>
-    {{ end }}
-
-    {{ with .Site.Params.footer.contacts.phone }}
-    <p>
-      <i class="bi bi-telephone"></i>
-      <a href="callto:{{ . }}">{{ . }}</a>
-    </p>
-    {{ end }}
-
+  <div class="nds-footer-social">
+    <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
   </div>
-  {{ end }}
 
-  <!-- Business Hours -->
-  {{ if .Site.Params.schedules.enabledFooter }}
-  <div class="nds-footer-hours">
-    {{ range .Site.Params.schedules.days }}
-      <div>{{ . }}</div>
-    {{ end }}
-  </div>
-  {{ end }}
-
-  <!-- Conditional Popup -->
-  {{ if and .IsPage (strings.Contains .File.Path "06-05-2026-L'occitane-Coupon") }}
-    <link rel="stylesheet" href="{{ "popup/popup.css" | relURL }}">
-    <script src="{{ "popup/popup.js" | relURL }}"></script>
-  {{ end }}
-
-  <!-- Copyright -->
-  <div class="nds-footer-copy">
-    <p>{{ .Site.Copyright | markdownify }}</p>
-  </div>
+  <p class="nds-footer-copy">
+    © 2026 N Design Studio — All Rights Reserved.
+  </p>
 
 </footer>
+

@@ -1,0 +1,125 @@
+/* ============================================
+   ANIMATIONS — N DESIGN STUDIO
+   Smooth • Elegant • GPU Accelerated
+============================================ */
+
+@import "variables";
+
+/* --------------------------------------------
+   BASE TRANSITION TOKEN
+-------------------------------------------- */
+:root {
+  --nds-transition: 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* --------------------------------------------
+   FADE IN
+-------------------------------------------- */
+@keyframes nds-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.nds-fade-in {
+  opacity: 0;
+  animation: nds-fade-in var(--nds-transition) forwards;
+}
+
+/* --------------------------------------------
+   SLIDE UP
+-------------------------------------------- */
+@keyframes nds-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nds-slide-up {
+  opacity: 0;
+  animation: nds-slide-up var(--nds-transition) forwards;
+}
+
+/* --------------------------------------------
+   SLIDE LEFT
+-------------------------------------------- */
+@keyframes nds-slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nds-slide-left {
+  opacity: 0;
+  animation: nds-slide-left var(--nds-transition) forwards;
+}
+
+/* --------------------------------------------
+   SLIDE RIGHT
+-------------------------------------------- */
+@keyframes nds-slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nds-slide-right {
+  opacity: 0;
+  animation: nds-slide-right var(--nds-transition) forwards;
+}
+
+/* --------------------------------------------
+   ZOOM IN (Soft)
+-------------------------------------------- */
+@keyframes nds-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.nds-zoom-in {
+  opacity: 0;
+  animation: nds-zoom-in var(--nds-transition) forwards;
+}
+
+/* --------------------------------------------
+   REVEAL ON SCROLL (Intersection Observer)
+-------------------------------------------- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------
+   DELAY UTILITIES
+-------------------------------------------- */
+.nds-delay-1 { animation-delay: 0.1s; }
+.nds-delay-2 { animation-delay: 0.2s; }
+.nds-delay-3 { animation-delay: 0.3s; }
+.nds-delay-4 { animation-delay: 0.4s; }
+.nds-delay-5 { animation-delay: 0.5s; }

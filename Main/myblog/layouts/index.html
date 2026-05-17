@@ -1,17 +1,81 @@
 {{ define "main" }}
-    <div style="text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; color: white; margin-bottom: 3rem;">
-        <h1 style="font-size: 3rem; margin-bottom: 1rem;">{{ .Site.Title }}</h1>
-        <p style="font-size: 1.2rem; opacity: 0.9;">Creative Design for Purposeful Impact</p>
-    </div>
+
+<!-- ============================================
+     HERO SECTION (Video)
+============================================ -->
+<section class="nds-hero-video">
+    <video autoplay muted loop playsinline class="nds-hero-video-bg">
+        <source src="/videos/hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay">
+    <img src="/images/Slogan.png" alt="Slogan" class="hero-logo">
+</div>
+
     
-    <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Latest Posts</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
-        {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
-            <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                <h3 style="margin-bottom: 0.5rem;"><a href="{{ .Permalink }}" style="text-decoration: none; color: #333;">{{ .Title }}</a></h3>
-                <p style="color: #666;">{{ .Summary | plainify | truncate 100 }}</p>
-                <a href="{{ .Permalink }}" style="color: #667eea; text-decoration: none; margin-top: 1rem; display: inline-block;">Read More →</a>
-            </div>
-        {{ end }}
+<div class="nds-hero-tagline">
+    Crafting Digital Experiences with Soul
+</div>
+
+    <div class="nds-hero-video-overlay">
+        <div class="nds-scroll-indicator">
+            <div class="scroll-circle"></div>
+            <div class="scroll-arrow">↓</div>
+        </div>
     </div>
+</section>
+
+
+<!-- ============================================
+     FEATURED POSTS (3 Cards)
+============================================ -->
+{{ partial "featured-posts.html" . }}
+
+
+<!-- ============================================
+     WHO WE ARE
+============================================ -->
+<section class="nds-section reveal-on-scroll">
+    <div class="container">
+        <div class="nds-info-card">
+            <h2 class="nds-section-title">Who We Are</h2>
+
+            <p class="nds-section-text">
+                We are a multidisciplinary creative studio blending design, storytelling,
+                and digital craftsmanship. Our mission is to create meaningful,
+                human-centered experiences that connect people with ideas, brands,
+                and culture.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================
+     WHAT WE DO
+============================================ -->
+<section class="nds-section reveal-on-scroll">
+    <div class="container">
+        <h2 class="nds-section-title">What We Do</h2>
+
+        <div class="nds-services-grid">
+            <div class="nds-service-card">
+                <h3>Brand Identity</h3>
+                <p>We craft visual identities that feel authentic, modern, and timeless.</p>
+            </div>
+
+            <div class="nds-service-card">
+                <h3>Web Experiences</h3>
+                <p>We design cinematic, interactive, and high-performance websites.</p>
+            </div>
+
+            <div class="nds-service-card">
+                <h3>Content & Storytelling</h3>
+                <p>We help brands communicate with clarity, emotion, and purpose.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 {{ end }}

@@ -1,27 +1,33 @@
-<div class="hero-wrapper container">
-  <div class="hero-card">
-    <div class="hero-content">
+<div class="nds-hero-wrapper">
 
-      {{ with .Site.Params.homepage.preTitle }}
-      <div class="pre-title">{{ . }}</div>
-      {{ end }}
+    <div class="nds-hero-card container">
 
-      <h1 class="hero-title">{{ .Site.Params.homepage.title }}</h1>
+        <div class="nds-hero-content">
 
-      <p class="homepage-intro">
-        {{ .Site.Params.homepage.intro }}
-      </p>
+            {{ with .Site.Params.homepage.preTitle }}
+            <div class="nds-hero-pretitle">{{ . }}</div>
+            {{ end }}
 
-      <div class="hero-buttons">
-        <a href="/{{ .Lang }}/posts/" class="btn btn-primary">
-          {{ .Site.Params.homepage.mainButton }}
-        </a>
+            <h1 class="nds-hero-title">
+                {{ .Site.Params.homepage.title }}
+            </h1>
 
-        <a href="/{{ .Lang }}/about/" class="btn btn-secondary">
-          {{ .Site.Params.homepage.secondButton }}
-        </a>
-      </div>
+            <p class="nds-hero-intro">
+                {{ .Site.Params.homepage.intro }}
+            </p>
+
+            <div class="nds-hero-buttons">
+                <a href="/{{ .Lang }}/posts/" class="btn btn-primary">
+                    {{ .Site.Params.homepage.mainButton }}
+                </a>
+
+                <a href="/{{ .Lang }}/about/" class="btn btn-secondary">
+                    {{ .Site.Params.homepage.secondButton }}
+                </a>
+            </div>
+
+        </div>
 
     </div>
-  </div>
+
 </div>

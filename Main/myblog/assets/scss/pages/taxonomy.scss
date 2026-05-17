@@ -1,0 +1,60 @@
+@import "../variables";
+
+/* ============================================
+   TAXONOMY PAGE — N DESIGN STUDIO
+============================================ */
+
+.nds-taxonomy-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Title */
+.nds-taxonomy-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: $anthracite;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+/* Divider */
+.nds-taxonomy-divider {
+  width: 80px;
+  height: 3px;
+  background: $gold;
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+/* Tag/Category List */
+.nds-taxonomy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* Tag Button */
+.nds-taxonomy-item {
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba($gold, 0.15);
+  color: $anthracite;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid rgba($gold, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $gold;
+    color: $anthracite;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba($gold, 0.4);
+  }
+}

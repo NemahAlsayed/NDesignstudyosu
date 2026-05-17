@@ -1,0 +1,112 @@
+@import "../variables";
+
+/* ============================================
+   LANGUAGE DROPDOWN — N DESIGN STUDIO
+============================================ */
+
+.nds-lang-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* --------------------------------------------
+   Toggle Button
+-------------------------------------------- */
+.nds-lang-toggle {
+  background: rgba($gold, 0.15);
+  border: 1px solid rgba($gold, 0.3);
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: $anthracite;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+
+  i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    background: $gold;
+    color: $anthracite;
+    box-shadow: 0 4px 12px rgba($gold, 0.4);
+  }
+
+  &.open i {
+    transform: rotate(180deg);
+  }
+}
+
+/* --------------------------------------------
+   Dropdown Menu
+-------------------------------------------- */
+.nds-lang-menu {
+  list-style: none;     /* REMOVE BULLETS */
+  margin: 0;            /* REMOVE DEFAULT MARGIN */
+  padding: 0;           /* REMOVE DEFAULT PADDING */
+
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba($anthracite, 0.15);
+  border: 1px solid rgba($gold, 0.25);
+  min-width: 160px;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.nds-lang-dropdown.open .nds-lang-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------
+   Menu Items
+-------------------------------------------- */
+.nds-lang-menu li {
+  list-style: none; /* EXTRA SAFETY */
+}
+
+.nds-lang-menu li a {
+  display: block;
+  padding: 10px 18px;
+  color: $anthracite;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: rgba($gold, 0.15);
+    color: $anthracite;
+  }
+}
+
+.nds-lang-menu li.active a {
+  background: $gold;
+  color: $anthracite;
+  font-weight: 600;
+}
+
+/* --------------------------------------------
+   RTL Support (Arabic)
+-------------------------------------------- */
+html[lang="ar"] .nds-lang-menu {
+  right: auto;
+  left: 0;
+}
+
+html[lang="ar"] .nds-lang-toggle {
+  direction: rtl;
+}

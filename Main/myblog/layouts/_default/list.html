@@ -1,19 +1,21 @@
-{{ define "main" }}
-    <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center;">{{ .Title }}</h1>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem;">
-        {{ range .Pages }}
-            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s;">
-                <div style="padding: 1.5rem;">
-                    <h2 style="font-size: 1.2rem; margin-bottom: 0.5rem;">
-                        <a href="{{ .Permalink }}" style="text-decoration: none; color: #333;">{{ .Title }}</a>
-                    </h2>
-                    <div style="color: #888; font-size: 0.8rem; margin-bottom: 1rem;">
-                        {{ .Date.Format "Jan 2, 2006" }}
-                    </div>
-                    <p style="color: #666; margin-bottom: 1rem;">{{ .Summary | plainify | truncate 100 }}</p>
-                    <a href="{{ .Permalink }}" style="color: #667eea; text-decoration: none;">Read More →</a>
-                </div>
-            </div>
-        {{ end }}
+<article class="nds-post-card">
+    <div class="nds-post-image">
+        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
     </div>
-{{ end }}
+
+    <div class="nds-post-content">
+        <h2 class="nds-post-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+
+        <div class="nds-post-meta">
+            {{ .Date.Format "Jan 2, 2006" }} — {{ .Params.category }}
+        </div>
+
+        <p class="nds-post-excerpt">
+            {{ .Summary }}
+        </p>
+
+        <a href="{{ .Permalink }}" class="nds-readmore-btn">Read More</a>
+    </div>
+</article>

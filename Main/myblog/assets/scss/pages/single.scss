@@ -1,1 +1,180 @@
-// Single page styles
+@import "../variables";
+
+/* ============================================
+   SINGLE POST — PREMIUM EDITORIAL EXPERIENCE
+============================================ */
+
+.nds-single-wrapper {
+  background: var(--bg);
+  padding-bottom: 120px;
+}
+
+/* ============================================
+   FEATURED IMAGE BANNER
+============================================ */
+
+.nds-single-banner {
+  position: relative;
+  height: 55vh;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    transition: transform 0.6s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  .nds-single-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba($anthracite, 0.1) 0%,
+      rgba($anthracite, 0.85) 100%
+    );
+  }
+}
+
+/* ============================================
+   ARTICLE CONTAINER
+============================================ */
+
+.nds-single-article {
+  max-width: 900px;
+  margin: -120px auto 0 auto;
+  background: var(--card-bg);
+  padding: 60px 50px;
+  border-radius: 22px;
+  border: 1px solid rgba($anthracite, 0.1);
+  box-shadow: 0 8px 40px rgba($anthracite, 0.15);
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    padding: 40px 28px;
+    margin-top: -80px;
+  }
+}
+
+/* ============================================
+   TITLE BLOCK
+============================================ */
+
+.nds-single-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nds-single-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: $anthracite;
+  line-height: 1.2;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 2.2rem;
+  }
+}
+
+/* ============================================
+   META
+============================================ */
+
+.nds-single-meta {
+  font-size: 0.95rem;
+  color: rgba($raw-umber, 0.8);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.nds-single-category {
+  color: $gold;
+  font-weight: 600;
+}
+
+.nds-single-reading {
+  color: $raw-umber;
+}
+
+/* Divider */
+.nds-single-divider {
+  width: 70px;
+  height: 3px;
+  background: $gold;
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+/* ============================================
+   CONTENT
+============================================ */
+
+.nds-single-content {
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: $raw-umber;
+
+  p {
+    margin-bottom: 24px;
+  }
+
+  h2, h3, h4 {
+    color: $anthracite;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  h2 { font-size: 1.9rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+
+  /* Blockquote */
+  blockquote {
+    border-left: 4px solid $gold;
+    padding-left: 20px;
+    margin: 40px 0;
+    color: $anthracite;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    border-radius: 14px;
+    margin: 40px 0;
+    box-shadow: 0 4px 20px rgba($anthracite, 0.15);
+  }
+
+  /* Links */
+  a {
+    color: $gold;
+    font-weight: 600;
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: darken($gold, 10%);
+    }
+  }
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 480px) {
+  .nds-single-title {
+    font-size: 1.9rem;
+  }
+}

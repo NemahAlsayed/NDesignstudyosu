@@ -1,8 +1,43 @@
-@import '../variables';
-.site-footer {
-  background: $surface-dark;
-  padding: $spacing-xl 0;
-  margin-top: $spacing-xxl;
-  text-align: center;
-  border-top: 1px solid rgba($vibrant-red, 0.2);
+/* ============================================
+   MINIMAL LUXURY FOOTER
+============================================ */
+
+.nds-footer {
+    background: #2D302F; /* Dark luxury */
+    padding: 40px 20px;
+    text-align: center;
+    color: #eaeaea;
+    border-top: 1px solid rgba(212, 175, 55, 0.25); /* subtle gold line */
 }
+
+.nds-footer-tagline {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: #f5f5f5;
+}
+
+/* Social Icons */
+.nds-footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 18px;
+}
+
+.nds-footer-social a {
+    color: #d4af37; /* Gold */
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+}
+
+.nds-footer-social a:hover {
+    color: #f8e7a0; /* lighter gold */
+    transform: translateY(-3px);
+}
+
+.nds-footer-copy {
+    font-size: 0.9rem;
+    color: #bdbdbd;
+}
+

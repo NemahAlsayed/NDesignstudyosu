@@ -1,18 +1,20 @@
 {{ define "main" }}
 
-<h1 class="text-center mb-4">{{ .Title }}</h1>
-<hr />
+<section class="nds-taxonomy-wrapper">
 
-<div class="row justify-content-center mt-4">
-  <div class="col-12 text-center">
+    <!-- Title -->
+    <h1 class="nds-taxonomy-title text-center">{{ .Title }}</h1>
+    <div class="nds-taxonomy-divider"></div>
 
-    {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="btn btn-sm btn-light border-primary m-2">
-        #{{ .Title }}
-      </a>
-    {{ end }}
+    <!-- Tag/Category List -->
+    <div class="nds-taxonomy-list">
+        {{ range .Pages }}
+            <a href="{{ .RelPermalink }}" class="nds-taxonomy-item">
+                #{{ .Title }}
+            </a>
+        {{ end }}
+    </div>
 
-  </div>
-</div>
+</section>
 
 {{ end }}

@@ -1,31 +1,56 @@
 baseURL = "https://ndesignstudyosu.com.tr/"
 languageCode = "en-us"
 title = "N Design Studio"
+
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-relativeURLs = true
 
-# IMPORTANT: No theme line here - using ONLY your layouts/
-# theme = ""  # Keep this commented out
+relativeURLs = false
+canonifyURLs = true
 
 [params]
   subtitle = "Creative Design for Purposeful Impact"
 
+  description = "A multidisciplinary creative studio blending design, storytelling, and digital craftsmanship."
+  author = "N Design Studio"
+  keywords = ["design", "branding", "luxury", "creative studio", "web design", "storytelling"]
+
+  defaultImage = "/images/default-og.jpg"
+  logo = "/images/logo.png"
+
+  social = [
+    "https://instagram.com/yourstudio",
+    "https://twitter.com/yourstudio",
+    "https://linkedin.com/company/yourstudio"
+  ]
+
+############################################
+# MULTILINGUAL CONFIGURATION
+############################################
+
 [languages]
-[languages.en]
-  weight = 1
-  contentDir = "content/en"
-  languageName = "English"
-  
-[languages.tr]
-  weight = 2
-  contentDir = "content/tr"
-  languageName = "Türkçe"
-  
-[languages.ar]
-  weight = 3
-  contentDir = "content/ar"
-  languageName = "العربية"
+
+  [languages.en]
+    weight = 1
+    languageName = "English"
+    contentDir = "content/en"
+    languageCode = "en"
+
+  [languages.ar]
+    weight = 2
+    languageName = "العربية"
+    contentDir = "content/ar"
+    languageCode = "ar"
+
+  [languages.tr]
+    weight = 3
+    languageName = "Türkçe"
+    contentDir = "content/tr"
+    languageCode = "tr"
+
+############################################
+# MARKDOWN RENDERER
+############################################
 
 [markup]
   [markup.goldmark]

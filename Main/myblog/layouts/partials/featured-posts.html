@@ -1,0 +1,36 @@
+<section class="nds-featured-section">
+
+    <div class="container">
+        <h2 class="nds-featured-title">Featured Posts</h2>
+        <div class="nds-featured-divider"></div>
+
+        <div class="nds-featured-grid">
+
+            {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
+            <article class="nds-featured-card">
+
+                <a href="{{ .Permalink }}" class="nds-featured-image">
+                    <img src="{{ .Params.featured_image }}" alt="{{ .Title }}">
+                </a>
+
+                <div class="nds-featured-content">
+                    <h3 class="nds-featured-post-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h3>
+
+                    <p class="nds-featured-excerpt">
+                        {{ .Summary | truncate 120 }}
+                    </p>
+
+                    <a href="{{ .Permalink }}" class="nds-featured-readmore">
+                        Read More →
+                    </a>
+                </div>
+
+            </article>
+            {{ end }}
+
+        </div>
+    </div>
+
+</section>

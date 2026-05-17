@@ -1,167 +1,47 @@
-@import 'variables';
+.who-we-are,
+.what-we-do {
+    padding: $section-padding 20px;
+    background: $light-bg;
+    color: $anthracite;
 
-/* ============================================
-   HOME HERO SECTION — PREMIUM LUXURY
-   ============================================ */
-
-.home-hero-section {
-  min-height: calc(100vh - 80px);
-  display: flex;
-  align-items: center;
-  padding: $spacing-xxl 0;
-  background: $gradient-dark;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-      radial-gradient(circle at 20% 30%, rgba($deep-crimson, 0.35) 0%, transparent 55%),
-      radial-gradient(circle at 80% 70%, rgba($gold-primary, 0.18) 0%, transparent 55%),
-      repeating-linear-gradient(
-        45deg,
-        rgba($electric-crimson, 0.04) 0,
-        rgba($electric-crimson, 0.04) 2px,
-        transparent 2px,
-        transparent 8px
-      );
-    opacity: 0.9;
-    pointer-events: none;
-  }
-}
-
-/* ============================================
-   HERO CARD
-   ============================================ */
-
-.hero-card {
-  background: rgba($cream, 0.96);
-  backdrop-filter: blur(14px);
-  border-radius: 26px;
-  padding: $spacing-xl;
-  max-width: 850px;
-  margin: 0 auto;
-  border: 1px solid rgba($gold-primary, 0.25);
-  box-shadow: $shadow-xl;
-  animation: fadeInUp 0.8s ease-out;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  transition: all $transition-normal;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: $shadow-xl, $shadow-gold-glow;
-    border-color: rgba($gold-primary, 0.45);
-  }
-}
-
-/* ============================================
-   HERO TEXT
-   ============================================ */
-
-.hero-title {
-  font-family: $font-serif;
-  font-size: 3.2rem;
-  font-weight: 600;
-  background: $gradient-crimson;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: $spacing-md;
-  letter-spacing: -0.02em;
-}
-
-.hero-intro {
-  font-family: $font-serif;
-  font-size: 1.15rem;
-  line-height: 1.8;
-  color: $surface-dark;
-  margin-bottom: $spacing-lg;
-  font-weight: 400;
-}
-
-/* ============================================
-   LANGUAGE TABS
-   ============================================ */
-
-.language-tabs {
-  display: flex;
-  justify-content: center;
-  gap: $spacing-md;
-  flex-wrap: wrap;
-  margin-top: $spacing-md;
-}
-
-.lang-tab {
-  padding: $spacing-sm $spacing-lg;
-  border-radius: 999px;
-  font-family: $font-sans;
-  font-weight: 500;
-  font-size: 0.9rem;
-  background: rgba($cream, 0.1);
-  color: $surface-dark;
-  border: 1px solid rgba($gold-primary, 0.3);
-  text-decoration: none;
-  letter-spacing: 0.08em;
-  transition: all $transition-normal;
-
-  &:hover,
-  &.active {
-    background: $gradient-crimson;
-    color: $white;
-    border-color: transparent;
-    transform: translateY(-2px);
-    box-shadow: $shadow-glow;
-  }
-}
-
-/* ============================================
-   RESPONSIVE
-   ============================================ */
-
-@media (max-width: $tablet) {
-  .hero-card {
-    padding: $spacing-lg;
-
-    .hero-title {
-      font-size: 2.4rem;
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
-    .hero-intro {
-      font-size: 1rem;
+    p {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.7;
+        color: $raw-umber;
+        text-align: center;
     }
-  }
-
-  .lang-tab {
-    padding: $spacing-xs $spacing-md;
-    font-size: 0.8rem;
-  }
 }
 
-@media (max-width: $mobile) {
-  .hero-card {
-    padding: $spacing-md;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
+.services-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
 }
 
-/* ============================================
-   ANIMATIONS
-   ============================================ */
+.service-card {
+    background: $card-bg;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: $card-shadow;
+    text-align: center;
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(26px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        color: $anthracite;
+    }
+
+    p {
+        color: $raw-umber;
+        font-size: 1rem;
+    }
 }

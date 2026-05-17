@@ -1,0 +1,44 @@
+// BRAND PALETTE
+$raw-umber:    #7A5938;
+$timberwolf:   #D7D0C7;
+$anthracite:   #2D302F;
+$gold:         #C9A86A;
+$light-bg:     #F8F6F4;
+$cream: #f5f0e8; 
+
+// Spacing scale
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
+$spacing-xxl: 6rem;
+
+
+// TYPOGRAPHY
+$font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+// SPACING
+$section-padding: 100px;
+
+// SHADOWS
+$card-shadow: 0 4px 20px rgba(0,0,0,0.06);
+
+:root {
+    --raw-umber:    #7A5938;
+    --timberwolf:   #D7D0C7;
+    --anthracite:   #2D302F;
+    --gold:         #C9A86A;
+    --light-bg:     #F8F6F4;
+    --cream: #f5f0e8;
+
+    --bg: var(--light-bg);
+    --text: var(--anthracite);
+    --card-bg: #ffffff;
+}
+
+.dark {
+    --bg: #121212;
+    --text: #F5F3EE;
+    --card-bg: #1E1E1E;
+}

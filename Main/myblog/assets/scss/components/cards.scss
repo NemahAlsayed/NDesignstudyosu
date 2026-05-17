@@ -1,7 +1,39 @@
-@import '../variables';
+@import "../variables";
+
+/* ============================================
+   PREMIUM CARD COMPONENT — N DESIGN STUDIO
+============================================ */
+
 .card-premium {
-  background: $surface-dark;
+  background: var(--card-bg);
   border-radius: 16px;
   overflow: hidden;
-  transition: all $transition-normal;
+  box-shadow: 0 4px 20px rgba($anthracite, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 28px rgba($anthracite, 0.15);
+  }
+}
+
+.card-premium-header {
+  padding: 24px;
+  background: $timberwolf;
+  color: $anthracite;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-premium-body {
+  padding: 24px;
+  color: $raw-umber;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card-premium-footer {
+  padding: 20px 24px;
+  background: $light-bg;
+  border-top: 1px solid rgba($anthracite, 0.1);
 }

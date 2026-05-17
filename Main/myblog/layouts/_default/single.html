@@ -1,11 +1,55 @@
 {{ define "main" }}
-    <article style="background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <h1 style="font-size: 2rem; margin-bottom: 1rem;">{{ .Title }}</h1>
-        <div style="color: #888; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
-            {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read
+
+<div class="nds-single-wrapper">
+
+    <!-- Featured Image Banner -->
+    {{ with .Params.featured_image }}
+    <div class="nds-single-banner">
+        <img src="{{ . }}" alt="{{ $.Title }}">
+        <div class="nds-single-banner-overlay"></div>
+    </div>
+    {{ end }}
+
+    <!-- Article Container -->
+    <article class="nds-single-article">
+
+        <!-- Title Block -->
+        <header class="nds-single-header">
+            <h1 class="nds-single-title">{{ .Title }}</h1>
+
+            <div class="nds-single-meta">
+                <span>{{ .Date.Format "January 2, 2006" }}</span>
+                <span class="nds-single-category">{{ .Params.category }}</span>
+                <span class="nds-single-reading">{{ .ReadingTime }} min read</span>
+            </div>
+
+            <div class="nds-single-divider"></div>
+        </header>
+
+        <!-- Share Bar -->
+        <div class="nds-share-bar">
+            <span class="share-label">Share:</span>
+
+            <a href="https://www.instagram.com/?url={{ .Permalink }}" target="_blank" class="share-icon instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://x.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" class="share-icon x">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" class="share-icon linkedin">
+                <i class="bi bi-linkedin"></i>
+            </a>
         </div>
-        <div style="line-height: 1.8;">
+
+        <!-- Content with Drop Cap -->
+        <div class="nds-single-content nds-dropcap">
             {{ .Content }}
         </div>
+
     </article>
+
+</div>
+
 {{ end }}

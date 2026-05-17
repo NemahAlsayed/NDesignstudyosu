@@ -1,0 +1,117 @@
+@import "../variables";
+
+/* ============================================
+   FEATURED POSTS — HOMEPAGE
+============================================ */
+
+.nds-featured-section {
+  padding: 80px 0 100px;
+  background: var(--bg);
+}
+
+/* Title */
+.nds-featured-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: $anthracite;
+  margin-bottom: 10px;
+}
+
+.nds-featured-divider {
+  width: 70px;
+  height: 3px;
+  background: $gold;
+  margin: 0 auto 50px auto;
+  border-radius: 2px;
+}
+
+/* Grid */
+.nds-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card */
+.nds-featured-card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba($anthracite, 0.12);
+  box-shadow: 0 4px 20px rgba($anthracite, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 28px rgba($anthracite, 0.15);
+  }
+}
+
+/* Image */
+.nds-featured-image {
+  display: block;
+  height: 180px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+/* Content */
+.nds-featured-content {
+  padding: 24px;
+}
+
+/* Title */
+.nds-featured-post-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+
+  a {
+    color: $anthracite;
+    text-decoration: none;
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
+
+/* Excerpt */
+.nds-featured-excerpt {
+  color: $raw-umber;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Read More */
+.nds-featured-readmore {
+  color: $gold;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: darken($gold, 10%);
+  }
+}

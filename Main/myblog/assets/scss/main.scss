@@ -1,22 +1,27 @@
-// ============================================
-// N Design Studio - Main Stylesheet
-// ============================================
 
-// 1. Variables
-@import 'variables';
+/* ============================================
+   N DESIGN STUDIO — MASTER SCSS ENTRY FILE
+============================================ */
 
-// 2. Base & Reset
-@import 'base';
+/* 1. Tokens */
+@import "variables";
+@import "utilities";
+@import "base";
 
-// 3. Layout Components
-@import 'components/header';
-@import 'components/footer';
-@import 'components/cards';
+/* 2. Components */
+@import "components/header";
+@import "components/footer";
+@import "components/language-dropdown";
+@import "components/languages";
+@import "components/cards";
+@import "components/post-card";
+@import "components/featured-posts";
 
-// 4. Page Specific
-@import 'pages/home';
-@import 'pages/list';
-@import 'pages/single';
+/* 3. Pages */
+@import "pages/home";
+@import "pages/list";
+@import "pages/single";
+@import "pages/taxonomy";
 
-// 5. Utilities
-@import 'utilities';
+/* 4. Animations */
+@import "animations";

@@ -2,6 +2,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  
   <!-- ============================================================
        PAGE TITLE
   ============================================================ -->
@@ -20,7 +23,7 @@
   <meta name="description" content="{{ $desc }}" />
 
   <!-- ============================================================
-       FEATURED IMAGE (fallback to meta-image)
+       FEATURED IMAGE (fallback)
   ============================================================ -->
   {{ $featured := .Resources.GetMatch "images/featured*" }}
   {{ if not $featured }}
@@ -33,7 +36,7 @@
   <link rel="canonical" href="{{ .Permalink }}" />
 
   <!-- ============================================================
-       MULTILINGUAL HREFLANG (ar / en / tr)
+       MULTILINGUAL HREFLANG
   ============================================================ -->
   {{ range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
@@ -41,7 +44,7 @@
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
 
   <!-- ============================================================
-       OPEN GRAPH (Facebook / LinkedIn)
+       OPEN GRAPH
   ============================================================ -->
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
@@ -64,10 +67,29 @@
        SEO META
   ============================================================ -->
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#800000" />
+  <meta name="theme-color" content="#111111" />
 
   <!-- ============================================================
-       JSON-LD — HOMEPAGE SCHEMA
+       BOOTSTRAP ICONS (must load BEFORE main CSS)
+  ============================================================ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- ============================================================
+       CSS (Hugo Pipes)
+  ============================================================ -->
+  {{ $options := dict "targetPath" "css/styles.css" "outputStyle" "compressed" }}
+  {{ $style := resources.Get "/scss/main.scss" | toCSS $options | minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
+  <!-- ============================================================
+       FAVICON
+  ============================================================ -->
+  {{ with resources.GetMatch "img/favicon*" }}
+    <link rel="icon" href="{{ .RelPermalink }}" type="image/x-icon" />
+  {{ end }}
+
+  <!-- ============================================================
+       JSON-LD — HOMEPAGE
   ============================================================ -->
   {{ if .IsHome }}
   <script type="application/ld+json">
@@ -77,19 +99,13 @@
     "name": "{{ .Site.Title }}",
     "url": "{{ .Site.BaseURL }}",
     "description": "{{ .Site.Params.subtitle }}",
-    "inLanguage": "{{ .Site.Language.Lang }}",
-    "publisher": {
-      "@type": "Organization",
-      "name": "N Design Studio",
-      "url": "{{ .Site.BaseURL }}",
-      "logo": "{{ (resources.GetMatch "img/favicon*" ).Permalink }}"
-    }
+    "inLanguage": "{{ .Site.Language.Lang }}"
   }
   </script>
   {{ end }}
 
   <!-- ============================================================
-       JSON-LD — ARTICLE SCHEMA
+       JSON-LD — ARTICLE
   ============================================================ -->
   {{ if .IsPage }}
   <script type="application/ld+json">
@@ -100,18 +116,6 @@
     "description": "{{ $desc }}",
     "datePublished": "{{ .Date.Format "2006-01-02" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-    "author": {
-      "@type": "Person",
-      "name": "N Design Studio"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "N Design Studio",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ (resources.GetMatch "img/favicon*" ).Permalink }}"
-      }
-    },
     "image": "{{ $featured.Permalink }}",
     "mainEntityOfPage": "{{ .Permalink }}",
     "inLanguage": "{{ .Lang }}"
@@ -120,24 +124,7 @@
   {{ end }}
 
   <!-- ============================================================
-       CSS (Hugo Pipes)
-  ============================================================ -->
-  {{ $options := dict "targetPath" "css/styles.css" "outputStyle" "compressed" }}
-  {{ $style := resources.Get "/scss/main.scss" | toCSS $options | minify }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-
-  <!-- ============================================================
-       ICONS
-  ============================================================ -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-  {{ with resources.GetMatch "img/favicon*" }}
-    <link rel="icon" href="{{ .RelPermalink }}" type="image/x-icon" />
-  {{ end }}
-
-  <!-- ============================================================
-       GOOGLE ANALYTICS + GTM
+       GOOGLE ANALYTICS
   ============================================================ -->
   {{ template "_internal/google_analytics.html" . }}
 

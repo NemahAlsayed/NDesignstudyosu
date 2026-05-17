@@ -1,3 +1,115 @@
-// Utility classes
+@import "variables";
+
+/* ============================================
+   UTILITIES — N DESIGN STUDIO
+   Clean, scalable, modern utility classes
+============================================ */
+
+/* --------------------------------------------
+   TEXT ALIGNMENT
+-------------------------------------------- */
 .text-center { text-align: center; }
-.mb-4 { margin-bottom: $spacing-lg; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+/* --------------------------------------------
+   FONT WEIGHT
+-------------------------------------------- */
+.fw-light   { font-weight: 300; }
+.fw-normal  { font-weight: 400; }
+.fw-medium  { font-weight: 500; }
+.fw-bold    { font-weight: 700; }
+
+/* --------------------------------------------
+   SPACING (margin + padding)
+   Uses your new spacing scale
+-------------------------------------------- */
+.m-0  { margin: 0 !important; }
+.p-0  { padding: 0 !important; }
+
+.mt-sm { margin-top: 20px; }
+.mt-md { margin-top: 40px; }
+.mt-lg { margin-top: 60px; }
+
+.mb-sm { margin-bottom: 20px; }
+.mb-md { margin-bottom: 40px; }
+.mb-lg { margin-bottom: 60px; }
+
+.pt-sm { padding-top: 20px; }
+.pt-md { padding-top: 40px; }
+.pt-lg { padding-top: 60px; }
+
+.pb-sm { padding-bottom: 20px; }
+.pb-md { padding-bottom: 40px; }
+.pb-lg { padding-bottom: 60px; }
+
+/* --------------------------------------------
+   FLEX UTILITIES
+-------------------------------------------- */
+.flex        { display: flex; }
+.flex-col    { flex-direction: column; }
+.flex-row    { flex-direction: row; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center  { justify-content: center; }
+.items-center    { align-items: center; }
+
+/* --------------------------------------------
+   DISPLAY UTILITIES
+-------------------------------------------- */
+.d-block  { display: block; }
+.d-inline { display: inline; }
+.d-flex   { display: flex; }
+.d-none   { display: none; }
+
+/* --------------------------------------------
+   WIDTH UTILITIES
+-------------------------------------------- */
+.w-100 { width: 100%; }
+.w-50  { width: 50%; }
+.w-auto { width: auto; }
+
+/* --------------------------------------------
+   BORDER + RADIUS
+-------------------------------------------- */
+.rounded-sm { border-radius: 6px; }
+.rounded-md { border-radius: 12px; }
+.rounded-lg { border-radius: 20px; }
+.rounded-full { border-radius: 999px; }
+
+.border      { border: 1px solid rgba($anthracite, 0.2); }
+.border-gold { border: 1px solid $gold; }
+
+/* --------------------------------------------
+   OPACITY
+-------------------------------------------- */
+.opacity-50 { opacity: 0.5; }
+.opacity-75 { opacity: 0.75; }
+.opacity-100 { opacity: 1; }
+
+/* --------------------------------------------
+   BACKGROUND UTILITIES (using your palette)
+-------------------------------------------- */
+.bg-light      { background: $light-bg; }
+.bg-dark       { background: $anthracite; }
+.bg-gold       { background: $gold; }
+.bg-umber      { background: $raw-umber; }
+.bg-timberwolf { background: $timberwolf; }
+
+/* --------------------------------------------
+   TEXT COLOR UTILITIES
+-------------------------------------------- */
+.text-light      { color: $light-bg; }
+.text-dark       { color: $anthracite; }
+.text-gold       { color: $gold; }
+.text-umber      { color: $raw-umber; }
+.text-timberwolf { color: $timberwolf; }
+
+/* --------------------------------------------
+   RESPONSIVE UTILITIES
+-------------------------------------------- */
+@media (max-width: 768px) {
+  .d-md-none { display: none; }
+  .text-md-center { text-align: center; }
+  .w-md-100 { width: 100%; }
+}
