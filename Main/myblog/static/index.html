@@ -1,16 +1,11 @@
-{{ define "main" }}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }} - Choose Language</title>
+    <title>N Design Studio - Language Selection</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -58,23 +53,12 @@
             font-weight: 600;
             transition: all 0.3s ease;
             min-width: 130px;
+            cursor: pointer;
         }
-        .lang-btn-en {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        .lang-btn-tr {
-            background: #e74c3c;
-            color: white;
-        }
-        .lang-btn-ar {
-            background: #27ae60;
-            color: white;
-        }
-        .lang-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
+        .lang-btn-en { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .lang-btn-tr { background: #e74c3c; color: white; }
+        .lang-btn-ar { background: #27ae60; color: white; }
+        .lang-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         .info-text {
             font-size: 0.8rem;
             color: #999;
@@ -90,7 +74,7 @@
 </head>
 <body>
     <div class="language-card">
-        <h1>{{ .Site.Title }}</h1>
+        <h1>N Design Studio</h1>
         <p class="subtitle">Creative Design for Purposeful Impact<br>Select your language to continue</p>
         <div class="language-options">
             <a href="/en/" class="lang-btn lang-btn-en">🇬🇧 English</a>
@@ -101,4 +85,3 @@
     </div>
 </body>
 </html>
-{{ end }}

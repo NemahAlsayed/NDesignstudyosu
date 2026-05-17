@@ -1,0 +1,5 @@
+
+# Protect custom layouts from being overwritten
+# These are YOUR designs, not from any theme
+!layouts/
+!layouts/**/*.html

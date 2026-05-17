@@ -1,8 +1,5 @@
-name: Setup Hugo
-uses: peaceiris/actions-hugo@v3
-with:
-    hugo-version: '0.157.0'
-    extended: true   # This is the critical flag
+name: Deploy Hugo Site to GitHub Pages
+
 on:
   push:
     branches:
@@ -25,31 +22,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: false  # Don't fetch themes
           fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.124.1'
-          extended: true
+          hugo-version: '0.157.0'
+          extended: false  # Don't need extended if no theme
 
-      - name: Build Hugo site
-        run: hugo --minify --gc --enableGitInfo
+      - name: Remove any themes
+        run: rm -rf themes/ || true
+
+      - name: Build Hugo site (no themes)
+        run: hugo --cleanDestinationDir --disableTheme
         working-directory: Main/myblog
         env:
           HUGO_ENV: production
 
-      - name: Add CNAME file
-        run: echo "ndesignstudyosu.com.tr" > Main/myblog/public/CNAME
+      - name: Add .nojekyll
+        run: touch Main/myblog/public/.nojekyll
 
-      - name: List built files (debug)
-        run: |
-          echo "=== CSS files ==="
-          find Main/myblog/public -name "*.css" -type f | head -10
-          echo "=== SCSS compiled check ==="
-          ls -la Main/myblog/public/css/ || echo "No css folder"
-          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

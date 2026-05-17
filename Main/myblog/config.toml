@@ -2,8 +2,11 @@ baseURL = "https://ndesignstudyosu.com.tr/"
 languageCode = "en-us"
 title = "N Design Studio"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 relativeURLs = true
+
+# IMPORTANT: No theme line here - using ONLY your layouts/
+# theme = ""  # Keep this commented out
 
 [params]
   subtitle = "Creative Design for Purposeful Impact"
