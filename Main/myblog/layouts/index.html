@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <h1>Welcome to {{ .Site.Title }}</h1>
+    {{ .Content }}
+    <h2>Latest Posts</h2>
+    <div class="posts-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+        {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
+            <div class="post-card" style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <p>{{ .Summary | truncate 150 }}</p>
+                <a href="{{ .Permalink }}">Read More →</a>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}

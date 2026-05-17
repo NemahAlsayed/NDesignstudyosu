@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N Design Studio</title>
+    <style>
+         
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        main { padding: 40px 20px; min-height: calc(100vh - 200px); }
+        footer { background: #1a1a2e; color: #888; text-align: center; padding: 30px; margin-top: 60px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+    </style>
+    
+</head>
+<body>
+    <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <a href="../../../../../" style="font-size: 1.2rem; font-weight: 700; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
+            N Design Studio
+        </a>
+        
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <nav>
+                <a href="../../../../../en/posts/" style="margin-left: 20px; text-decoration: none; color: #555;">Blog</a>
+                <a href="../../../../../en/about/" style="margin-left: 20px; text-decoration: none; color: #555;">About</a>
+                <a href="../../../../../en/contact/" style="margin-left: 20px; text-decoration: none; color: #555;">Contact</a>
+            </nav>
+            
+            
+            <div style="position: relative; display: inline-block;">
+                <button id="langDropdownBtn" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
+                    🌐 EN <span style="font-size: 0.7rem;">▼</span>
+                </button>
+                <div id="langDropdown" style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); min-width: 130px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 1001;">
+                    <a href="../../../../../en/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇬🇧 English</a>
+                    <a href="../../../../../tr/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇹🇷 Türkçe</a>
+                    <a href="../../../../../ar/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">🇸🇦 العربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    const btn = document.getElementById('langDropdownBtn');
+    const dropdown = document.getElementById('langDropdown');
+    if (btn && dropdown) {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isActive = dropdown.style.opacity === '1';
+            dropdown.style.opacity = isActive ? '0' : '1';
+            dropdown.style.visibility = isActive ? 'hidden' : 'visible';
+            dropdown.style.transform = isActive ? 'translateY(-10px)' : 'translateY(0)';
+        });
+        document.addEventListener('click', function() {
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+            dropdown.style.transform = 'translateY(-10px)';
+        });
+        dropdown.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+</script>
+
+    <main>
+        <div class="container">
+            
+    <article>
+        <h1>🌿 Transcending Death Through Art: Rumi’s “Any Soul That Drank the Nectar” Reimagined as NFT.</h1>
+        <div><p>In a world saturated with fleeting visuals, true art whispers to the soul. Our latest NFT release, inspired by Mewlana Jalaluddin Rumi’s mystical poem <em>“Any Soul That Drank the Nectar,”</em> invites collectors into a realm where passion defies mortality and fragrance outlives flesh.</p>
+<h2 id="-the-poem-that-breathed-life-into-pixels">✨ The Poem That Breathed Life Into Pixels</h2>
+<blockquote>
+<p>“Death came, smelled me, and sensed your fragrance instead. From then on, death lost all hope of me.” — Rumi</p>
+</blockquote>
+<p>These lines are more than metaphor—they’re a spiritual rebellion. In this NFT artwork, Rumi’s verse is not just illustrated, it’s embodied. The visual meditation captures the moment where divine love eclipses death, where the soul, drenched in passion, becomes untouchable.</p>
+<h2 id="-nft-art-meets-eternal-wisdom">🎨 NFT Art Meets Eternal Wisdom</h2>
+<p>Crafted with a fusion of digital brushwork and sacred geometry, this piece channels the essence of Rumi’s message: that love, once tasted deeply, transforms the soul beyond the reach of decay. The artwork features:</p>
+<ul>
+<li>
+<p>🌌 Ethereal textures symbolizing the “nectar” of passion</p>
+</li>
+<li>
+<p>🌿 Fragrance-inspired color palettes that evoke spiritual elation</p>
+</li>
+<li>
+<p>🔗 Blockchain permanence echoing the poem’s defiance of death</p>
+</li>
+</ul>
+<p>Each NFT is minted with a poetic signature and comes with a downloadable meditation guide to deepen the viewer’s experience.</p>
+<h2 id="-why-this-nft-resonates-in-2025">🔍 Why This NFT Resonates in 2025</h2>
+<p>As digital art evolves, collectors seek meaning—not just aesthetics. This piece stands out in the NFT space because it:</p>
+<ul>
+<li>
+<p>Aligns with the rising trend of spiritually themed NFTs</p>
+</li>
+<li>
+<p>Appeals to seekers of Rumi-inspired visual storytelling</p>
+</li>
+<li>
+<p>Affordable Unique Collectable NFT</p>
+</li>
+</ul>
+<p>Whether you&rsquo;re a seasoned collector or a spiritual wanderer, this NFT bridges ancient wisdom with modern tech. You can access it <a href="https://og.rarible.com/token/0xc9154424b823b10579895ccbe442d41b9abd96ed:91452768468569359364314199192756546539650632875089436858321335288594884984873">here.</a></p>
+<h2 id="-final-reflection">🌌 Final Reflection</h2>
+<p>This NFT is more than a collectible. It’s a talisman. A reminder that once the soul drinks deeply from the cup of divine passion, even death must retreat. Rumi’s words live on—not just in ink, but in code, color, and connection.</p>
+</div>
+    </article>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

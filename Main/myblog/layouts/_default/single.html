@@ -1,27 +1,6 @@
 {{ define "main" }}
-<article style="max-width: 800px; margin: 60px auto; padding: 0 20px; background: white; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
-  {{ $img := .Resources.GetMatch .Params.featured_image }}
-  {{ if not $img }}
-    {{ $img = index (.Resources.ByType "image") 0 }}
-  {{ end }}
-  {{ with $img }}
-    <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" style="width: 100%; height: 400px; object-fit: cover;">
-  {{ end }}
-  
-  <div style="padding: 40px;">
-    <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 20px;">{{ .Title }}</h1>
-    
-    <div style="display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-      <span style="font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: #666;"><i class="far fa-calendar-alt"></i> {{ .Date.Format "January 2, 2006" }}</span>
-      <span style="font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: #666;"><i class="far fa-clock"></i> {{ .ReadingTime }} min read</span>
-      {{ range .Params.categories }}
-        <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;"><i class="fas fa-tag"></i> {{ . }}</span>
-      {{ end }}
-    </div>
-    
-    <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; line-height: 1.8; color: #1a1a1a;">
-      {{ .Content }}
-    </div>
-  </div>
-</article>
+    <article>
+        <h1>{{ .Title }}</h1>
+        <div>{{ .Content }}</div>
+    </article>
 {{ end }}
