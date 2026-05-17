@@ -2,7 +2,7 @@ baseURL = "https://ndesignstudyosu.com.tr/"
 languageCode = "en-us"
 title = "N Design Studio"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 relativeURLs = true
 
 [params]
@@ -13,12 +13,12 @@ relativeURLs = true
   weight = 1
   contentDir = "content/en"
   languageName = "English"
-
+  
 [languages.tr]
   weight = 2
   contentDir = "content/tr"
   languageName = "Türkçe"
-
+  
 [languages.ar]
   weight = 3
   contentDir = "content/ar"

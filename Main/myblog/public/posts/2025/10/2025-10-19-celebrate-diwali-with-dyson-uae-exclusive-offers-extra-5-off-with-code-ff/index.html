@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N Design Studio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        main {
+            min-height: calc(100vh - 200px);
+            padding: 40px 20px;
+        }
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <header style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <a href="../../../../" style="font-size: 1.2rem; font-weight: 700; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
+            N Design Studio
+        </a>
+        
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <nav>
+                <a href="../../../../en/posts/" style="margin-left: 20px; text-decoration: none; color: #555;">Blog</a>
+                <a href="../../../../en/about/" style="margin-left: 20px; text-decoration: none; color: #555;">About</a>
+                <a href="../../../../en/contact/" style="margin-left: 20px; text-decoration: none; color: #555;">Contact</a>
+            </nav>
+            
+            
+            <div style="position: relative; display: inline-block;">
+                <button id="langDropdownBtn" style="background: #f0f0f0; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
+                    🌐 EN <span style="font-size: 0.7rem;">▼</span>
+                </button>
+                <div id="langDropdown" style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); min-width: 130px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 1001;">
+                    <a href="../../../../en/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇬🇧 English</a>
+                    <a href="../../../../tr/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">🇹🇷 Türkçe</a>
+                    <a href="../../../../ar/" style="display: block; padding: 10px 20px; text-decoration: none; color: #333;">🇸🇦 العربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    const btn = document.getElementById('langDropdownBtn');
+    const dropdown = document.getElementById('langDropdown');
+    if (btn && dropdown) {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isActive = dropdown.style.opacity === '1';
+            dropdown.style.opacity = isActive ? '0' : '1';
+            dropdown.style.visibility = isActive ? 'hidden' : 'visible';
+            dropdown.style.transform = isActive ? 'translateY(-10px)' : 'translateY(0)';
+        });
+        document.addEventListener('click', function() {
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+            dropdown.style.transform = 'translateY(-10px)';
+        });
+        dropdown.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+</script>
+
+    <main>
+        <div class="container">
+            
+<article style="max-width: 800px; margin: 60px auto; padding: 0 20px; background: white; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden;">
+  
+  
+    
+  
+  
+    <img src="../../../../posts/2025/10/2025-10-19-celebrate-diwali-with-dyson-uae-exclusive-offers-extra-5-off-with-code-ff/images/image-3.png" alt="Celebrate Diwali with Dyson UAE: Exclusive Offers &#43; Extra 5% Off with Code &#34;FF&#34;!" style="width: 100%; height: 400px; object-fit: cover;">
+  
+  
+  <div style="padding: 40px;">
+    <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; background: linear-gradient(135deg, #800000 0%, #960018 45%, #d10000 100%); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 20px;">Celebrate Diwali with Dyson UAE: Exclusive Offers &#43; Extra 5% Off with Code &#34;FF&#34;!</h1>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+      <span style="font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: #666;"><i class="far fa-calendar-alt"></i> October 19, 2025</span>
+      <span style="font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: #666;"><i class="far fa-clock"></i> 2 min read</span>
+      
+        <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;"><i class="fas fa-tag"></i> dyson</span>
+      
+        <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;"><i class="fas fa-tag"></i> hair</span>
+      
+        <span style="background: rgba(209, 0, 0, 0.1); color: #d10000; padding: 4px 12px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;"><i class="fas fa-tag"></i> hair-styling</span>
+      
+    </div>
+    
+    <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; line-height: 1.8; color: #1a1a1a;">
+      <p>Dyson UAE is lighting up Diwali 2025 with dazzling discounts on its most innovative products—from powerful cordless vacuums to high-tech hair care and air purifiers. Whether you&rsquo;re upgrading your home or gifting loved ones, now’s the perfect time to experience Dyson’s cutting-edge technology. Use coupon code <strong>&ldquo;FF&rdquo;</strong> at checkout to enjoy an <em>extra 5% off</em> on top of Diwali deals!</p>
+<h3 id="-why-dyson-and-diwali-make-the-perfect-pair">🪔 Why Dyson and Diwali Make the Perfect Pair</h3>
+<p>Diwali, the Festival of Lights, is all about renewal, joy, and creating a clean, vibrant space for celebration. Dyson’s smart home solutions align beautifully with this spirit:</p>
+<ul>
+<li>
+<p><strong>Cordless vacuums</strong> like the <em>Dyson V10™ Total Clean</em> and <em>V15 Detect™</em> offer deep cleaning with powerful suction—ideal for prepping your home for guests and festivities.</p>
+</li>
+<li>
+<p><strong>Hair care tools</strong> such as the <em>Dyson Supersonic™</em> and <em>Airwrap™ multi-styler</em> help you look your best for Diwali parties, with fast drying and styling minus heat damage.</p>
+</li>
+<li>
+<p><strong>Air purifiers</strong> like the <em>Dyson Purifier Cool™ Gen1 TP10</em> ensure your home stays fresh and allergen-free, even during firework season.</p>
+</li>
+</ul>
+<h3 id="-diwali-deals-you-dont-want-to-miss">🎁 Diwali Deals You Don’t Want to Miss</h3>
+<p>Dyson UAE’s official Diwali promotion includes:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Product</th>
+          <th>Original Price</th>
+          <th>Diwali Price</th>
+          <th>Savings</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Dyson V10™ Total Clean</td>
+          <td>AED 1,999</td>
+          <td>AED 1,199</td>
+          <td>Save AED 800</td>
+      </tr>
+      <tr>
+          <td>Dyson Supersonic™ Hair Dryer</td>
+          <td>AED 1,749</td>
+          <td>AED 1,299</td>
+          <td>Save AED 450</td>
+      </tr>
+      <tr>
+          <td>Dyson Purifier Cool™ TP10</td>
+          <td>AED 2,199</td>
+          <td>AED 1,499</td>
+          <td>Save AED 700</td>
+      </tr>
+      <tr>
+          <td>Dyson Airwrap™ i.d. Multi-Styler</td>
+          <td>AED 2,299</td>
+          <td>AED 1,999</td>
+          <td>Save AED 300</td>
+      </tr>
+  </tbody>
+</table>
+<p>💡 <em>Use coupon code &ldquo;FF&rdquo; for an additional 5% off your purchase!</em></p>
+<h3 id="-how-to-make-the-most-of-these-offers">✨ How to Make the Most of These Offers</h3>
+<ol>
+<li>
+<p><strong>Visit</strong> <a href="https://www.dyson.ae/en-AE/promotions?___store=en-AE&amp;_gl=1*1qbvumy*_up*MQ..&amp;gclid=CjwKCAjwr8LHBhBKEiwAy47uUhuoKgJRr41_wDjorZduhWngryP7SmlKz2YCrVY1Nmi1CwHH_ruN6hoCUQ0QAvD_BwE&amp;gclsrc=aw.ds&amp;gbraid=0AAAAAob0vz8_2XoUXuZV79-I2PTq4DQmF">Dyson Official UAE Page</a></p>
+</li>
+<li>
+<p><strong>Browse</strong> by category: Floorcare, Hair Care, Air Treatment</p>
+</li>
+<li>
+<p><strong>Add to cart</strong> your favorite products</p>
+</li>
+<li>
+<p><strong>Apply coupon &ldquo;FF&rdquo;</strong> at checkout for extra savings</p>
+</li>
+</ol>
+<h3 id="-final-thoughts">🌟 Final Thoughts</h3>
+<p>Diwali is the perfect time to invest in smart, stylish, and efficient technology that elevates your home and lifestyle. Dyson UAE’s Diwali offers combine festive spirit with futuristic innovation—making this season brighter, cleaner, and more beautiful than ever.</p>
+<p>Don’t miss out—these deals are <em>limited-time only</em>. Shop now and celebrate with style, comfort, and savings!</p>
+
+    </div>
+  </div>
+</article>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 N Design Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

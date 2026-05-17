@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }} - Language Selection</title>
+    <title>{{ .Site.Title }} - Choose Language</title>
     <style>
         * {
             margin: 0;
@@ -24,7 +24,7 @@
             background: white;
             border-radius: 24px;
             padding: 50px;
-            max-width: 600px;
+            max-width: 550px;
             width: 100%;
             text-align: center;
             box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
@@ -38,7 +38,7 @@
             color: transparent;
         }
         .subtitle {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #666;
             margin-bottom: 40px;
             line-height: 1.6;
@@ -57,7 +57,7 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            min-width: 120px;
+            min-width: 130px;
         }
         .lang-btn-en {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -76,28 +76,28 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
         .info-text {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #999;
             border-top: 1px solid #eee;
             padding-top: 30px;
         }
-        @media (max-width: 600px) {
-            .language-card { padding: 30px; }
+        @media (max-width: 550px) {
+            .language-card { padding: 30px 20px; }
             h1 { font-size: 1.8rem; }
-            .lang-btn { padding: 10px 20px; min-width: 100px; }
+            .lang-btn { padding: 10px 20px; min-width: 100px; font-size: 0.9rem; }
         }
     </style>
 </head>
 <body>
     <div class="language-card">
         <h1>{{ .Site.Title }}</h1>
-        <p class="subtitle">Creative Design for Purposeful Impact<br>Select your language</p>
+        <p class="subtitle">Creative Design for Purposeful Impact<br>Select your language to continue</p>
         <div class="language-options">
-            <a href="/en/" class="lang-btn lang-btn-en">English</a>
-            <a href="/tr/" class="lang-btn lang-btn-tr">Türkçe</a>
-            <a href="/ar/" class="lang-btn lang-btn-ar">العربية</a>
+            <a href="/en/" class="lang-btn lang-btn-en">🇬🇧 English</a>
+            <a href="/tr/" class="lang-btn lang-btn-tr">🇹🇷 Türkçe</a>
+            <a href="/ar/" class="lang-btn lang-btn-ar">🇸🇦 العربية</a>
         </div>
-        <p class="info-text">Choose your preferred language to continue</p>
+        <p class="info-text">Choose your preferred language to explore the site</p>
     </div>
 </body>
 </html>
