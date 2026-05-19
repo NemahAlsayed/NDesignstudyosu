@@ -2,9 +2,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-  
   <!-- ============================================================
        PAGE TITLE
   ============================================================ -->
@@ -17,18 +14,10 @@
   </title>
 
   <!-- ============================================================
-       DESCRIPTION (smart fallback)
+       DESCRIPTION
   ============================================================ -->
   {{ $desc := cond (isset .Page.Params "description") .Page.Description .Summary }}
   <meta name="description" content="{{ $desc }}" />
-
-  <!-- ============================================================
-       FEATURED IMAGE (fallback)
-  ============================================================ -->
-  {{ $featured := .Resources.GetMatch "images/featured*" }}
-  {{ if not $featured }}
-    {{ $featured = resources.GetMatch "img/meta-image*" }}
-  {{ end }}
 
   <!-- ============================================================
        CANONICAL URL
@@ -51,8 +40,18 @@
   <meta property="og:title"
         content="{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.subtitle }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
   <meta property="og:description" content="{{ $desc }}" />
-  <meta property="og:image" content="{{ $featured.Permalink }}" />
-  <meta property="og:site_name" content="{{ .Site.Title }}" />
+
+  <!-- ============================================================
+       FEATURED IMAGE
+  ============================================================ -->
+  {{ $featured := .Resources.GetMatch "images/featured*" }}
+  {{ if not $featured }}
+    {{ $featured = resources.GetMatch "img/meta-image*" }}
+  {{ end }}
+  {{ if $featured }}
+    <meta property="og:image" content="{{ $featured.Permalink }}" />
+    <meta name="twitter:image" content="{{ $featured.Permalink }}" />
+  {{ end }}
 
   <!-- ============================================================
        TWITTER CARDS
@@ -61,25 +60,12 @@
   <meta name="twitter:title"
         content="{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.subtitle }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
   <meta name="twitter:description" content="{{ $desc }}" />
-  <meta name="twitter:image" content="{{ $featured.Permalink }}" />
-
-  <!-- ============================================================
-       SEO META
-  ============================================================ -->
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#111111" />
-
-  <!-- ============================================================
-       BOOTSTRAP ICONS (must load BEFORE main CSS)
-  ============================================================ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
   <!-- ============================================================
        CSS (Hugo Pipes)
   ============================================================ -->
-  {{ $options := dict "targetPath" "css/styles.css" "outputStyle" "compressed" }}
-  {{ $style := resources.Get "/scss/main.scss" | toCSS $options | minify }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  {{ $main := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $main.RelPermalink }}" />
 
   <!-- ============================================================
        FAVICON
@@ -103,37 +89,5 @@
   }
   </script>
   {{ end }}
-
-  <!-- ============================================================
-       JSON-LD — ARTICLE
-  ============================================================ -->
-  {{ if .IsPage }}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "{{ .Title }}",
-    "description": "{{ $desc }}",
-    "datePublished": "{{ .Date.Format "2006-01-02" }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-    "image": "{{ $featured.Permalink }}",
-    "mainEntityOfPage": "{{ .Permalink }}",
-    "inLanguage": "{{ .Lang }}"
-  }
-  </script>
-  {{ end }}
-
-  <!-- ============================================================
-       GOOGLE ANALYTICS
-  ============================================================ -->
-  {{ template "_internal/google_analytics.html" . }}
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG76R19NGW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-MG76R19NGW');
-  </script>
 
 </head>
