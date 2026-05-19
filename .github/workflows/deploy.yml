@@ -85,7 +85,7 @@ jobs:
         working-directory: "Main/myblog"
         run: |
           echo "=== Starting Hugo Build ==="
-          hugo --cleanDestinationDir --minify --gc --enableGitInfo --verbose
+          hugo --cleanDestinationDir --minify --gc --enableGitInfo --logLevel info
           echo "=== Hugo Build Completed ==="
         env:
           HUGO_ENV: production
@@ -115,5 +115,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-
