@@ -30,6 +30,14 @@ jobs:
           fetch-depth: 0
 
       # -----------------------------
+      # Clean old Hugo cache (important)
+      # -----------------------------
+      - name: Clean old Hugo cache
+        run: |
+          echo "Cleaning old Hugo cache..."
+          rm -rf Main/myblog/resources/_gen || true
+
+      # -----------------------------
       # Cache Hugo resources
       # -----------------------------
       - name: Cache Hugo resources
@@ -79,13 +87,15 @@ jobs:
           echo "========================="
 
       # -----------------------------
-      # Build Hugo site
+      # Build Hugo site (correct baseURL)
       # -----------------------------
       - name: Build Hugo site
         working-directory: "Main/myblog"
         run: |
           echo "=== Starting Hugo Build ==="
-          hugo --cleanDestinationDir --minify --gc --enableGitInfo --logLevel info
+          hugo --cleanDestinationDir --minify --gc --enableGitInfo \
+          --baseURL "https://ndesignstudyosu.com.tr/" \
+          --logLevel info
           echo "=== Hugo Build Completed ==="
         env:
           HUGO_ENV: production
