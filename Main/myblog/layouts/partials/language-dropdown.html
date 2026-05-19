@@ -8,13 +8,16 @@
 
     <!-- Dropdown Menu -->
     <ul class="nds-lang-menu">
-        {{ range .Site.Languages }}
+
+        {{ range .Site.Home.AllTranslations }}
         <li class="{{ if eq $.Lang .Lang }}active{{ end }}">
-            <a href="{{ .Lang | relLangURL }}">
-                {{ .LanguageName }}
+            <a href="{{ .RelPermalink }}">
+                {{ .Language.LanguageName }}
             </a>
         </li>
         {{ end }}
+
     </ul>
 
 </div>
+

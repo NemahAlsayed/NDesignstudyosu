@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="nds-hero-video">
+    <video autoplay muted loop playsinline class="nds-hero-video-bg">
+        <source src="/videos/hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay">
+        <img src="/images/Slogan.png" alt="Slogan" class="hero-logo">
+    </div>
+
+    <div class="nds-hero-tagline">
+        Crafting Digital Experiences with Soul
+    </div>
+
+    <div class="nds-hero-video-overlay">
+        <div class="nds-scroll-indicator">
+            <div class="scroll-circle"></div>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED POSTS -->
+{{ partial "featured-posts.html" . }}
+
+<!-- WHO WE ARE -->
+<section class="nds-section reveal-on-scroll">
+    <div class="container">
+        <div class="nds-info-card">
+            <h2 class="nds-section-title">Who We Are</h2>
+
+            <p class="nds-section-text">
+                We are a multidisciplinary creative studio blending design, storytelling,
+                and digital craftsmanship. Our mission is to create meaningful,
+                human-centered experiences that connect people with ideas, brands,
+                and culture.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="nds-section reveal-on-scroll">
+    <div class="container">
+        <h2 class="nds-section-title">What We Do</h2>
+
+        <div class="nds-services-grid">
+            <div class="nds-service-card">
+                <h3>Brand Identity</h3>
+                <p>We craft visual identities that feel authentic, modern, and timeless.</p>
+            </div>
+
+            <div class="nds-service-card">
+                <h3>Web Experiences</h3>
+                <p>We design cinematic, interactive, and high-performance websites.</p>
+            </div>
+
+            <div class="nds-service-card">
+                <h3>Content & Storytelling</h3>
+                <p>We help brands communicate with clarity, emotion, and purpose.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

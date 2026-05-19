@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="nds-hero-video" dir="rtl">
+    <video autoplay muted loop playsinline class="nds-hero-video-bg">
+        <source src="/videos/hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay">
+        <img src="/images/Slogan.png" alt="الشعار" class="hero-logo">
+    </div>
+
+    <div class="nds-hero-tagline">
+        نصنع تجارب رقمية بروح وإبداع
+    </div>
+
+    <div class="nds-hero-video-overlay">
+        <div class="nds-scroll-indicator">
+            <div class="scroll-circle"></div>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED POSTS -->
+{{ partial "featured-posts.html" . }}
+
+<!-- WHO WE ARE -->
+<section class="nds-section reveal-on-scroll" dir="rtl">
+    <div class="container">
+        <div class="nds-info-card">
+            <h2 class="nds-section-title">من نحن</h2>
+
+            <p class="nds-section-text">
+                نحن استوديو إبداعي متعدد التخصصات يجمع بين التصميم، السرد القصصي،
+                والحرفية الرقمية. مهمتنا هي ابتكار تجارب إنسانية ذات معنى تربط الناس
+                بالأفكار والعلامات التجارية والثقافة.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="nds-section reveal-on-scroll" dir="rtl">
+    <div class="container">
+        <h2 class="nds-section-title">ماذا نقدم</h2>
+
+        <div class="nds-services-grid">
+            <div class="nds-service-card">
+                <h3>الهوية البصرية</h3>
+                <p>نصمم هويات بصرية عصرية، أصيلة، وخالدة.</p>
+            </div>
+
+            <div class="nds-service-card">
+                <h3>تجارب الويب</h3>
+                <p>نبتكر مواقع سينمائية، تفاعلية، وسريعة الأداء.</p>
+            </div>
+
+            <div class="nds-service-card">
+                <h3>المحتوى والسرد القصصي</h3>
+                <p>نساعد العلامات التجارية على التواصل بوضوح وإحساس وهدف.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

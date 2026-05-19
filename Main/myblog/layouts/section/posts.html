@@ -1,0 +1,98 @@
+{{ define "main" }}
+
+<div class="nds-blog-wrapper">
+
+    <!-- Search Bar -->
+    <div class="nds-search-bar">
+        <input type="text" id="searchInput" placeholder="{{ i18n "searchPlaceholder" }}">
+    </div>
+
+    <!-- Posts List (one per row, styling via .nds-posts-grid in SCSS) -->
+    <div class="nds-posts-grid">
+
+        {{ range .Paginator.Pages }}
+
+        <article class="nds-post-card fade-in">
+
+            <!-- IMAGE -->
+            <div class="nds-post-image-wrapper">
+                {{ $featured := .Params.featured_image }}
+                {{ $img := or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+
+                {{ if $img }}
+                    <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="nds-post-img">
+                {{ else }}
+                    <img src="/images/placeholder-featured.jpg" alt="{{ .Title }}" loading="lazy" class="nds-post-img">
+                {{ end }}
+            </div>
+
+            <!-- CONTENT -->
+            <div class="nds-post-content">
+
+                <h2 class="nds-post-title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h2>
+
+                <div class="nds-post-meta">
+                    <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+                </div>
+
+                {{ with .Summary }}
+                    <p class="nds-post-excerpt">
+                        {{ . | plainify | truncate 140 }}
+                    </p>
+                {{ end }}
+
+                {{ with .Params.categories }}
+                    <div class="nds-post-categories">
+                        {{ range . }}
+                            <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="nds-category-pill">
+                                {{ . }}
+                            </a>
+                        {{ end }}
+                    </div>
+                {{ end }}
+
+                <a href="{{ .RelPermalink }}" class="nds-readmore-btn">
+                    {{ i18n "readMore" }}
+                </a>
+
+            </div>
+
+        </article>
+
+        {{ end }}
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="nds-pagination">
+        {{ if .Paginator.HasPrev }}
+            <a href="{{ .Paginator.Prev.URL }}" class="nds-page-btn">{{ i18n "prev" }}</a>
+        {{ end }}
+
+        <span class="nds-page-number">
+            {{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}
+        </span>
+
+        {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.URL }}" class="nds-page-btn">{{ i18n "next" }}</a>
+        {{ end }}
+    </div>
+
+</div>
+
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    let filter = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".nds-post-card");
+
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "" : "none";
+    });
+});
+</script>
+
+{{ end }}
+

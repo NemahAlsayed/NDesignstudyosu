@@ -1,58 +1,133 @@
 baseURL = "https://ndesignstudyosu.com.tr/"
-languageCode = "en-us"
 title = "N Design Studio"
-
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
-
-relativeURLs = false
-canonifyURLs = true
-
-[params]
-  subtitle = "Creative Design for Purposeful Impact"
-
-  description = "A multidisciplinary creative studio blending design, storytelling, and digital craftsmanship."
-  author = "N Design Studio"
-  keywords = ["design", "branding", "luxury", "creative studio", "web design", "storytelling"]
-
-  defaultImage = "/images/default-og.jpg"
-  logo = "/images/logo.png"
-
-  social = [
-    "https://instagram.com/yourstudio",
-    "https://twitter.com/yourstudio",
-    "https://linkedin.com/company/yourstudio"
-  ]
+defaultContentLanguage = "ar"
+defaultContentLanguageInSubdir = false
 
 ############################################
-# MULTILINGUAL CONFIGURATION
+# LANGUAGES
 ############################################
 
 [languages]
 
-  [languages.en]
-    weight = 1
-    languageName = "English"
-    contentDir = "content/en"
-    languageCode = "en"
+############################################
+# ARABIC (DEFAULT)
+############################################
+[languages.ar]
+languageName = "العربية"
+weight = 1
+contentDir = "content/ar"
+title = "N Design Studio"
+languageCode = "ar"
+direction = "rtl"
+home = "Arabic-home"
 
-  [languages.ar]
-    weight = 2
-    languageName = "العربية"
-    contentDir = "content/ar"
-    languageCode = "ar"
+[languages.ar.params]
+homepageLayout = "Arabic-home"
 
-  [languages.tr]
-    weight = 3
-    languageName = "Türkçe"
-    contentDir = "content/tr"
-    languageCode = "tr"
+[languages.ar.menu]
+  [[languages.ar.menu.main]]
+  name = "من نحن"
+  url = "/about/"
+  weight = 1
+
+  [[languages.ar.menu.main]]
+  name = "المدونة"
+  url = "/posts/"
+  weight = 2
+
+  [[languages.ar.menu.main]]
+  name = "الأعمال"
+  url = "/portfolio/"
+  weight = 3
+
 
 ############################################
-# MARKDOWN RENDERER
+# ENGLISH
 ############################################
+[languages.en]
+languageName = "English"
+weight = 2
+contentDir = "content/en"
+title = "N Design Studio"
+languageCode = "en"
+home = "English-home"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[languages.en.params]
+homepageLayout = "English-home"
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
+  name = "About"
+  url = "/en/about/"
+  weight = 1
+
+  [[languages.en.menu.main]]
+  name = "Blog"
+  url = "/en/posts/"
+  weight = 2
+
+  [[languages.en.menu.main]]
+  name = "Portfolio"
+  url = "/en/portfolio/"
+  weight = 3
+
+
+############################################
+# TURKISH
+############################################
+[languages.tr]
+languageName = "Türkçe"
+weight = 3
+contentDir = "content/tr"
+title = "N Design Studio"
+languageCode = "tr"
+home = "Turkish-home"
+
+[languages.tr.params]
+homepageLayout = "Turkish-home"
+
+[languages.tr.menu]
+  [[languages.tr.menu.main]]
+  name = "Hakkında"
+  url = "/tr/about/"
+  weight = 1
+
+  [[languages.tr.menu.main]]
+  name = "Blog"
+  url = "/tr/posts/"
+  weight = 2
+
+  [[languages.tr.menu.main]]
+  name = "Portföy"
+  url = "/tr/portfolio/"
+  weight = 3
+
+[[params.socials]]
+name = "instagram"
+link = "https://instagram.com/yourprofile"
+
+[[params.socials]]
+name = "twitter"
+link = "https://twitter.com/yourprofile"
+
+[[params.socials]]
+name = "linkedin"
+link = "https://linkedin.com/in/yourprofile"
+
+[[params.socials]]
+name = "youtube"
+link = "https://youtube.com/yourchannel"
+
+[[params.socials]]
+name = "tiktok"
+link = "https://tiktok.com/@yourprofile"
+
+
+############################################
+# MARKUP
+############################################
+[markup.goldmark.renderer]
+unsafe = true
+
+[taxonomies]
+  category = "categories"

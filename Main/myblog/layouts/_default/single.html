@@ -2,7 +2,9 @@
 
 <div class="nds-single-wrapper">
 
-    <!-- Featured Image Banner -->
+    <!-- ============================
+         Featured Image Banner
+    ============================= -->
     {{ with .Params.featured_image }}
     <div class="nds-single-banner">
         <img src="{{ . }}" alt="{{ $.Title }}">
@@ -10,7 +12,9 @@
     </div>
     {{ end }}
 
-    <!-- Article Container -->
+    <!-- ============================
+         Article Container
+    ============================= -->
     <article class="nds-single-article">
 
         <!-- Title Block -->
@@ -18,17 +22,23 @@
             <h1 class="nds-single-title">{{ .Title }}</h1>
 
             <div class="nds-single-meta">
-                <span>{{ .Date.Format "January 2, 2006" }}</span>
-                <span class="nds-single-category">{{ .Params.category }}</span>
-                <span class="nds-single-reading">{{ .ReadingTime }} min read</span>
+                <span class="nds-single-date">{{ .Date.Format "January 2, 2006" }}</span>
+
+                {{ with .Params.category }}
+                <span class="nds-single-category">• {{ . }}</span>
+                {{ end }}
+
+                <span class="nds-single-reading">• {{ .ReadingTime }} min read</span>
             </div>
 
             <div class="nds-single-divider"></div>
         </header>
 
-        <!-- Share Bar -->
+        <!-- ============================
+             Share Bar
+        ============================= -->
         <div class="nds-share-bar">
-            <span class="share-label">Share:</span>
+            <span class="share-label">{{ i18n "share" }}</span>
 
             <a href="https://www.instagram.com/?url={{ .Permalink }}" target="_blank" class="share-icon instagram">
                 <i class="bi bi-instagram"></i>
@@ -43,7 +53,9 @@
             </a>
         </div>
 
-        <!-- Content with Drop Cap -->
+        <!-- ============================
+             Article Content
+        ============================= -->
         <div class="nds-single-content nds-dropcap">
             {{ .Content }}
         </div>

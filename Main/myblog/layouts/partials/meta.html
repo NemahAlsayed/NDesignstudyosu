@@ -1,43 +1,79 @@
-<!-- ============================================
-     META TAGS — N DESIGN STUDIO
-     SEO • Open Graph • Twitter Cards
-============================================ -->
+<title>
+  {{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}
+</title>
 
-<!-- Basic Meta -->
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
-<meta name="author" content="{{ .Site.Params.author }}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Canonical URL -->
+{{/* ------------------------------
+     DESCRIPTION (safe)
+--------------------------------*/}}
+{{ with .Description }}
+<meta name="description" content="{{ . }}">
+{{ else }}
+<meta name="description" content="{{ .Site.Params.description }}">
+{{ end }}
+
+{{/* ------------------------------
+     KEYWORDS (safe, no nil crash)
+--------------------------------*/}}
+{{ with .Site.Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{ end }}
+
+{{/* ------------------------------
+     CANONICAL URL
+--------------------------------*/}}
 <link rel="canonical" href="{{ .Permalink }}">
 
-<!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta property="og:url" content="{{ .Permalink }}">
+{{/* ------------------------------
+     OPEN GRAPH (OG)
+--------------------------------*/}}
 <meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
 
-<!-- OG Image -->
-{{ $img := "" }}
-{{ if .Params.featured_image }}
-  {{ $img = .Params.featured_image }}
-{{ else if .Site.Params.defaultImage }}
-  {{ $img = .Site.Params.defaultImage }}
+{{ with .Title }}
+<meta property="og:title" content="{{ . }}">
 {{ end }}
-<meta property="og:image" content="{{ $img }}">
 
-<!-- Twitter Card -->
+{{ with .Description }}
+<meta property="og:description" content="{{ . }}">
+{{ end }}
+
+{{/* Featured image for OG (if exists) */}}
+{{ $featured := .Params.featured_image }}
+{{ $img := or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+
+{{ if $img }}
+<meta property="og:image" content="{{ $img.Permalink }}">
+{{ else if .Params.og_image }}
+<meta property="og:image" content="{{ .Params.og_image }}">
+{{ end }}
+
+{{/* ------------------------------
+     TWITTER CARDS
+--------------------------------*/}}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ $img }}">
 
-<!-- Language -->
-<meta property="og:locale" content="{{ .Lang }}">
-{{ range .Translations }}
-<meta property="og:locale:alternate" content="{{ .Lang }}">
+{{ with .Title }}
+<meta name="twitter:title" content="{{ . }}">
 {{ end }}
 
-<!-- Mobile -->
-<meta name="theme-color" content="#C9A86A">
+{{ with .Description }}
+<meta name="twitter:description" content="{{ . }}">
+{{ end }}
+
+{{ if $img }}
+<meta name="twitter:image" content="{{ $img.Permalink }}">
+{{ end }}
+
+{{/* ------------------------------
+     LANGUAGE + RTL SUPPORT
+--------------------------------*/}}
+<meta name="language" content="{{ .Lang }}">
+{{ if eq .Lang "ar" }}
+<meta name="direction" content="rtl">
+{{ else }}
+<meta name="direction" content="ltr">
+{{ end }}

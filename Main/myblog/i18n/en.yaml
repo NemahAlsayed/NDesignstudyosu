@@ -25,3 +25,21 @@ aboutParagraph3: "We believe in empowering communities through accessible knowle
 aboutParagraph4: "Through collaboration with nonprofits, educational institutions, and businesses, we aim to make a positive impact through our work."
 
 blogButton: "View Our Work"
+
+footerTagline:
+  other: "Creative Design for Purposeful Impact."
+
+footerRights:
+  other: "All Rights Reserved."
+
+searchPlaceholder:
+  other: "Search posts..."
+readMore:
+  other: "Read More"
+prev:
+  other: "Previous"
+next:
+  other: "Next"
+  
+share:
+  other: "Share:"

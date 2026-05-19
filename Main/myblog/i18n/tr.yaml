@@ -25,3 +25,22 @@ aboutParagraph3: "Toplulukları erişilebilir bilgi ve düşünceli tasarım yol
 aboutParagraph4: "Kar amacı gütmeyen kuruluşlar, eğitim kurumları ve işletmelerle işbirliği yaparak, çalışmalarımızla olumlu bir etki yaratmayı hedefliyoruz."
 
 blogButton: "Çalışmalarımızı Görüntüle"
+
+footerTagline:
+  other: "Amaca Yönelik Yaratıcı Tasarım."
+
+footerRights:
+  other: "Tüm Hakları Saklıdır."
+
+searchPlaceholder:
+  other: "Yazılarda ara..."
+readMore:
+  other: "Devamını Oku"
+prev:
+  other: "Önceki"
+next:
+  other: "Sonraki"
+
+
+
+

@@ -1,18 +1,39 @@
 <footer class="nds-footer">
 
-  <p class="nds-footer-tagline">
-    Creative Design for Purposeful Impact.
-  </p>
+  <!-- Top Section -->
+  <div class="nds-footer-grid">
 
-  <div class="nds-footer-social">
-    <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-    <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
-    <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <!-- Column 1: Tagline -->
+    <div class="nds-footer-col">
+      {{ $tagline := i18n "footerTagline" | default "Creative Design for Purposeful Impact." }}
+      <p class="nds-footer-tagline">{{ $tagline }}</p>
+    </div>
+
+
+    <!-- Column 2: Social Icons -->
+    <div class="nds-footer-col">
+      <div class="nds-footer-social">
+
+        {{ range .Site.Params.socials }}
+  <a href="{{ .link }}" ...>
+    {{ partial "icons/social.html" .name }}
+  </a>
+{{ end }}
+
+
+      </div>
+    </div>
+
   </div>
 
+  <!-- Bottom Section -->
+  {{ $raw := i18n "footerRights" }}
+  {{ $rights := cond (ne $raw "footerRights") $raw "" }}
+
   <p class="nds-footer-copy">
-    © 2026 N Design Studio — All Rights Reserved.
+    © {{ now.Year }} N Design Studio{{ if ne $rights "" }} — {{ $rights }}{{ end }}
   </p>
 
-</footer>
+  <script src="/js/search.js"></script>
 
+</footer>

@@ -2,18 +2,23 @@
 
     <div class="header-container">
 
-        <!-- Logo -->
-        <div class="logo-wrapper">
-            <a href="{{ .Site.Home.RelPermalink }}" class="nds-logo-text">
-                {{ .Site.Title }}
-            </a>
-        </div>
+     <!-- Logo -->
+<div class="nds-logo">
+  <a href="{{ .Site.Home.RelPermalink }}">
+    <img src="/images/logo.png" alt="N Design Studio Logo">
+  </a>
+</div>
+
+
 
         <!-- Desktop Navigation -->
         <nav class="nav-links">
-            <a href="/{{ .Lang }}/posts/" class="nav-item">Blog</a>
-            <a href="/{{ .Lang }}/about/" class="nav-item">About</a>
-            <a href="/{{ .Lang }}/contact/" class="nav-item">Contact</a>
+
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" class="nav-item">
+                {{ .Name }}
+            </a>
+            {{ end }}
 
             <!-- Language Dropdown -->
             {{ partial "language-dropdown.html" . }}
@@ -31,11 +36,10 @@
     <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobileNav">
 
-        <a href="/{{ .Lang }}/posts/">Blog</a>
-        <a href="/{{ .Lang }}/about/">About</a>
-        <a href="/{{ .Lang }}/contact/">Contact</a>
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
 
-        <!-- Language Dropdown (Mobile) -->
         <div class="mobile-lang">
             {{ partial "language-dropdown.html" . }}
         </div>
@@ -43,4 +47,3 @@
     </div>
 
 </header>
-

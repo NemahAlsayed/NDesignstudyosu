@@ -1,27 +1,41 @@
-
 /* ============================================
    N DESIGN STUDIO — MASTER SCSS ENTRY FILE
+   Clean, modular, cinematic, multilingual-ready
 ============================================ */
 
-/* 1. Tokens */
-@import "variables";
-@import "utilities";
-@import "base";
+/* --------------------------------------------
+   1. TOKENS (Variables, Mixins, Base Resets)
+-------------------------------------------- */
+@import "variables";        // Colors, spacing, typography tokens
+@import "utilities";        // Mixins, helpers, functions
+@import "base";             // Normalize, resets, global styles
+@import "blog";
 
-/* 2. Components */
+
+/* --------------------------------------------
+   2. COMPONENTS (Reusable UI Elements)
+-------------------------------------------- */
 @import "components/header";
 @import "components/footer";
 @import "components/language-dropdown";
 @import "components/languages";
 @import "components/cards";
 @import "components/post-card";
-@import "components/featured-posts";
 
-/* 3. Pages */
-@import "pages/home";
-@import "pages/list";
-@import "pages/single";
-@import "pages/taxonomy";
+/* NEW: Cinematic Featured Posts Component */
+@import "components/featured-posts";   // <-- Added & fixed
 
-/* 4. Animations */
-@import "animations";
+
+/* --------------------------------------------
+   3. PAGES (Page-Level Layouts)
+-------------------------------------------- */
+@import "pages/home";       // Arabic / English / Turkish homepages
+@import "pages/list";       // Blog list pages
+@import "pages/single";     // Single post pages
+@import "pages/taxonomy";   // Categories, tags, etc.
+
+
+/* --------------------------------------------
+   4. ANIMATIONS (Global Motion System)
+-------------------------------------------- */
+@import "animations";       // Fade, slide, cinematic transitions

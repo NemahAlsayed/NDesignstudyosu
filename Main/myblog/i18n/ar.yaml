@@ -25,3 +25,21 @@ aboutParagraph3: "نؤمن بتمكين المجتمعات من خلال الم�
 aboutParagraph4: "من خلال التعاون مع المنظمات غير الربحية، والمؤسسات التعليمية، والشركات، نهدف إلى إحداث تأثير إيجابي من خلال عملنا."
 
 blogButton: "عرض أعمالنا"
+
+footerTagline:
+  other: "تصميم إبداعي لصنع تأثير هادف."
+
+footerRights:
+  other: "جميع الحقوق محفوظة."
+
+searchPlaceholder:
+  other: "ابحث في المقالات..."
+readMore:
+  other: "اقرأ المزيد"
+prev:
+  other: "السابق"
+next:
+  other: "التالي"
+
+share:
+  other: "شارك:"

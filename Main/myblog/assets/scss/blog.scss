@@ -1,0 +1,211 @@
+/* ============================
+   Color Variables
+============================ */
+$raw-umber:    #7A5938;
+$timberwolf:   #D7D0C7;
+$anthracite:   #2D302F;
+$gold:         #C9A86A;
+$light-bg:     #F8F6F4;
+$cream:        #f5f0e8;
+
+/* ============================
+   Wrapper
+============================ */
+.nds-blog-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ============================
+   Search Bar
+============================ */
+.nds-search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    input {
+        width: 100%;
+        max-width: 600px;
+        padding: 14px 20px;
+        border-radius: 12px;
+        border: 2px solid $raw-umber;
+        background: #fff;
+        font-size: 1rem;
+        color: $anthracite;
+        transition: 0.3s ease;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba($raw-umber, 0.25);
+        }
+    }
+}
+
+/* ============================
+   Posts Grid — ONE POST PER ROW
+============================ */
+.nds-posts-grid {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+
+/* ============================
+   Post Card — Full Row
+============================ */
+.nds-post-card {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: 1px solid rgba($gold, 0.25);
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        border-color: $gold;
+        box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+/* ============================
+   Image — Square, No Crop
+============================ */
+.nds-post-image-wrapper {
+    width: 320px; /* fixed square */
+    height: 320px;
+    flex-shrink: 0;
+    overflow: hidden;
+
+    @media (max-width: 700px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.nds-post-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* NO CROPPING */
+    background: $cream; /* nice soft background */
+    padding: 10px;
+    border-radius: 18px 0 0 18px;
+    transition: transform 0.4s ease;
+
+    @media (max-width: 700px) {
+        border-radius: 18px 18px 0 0;
+        height: auto;
+    }
+}
+
+.nds-post-card:hover .nds-post-img {
+    transform: scale(1.03);
+}
+
+.nds-post-card {
+    align-items: center; }
+
+/* ============================
+   Content
+============================ */
+.nds-post-content {
+    flex: 1; 
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    color: $anthracite;
+}
+
+.nds-post-title a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $anthracite;
+    text-decoration: none;
+    transition: 0.2s ease;
+
+    &:hover {
+        color: $raw-umber;
+    }
+}
+
+.nds-post-meta {
+    font-size: 0.9rem;
+    color: darken($timberwolf, 30%);
+}
+
+.nds-post-excerpt {
+    color: darken($timberwolf, 40%);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ============================
+   Categories
+============================ */
+.nds-post-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nds-category-pill {
+    background: $cream;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: $anthracite;
+    border: 1px solid rgba($gold, 0.4);
+    transition: 0.2s ease;
+
+    &:hover {
+        background: lighten($gold, 25%);
+        color: #fff;
+        border-color: $gold;
+    }
+}
+
+/* ============================
+   Read More Button
+============================ */
+.nds-readmore-btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 12px 20px;
+    background: $raw-umber;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+
+    &:hover {
+        background: $gold;
+        color: $anthracite;
+    }
+}
+
+/* ============================
+   Fade-in Animation
+============================ */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

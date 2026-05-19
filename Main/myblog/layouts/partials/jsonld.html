@@ -11,8 +11,8 @@
   "logo": "{{ .Site.Params.logo | default "/images/logo.png" }}",
   "description": "{{ .Site.Params.description }}",
   "sameAs": [
-    {{- range $i, $v := .Site.Params.social }}
-      "{{ $v }}"{{ if lt (add $i 1) (len $.Site.Params.social) }},{{ end }}
+    {{- range $i, $v := .Site.Params.socials }}
+      "{{ $v.link }}"{{ if lt (add (int $i) 1) (len $.Site.Params.socials) }},{{ end }}
     {{- end }}
   ]
 }
@@ -48,3 +48,4 @@
 }
 </script>
 {{- end -}}
+

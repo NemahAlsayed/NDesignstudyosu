@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Lang }}">
+<html lang="{{ .Lang }}" dir="{{ if eq .Lang "ar" }}rtl{{ else }}ltr{{ end }}">
 
 <head>
     <meta charset="utf-8">
@@ -13,21 +13,21 @@
         {{ end }}
     </title>
 
+    <!-- Meta Partials -->
     {{ partial "meta.html" . }}
     {{ partial "jsonld.html" . }}
     {{ partial "breadcrumb.jsonld.html" . }}
     {{ partial "faq.jsonld.html" . }}
 
-    <!-- SCSS (Hugo Pipes) -->
+    <!-- Styles (Hugo Pipes) -->
     {{ $css := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
 </head>
 
-<body>
+<body class="nds-body">
 
     <!-- Header -->
     {{ partial "header.html" . }}
@@ -40,7 +40,7 @@
     <!-- Footer -->
     {{ partial "footer.html" . }}
 
-    <!-- JavaScript (Hugo Pipes) -->
+    <!-- JavaScript -->
     {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}"></script>
 

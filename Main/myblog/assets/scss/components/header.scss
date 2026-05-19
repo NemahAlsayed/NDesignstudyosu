@@ -38,13 +38,24 @@
 }
 
 /* Logo */
-.nds-logo-text {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: $gold;
-  text-decoration: none;
-  letter-spacing: 0.04em;
+.nds-logo {
+  display: flex;
+  align-items: center;
 }
+
+.nds-logo img {
+  height: 72px;   
+  width: auto;
+  object-fit: contain;
+  transition: 0.25s ease;
+}
+
+.nds-logo img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
 
 /* Desktop Navigation */
 .nav-links {
