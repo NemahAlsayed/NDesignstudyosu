@@ -26,6 +26,9 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -57,3 +60,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
