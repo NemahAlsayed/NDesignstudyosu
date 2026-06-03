@@ -2,84 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/posts/2026/05/05-17-2026/</loc>
+    <loc>http://localhost:1313/tr/</loc>
+    <lastmod>2026-06-03T00:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tr/about/</loc>
+    <lastmod>2026-06-03T00:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/about/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tr/categories/</loc>
+    <lastmod>2026-06-02T00:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tr/categories/i%C5%9Fler/</loc>
+    <lastmod>2026-06-02T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tr/portfolio/</loc>
+    <lastmod>2026-06-02T00:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/portfolio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/portfolio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/portfolio/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tr/posts/2026/05/05-17-2026/</loc>
     <lastmod>2026-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/posts/</loc>
+    <loc>http://localhost:1313/tr/posts/</loc>
     <lastmod>2026-05-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/posts/"
+                href="http://localhost:1313/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/posts/"
+                href="http://localhost:1313/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/posts/"
+                href="http://localhost:1313/tr/posts/"
                 />
   </url><url>
-    <loc>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/</loc>
-    <lastmod>2026-05-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/"
-                />
+    <loc>http://localhost:1313/tr/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/"
+                href="http://localhost:1313/en/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/"
-                />
-  </url><url>
-    <loc>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/categories/"
-                />
-  </url><url>
-    <loc>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/about/"
-                />
-  </url><url>
-    <loc>https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/en/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="https://urban-space-winner-pqqgp5pvr7wc69rx-1313.app.github.dev/tr/contact/"
+                href="http://localhost:1313/tr/contact/"
                 />
   </url>
 </urlset>

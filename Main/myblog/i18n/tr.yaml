@@ -1,45 +1,41 @@
 navAbout: "Hakkında"
 navContact: "İletişim"
 
-contactTitle: "İletişim"
+contactTitle: "Bize Ulaşın"
 firstname: "Ad"
 lastname: "Soyad"
-email: "E‑posta"
-phone: "Telefon"
-inquiry: "Mesaj"
-checkbox: "Şartları kabul ediyorum"
+email: "E-posta Adresi"
+phone: "Telefon Numarası"
+inquiry: "Talep"
+checkbox: "Şartları ve koşulları kabul ediyorum"
 submit: "Gönder"
 
 requiredField: "Bu alan zorunludur."
-invalidEmail: "Lütfen geçerli bir e‑posta adresi girin."
+invalidEmail: "Lütfen geçerli bir e-posta adresi girin."
 invalidPhone: "Lütfen geçerli bir telefon numarası girin."
 successMessage: "Mesajınız başarıyla gönderildi!"
 errorMessage: "Mesajınız gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
 
-aboutTitle: "Hakkımızda"
-aboutSubtitle: "Kim olduğumuz ve ne yaptığımız"
+aboutTitle: "Biz Kimiz ve Ne Yapıyoruz"
+aboutSubtitle: ""
 
-aboutParagraph1: "Açıklık, yaratıcılık ve anlamlı iletişime adanmış çok disiplinli bir stüdyoyuz."
-aboutParagraph2: "Çalışmalarımız hukuki farkındalık, çok dilli içerik üretimi ve stratejik hikâye anlatımını kapsar."
-aboutParagraph3: "Toplulukları erişilebilir bilgi ve düşünceli tasarım yoluyla güçlendirmeye inanıyoruz."
-aboutParagraph4: "Kar amacı gütmeyen kuruluşlar, eğitim kurumları ve işletmelerle işbirliği yaparak, çalışmalarımızla olumlu bir etki yaratmayı hedefliyoruz."
+aboutParagraph1: "Netlik, yaratıcılık ve anlamlı iletişime adanmış disiplinlerarası bir stüdyoyuz."
+aboutParagraph2: "Çalışmalarımız yasal farkındalıktan çok dilli içerik üretimine ve stratejik hikaye anlatımına kadar uzanır."
+aboutParagraph3: "Erişilebilir bilgi ve düşünceli tasarım yoluyla toplulukları güçlendirmeye inanıyoruz."
+aboutParagraph4: "Kâr amacı gütmeyen kuruluşlar, eğitim kurumları ve işletmelerle işbirliği içinde, çalışmalarımız aracılığıyla olumlu etki yaratmayı hedefliyoruz."
 
-blogButton: "Çalışmalarımızı Görüntüle"
+blogButton: "Çalışmalarımızı Görün"
 
-footerTagline:
-  other: "Amaca Yönelik Yaratıcı Tasarım."
+footerTagline: "Anlamlı bir etki yaratmak için yaratıcı tasarım."
+footerRights: "Tüm hakları saklıdır."
 
-footerRights:
-  other: "Tüm Hakları Saklıdır."
+searchPlaceholder: "Makalelerde ara..."
+readMore: "Devamını Oku"
+prev: "Önceki"
+next: "Sonraki"
 
-searchPlaceholder:
-  other: "Yazılarda ara..."
-readMore:
-  other: "Devamını Oku"
-prev:
-  other: "Önceki"
-next:
-  other: "Sonraki"
+share: "Paylaş:"
+
 
 
 

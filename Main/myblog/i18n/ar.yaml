@@ -1,4 +1,4 @@
-navAbout: "حول"
+navAbout: "من نحن"
 navContact: "اتصل بنا"
 
 contactTitle: "اتصل بنا"
@@ -16,8 +16,8 @@ invalidPhone: "يرجى إدخال رقم هاتف صالح."
 successMessage: "تم إرسال رسالتك بنجاح!"
 errorMessage: "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى لاحقاً."
 
-aboutTitle: "من نحن"
-aboutSubtitle: "من نكون وماذا نفعل"
+aboutTitle: "من نكون وماذا نفعل"
+aboutSubtitle: ""
 
 aboutParagraph1: "نحن استوديو متعدد التخصصات مكرّس للوضوح والإبداع والتواصل الهادف."
 aboutParagraph2: "يمتد عملنا من التوعية القانونية إلى إنتاج المحتوى متعدد اللغات وسرد القصص الاستراتيجي."
@@ -26,20 +26,12 @@ aboutParagraph4: "من خلال التعاون مع المنظمات غير ال
 
 blogButton: "عرض أعمالنا"
 
-footerTagline:
-  other: "تصميم إبداعي لصنع تأثير هادف."
+footerTagline: "تصميم إبداعي لصنع تأثير هادف."
+footerRights: "جميع الحقوق محفوظة."
 
-footerRights:
-  other: "جميع الحقوق محفوظة."
+searchPlaceholder: "ابحث في المقالات..."
+readMore: "اقرأ المزيد"
+prev: "السابق"
+next: "التالي"
 
-searchPlaceholder:
-  other: "ابحث في المقالات..."
-readMore:
-  other: "اقرأ المزيد"
-prev:
-  other: "السابق"
-next:
-  other: "التالي"
-
-share:
-  other: "شارك:"
+share: "شارك:"

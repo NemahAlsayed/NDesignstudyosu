@@ -6,7 +6,9 @@
 
         <!-- Title -->
         <h1 class="nds-about-title">{{ i18n "aboutTitle" }}</h1>
-        <h5 class="nds-about-subtitle">{{ i18n "aboutSubtitle" }}</h5>
+        
+        <!-- Decorative line (optional) -->
+        <div style="width: 70px; height: 3px; background: #b8860b; margin: 20px auto; border-radius: 3px;"></div>
 
         <!-- Content -->
         <p class="nds-about-text">{{ i18n "aboutParagraph1" }}</p>
@@ -17,10 +19,9 @@
         <p class="nds-about-text">{{ . }}</p>
         {{ end }}
 
-        <!-- Buttons -->
+        <!-- Single Button -->
         <div class="nds-about-buttons">
-            <a href="/{{ .Lang }}/contact/" class="btn btn-primary">{{ i18n "contactTitle" }}</a>
-            <a href="/{{ .Lang }}/posts/" class="btn btn-secondary">{{ i18n "blogButton" }}</a>
+            <a href="/{{ .Lang }}/contact/" class="btn-primary">{{ i18n "contactTitle" }}</a>
         </div>
 
     </div>

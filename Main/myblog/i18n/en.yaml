@@ -4,11 +4,11 @@ navContact: "Contact"
 contactTitle: "Contact Us"
 firstname: "First Name"
 lastname: "Last Name"
-email: "Email"
-phone: "Phone"
+email: "Email Address"
+phone: "Phone Number"
 inquiry: "Inquiry"
 checkbox: "I agree to the terms and conditions"
-submit: "Send Message"
+submit: "Submit"
 
 requiredField: "This field is required."
 invalidEmail: "Please enter a valid email address."
@@ -16,30 +16,24 @@ invalidPhone: "Please enter a valid phone number."
 successMessage: "Your message has been sent successfully!"
 errorMessage: "An error occurred while sending your message. Please try again later."
 
-aboutTitle: "About Us"
-aboutSubtitle: "Who we are and what we do"
+aboutTitle: "Who We Are & What We Do"
+aboutSubtitle: ""
 
 aboutParagraph1: "We are a multidisciplinary studio dedicated to clarity, creativity, and meaningful communication."
-aboutParagraph2: "Our work spans legal awareness, multilingual content creation, and strategic storytelling."
+aboutParagraph2: "Our work spans from legal awareness to multilingual content production and strategic storytelling."
 aboutParagraph3: "We believe in empowering communities through accessible knowledge and thoughtful design."
-aboutParagraph4: "Through collaboration with nonprofits, educational institutions, and businesses, we aim to make a positive impact through our work."
+aboutParagraph4: "Through collaboration with non-profits, educational institutions, and businesses, we aim to create positive impact through our work."
 
 blogButton: "View Our Work"
 
-footerTagline:
-  other: "Creative Design for Purposeful Impact."
+footerTagline: "Creative design to make a meaningful impact."
+footerRights: "All rights reserved."
 
-footerRights:
-  other: "All Rights Reserved."
+searchPlaceholder: "Search articles..."
+readMore: "Read More"
+prev: "Previous"
+next: "Next"
 
-searchPlaceholder:
-  other: "Search posts..."
-readMore:
-  other: "Read More"
-prev:
-  other: "Previous"
-next:
-  other: "Next"
-  
-share:
-  other: "Share:"
+share: "Share:"
+
+
