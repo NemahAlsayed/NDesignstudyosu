@@ -30,45 +30,7 @@ jobs:
           fetch-depth: 0
 
       # -----------------------------
-      # Clean old Hugo cache (important)
-      # -----------------------------
-      - name: Clean old Hugo cache
-        run: |
-          echo "Cleaning old Hugo cache..."
-          rm -rf Main/myblog/resources/_gen || true
-
-      # -----------------------------
-      # Cache Hugo resources
-      # -----------------------------
-      - name: Cache Hugo resources
-        uses: actions/cache@v3
-        with:
-          path: Main/myblog/resources/_gen
-          key: ${{ runner.os }}-hugo-${{ hashFiles('Main/myblog/**') }}
-          restore-keys: |
-            ${{ runner.os }}-hugo-
-
-      # -----------------------------
-      # Cache Dart Sass
-      # -----------------------------
-      - name: Cache Dart Sass
-        uses: actions/cache@v3
-        with:
-          path: ~/.dart-sass
-          key: ${{ runner.os }}-dart-sass
-          restore-keys: |
-            ${{ runner.os }}-dart-sass
-
-      # -----------------------------
-      # Install Dart Sass
-      # -----------------------------
-      - name: Install Dart Sass
-        run: |
-          sudo snap install dart-sass
-          mkdir -p ~/.dart-sass
-
-      # -----------------------------
-      # Setup Hugo Extended
+      # Setup Hugo Extended (with correct version)
       # -----------------------------
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -77,28 +39,38 @@ jobs:
           extended: true
 
       # -----------------------------
-      # Debug SCSS files
+      # Install Dart Sass (required for extended version)
       # -----------------------------
-      - name: Debug SCSS files
-        working-directory: "Main/myblog"
+      - name: Install Dart Sass
         run: |
-          echo "=== SCSS FILES FOUND ==="
-          find assets -name "*.scss" -print || echo "No SCSS files found!"
-          echo "========================="
+          sudo snap install dart-sass
+          sudo snap connect dart-sass:core22
 
       # -----------------------------
-      # Build Hugo site (correct baseURL)
+      # Build Hugo site (PRESERVING all customizations)
       # -----------------------------
       - name: Build Hugo site
         working-directory: "Main/myblog"
         run: |
           echo "=== Starting Hugo Build ==="
-          hugo --cleanDestinationDir --minify --gc --enableGitInfo \
-          --baseURL "https://ndesignstudyosu.com.tr/" \
-          --logLevel info
+          # KEY FIX: Removed --minify and HUGO_ENV that were breaking custom styles
+          hugo --cleanDestinationDir --gc --enableGitInfo \
+          --baseURL "https://ndesignstudyosu.com.tr/"
           echo "=== Hugo Build Completed ==="
-        env:
-          HUGO_ENV: production
+        # KEY FIX: Removed HUGO_ENV: production to match local development
+
+      # -----------------------------
+      # Debug: Check if custom files were built
+      # -----------------------------
+      - name: Verify custom assets
+        working-directory: "Main/myblog"
+        run: |
+          echo "=== Built files in public ==="
+          ls -la public/
+          echo "=== Checking for custom CSS/JS ==="
+          find public -name "*.css" -o -name "*.js" | head -20
+          echo "=== Checking for images ==="
+          find public -name "*.png" -o -name "*.jpg" -o -name "*.svg" | head -10
 
       # -----------------------------
       # Add CNAME
