@@ -30,16 +30,39 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.157.0'
-          extended: true
+          extended: true  # IMPORTANT: Needed for SCSS processing
 
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
+      - name: Verify custom files
+        working-directory: "Main/myblog"
+        run: |
+          echo "=== Checking partials ==="
+          ls -la layouts/partials/ 2>/dev/null || echo "No partials found"
+          echo "=== Checking SCSS ==="
+          find assets -name "*.scss" 2>/dev/null || echo "No SCSS found"
+          echo "=== Checking static ==="
+          ls -la static/ 2>/dev/null || echo "No static files"
+
       - name: Build Hugo site
         working-directory: "Main/myblog"
         run: |
+          echo "=== Building with SCSS support ==="
           hugo -D --cleanDestinationDir --gc --enableGitInfo \
-          --baseURL "https://ndesignstudyosu.com.tr/"
+          --baseURL "https://ndesignstudyosu.com.tr/" \
+          --logLevel info
+          echo "=== Build complete ==="
+
+      - name: Verify build output
+        working-directory: "Main/myblog"
+        run: |
+          echo "=== Built files ==="
+          ls -la public/
+          echo "=== Looking for CSS ==="
+          find public -name "*.css" | head -5
+          echo "=== Looking for images ==="
+          find public -name "*.png" | head -5
 
       - name: Add CNAME file
         run: echo "ndesignstudyosu.com.tr" > "Main/myblog/public/CNAME"
