@@ -37,12 +37,7 @@ jobs:
 
       - name: Build Hugo site
         working-directory: "Main/myblog"
-        run: |
-          hugo -D --cleanDestinationDir --gc --enableGitInfo \
-          --baseURL "https://ndesignstudyosu.com.tr/"
-
-      - name: Add .nojekyll (disable Jekyll routing)
-        run: touch "Main/myblog/public/.nojekyll"
+        run: hugo -D --minify --baseURL "https://ndesignstudyosu.com.tr/"
 
       - name: Add CNAME file
         run: echo "ndesignstudyosu.com.tr" > "Main/myblog/public/CNAME"
