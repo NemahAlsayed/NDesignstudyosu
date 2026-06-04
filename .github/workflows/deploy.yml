@@ -20,67 +20,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # -----------------------------
-      # Checkout
-      # -----------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
 
-      # -----------------------------
-      # Setup Hugo Extended (with correct version)
-      # -----------------------------
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.157.0'
           extended: true
 
-      # -----------------------------
-      # Install Dart Sass (required for extended version)
-      # -----------------------------
       - name: Install Dart Sass
-        run: |
-          sudo snap install dart-sass
-          sudo snap connect dart-sass:core22
+        run: sudo snap install dart-sass
 
-      # -----------------------------
-      # Build Hugo site (PRESERVING all customizations)
-      # -----------------------------
       - name: Build Hugo site
         working-directory: "Main/myblog"
         run: |
-          echo "=== Starting Hugo Build ==="
-          # KEY FIX: Removed --minify and HUGO_ENV that were breaking custom styles
-          hugo --cleanDestinationDir --gc --enableGitInfo \
+          hugo -D --cleanDestinationDir --gc --enableGitInfo \
           --baseURL "https://ndesignstudyosu.com.tr/"
-          echo "=== Hugo Build Completed ==="
-        # KEY FIX: Removed HUGO_ENV: production to match local development
 
-      # -----------------------------
-      # Debug: Check if custom files were built
-      # -----------------------------
-      - name: Verify custom assets
-        working-directory: "Main/myblog"
-        run: |
-          echo "=== Built files in public ==="
-          ls -la public/
-          echo "=== Checking for custom CSS/JS ==="
-          find public -name "*.css" -o -name "*.js" | head -20
-          echo "=== Checking for images ==="
-          find public -name "*.png" -o -name "*.jpg" -o -name "*.svg" | head -10
-
-      # -----------------------------
-      # Add CNAME
-      # -----------------------------
       - name: Add CNAME file
         run: echo "ndesignstudyosu.com.tr" > "Main/myblog/public/CNAME"
 
-      # -----------------------------
-      # Upload artifact
-      # -----------------------------
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
