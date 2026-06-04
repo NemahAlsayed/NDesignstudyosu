@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sql-System on N Design Studio</title>
-    <link>http://localhost:1313/en/categories/sql-system/</link>
-    <description>Recent content in Sql-System on N Design Studio</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/sql-system/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</title>
-      <link>http://localhost:1313/en/posts/2026/01/sharia-compliant-banking-system-postgresql/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/posts/2026/01/sharia-compliant-banking-system-postgresql/</guid>
-      <description>&lt;div style=&#34;&#xA;    background: linear-gradient(135deg, #D9D6CF 0%, #C9A86A 100%);&#xA;    padding: 3rem 2rem;&#xA;    border-radius: 28px;&#xA;    text-align: center;&#xA;    color: #2F2F2F;&#xA;    margin-bottom: 2.5rem;&#xA;&#34;&gt;&#xA;    &lt;h1 style=&#34;margin-bottom: 0.5rem; font-size: 2.4rem; color:#2F2F2F;&#34;&gt;&#xA;        Sharia‑Compliant Banking, Engineered for the Modern World&#xA;    &lt;/h1&gt;&#xA;    &lt;p style=&#34;font-size: 1.05rem; max-width: 700px; margin: 0 auto; color:#4A3F3A;&#34;&gt;&#xA;        A cinematic deep dive into how PostgreSQL can power a fully automated, transparent, and Sharia‑compliant banking backend — built with real triggers, stored procedures, and Islamic finance logic.&#xA;    &lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;p&gt;Modern Islamic finance is one of the fastest‑growing sectors in global banking — yet &lt;strong&gt;production‑grade, open‑source systems that model real Sharia‑compliant workflows are almost nonexistent&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sql-System on N Design Studio</title><link>https://ndesignstudyosu.com.tr/en/categories/sql-system/</link><description>Recent content in Sql-System on N Design Studio</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ndesignstudyosu.com.tr/en/categories/sql-system/index.xml" rel="self" type="application/rss+xml"/><item><title>Building a Sharia‑Compliant Banking System with PostgreSQL: A Deep Dive into Modern Islamic Finance Engineering</title><link>https://ndesignstudyosu.com.tr/en/posts/2026/01/sharia-compliant-banking-system-postgresql/</link><pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate><guid>https://ndesignstudyosu.com.tr/en/posts/2026/01/sharia-compliant-banking-system-postgresql/</guid><description>&lt;div style="
+ background: linear-gradient(135deg, #D9D6CF 0%, #C9A86A 100%);
+ padding: 3rem 2rem;
+ border-radius: 28px;
+ text-align: center;
+ color: #2F2F2F;
+ margin-bottom: 2.5rem;
+"&gt;
+ &lt;h1 style="margin-bottom: 0.5rem; font-size: 2.4rem; color:#2F2F2F;"&gt;
+ Sharia‑Compliant Banking, Engineered for the Modern World
+ &lt;/h1&gt;
+ &lt;p style="font-size: 1.05rem; max-width: 700px; margin: 0 auto; color:#4A3F3A;"&gt;
+ A cinematic deep dive into how PostgreSQL can power a fully automated, transparent, and Sharia‑compliant banking backend — built with real triggers, stored procedures, and Islamic finance logic.
+ &lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Modern Islamic finance is one of the fastest‑growing sectors in global banking — yet &lt;strong&gt;production‑grade, open‑source systems that model real Sharia‑compliant workflows are almost nonexistent&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>
