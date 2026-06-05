@@ -1,7 +1,7 @@
 baseURL = "https://ndesignstudyosu.com.tr/"
 title = "N Design Studio"
 defaultContentLanguage = "ar"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 ############################################
 # LANGUAGES
@@ -19,27 +19,22 @@ contentDir = "content/ar"
 title = "N Design Studio"
 languageCode = "ar"
 direction = "rtl"
-home = "Arabic-home"
-
-[languages.ar.params]
-homepageLayout = "Arabic-home"
 
 [languages.ar.menu]
   [[languages.ar.menu.main]]
   name = "من نحن"
-  url = "/about/"
+  url = "/ar/about/"
   weight = 1
 
   [[languages.ar.menu.main]]
   name = "المدونة"
-  url = "/posts/"
+  url = "/ar/posts/"
   weight = 2
 
   [[languages.ar.menu.main]]
   name = "الأعمال"
-  url = "/portfolio/"
+  url = "/ar/portfolio/"
   weight = 3
-
 
 ############################################
 # ENGLISH
@@ -50,10 +45,6 @@ weight = 2
 contentDir = "content/en"
 title = "N Design Studio"
 languageCode = "en"
-home = "English-home"
-
-[languages.en.params]
-homepageLayout = "English-home"
 
 [languages.en.menu]
   [[languages.en.menu.main]]
@@ -71,7 +62,6 @@ homepageLayout = "English-home"
   url = "/en/portfolio/"
   weight = 3
 
-
 ############################################
 # TURKISH
 ############################################
@@ -81,10 +71,6 @@ weight = 3
 contentDir = "content/tr"
 title = "N Design Studio"
 languageCode = "tr"
-home = "Turkish-home"
-
-[languages.tr.params]
-homepageLayout = "Turkish-home"
 
 [languages.tr.menu]
   [[languages.tr.menu.main]]
@@ -102,6 +88,9 @@ homepageLayout = "Turkish-home"
   url = "/tr/portfolio/"
   weight = 3
 
+############################################
+# SOCIALS
+############################################
 [[params.socials]]
 name = "instagram"
 link = "https://instagram.com/ndesignstudyosu/"
@@ -122,12 +111,14 @@ link = "https://youtube.com/@ndesignstudyosu8359"
 name = "tiktok"
 link = "https://tiktok.com/@ndesignstudyosu"
 
-
 ############################################
 # MARKUP
 ############################################
 [markup.goldmark.renderer]
 unsafe = true
 
+############################################
+# TAXONOMIES
+############################################
 [taxonomies]
-  category = "categories"
+category = "categories"
