@@ -20,6 +20,9 @@ title = "N Design Studio"
 languageCode = "ar"
 direction = "rtl"
 
+[languages.ar.params]
+homepageLayout = "Arabic-home"
+
 [languages.ar.menu]
   [[languages.ar.menu.main]]
   name = "من نحن"
@@ -46,6 +49,9 @@ contentDir = "content/en"
 title = "N Design Studio"
 languageCode = "en"
 
+[languages.en.params]
+homepageLayout = "English-home"
+
 [languages.en.menu]
   [[languages.en.menu.main]]
   name = "About"
@@ -71,6 +77,9 @@ weight = 3
 contentDir = "content/tr"
 title = "N Design Studio"
 languageCode = "tr"
+
+[languages.tr.params]
+homepageLayout = "Turkish-home"
 
 [languages.tr.menu]
   [[languages.tr.menu.main]]
@@ -122,3 +131,13 @@ unsafe = true
 ############################################
 [taxonomies]
 category = "categories"
+
+############################################
+# BUILD CONFIGURATION
+############################################
+[build]
+  writeStats = true
+
+[asset]
+  [asset.sass]
+    use = "dartsass"
