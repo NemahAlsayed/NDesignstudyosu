@@ -37,7 +37,10 @@ jobs:
 
       - name: Build Hugo site
         working-directory: "Main/myblog"
-        run: hugo -D --minify --baseURL "https://ndesignstudyosu.com.tr/"
+        run: |
+          hugo --cleanDestinationDir --minify --gc --enableGitInfo \
+          --baseURL "https://ndesignstudyosu.com.tr/"
+        # NO HUGO_ENV here - this matches your local build
 
       - name: Add CNAME file
         run: echo "ndesignstudyosu.com.tr" > "Main/myblog/public/CNAME"
