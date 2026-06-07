@@ -1,0 +1,173 @@
+// Portfolio Page Styles
+.nds-portfolio-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #faf6ef 0%, #f5ede0 100%);
+    padding: 2rem;
+    margin: 0;
+}
+
+.nds-portfolio-card {
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow: 0 35px 50px -25px rgba(0, 0, 0, 0.2);
+}
+
+.nds-portfolio-hero {
+    background: linear-gradient(135deg, #f3e5c9 0%, #e8d5b5 50%, #dcc49a 100%);
+    padding: 2.8rem 2rem;
+    text-align: center;
+    border-bottom: 3px solid #b8860b;
+    animation: ndsSoftGlow 3s infinite alternate;
+    
+    h1 {
+        font-size: 2.8rem;
+        color: #5c3b1f;
+        margin-bottom: 0.5rem;
+        animation: ndsFadeSlideUp 0.8s ease-out;
+    }
+    
+    p {
+        color: #7a552e;
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes ndsSoftGlow {
+    0% { background: linear-gradient(135deg, #f3e5c9, #e8d5b5, #dcc49a); }
+    100% { background: linear-gradient(135deg, #f7efdf, #ede1c6, #e0cdad); }
+}
+
+@keyframes ndsFadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nds-coming-soon-container {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.nds-coming-soon-card {
+    background: linear-gradient(135deg, #fffef8, #fef9f0);
+    border-radius: 40px;
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid rgba(184, 134, 11, 0.2);
+    box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    animation: ndsCardPulse 2s infinite;
+    
+    &:hover {
+        transform: scale(1.02);
+        border-color: rgba(184, 134, 11, 0.5);
+        box-shadow: 0 30px 50px -18px rgba(0, 0, 0, 0.2);
+    }
+    
+    h2 {
+        font-size: 2rem;
+        color: #5c3b1f;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        color: #7a552e;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+@keyframes ndsCardPulse {
+    0% { box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.1); }
+    50% { box-shadow: 0 25px 45px -10px rgba(184, 134, 11, 0.2); }
+    100% { box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.1); }
+}
+
+.nds-coming-icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    animation: ndsIconBounce 1.5s ease infinite;
+}
+
+@keyframes ndsIconBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.nds-coming-badge {
+    display: inline-block;
+    background: #b8860b;
+    color: #fffef8;
+    padding: 0.4rem 1.2rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+}
+
+.nds-decorative-line {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #b8860b, transparent);
+    margin: 1rem auto;
+}
+
+.nds-sparkle {
+    display: inline-block;
+    animation: ndsSparkle 1s ease infinite;
+}
+
+@keyframes ndsSparkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
+}
+
+.nds-coming-soon-small {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+// Responsive
+@media (max-width: 768px) {
+    .nds-portfolio-hero {
+        h1 { font-size: 1.8rem; }
+        p { font-size: 0.9rem; }
+    }
+    
+    .nds-coming-soon-card {
+        padding: 2rem 1.5rem;
+        h2 { font-size: 1.5rem; }
+    }
+    
+    .nds-coming-soon-container {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nds-portfolio-hero {
+        h1 { font-size: 1.5rem; }
+    }
+    
+    .nds-coming-soon-card {
+        h2 { font-size: 1.3rem; }
+        p { font-size: 0.85rem; }
+    }
+}

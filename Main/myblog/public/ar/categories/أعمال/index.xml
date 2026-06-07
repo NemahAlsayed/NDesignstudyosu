@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>أعمال on N Design Studio</title>
+    <link>http://localhost:1313/ar/categories/%D8%A3%D8%B9%D9%85%D8%A7%D9%84/</link>
+    <description>Recent content in أعمال on N Design Studio</description>
+    <generator>Hugo</generator>
+    <language>ar</language>
+    <lastBuildDate>Tue, 02 Jun 2026 00:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/ar/categories/%D8%A3%D8%B9%D9%85%D8%A7%D9%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>أعمالنا - معرض N Design Studio</title>
+      <link>http://localhost:1313/ar/portfolio/</link>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/ar/portfolio/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
