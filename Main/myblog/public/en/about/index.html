@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,21 +18,21 @@
   <meta name="description" content="Learn about N Design Studio - A multidisciplinary studio for design and creativity" />
 
   
-  <link rel="canonical" href="http://localhost:1313/en/about/" />
+  <link rel="canonical" href="https://ndesignstudyosu.com.tr/en/about/" />
 
   
   
-    <link rel="alternate" hreflang="ar" href="http://localhost:1313/ar/about/" />
+    <link rel="alternate" hreflang="ar" href="https://ndesignstudyosu.com.tr/ar/about/" />
   
-    <link rel="alternate" hreflang="en" href="http://localhost:1313/en/about/" />
+    <link rel="alternate" hreflang="en" href="https://ndesignstudyosu.com.tr/en/about/" />
   
-    <link rel="alternate" hreflang="tr" href="http://localhost:1313/tr/about/" />
+    <link rel="alternate" hreflang="tr" href="https://ndesignstudyosu.com.tr/tr/about/" />
   
-  <link rel="alternate" hreflang="x-default" href="http://localhost:1313/en/about/" />
+  <link rel="alternate" hreflang="x-default" href="https://ndesignstudyosu.com.tr/en/about/" />
 
   
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://localhost:1313/en/about/" />
+  <meta property="og:url" content="https://ndesignstudyosu.com.tr/en/about/" />
   <meta property="og:title"
         content="About Us | N Design Studio" />
   <meta property="og:description" content="Learn about N Design Studio - A multidisciplinary studio for design and creativity" />
@@ -204,33 +204,51 @@
     <main id="main-content">
         
 
-<section class="nds-about-wrapper">
+<div class="nds-blog-container">
 
-    <div class="nds-about-card">
+    
+    <div class="nds-search-bar">
+        <input type="text" id="searchInput" placeholder="Search articles...">
+    </div>
 
+    
+    <div class="nds-tags">
         
-        <h1 class="nds-about-title">Who We Are &amp; What We Do</h1>
-        
-        
-        <div style="width: 70px; height: 3px; background: #b8860b; margin: 20px auto; border-radius: 3px;"></div>
+    </div>
 
-        
-        <p class="nds-about-text">We are a multidisciplinary studio dedicated to clarity, creativity, and meaningful communication.</p>
-        <p class="nds-about-text">Our work spans from legal awareness to multilingual content production and strategic storytelling.</p>
-        <p class="nds-about-text">We believe in empowering communities through accessible knowledge and thoughtful design.</p>
-
-        
-        <p class="nds-about-text">Through collaboration with non-profits, educational institutions, and businesses, we aim to create positive impact through our work.</p>
-        
+    
+    <div class="nds-posts-grid">
 
         
-        <div class="nds-about-buttons">
-            <a href="/en/contact/" class="btn-primary">Contact Us</a>
-        </div>
+        
 
     </div>
 
-</section>
+    
+    <div class="nds-pagination">
+        
+
+        <span class="nds-page-number">
+            1 / 0
+        </span>
+
+        
+    </div>
+
+</div>
+
+
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    let filter = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".nds-post-card");
+
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "" : "none";
+    });
+});
+</script>
 
 
     </main>

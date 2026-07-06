@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>İşler on N Design Studio</title>
-    <link>http://localhost:1313/tr/categories/i%C5%9Fler/</link>
+    <link>https://ndesignstudyosu.com.tr/tr/categories/i%C5%9Fler/</link>
     <description>Recent content in İşler on N Design Studio</description>
     <generator>Hugo</generator>
     <language>tr</language>
     <lastBuildDate>Tue, 02 Jun 2026 00:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tr/categories/i%C5%9Fler/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ndesignstudyosu.com.tr/tr/categories/i%C5%9Fler/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Portföy - N Design Studio Çalışmaları</title>
-      <link>http://localhost:1313/tr/portfolio/</link>
+      <link>https://ndesignstudyosu.com.tr/tr/portfolio/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/tr/portfolio/</guid>
+      <guid>https://ndesignstudyosu.com.tr/tr/portfolio/</guid>
       <description></description>
     </item>
   </channel>
