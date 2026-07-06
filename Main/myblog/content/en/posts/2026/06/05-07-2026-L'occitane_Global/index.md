@@ -1,5 +1,5 @@
 ---
-title: "My Products Review of L'Occitane used and tried favourites (With Exclusive Discount Code A162)"
+title: "My Products Review of L'occitane used and tried favourits (With Exclusive Discount Code A162)"
 date: 2026-05-07T00:00:00+03:00
 draft: false
 featured_image: "images/Preview.png"
@@ -269,13 +269,12 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
             justify-content: center;
             border-bottom: 2px solid #e8d5b5;
             overflow: hidden;
-            padding: 1rem;
         }
 
         .product-card .img-placeholder img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             transition: transform 0.6s ease;
         }
 
@@ -544,17 +543,17 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
         <!-- ===== PRODUCT GRID ===== -->
         <div class="product-grid">
 
-            <!-- PRODUCT 1: Amber Perfume -->
+            <!-- PRODUCT 1: Ambre Perfume -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="images/Amber.png" alt="Ambre Eau de Parfum">
+                    <img src="https://sa.loccitane.com/dw/image/v2/BDCL_PRD/on/demandware.static/-/Sites-loccitane-master-catalog/default/dw586223f9/images/les%20classiques/1200x1200_23EP050AMR25.jpg?sw=600&sh=600" alt="Ambre Eau de Parfum">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
                         <span>★★★★★</span>
                         <span class="rating-text">(124 reviews)</span>
                     </div>
-                    <h3>Ambre Eau de Parfum</h3>
+                    <h3>Ambre Eau de Parfum 50ml</h3>
                     <p>
                         If you've ever wanted a fragrance that feels like a warm embrace, this is it.
                         Warm vanilla, musk, and patchouli — unforgettable, feminine, and elegant.
@@ -564,38 +563,19 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
                 </div>
             </div>
 
-            <!-- PRODUCT 2: Almond Shower Oil -->
+            <!-- PRODUCT 2: Concrète de Lait -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="images/Amande.png" alt="Almond Shower Oil">
+                    <img src="images/milk-concentrate.jpg" alt="Concrète de Lait Milk Concentrate">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
                         <span>★★★★★</span>
                         <span class="rating-text">(89 reviews)</span>
                     </div>
-                    <h3>Almond Shower Oil</h3>
+                    <h3>Concrète de Lait — Milk Concentrate</h3>
                     <p>
-                        A true luxury ritual in a bottle. Velvety texture, spa-like scent, and results you can see and feel.
-                        Softens and nourishes the skin instantly.
-                    </p>
-                    <a href="https://sa.loccitane.com/almond-shower-oil" class="btn-shop" target="_blank">Shop Now</a>
-                </div>
-            </div>
-
-            <!-- PRODUCT 3: Milk Concentrate -->
-            <div class="product-card">
-                <div class="img-placeholder">
-                    <img src="images/Milk.png" alt="Milk Concentrate">
-                </div>
-                <div class="product-info">
-                    <div class="product-rating">
-                        <span>★★★★★</span>
-                        <span class="rating-text">(67 reviews)</span>
-                    </div>
-                    <h3>Milk Concentrate</h3>
-                    <p>
-                        Smoothing and firming — this concentrate is everything my skin needed.
+                        Imagine creamy milk meets silky skincare. This concentrate is everything my skin needed.
                         Rich without being greasy, hydrating without being heavy.
                         After a long day, applying this feels like coming home.
                     </p>
@@ -603,42 +583,62 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
                 </div>
             </div>
 
-            <!-- PRODUCT 4: 5 Essential Oils Conditioner -->
+            <!-- PRODUCT 3: Mini Amande Shampoo -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="images/Conditioner.png" alt="5 Essential Oils Conditioner">
+                    <img src="images/amande-shampoo.jpg" alt="Mini Amande Shampoo">
+                </div>
+                <div class="product-info">
+                    <div class="product-rating">
+                        <span>★★★★☆</span>
+                        <span class="rating-text">(67 reviews)</span>
+                    </div>
+                    <h3>Mini Amande Shampoo</h3>
+                    <p>
+                        This little bottle packs a punch. With almond oil at its heart, it cleanses without stripping.
+                        My hair felt soft, manageable, and surprisingly shiny after just one use.
+                        The scent is that signature L'OCCITANE almond — absolutely dreamy.
+                    </p>
+                    <a href="https://sa.loccitane.com/hair-care/almond-amande-shampoo-mini/" class="btn-shop" target="_blank">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4: Mini 5 Essential Oils Conditioner -->
+            <div class="product-card">
+                <div class="img-placeholder">
+                    <img src="images/essential-oils-conditioner.jpg" alt="Mini 5 Essential Oils Conditioner">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
                         <span>★★★★★</span>
                         <span class="rating-text">(103 reviews)</span>
                     </div>
-                    <h3>5 Essential Oils Conditioner</h3>
+                    <h3>Mini 5 Essential Oils Conditioner</h3>
                     <p>
                         This is the conditioner I didn't know I was searching for. Lavender, ylang-ylang, geranium, orange, and rosemary — it's like a spa treatment in a tube.
                         My hair felt revived, soft, and looked healthier after just a few uses.
                     </p>
-                    <a href="https://sa.loccitane.com/hair-care/5-essential-oils-conditioner/" class="btn-shop" target="_blank">Shop Now</a>
+                    <a href="https://sa.loccitane.com/hair-care/5-essential-oils-conditioner-mini/" class="btn-shop" target="_blank">Shop Now</a>
                 </div>
             </div>
 
-            <!-- PRODUCT 5: Almond Conditioner -->
+            <!-- PRODUCT 5: Mini Amande Conditioner with Almond Oil -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="images/Amande.png" alt="Almond Conditioner">
+                    <img src="images/amande-conditioner.jpg" alt="Mini Amande Conditioner with Almond Oil">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
                         <span>★★★★★</span>
                         <span class="rating-text">(78 reviews)</span>
                     </div>
-                    <h3>Almond Conditioner</h3>
+                    <h3>Mini Amande Conditioner with Almond Oil</h3>
                     <p>
-                        Paired with the Almond Shower Oil, this conditioner is a match made in heaven.
-                        Nourishing without being heavy — it smooths and leaves my skin feeling like silk.
+                        Paired with the Amande shampoo, this conditioner is a match made in heaven.
+                        Nourishing without being heavy — it detangles, smooths, and leaves my hair feeling like silk.
                         The scent wraps me in warmth every time I use it.
                     </p>
-                    <a href="https://sa.loccitane.com/hair-care/almond-conditioner/" class="btn-shop" target="_blank">Shop Now</a>
+                    <a href="https://sa.loccitane.com/hair-care/almond-amande-conditioner-mini/" class="btn-shop" target="_blank">Shop Now</a>
                 </div>
             </div>
 
@@ -649,7 +649,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
         <div class="coupon-box">
             <h3>✨ Exclusive Discount Code ✨</h3>
             <div class="coupon-code">A162</div>
-            <p class="discount-text">15% OFF in Saudi Arabia &nbsp;·&nbsp; 10% OFF in Gulf Countries</p>
+            <p class="discount-text">15% OFF in Saudi Arabia &nbsp;·&nbsp; 10% OFF in UAE & Kuwait</p>
             <p>
                 Don't wait for seasonal sales — these products rarely go on discount,
                 and code <strong>A162</strong> is your gateway to smart luxury.
