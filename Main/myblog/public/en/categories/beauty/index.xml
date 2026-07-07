@@ -1,26 +1,474 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Beauty on N Design Studio</title>
-    <link>https://ndesignstudyosu.com.tr/en/categories/beauty/</link>
-    <description>Recent content in Beauty on N Design Studio</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0300</lastBuildDate>
-    <atom:link href="https://ndesignstudyosu.com.tr/en/categories/beauty/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Products Review of L&#39;Occitane used and tried favourites (Global Edition With Exclusive Discount Code A162)</title>
-      <link>https://ndesignstudyosu.com.tr/en/posts/2026/06/loccitane-review-a162-en/</link>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 +0300</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/posts/2026/06/loccitane-review-a162-en/</guid>
-      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0, viewport-fit=cover&#34;&gt;&#xA;    &lt;title&gt;My L&#39;OCCITANE Discovery: 5 Products That Transformed My Daily Ritual&lt;/title&gt;&#xA;&#xA;    &lt;style&gt;&#xA;        /* ===== RESET &amp; BASE ===== */&#xA;        * {&#xA;            margin: 0;&#xA;            padding: 0;&#xA;            box-sizing: border-box;&#xA;        }&#xA;&#xA;        body {&#xA;            font-family: &#39;Segoe UI&#39;, &#39;Helvetica Neue&#39;, system-ui, sans-serif;&#xA;            background: linear-gradient(145deg, #faf6ef 0%, #f5ede0 100%);&#xA;            padding: 2rem 1rem;&#xA;            line-height: 1.7;&#xA;            color: #4a3724;&#xA;            min-height: 100vh;&#xA;            display: flex;&#xA;            align-items: center;&#xA;            justify-content: center;&#xA;        }&#xA;&#xA;        /* ===== MAIN CARD ===== */&#xA;        .blog-card {&#xA;            max-width: 1200px;&#xA;            width: 100%;&#xA;            margin: 0 auto;&#xA;            background: #ffffff;&#xA;            border-radius: 48px;&#xA;            overflow: hidden;&#xA;            box-shadow: 0 35px 50px -25px rgba(0, 0, 0, 0.25);&#xA;            transition: transform 0.4s ease, box-shadow 0.4s ease;&#xA;        }&#xA;&#xA;        .blog-card:hover {&#xA;            transform: translateY(-4px);&#xA;            box-shadow: 0 50px 65px -30px rgba(0, 0, 0, 0.3);&#xA;        }&#xA;&#xA;        /* ===== HERO SECTION ===== */&#xA;        .hero-luxury {&#xA;            background: linear-gradient(135deg, #f3e5c9 0%, #e8d5b5 50%, #dcc49a 100%);&#xA;            padding: 3.5rem 2.5rem;&#xA;            text-align: center;&#xA;            border-bottom: 4px solid #b8860b;&#xA;            position: relative;&#xA;            overflow: hidden;&#xA;        }&#xA;&#xA;        .hero-luxury::before {&#xA;            content: &#39;✦&#39;;&#xA;            position: absolute;&#xA;            top: 10px;&#xA;            right: 30px;&#xA;            font-size: 2rem;&#xA;            color: rgba(184, 134, 11, 0.15);&#xA;            animation: float 6s ease-in-out infinite;&#xA;        }&#xA;&#xA;        .hero-luxury::after {&#xA;            content: &#39;✦&#39;;&#xA;            position: absolute;&#xA;            bottom: 10px;&#xA;            left: 30px;&#xA;            font-size: 2rem;&#xA;            color: rgba(184, 134, 11, 0.15);&#xA;            animation: float 6s ease-in-out infinite 3s;&#xA;        }&#xA;&#xA;        @keyframes float {&#xA;            0%, 100% {&#xA;                transform: translateY(0) rotate(0deg);&#xA;            }&#xA;            50% {&#xA;                transform: translateY(-10px) rotate(180deg);&#xA;            }&#xA;        }&#xA;&#xA;        .hero-luxury h1 {&#xA;            font-size: 2.6rem;&#xA;            font-weight: 700;&#xA;            color: #5c3b1f;&#xA;            margin-bottom: 0.75rem;&#xA;            letter-spacing: -0.5px;&#xA;            animation: fadeSlideUp 0.8s ease-out;&#xA;        }&#xA;&#xA;        .hero-luxury .subtitle {&#xA;            font-size: 1.15rem;&#xA;            color: #7a552e;&#xA;            font-weight: 400;&#xA;        }&#xA;&#xA;        .hero-luxury .subtitle strong {&#xA;            color: #b8860b;&#xA;            font-weight: 600;&#xA;        }&#xA;&#xA;        .hero-luxury .discount-badge {&#xA;            display: inline-block;&#xA;            background: rgba(184, 134, 11, 0.15);&#xA;            color: #7a552e;&#xA;            padding: 0.4rem 1.5rem;&#xA;            border-radius: 40px;&#xA;            font-size: 0.85rem;&#xA;            font-weight: 500;&#xA;            margin-top: 0.75rem;&#xA;            border: 1px solid rgba(184, 134, 11, 0.2);&#xA;        }&#xA;&#xA;        @keyframes fadeSlideUp {&#xA;            from {&#xA;                opacity: 0;&#xA;                transform: translateY(30px);&#xA;            }&#xA;            to {&#xA;                opacity: 1;&#xA;                transform: translateY(0);&#xA;            }&#xA;        }&#xA;&#xA;        /* ===== STORY INTRO ===== */&#xA;        .story-intro {&#xA;            padding: 2.5rem 2.5rem 1.5rem;&#xA;            font-size: 1.05rem;&#xA;            color: #5c3b1f;&#xA;        }&#xA;&#xA;        .story-intro p {&#xA;            margin-bottom: 1.2rem;&#xA;            line-height: 1.9;&#xA;        }&#xA;&#xA;        .story-intro p:last-of-type {&#xA;            margin-bottom: 0;&#xA;        }&#xA;&#xA;        .story-intro strong {&#xA;            color: #b8860b;&#xA;            font-weight: 600;&#xA;        }&#xA;&#xA;        .story-intro a {&#xA;            color: #b8860b;&#xA;            text-decoration: none;&#xA;            font-weight: 500;&#xA;            border-bottom: 1px solid rgba(184, 134, 11, 0.3);&#xA;            transition: border-color 0.3s ease;&#xA;        }&#xA;&#xA;        .story-intro a:hover {&#xA;            border-color: #b8860b;&#xA;        }&#xA;&#xA;        /* ===== QUOTE BOX ===== */&#xA;        .quote-box {&#xA;            background: #fef8e7;&#xA;            padding: 1.2rem 1.8rem;&#xA;            border-radius: 24px;&#xA;            margin: 1.5rem 0;&#xA;            border-left: 5px solid #b8860b;&#xA;            position: relative;&#xA;        }&#xA;&#xA;        .quote-box p {&#xA;            margin: 0;&#xA;            font-style: italic;&#xA;            color: #5c3b1f;&#xA;            font-size: 1.05rem;&#xA;        }&#xA;&#xA;        .quote-box .quote-icon {&#xA;            font-size: 1.5rem;&#xA;            color: #b8860b;&#xA;            opacity: 0.5;&#xA;            margin-right: 0.5rem;&#xA;        }&#xA;&#xA;        /* ===== FEATURED IMAGE ===== */&#xA;        .featured-image-wrap {&#xA;            padding: 0 2.5rem 1.5rem;&#xA;            text-align: center;&#xA;        }&#xA;&#xA;        .featured-image-wrap .img-container {&#xA;            border-radius: 28px;&#xA;            overflow: hidden;&#xA;            border: 1px solid rgba(184, 134, 11, 0.2);&#xA;            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);&#xA;        }&#xA;&#xA;        .featured-image-wrap .img-container img {&#xA;            width: 100%;&#xA;            height: auto;&#xA;            display: block;&#xA;        }&#xA;&#xA;        .featured-image-wrap .img-caption {&#xA;            font-size: 0.75rem;&#xA;            color: #a28b6f;&#xA;            margin-top: 0.5rem;&#xA;            letter-spacing: 0.3px;&#xA;        }&#xA;&#xA;        /* ===== PRODUCT GRID ===== */&#xA;        .product-grid {&#xA;            display: grid;&#xA;            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));&#xA;            gap: 2rem;&#xA;            padding: 1.5rem 2.5rem 2.5rem;&#xA;        }&#xA;&#xA;        .product-card {&#xA;            background: #fffef8;&#xA;            border-radius: 32px;&#xA;            overflow: hidden;&#xA;            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);&#xA;            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);&#xA;            border: 1px solid rgba(184, 134, 11, 0.12);&#xA;            animation: cardFloat 0.6s ease-out backwards;&#xA;        }&#xA;&#xA;        .product-card:nth-child(1) { animation-delay: 0.05s; }&#xA;        .product-card:nth-child(2) { animation-delay: 0.1s; }&#xA;        .product-card:nth-child(3) { animation-delay: 0.15s; }&#xA;        .product-card:nth-child(4) { animation-delay: 0.2s; }&#xA;        .product-card:nth-child(5) { animation-delay: 0.25s; }&#xA;&#xA;        .product-card:hover {&#xA;            transform: translateY(-12px) scale(1.01);&#xA;            box-shadow: 0 28px 40px -18px rgba(0, 0, 0, 0.2);&#xA;            border-color: rgba(184, 134, 11, 0.35);&#xA;        }&#xA;&#xA;        @keyframes cardFloat {&#xA;            from {&#xA;                opacity: 0;&#xA;                transform: translateY(30px);&#xA;            }&#xA;            to {&#xA;                opacity: 1;&#xA;                transform: translateY(0);&#xA;            }&#xA;        }&#xA;&#xA;        .product-card .img-placeholder {&#xA;            width: 100%;&#xA;            aspect-ratio: 1 / 1.1;&#xA;            background: #f9f2e6;&#xA;            display: flex;&#xA;            align-items: center;&#xA;            justify-content: center;&#xA;            border-bottom: 2px solid #e8d5b5;&#xA;            overflow: hidden;&#xA;        }&#xA;&#xA;        .product-card .img-placeholder img {&#xA;            width: 100%;&#xA;            height: 100%;&#xA;            object-fit: cover;&#xA;            transition: transform 0.6s ease;&#xA;        }&#xA;&#xA;        .product-card:hover .img-placeholder img {&#xA;            transform: scale(1.04);&#xA;        }&#xA;&#xA;        .product-card .product-info {&#xA;            padding: 1.2rem 1.4rem 1.4rem;&#xA;        }&#xA;&#xA;        .product-card .product-info h3 {&#xA;            font-size: 1.15rem;&#xA;            color: #5c3b1f;&#xA;            font-weight: 600;&#xA;            margin-bottom: 0.4rem;&#xA;        }&#xA;&#xA;        .product-card .product-info .product-rating {&#xA;            display: flex;&#xA;            align-items: center;&#xA;            gap: 0.3rem;&#xA;            margin-bottom: 0.5rem;&#xA;        }&#xA;&#xA;        .product-card .product-info .product-rating span {&#xA;            color: #b8860b;&#xA;            font-size: 0.9rem;&#xA;        }&#xA;&#xA;        .product-card .product-info .product-rating .rating-text {&#xA;            color: #a28b6f;&#xA;            font-size: 0.75rem;&#xA;        }&#xA;&#xA;        .product-card .product-info p {&#xA;            font-size: 0.9rem;&#xA;            color: #6b4a2a;&#xA;            line-height: 1.7;&#xA;            margin-bottom: 0.8rem;&#xA;        }&#xA;&#xA;        .btn-shop {&#xA;            display: inline-block;&#xA;            background: #5c3b1f;&#xA;            color: #fef3e2;&#xA;            padding: 0.5rem 1.4rem;&#xA;            border-radius: 40px;&#xA;            text-decoration: none;&#xA;            font-weight: 500;&#xA;            font-size: 0.85rem;&#xA;            transition: all 0.3s ease;&#xA;            border: none;&#xA;            cursor: pointer;&#xA;        }&#xA;&#xA;        .btn-shop:hover {&#xA;            background: #b8860b;&#xA;            transform: scale(0.97);&#xA;            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);&#xA;        }&#xA;&#xA;        .btn-shop::after {&#xA;            content: &#39; →&#39;;&#xA;            transition: transform 0.3s ease;&#xA;            display: inline-block;&#xA;        }&#xA;&#xA;        .btn-shop:hover::after {&#xA;            transform: translateX(4px);&#xA;        }&#xA;&#xA;        /* ===== COUPON BOX ===== */&#xA;        .coupon-box {&#xA;            background: linear-gradient(135deg, #fef6e8, #fbefdb);&#xA;            margin: 0 2.5rem 2.5rem;&#xA;            border-radius: 32px;&#xA;            text-align: center;&#xA;            padding: 2rem;&#xA;            border: 1px solid rgba(184, 134, 11, 0.15);&#xA;            position: relative;&#xA;            overflow: hidden;&#xA;        }&#xA;&#xA;        .coupon-box::before {&#xA;            content: &#39;✦ ✦ ✦&#39;;&#xA;            position: absolute;&#xA;            top: -10px;&#xA;            right: -10px;&#xA;            font-size: 3rem;&#xA;            color: rgba(184, 134, 11, 0.06);&#xA;            letter-spacing: 10px;&#xA;        }&#xA;&#xA;        .coupon-box h3 {&#xA;            font-size: 1.6rem;&#xA;            color: #5c3b1f;&#xA;            font-weight: 700;&#xA;            margin-bottom: 0.5rem;&#xA;        }&#xA;&#xA;        .coupon-box .coupon-code {&#xA;            display: inline-block;&#xA;            background: #5c3b1f;&#xA;            color: #fef3e2;&#xA;            padding: 0.4rem 2rem;&#xA;            border-radius: 40px;&#xA;            font-weight: 700;&#xA;            font-size: 1.2rem;&#xA;            letter-spacing: 3px;&#xA;            margin: 0.5rem 0;&#xA;        }&#xA;&#xA;        .coupon-box .discount-text {&#xA;            color: #7a552e;&#xA;            font-weight: 500;&#xA;            font-size: 1.05rem;&#xA;        }&#xA;&#xA;        .coupon-box p {&#xA;            color: #6b4a2a;&#xA;            font-size: 0.95rem;&#xA;            margin-top: 0.75rem;&#xA;            line-height: 1.7;&#xA;        }&#xA;&#xA;        .coupon-box p strong {&#xA;            color: #b8860b;&#xA;        }&#xA;&#xA;        /* ===== FOOTER ===== */&#xA;        .footer-note {&#xA;            background: #2c241a;&#xA;            color: #ddcfb2;&#xA;            text-align: center;&#xA;            padding: 1.2rem;&#xA;            font-size: 0.75rem;&#xA;            letter-spacing: 0.3px;&#xA;        }&#xA;&#xA;        .footer-note p {&#xA;            margin-bottom: 0.2rem;&#xA;        }&#xA;&#xA;        .footer-note p:last-child {&#xA;            margin-bottom: 0;&#xA;            font-size: 0.65rem;&#xA;            opacity: 0.7;&#xA;        }&#xA;&#xA;        .footer-note .footer-divider {&#xA;            display: inline-block;&#xA;            width: 30px;&#xA;            height: 1px;&#xA;            background: rgba(221, 207, 178, 0.3);&#xA;            margin: 0 0.5rem;&#xA;            vertical-align: middle;&#xA;        }&#xA;&#xA;        /* ===== RESPONSIVE ===== */&#xA;        @media (max-width: 992px) {&#xA;            .hero-luxury h1 { font-size: 2.2rem; }&#xA;            .product-grid {&#xA;                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));&#xA;                padding: 1.5rem;&#xA;            }&#xA;        }&#xA;&#xA;        @media (max-width: 768px) {&#xA;            body { padding: 1rem; }&#xA;            .blog-card { border-radius: 32px; }&#xA;            .hero-luxury { padding: 2rem 1.5rem; }&#xA;            .hero-luxury h1 { font-size: 1.7rem; }&#xA;            .hero-luxury .subtitle { font-size: 1rem; }&#xA;            .story-intro { padding: 1.5rem 1.5rem 0.5rem; font-size: 0.95rem; }&#xA;            .featured-image-wrap { padding: 0 1.5rem 1rem; }&#xA;            .product-grid {&#xA;                grid-template-columns: 1fr 1fr;&#xA;                gap: 1.2rem;&#xA;                padding: 1rem 1.5rem 1.5rem;&#xA;            }&#xA;            .coupon-box { margin: 0 1.5rem 1.5rem; padding: 1.5rem; }&#xA;            .coupon-box h3 { font-size: 1.3rem; }&#xA;            .quote-box { padding: 1rem 1.2rem; margin: 1rem 0; }&#xA;        }&#xA;&#xA;        @media (max-width: 480px) {&#xA;            .hero-luxury h1 { font-size: 1.4rem; }&#xA;            .product-grid {&#xA;                grid-template-columns: 1fr;&#xA;                gap: 1.2rem;&#xA;                padding: 0.8rem 1.2rem 1.2rem;&#xA;            }&#xA;            .product-card .product-info { padding: 1rem; }&#xA;            .coupon-box { margin: 0 1.2rem 1.2rem; padding: 1.2rem; }&#xA;            .coupon-box .coupon-code { font-size: 1rem; padding: 0.3rem 1.5rem; }&#xA;            .story-intro { padding: 1rem 1.2rem 0.5rem; font-size: 0.9rem; }&#xA;            .featured-image-wrap { padding: 0 1.2rem 0.8rem; }&#xA;        }&#xA;    &lt;/style&gt;&#xA;&lt;/head&gt;&#xA;&#xA;&lt;body&gt;&#xA;    &lt;div class=&#34;blog-card&#34;&gt;&#xA;&#xA;        &lt;!-- ===== HERO ===== --&gt;&#xA;        &lt;div class=&#34;hero-luxury&#34;&gt;&#xA;            &lt;h1&gt;My L&#39;OCCITANE Discovery&lt;/h1&gt;&#xA;            &lt;p class=&#34;subtitle&#34;&gt;5 Products That Transformed My Daily Ritual&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My Products Review of L&#39;Occitane used and tried favourites (With Exclusive Discount Code A162)</title>
-      <link>https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-review-a162-en/</link>
-      <pubDate>Wed, 06 May 2026 00:00:00 +0300</pubDate>
-      <guid>https://ndesignstudyosu.com.tr/en/posts/2026/05/loccitane-review-a162-en/</guid>
-      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0, viewport-fit=cover&#34;&gt;&#xA;    &lt;title&gt;My L&#39;OCCITANE Discovery: 5 Products That Transformed My Daily Ritual&lt;/title&gt;&#xA;&#xA;    &lt;style&gt;&#xA;        /* ===== RESET &amp; BASE ===== */&#xA;        * {&#xA;            margin: 0;&#xA;            padding: 0;&#xA;            box-sizing: border-box;&#xA;        }&#xA;&#xA;        body {&#xA;            font-family: &#39;Segoe UI&#39;, &#39;Helvetica Neue&#39;, system-ui, sans-serif;&#xA;            background: linear-gradient(145deg, #faf6ef 0%, #f5ede0 100%);&#xA;            padding: 2rem 1rem;&#xA;            line-height: 1.7;&#xA;            color: #4a3724;&#xA;            min-height: 100vh;&#xA;            display: flex;&#xA;            align-items: center;&#xA;            justify-content: center;&#xA;        }&#xA;&#xA;        /* ===== MAIN CARD ===== */&#xA;        .blog-card {&#xA;            max-width: 1200px;&#xA;            width: 100%;&#xA;            margin: 0 auto;&#xA;            background: #ffffff;&#xA;            border-radius: 48px;&#xA;            overflow: hidden;&#xA;            box-shadow: 0 35px 50px -25px rgba(0, 0, 0, 0.25);&#xA;            transition: transform 0.4s ease, box-shadow 0.4s ease;&#xA;        }&#xA;&#xA;        .blog-card:hover {&#xA;            transform: translateY(-4px);&#xA;            box-shadow: 0 50px 65px -30px rgba(0, 0, 0, 0.3);&#xA;        }&#xA;&#xA;        /* ===== HERO SECTION ===== */&#xA;        .hero-luxury {&#xA;            background: linear-gradient(135deg, #f3e5c9 0%, #e8d5b5 50%, #dcc49a 100%);&#xA;            padding: 3.5rem 2.5rem;&#xA;            text-align: center;&#xA;            border-bottom: 4px solid #b8860b;&#xA;            position: relative;&#xA;            overflow: hidden;&#xA;        }&#xA;&#xA;        .hero-luxury::before {&#xA;            content: &#39;✦&#39;;&#xA;            position: absolute;&#xA;            top: 10px;&#xA;            right: 30px;&#xA;            font-size: 2rem;&#xA;            color: rgba(184, 134, 11, 0.15);&#xA;            animation: float 6s ease-in-out infinite;&#xA;        }&#xA;&#xA;        .hero-luxury::after {&#xA;            content: &#39;✦&#39;;&#xA;            position: absolute;&#xA;            bottom: 10px;&#xA;            left: 30px;&#xA;            font-size: 2rem;&#xA;            color: rgba(184, 134, 11, 0.15);&#xA;            animation: float 6s ease-in-out infinite 3s;&#xA;        }&#xA;&#xA;        @keyframes float {&#xA;            0%, 100% {&#xA;                transform: translateY(0) rotate(0deg);&#xA;            }&#xA;            50% {&#xA;                transform: translateY(-10px) rotate(180deg);&#xA;            }&#xA;        }&#xA;&#xA;        .hero-luxury h1 {&#xA;            font-size: 2.6rem;&#xA;            font-weight: 700;&#xA;            color: #5c3b1f;&#xA;            margin-bottom: 0.75rem;&#xA;            letter-spacing: -0.5px;&#xA;            animation: fadeSlideUp 0.8s ease-out;&#xA;        }&#xA;&#xA;        .hero-luxury .subtitle {&#xA;            font-size: 1.15rem;&#xA;            color: #7a552e;&#xA;            font-weight: 400;&#xA;        }&#xA;&#xA;        .hero-luxury .subtitle strong {&#xA;            color: #b8860b;&#xA;            font-weight: 600;&#xA;        }&#xA;&#xA;        .hero-luxury .discount-badge {&#xA;            display: inline-block;&#xA;            background: rgba(184, 134, 11, 0.15);&#xA;            color: #7a552e;&#xA;            padding: 0.4rem 1.5rem;&#xA;            border-radius: 40px;&#xA;            font-size: 0.85rem;&#xA;            font-weight: 500;&#xA;            margin-top: 0.75rem;&#xA;            border: 1px solid rgba(184, 134, 11, 0.2);&#xA;        }&#xA;&#xA;        @keyframes fadeSlideUp {&#xA;            from {&#xA;                opacity: 0;&#xA;                transform: translateY(30px);&#xA;            }&#xA;            to {&#xA;                opacity: 1;&#xA;                transform: translateY(0);&#xA;            }&#xA;        }&#xA;&#xA;        /* ===== STORY INTRO ===== */&#xA;        .story-intro {&#xA;            padding: 2.5rem 2.5rem 1.5rem;&#xA;            font-size: 1.05rem;&#xA;            color: #5c3b1f;&#xA;        }&#xA;&#xA;        .story-intro p {&#xA;            margin-bottom: 1.2rem;&#xA;            line-height: 1.9;&#xA;        }&#xA;&#xA;        .story-intro p:last-of-type {&#xA;            margin-bottom: 0;&#xA;        }&#xA;&#xA;        .story-intro strong {&#xA;            color: #b8860b;&#xA;            font-weight: 600;&#xA;        }&#xA;&#xA;        .story-intro a {&#xA;            color: #b8860b;&#xA;            text-decoration: none;&#xA;            font-weight: 500;&#xA;            border-bottom: 1px solid rgba(184, 134, 11, 0.3);&#xA;            transition: border-color 0.3s ease;&#xA;        }&#xA;&#xA;        .story-intro a:hover {&#xA;            border-color: #b8860b;&#xA;        }&#xA;&#xA;        /* ===== QUOTE BOX ===== */&#xA;        .quote-box {&#xA;            background: #fef8e7;&#xA;            padding: 1.2rem 1.8rem;&#xA;            border-radius: 24px;&#xA;            margin: 1.5rem 0;&#xA;            border-left: 5px solid #b8860b;&#xA;            position: relative;&#xA;        }&#xA;&#xA;        .quote-box p {&#xA;            margin: 0;&#xA;            font-style: italic;&#xA;            color: #5c3b1f;&#xA;            font-size: 1.05rem;&#xA;        }&#xA;&#xA;        .quote-box .quote-icon {&#xA;            font-size: 1.5rem;&#xA;            color: #b8860b;&#xA;            opacity: 0.5;&#xA;            margin-right: 0.5rem;&#xA;        }&#xA;&#xA;        /* ===== FEATURED IMAGE ===== */&#xA;        .featured-image-wrap {&#xA;            padding: 0 2.5rem 1.5rem;&#xA;            text-align: center;&#xA;        }&#xA;&#xA;        .featured-image-wrap .img-container {&#xA;            border-radius: 28px;&#xA;            overflow: hidden;&#xA;            border: 1px solid rgba(184, 134, 11, 0.2);&#xA;            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);&#xA;        }&#xA;&#xA;        .featured-image-wrap .img-container img {&#xA;            width: 100%;&#xA;            height: auto;&#xA;            display: block;&#xA;        }&#xA;&#xA;        .featured-image-wrap .img-caption {&#xA;            font-size: 0.75rem;&#xA;            color: #a28b6f;&#xA;            margin-top: 0.5rem;&#xA;            letter-spacing: 0.3px;&#xA;        }&#xA;&#xA;        /* ===== PRODUCT GRID ===== */&#xA;        .product-grid {&#xA;            display: grid;&#xA;            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));&#xA;            gap: 2rem;&#xA;            padding: 1.5rem 2.5rem 2.5rem;&#xA;        }&#xA;&#xA;        .product-card {&#xA;            background: #fffef8;&#xA;            border-radius: 32px;&#xA;            overflow: hidden;&#xA;            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);&#xA;            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);&#xA;            border: 1px solid rgba(184, 134, 11, 0.12);&#xA;            animation: cardFloat 0.6s ease-out backwards;&#xA;        }&#xA;&#xA;        .product-card:nth-child(1) { animation-delay: 0.05s; }&#xA;        .product-card:nth-child(2) { animation-delay: 0.1s; }&#xA;        .product-card:nth-child(3) { animation-delay: 0.15s; }&#xA;        .product-card:nth-child(4) { animation-delay: 0.2s; }&#xA;        .product-card:nth-child(5) { animation-delay: 0.25s; }&#xA;&#xA;        .product-card:hover {&#xA;            transform: translateY(-12px) scale(1.01);&#xA;            box-shadow: 0 28px 40px -18px rgba(0, 0, 0, 0.2);&#xA;            border-color: rgba(184, 134, 11, 0.35);&#xA;        }&#xA;&#xA;        @keyframes cardFloat {&#xA;            from {&#xA;                opacity: 0;&#xA;                transform: translateY(30px);&#xA;            }&#xA;            to {&#xA;                opacity: 1;&#xA;                transform: translateY(0);&#xA;            }&#xA;        }&#xA;&#xA;        .product-card .img-placeholder {&#xA;            width: 100%;&#xA;            aspect-ratio: 1 / 1.1;&#xA;            background: #f9f2e6;&#xA;            display: flex;&#xA;            align-items: center;&#xA;            justify-content: center;&#xA;            border-bottom: 2px solid #e8d5b5;&#xA;            overflow: hidden;&#xA;            padding: 1rem;&#xA;        }&#xA;&#xA;        .product-card .img-placeholder img {&#xA;            width: 100%;&#xA;            height: 100%;&#xA;            object-fit: contain;&#xA;            transition: transform 0.6s ease;&#xA;        }&#xA;&#xA;        .product-card:hover .img-placeholder img {&#xA;            transform: scale(1.04);&#xA;        }&#xA;&#xA;        .product-card .product-info {&#xA;            padding: 1.2rem 1.4rem 1.4rem;&#xA;        }&#xA;&#xA;        .product-card .product-info h3 {&#xA;            font-size: 1.15rem;&#xA;            color: #5c3b1f;&#xA;            font-weight: 600;&#xA;            margin-bottom: 0.4rem;&#xA;        }&#xA;&#xA;        .product-card .product-info .product-rating {&#xA;            display: flex;&#xA;            align-items: center;&#xA;            gap: 0.3rem;&#xA;            margin-bottom: 0.5rem;&#xA;        }&#xA;&#xA;        .product-card .product-info .product-rating span {&#xA;            color: #b8860b;&#xA;            font-size: 0.9rem;&#xA;        }&#xA;&#xA;        .product-card .product-info .product-rating .rating-text {&#xA;            color: #a28b6f;&#xA;            font-size: 0.75rem;&#xA;        }&#xA;&#xA;        .product-card .product-info p {&#xA;            font-size: 0.9rem;&#xA;            color: #6b4a2a;&#xA;            line-height: 1.7;&#xA;            margin-bottom: 0.8rem;&#xA;        }&#xA;&#xA;        .btn-shop {&#xA;            display: inline-block;&#xA;            background: #5c3b1f;&#xA;            color: #fef3e2;&#xA;            padding: 0.5rem 1.4rem;&#xA;            border-radius: 40px;&#xA;            text-decoration: none;&#xA;            font-weight: 500;&#xA;            font-size: 0.85rem;&#xA;            transition: all 0.3s ease;&#xA;            border: none;&#xA;            cursor: pointer;&#xA;        }&#xA;&#xA;        .btn-shop:hover {&#xA;            background: #b8860b;&#xA;            transform: scale(0.97);&#xA;            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);&#xA;        }&#xA;&#xA;        .btn-shop::after {&#xA;            content: &#39; →&#39;;&#xA;            transition: transform 0.3s ease;&#xA;            display: inline-block;&#xA;        }&#xA;&#xA;        .btn-shop:hover::after {&#xA;            transform: translateX(4px);&#xA;        }&#xA;&#xA;        /* ===== COUPON BOX ===== */&#xA;        .coupon-box {&#xA;            background: linear-gradient(135deg, #fef6e8, #fbefdb);&#xA;            margin: 0 2.5rem 2.5rem;&#xA;            border-radius: 32px;&#xA;            text-align: center;&#xA;            padding: 2rem;&#xA;            border: 1px solid rgba(184, 134, 11, 0.15);&#xA;            position: relative;&#xA;            overflow: hidden;&#xA;        }&#xA;&#xA;        .coupon-box::before {&#xA;            content: &#39;✦ ✦ ✦&#39;;&#xA;            position: absolute;&#xA;            top: -10px;&#xA;            right: -10px;&#xA;            font-size: 3rem;&#xA;            color: rgba(184, 134, 11, 0.06);&#xA;            letter-spacing: 10px;&#xA;        }&#xA;&#xA;        .coupon-box h3 {&#xA;            font-size: 1.6rem;&#xA;            color: #5c3b1f;&#xA;            font-weight: 700;&#xA;            margin-bottom: 0.5rem;&#xA;        }&#xA;&#xA;        .coupon-box .coupon-code {&#xA;            display: inline-block;&#xA;            background: #5c3b1f;&#xA;            color: #fef3e2;&#xA;            padding: 0.4rem 2rem;&#xA;            border-radius: 40px;&#xA;            font-weight: 700;&#xA;            font-size: 1.2rem;&#xA;            letter-spacing: 3px;&#xA;            margin: 0.5rem 0;&#xA;        }&#xA;&#xA;        .coupon-box .discount-text {&#xA;            color: #7a552e;&#xA;            font-weight: 500;&#xA;            font-size: 1.05rem;&#xA;        }&#xA;&#xA;        .coupon-box p {&#xA;            color: #6b4a2a;&#xA;            font-size: 0.95rem;&#xA;            margin-top: 0.75rem;&#xA;            line-height: 1.7;&#xA;        }&#xA;&#xA;        .coupon-box p strong {&#xA;            color: #b8860b;&#xA;        }&#xA;&#xA;        /* ===== FOOTER ===== */&#xA;        .footer-note {&#xA;            background: #2c241a;&#xA;            color: #ddcfb2;&#xA;            text-align: center;&#xA;            padding: 1.2rem;&#xA;            font-size: 0.75rem;&#xA;            letter-spacing: 0.3px;&#xA;        }&#xA;&#xA;        .footer-note p {&#xA;            margin-bottom: 0.2rem;&#xA;        }&#xA;&#xA;        .footer-note p:last-child {&#xA;            margin-bottom: 0;&#xA;            font-size: 0.65rem;&#xA;            opacity: 0.7;&#xA;        }&#xA;&#xA;        .footer-note .footer-divider {&#xA;            display: inline-block;&#xA;            width: 30px;&#xA;            height: 1px;&#xA;            background: rgba(221, 207, 178, 0.3);&#xA;            margin: 0 0.5rem;&#xA;            vertical-align: middle;&#xA;        }&#xA;&#xA;        /* ===== RESPONSIVE ===== */&#xA;        @media (max-width: 992px) {&#xA;            .hero-luxury h1 { font-size: 2.2rem; }&#xA;            .product-grid {&#xA;                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));&#xA;                padding: 1.5rem;&#xA;            }&#xA;        }&#xA;&#xA;        @media (max-width: 768px) {&#xA;            body { padding: 1rem; }&#xA;            .blog-card { border-radius: 32px; }&#xA;            .hero-luxury { padding: 2rem 1.5rem; }&#xA;            .hero-luxury h1 { font-size: 1.7rem; }&#xA;            .hero-luxury .subtitle { font-size: 1rem; }&#xA;            .story-intro { padding: 1.5rem 1.5rem 0.5rem; font-size: 0.95rem; }&#xA;            .featured-image-wrap { padding: 0 1.5rem 1rem; }&#xA;            .product-grid {&#xA;                grid-template-columns: 1fr 1fr;&#xA;                gap: 1.2rem;&#xA;                padding: 1rem 1.5rem 1.5rem;&#xA;            }&#xA;            .coupon-box { margin: 0 1.5rem 1.5rem; padding: 1.5rem; }&#xA;            .coupon-box h3 { font-size: 1.3rem; }&#xA;            .quote-box { padding: 1rem 1.2rem; margin: 1rem 0; }&#xA;        }&#xA;&#xA;        @media (max-width: 480px) {&#xA;            .hero-luxury h1 { font-size: 1.4rem; }&#xA;            .product-grid {&#xA;                grid-template-columns: 1fr;&#xA;                gap: 1.2rem;&#xA;                padding: 0.8rem 1.2rem 1.2rem;&#xA;            }&#xA;            .product-card .product-info { padding: 1rem; }&#xA;            .coupon-box { margin: 0 1.2rem 1.2rem; padding: 1.2rem; }&#xA;            .coupon-box .coupon-code { font-size: 1rem; padding: 0.3rem 1.5rem; }&#xA;            .story-intro { padding: 1rem 1.2rem 0.5rem; font-size: 0.9rem; }&#xA;            .featured-image-wrap { padding: 0 1.2rem 0.8rem; }&#xA;        }&#xA;    &lt;/style&gt;&#xA;&lt;/head&gt;&#xA;&#xA;&lt;body&gt;&#xA;    &lt;div class=&#34;blog-card&#34;&gt;&#xA;&#xA;        &lt;!-- ===== HERO ===== --&gt;&#xA;        &lt;div class=&#34;hero-luxury&#34;&gt;&#xA;            &lt;h1&gt;My L&#39;OCCITANE Discovery&lt;/h1&gt;&#xA;            &lt;p class=&#34;subtitle&#34;&gt;5 Products That Transformed My Daily Ritual&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Beauty on N Design Studio</title><link>https://ndesignstudyosu.com.tr/en/categories/beauty/</link><description>Recent content in Beauty on N Design Studio</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0300</lastBuildDate><atom:link href="https://ndesignstudyosu.com.tr/en/categories/beauty/index.xml" rel="self" type="application/rss+xml"/><item><title>My Products Review of L'Occitane used and tried favourites (Global Edition With Exclusive Discount Code A162)</title><link>https://ndesignstudyosu.com.tr/en/posts/2026/06/loccitane-review-a162-en/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0300</pubDate><guid>https://ndesignstudyosu.com.tr/en/posts/2026/06/loccitane-review-a162-en/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"&gt;
+ &lt;title&gt;My L'OCCITANE Discovery: 5 Products That Transformed My Daily Ritual&lt;/title&gt;
+
+ &lt;style&gt;
+ /* ===== RESET &amp; BASE ===== */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
+ background: linear-gradient(145deg, #faf6ef 0%, #f5ede0 100%);
+ padding: 2rem 1rem;
+ line-height: 1.7;
+ color: #4a3724;
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+
+ /* ===== MAIN CARD ===== */
+ .blog-card {
+ max-width: 1200px;
+ width: 100%;
+ margin: 0 auto;
+ background: #ffffff;
+ border-radius: 48px;
+ overflow: hidden;
+ box-shadow: 0 35px 50px -25px rgba(0, 0, 0, 0.25);
+ transition: transform 0.4s ease, box-shadow 0.4s ease;
+ }
+
+ .blog-card:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 50px 65px -30px rgba(0, 0, 0, 0.3);
+ }
+
+ /* ===== HERO SECTION ===== */
+ .hero-luxury {
+ background: linear-gradient(135deg, #f3e5c9 0%, #e8d5b5 50%, #dcc49a 100%);
+ padding: 3.5rem 2.5rem;
+ text-align: center;
+ border-bottom: 4px solid #b8860b;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero-luxury::before {
+ content: '✦';
+ position: absolute;
+ top: 10px;
+ right: 30px;
+ font-size: 2rem;
+ color: rgba(184, 134, 11, 0.15);
+ animation: float 6s ease-in-out infinite;
+ }
+
+ .hero-luxury::after {
+ content: '✦';
+ position: absolute;
+ bottom: 10px;
+ left: 30px;
+ font-size: 2rem;
+ color: rgba(184, 134, 11, 0.15);
+ animation: float 6s ease-in-out infinite 3s;
+ }
+
+ @keyframes float {
+ 0%, 100% {
+ transform: translateY(0) rotate(0deg);
+ }
+ 50% {
+ transform: translateY(-10px) rotate(180deg);
+ }
+ }
+
+ .hero-luxury h1 {
+ font-size: 2.6rem;
+ font-weight: 700;
+ color: #5c3b1f;
+ margin-bottom: 0.75rem;
+ letter-spacing: -0.5px;
+ animation: fadeSlideUp 0.8s ease-out;
+ }
+
+ .hero-luxury .subtitle {
+ font-size: 1.15rem;
+ color: #7a552e;
+ font-weight: 400;
+ }
+
+ .hero-luxury .subtitle strong {
+ color: #b8860b;
+ font-weight: 600;
+ }
+
+ .hero-luxury .discount-badge {
+ display: inline-block;
+ background: rgba(184, 134, 11, 0.15);
+ color: #7a552e;
+ padding: 0.4rem 1.5rem;
+ border-radius: 40px;
+ font-size: 0.85rem;
+ font-weight: 500;
+ margin-top: 0.75rem;
+ border: 1px solid rgba(184, 134, 11, 0.2);
+ }
+
+ @keyframes fadeSlideUp {
+ from {
+ opacity: 0;
+ transform: translateY(30px);
+ }
+ to {
+ opacity: 1;
+ transform: translateY(0);
+ }
+ }
+
+ /* ===== STORY INTRO ===== */
+ .story-intro {
+ padding: 2.5rem 2.5rem 1.5rem;
+ font-size: 1.05rem;
+ color: #5c3b1f;
+ }
+
+ .story-intro p {
+ margin-bottom: 1.2rem;
+ line-height: 1.9;
+ }
+
+ .story-intro p:last-of-type {
+ margin-bottom: 0;
+ }
+
+ .story-intro strong {
+ color: #b8860b;
+ font-weight: 600;
+ }
+
+ .story-intro a {
+ color: #b8860b;
+ text-decoration: none;
+ font-weight: 500;
+ border-bottom: 1px solid rgba(184, 134, 11, 0.3);
+ transition: border-color 0.3s ease;
+ }
+
+ .story-intro a:hover {
+ border-color: #b8860b;
+ }
+
+ /* ===== QUOTE BOX ===== */
+ .quote-box {
+ background: #fef8e7;
+ padding: 1.2rem 1.8rem;
+ border-radius: 24px;
+ margin: 1.5rem 0;
+ border-left: 5px solid #b8860b;
+ position: relative;
+ }
+
+ .quote-box p {
+ margin: 0;
+ font-style: italic;
+ color: #5c3b1f;
+ font-size: 1.05rem;
+ }
+
+ .quote-box .quote-icon {
+ font-size: 1.5rem;
+ color: #b8860b;
+ opacity: 0.5;
+ margin-right: 0.5rem;
+ }
+
+ /* ===== FEATURED IMAGE ===== */
+ .featured-image-wrap {
+ padding: 0 2.5rem 1.5rem;
+ text-align: center;
+ }
+
+ .featured-image-wrap .img-container {
+ border-radius: 28px;
+ overflow: hidden;
+ border: 1px solid rgba(184, 134, 11, 0.2);
+ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+ }
+
+ .featured-image-wrap .img-container img {
+ width: 100%;
+ height: auto;
+ display: block;
+ }
+
+ .featured-image-wrap .img-caption {
+ font-size: 0.75rem;
+ color: #a28b6f;
+ margin-top: 0.5rem;
+ letter-spacing: 0.3px;
+ }
+
+ /* ===== PRODUCT GRID ===== */
+ .product-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 2rem;
+ padding: 1.5rem 2.5rem 2.5rem;
+ }
+
+ .product-card {
+ background: #fffef8;
+ border-radius: 32px;
+ overflow: hidden;
+ transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+ border: 1px solid rgba(184, 134, 11, 0.12);
+ animation: cardFloat 0.6s ease-out backwards;
+ }
+
+ .product-card:nth-child(1) { animation-delay: 0.05s; }
+ .product-card:nth-child(2) { animation-delay: 0.1s; }
+ .product-card:nth-child(3) { animation-delay: 0.15s; }
+ .product-card:nth-child(4) { animation-delay: 0.2s; }
+ .product-card:nth-child(5) { animation-delay: 0.25s; }
+
+ .product-card:hover {
+ transform: translateY(-12px) scale(1.01);
+ box-shadow: 0 28px 40px -18px rgba(0, 0, 0, 0.2);
+ border-color: rgba(184, 134, 11, 0.35);
+ }
+
+ @keyframes cardFloat {
+ from {
+ opacity: 0;
+ transform: translateY(30px);
+ }
+ to {
+ opacity: 1;
+ transform: translateY(0);
+ }
+ }
+
+ .product-card .img-placeholder {
+ width: 100%;
+ aspect-ratio: 1 / 1.1;
+ background: #f9f2e6;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-bottom: 2px solid #e8d5b5;
+ overflow: hidden;
+ }
+
+ .product-card .img-placeholder img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ transition: transform 0.6s ease;
+ }
+
+ .product-card:hover .img-placeholder img {
+ transform: scale(1.04);
+ }
+
+ .product-card .product-info {
+ padding: 1.2rem 1.4rem 1.4rem;
+ }
+
+ .product-card .product-info h3 {
+ font-size: 1.15rem;
+ color: #5c3b1f;
+ font-weight: 600;
+ margin-bottom: 0.4rem;
+ }
+
+ .product-card .product-info .product-rating {
+ display: flex;
+ align-items: center;
+ gap: 0.3rem;
+ margin-bottom: 0.5rem;
+ }
+
+ .product-card .product-info .product-rating span {
+ color: #b8860b;
+ font-size: 0.9rem;
+ }
+
+ .product-card .product-info .product-rating .rating-text {
+ color: #a28b6f;
+ font-size: 0.75rem;
+ }
+
+ .product-card .product-info p {
+ font-size: 0.9rem;
+ color: #6b4a2a;
+ line-height: 1.7;
+ margin-bottom: 0.8rem;
+ }
+
+ .btn-shop {
+ display: inline-block;
+ background: #5c3b1f;
+ color: #fef3e2;
+ padding: 0.5rem 1.4rem;
+ border-radius: 40px;
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 0.85rem;
+ transition: all 0.3s ease;
+ border: none;
+ cursor: pointer;
+ }
+
+ .btn-shop:hover {
+ background: #b8860b;
+ transform: scale(0.97);
+ box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
+ }
+
+ .btn-shop::after {
+ content: ' →';
+ transition: transform 0.3s ease;
+ display: inline-block;
+ }
+
+ .btn-shop:hover::after {
+ transform: translateX(4px);
+ }
+
+ /* ===== COUPON BOX ===== */
+ .coupon-box {
+ background: linear-gradient(135deg, #fef6e8, #fbefdb);
+ margin: 0 2.5rem 2.5rem;
+ border-radius: 32px;
+ text-align: center;
+ padding: 2rem;
+ border: 1px solid rgba(184, 134, 11, 0.15);
+ position: relative;
+ overflow: hidden;
+ }
+
+ .coupon-box::before {
+ content: '✦ ✦ ✦';
+ position: absolute;
+ top: -10px;
+ right: -10px;
+ font-size: 3rem;
+ color: rgba(184, 134, 11, 0.06);
+ letter-spacing: 10px;
+ }
+
+ .coupon-box h3 {
+ font-size: 1.6rem;
+ color: #5c3b1f;
+ font-weight: 700;
+ margin-bottom: 0.5rem;
+ }
+
+ .coupon-box .coupon-code {
+ display: inline-block;
+ background: #5c3b1f;
+ color: #fef3e2;
+ padding: 0.4rem 2rem;
+ border-radius: 40px;
+ font-weight: 700;
+ font-size: 1.2rem;
+ letter-spacing: 3px;
+ margin: 0.5rem 0;
+ }
+
+ .coupon-box .discount-text {
+ color: #7a552e;
+ font-weight: 500;
+ font-size: 1.05rem;
+ }
+
+ .coupon-box p {
+ color: #6b4a2a;
+ font-size: 0.95rem;
+ margin-top: 0.75rem;
+ line-height: 1.7;
+ }
+
+ .coupon-box p strong {
+ color: #b8860b;
+ }
+
+ /* ===== FOOTER ===== */
+ .footer-note {
+ background: #2c241a;
+ color: #ddcfb2;
+ text-align: center;
+ padding: 1.2rem;
+ font-size: 0.75rem;
+ letter-spacing: 0.3px;
+ }
+
+ .footer-note p {
+ margin-bottom: 0.2rem;
+ }
+
+ .footer-note p:last-child {
+ margin-bottom: 0;
+ font-size: 0.65rem;
+ opacity: 0.7;
+ }
+
+ .footer-note .footer-divider {
+ display: inline-block;
+ width: 30px;
+ height: 1px;
+ background: rgba(221, 207, 178, 0.3);
+ margin: 0 0.5rem;
+ vertical-align: middle;
+ }
+
+ /* ===== RESPONSIVE ===== */
+ @media (max-width: 992px) {
+ .hero-luxury h1 { font-size: 2.2rem; }
+ .product-grid {
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ padding: 1.5rem;
+ }
+ }
+
+ @media (max-width: 768px) {
+ body { padding: 1rem; }
+ .blog-card { border-radius: 32px; }
+ .hero-luxury { padding: 2rem 1.5rem; }
+ .hero-luxury h1 { font-size: 1.7rem; }
+ .hero-luxury .subtitle { font-size: 1rem; }
+ .story-intro { padding: 1.5rem 1.5rem 0.5rem; font-size: 0.95rem; }
+ .featured-image-wrap { padding: 0 1.5rem 1rem; }
+ .product-grid {
+ grid-template-columns: 1fr 1fr;
+ gap: 1.2rem;
+ padding: 1rem 1.5rem 1.5rem;
+ }
+ .coupon-box { margin: 0 1.5rem 1.5rem; padding: 1.5rem; }
+ .coupon-box h3 { font-size: 1.3rem; }
+ .quote-box { padding: 1rem 1.2rem; margin: 1rem 0; }
+ }
+
+ @media (max-width: 480px) {
+ .hero-luxury h1 { font-size: 1.4rem; }
+ .product-grid {
+ grid-template-columns: 1fr;
+ gap: 1.2rem;
+ padding: 0.8rem 1.2rem 1.2rem;
+ }
+ .product-card .product-info { padding: 1rem; }
+ .coupon-box { margin: 0 1.2rem 1.2rem; padding: 1.2rem; }
+ .coupon-box .coupon-code { font-size: 1rem; padding: 0.3rem 1.5rem; }
+ .story-intro { padding: 1rem 1.2rem 0.5rem; font-size: 0.9rem; }
+ .featured-image-wrap { padding: 0 1.2rem 0.8rem; }
+ }
+ &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+ &lt;div class="blog-card"&gt;
+
+ &lt;!-- ===== HERO ===== --&gt;
+ &lt;div class="hero-luxury"&gt;
+ &lt;h1&gt;My L'OCCITANE Discovery&lt;/h1&gt;
+ &lt;p class="subtitle"&gt;5 Products That Transformed My Daily Ritual&lt;/p&gt;</description></item></channel></rss>

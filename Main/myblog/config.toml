@@ -30,14 +30,9 @@ homepageLayout = "Arabic-home"
   weight = 1
 
   [[languages.ar.menu.main]]
-  name = "المدونة"
-  url = "/ar/posts/"
+  name = "تواصل"
+  url = "/ar/contact/"
   weight = 2
-
-  [[languages.ar.menu.main]]
-  name = "الأعمال"
-  url = "/ar/portfolio/"
-  weight = 3
 
 ############################################
 # ENGLISH
@@ -59,14 +54,9 @@ homepageLayout = "English-home"
   weight = 1
 
   [[languages.en.menu.main]]
-  name = "Blog"
-  url = "/en/posts/"
+  name = "Contact"
+  url = "/en/contact/"
   weight = 2
-
-  [[languages.en.menu.main]]
-  name = "Portfolio"
-  url = "/en/portfolio/"
-  weight = 3
 
 ############################################
 # TURKISH
@@ -88,14 +78,9 @@ homepageLayout = "Turkish-home"
   weight = 1
 
   [[languages.tr.menu.main]]
-  name = "Blog"
-  url = "/tr/posts/"
+  name = "İletişim"
+  url = "/tr/contact/"
   weight = 2
-
-  [[languages.tr.menu.main]]
-  name = "Portföy"
-  url = "/tr/portfolio/"
-  weight = 3
 
 ############################################
 # SOCIALS
