@@ -586,7 +586,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
             <!-- PRODUCT 3: Mini Amande Shampoo -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="images/Amande.png" alt="Mini Amande Shampoo">
+                    <img src="images/shampoo.png" alt="Mini Amande Shampoo">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
