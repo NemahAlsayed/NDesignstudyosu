@@ -3,3 +3,22 @@
 /Main/myblog/resources/
 /Main/myblog/.hugo_build.lock
 /Main/myblog/hugo_stats.json
+
+# Root-level generated site output is not needed when Pages deploys from Actions
+/CNAME
+/apple-touch-icon.png
+/favicon.png
+/og-image.png
+/index.html
+/sitemap.xml
+/ar/
+/css/
+/en/
+/fonts/
+/images/
+/js/
+/popup/
+/scss/
+/static/
+/tr/
+/videos/
