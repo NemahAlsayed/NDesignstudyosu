@@ -7,12 +7,22 @@
         <input type="text" id="searchInput" placeholder="{{ i18n "searchPlaceholder" }}">
     </div>
 
+    <!-- Tags Filter -->
+    <div class="nds-tags">
+        <button type="button" class="nds-tag active" data-tag="all">All</button>
+        {{ range $name, $_ := .Site.Taxonomies.tags }}
+            <button type="button" class="nds-tag" data-tag="{{ $name | lower }}">
+                #{{ $name }}
+            </button>
+        {{ end }}
+    </div>
+
     <!-- Posts List (one per row, styling via .nds-posts-grid in SCSS) -->
     <div class="nds-posts-grid">
 
         {{ range .Paginator.Pages }}
 
-        <article class="nds-post-card fade-in">
+        <article class="nds-post-card fade-in" data-tags="{{ with .Params.tags }}{{ range . }}{{ . | lower }} {{ end }}{{ end }}">
 
             <!-- IMAGE -->
             <div class="nds-post-image-wrapper">
@@ -83,13 +93,31 @@
 </div>
 
 <script>
-document.getElementById("searchInput").addEventListener("keyup", function () {
-    let filter = this.value.toLowerCase();
-    let cards = document.querySelectorAll(".nds-post-card");
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".nds-post-card");
+const tagButtons = document.querySelectorAll(".nds-tag");
+let activeTag = "all";
+
+function applyFilters() {
+    const textFilter = searchInput.value.toLowerCase();
 
     cards.forEach(card => {
-        let text = card.innerText.toLowerCase();
-        card.style.display = text.includes(filter) ? "" : "none";
+        const text = card.innerText.toLowerCase();
+        const tags = (card.dataset.tags || "").toLowerCase();
+        const matchesText = text.includes(textFilter);
+        const matchesTag = activeTag === "all" || tags.includes(activeTag);
+        card.style.display = matchesText && matchesTag ? "" : "none";
+    });
+}
+
+searchInput.addEventListener("keyup", applyFilters);
+
+tagButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        tagButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        activeTag = button.dataset.tag;
+        applyFilters();
     });
 });
 </script>
