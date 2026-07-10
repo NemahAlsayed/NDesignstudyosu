@@ -1,26 +1,6 @@
 {{ define "main" }}
 
-<!-- HERO -->
-<section class="nds-hero-video" dir="rtl">
-    <video autoplay muted loop playsinline class="nds-hero-video-bg">
-        <source src="/videos/hero.mp4" type="video/mp4">
-    </video>
-
-    <div class="hero-overlay">
-        <img src="/images/Slogan.png" alt="الشعار" class="hero-logo">
-    </div>
-
-    <div class="nds-hero-tagline">
-        نصنع تجارب رقمية بروح وإبداع
-    </div>
-
-    <div class="nds-hero-video-overlay">
-        <div class="nds-scroll-indicator">
-            <div class="scroll-circle"></div>
-            <div class="scroll-arrow">↓</div>
-        </div>
-    </div>
-</section>
+{{ partial "home-hero.html" . }}
 
 <!-- FEATURED POSTS -->
 {{ partial "featured-posts.html" . }}

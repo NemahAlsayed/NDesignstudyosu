@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".nds-lang-toggle"),t=document.querySelector(".nds-lang-dropdown");e&&e.addEventListener("click",()=>{t.classList.toggle("open"),e.classList.toggle("open")}),document.addEventListener("click",n=>{t.contains(n.target)||(t.classList.remove("open"),e.classList.remove("open"))})})

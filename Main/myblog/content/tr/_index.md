@@ -1,5 +1,4 @@
 ---
-title: "Hoş Geldiniz"
+title: "Ana Sayfa"
+description: "N Design Studio'nun resmi Türkçe ana sayfası."
 ---
-
-Bu, N Design Studio'nun Türkçe sürümüdür.
