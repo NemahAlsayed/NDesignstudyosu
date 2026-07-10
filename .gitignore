@@ -1,24 +1,5 @@
-# Hugo and Pages build output
+# Hugo local build artifacts
 /Main/myblog/public/
 /Main/myblog/resources/
 /Main/myblog/.hugo_build.lock
 /Main/myblog/hugo_stats.json
-
-# Stale root-level generated site output
-/CNAME
-/apple-touch-icon.png
-/favicon.png
-/og-image.png
-/index.html
-/sitemap.xml
-/ar/
-/css/
-/en/
-/fonts/
-/images/
-/js/
-/popup/
-/scss/
-/static/
-/tr/
-/videos/
