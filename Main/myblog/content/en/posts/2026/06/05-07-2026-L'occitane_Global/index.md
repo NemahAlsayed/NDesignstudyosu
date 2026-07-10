@@ -546,7 +546,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
             <!-- PRODUCT 1: Ambre Perfume -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="Amber.png" alt="Ambre Eau de Parfum">
+                    <img src="images/Amber.png" alt="Ambre Eau de Parfum">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
@@ -566,7 +566,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
             <!-- PRODUCT 2: Concrète de Lait -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="Milk.png" alt="Concrète de Lait Milk Concentrate">
+                    <img src="images/Milk.png" alt="Concrète de Lait Milk Concentrate">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
@@ -586,7 +586,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
             <!-- PRODUCT 3: Mini Amande Shampoo -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="Amande.png" alt="Mini Amande Shampoo">
+                    <img src="images/Amande.png" alt="Mini Amande Shampoo">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
@@ -599,14 +599,14 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
                         My hair felt soft, manageable, and surprisingly shiny after just one use.
                         The scent is that signature L'OCCITANE almond — absolutely dreamy.
                     </p>
-                    <a href="https://sa.loccitane.com/hair-care/almond-amande-shampoo-mini/" class="btn-shop" target="_blank">Shop Now</a>
+                    <a href="images/shampoo.png" class="btn-shop" target="_blank">Shop Now</a>
                 </div>
             </div>
 
             <!-- PRODUCT 4: Mini 5 Essential Oils Conditioner -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="Conditioner.png" alt="Mini 5 Essential Oils Conditioner">
+                    <img src="images/Conditioner.png" alt="Mini 5 Essential Oils Conditioner">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
@@ -625,7 +625,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
             <!-- PRODUCT 5: Mini Amande Conditioner with Almond Oil -->
             <div class="product-card">
                 <div class="img-placeholder">
-                    <img src="Amande.png" alt="Mini Amande Conditioner with Almond Oil">
+                    <img src="images/Amande.png" alt="Mini Amande Conditioner with Almond Oil">
                 </div>
                 <div class="product-info">
                     <div class="product-rating">
