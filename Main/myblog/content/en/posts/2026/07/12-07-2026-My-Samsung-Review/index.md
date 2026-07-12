@@ -286,10 +286,11 @@ categories: ["Tech Reviews", "Samsung", "Smartphones"]
     <p>The <strong>8MP front camera</strong> (f/2.0) is solid for selfies and video calls – it handles portrait mode nicely and captures decent detail in good light.</p>
 
     <div class="image-grid">
-        <img src="/images/samsung-sample1.jpg" alt="Sample photo - city sunset" loading="lazy">
-        <img src="/images/samsung-sample2.jpg" alt="Sample photo - macro flower" loading="lazy">
-        <img src="/images/samsung-sample3.jpg" alt="Sample photo - night mode street" loading="lazy">
-        <img src="/images/samsung-sample4.jpg" alt="Sample photo - food portrait" loading="lazy">
+         <img src="/images/samsung2.png" alt="Sample photo - phone color pastel purple" loading="lazy">
+        <img src="/images/nails.jpeg" alt="Sample photo - nail art" loading="lazy">
+        <img src="/images/Truck.jpeg" alt="Sample photo - Drinks Truck" loading="lazy">
+        <img src="/images/Nigde.jpeg" alt="Sample photo - Soft Drinks" loading="lazy">
+        <img src="/images/Sirma.jpeg" alt="Sample photo - Soft Drinks" loading="lazy">
     </div>
     <p style="font-size: 0.9rem; color: #6a4f7a; text-align: center; margin-top: -0.5rem;">⬆️ Some shots I took with the A07 5G (unedited, direct from camera).</p>
 
@@ -304,7 +305,7 @@ categories: ["Tech Reviews", "Samsung", "Smartphones"]
     <hr>
 
     <h2>Ready to try it? Here's how to save 200 Riyals</h2>
-    <p>After two weeks, I'm keeping this as my daily driver. It's fast, reliable, and the camera is genuinely impressive. If you're looking for a 5G phone that won't break the bank, the Galaxy A07 5G is an excellent choice.</p>
+    <p>After two weeks, I'm keeping this as my daily driver. It's fast, reliable, and the camera is genuinely impressive. If you're looking for a 5G phone that won't break the bank, the Galaxy A07 5G is an excellent choice. Personal Note: the box has cable and sim opener and the phone, extras such as charger head and screen case are to be purchased.</p>
 
     <p><strong>And here's the best part:</strong> You can get it for <strong>200 Riyals off</strong> using my discount code.</p>
 
