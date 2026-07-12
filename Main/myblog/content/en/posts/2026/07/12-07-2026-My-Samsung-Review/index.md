@@ -252,7 +252,7 @@ categories: ["Tech Reviews", "Samsung", "Smartphones"]
         ⭐ Galaxy A07 5G · smooth · fast · camera surprises
     </p>
 
-    <img class="featured-image" src="/images/samsung1.png" alt="Samsung Galaxy A07 5G in Light Violet" loading="lazy">
+    <img class="featured-image" src="images/samsung1.png" alt="Samsung Galaxy A07 5G in Light Violet" loading="lazy">
 
     <h2>Two weeks with the Galaxy A07 5G – and I'm impressed</h2>
     <p>Two weeks ago, I unboxed the <strong>Galaxy A07 5G</strong> in the stunning Light Violet color. I've used flagship phones before, but this mid-ranger genuinely surprised me. It’s smooth, fast, and the camera delivers way more than I expected for the price.</p>
@@ -286,11 +286,11 @@ categories: ["Tech Reviews", "Samsung", "Smartphones"]
     <p>The <strong>8MP front camera</strong> (f/2.0) is solid for selfies and video calls – it handles portrait mode nicely and captures decent detail in good light.</p>
 
     <div class="image-grid">
-         <img src="/images/samsung2.png" alt="Sample photo - phone color pastel purple" loading="lazy">
-        <img src="/images/nails.jpeg" alt="Sample photo - nail art" loading="lazy">
-        <img src="/images/Truck.jpeg" alt="Sample photo - Drinks Truck" loading="lazy">
-        <img src="/images/Nigde.jpeg" alt="Sample photo - Soft Drinks" loading="lazy">
-        <img src="/images/Sirma.jpeg" alt="Sample photo - Soft Drinks" loading="lazy">
+         <img src="images/samsung2.png" alt="Sample photo - phone color pastel purple" loading="lazy">
+        <img src="images/nails.jpeg" alt="Sample photo - nail art" loading="lazy">
+        <img src="images/Truck.jpeg" alt="Sample photo - Drinks Truck" loading="lazy">
+        <img src="images/Nigde.jpeg" alt="Sample photo - Soft Drinks" loading="lazy">
+        <img src="images/Sirma.jpeg" alt="Sample photo - Soft Drinks" loading="lazy">
     </div>
     <p style="font-size: 0.9rem; color: #6a4f7a; text-align: center; margin-top: -0.5rem;">⬆️ Some shots I took with the A07 5G (unedited, direct from camera).</p>
 
