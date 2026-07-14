@@ -143,15 +143,47 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
       font-weight: 450;
       letter-spacing: 0.3px;
       position: relative;
+      overflow: hidden;
+    }
+    .perfume-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+    .reef10-image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .reef10-image-grid .perfume-img {
+      height: 140px;
+      margin-bottom: 0;
+    }
+    @media (max-width: 500px) {
+      .reef10-image-grid { grid-template-columns: 1fr; }
     }
     .photo-badge {
-      background: rgba(30, 65, 55, 0.7);
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(30, 65, 55, 0.8);
       backdrop-filter: blur(2px);
-      padding: 0.2rem 1.2rem;
+      padding: 0.2rem 1rem;
       border-radius: 60px;
       color: #f2faf6;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       border: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 2;
+    }
+    .placeholder-text {
+      color: #5a8a7a;
+      font-size: 0.8rem;
+      font-weight: 400;
+      background: rgba(255,255,255,0.4);
+      padding: 0.2rem 1rem;
+      border-radius: 60px;
     }
     .perfume-card h3 {
       font-size: 1.7rem;
@@ -236,6 +268,40 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     }
     .veridian-block .note-list { margin-top: 0.5rem; }
     .veridian-block .note-list li { border-bottom: 1px solid #d6e7df; }
+    .veridian-img {
+      background: #e9f3ee;
+      border-radius: 24px;
+      height: 120px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.8rem 0 0.5rem 0;
+      background-image: radial-gradient(circle at 15px 15px, #c6dbd2 1.2px, transparent 1.2px);
+      background-size: 28px 28px;
+      border: 1px solid #d1e3d9;
+      position: relative;
+      overflow: hidden;
+    }
+    .veridian-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+    .veridian-img .photo-badge {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(30, 65, 55, 0.8);
+      backdrop-filter: blur(2px);
+      padding: 0.2rem 1rem;
+      border-radius: 60px;
+      color: #f2faf6;
+      font-size: 0.65rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 2;
+    }
     @media (max-width: 500px) {
       .veridian-block { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
       .veridian-block .right { width: 100%; text-align: center; }
@@ -325,7 +391,16 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
   <div class="perfume-grid">
     <!-- Reef 10 -->
     <div class="perfume-card">
-      <div class="perfume-img"><span class="photo-badge">📸 my photo · Reef 10</span></div>
+      <div class="reef10-image-grid">
+        <div class="perfume-img">
+          <img src="images/Reef10.png" alt="Reef 10 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 10 · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
+          <span class="photo-badge">📸 my photo</span>
+        </div>
+        <div class="perfume-img">
+          <img src="images/Reef101.png" alt="Reef 10 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 10 · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
+          <span class="photo-badge">📸 my photo</span>
+        </div>
+      </div>
       <h3>Reef 10</h3>
       <div class="perfume-sub">fresh · marine · green</div>
       <ul class="note-list">
@@ -335,10 +410,12 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
       </ul>
       <div class="my-notes-tag"><i>🗒️</i> my notes: crisp, oceanic, lasts 6h · perfect for daytime</div>
     </div>
-
     <!-- Reef 15 -->
     <div class="perfume-card">
-      <div class="perfume-img"><span class="photo-badge">📸 my photo · Reef 15</span></div>
+      <div class="perfume-img">
+        <img src="images/reef15-placeholder.png" alt="Reef 15 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 15 · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
+        <span class="photo-badge">📸 my photo</span>
+      </div>
       <h3>Reef 15</h3>
       <div class="perfume-sub">spicy · woody · warm</div>
       <ul class="note-list">
@@ -348,10 +425,12 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
       </ul>
       <div class="my-notes-tag"><i>🗒️</i> my notes: bold & cozy · cinnamon & sandalwood shine</div>
     </div>
-
     <!-- Reef 42 (full width) -->
     <div class="perfume-card" style="grid-column: 1 / -1;">
-      <div class="perfume-img" style="height: 130px;"><span class="photo-badge">📸 my photo · Reef 42</span></div>
+      <div class="perfume-img" style="height: 130px;">
+        <img src="images/Reef42.png" alt="Reef 42 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 42 · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
+        <span class="photo-badge">📸 my photo</span>
+      </div>
       <h3>Reef 42</h3>
       <div class="perfume-sub">floral · amber · addictive</div>
       <ul class="note-list">
@@ -368,6 +447,10 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     <div class="left">
       <h3>🌿 Veridian · Reef</h3>
       <div class="sub">green · aromatic · luminous</div>
+      <div class="veridian-img">
+        <img src="images/ReefV.png" alt="Veridian perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Veridian · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
+        <span class="photo-badge">📸 my photo</span>
+      </div>
       <ul class="note-list">
         <li><strong>Top:</strong> Basil, lime, mint, lemon</li>
         <li><strong>Heart:</strong> Galbanum, lavender, petitgrain, rosemary</li>
@@ -385,7 +468,7 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     <div class="photo-credit">
       <span>📸 original photos</span> all images captured by me
     </div>
-    <div class="disclaimer">⚡ purchased & reviewed · 100% my own</div>
+    <div class="disclaimer">⚡ purchased & reviewed · 100% my own, smell last all day long, perfect choices for daily use or night-evening</div>
   </div>
 
   <hr>
