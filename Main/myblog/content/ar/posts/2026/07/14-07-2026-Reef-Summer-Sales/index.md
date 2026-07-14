@@ -396,7 +396,7 @@ categories: ["مراجعات عطور", "نمط الحياة", "جمال"]
 
   <!-- intro -->
   <div class="intro-block">
-    <p><strong>⚡ كلام من القلب:</strong> أرتدي عطور <strong>Reef</strong> منذ أشهر — هذه الأربعة هي تشكيلتي الشخصية. <br>جميع الصور التقطتها بنفسي بعد الشراء. هذه ليست مراجعة مدفوعة، فقط ملاحظات صادقة.</p>
+    <p><strong>⚡ كلام من القلب:</strong> استخدم عطور <strong>Reef</strong> منذ أشهر — هذه الأربعة هي تشكيلتي الشخصية. <br>جميع الصور التقطتها بنفسي بعد الشراء. هذه ليست مراجعة مدفوعة، فقط ملاحظات صادقة.</p>
     <p>استخدم كود الخصم الخاص بي <span class="coupon-code">B64</span> عند الدفع للحصول على <strong>خصم 5%</strong> على طلبك (يشمل المتجر بأكمله).</p>
   </div>
 
@@ -423,7 +423,6 @@ categories: ["مراجعات عطور", "نمط الحياة", "جمال"]
       </ul>
       <div class="my-notes-tag"><i>🗒️</i> ملاحظاتي: منعش، بحري، يدوم 6 ساعات · مثالي للنهار</div>
     </div>
-
     <!-- Reef 15 -->
     <div class="perfume-card">
       <div class="perfume-img">
@@ -439,7 +438,6 @@ categories: ["مراجعات عطور", "نمط الحياة", "جمال"]
       </ul>
       <div class="my-notes-tag"><i>🗒️</i> ملاحظاتي: جريء ودافئ · القرفة وخشب الصندل يبرزان</div>
     </div>
-
     <!-- Reef 42 (full width) -->
     <div class="perfume-card" style="grid-column: 1 / -1;">
       <div class="perfume-img" style="height: 130px;">
