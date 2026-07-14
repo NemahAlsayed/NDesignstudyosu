@@ -130,7 +130,7 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     .perfume-img {
       background: #e9f3ee;
       border-radius: 24px;
-      height: 150px;
+      height: 260px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -148,7 +148,7 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     .perfume-img img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 24px;
     }
     .reef10-image-grid {
@@ -158,7 +158,7 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
       margin-bottom: 1.2rem;
     }
     .reef10-image-grid .perfume-img {
-      height: 140px;
+      height: 220px;
       margin-bottom: 0;
     }
     @media (max-width: 500px) {
@@ -166,14 +166,16 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     }
     .photo-badge {
       position: absolute;
-      bottom: 8px;
+      top: 8px;
       right: 8px;
       background: rgba(30, 65, 55, 0.8);
       backdrop-filter: blur(2px);
-      padding: 0.2rem 1rem;
+      padding: 0.06rem 0.42rem;
       border-radius: 60px;
       color: #f2faf6;
-      font-size: 0.65rem;
+      font-size: 0.5rem;
+      letter-spacing: 0.2px;
+      line-height: 1.1;
       border: 1px solid rgba(255, 255, 255, 0.2);
       z-index: 2;
     }
@@ -271,7 +273,7 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     .veridian-img {
       background: #e9f3ee;
       border-radius: 24px;
-      height: 120px;
+      height: 240px;
       width: 100%;
       display: flex;
       align-items: center;
@@ -286,19 +288,21 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     .veridian-img img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 24px;
     }
     .veridian-img .photo-badge {
       position: absolute;
-      bottom: 8px;
+      top: 8px;
       right: 8px;
       background: rgba(30, 65, 55, 0.8);
       backdrop-filter: blur(2px);
-      padding: 0.2rem 1rem;
+      padding: 0.06rem 0.42rem;
       border-radius: 60px;
       color: #f2faf6;
-      font-size: 0.65rem;
+      font-size: 0.5rem;
+      letter-spacing: 0.2px;
+      line-height: 1.1;
       border: 1px solid rgba(255, 255, 255, 0.2);
       z-index: 2;
     }
@@ -393,12 +397,12 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     <div class="perfume-card">
       <div class="reef10-image-grid">
         <div class="perfume-img">
-          <img src="images/Reef10.png" alt="Reef 10 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 10 · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
-          <span class="photo-badge">📸 my photo</span>
+          <img src="images/Reef10.png" alt="Reef 10 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 10 · photo by me</span><span class=\'photo-badge\'>photo by me</span>';">
+          <span class="photo-badge">photo by me</span>
         </div>
         <div class="perfume-img">
-          <img src="images/Reef101.png" alt="Reef 10 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 10 · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
-          <span class="photo-badge">📸 my photo</span>
+          <img src="images/Reef101.png" alt="Reef 10 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 10 · photo by me</span><span class=\'photo-badge\'>photo by me</span>';">
+          <span class="photo-badge">photo by me</span>
         </div>
       </div>
       <h3>Reef 10</h3>
@@ -413,8 +417,8 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     <!-- Reef 15 -->
     <div class="perfume-card">
       <div class="perfume-img">
-        <img src="images/reef15-placeholder.png" alt="Reef 15 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 15 · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
-        <span class="photo-badge">📸 my photo</span>
+        <img src="images/Reef15.png" alt="Reef 15 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 15 · photo by me</span><span class=\'photo-badge\'>photo by me</span>';">
+        <span class="photo-badge">photo by me</span>
       </div>
       <h3>Reef 15</h3>
       <div class="perfume-sub">spicy · woody · warm</div>
@@ -428,8 +432,8 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
     <!-- Reef 42 (full width) -->
     <div class="perfume-card" style="grid-column: 1 / -1;">
       <div class="perfume-img" style="height: 130px;">
-        <img src="images/Reef42.png" alt="Reef 42 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 42 · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
-        <span class="photo-badge">📸 my photo</span>
+        <img src="images/Reef42.png" alt="Reef 42 perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Reef 42 · photo by me</span><span class=\'photo-badge\'>photo by me</span>';">
+        <span class="photo-badge">photo by me</span>
       </div>
       <h3>Reef 42</h3>
       <div class="perfume-sub">floral · amber · addictive</div>
@@ -448,8 +452,8 @@ categories: ["Fragrance Reviews", "Lifestyle", "Beauty"]
       <h3>🌿 Veridian · Reef</h3>
       <div class="sub">green · aromatic · luminous</div>
       <div class="veridian-img">
-        <img src="images/ReefV.png" alt="Veridian perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Veridian · my photo</span><span class=\'photo-badge\' style=\'position:absolute;bottom:8px;right:8px;\'>my photo</span>';">
-        <span class="photo-badge">📸 my photo</span>
+        <img src="images/ReefV.png" alt="Veridian perfume bottle" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'placeholder-text\'>📸 Veridian · photo by me</span><span class=\'photo-badge\'>photo by me</span>';">
+        <span class="photo-badge">photo by me</span>
       </div>
       <ul class="note-list">
         <li><strong>Top:</strong> Basil, lime, mint, lemon</li>
