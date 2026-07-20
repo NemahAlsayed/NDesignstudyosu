@@ -40,6 +40,15 @@ next: "Sonraki"
 
 share: "Paylaş:"
 
+newsletterTitle: "Bultene katılın"
+newsletterText: "Yeni yazıları, seçili teklifleri ve stüdyo güncellemelerini e-postayla alın."
+newsletterName: "Ad"
+newsletterNamePlaceholder: "Adınız"
+newsletterEmailPlaceholder: "E-posta adresiniz"
+newsletterSubmit: "Abone Ol"
+newsletterDismiss: "Hayır, teşekkürler"
+newsletterClose: "Bülten penceresini kapat"
+
 portfolioTitle: "📂 Portföyümüz"
 portfolioSubtitle: "Hassasiyet ve yaratıcılıkla güzellik yaratıyoruz"
 

@@ -1,0 +1,45 @@
+{{ $popup := site.Params.newsletterPopup }}
+{{ if and $popup.enabled $popup.endpoint }}
+<section
+    class="nds-newsletter"
+    id="newsletterPopup"
+    data-newsletter-popup
+    data-endpoint="{{ $popup.endpoint }}"
+    data-delay-seconds="{{ default 8 $popup.delaySeconds }}"
+    data-scroll-percent="{{ default 0.45 $popup.scrollPercent }}"
+    data-storage-key="{{ default "nds-newsletter-popup-dismissed" $popup.storageKey }}"
+    data-success-message="{{ i18n "successMessage" }}"
+    data-error-message="{{ i18n "errorMessage" }}"
+    data-invalid-message="{{ i18n "requiredField" }}"
+    hidden>
+    <div class="nds-newsletter__backdrop" data-newsletter-close></div>
+    <div class="nds-newsletter__panel" role="dialog" aria-modal="true" aria-labelledby="newsletterTitle">
+        <button type="button" class="nds-newsletter__close" aria-label="{{ i18n "newsletterClose" }}" data-newsletter-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        <p class="nds-newsletter__eyebrow">{{ i18n "featuredPosts" }}</p>
+        <h2 class="nds-newsletter__title" id="newsletterTitle">{{ i18n "newsletterTitle" }}</h2>
+        <p class="nds-newsletter__copy">{{ i18n "newsletterText" }}</p>
+
+        <form class="nds-newsletter__form" data-newsletter-form novalidate>
+            <label class="nds-newsletter__field">
+                <span>{{ i18n "newsletterName" }}</span>
+                <input type="text" name="name" autocomplete="name" placeholder="{{ i18n "newsletterNamePlaceholder" }}" required />
+            </label>
+
+            <label class="nds-newsletter__field">
+                <span>{{ i18n "email" }}</span>
+                <input type="email" name="email" autocomplete="email" placeholder="{{ i18n "newsletterEmailPlaceholder" }}" required />
+            </label>
+
+            <input type="text" name="company" tabindex="-1" autocomplete="off" class="nds-newsletter__honeypot" aria-hidden="true" />
+
+            <button type="submit" class="nds-newsletter__submit">{{ i18n "newsletterSubmit" }}</button>
+            <button type="button" class="nds-newsletter__dismiss" data-newsletter-close>{{ i18n "newsletterDismiss" }}</button>
+
+            <p class="nds-newsletter__status" data-newsletter-status aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+{{ end }}

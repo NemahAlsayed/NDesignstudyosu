@@ -6,6 +6,13 @@ defaultContentLanguageInSubdir = true
 [params]
 googleAnalyticsID = ""
 
+[params.newsletterPopup]
+enabled = true
+endpoint = "https://script.google.com/macros/s/AKfycbxipUsBSCfAFO764vnQtlCiEamW5uNmbfcNn1obvgH3koj8XmVtTo3t0ivr5Otcbx1JvQ/exec"
+delaySeconds = 8
+scrollPercent = 0.45
+storageKey = "nds-newsletter-popup-dismissed"
+
 ############################################
 # LANGUAGES
 ############################################

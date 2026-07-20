@@ -40,6 +40,15 @@ next: "Next"
 
 share: "Share:"
 
+newsletterTitle: "Join the newsletter"
+newsletterText: "Get new posts, selected offers, and studio updates by email."
+newsletterName: "Name"
+newsletterNamePlaceholder: "Your name"
+newsletterEmailPlaceholder: "Your email address"
+newsletterSubmit: "Subscribe"
+newsletterDismiss: "No thanks"
+newsletterClose: "Close newsletter popup"
+
 portfolioTitle: "📂 Our Portfolio"
 portfolioSubtitle: "Creating beauty with precision and creativity"
 

@@ -16,4 +16,143 @@ document.addEventListener("DOMContentLoaded", () => {
       toggle.classList.remove("open");
     }
   });
+
+  const popup = document.querySelector("[data-newsletter-popup]");
+
+  if (!popup) {
+    return;
+  }
+
+  const form = popup.querySelector("[data-newsletter-form]");
+  const status = popup.querySelector("[data-newsletter-status]");
+  const closeButtons = popup.querySelectorAll("[data-newsletter-close]");
+  const endpoint = popup.dataset.endpoint;
+  const delaySeconds = Number.parseFloat(popup.dataset.delaySeconds || "8");
+  const scrollPercent = Number.parseFloat(popup.dataset.scrollPercent || "0.45");
+  const storageKey = popup.dataset.storageKey || "nds-newsletter-popup-dismissed";
+  const successMessage = popup.dataset.successMessage || "Thanks. Your details were received.";
+  const errorMessage = popup.dataset.errorMessage || "The subscription could not be saved. Please try again.";
+  const invalidMessage = popup.dataset.invalidMessage || "Please complete the required fields.";
+
+  let isVisible = false;
+  let isDismissed = false;
+
+  try {
+    isDismissed = window.localStorage.getItem(storageKey) === "true";
+  } catch (_error) {
+    isDismissed = false;
+  }
+
+  if (isDismissed || !endpoint || !form || !status) {
+    return;
+  }
+
+  const showPopup = () => {
+    if (isVisible || isDismissed) {
+      return;
+    }
+
+    popup.hidden = false;
+    window.requestAnimationFrame(() => {
+      popup.classList.add("is-visible");
+    });
+    isVisible = true;
+  };
+
+  const closePopup = (persist) => {
+    popup.classList.remove("is-visible");
+    window.setTimeout(() => {
+      popup.hidden = true;
+    }, 220);
+    isVisible = false;
+
+    if (persist) {
+      try {
+        window.localStorage.setItem(storageKey, "true");
+      } catch (_error) {
+        // Ignore storage failures.
+      }
+      isDismissed = true;
+    }
+  };
+
+  const triggerFromScroll = () => {
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight <= 0) {
+      return;
+    }
+
+    const progress = window.scrollY / docHeight;
+    if (progress >= scrollPercent) {
+      showPopup();
+      window.removeEventListener("scroll", triggerFromScroll);
+    }
+  };
+
+  window.setTimeout(showPopup, Math.max(delaySeconds, 0) * 1000);
+  window.addEventListener("scroll", triggerFromScroll, { passive: true });
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      closePopup(true);
+    });
+  });
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (!form.reportValidity()) {
+      status.textContent = invalidMessage;
+      status.dataset.state = "error";
+      return;
+    }
+
+    const formData = new FormData(form);
+    if (String(formData.get("company") || "").trim() !== "") {
+      closePopup(true);
+      return;
+    }
+
+    const submitButton = form.querySelector("button[type='submit']");
+    if (submitButton) {
+      submitButton.disabled = true;
+    }
+
+    status.textContent = "";
+    status.dataset.state = "";
+
+    const payload = new URLSearchParams({
+      name: String(formData.get("name") || "").trim(),
+      email: String(formData.get("email") || "").trim(),
+      lang: document.documentElement.lang || "",
+      page: window.location.href,
+      source: "newsletter-popup"
+    });
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+        },
+        body: payload.toString()
+      });
+
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+
+      status.textContent = successMessage;
+      status.dataset.state = "success";
+      form.reset();
+      closePopup(true);
+    } catch (_error) {
+      status.textContent = errorMessage;
+      status.dataset.state = "error";
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+      }
+    }
+  });
 });

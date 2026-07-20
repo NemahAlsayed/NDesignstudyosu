@@ -40,6 +40,15 @@ next: "التالي"
 
 share: "شارك:"
 
+newsletterTitle: "اشترك في النشرة البريدية"
+newsletterText: "احصل على المقالات الجديدة والعروض المختارة وتحديثات الاستوديو عبر البريد الإلكتروني."
+newsletterName: "الاسم"
+newsletterNamePlaceholder: "اسمك"
+newsletterEmailPlaceholder: "بريدك الإلكتروني"
+newsletterSubmit: "اشترك"
+newsletterDismiss: "لا، شكراً"
+newsletterClose: "إغلاق نافذة الاشتراك"
+
 portfolioTitle: "📂 معرض أعمالنا"
 portfolioSubtitle: "نصنع الجمال بدقة وإبداع"
 
