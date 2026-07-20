@@ -540,14 +540,14 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
     </p>
 
     <p>
-        In a competitive beauty landscape, <strong>they</strong> expect more than color payoff or fragrance. <strong>They</strong> look for consistent quality, clear compliance, and products that support a premium customer experience. Vasso is positioned to meet that expectation across professional hair care, men's grooming, and home fragrance.
+        In a competitive beauty landscape, they expect more than color payoff or fragrance. They look for consistent quality, clear compliance, and products that support a premium customer experience. Vasso is positioned to meet that expectation across professional hair care, men's grooming, and home fragrance.
     </p>
 
     <!-- SECTION 1: WOMEN'S HAIR -->
     <h2>Professional Hair Color and Care with Technical Depth</h2>
 
     <p>
-        The women's professional hair care range combines dependable color performance with treatment-driven support products. Beyond the core hair color assortment, <strong>they</strong> will find a complete care system built for salon use and retail extension.
+        The women's professional hair care range combines dependable color performance with treatment-driven support products. Beyond the core hair color assortment, they will find a complete care system built for salon use and retail extension.
     </p>
 
     <div class="product-grid">
@@ -606,7 +606,7 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
     <h2>Men's Grooming with a Premium Positioning</h2>
 
     <p>
-        For the modern Gulf consumer, grooming is part of a broader lifestyle purchase. The <strong>Men's Range</strong> helps distributors and retailers serve that demand with products that balance performance, fragrance, and shelf appeal. <strong>They</strong> can offer customers:
+        For the modern Gulf consumer, grooming is part of a broader lifestyle purchase. The <strong>Men's Range</strong> helps distributors and retailers serve that demand with products that balance performance, fragrance, and shelf appeal. They can offer customers:
     </p>
 
     <div class="product-grid">
@@ -624,25 +624,25 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
     <h2>Home Fragrance for Lifestyle Retail</h2>
 
     <p>
-        Vasso's portfolio extends beyond personal care into premium <strong>Air Fresheners</strong>, including concentrated liquids, electric diffusers, and car vent clips. With scent profiles inspired by Arabian oud, fresh linen, Mediterranean citrus, and amber musk, <strong>they</strong> can broaden <strong>their</strong> assortment with products suited to both home and automotive channels.
+        Vasso's portfolio extends beyond personal care into premium <strong>Air Fresheners</strong>, including concentrated liquids, electric diffusers, and car vent clips. With scent profiles inspired by Arabian oud, fresh linen, Mediterranean citrus, and amber musk, they can broaden their assortment with products suited to both home and automotive channels.
     </p>
 
     <!-- SECTION 4: CERTIFICATIONS -->
     <h2>Certified Standards That Support Market Trust</h2>
 
     <p>
-        In a crowded market, certification and documentation often determine whether a product range can scale. With <strong>CPNP and FDA numbers</strong> and registration in more than <strong>120 countries</strong>, Vasso offers a compliance profile that strengthens buyer confidence. <strong>They</strong> can present these credentials to <strong>their</strong> clients knowing each batch is aligned with demanding EU and U.S. standards.
+        In a crowded market, certification and documentation often determine whether a product range can scale. With <strong>CPNP and FDA numbers</strong> and registration in more than <strong>120 countries</strong>, Vasso offers a compliance profile that strengthens buyer confidence. They can present these credentials to their clients knowing each batch is aligned with demanding EU and U.S. standards.
     </p>
 
     <p>
-        Whether <strong>they</strong> are supplying a high-end salon, a boutique men's grooming lounge, or a multi-brand retail chain, <strong>they</strong> are backed by a brand that prioritizes efficacy, safety, and presentation quality.
+        Whether they are supplying a high-end salon, a boutique men's grooming lounge, or a multi-brand retail chain, they are backed by a brand that prioritizes efficacy, safety, and presentation quality.
     </p>
 
     <!-- SECTION 5: PRIVATE LABEL -->
     <h2>Private Label for Brand Builders</h2>
 
     <p>
-        For businesses ready to move beyond distribution, Vasso offers comprehensive <strong>private-label manufacturing</strong>. <strong>They</strong> can develop <strong>their</strong> own signature line of hair colors, men's grooming products, or air fresheners with custom packaging, tailored fragrance profiles, and regulatory support built into the process. Vasso manages the technical foundation while <strong>they</strong> shape the brand identity.
+        For businesses ready to move beyond distribution, Vasso offers comprehensive <strong>private-label manufacturing</strong>. They can develop their own signature line of hair colors, men's grooming products, or air fresheners with custom packaging, tailored fragrance profiles, and regulatory support built into the process. Vasso manages the technical foundation while they shape the brand identity.
     </p>
 
     <!-- ============================================= -->
@@ -653,7 +653,7 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             <strong>Gulf-based distributors, salon owners, and retailers</strong>
         </p>
         <p>
-            For catalogues, bulk quantities, pricing, ingredient details, and private-label discussions, <strong>they</strong> can contact Nemah Alsayed directly for Gulf-region introductions and commercial coordination with the Organika team.
+            For catalogues, bulk quantities, pricing, ingredient details, and private-label discussions, they can contact Nemah Alsayed directly for Gulf-region introductions and commercial coordination with the Organika team.
         </p>
 
         <div class="cta-email">
@@ -672,7 +672,7 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
     </div>
 
     <p style="text-align: center; font-weight: 500; color: #aa6a6a; margin-top: 1rem; font-size: 1.05rem;">
-        They can explore how Vasso brings together technical credibility and premium presentation for <strong>their</strong> shelves.
+        They can explore how Vasso brings together technical credibility and premium presentation for their shelves.
     </p>
     <p style="text-align: center; font-size: 0.95rem; color: #727e6a; font-style: italic;">
         Their clients deserve the best — partner with the brand that delivers nothing less.
