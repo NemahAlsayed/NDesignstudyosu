@@ -3,6 +3,9 @@ title = "N Design Studio"
 defaultContentLanguage = "ar"
 defaultContentLanguageInSubdir = true
 
+[params]
+googleAnalyticsID = ""
+
 ############################################
 # LANGUAGES
 ############################################
