@@ -7,13 +7,7 @@ categories: ["Beauty", "Cosmetics", "B2B"]
 featuredImage: "/images/Vasso2.png"
 description: "A refined B2B overview for Gulf distributors featuring Vasso's professional hair color range, men's grooming products, air fresheners, and private-label solutions with CPNP and FDA certifications."
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ .Title }}</title>
+{{< rawhtml >}}
     <style>
         /* ----- RESET & BASE ----- */
         * {
@@ -530,14 +524,10 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             }
         }
     </style>
-</head>
-<body>
 
 <div class="post-container">
 
     <!-- TITLE & META -->
-    <h1>Vasso by Organika: Certified Beauty and Grooming Solutions for the Gulf Market</h1>
-
     <div class="post-meta">
         <span>July 2026</span>
         <span>Gulf Market Focus</span>
@@ -707,6 +697,4 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
 
 </div>
 <!-- end post-container -->
-
-</body>
-</html>
+{{< /rawhtml >}}
