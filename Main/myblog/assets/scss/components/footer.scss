@@ -49,3 +49,21 @@
   margin-top: 1rem;
   color: #bdbdbd;
 }
+
+.nds-footer-newsletter {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f2d6a4;
+}
+
+.nds-footer-newsletter a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(242, 214, 164, 0.45);
+}
+
+.nds-footer-newsletter a:hover {
+  border-bottom-color: currentColor;
+}

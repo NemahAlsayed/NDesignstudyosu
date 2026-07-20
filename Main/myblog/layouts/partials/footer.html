@@ -31,6 +31,8 @@
   {{ $rights := cond (ne $raw "footerRights") $raw "" }}
 
   <p class="nds-footer-copy">
+    <span class="nds-footer-newsletter">{{ i18n "newsletterFooterPrompt" }}</span>
+    <br />
     © {{ now.Year }} N Design Studio{{ if ne $rights "" }} — {{ $rights }}{{ end }}
   </p>
 

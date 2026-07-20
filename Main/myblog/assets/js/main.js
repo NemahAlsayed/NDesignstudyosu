@@ -27,8 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const status = popup.querySelector("[data-newsletter-status]");
   const closeButtons = popup.querySelectorAll("[data-newsletter-close]");
   const endpoint = popup.dataset.endpoint;
-  const delaySeconds = Number.parseFloat(popup.dataset.delaySeconds || "8");
-  const scrollPercent = Number.parseFloat(popup.dataset.scrollPercent || "0.45");
   const storageKey = popup.dataset.storageKey || "nds-newsletter-popup-dismissed";
   const successMessage = popup.dataset.successMessage || "Thanks. Your details were received.";
   const errorMessage = popup.dataset.errorMessage || "The subscription could not be saved. Please try again.";
@@ -39,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let isDismissed = false;
 
   try {
-    isDismissed = window.localStorage.getItem(storageKey) === "true";
+    const pageKey = `${storageKey}:${window.location.pathname}`;
+    popup.dataset.pageStorageKey = pageKey;
+    isDismissed = window.localStorage.getItem(pageKey) === "true";
   } catch (_error) {
     isDismissed = false;
   }
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (persist) {
       try {
-        window.localStorage.setItem(storageKey, "true");
+        window.localStorage.setItem(popup.dataset.pageStorageKey || storageKey, "true");
       } catch (_error) {
         // Ignore storage failures.
       }
@@ -78,19 +78,15 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const triggerFromScroll = () => {
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    if (docHeight <= 0) {
-      return;
-    }
+    const docHeight = document.documentElement.scrollHeight;
+    const nearBottom = window.scrollY + window.innerHeight >= docHeight - 16;
 
-    const progress = window.scrollY / docHeight;
-    if (progress >= scrollPercent) {
+    if (nearBottom) {
       showPopup();
       window.removeEventListener("scroll", triggerFromScroll);
     }
   };
 
-  window.setTimeout(showPopup, Math.max(delaySeconds, 0) * 1000);
   window.addEventListener("scroll", triggerFromScroll, { passive: true });
 
   closeButtons.forEach((button) => {
