@@ -4,7 +4,7 @@ date: 2026-07-20
 draft: false
 tags: ["Vasso", "Organika", "Hair Color", "Men's Grooming", "Private Label", "Gulf Market"]
 categories: ["Beauty", "Cosmetics", "B2B"]
-featuredImage: "images/Vasso2.png"
+featured_image: "images/Vasso2.png"
 description: "A refined B2B overview for Gulf distributors featuring Vasso's professional hair color range, men's grooming products, air fresheners, and private-label solutions with CPNP and FDA certifications."
 ---
 {{< rawhtml >}}
@@ -565,22 +565,12 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
     <div class="photo-grid">
         <!-- Photo 1: The Ombre Look (before/after or result) -->
         <div class="grid-item image-placeholder">
-            <div>
-                <span class="placeholder-icon">01</span>
-                <div class="label">Summer Ombre Look</div>
-                <div style="font-size:0.7rem; opacity:0.8; margin-top:0.2rem;">Roots 5.00 + 7.3 · Ends 10.11</div>
-            </div>
-            <!-- Replace the content above with: <img src="images/Vasso.png" alt="Summer Ombre Look" /> -->
+            <img src="images/Vasso.png" alt="Summer Ombre Look" />
         </div>
 
         <!-- Photo 2: Vasso Product Line -->
         <div class="grid-item image-placeholder-2">
-            <div>
-                <span class="placeholder-icon">02</span>
-                <div class="label">Vasso Product Line</div>
-                <div style="font-size:0.7rem; opacity:0.8; margin-top:0.2rem;">Hair · Men · Air Fresheners</div>
-            </div>
-            <!-- Replace the content above with: <img src="images/Vasso1.png" alt="Vasso Product Range" /> -->
+            <img src="images/Vasso1.png" alt="Vasso Product Range" />
         </div>
     </div>
 
