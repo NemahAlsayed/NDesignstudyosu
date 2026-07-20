@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = popup.querySelector("[data-newsletter-form]");
   const status = popup.querySelector("[data-newsletter-status]");
   const closeButtons = popup.querySelectorAll("[data-newsletter-close]");
+  const openButtons = document.querySelectorAll("[data-newsletter-open]");
   const endpoint = popup.dataset.endpoint;
   const storageKey = popup.dataset.storageKey || "nds-newsletter-popup-dismissed";
   const successMessage = popup.dataset.successMessage || "Thanks. Your details were received.";
@@ -44,12 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
     isDismissed = false;
   }
 
-  if (isDismissed || !endpoint || !form || !status) {
+  if (!endpoint || !form || !status) {
     return;
   }
 
-  const showPopup = () => {
-    if (isVisible || isDismissed) {
+  const showPopup = (force = false) => {
+    if (isVisible || (isDismissed && !force)) {
       return;
     }
 
@@ -88,6 +89,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   window.addEventListener("scroll", triggerFromScroll, { passive: true });
+
+  openButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      showPopup(true);
+    });
+  });
 
   closeButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -167,7 +175,9 @@ document.addEventListener("DOMContentLoaded", () => {
       status.textContent = successMessage;
       status.dataset.state = "success";
       form.reset();
-      closePopup(true);
+      window.setTimeout(() => {
+        closePopup(true);
+      }, 1800);
     } catch (_error) {
       status.textContent = errorMessage;
       status.dataset.state = "error";

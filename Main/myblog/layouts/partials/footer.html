@@ -31,7 +31,7 @@
   {{ $rights := cond (ne $raw "footerRights") $raw "" }}
 
   <p class="nds-footer-copy">
-    <span class="nds-footer-newsletter">{{ i18n "newsletterFooterPrompt" }}</span>
+    <a href="#newsletterPopup" class="nds-footer-newsletter" data-newsletter-open>{{ i18n "newsletterFooterPrompt" }}</a>
     <br />
     © {{ now.Year }} N Design Studio{{ if ne $rights "" }} — {{ $rights }}{{ end }}
   </p>
