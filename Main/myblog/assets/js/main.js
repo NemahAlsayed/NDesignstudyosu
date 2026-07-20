@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const successMessage = popup.dataset.successMessage || "Thanks. Your details were received.";
   const errorMessage = popup.dataset.errorMessage || "The subscription could not be saved. Please try again.";
   const invalidMessage = popup.dataset.invalidMessage || "Please complete the required fields.";
+  const submitMessage = popup.dataset.submitMessage || "Submitting your details...";
 
   let isVisible = false;
   let isDismissed = false;
@@ -121,26 +122,51 @@ document.addEventListener("DOMContentLoaded", () => {
     status.textContent = "";
     status.dataset.state = "";
 
-    const payload = new URLSearchParams({
-      name: String(formData.get("name") || "").trim(),
-      email: String(formData.get("email") || "").trim(),
-      lang: document.documentElement.lang || "",
-      page: window.location.href,
-      source: "newsletter-popup"
-    });
+    status.textContent = submitMessage;
+    status.dataset.state = "";
 
     try {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-        },
-        body: payload.toString()
+      const iframeName = "newsletter-popup-target";
+      let iframe = document.querySelector(`iframe[name="${iframeName}"]`);
+
+      if (!iframe) {
+        iframe = document.createElement("iframe");
+        iframe.name = iframeName;
+        iframe.title = "Newsletter submission target";
+        iframe.hidden = true;
+        document.body.appendChild(iframe);
+      }
+
+      const submitForm = document.createElement("form");
+      submitForm.action = endpoint;
+      submitForm.method = "POST";
+      submitForm.target = iframeName;
+      submitForm.hidden = true;
+
+      const fields = {
+        name: String(formData.get("name") || "").trim(),
+        email: String(formData.get("email") || "").trim(),
+        lang: document.documentElement.lang || "",
+        page: window.location.href,
+        source: "newsletter-popup"
+      };
+
+      Object.entries(fields).forEach(([key, value]) => {
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = key;
+        input.value = value;
+        submitForm.appendChild(input);
       });
 
-      if (!response.ok) {
-        throw new Error(`Request failed with status ${response.status}`);
-      }
+      document.body.appendChild(submitForm);
+      submitForm.submit();
+
+      window.setTimeout(() => {
+        if (document.body.contains(submitForm)) {
+          submitForm.remove();
+        }
+      }, 2000);
 
       status.textContent = successMessage;
       status.dataset.state = "success";
