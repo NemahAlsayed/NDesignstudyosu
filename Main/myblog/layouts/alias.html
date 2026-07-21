@@ -1,6 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ .Lang }}">
 <head>
+  <title>{{ .Permalink }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta charset="utf-8">
   {{ with site.Params.googleAnalyticsID }}
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
@@ -11,7 +14,6 @@
     gtag('config', {{ . | jsonify }});
   </script>
   {{ end }}
-  <meta http-equiv="refresh" content="0; url={{ .Params.redirect }}">
+  <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
 </head>
-<body></body>
 </html>
