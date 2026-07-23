@@ -1,6 +1,4 @@
 <head>
-     {{ $pagePermalink := .Permalink }}
-     {{ $pageTitle := .Title }}
      {{ $analyticsTag := "" }}
      {{ if .IsPage }}
           {{ $analyticsTag = (default .Slug .Params.analytics_tag) }}
@@ -41,7 +39,8 @@
 
      <meta name="google-adsense-account" content="ca-pub-9902619162566902" />
 
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9902619162566902" crossorigin="anonymous"></script>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9902619162566902"
+          crossorigin="anonymous"></script>
 
      {{ if $analyticsTag }}
           <meta name="google-tag" content="{{ $analyticsTag }}" />
@@ -89,19 +88,15 @@
     <link rel="icon" href="{{ .RelPermalink }}" type="image/x-icon" />
   {{ end }}
 
-     {{ with site.Params.googleAnalyticsID }}
-     <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
-     <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', {{ . | jsonify }}{{ if $analyticsTag }}, {
-               "page_path": {{ $pagePermalink | jsonify }},
-               "page_title": {{ $pageTitle | jsonify }},
-               "content_group1": {{ $analyticsTag | jsonify }}
-          }{{ end }});
-     </script>
-     {{ end }}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG76R19NGW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MG76R19NGW');
+  </script>
 
   <!-- ============================================================
        JSON-LD — HOMEPAGE
