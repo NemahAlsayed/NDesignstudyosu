@@ -3,11 +3,6 @@
   {{ $analyticsTag = (default .Slug .Params.analytics_tag) }}
 {{ end }}
 
-{{ $gaID := .Site.Config.Services.GoogleAnalytics.ID }}
-{{ if not $gaID }}
-  {{ $gaID = .Site.Params.googleAnalyticsID }}
-{{ end }}
-
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -25,7 +20,7 @@
 <!-- ============================================================
      DESCRIPTION
 ============================================================ -->
-{{ $desc := cond (isset .Page.Params "description") .Page.Description (.Summary) }}
+{{ $desc := cond (isset .Page.Params "description") .Page.Description .Summary }}
 <meta name="description" content="{{ $desc }}" />
 
 <!-- ============================================================
@@ -53,19 +48,22 @@
 {{ end }}
 
 <!-- ============================================================
-     GOOGLE ANALYTICS (using Hugo's internal template)
+     GOOGLE ANALYTICS GA4
 ============================================================ -->
-{{ if $gaID }}
+{{ if .Site.Services.GoogleAnalytics.ID }}
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaID }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Services.GoogleAnalytics.ID }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '{{ $gaID }}');
+    gtag('config', '{{ .Site.Services.GoogleAnalytics.ID }}', {
+      'send_page_view': true,
+      'language': '{{ .Site.Language.Lang }}'
+    });
     
     {{ if .IsPage }}
-      // Send page view with additional metadata
+      // Send additional page view metadata
       gtag('event', 'page_view', {
         'page_title': '{{ .Title }}',
         'page_location': '{{ .Permalink }}',

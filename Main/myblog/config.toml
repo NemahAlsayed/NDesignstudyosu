@@ -3,12 +3,12 @@ title = "N Design Studio"
 defaultContentLanguage = "ar"
 defaultContentLanguageInSubdir = true
 
-# Google Analytics (standard Hugo location)
-googleAnalytics = "G-MG76R19NGW"
+# Google Analytics - NEW MODERN FORMAT (Hugo v0.134.0+)
+[services]
+  [services.googleAnalytics]
+    id = 'G-EPM2DZZNT8'
 
 [params]
-# Remove googleAnalyticsID from here since we're using the standard location
-# googleAnalyticsID = "G-MG76R19NGW"  # <-- REMOVED
 
 [params.adsense]
 client = "ca-pub-9902619162566902"
