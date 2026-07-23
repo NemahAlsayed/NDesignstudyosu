@@ -4,16 +4,14 @@
   <title>{{ .Permalink }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
   <meta charset="utf-8">
-  {{ with site.Params.googleAnalyticsID }}
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG76R19NGW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', {{ . | jsonify }});
+    gtag('config', 'G-MG76R19NGW');
   </script>
-  {{ end }}
   <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
 </head>
 </html>

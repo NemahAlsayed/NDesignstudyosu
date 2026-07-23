@@ -6,6 +6,12 @@ defaultContentLanguageInSubdir = true
 [params]
 googleAnalyticsID = "G-MG76R19NGW"
 
+[params.adsense]
+client = "ca-pub-9902619162566902"
+postSlot = ""
+postSlotTop = ""
+postSlotBottom = ""
+
 [params.newsletterPopup]
 enabled = true
 endpoint = "https://script.google.com/macros/s/AKfycbxipUsBSCfAFO764vnQtlCiEamW5uNmbfcNn1obvgH3koj8XmVtTo3t0ivr5Otcbx1JvQ/exec"

@@ -1,5 +1,10 @@
 {{ define "main" }}
 
+{{ $isPost := eq .Section "posts" }}
+{{ $adClient := default "ca-pub-9902619162566902" site.Params.adsense.client }}
+{{ $topSlot := site.Params.adsense.postSlotTop }}
+{{ $bottomSlot := default site.Params.adsense.postSlot site.Params.adsense.postSlotBottom }}
+
 <div class="nds-single-wrapper">
 
     <!-- ============================
@@ -53,12 +58,40 @@
             </a>
         </div>
 
+        {{ if and $isPost $topSlot }}
+        <div class="nds-single-ad" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="{{ $adClient }}"
+                 data-ad-slot="{{ $topSlot }}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        {{ end }}
+
         <!-- ============================
              Article Content
         ============================= -->
         <div class="nds-single-content nds-dropcap">
             {{ .Content }}
         </div>
+
+        {{ if and $isPost $bottomSlot }}
+        <div class="nds-single-ad" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="{{ $adClient }}"
+                 data-ad-slot="{{ $bottomSlot }}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        {{ end }}
 
     </article>
 

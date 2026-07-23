@@ -1,5 +1,4 @@
-<head>
-     {{ $analyticsTag := "" }}
+{{ $analyticsTag := "" }}
      {{ if .IsPage }}
           {{ $analyticsTag = (default .Slug .Params.analytics_tag) }}
      {{ end }}
@@ -114,4 +113,3 @@
   </script>
   {{ end }}
 
-</head>
