@@ -161,10 +161,10 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             font-weight: 700;
         }
 
-        /* ----- PHOTO GRID (now 4 images) ----- */
+        /* ----- PHOTO GRID - SINGLE COLUMN (FULL WIDTH) ----- */
         .photo-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: column;
             gap: 1.5rem;
             margin: 2.5rem 0 2rem;
         }
@@ -175,16 +175,12 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             box-shadow: 0 8px 30px rgba(56, 49, 57, 0.15);
             border: 2px solid #cfb4a1;
             background: #f5efe9;
-            min-height: 200px;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.9rem;
-            color: #783b5a;
-            font-weight: 500;
-            text-align: center;
-            padding: 0.5rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
         }
 
         .photo-grid .grid-item:hover {
@@ -194,10 +190,11 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
 
         .photo-grid .grid-item img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
             display: block;
-            min-height: 180px;
+            background: #fcf9f6;
         }
 
         .photo-grid .grid-item .label-overlay {
@@ -205,37 +202,59 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             bottom: 0;
             left: 0;
             right: 0;
-            background: rgba(56, 49, 57, 0.7);
+            background: linear-gradient(transparent, rgba(56, 49, 57, 0.85));
             color: #fcf9f6;
-            padding: 0.4rem;
-            font-size: 0.7rem;
+            padding: 1.5rem 1.5rem 0.8rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 0.06em;
-        }
-
-        .photo-grid .grid-item {
-            position: relative;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            text-align: center;
         }
 
         /* Fallback gradient backgrounds */
         .photo-grid .grid-item.image-placeholder {
             background: linear-gradient(145deg, #cfb4a1, #aa6a6a);
             color: #fcf9f6;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
 
         .photo-grid .grid-item.image-placeholder-2 {
             background: linear-gradient(145deg, #727e6a, #383139);
             color: #fcf9f6;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
 
         .photo-grid .grid-item.image-placeholder-3 {
             background: linear-gradient(145deg, #783b5a, #aa6a6a);
             color: #fcf9f6;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
 
         .photo-grid .grid-item.image-placeholder-4 {
             background: linear-gradient(145deg, #383139, #727e6a);
             color: #fcf9f6;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
 
         /* ----- RECIPE BOX (Hair Color Review) ----- */
@@ -460,12 +479,11 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             }
 
             .photo-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 0.8rem;
+                gap: 1rem;
             }
 
-            .photo-grid .grid-item {
-                min-height: 140px;
+            .photo-grid .grid-item img {
+                max-height: 350px;
             }
 
             .spotlight-grid {
@@ -512,13 +530,8 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
                 padding: 1rem 1.2rem;
             }
 
-            .photo-grid {
-                grid-template-columns: 1fr;
-                gap: 0.8rem;
-            }
-
-            .photo-grid .grid-item {
-                min-height: 160px;
+            .photo-grid .grid-item img {
+                max-height: 250px;
             }
         }
 
@@ -724,29 +737,33 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
     </div>
 
     <!-- ============================================= -->
-    <!-- PHOTO GRID – 4 images                          -->
+    <!-- PHOTO GRID – SINGLE COLUMN (FULL WIDTH)       -->
+    <!-- Each image spans the full width of the page   -->
     <!-- ============================================= -->
+
+    <!-- Photo 1: The Ombre Look -->
     <div class="photo-grid">
-        <!-- Photo 1: The Ombre Look -->
         <div class="grid-item image-placeholder">
-            <img src="images/Vasso.png" alt="Summer Ombre Look" />
+            <img src="images/Vasso.png" alt="Summer Ombre Look — Vasso Hair Color" />
+            <div class="label-overlay">✦ Summer Ombre — 5.00 Chestnut · 7.3 Gold · 8.11 Ash · 10.11 Ash</div>
         </div>
 
         <!-- Photo 2: Vasso Product Line -->
         <div class="grid-item image-placeholder-2">
-            <img src="images/Vasso1.png" alt="Vasso Product Range" />
+            <img src="images/Vasso1.png" alt="Vasso Complete Product Range" />
+            <div class="label-overlay">✦ Complete Vasso Product Range — Hair · Men · Home Fragrance</div>
         </div>
 
-        <!-- Photo 3: Men's Wax Collection (NEW) -->
+        <!-- Photo 3: Men's Wax Collection -->
         <div class="grid-item image-placeholder-3">
             <img src="images/VassoMenWax.png" alt="Vasso Men's Styling Wax Collection" />
-            <div class="label-overlay">Men's Styling Wax — Ultra Hold &amp; Matte Finish</div>
+            <div class="label-overlay">✦ Men's Styling Wax — Ultra Hold · Matte · Fibrous · Clay</div>
         </div>
 
-        <!-- Photo 4: Men's After Shave Collection (NEW) -->
+        <!-- Photo 4: Men's After Shave Collection -->
         <div class="grid-item image-placeholder-4">
             <img src="images/VassoAfterShave.png" alt="Vasso Men's After Shave Collection" />
-            <div class="label-overlay">After Shave — Soothing &amp; Fragrant</div>
+            <div class="label-overlay">✦ After Shave — Soothing · Allantoin · Signature Scents</div>
         </div>
     </div>
 
@@ -908,7 +925,7 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
         </p>
 
         <div class="cta-email">
-            <a href="mailto: ndesignstudyosu@gmail.com">designstudyosu@gmail.com</a>
+            <a href="mailto: ndesignstudyosu@gmail.com">ndesignstudyosu@gmail.com</a>
         </div>
 
         <p style="font-size: 0.9rem; margin-top: 0.2rem; color: #cfb4a1;">
