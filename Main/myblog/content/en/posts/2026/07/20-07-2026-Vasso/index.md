@@ -1,6 +1,6 @@
 ---
-title: "Vasso by Organika: Certified Beauty and Grooming Solutions for the Gulf Market"
-date: 2026-07-20
+title: "Vasso by Organika: Vibrant, Certified Beauty and Grooming Solutions for the Gulf Market"
+date: 2026-07-27
 draft: false
 tags: ["Vasso", "Organika", "Hair Color", "Men's Grooming", "Private Label", "Gulf Market"]
 categories: ["Beauty", "Cosmetics", "B2B"]
@@ -25,7 +25,7 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
         }
 
         .post-container {
-            max-width: 880px;
+            max-width: 920px;
             margin: 0 auto;
             background: #fcf9f6;
             border-radius: 32px;
@@ -73,6 +73,11 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             color: #fcf9f6;
         }
 
+        .post-meta span.brand-tag {
+            background: #aa6a6a;
+            color: #fcf9f6;
+        }
+
         h2 {
             font-size: 1.9rem;
             font-weight: 600;
@@ -94,6 +99,14 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             font-family: 'Georgia', serif;
         }
 
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.4rem;
+            color: #383139;
+        }
+
         p {
             margin-bottom: 1.25rem;
             color: #383139;
@@ -113,6 +126,10 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             font-style: normal;
         }
 
+        .lead strong {
+            color: #783b5a;
+        }
+
         ul, ol {
             margin: 1rem 0 1.5rem 2rem;
             color: #383139;
@@ -122,7 +139,29 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             margin-bottom: 0.4rem;
         }
 
-        /* ----- PHOTO GRID ----- */
+        /* ----- VIBRANT BRAND CALL OUT ----- */
+        .vibe-box {
+            background: linear-gradient(135deg, #f5efe9, #e8ddd2);
+            border-radius: 18px;
+            padding: 1.5rem 2rem;
+            margin: 1.8rem 0;
+            border-left: 6px solid #aa6a6a;
+            text-align: center;
+        }
+
+        .vibe-box p {
+            font-size: 1.1rem;
+            color: #383139;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .vibe-box span {
+            color: #783b5a;
+            font-weight: 700;
+        }
+
+        /* ----- PHOTO GRID (now 4 images) ----- */
         .photo-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -144,7 +183,7 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             color: #783b5a;
             font-weight: 500;
             text-align: center;
-            padding: 1rem;
+            padding: 0.5rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -153,29 +192,32 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             box-shadow: 0 12px 40px rgba(56, 49, 57, 0.25);
         }
 
-        .photo-grid .grid-item .placeholder-icon {
-            font-size: 3rem;
-            opacity: 0.6;
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-
-        .photo-grid .grid-item .label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #727e6a;
-            font-weight: 600;
-        }
-
         .photo-grid .grid-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
+            min-height: 180px;
         }
 
-        /* Fallback gradient backgrounds if images are missing */
+        .photo-grid .grid-item .label-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(56, 49, 57, 0.7);
+            color: #fcf9f6;
+            padding: 0.4rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .photo-grid .grid-item {
+            position: relative;
+        }
+
+        /* Fallback gradient backgrounds */
         .photo-grid .grid-item.image-placeholder {
             background: linear-gradient(145deg, #cfb4a1, #aa6a6a);
             color: #fcf9f6;
@@ -183,6 +225,16 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
 
         .photo-grid .grid-item.image-placeholder-2 {
             background: linear-gradient(145deg, #727e6a, #383139);
+            color: #fcf9f6;
+        }
+
+        .photo-grid .grid-item.image-placeholder-3 {
+            background: linear-gradient(145deg, #783b5a, #aa6a6a);
+            color: #fcf9f6;
+        }
+
+        .photo-grid .grid-item.image-placeholder-4 {
+            background: linear-gradient(145deg, #383139, #727e6a);
             color: #fcf9f6;
         }
 
@@ -244,6 +296,50 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             content: "▹ ";
             color: #aa6a6a;
             font-weight: 600;
+        }
+
+        /* ----- PRODUCT SPOTLIGHT (Wax & After Shave) ----- */
+        .spotlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .spotlight-item {
+            background: #f5efe9;
+            border-radius: 18px;
+            padding: 1.5rem 1.8rem;
+            border: 1px solid #cfb4a1;
+            transition: transform 0.3s ease;
+        }
+
+        .spotlight-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .spotlight-item h4 {
+            color: #783b5a;
+            font-size: 1.1rem;
+            margin-top: 0;
+            border-bottom: 2px solid #aa6a6a;
+            padding-bottom: 0.5rem;
+        }
+
+        .spotlight-item ul {
+            margin: 0.5rem 0 0 1.2rem;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .spotlight-item ul li {
+            padding: 0.25rem 0;
+            font-size: 0.95rem;
+        }
+
+        .spotlight-item ul li::before {
+            content: "✦ ";
+            color: #aa6a6a;
         }
 
         /* ----- CALL TO ACTION (Luxury) ----- */
@@ -364,12 +460,17 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             }
 
             .photo-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.8rem;
             }
 
             .photo-grid .grid-item {
-                min-height: 160px;
+                min-height: 140px;
+            }
+
+            .spotlight-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
             }
 
             .product-grid {
@@ -397,7 +498,7 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             }
         }
 
-        @media (max-width: 450px) {
+        @media (max-width: 480px) {
             .post-container {
                 padding: 1.2rem 0.8rem;
             }
@@ -409,6 +510,15 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             .lead {
                 font-size: 1rem;
                 padding: 1rem 1.2rem;
+            }
+
+            .photo-grid {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+            }
+
+            .photo-grid .grid-item {
+                min-height: 160px;
             }
         }
 
@@ -423,13 +533,17 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
                 border-color: #783b5a;
             }
 
-            h1, h2, h3, p, li, .lead {
+            h1, h2, h3, h4, p, li, .lead {
                 color: #cfb4a1;
             }
 
             .lead {
                 background: #2a2228;
                 border-left-color: #aa6a6a;
+            }
+
+            .lead strong {
+                color: #aa6a6a;
             }
 
             .post-meta {
@@ -446,6 +560,11 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
                 color: #1e181c;
             }
 
+            .post-meta span.brand-tag {
+                background: #783b5a;
+                color: #cfb4a1;
+            }
+
             .photo-grid .grid-item {
                 border-color: #783b5a;
                 background: #2a2228;
@@ -458,6 +577,14 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
 
             .photo-grid .grid-item.image-placeholder-2 {
                 background: linear-gradient(145deg, #727e6a, #383139);
+            }
+
+            .photo-grid .grid-item.image-placeholder-3 {
+                background: linear-gradient(145deg, #aa6a6a, #783b5a);
+            }
+
+            .photo-grid .grid-item.image-placeholder-4 {
+                background: linear-gradient(145deg, #383139, #727e6a);
             }
 
             .recipe-box {
@@ -477,6 +604,33 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
 
             .product-grid span {
                 color: #cfb4a1;
+            }
+
+            .spotlight-item {
+                background: #2a2228;
+                border-color: #783b5a;
+            }
+
+            .spotlight-item h4 {
+                color: #aa6a6a;
+                border-bottom-color: #783b5a;
+            }
+
+            .spotlight-item ul li {
+                color: #cfb4a1;
+            }
+
+            .vibe-box {
+                background: linear-gradient(135deg, #2a2228, #383139);
+                border-left-color: #aa6a6a;
+            }
+
+            .vibe-box p {
+                color: #cfb4a1;
+            }
+
+            .vibe-box span {
+                color: #aa6a6a;
             }
 
             .cta-box {
@@ -528,26 +682,36 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
 <div class="post-container">
 
     <!-- TITLE & META -->
+    <h1>Vasso by Organika: Vibrant, Certified Beauty and Grooming Solutions for the Gulf Market</h1>
+
     <div class="post-meta">
         <span>July 2026</span>
+        <span class="brand-tag">✦ Vibrant &amp; Youthful</span>
         <span>Gulf Market Focus</span>
         <span>CPNP &amp; FDA Certified</span>
     </div>
 
     <!-- LEAD -->
     <p class="lead">
-        <strong>Vasso by Organika</strong> brings together product performance, regulatory confidence, and premium presentation for distributors, salon owners, and retailers across the Gulf market.
+        <strong>Vasso by Organika</strong> brings together product performance, regulatory confidence, and premium presentation for distributors, salon owners, and retailers across the Gulf market. The brand is <strong>vibrant, colorful, and gives a youthful feel</strong> to every client who walks through their doors.
     </p>
 
     <p>
-        In a competitive beauty landscape, they expect more than color payoff or fragrance. They look for consistent quality, clear compliance, and products that support a premium customer experience. Vasso is positioned to meet that expectation across professional hair care, men's grooming, and home fragrance.
+        In a competitive beauty landscape, <strong>they</strong> expect more than color payoff or fragrance. <strong>They</strong> look for consistent quality, clear compliance, and products that support a premium customer experience. Vasso is positioned to meet that expectation across professional hair care, men's grooming, and home fragrance — with a distinct energy that resonates with the modern Gulf consumer.
     </p>
+
+    <!-- BRAND VIBE CALL OUT -->
+    <div class="vibe-box">
+        <p>
+            <span>✦</span> Vasso isn't just a product line — it's a <span>vibrant, youthful</span> experience that brings energy to every shelf, every salon chair, and every grooming routine. <span>✦</span>
+        </p>
+    </div>
 
     <!-- SECTION 1: WOMEN'S HAIR -->
     <h2>Professional Hair Color and Care with Technical Depth</h2>
 
     <p>
-        The women's professional hair care range combines dependable color performance with treatment-driven support products. Beyond the core hair color assortment, they will find a complete care system built for salon use and retail extension.
+        The women's professional hair care range combines dependable color performance with treatment-driven support products. Beyond the core hair color assortment, <strong>they</strong> will find a complete care system built for salon use and retail extension — from nourishing hair butters to color-locking shampoos that keep tones fresh and vibrant.
     </p>
 
     <div class="product-grid">
@@ -560,10 +724,10 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
     </div>
 
     <!-- ============================================= -->
-    <!-- PHOTO GRID – placed right before the review    -->
+    <!-- PHOTO GRID – 4 images                          -->
     <!-- ============================================= -->
     <div class="photo-grid">
-        <!-- Photo 1: The Ombre Look (before/after or result) -->
+        <!-- Photo 1: The Ombre Look -->
         <div class="grid-item image-placeholder">
             <img src="images/Vasso.png" alt="Summer Ombre Look" />
         </div>
@@ -571,6 +735,18 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
         <!-- Photo 2: Vasso Product Line -->
         <div class="grid-item image-placeholder-2">
             <img src="images/Vasso1.png" alt="Vasso Product Range" />
+        </div>
+
+        <!-- Photo 3: Men's Wax Collection (NEW) -->
+        <div class="grid-item image-placeholder-3">
+            <img src="images/VassoMenWax.png" alt="Vasso Men's Styling Wax Collection" />
+            <div class="label-overlay">Men's Styling Wax — Ultra Hold &amp; Matte Finish</div>
+        </div>
+
+        <!-- Photo 4: Men's After Shave Collection (NEW) -->
+        <div class="grid-item image-placeholder-4">
+            <img src="images/VassoAfterShave.png" alt="Vasso Men's After Shave Collection" />
+            <div class="label-overlay">After Shave — Soothing &amp; Fragrant</div>
         </div>
     </div>
 
@@ -592,11 +768,11 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
         </p>
     </div>
 
-    <!-- SECTION 2: MEN'S RANGE -->
-    <h2>Men's Grooming with a Premium Positioning</h2>
+    <!-- SECTION 2: MEN'S GROOMING – EXPANDED -->
+    <h2>Men's Grooming: Youthful Energy, Premium Performance</h2>
 
     <p>
-        For the modern Gulf consumer, grooming is part of a broader lifestyle purchase. The <strong>Men's Range</strong> helps distributors and retailers serve that demand with products that balance performance, fragrance, and shelf appeal. They can offer customers:
+        For the modern Gulf man, grooming is an expression of confidence and style. The <strong>Men's Range</strong> is designed with a <strong>vibrant, youthful energy</strong> that appeals to discerning clients who appreciate quality, scent, and presentation. <strong>They</strong> can offer their customers a complete grooming wardrobe:
     </p>
 
     <div class="product-grid">
@@ -610,29 +786,114 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
         <span>Exfoliating Face Scrubs with Volcanic Ash</span>
     </div>
 
+    <!-- ============================================= -->
+    <!-- SPOTLIGHT: WAX & AFTER SHAVE (from catalog)    -->
+    <!-- ============================================= -->
+    <h3>Spotlight: Styling Waxes — Sculpt with Confidence</h3>
+
+    <p>
+        Vasso's styling wax collection offers a range of finishes and hold levels, ensuring every client finds their perfect match. From ultra-matte to wet-look shine, these waxes are designed for all hair types and can be easily reshaped with a comb throughout the day.
+    </p>
+
+    <div class="spotlight-grid">
+        <div class="spotlight-item">
+            <h4>✦ Styling Wax Pro-Aqua Resist</h4>
+            <ul>
+                <li>Ultra hold with natural brightness</li>
+                <li>Perfect for normal and short hair</li>
+                <li>Easily reshaped with a comb</li>
+            </ul>
+        </div>
+        <div class="spotlight-item">
+            <h4>✦ Styling Wax Pro-Matte Matte Head</h4>
+            <ul>
+                <li>Ultra strong hold + ultra matte finish</li>
+                <li>Suitable for all hair types</li>
+                <li>Long-lasting style with natural feel</li>
+            </ul>
+        </div>
+        <div class="spotlight-item">
+            <h4>✦ Styling Wax Pro-Clay Spike</h4>
+            <ul>
+                <li>Extra hard hold with extra matte view</li>
+                <li>Creates a well-groomed, showy look</li>
+                <li>Ideal for textured and spiky styles</li>
+            </ul>
+        </div>
+        <div class="spotlight-item">
+            <h4>✦ Fiber Wax Black Edition Gravity</h4>
+            <ul>
+                <li>Fibrous structure for perfect, elastic hold</li>
+                <li>Super hold with bright finish</li>
+                <li>Designed for middle and fine hair</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Spotlight: After Shave — Comfort Meets Signature Scent</h3>
+
+    <p>
+        The after shave range combines soothing skin care with long-lasting fragrance. Formulated with <strong>allantoin</strong>, a sensitive-skin moisturizer, these products prevent irritation while leaving a refined scent that lasts all day.
+    </p>
+
+    <div class="spotlight-grid">
+        <div class="spotlight-item">
+            <h4>✦ After Shave Cologne Golden</h4>
+            <ul>
+                <li>Permanent flowery fragrance</li>
+                <li>Provides spaciousness and freshness</li>
+                <li>Perfect for the discerning gentleman</li>
+            </ul>
+        </div>
+        <div class="spotlight-item">
+            <h4>✦ After Shave Cream Cologne Kick Start</h4>
+            <ul>
+                <li>Allantoin-based for sensitive skin</li>
+                <li>Prevents irritation without greasy feel</li>
+                <li>Woody fragrance for lasting relief</li>
+            </ul>
+        </div>
+        <div class="spotlight-item">
+            <h4>✦ After Shave Cologne Premium</h4>
+            <ul>
+                <li>Permanent spicy fragrance</li>
+                <li>Freshness and spaciousness all day</li>
+                <li>Bold, confident scent profile</li>
+            </ul>
+        </div>
+        <div class="spotlight-item">
+            <h4>✦ After Shave Cream Cologne Blue Ice</h4>
+            <ul>
+                <li>Allantoin-enriched for sensitive skin</li>
+                <li>Prevents irritation with cooling effect</li>
+                <li>Permanent, refreshing fragrance</li>
+            </ul>
+        </div>
+    </div>
+
     <!-- SECTION 3: AIR FRESHENERS -->
     <h2>Home Fragrance for Lifestyle Retail</h2>
 
     <p>
-        Vasso's portfolio extends beyond personal care into premium <strong>Air Fresheners</strong>, including concentrated liquids, electric diffusers, and car vent clips. With scent profiles inspired by Arabian oud, fresh linen, Mediterranean citrus, and amber musk, they can broaden their assortment with products suited to both home and automotive channels.
+        Vasso's portfolio extends beyond personal care into premium <strong>Air Fresheners</strong>, including concentrated liquids, electric diffusers, and car vent clips. With scent profiles inspired by <strong>Arabian oud, fresh linen, Mediterranean citrus, and amber musk</strong>, <strong>they</strong> can broaden their assortment with products suited to both home and automotive channels.
     </p>
 
     <!-- SECTION 4: CERTIFICATIONS -->
     <h2>Certified Standards That Support Market Trust</h2>
 
     <p>
-        In a crowded market, certification and documentation often determine whether a product range can scale. With <strong>CPNP and FDA numbers</strong> and registration in more than <strong>120 countries</strong>, Vasso offers a compliance profile that strengthens buyer confidence. They can present these credentials to their clients knowing each batch is aligned with demanding EU and U.S. standards.
+        In a crowded market, certification and documentation often determine whether a product range can scale. With <strong>CPNP and FDA numbers</strong> and registration in more than <strong>120 countries</strong>, Vasso offers a compliance profile that strengthens buyer confidence. <strong>They</strong> can present these credentials to their clients knowing each batch is aligned with demanding EU and U.S. standards.
     </p>
 
     <p>
-        Whether they are supplying a high-end salon, a boutique men's grooming lounge, or a multi-brand retail chain, they are backed by a brand that prioritizes efficacy, safety, and presentation quality.
+        Whether <strong>they</strong> are supplying a high-end salon, a boutique men's grooming lounge, or a multi-brand retail chain, <strong>they</strong> are backed by a brand that prioritizes efficacy, safety, and presentation quality.
     </p>
 
     <!-- SECTION 5: PRIVATE LABEL -->
     <h2>Private Label for Brand Builders</h2>
 
     <p>
-        For businesses ready to move beyond distribution, Vasso offers comprehensive <strong>private-label manufacturing</strong>. They can develop their own signature line of hair colors, men's grooming products, or air fresheners with custom packaging, tailored fragrance profiles, and regulatory support built into the process. Vasso manages the technical foundation while they shape the brand identity.
+        For businesses ready to move beyond distribution, Vasso offers comprehensive <strong>private-label manufacturing</strong>. <strong>They</strong> can develop their own signature line of hair colours, men's grooming products, or air fresheners with custom packaging, tailored fragrance profiles, and regulatory support built into the process. Vasso manages the technical foundation while <strong>they</strong> shape the brand identity.
     </p>
 
     <!-- ============================================= -->
@@ -643,11 +904,11 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             <strong>Gulf-based distributors, salon owners, and retailers</strong>
         </p>
         <p>
-            For catalogues, bulk quantities, pricing, ingredient details, and private-label discussions, they can contact Nemah Alsayed directly for Gulf-region introductions and commercial coordination with the Organika team.
+            For catalogues, bulk quantities, pricing, ingredient details, and private-label discussions, you can contact <strong>Nemah Alsayed</strong> directly for Gulf-region introductions and commercial coordination with the Organika team.
         </p>
 
         <div class="cta-email">
-            <a href="mailto:nemah.alsayed@ndesignstudyosu.com.tr">nemah.alsayed@ndesignstudyosu.com.tr</a>
+            <a href="mailto: ndesignstudyosu@gmail.com">designstudyosu@gmail.com</a>
         </div>
 
         <p style="font-size: 0.9rem; margin-top: 0.2rem; color: #cfb4a1;">
@@ -655,14 +916,14 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
         </p>
 
         <div class="cta-deal">
-            <strong>Contact Nemah Alsayed</strong> for tailored Gulf-market support, commercial details, and direct coordination with the company.
+            <strong>Contact Nemah Alsayed</strong> for tailored Gulf-market support, commercial details, and direct coordination with the company. You will receive a great exclusive deal. 
         </div>
 
-        <span class="cta-tag">Exclusive Gulf Region Offer</span>
+        <span class="cta-tag">✦ Exclusive Gulf Region Offer ✦</span>
     </div>
 
     <p style="text-align: center; font-weight: 500; color: #aa6a6a; margin-top: 1rem; font-size: 1.05rem;">
-        They can explore how Vasso brings together technical credibility and premium presentation for their shelves.
+        <strong>They</strong> can explore how Vasso brings together technical credibility, vibrant energy, and premium presentation for their shelves.
     </p>
     <p style="text-align: center; font-size: 0.95rem; color: #727e6a; font-style: italic;">
         Their clients deserve the best — partner with the brand that delivers nothing less.
@@ -675,6 +936,8 @@ description: "A refined B2B overview for Gulf distributors featuring Vasso's pro
             <span>#Organika</span>
             <span>#HairColor</span>
             <span>#MensGrooming</span>
+            <span>#StylingWax</span>
+            <span>#AfterShave</span>
             <span>#PrivateLabel</span>
             <span>#GulfMarket</span>
             <span>#CPNP</span>
