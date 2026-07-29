@@ -1,0 +1,11 @@
+<ul class="nds-lang-switcher">
+
+  {{ range .Site.Languages }}
+    <li class="{{ if eq $.Lang .Lang }}active{{ end }}">
+      <a href="{{ .Lang | relLangURL }}">
+        {{ .LanguageName }}
+      </a>
+    </li>
+  {{ end }}
+
+</ul>

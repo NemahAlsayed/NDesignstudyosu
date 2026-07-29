@@ -1,0 +1,23 @@
+<div class="nds-hero-wrapper">
+
+    <div class="nds-hero-card container">
+
+        <div class="nds-hero-content">
+
+            {{ with .Site.Params.homepage.preTitle }}
+            <div class="nds-hero-pretitle">{{ . }}</div>
+            {{ end }}
+
+            <h1 class="nds-hero-title">
+                {{ .Site.Params.homepage.title }}
+            </h1>
+
+            <p class="nds-hero-intro">
+                {{ .Site.Params.homepage.intro }}
+            </p>
+
+        </div>
+
+    </div>
+
+</div>

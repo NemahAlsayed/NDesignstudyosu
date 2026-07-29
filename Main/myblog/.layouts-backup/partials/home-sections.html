@@ -1,0 +1,68 @@
+{{- $lang := .Lang -}}
+
+<!-- WHO WE ARE -->
+<section class="nds-section reveal-on-scroll"{{ if eq $lang "ar" }} dir="rtl"{{ end }}>
+    <div class="container">
+        <div class="nds-info-card">
+            <h2 class="nds-section-title">
+                {{ if eq $lang "ar" }}من نحن{{ else if eq $lang "tr" }}Biz Kimiz?{{ else }}Who We Are{{ end }}
+            </h2>
+
+            <p class="nds-section-text">
+                {{ if eq $lang "ar" }}
+                نحن استوديو إبداعي متعدد التخصصات يجمع بين التصميم، السرد القصصي،
+                والحرفية الرقمية. مهمتنا هي ابتكار تجارب إنسانية ذات معنى تربط الناس
+                بالأفكار والعلامات التجارية والثقافة.
+                {{ else if eq $lang "tr" }}
+                Tasarım, hikâye anlatımı ve dijital zanaatkârlığı birleştiren
+                multidisipliner bir yaratıcı stüdyoyuz. Amacımız; insan odaklı,
+                anlamlı deneyimler yaratarak insanları fikirler, markalar ve kültürle
+                buluşturmak.
+                {{ else }}
+                We are a multidisciplinary creative studio blending design, storytelling,
+                and digital craftsmanship. Our mission is to create meaningful,
+                human-centered experiences that connect people with ideas, brands,
+                and culture.
+                {{ end }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="nds-section reveal-on-scroll"{{ if eq $lang "ar" }} dir="rtl"{{ end }}>
+    <div class="container">
+        <h2 class="nds-section-title">
+            {{ if eq $lang "ar" }}ماذا نقدم{{ else if eq $lang "tr" }}Ne Yapıyoruz?{{ else }}What We Do{{ end }}
+        </h2>
+
+        <div class="nds-services-grid">
+            <div class="nds-service-card">
+                <h3>
+                    {{ if eq $lang "ar" }}الهوية البصرية{{ else if eq $lang "tr" }}Marka Kimliği{{ else }}Brand Identity{{ end }}
+                </h3>
+                <p>
+                    {{ if eq $lang "ar" }}نصمم هويات بصرية عصرية، أصيلة، وخالدة.{{ else if eq $lang "tr" }}Modern, özgün ve zamansız görsel kimlikler tasarlıyoruz.{{ else }}We craft visual identities that feel authentic, modern, and timeless.{{ end }}
+                </p>
+            </div>
+
+            <div class="nds-service-card">
+                <h3>
+                    {{ if eq $lang "ar" }}تجارب الويب{{ else if eq $lang "tr" }}Web Deneyimleri{{ else }}Web Experiences{{ end }}
+                </h3>
+                <p>
+                    {{ if eq $lang "ar" }}نبتكر مواقع سينمائية، تفاعلية، وسريعة الأداء.{{ else if eq $lang "tr" }}Sinematik, etkileşimli ve yüksek performanslı web siteleri tasarlıyoruz.{{ else }}We design cinematic, interactive, and high-performance websites.{{ end }}
+                </p>
+            </div>
+
+            <div class="nds-service-card">
+                <h3>
+                    {{ if eq $lang "ar" }}المحتوى والسرد القصصي{{ else if eq $lang "tr" }}İçerik & Hikâye Anlatımı{{ else }}Content & Storytelling{{ end }}
+                </h3>
+                <p>
+                    {{ if eq $lang "ar" }}نساعد العلامات التجارية على التواصل بوضوح وإحساس وهدف.{{ else if eq $lang "tr" }}Markaların net, duygusal ve amaç odaklı iletişim kurmasına yardımcı oluyoruz.{{ else }}We help brands communicate with clarity, emotion, and purpose.{{ end }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

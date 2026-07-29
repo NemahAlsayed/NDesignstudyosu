@@ -1,0 +1,100 @@
+{{ define "main" }}
+
+{{ $isPost := eq .Section "posts" }}
+{{ $adClient := default "ca-pub-9902619162566902" site.Params.adsense.client }}
+{{ $topSlot := site.Params.adsense.postSlotTop }}
+{{ $bottomSlot := default site.Params.adsense.postSlot site.Params.adsense.postSlotBottom }}
+
+<div class="nds-single-wrapper">
+
+    <!-- ============================
+         Featured Image Banner
+    ============================= -->
+    {{ with .Params.featured_image }}
+    <div class="nds-single-banner">
+        <img src="{{ . }}" alt="{{ $.Title }}">
+        <div class="nds-single-banner-overlay"></div>
+    </div>
+    {{ end }}
+
+    <!-- ============================
+         Article Container
+    ============================= -->
+    <article class="nds-single-article">
+
+        <!-- Title Block -->
+        <header class="nds-single-header">
+            <h1 class="nds-single-title">{{ .Title }}</h1>
+
+            <div class="nds-single-meta">
+                <span class="nds-single-date">{{ .Date.Format "January 2, 2006" }}</span>
+
+                {{ with .Params.category }}
+                <span class="nds-single-category">• {{ . }}</span>
+                {{ end }}
+
+                <span class="nds-single-reading">• {{ .ReadingTime }} min read</span>
+            </div>
+
+            <div class="nds-single-divider"></div>
+        </header>
+
+        <!-- ============================
+             Share Bar
+        ============================= -->
+        <div class="nds-share-bar">
+            <span class="share-label">{{ i18n "share" }}</span>
+
+            <a href="https://www.instagram.com/?url={{ .Permalink }}" target="_blank" class="share-icon instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://x.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" class="share-icon x">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" class="share-icon linkedin">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+
+        {{ if and $isPost $topSlot }}
+        <div class="nds-single-ad" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="{{ $adClient }}"
+                 data-ad-slot="{{ $topSlot }}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        {{ end }}
+
+        <!-- ============================
+             Article Content
+        ============================= -->
+        <div class="nds-single-content nds-dropcap">
+            {{ .Content }}
+        </div>
+
+        {{ if and $isPost $bottomSlot }}
+        <div class="nds-single-ad" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="{{ $adClient }}"
+                 data-ad-slot="{{ $bottomSlot }}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        {{ end }}
+
+    </article>
+
+</div>
+
+{{ end }}

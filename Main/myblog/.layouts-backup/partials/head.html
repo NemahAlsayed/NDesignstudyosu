@@ -1,0 +1,138 @@
+{{ $analyticsTag := "" }}
+{{ if .IsPage }}
+  {{ $analyticsTag = (default .Slug .Params.analytics_tag) }}
+{{ end }}
+
+{{ $gaID := .Site.Config.Services.GoogleAnalytics.ID }}
+{{ if not $gaID }}
+  {{ $gaID = .Site.Params.googleAnalyticsID }}
+{{ end }}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- ============================================================
+     PAGE TITLE
+============================================================ -->
+<title>
+  {{ if .IsHome }}
+    {{ .Site.Title }} — {{ .Site.Params.subtitle }}
+  {{ else }}
+    {{ .Title }} | {{ .Site.Title }}
+  {{ end }}
+</title>
+
+<!-- ============================================================
+     DESCRIPTION
+============================================================ -->
+{{ $desc := cond (isset .Page.Params "description") .Page.Description .Summary }}
+<meta name="description" content="{{ $desc }}" />
+
+<!-- ============================================================
+     CANONICAL URL
+============================================================ -->
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- ============================================================
+     MULTILINGUAL HREFLANG
+============================================================ -->
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+
+<!-- ============================================================
+     GOOGLE ADSENSE
+============================================================ -->
+<meta name="google-adsense-account" content="ca-pub-9902619162566902" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9902619162566902"
+     crossorigin="anonymous"></script>
+
+{{ if $analyticsTag }}
+  <meta name="google-tag" content="{{ $analyticsTag }}" />
+{{ end }}
+
+<!-- ============================================================
+     GOOGLE ANALYTICS GA4
+============================================================ -->
+{{ if $gaID }}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaID }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ $gaID }}', {
+      'send_page_view': true,
+      'language': '{{ .Site.Language.Lang }}'
+    });
+    
+    {{ if .IsPage }}
+      // Send additional page view metadata
+      gtag('event', 'page_view', {
+        'page_title': '{{ .Title }}',
+        'page_location': '{{ .Permalink }}',
+        'page_path': '{{ .RelPermalink }}',
+        'language': '{{ .Site.Language.Lang }}'
+      });
+    {{ end }}
+  </script>
+{{ end }}
+
+<!-- ============================================================
+     OPEN GRAPH
+============================================================ -->
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title"
+      content="{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.subtitle }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+<meta property="og:description" content="{{ $desc }}" />
+
+<!-- ============================================================
+     FEATURED IMAGE
+============================================================ -->
+{{ $featured := .Resources.GetMatch "images/featured*" }}
+{{ if not $featured }}
+  {{ $featured = resources.GetMatch "img/meta-image*" }}
+{{ end }}
+{{ if $featured }}
+  <meta property="og:image" content="{{ $featured.Permalink }}" />
+  <meta name="twitter:image" content="{{ $featured.Permalink }}" />
+{{ end }}
+
+<!-- ============================================================
+     TWITTER CARDS
+============================================================ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title"
+      content="{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.subtitle }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+
+<!-- ============================================================
+     CSS (Hugo Pipes)
+============================================================ -->
+{{ $main := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $main.RelPermalink }}" />
+
+<!-- ============================================================
+     FAVICON
+============================================================ -->
+{{ with resources.GetMatch "img/favicon*" }}
+  <link rel="icon" href="{{ .RelPermalink }}" type="image/x-icon" />
+{{ end }}
+
+<!-- ============================================================
+     JSON-LD — HOMEPAGE
+============================================================ -->
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.subtitle }}",
+  "inLanguage": "{{ .Site.Language.Lang }}"
+}
+</script>
+{{ end }}

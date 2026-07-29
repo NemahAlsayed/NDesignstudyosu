@@ -1,0 +1,41 @@
+<footer class="nds-footer">
+
+  <!-- Top Section -->
+  <div class="nds-footer-grid">
+
+    <!-- Column 1: Tagline -->
+    <div class="nds-footer-col">
+      {{ $tagline := i18n "footerTagline" | default "Creative Design for Purposeful Impact." }}
+      <p class="nds-footer-tagline">{{ $tagline }}</p>
+    </div>
+
+
+    <!-- Column 2: Social Icons -->
+    <div class="nds-footer-col">
+      <div class="nds-footer-social">
+
+        {{ range .Site.Params.socials }}
+  <a href="{{ .link }}" ...>
+    {{ partial "icons/social.html" .name }}
+  </a>
+{{ end }}
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Section -->
+  {{ $raw := i18n "footerRights" }}
+  {{ $rights := cond (ne $raw "footerRights") $raw "" }}
+
+  <p class="nds-footer-copy">
+    <a href="#newsletterPopup" class="nds-footer-newsletter" data-newsletter-open>{{ i18n "newsletterFooterPrompt" }}</a>
+    <br />
+    © {{ now.Year }} N Design Studio{{ if ne $rights "" }} — {{ $rights }}{{ end }}
+  </p>
+
+  <script src="/js/search.js"></script>
+
+</footer>

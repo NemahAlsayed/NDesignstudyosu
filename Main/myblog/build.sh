@@ -12,8 +12,8 @@ if [ -d "layouts" ]; then
     echo "✅ Custom layouts backed up"
 fi
 
-# 3. Build with no themes
-hugo --cleanDestinationDir --disableTheme
+# 3. Build site (themes folder is already removed above)
+hugo --cleanDestinationDir
 
 # 4. Restore layouts if something went wrong
 if [ ! -d "layouts" ]; then

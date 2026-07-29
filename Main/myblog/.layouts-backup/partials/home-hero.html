@@ -1,0 +1,22 @@
+{{- $isArabic := eq .Lang "ar" -}}
+
+<section class="nds-hero-video"{{ if $isArabic }} dir="rtl"{{ end }}>
+    <video autoplay muted loop playsinline class="nds-hero-video-bg">
+        <source src="/videos/hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay">
+        <img src="/images/Slogan.png" alt='{{ i18n "heroLogoAlt" | default "Slogan" }}' class="hero-logo">
+    </div>
+
+    <div class="nds-hero-tagline">
+        {{ i18n "heroTagline" | default "Crafting Digital Experiences with Soul" }}
+    </div>
+
+    <div class="nds-hero-video-overlay">
+        <div class="nds-scroll-indicator">
+            <div class="scroll-circle"></div>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </div>
+</section>

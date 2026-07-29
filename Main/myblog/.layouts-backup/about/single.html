@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section class="nds-about-wrapper">
+
+    <div class="nds-about-card">
+
+        <!-- Title -->
+        <h1 class="nds-about-title">{{ i18n "aboutTitle" }}</h1>
+        
+        <!-- Decorative line (optional) -->
+        <div style="width: 70px; height: 3px; background: #b8860b; margin: 20px auto; border-radius: 3px;"></div>
+
+        <!-- Content -->
+        <p class="nds-about-text">{{ i18n "aboutParagraph1" }}</p>
+        <p class="nds-about-text">{{ i18n "aboutParagraph2" }}</p>
+        <p class="nds-about-text">{{ i18n "aboutParagraph3" }}</p>
+
+        {{ with i18n "aboutParagraph4" }}
+        <p class="nds-about-text">{{ . }}</p>
+        {{ end }}
+
+        <!-- Single Button -->
+        <div class="nds-about-buttons">
+            <a href="/{{ .Lang }}/contact/" class="btn-primary">{{ i18n "contactTitle" }}</a>
+        </div>
+
+    </div>
+
+</section>
+
+{{ end }}

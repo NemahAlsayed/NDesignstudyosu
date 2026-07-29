@@ -1,0 +1,52 @@
+<section class="nds-featured-section">
+
+    <div class="container">
+        <h2 class="nds-featured-title">{{ i18n "featuredPosts" | default "Featured Posts" }}</h2>
+        <div class="nds-featured-divider"></div>
+
+        <div class="nds-featured-grid">
+
+            {{ $posts := where .Site.RegularPages "Type" "posts" }}
+            {{ $posts = where $posts "Lang" .Lang }}
+            {{ $posts = sort $posts "Date" "desc" }}
+
+            {{ range first 3 $posts }}
+
+            <article class="nds-featured-card">
+
+                <!-- IMAGE -->
+                <a href="{{ .Permalink }}" class="nds-featured-image">
+
+                    {{ $featured := .Params.featured_image }}
+                    {{ $img := or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+
+                    {{ if $img }}
+                        <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="nds-featured-img">
+                    {{ else }}
+                        <img src="/images/placeholder-featured.jpg" alt="{{ .Title }}" loading="lazy" class="nds-featured-img">
+                    {{ end }}
+
+                </a>
+
+                <!-- TITLE -->
+                <div class="nds-featured-content">
+                    <h3 class="nds-featured-post-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h3>
+
+                    <!-- NO SUMMARY HERE -->
+
+                    <!-- READ MORE BUTTON -->
+                    <a href="{{ .Permalink }}" class="nds-featured-readmore">
+                        {{ i18n "readMore" | default "Read More" }} →
+                    </a>
+                </div>
+
+            </article>
+
+            {{ end }}
+
+        </div>
+    </div>
+
+</section>

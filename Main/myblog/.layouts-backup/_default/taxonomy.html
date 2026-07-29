@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<section class="nds-taxonomy-wrapper">
+
+    <!-- Title -->
+    <h1 class="nds-taxonomy-title text-center">{{ .Title }}</h1>
+    <div class="nds-taxonomy-divider"></div>
+
+    <!-- Tag/Category List -->
+    <div class="nds-taxonomy-list">
+        {{ range .Pages }}
+            <a href="{{ .RelPermalink }}" class="nds-taxonomy-item">
+                #{{ .Title }}
+            </a>
+        {{ end }}
+    </div>
+
+</section>
+
+{{ end }}

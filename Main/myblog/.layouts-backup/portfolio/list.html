@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<section class="nds-portfolio-wrapper">
+
+    <div class="nds-portfolio-card">
+
+        <!-- Hero Section -->
+        <div class="nds-portfolio-hero">
+            <h1>{{ i18n "portfolioTitle" }}</h1>
+            <p>{{ i18n "portfolioSubtitle" }}</p>
+        </div>
+
+        <!-- Coming Soon Card -->
+        <div class="nds-coming-soon-container">
+            <div class="nds-coming-soon-card">
+                <div class="nds-coming-icon">✨🎨✨</div>
+                <div class="nds-coming-badge">{{ i18n "comingSoonBadge" }}</div>
+                <h2>{{ i18n "comingSoonTitle" }} <span class="nds-sparkle">🌟</span></h2>
+                <div class="nds-decorative-line"></div>
+                <p>{{ i18n "comingSoonParagraph1" }}</p>
+                <p class="nds-coming-soon-small">{{ i18n "comingSoonParagraph2" }}</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+{{ end }}

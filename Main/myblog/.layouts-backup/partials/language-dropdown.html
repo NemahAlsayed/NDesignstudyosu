@@ -1,0 +1,23 @@
+<div class="nds-lang-dropdown">
+
+    <!-- Toggle Button -->
+    <button class="nds-lang-toggle">
+        {{ .Site.Language.LanguageName }}
+        <i class="bi bi-chevron-down"></i>
+    </button>
+
+    <!-- Dropdown Menu -->
+    <ul class="nds-lang-menu">
+
+        {{ range .Site.Home.AllTranslations }}
+        <li class="{{ if eq $.Lang .Lang }}active{{ end }}">
+            <a href="{{ .RelPermalink }}">
+                {{ .Language.LanguageName }}
+            </a>
+        </li>
+        {{ end }}
+
+    </ul>
+
+</div>
+

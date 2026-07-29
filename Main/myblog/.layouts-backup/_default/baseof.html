@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" dir="{{ if eq .Lang "ar" }}rtl{{ else }}ltr{{ end }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body class="nds-body">
+
+    <!-- Header -->
+    {{ partial "header.html" . }}
+
+    <!-- Main Content -->
+    <main id="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "newsletter-popup.html" . }}
+
+    <!-- Footer -->
+    {{ partial "footer.html" . }}
+
+    <!-- JavaScript -->
+    {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}"></script>
+
+    {{ $scroll := resources.Get "js/scroll-reveal.js" | minify | fingerprint }}
+    <script src="{{ $scroll.RelPermalink }}"></script>
+
+</body>
+
+</html>

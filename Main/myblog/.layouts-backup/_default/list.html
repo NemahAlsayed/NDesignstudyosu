@@ -1,0 +1,109 @@
+{{ define "main" }}
+
+<div class="nds-blog-container">
+
+    <!-- ============================
+         Search Bar
+    ============================= -->
+    <div class="nds-search-bar">
+        <input type="text" id="searchInput" placeholder="{{ i18n "searchPlaceholder" }}">
+    </div>
+
+    <!-- ============================
+         Tags Filter
+    ============================= -->
+    <div class="nds-tags">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" class="nds-tag">
+                #{{ $name }}
+            </a>
+        {{ end }}
+    </div>
+
+    <!-- ============================
+         Posts Grid
+         IMPORTANT: Only show posts from THIS section
+    ============================= -->
+    <div class="nds-posts-grid">
+
+        {{ $posts := where .Pages "Type" "posts" }}
+        {{ range (.Paginate $posts).Pages }}
+
+        <article class="nds-post-card">
+
+            <!-- Featured Image -->
+            <a href="{{ .RelPermalink }}" class="nds-post-image">
+                <img src="{{ with .Params.featured_image }}{{ . }}{{ else }}/images/default.jpg{{ end }}" 
+                     alt="{{ .Title }}">
+            </a>
+
+            <!-- Content -->
+            <div class="nds-post-content">
+
+                <!-- Title -->
+                <h2 class="nds-post-title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h2>
+
+                <!-- Meta -->
+                <div class="nds-post-meta">
+                    <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+
+                    {{ with .Params.category }}
+                    <span class="nds-post-category">— {{ . }}</span>
+                    {{ end }}
+                </div>
+
+                <!-- Excerpt -->
+                <p class="nds-post-excerpt">
+                    {{ .Summary | plainify | truncate 140 }}
+                </p>
+
+                <!-- Read More -->
+                <a href="{{ .RelPermalink }}" class="nds-readmore-btn">
+                    {{ i18n "readMore" }}
+                </a>
+
+            </div>
+
+        </article>
+
+        {{ end }}
+
+    </div>
+
+    <!-- ============================
+         Pagination
+    ============================= -->
+    <div class="nds-pagination">
+        {{ if .Paginator.HasPrev }}
+            <a href="{{ .Paginator.Prev.URL }}" class="nds-page-btn">{{ i18n "prev" }}</a>
+        {{ end }}
+
+        <span class="nds-page-number">
+            {{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}
+        </span>
+
+        {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.URL }}" class="nds-page-btn">{{ i18n "next" }}</a>
+        {{ end }}
+    </div>
+
+</div>
+
+<!-- ============================
+     Search Script
+============================= -->
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    let filter = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".nds-post-card");
+
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "" : "none";
+    });
+});
+</script>
+
+{{ end }}

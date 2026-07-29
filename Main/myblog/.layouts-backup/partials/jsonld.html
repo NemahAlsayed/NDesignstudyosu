@@ -1,0 +1,51 @@
+{{- if .IsHome -}}
+<!-- ============================================
+     JSON-LD — ORGANIZATION (Homepage)
+============================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.Params.logo | default "/images/logo.png" }}",
+  "description": "{{ .Site.Params.description }}",
+  "sameAs": [
+    {{- range $i, $v := .Site.Params.socials }}
+      "{{ $v.link }}"{{ if lt (add (int $i) 1) (len $.Site.Params.socials) }},{{ end }}
+    {{- end }}
+  ]
+}
+</script>
+
+{{- else if .IsPage -}}
+<!-- ============================================
+     JSON-LD — ARTICLE / PAGE
+============================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if eq .Type "posts" }}Article{{ else }}WebPage{{ end }}",
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "url": "{{ .Permalink }}",
+  "inLanguage": "{{ .Lang }}",
+  "datePublished": "{{ .PublishDate }}",
+  "dateModified": "{{ .Lastmod }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author | default "N Design Studio" }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.Params.logo | default "/images/logo.png" }}"
+    }
+  },
+  "image": "{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.defaultImage }}{{ end }}"
+}
+</script>
+{{- end -}}
+
