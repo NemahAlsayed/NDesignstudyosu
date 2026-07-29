@@ -122,14 +122,14 @@ Here's a glimpse of the store vibe and the pieces that caught my eye:
 {{< gallery-grid >}}
   <img src="images/HandM1.png" alt="H&M store display with new arrivals">
   <img src="images/HandM7.png" alt="Flowy dresses">
-  <img src="images/HandM4" alt="Organized racks of bags">
+  <img src="images/HandM4.png" alt="Organized racks of bags">
   <img src="images/HandM6.png" alt="Casual chic outfit">
   <img src="images/HandM3.png" alt="H&M colors harmony">
   <img src="images/HandM2.png" alt="Display of elegant hats and sunglases">
   <img src="images/HandM5.png" alt="Dress collection">
   <img src="images/HandM8.png" alt="Sportswear and loungewear section">
   <img src="images/HandM9.png" alt="Close up of quality fabric texture">
-  <img src="images/HandM10" alt="Colors Mood">
+  <img src="images/HandM10.png" alt="Colors Mood">
 {{< /gallery-grid >}}
 
 ---
@@ -217,4 +217,4 @@ Don't forget to use code **D8DN** at checkout before it expires!
 
 ---
 
-*Which piece caught your eye? Drop a comment below — I'd love to know what you're planning to buy!*
+*Which piece caught your eye? Drop me a message — I'd love to know what you're planning to buy!*
