@@ -7,10 +7,7 @@ tags: ["Krita", "Wacom", "Art Gallery", "Love"]
 featured_image: "images/TheWeightOfPeace.png"
 description: "A digital art piece exploring rest, love, and comfort—brought to life with Krita and Wacom."
 ---
-
-{{< raw >}}
-<style>
-.gallery-wrapper {
+<style>.gallery-wrapper {
   max-width: 1100px;
   margin: 0 auto;
   background-color: #303010;
@@ -181,76 +178,27 @@ description: "A digital art piece exploring rest, love, and comfort—brought to
   .poem-frame .poem-lines { font-size: 1rem; }
   .tech-specs { border-radius: 30px; padding: 0.8rem 1.2rem; flex-direction: column; align-items: center; gap: 0.2rem; }
   .gallery-body p { font-size: 1rem; }
-}
-</style>
-
-<div class="gallery-wrapper">
-  <header class="gallery-header">
-    <h1>The Weight of Peace</h1>
-    <div class="subhead">A Digital Art Gallery Feature</div>
-    <div class="date-tag">July 30, 2026</div>
-  </header>
-
-  <figure class="art-canvas">
-    <img src="{{ .Page.Params.featured_image | relURL }}" alt="Blonde woman resting her head on her partner's shoulder, earthy tones with a rainbow sky" loading="lazy" />
-    <figcaption class="art-caption">
-      <span>“When they get tired, they find a shoulder to rest on.”</span>
-      &nbsp;— Nemah &amp; 
-    </figcaption>
-  </figure>
-
-  <div class="gallery-body">
-    <p>There is a specific kind of magic when the digital canvas meets the pressure of a stylus. It is a dance between technology and human emotion, where every stroke is a command and every blend is a breath. This piece explores the quiet surrender of rest—the moment the world fades and you find your safe space.</p>
-
-    <div class="highlight-box">
-      <strong>✦ The Vision ✦</strong><br />
-      A young woman with wavy blonde hair rests her head on her partner's shoulder. Eyes closed, not in sadness, but in profound comfort. She is recharging. She is trusting. Her partner stands steady—a pillar of warmth.
+}</style><div class="gallery-wrapper">  <header class="gallery-header">    <h1>The Weight of Peace</h1>    <div class="subhead">A Digital Art Gallery Feature</div>    <div class="date-tag">July 30, 2026</div>  </header>
+  <figure class="art-canvas">    <img src="{{ .Page.Params.featured_image | relURL }}" alt="Blonde woman resting her head on her partner's shoulder, earthy tones with a rainbow sky" loading="lazy" />    <figcaption class="art-caption">      <span>“When they get tired, they find a shoulder to rest on.”</span>      &nbsp;— Nemah &amp;
+    </figcaption>  </figure>
+  <div class="gallery-body">    <p>There is a specific kind of magic when the digital canvas meets the pressure of a stylus. It is a dance between technology and human emotion, where every stroke is a command and every blend is a breath. This piece explores the quiet surrender of rest—the moment the world fades and you find your safe space.</p>
+    <div class="highlight-box">      <strong>✦ The Vision ✦</strong><br />      A young woman with wavy blonde hair rests her head on her partner's shoulder. Eyes closed, not in sadness, but in profound comfort. She is recharging. She is trusting. Her partner stands steady—a pillar of warmth.
     </div>
-
     <p><strong>Earthy &amp; Etherial</strong> — I grounded the figures in deep browns and warm ochres to represent stability. The background is a <strong>rainbow sky</strong>—swirls of pink, yellow, purple and blue—blended with Krita's soft brushes. This juxtaposition symbolizes how love turns an ordinary moment into something magical.</p>
-
     <p><strong>Tools:</strong> Using my Wacom tablet, I mapped pressure sensitivity to opacity for the skin shading. Hair was built with light, quick strokes. Krita's <em>Color Dodge</em> layer gave the sky its luminous glow—as if the light itself emanates from their connection.</p>
-
-    <div class="poem-frame">
-      <div class="poem-title">❀ The Shoulder ❀</div>
-      <div class="poem-lines">
-        <em>When the weight of the world feels too much to hold,</em>
-        and the soul seeks a shelter from the biting cold,
+    <div class="poem-frame">      <div class="poem-title">❀ The Shoulder ❀</div>      <div class="poem-lines">        <em>When the weight of the world feels too much to hold,</em>        and the soul seeks a shelter from the biting cold,
         they turn to the warmth where a heartbeat is known,
         and find that they never have to stand alone.
 
-        <em>When a shadow of sadness falls over the day,</em>
-        and the colors of joy start to fade far away,
+        <em>When a shadow of sadness falls over the day,</em>        and the colors of joy start to fade far away,
         they look past the sorrow, with a smile so true,
         and see all the light that their beloved brings through.
 
-        <em>So they rest in the quiet, so peaceful and deep,</em>
-        in the arms of a promise, a vigil to keep.
+        <em>So they rest in the quiet, so peaceful and deep,</em>        in the arms of a promise, a vigil to keep.
         For love is the pillow where weariness ends,
         and comfort is found in the gaze of a friend.
-      </div>
-    </div>
-
+      </div>    </div>
     <p><strong>Final Thought</strong> — This piece is a reminder that vulnerability is a strength. It takes courage to lean on someone, and grace to be the one who holds them up. Every pixel was placed to make you <em>feel</em> the warmth, hear the silence, and breathe the colors of that sky.</p>
-
-    <div class="tech-specs">
-      <span class="spec-item"><strong>Software</strong> Krita</span>
-      <span class="spec-item"><strong>Hardware</strong> Wacom Tablet</span>
-      <span class="spec-item"><strong>Palette</strong> #d0f0b0 · #303010 · #f0f0b0 · #f0d0b0 · #303030</span>
-    </div>
-
-    <p style="text-align:center; font-size:0.95rem;">✦ Let me know in a message: What does <em>rest</em> look like to you? ✦</p>
-  </div>
-
-  <footer class="gallery-footer">
-    <div class="tags">
-      <span class="tag">Digital Art</span>
-      <span class="tag">Krita</span>
-      <span class="tag">Wacom</span>
-      <span class="tag">Poetry</span>
-      <span class="tag">Love</span>
-    </div>
-    <div class="copyright">&copy; 2026 — The Weight of Peace · Gallery Edition</div>
-  </footer>
-</div>
-{{< /raw >}}
+    <div class="tech-specs">      <span class="spec-item"><strong>Software</strong> Krita</span>      <span class="spec-item"><strong>Hardware</strong> Wacom Tablet</span>      <span class="spec-item"><strong>Palette</strong> #d0f0b0 · #303010 · #f0f0b0 · #f0d0b0 · #303030</span>    </div>
+    <p style="text-align:center; font-size:0.95rem;">✦ Let me know in a message: What does <em>rest</em> look like to you? ✦</p>  </div>
+  <footer class="gallery-footer">    <div class="tags">      <span class="tag">Digital Art</span>      <span class="tag">Krita</span>      <span class="tag">Wacom</span>      <span class="tag">Poetry</span>      <span class="tag">Love</span>    </div>    <div class="copyright">&copy; 2026 — The Weight of Peace · Gallery Edition</div>  </footer></div>
