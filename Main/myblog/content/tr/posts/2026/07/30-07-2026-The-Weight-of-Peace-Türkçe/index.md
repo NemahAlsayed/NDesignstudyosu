@@ -208,16 +208,12 @@ description: "Dinlenmeyi, sevgiyi ve huzuru keşfeden dijital bir sanat eseri—
 
   <div class="gallery-body">
     <p>Dijital tuvalin kalemin baskısıyla buluştuğu anda özel bir büyü oluşur. Bu, teknoloji ile insan duyguları arasında bir danstır; her vuruş bir komut, her karışım bir nefestir. Bu eser, dinlenmenin sessiz teslimiyetini keşfediyor—dünyanın kaybolduğu ve güvenli alanını bulduğun an.</p>
-
     <div class="highlight-box">
       <strong>✦ Vizyon ✦</strong><br />
       Dalgalı sarı saçlı genç bir kadın, başını partnerinin omzuna yaslıyor. Gözleri kapalı, hüzünle değil, derin bir huzur içinde. Enerjisini yeniliyor. Güveniyor. Partneri sağlam duruyor—sıcaklığın bir sütunu.
     </div>
-
     <p><strong>Toprak ve Göksel</strong> — Figürleri derin kahverengiler ve sıcak toprak tonlarıyla sabitledim ki bu, istikrarı temsil etsin. Arka plan ise <strong>gökkuşağı gökyüzü</strong>—pembe, sarı, mor ve mavinin dönenceleri—Krita'nın yumuşak fırçalarıyla harmanlanmış. Bu karşıtlık, aşkın sıradan bir anı nasıl büyülü bir şeye dönüştürdüğünü simgeliyor.</p>
-
     <p><strong>Araçlar:</strong> Wacom tabletimi kullanarak, cilt gölgelendirmesi için basınç hassasiyetini opaklığa bağladım. Saçlar hafif, hızlı vuruşlarla oluşturuldu. Krita'nın <em>Color Dodge</em> katmanı gökyüzüne parlak bir ışıltı verdi—sanki ışık bağlantılarından yayılıyormuş gibi.</p>
-
     <div class="poem-frame">
       <div class="poem-title">❀ Omuz ❀</div>
       <div class="poem-lines">
@@ -225,30 +221,24 @@ description: "Dinlenmeyi, sevgiyi ve huzuru keşfeden dijital bir sanat eseri—
         ve ruh buz gibi soğuktan bir sığınak aradığında,
         kalbin atışının bilindiği sıcaklığa dönerler,
         ve asla yalnız durmak zorunda olmadıklarını görürler.
-
         <em>Hüznün gölgesi günün üzerine düştüğünde,</em>
         ve neşenin renkleri uzaklara solmaya başladığında,
         kederin ardına, öyle gerçek bir gülümsemeyle bakarlar ki,
         sevgilinin getirdiği tüm ışığı görürler.
-
         <em>Böylece sessizlikte dinlenirler, öyle huzurlu ve derin,</em>
         bir sözün kollarında, nöbet tutan bir sevginin.
         Çünkü aşk, yorgunluğun bittiği yastıktır,
         ve huzur, bir dostun gözlerinde bulunur.
       </div>
     </div>
-
     <p><strong>Son Düşünce</strong> — Bu eser, kırılganlığın bir güç olduğunun hatırlatıcısıdır. Birine yaslanmak cesaret ister, onları taşıyan kişi olmak ise zarafet. Her piksel, <em>hissettirmek</em> için konuldu—sıcaklığı, sessizliği duymayı ve o gökyüzünün renklerini solumayı.</p>
-
     <div class="tech-specs">
       <span class="spec-item"><strong>Yazılım</strong> Krita</span>
       <span class="spec-item"><strong>Donanım</strong> Wacom Tablet</span>
       <span class="spec-item"><strong>Renk Paleti</strong> #d0f0b0 · #303010 · #f0f0b0 · #f0d0b0 · #303030</span>
     </div>
-
     <p style="text-align:center; font-size:0.95rem;">✦ Bir mesajda bana söyle: Sence <em>huzur</em> nasıl bir şey? ✦</p>
   </div>
-
   <footer class="gallery-footer">
     <div class="tags">
       <span class="tag">Dijital Sanat</span>
