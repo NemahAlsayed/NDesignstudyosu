@@ -26,11 +26,16 @@
 
             <!-- IMAGE -->
             <div class="nds-post-image-wrapper">
-                {{ $featured := .Params.featured_image }}
-                {{ $img := or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+                {{ $featured := or .Params.featured_image .Params.featuredImage }}
+                {{ $img := "" }}
+                {{ if $featured }}
+                    {{ $img = or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+                {{ end }}
 
                 {{ if $img }}
                     <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="nds-post-img">
+                {{ else if $featured }}
+                    <img src="{{ $featured }}" alt="{{ .Title }}" loading="lazy" class="nds-post-img">
                 {{ else }}
                     <img src="/images/placeholder-featured.jpg" alt="{{ .Title }}" loading="lazy" class="nds-post-img">
                 {{ end }}

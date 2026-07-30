@@ -33,8 +33,18 @@
 
             <!-- Featured Image -->
             <a href="{{ .RelPermalink }}" class="nds-post-image">
-                <img src="{{ with .Params.featured_image }}{{ . }}{{ else }}/images/default.jpg{{ end }}" 
-                     alt="{{ .Title }}">
+                {{ $featured := or .Params.featured_image .Params.featuredImage }}
+                {{ $img := "" }}
+                {{ if $featured }}
+                    {{ $img = or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+                {{ end }}
+                {{ if $img }}
+                    <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}">
+                {{ else if $featured }}
+                    <img src="{{ $featured }}" alt="{{ .Title }}">
+                {{ else }}
+                    <img src="/images/default.jpg" alt="{{ .Title }}">
+                {{ end }}
             </a>
 
             <!-- Content -->

@@ -44,7 +44,7 @@
       "url": "{{ .Site.Params.logo | default "/images/logo.png" }}"
     }
   },
-  "image": "{{ with .Params.featured_image }}{{ . }}{{ else }}{{ .Site.Params.defaultImage }}{{ end }}"
+  "image": "{{ $featured := or .Params.featured_image .Params.featuredImage }}{{ with $featured }}{{ . }}{{ else }}{{ .Site.Params.defaultImage }}{{ end }}"
 }
 </script>
 {{- end -}}

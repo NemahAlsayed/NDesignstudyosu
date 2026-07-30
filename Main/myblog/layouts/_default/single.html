@@ -10,9 +10,18 @@
     <!-- ============================
          Featured Image Banner
     ============================= -->
-    {{ with .Params.featured_image }}
+    {{ $featured := or .Params.featured_image .Params.featuredImage }}
+    {{ $img := "" }}
+    {{ if $featured }}
+        {{ $img = or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+    {{ end }}
+    {{ if or $img $featured }}
     <div class="nds-single-banner">
-        <img src="{{ . }}" alt="{{ $.Title }}">
+        {{ if $img }}
+        <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}">
+        {{ else }}
+        <img src="{{ $featured }}" alt="{{ $.Title }}">
+        {{ end }}
         <div class="nds-single-banner-overlay"></div>
     </div>
     {{ end }}

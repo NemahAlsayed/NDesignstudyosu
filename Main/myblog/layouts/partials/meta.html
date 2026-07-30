@@ -42,11 +42,16 @@
 {{ end }}
 
 {{/* Featured image for OG (if exists) */}}
-{{ $featured := .Params.featured_image }}
-{{ $img := or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+{{ $featured := or .Params.featured_image .Params.featuredImage }}
+{{ $img := "" }}
+{{ if $featured }}
+{{ $img = or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+{{ end }}
 
 {{ if $img }}
 <meta property="og:image" content="{{ $img.Permalink }}">
+{{ else if $featured }}
+<meta property="og:image" content="{{ $featured }}">
 {{ else if .Params.og_image }}
 <meta property="og:image" content="{{ .Params.og_image }}">
 {{ end }}

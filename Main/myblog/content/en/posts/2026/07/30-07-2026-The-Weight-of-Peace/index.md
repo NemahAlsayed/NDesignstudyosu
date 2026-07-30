@@ -4,7 +4,7 @@ date: 2026-07-30
 draft: false
 categories: ["Digital Art", "Poetry"]
 tags: ["Krita", "Wacom", "Art Gallery", "Love"]
-featuredImage: "/images/TheWeightOfPeace.png"
+featured_image: "images/TheWeightOfPeace.png"
 description: "A digital art piece exploring rest, love, and comfort—brought to life with Krita and Wacom."
 ---
 
@@ -296,7 +296,7 @@ description: "A digital art piece exploring rest, love, and comfort—brought to
     <figure class="art-canvas">
         <!-- Replace src with your actual image path -->
         <img
-        src="/images/TheWeightOfPeace.png"
+        src="images/TheWeightOfPeace.png"
         alt="Blonde woman resting her head on her partner's shoulder, earthy tones with a rainbow sky"
         loading="lazy"
         />

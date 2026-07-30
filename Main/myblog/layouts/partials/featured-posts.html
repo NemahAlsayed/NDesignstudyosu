@@ -17,11 +17,16 @@
                 <!-- IMAGE -->
                 <a href="{{ .Permalink }}" class="nds-featured-image">
 
-                    {{ $featured := .Params.featured_image }}
-                    {{ $img := or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+                    {{ $featured := or .Params.featured_image .Params.featuredImage }}
+                    {{ $img := "" }}
+                    {{ if $featured }}
+                        {{ $img = or (.Resources.GetMatch $featured) (.Resources.GetMatch (printf "images/%s" $featured)) }}
+                    {{ end }}
 
                     {{ if $img }}
                         <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" loading="lazy" class="nds-featured-img">
+                    {{ else if $featured }}
+                        <img src="{{ $featured }}" alt="{{ .Title }}" loading="lazy" class="nds-featured-img">
                     {{ else }}
                         <img src="/images/placeholder-featured.jpg" alt="{{ .Title }}" loading="lazy" class="nds-featured-img">
                     {{ end }}
