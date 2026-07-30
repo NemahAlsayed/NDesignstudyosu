@@ -189,11 +189,9 @@ description: "A digital art piece exploring rest, love, and comfort—brought to
     <div class="poem-frame">      <div class="poem-title">❀ The Shoulder ❀</div>      <div class="poem-lines">        <em>When the weight of the world feels too much to hold,</em>        and the soul seeks a shelter from the biting cold,
         they turn to the warmth where a heartbeat is known,
         and find that they never have to stand alone.
-
         <em>When a shadow of sadness falls over the day,</em>        and the colors of joy start to fade far away,
         they look past the sorrow, with a smile so true,
         and see all the light that their beloved brings through.
-
         <em>So they rest in the quiet, so peaceful and deep,</em>        in the arms of a promise, a vigil to keep.
         For love is the pillow where weariness ends,
         and comfort is found in the gaze of a friend.
