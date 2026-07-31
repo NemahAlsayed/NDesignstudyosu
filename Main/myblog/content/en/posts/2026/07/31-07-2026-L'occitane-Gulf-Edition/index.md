@@ -380,7 +380,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
     <!-- SHELF IMAGE (first image: body care shelf) -->
     <div style="margin: 1.8rem 0 0.8rem;">
         <div style="border-radius: 32px; overflow: hidden; border: 1px solid #ede5db;">
-            <img src="/images/shelf-bodycare.jpg" alt="Body care shelf in Istanbul store" style="width:100%; height:auto; display:block; background: #ede5db;">
+            <img src="images/Preview" alt="Body care shelf in Istanbul store" style="width:100%; height:auto; display:block; background: #ede5db;">
         </div>
         <p style="font-size: 0.9rem; color: #7a685c; margin-top: 0.5rem;">↳ the body-care shelf that caught my eye — creamy textures and gentle scents.</p>
     </div>
@@ -388,17 +388,17 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
     <h2>✨ the three best sellers</h2>
     <div class="gallery-grid">
         <div class="gallery-card">
-            <img src="/images/AmandeHandandNails.png" alt="Amande Sublime">
+            <img src="images/AmandeHandandNails.png" alt="Amande Sublime">
             <div class="label">Amande Sublime</div>
             <div class="sub">velvety body oil · cashmere glow</div>
         </div>
         <div class="gallery-card">
-            <img src="/images/AmandeHandandNails.png" alt="Amande Hand and Nail">
+            <img src="images/AmandeHandandNails.png" alt="Amande Hand and Nail">
             <div class="label">Amande Hand &amp; Nail</div>
             <div class="sub">nourishing cream · silky finish</div>
         </div>
         <div class="gallery-card">
-            <img src="/images/ImmortalPrecious.png" alt="Immortelle Precious Emulsion">
+            <img src="images/ImmortalPrecious.png" alt="Immortelle Precious Emulsion">
             <div class="label">Immortelle Precious Emulsion</div>
             <div class="sub">Made with 97% natural origin ingredients, this fast-absorbing emulsion is a light milky fluid. Skin looks more youthful, plumped with moisture, and reveals a healthy-looking glow.</div>
             <a href="https://ae.loccitane.com/en/face-care/immortelle-precious-emulsion/27SE075I22.html" class="product-link" target="_blank">shop now →</a>
@@ -409,7 +409,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
     <p style="max-width: 700px;">I made sure to pick the ones that smell like a garden in Provence. <strong>Lavande Blanche</strong> (soft, calming white lavender), <strong>Ortie Blanche</strong> (green and vibrant), and <strong>Glycine</strong> (delicate wisteria).</p>
     <div class="scroll-showcase">
         <div class="scroll-item">
-            <img src="/images/Lavande.png" alt="Lavande Blanche">
+            <img src="images/Lavande.png" alt="Lavande Blanche">
             <div class="title">Lavande Blanche</div>
             <div class="desc">white lavender · fresh &amp; calming</div>
             <a href="https://ae.loccitane.com/en/all-fragrances/lavande-blanche-%28white-lavender%29-eau-de-toilette/15ET050LBR25.html" class="product-link" target="_blank">shop now →</a>
@@ -421,13 +421,13 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
             <a href="https://ae.loccitane.com/en/fragrances-and-home/ortie-blanche-%28formerly-herbae%29-eau-de-parfum/11EP050HR25.html" class="product-link" target="_blank">shop now →</a>
         </div>
         <div class="scroll-item">
-            <img src="/images/Glycine.png" alt="Glycine">
+            <img src="images/Glycine.png" alt="Glycine">
             <div class="title">Glycine</div>
             <div class="desc">wisteria · floral &amp; tender</div>
             <a href="https://ae.loccitane.com/en/all-fragrances/glycine-eau-de-parfum/11EP050GYR25.html" class="product-link" target="_blank">shop now →</a>
         </div>
         <div class="scroll-item">
-            <img src="/images/PerfumePreview.png" alt="perfume preview">
+            <img src="images/PerfumePreview.png" alt="perfume preview">
             <div class="title">perfume preview</div>
             <div class="desc">full array</div>
         </div>
@@ -438,22 +438,22 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
         <div>
             <div style="font-weight: 500; color: #3d2e27;">immortelle collection</div>
             <div class="img-preview">
-                <img src="/images/Precious.png" alt="Immortelle Precious Emulsion">
+                <img src="images/Precious.png" alt="Immortelle Precious Emulsion">
                 <a href="https://ae.loccitane.com/en/face-care/immortelle-precious-emulsion/27SE075I22.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">shop now →</a>
             </div>
             <div class="img-preview">
-                <img src="/images/OvernightSerum.png" alt="Immortelle Overnight Reset Serum">
+                <img src="images/OvernightSerum.png" alt="Immortelle Overnight Reset Serum">
                 <a href="https://ae.loccitane.com/en/face-care/immortelle-overnight-reset-serum/27OR030I24.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">shop now →</a>
             </div>
             <div class="img-preview">
-                <img src="/images/AmandeNeckMilk.png" alt="Immortelle Shea Neck Cream">
+                <img src="images/AmandeNeckMilk.png" alt="Immortelle Shea Neck Cream">
                 <a href="https://ae.loccitane.com/en/face-care/immortelle-shea-neck-cream/01NC050I23.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">shop now →</a>
             </div>
         </div>
         <div>
             <div style="font-weight: 500; color: #3d2e27;">for mature &amp; general skin</div>
-            <div class="img-preview"><img src="/images/Agedskinline.png" alt="aged skin line"></div>
-            <div class="img-preview"><img src="/images/Collection1.png" alt="general skincare"></div>
+            <div class="img-preview"><img src="images/Agedskinline.png" alt="aged skin line"></div>
+            <div class="img-preview"><img src="images/Collection1.png" alt="general skincare"></div>
             <p style="font-size: 0.95rem; color: #5b4c40;">from the first fine line to daily hydration, each formula tells a story of woman.</p>
         </div>
     </div>
