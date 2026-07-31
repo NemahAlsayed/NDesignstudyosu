@@ -388,7 +388,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
     <h2>✨ the three best sellers</h2>
     <div class="gallery-grid">
         <div class="gallery-card">
-            <img src="images/AmandeHandandNails.png" alt="Amande Sublime">
+            <img src="images/AmandeSublime.png" alt="Amande Sublime">
             <div class="label">Amande Sublime</div>
             <div class="sub">velvety body oil · cashmere glow</div>
         </div>
@@ -415,7 +415,7 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
             <a href="https://ae.loccitane.com/en/all-fragrances/lavande-blanche-%28white-lavender%29-eau-de-toilette/15ET050LBR25.html" class="product-link" target="_blank">shop now →</a>
         </div>
         <div class="scroll-item">
-            <img src="/images/Ortie.png" alt="Ortie Blanche">
+            <img src="images/Ortie.png" alt="Ortie Blanche">
             <div class="title">Ortie Blanche</div>
             <div class="desc">white nettle · bright &amp; green</div>
             <a href="https://ae.loccitane.com/en/fragrances-and-home/ortie-blanche-%28formerly-herbae%29-eau-de-parfum/11EP050HR25.html" class="product-link" target="_blank">shop now →</a>
