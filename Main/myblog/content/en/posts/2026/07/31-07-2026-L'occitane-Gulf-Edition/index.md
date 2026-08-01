@@ -418,7 +418,6 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
         <span style="font-weight: 350; color: #3d2e27;">🇸🇦 🇦🇪 🇰🇼</span>
         <a href="#" class="btn-shop" style="text-decoration: none;">shop the edit →</a>
     </div>
-
     <!-- NEW GIFT BUTTON: 100$ value PDF guide -->
     <div class="gift-box">
         <div class="gift-label">🎁 FREE GIFT</div>
@@ -427,7 +426,6 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
         <a href="https://drive.google.com/uc?export=download&id=1apkw3gdN0eDH3w5bOfNW2cnAeYpEDO1z" class="btn-gift" download>⬇️ Download PDF Guide</a>
         <p style="font-size: 0.75rem; color: #7a685c; margin-top: 0.5rem;">Instant download · no sign-up required</p>
     </div>
-
     <!-- SHELF IMAGE (first image: body care shelf) -->
     <div style="margin: 1.8rem 0 0.8rem;">
         <div style="border-radius: 32px; overflow: hidden; border: 1px solid #ede5db;">
