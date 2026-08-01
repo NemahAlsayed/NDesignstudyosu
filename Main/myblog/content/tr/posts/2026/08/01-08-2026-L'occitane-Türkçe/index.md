@@ -1,12 +1,12 @@
-----
-title: "L'Occitane Istanbul Edit · The Souvenir Guide"
-date: 2026-07-31
+---
+title: "L'Occitane İstanbul Rehberi · Hatıra Seçkisi"
+date: 2026-08-01
 draft: false
-description: "A personal curation of L'Occitane's best sellers from the Istanbul store, with an exclusive 10% off code A162 for Saudi Arabia, UAE & Kuwait."
+description: "İstanbul'daki L'Occitane mağazasından en çok satan ürünlerin kişisel bir seçkisi ve Suudi Arabistan, BAE ve Kuveyt için özel %10 indirim kodu A162."
 featured_image: "images/Preview.png"
-slug: "loccitane-review-a162-en"
-tags: ["L'Occitane", "Skincare", "Body Care", "Fragrance", "Saudi Arabia", "UAE", "Kuwait","Discount", "Coupon Code"]
-categories: ["Beauty", "Reviews", "Personal Experience"]
+slug: "loccitane-review-a162-tr"
+tags: ["L'Occitane", "Cilt Bakımı", "Vücut Bakımı", "Parfüm", "Suudi Arabistan", "BAE", "Kuveyt", "İndirim", "Kupon Kodu"]
+categories: ["Güzellik", "İncelemeler", "Kişisel Deneyim"]
 ---
 
 <style>
@@ -357,215 +357,164 @@ categories: ["Beauty", "Reviews", "Personal Experience"]
         h1 { font-size: 2rem; }
         .coupon-banner { flex-direction: column; align-items: stretch; gap: 1rem; text-align: center; }
     }
-
-    /* new gift button styles */
-    .gift-box {
-        background: linear-gradient(145deg, #faf3ec, #f0e7de);
-        border: 2px solid #c9a87c;
-        border-radius: 60px;
-        padding: 1.8rem 2.2rem;
-        margin: 2.5rem 0 2rem;
-        text-align: center;
-        box-shadow: 0 8px 24px -8px rgba(180, 139, 90, 0.25);
-    }
-    .gift-box .btn-gift {
-        display: inline-block;
-        background: #b48b5a;
-        color: #1e1613 !important;
-        padding: 1rem 3rem;
-        border-radius: 60px;
-        font-weight: 600;
-        font-size: 1.2rem;
-        text-decoration: none;
-        box-shadow: 0 4px 14px rgba(180, 139, 90, 0.3);
-        transition: 0.2s;
-        border: none;
-        cursor: pointer;
-        margin: 0.5rem 0;
-    }
-    .gift-box .btn-gift:hover {
-        transform: scale(1.03);
-        background: #c9a87c;
-        box-shadow: 0 6px 20px rgba(180, 139, 90, 0.4);
-    }
-    .gift-box .gift-label {
-        display: inline-block;
-        background: #2e241f;
-        color: #f5ede5;
-        padding: 0.2rem 1.2rem;
-        border-radius: 40px;
-        font-size: 0.8rem;
-        letter-spacing: 1px;
-        margin-bottom: 0.8rem;
-    }
 </style>
 
 <div class="container">
     <!-- HEADER -->
     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.5rem;">
-        <span style="font-weight: 400; color: #a88d78; letter-spacing: 2px; font-size: 0.9rem;">✧ ISTANBUL EDIT</span>
-        <span style="background: #ede5db; padding: 0.3rem 1.4rem; border-radius: 40px; font-size: 0.85rem; color: #3d2e27;">l'occitane · best sellers</span>
+        <span style="font-weight: 400; color: #a88d78; letter-spacing: 2px; font-size: 0.9rem;">✧ İSTANBUL SEÇKİSİ</span>
+        <span style="background: #ede5db; padding: 0.3rem 1.4rem; border-radius: 40px; font-size: 0.85rem; color: #3d2e27;">l'occitane · en çok satanlar</span>
     </div>
-    <h1>the souvenir guide<br><span style="font-weight: 300; font-size: 1.6rem; color: #6b5b4f;">a personal curation from the istanbul store</span></h1>
+    <h1>hatıra rehberi<br><span style="font-weight: 300; font-size: 1.6rem; color: #6b5b4f;">İstanbul mağazasından kişisel bir seçki</span></h1>
     <div class="intro-text">
-        <p>I stepped into L'Occitane in Istanbul and found myself surrounded by the warm glow of almond, the freshness of lavender, and the timeless elegance of immortelle. I captured the shelf, the best sellers, and the most beautiful gift sets — all to bring you this <span class="gold-accent">Istanbul edit</span>.</p>
-        <p>And because I want you to experience it too, I've secured a special code <strong style="background: #ede5db; padding: 0.1rem 0.8rem; border-radius: 30px;">A162</strong> for <strong>10% off</strong> in Saudi Arabia, UAE &amp; Kuwait.</p>
+        <p>İstanbul'da L'Occitane'a adım attım ve kendimi bademin sıcak parıltısı, lavantanın tazeliği ve ölümsüz çiçeğin zamansız zarafetiyle çevrili buldum. Rafı, en çok satan ürünleri ve en güzel hediye setlerini fotoğrafladım — tüm bunları size bu <span class="gold-accent">İstanbul seçkisi</span> olarak sunmak için.</p>
+        <p>Ve sizin de bu deneyimi yaşamanızı istediğim için, Suudi Arabistan, BAE ve Kuveyt'te geçerli özel bir kod <strong style="background: #ede5db; padding: 0.1rem 0.8rem; border-radius: 30px;">A162</strong> ile <strong>%10 indirim</strong> elde ettim.</p>
     </div>
     <!-- COUPON BANNER -->
     <div class="coupon-banner">
-        <div class="info"><strong>✧ exclusive for you</strong> · 10% off with code</div>
+        <div class="info"><strong>✧ size özel</strong> · %10 indirim koduyla</div>
         <span class="code">A162</span>
         <span style="font-weight: 350; color: #3d2e27;">🇸🇦 🇦🇪 🇰🇼</span>
-        <a href="#" class="btn-shop" style="text-decoration: none;">shop the edit →</a>
+        <a href="#" class="btn-shop" style="text-decoration: none;">seçkiyi keşfet →</a>
     </div>
-
-    <!-- NEW GIFT BUTTON: 100$ value PDF guide -->
-    <div class="gift-box">
-        <div class="gift-label">🎁 FREE GIFT</div>
-        <p style="font-size: 1.2rem; font-weight: 450; margin-bottom: 0.3rem;">$100 Value PDF Guide</p>
-        <p style="font-size: 0.95rem; color: #4d3e36; max-width: 500px; margin: 0.2rem auto 1rem;">Dermatologist advice on how to use these products effectively — download your ritual guide now.</p>
-        <a href="https://drive.google.com/uc?export=download&id=1apkw3gdN0eDH3w5bOfNW2cnAeYpEDO1z" class="btn-gift" download>⬇️ Download PDF Guide</a>
-        <p style="font-size: 0.75rem; color: #7a685c; margin-top: 0.5rem;">Instant download · no sign-up required</p>
-    </div>
-
     <!-- SHELF IMAGE (first image: body care shelf) -->
     <div style="margin: 1.8rem 0 0.8rem;">
         <div style="border-radius: 32px; overflow: hidden; border: 1px solid #ede5db;">
-            <img src="images/Preview" alt="Body care shelf in Istanbul store" style="width:100%; height:auto; display:block; background: #ede5db;">
+            <img src="images/Preview" alt="İstanbul mağazasında vücut bakım rafı" style="width:100%; height:auto; display:block; background: #ede5db;">
         </div>
-        <p style="font-size: 0.9rem; color: #7a685c; margin-top: 0.5rem;">↳ the body-care shelf that caught my eye — creamy textures and gentle scents.</p>
+        <p style="font-size: 0.9rem; color: #7a685c; margin-top: 0.5rem;">↳ dikkatimi çeken vücut bakım rafı — krem dokular ve nazik kokular.</p>
     </div>
     <!-- 3 BEST SELLERS -->
-    <h2>✨ the three best sellers</h2>
+    <h2>✨ en çok satan üç ürün</h2>
     <div class="gallery-grid">
         <div class="gallery-card">
             <img src="images/AmandeSublime.png" alt="Amande Sublime">
             <div class="label">Amande Sublime</div>
-            <div class="sub">velvety body oil · cashmere glow</div>
+            <div class="sub">kadife vücut yağı · yumuşak ışıltı</div>
         </div>
         <div class="gallery-card">
             <img src="images/AmandeHandandNails.png" alt="Amande Hand and Nail">
-            <div class="label">Amande Hand &amp; Nail</div>
-            <div class="sub">nourishing cream · silky finish</div>
+            <div class="label">Amande El &amp; Tırnak</div>
+            <div class="sub">besleyici krem · ipeksi bitiş</div>
         </div>
         <div class="gallery-card">
             <img src="images/ImmortalPrecious.png" alt="Immortelle Precious Emulsion">
             <div class="label">Immortelle Precious Emulsion</div>
-            <div class="sub">Made with 97% natural origin ingredients, this fast-absorbing emulsion is a light milky fluid. Skin looks more youthful, plumped with moisture, and reveals a healthy-looking glow.</div>
-            <a href="https://ae.loccitane.com/en/face-care/immortelle-precious-emulsion/27SE075I22.html" class="product-link" target="_blank">shop now →</a>
+            <div class="sub">%97 doğal içerikli, hızlı emilen hafif sütlü losyon. Cilt daha genç, nemli ve sağlıklı görünür.</div>
+            <a href="https://ae.loccitane.com/en/face-care/immortelle-precious-emulsion/27SE075I22.html" class="product-link" target="_blank">hemen al →</a>
         </div>
     </div>
     <!-- PERFUME SECTION -->
-    <h2>🌸 perfumes &amp; fine fragrance</h2>
-    <p style="max-width: 700px;">I made sure to pick the ones that smell like a garden in Provence. <strong>Lavande Blanche</strong> (soft, calming white lavender), <strong>Ortie Blanche</strong> (green and vibrant), and <strong>Glycine</strong> (delicate wisteria).</p>
+    <h2>🌸 parfümler &amp; zarif kokular</h2>
+    <p style="max-width: 700px;">Provence'da bir bahçe gibi kokanları seçtiğimden emin oldum. <strong>Lavande Blanche</strong> (yumuşak, sakinleştirici beyaz lavanta), <strong>Ortie Blanche</strong> (yeşil ve canlı) ve <strong>Glycine</strong> (narin wisteria).</p>
     <div class="scroll-showcase">
         <div class="scroll-item">
             <img src="images/Lavande.png" alt="Lavande Blanche">
             <div class="title">Lavande Blanche</div>
-            <div class="desc">white lavender · fresh &amp; calming</div>
-            <a href="https://ae.loccitane.com/en/all-fragrances/lavande-blanche-%28white-lavender%29-eau-de-toilette/15ET050LBR25.html" class="product-link" target="_blank">shop now →</a>
+            <div class="desc">beyaz lavanta · taze &amp; sakinleştirici</div>
+            <a href="https://ae.loccitane.com/en/all-fragrances/lavande-blanche-%28white-lavender%29-eau-de-toilette/15ET050LBR25.html" class="product-link" target="_blank">hemen al →</a>
         </div>
         <div class="scroll-item">
             <img src="images/Ortie.png" alt="Ortie Blanche">
             <div class="title">Ortie Blanche</div>
-            <div class="desc">white nettle · bright &amp; green</div>
-            <a href="https://ae.loccitane.com/en/fragrances-and-home/ortie-blanche-%28formerly-herbae%29-eau-de-parfum/11EP050HR25.html" class="product-link" target="_blank">shop now →</a>
+            <div class="desc">beyaz ısırgan · parlak &amp; yeşil</div>
+            <a href="https://ae.loccitane.com/en/fragrances-and-home/ortie-blanche-%28formerly-herbae%29-eau-de-parfum/11EP050HR25.html" class="product-link" target="_blank">hemen al →</a>
         </div>
         <div class="scroll-item">
             <img src="images/Glycine.png" alt="Glycine">
             <div class="title">Glycine</div>
-            <div class="desc">wisteria · floral &amp; tender</div>
-            <a href="https://ae.loccitane.com/en/all-fragrances/glycine-eau-de-parfum/11EP050GYR25.html" class="product-link" target="_blank">shop now →</a>
+            <div class="desc">wisteria · çiçeksi &amp; narin</div>
+            <a href="https://ae.loccitane.com/en/all-fragrances/glycine-eau-de-parfum/11EP050GYR25.html" class="product-link" target="_blank">hemen al →</a>
         </div>
         <div class="scroll-item">
             <img src="images/PerfumePreview.png" alt="perfume preview">
-            <div class="title">perfume preview</div>
-            <div class="desc">full array</div>
+            <div class="title">parfüm önizleme</div>
+            <div class="desc">tüm koleksiyon</div>
         </div>
     </div>
     <!-- SKINCARE LINES -->
-    <h2>🌿 skincare stories</h2>
+    <h2>🌿 cilt bakım hikayeleri</h2>
     <div class="two-col">
         <div>
-            <div style="font-weight: 500; color: #3d2e27;">immortelle collection</div>
+            <div style="font-weight: 500; color: #3d2e27;">immortelle koleksiyonu</div>
             <div class="img-preview">
                 <img src="images/Precious.png" alt="Immortelle Precious Emulsion">
-                <a href="https://ae.loccitane.com/en/face-care/immortelle-precious-emulsion/27SE075I22.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">shop now →</a>
+                <a href="https://ae.loccitane.com/en/face-care/immortelle-precious-emulsion/27SE075I22.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">hemen al →</a>
             </div>
             <div class="img-preview">
                 <img src="images/OvernightSerum.png" alt="Immortelle Overnight Reset Serum">
-                <a href="https://ae.loccitane.com/en/face-care/immortelle-overnight-reset-serum/27OR030I24.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">shop now →</a>
+                <a href="https://ae.loccitane.com/en/face-care/immortelle-overnight-reset-serum/27OR030I24.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">hemen al →</a>
             </div>
             <div class="img-preview">
                 <img src="images/AmandeNeckMilk.png" alt="Immortelle Shea Neck Cream">
-                <a href="https://ae.loccitane.com/en/face-care/immortelle-shea-neck-cream/01NC050I23.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">shop now →</a>
+                <a href="https://ae.loccitane.com/en/face-care/immortelle-shea-neck-cream/01NC050I23.html" style="display: inline-block; padding: 0.3rem 1.2rem; background: #b48b5a; color: #fffcf9; border-radius: 30px; text-decoration: none; font-size: 0.8rem; margin: 0.5rem 0 0.5rem 0.5rem;">hemen al →</a>
             </div>
         </div>
         <div>
-            <div style="font-weight: 500; color: #3d2e27;">for mature &amp; general skin</div>
+            <div style="font-weight: 500; color: #3d2e27;">olgun &amp; genel cilt için</div>
             <div class="img-preview"><img src="images/Agedskinline.png" alt="aged skin line"></div>
             <div class="img-preview"><img src="images/Collection1.png" alt="general skincare"></div>
-            <p style="font-size: 0.95rem; color: #5b4c40;">from the first fine line to daily hydration, each formula tells a story of woman.</p>
+            <p style="font-size: 0.95rem; color: #5b4c40;">ilk ince çizgiden günlük neme kadar, her formül bir kadının hikayesini anlatır.</p>
         </div>
     </div>
     <!-- DEEPER STORIES -->
     <div class="section-divider"></div>
-    <h2 style="margin-top: 1rem;">✧ the stories behind the scents</h2>
+    <h2 style="margin-top: 1rem;">✧ kokuların ardındaki hikayeler</h2>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0;">
         <div style="background: #fcf8f4; border-radius: 28px; padding: 1.5rem; border: 1px solid #ede5db;">
             <span style="font-size: 2rem;">🌰</span>
-            <h3 style="margin-top: 0.2rem;">Amande · the almond ritual</h3>
-            <p>The <strong>Amande Sublime</strong> oil and the <strong>Hand &amp; Nail</strong> cream are more than just skincare — they're a daily ritual. The scent of almond milk and vanilla wraps you in warmth, while the formula leaves skin impossibly soft. It's no wonder they're bestsellers in Istanbul.</p>
-            <p style="font-size: 0.9rem; color: #7a685c;">↳ perfect for dry skin, winter months, or simply as a self-care moment.</p>
+            <h3 style="margin-top: 0.2rem;">Amande · badem ritüeli</h3>
+            <p><strong>Amande Sublime</strong> yağı ve <strong>El &amp; Tırnak</strong> kremi sadece cilt bakımı değil — günlük bir ritüel. Badem sütü ve vanilya kokusu sizi sıcaklıkla sararken, formül cildi inanılmaz derecede yumuşak bırakır. İstanbul'da en çok satanlar olmalarına şaşmamalı.</p>
+            <p style="font-size: 0.9rem; color: #7a685c;">↳ kuru ciltler, kış ayları veya sadece kendinize ayırdığınız bir an için ideal.</p>
         </div>
         <div style="background: #fcf8f4; border-radius: 28px; padding: 1.5rem; border: 1px solid #ede5db;">
             <span style="font-size: 2rem;">🌸</span>
-            <h3 style="margin-top: 0.2rem;">Immortelle · the golden flower</h3>
-            <p>Known as the "everlasting" flower, immortelle is at the heart of L'Occitane's anti-aging expertise. The <strong>Divine Cream</strong> firming concentrate, <strong>Precious Emulsion</strong>, and the <strong>Overnight Reset Serum</strong> work to rejuvenate skin. It's a piece of Corsican sunshine in a jar.</p>
-            <p style="font-size: 0.9rem; color: #7a685c;">↳ ideal for those seeking visible firmness, radiance, and hydration.</p>
+            <h3 style="margin-top: 0.2rem;">Immortelle · altın çiçek</h3>
+            <p>"Ölümsüz" çiçek olarak bilinen immortelle, L'Occitane'in yaşlanma karşıtı uzmanlığının kalbinde yer alır. <strong>Divine Cream</strong> sıkılaştırıcı konsantre, <strong>Precious Emulsion</strong> ve <strong>Overnight Reset Serum</strong> cildi gençleştirmek için çalışır. Bu, bir kavanozda Korsika güneşi gibidir.</p>
+            <p style="font-size: 0.9rem; color: #7a685c;">↳ görünür sıkılık, ışıltı ve nem arayanlar için ideal.</p>
         </div>
     </div>
     <!-- PERFUME STORY -->
     <div style="background: #f3eee7; border-radius: 32px; padding: 1.8rem 2.2rem; margin: 1.8rem 0; border-left: 6px solid #b48b5a;">
-        <p style="font-size: 1.1rem; margin-bottom: 0.3rem;"><strong>💐 a note on the perfumes</strong></p>
-        <p>I spent a good while at the perfume counter — <strong>Lavande Blanche</strong> is the most soothing white lavender, <strong>Ortie Blanche</strong> is a vibrant, green surprise, and <strong>Glycine</strong> is delicate, floral, and utterly feminine. Together, they capture the spirit of a Provençal garden.</p>
+        <p style="font-size: 1.1rem; margin-bottom: 0.3rem;"><strong>💐 parfümler üzerine bir not</strong></p>
+        <p>Parfüm tezgahında oldukça vakit geçirdim — <strong>Lavande Blanche</strong> en sakinleştirici beyaz lavanta, <strong>Ortie Blanche</strong> canlı, yeşil bir sürpriz ve <strong>Glycine</strong> narin, çiçeksi ve tamamen feminen. Birlikte, bir Provence bahçesinin ruhunu yakalıyorlar.</p>
     </div>
     <!-- FAQ -->
     <div class="section-divider"></div>
-    <h2>❓ quick answers · shopping with ease</h2>
+    <h2>❓ hızlı cevaplar · kolay alışveriş</h2>
     <div style="margin: 1.5rem 0 2rem;">
         <details class="faq-item" open>
-            <summary>How do I use the A162 coupon code?</summary>
-            <div class="answer">Simply enter <strong>A162</strong> at checkout on the L'Occitane website (valid for Saudi Arabia, UAE, and Kuwait). The 10% discount will be applied to your entire order.</div>
+            <summary>A162 kupon kodunu nasıl kullanırım?</summary>
+            <div class="answer">L'Occitane web sitesinde ödeme aşamasında <strong>A162</strong> kodunu girmeniz yeterlidir (Suudi Arabistan, BAE ve Kuveyt için geçerlidir). %10 indirim tüm siparişinize uygulanacaktır.</div>
         </details>
         <details class="faq-item">
-            <summary>Is this code valid for all products?</summary>
-            <div class="answer">Yes! The 10% off applies to the entire L'Occitane range — from skincare to fragrances to gift sets. No minimum purchase required.</div>
+            <summary>Bu kod tüm ürünler için geçerli mi?</summary>
+            <div class="answer">Evet! %10 indirim, cilt bakımından parfümlere ve hediye setlerine kadar tüm L'Occitane ürün yelpazesi için geçerlidir. Minimum satın alma şartı yoktur.</div>
         </details>
         <details class="faq-item">
-            <summary>How long is the code valid?</summary>
-            <div class="answer">The code is valid for a limited time — so I recommend using it soon. I'll update this post if it expires, but for now, it's active.</div>
+            <summary>Kod ne kadar süre geçerli?</summary>
+            <div class="answer">Kod sınırlı bir süre için geçerlidir — bu nedenle en kısa sürede kullanmanızı öneririm. Süresi dolarsa bu gönderiyi güncellerim, ancak şu an aktiftir.</div>
         </details>
         <details class="faq-item">
-            <summary>Can I combine it with other offers?</summary>
-            <div class="answer">This code cannot be combined with other promotions, but it stacks with free shipping (if applicable).</div>
+            <summary>Diğer kampanyalarla birleştirebilir miyim?</summary>
+            <div class="answer">Bu kod diğer promosyonlarla birleştirilemez, ancak ücretsiz kargo ile (varsa) birlikte kullanılabilir.</div>
         </details>
     </div>
     <!-- FINAL CTA -->
     <div style="background: linear-gradient(145deg, #f3eee7, #e6dbd0); border-radius: 60px; padding: 2.5rem 2.5rem; margin: 2.8rem 0 1.5rem; text-align: center; border: 1px solid #dcc7ae;">
-        <p style="font-size: 1.4rem; font-weight: 400; letter-spacing: -0.02em;">✨ your istanbul souvenir awaits</p>
-        <p style="max-width: 500px; margin: 0.5rem auto 1.5rem; color: #4d3e36;">I loved discovering these treasures, and I hope you will too. Use the code below to bring a little bit of that magic home.</p>
+        <p style="font-size: 1.4rem; font-weight: 400; letter-spacing: -0.02em;">✨ İstanbul hatıranız sizi bekliyor</p>
+        <p style="max-width: 500px; margin: 0.5rem auto 1.5rem; color: #4d3e36;">Bu hazineleri keşfetmeyi çok sevdim ve umarım siz de seversiniz. O büyülü atmosferden bir parçayı eve getirmek için aşağıdaki kodu kullanın.</p>
         <div style="display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; align-items: center; margin: 1.2rem 0;">
             <span style="background: #2e241f; color: #f5ede5; padding: 0.4rem 2.5rem; border-radius: 60px; font-size: 2.4rem; letter-spacing: 8px; font-weight: 400; box-shadow: 0 4px 0 #b48b5a;">A162</span>
-            <span style="font-weight: 400; color: #3d2e27; font-size: 1.1rem;">10% off · SA, UAE, KW</span>
+            <span style="font-weight: 400; color: #3d2e27; font-size: 1.1rem;">%10 indirim · SA, BAE, KW</span>
         </div>
-        <a href="#" class="btn-shop" style="background: #b48b5a; color: #1e1613; font-weight: 500; padding: 0.8rem 3.5rem; font-size: 1.2rem; text-decoration: none; box-shadow: 0 4px 12px rgba(180, 139, 90, 0.3);">shop the istanbul edit →</a>
-        <p style="font-size: 0.85rem; color: #6b5b4f; margin-top: 1rem;">code valid for a limited time · happy shopping!</p>
+        <a href="#" class="btn-shop" style="background: #b48b5a; color: #1e1613; font-weight: 500; padding: 0.8rem 3.5rem; font-size: 1.2rem; text-decoration: none; box-shadow: 0 4px 12px rgba(180, 139, 90, 0.3);">İstanbul seçkisini keşfet →</a>
+        <p style="font-size: 0.85rem; color: #6b5b4f; margin-top: 1rem;">kod sınırlı süre geçerli · keyifli alışverişler!</p>
     </div>
     <!-- FOOTER -->
     <div class="footer-note">
-        <span style="background: #ede5db; padding: 0.2rem 1.4rem; border-radius: 40px;">✧ curated from istanbul with love ✧</span><br>
-        <span style="display: inline-block; margin-top: 0.6rem;">photos &amp; memories · L'Occitane best sellers · code <strong>A162</strong> for 10% off</span>
-        <div style="margin-top: 0.8rem; font-size: 0.8rem; color: #a88d78;">🇸🇦 🇦🇪 🇰🇼 · exclusive for my readers</div>
+        <span style="background: #ede5db; padding: 0.2rem 1.4rem; border-radius: 40px;">✧ İstanbul'dan sevgiyle hazırlandı ✧</span><br>
+        <span style="display: inline-block; margin-top: 0.6rem;">fotoğraflar &amp; anılar · L'Occitane en çok satanlar · <strong>A162</strong> koduyla %10 indirim</span>
+        <div style="margin-top: 0.8rem; font-size: 0.8rem; color: #a88d78;">🇸🇦 🇦🇪 🇰🇼 · sadece okuyucularım için özel</div>
     </div>
 </div>
