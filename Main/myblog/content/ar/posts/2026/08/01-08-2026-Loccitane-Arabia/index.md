@@ -5,7 +5,6 @@ draft: false
 description: "حمّلي دليل العناية بالبشرة الكورية المجاني واستمتعي بخصم 10% باستخدام كود A162 في السعودية والإمارات والكويت."
 featured_image: "images/Preview.png"
 slug: "loccitane-review-a162-arabia"
-description: "دليلك إلى الجمال مع L'Occitane "
 tags: ["L'Occitane", "العناية بالبشرة", "العناية بالشعر", "عطور", "السعودية", "خصم", "كود خصم"]
 categories: ["الجمال", "مراجعات", "تجربة شخصية"]
 ---
