@@ -380,7 +380,7 @@ categories: ["Güzellik", "İncelemeler", "Kişisel Deneyim"]
     <!-- SHELF IMAGE (first image: body care shelf) -->
     <div style="margin: 1.8rem 0 0.8rem;">
         <div style="border-radius: 32px; overflow: hidden; border: 1px solid #ede5db;">
-            <img src="images/Preview" alt="İstanbul mağazasında vücut bakım rafı" style="width:100%; height:auto; display:block; background: #ede5db;">
+            <img src="images/Preview.png" alt="İstanbul mağazasında vücut bakım rafı" style="width:100%; height:auto; display:block; background: #ede5db;">
         </div>
         <p style="font-size: 0.9rem; color: #7a685c; margin-top: 0.5rem;">↳ dikkatimi çeken vücut bakım rafı — krem dokular ve nazik kokular.</p>
     </div>
