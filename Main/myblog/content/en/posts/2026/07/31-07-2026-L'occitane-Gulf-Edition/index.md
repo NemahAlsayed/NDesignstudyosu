@@ -1,4 +1,4 @@
-----
+---
 title: "L'Occitane Istanbul Edit · The Souvenir Guide"
 date: 2026-07-31
 draft: false
