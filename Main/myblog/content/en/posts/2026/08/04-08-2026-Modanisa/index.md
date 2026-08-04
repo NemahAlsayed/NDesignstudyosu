@@ -8,8 +8,6 @@ categories: ["Fashion"]
 featured_image: "images/MyPurchase.png"
 ---
 
-{{< figure src="https://cdn.modanisa.com/urun/tesettur-elbise--haki--benin9355144_1.jpg" alt="Stylish Modest Dress by Benin" class="w-100" >}}
-
 <section class="article-content">
   <p>Okay, let's talk about the fashion find that has completely redefined my winter wardrobe. As the temperatures drop, the struggle to stay both warm and stylish is real. But I think I've cracked the code, and the answer is <a href="https://www.modanisa.com" target="_blank" rel="noopener">Modanisa</a>.</p>
   
@@ -23,18 +21,18 @@ featured_image: "images/MyPurchase.png"
 
   <p>I also have a soft spot for <strong>Benin</strong>. Their designs are effortlessly chic and perfect for anyone who wants to look put-together with minimal effort. <strong><a href="https://www.modanisa.com/search/?q=benin" target="_blank" rel="noopener">Check out Benin's latest arrivals here</a></strong>.</p>
 
-  <p>Here's a glimpse of what I added to my cart:</p>
+  <p>Trusting these brands, I've curated the <strong>perfect summer cart</strong> just for you — a handpicked selection of my absolute favorites that will have you looking effortlessly chic all season long. Here's what I've put together:</p>
 
-  <!-- PRODUCT IMAGE GRID -->
+  <!-- CURATED SUMMER CART - PRODUCT IMAGE GRID -->
   <div class="row g-4 my-4">
     <div class="col-12 col-md-6">
       <div class="card h-100 shadow-sm">
         <a href="https://www.modanisa.com/tesettur-elbise--haki--benin9355144.html" target="_blank">
-          <img src="https://cdn.modanisa.com/urun/tesettur-elbise--haki--benin9355144_1.jpg" class="card-img-top" alt="Yaprak Desenli Kuşaklı Tespittür Elbise - Kahverengi - Modaefa" loading="lazy">
+          <img src="https://fns.modanisa.com/r/pro2/2025/07/22/u--9355144-6.jpg" class="card-img-top" alt="Yaprak Desenli Kuşaklı Tespittür Elbise" loading="lazy" style="object-fit:cover; height:250px;">
         </a>
         <div class="card-body">
           <h5 class="card-title">Yaprak Desenli Kuşaklı Tespittür Elbise</h5>
-          <p class="card-text"><em>This dress is a wardrobe staple – stylish and versatile.</em></p>
+          <p class="card-text"><em>A breezy summer dress that flows beautifully — perfect for warm days.</em></p>
           <p class="text-muted">Beden: 44 | 258,99 TL</p>
           <a href="https://www.modanisa.com/tesettur-elbise--haki--benin9355144.html" target="_blank" class="btn btn-outline-primary btn-sm">View Product →</a>
         </div>
@@ -43,11 +41,11 @@ featured_image: "images/MyPurchase.png"
     <div class="col-12 col-md-6">
       <div class="card h-100 shadow-sm">
         <a href="https://www.modanisa.com/basic-kalip-onu-nervur-detayli-krep-pantolon--refka.html" target="_blank">
-          <img src="https://cdn.modanisa.com/urun/basic-kalip-onu-nervur-detayli-krep-pantolon--refka_1.jpg" class="card-img-top" alt="Basic Kalıp Önü Nervür Detaylı Krep Pantolon - Refka" loading="lazy">
+          <img src="https://fns.modanisa.com/r/pro2/2025/01/17/u-basic-kalip-onu-nervur-detayli-krep-pantolon--refka-9071789-9.jpg" class="card-img-top" alt="Basic Kalıp Önü Nervür Detaylı Krep Pantolon" loading="lazy" style="object-fit:cover; height:250px;">
         </a>
         <div class="card-body">
           <h5 class="card-title">Basic Kalıp Önü Nervür Detaylı Krep Pantolon</h5>
-          <p class="card-text"><em>These pants are perfect for dressing up or down.</em></p>
+          <p class="card-text"><em>Lightweight and breathable — these pants are a summer staple.</em></p>
           <p class="text-muted">Beden: XXL | 219,99 TL</p>
           <a href="https://www.modanisa.com/basic-kalip-onu-nervur-detayli-krep-pantolon--refka.html" target="_blank" class="btn btn-outline-primary btn-sm">View Product →</a>
         </div>
@@ -56,11 +54,11 @@ featured_image: "images/MyPurchase.png"
     <div class="col-12 col-md-6">
       <div class="card h-100 shadow-sm">
         <a href="https://www.modanisa.com/siyah-isiltili-burgu-detayli-bone.html" target="_blank">
-          <img src="https://cdn.modanisa.com/urun/siyah-isiltili-burgu-detayli-bone_1.jpg" class="card-img-top" alt="Siyah Işıltılı Burgu Detaylı Bone" loading="lazy">
+          <img src="https://fns.modanisa.com/r/pro2/2026/06/29/u-siyah-isiltili-burgu-detayli-bone-9412814-113.jpeg" class="card-img-top" alt="Siyah Işıltılı Burgu Detaylı Bone" loading="lazy" style="object-fit:cover; height:250px;">
         </a>
         <div class="card-body">
           <h5 class="card-title">Siyah Işıltılı Burgu Detaylı Bone</h5>
-          <p class="card-text"><em>The perfect accessory to add elegance to your look.</em></p>
+          <p class="card-text"><em>Elegant and versatile — the perfect accessory to elevate any outfit.</em></p>
           <p class="text-muted">1.299,99 TL</p>
           <a href="https://www.modanisa.com/siyah-isiltili-burgu-detayli-bone.html" target="_blank" class="btn btn-outline-primary btn-sm">View Product →</a>
         </div>
@@ -69,11 +67,11 @@ featured_image: "images/MyPurchase.png"
     <div class="col-12 col-md-6">
       <div class="card h-100 shadow-sm">
         <a href="https://www.modanisa.com/havuz-deniz-duz-bone-r990-siyah.html" target="_blank">
-          <img src="https://cdn.modanisa.com/urun/havuz-deniz-duz-bone-r990-siyah_1.jpg" class="card-img-top" alt="Havuz Deniz Düz Bone R990 Siyah" loading="lazy">
+          <img src="https://fns.modanisa.com/r/pro2/2026/01/20/u-havuz-deniz-duz-bone-r990-siyah-9420830-1.jpg" class="card-img-top" alt="Havuz Deniz Düz Bone R990 Siyah" loading="lazy" style="object-fit:cover; height:250px;">
         </a>
         <div class="card-body">
           <h5 class="card-title">Havuz Deniz Düz Bone</h5>
-          <p class="card-text"><em>Stay covered and chic with this must-have swim accessory.</em></p>
+          <p class="card-text"><em>Stay covered and chic by the pool or beach with this must-have swim cap.</em></p>
           <p class="text-muted">1.499,99 TL</p>
           <a href="https://www.modanisa.com/havuz-deniz-duz-bone-r990-siyah.html" target="_blank" class="btn btn-outline-primary btn-sm">View Product →</a>
         </div>
@@ -81,17 +79,20 @@ featured_image: "images/MyPurchase.png"
     </div>
   </div>
 
-  <!-- CART PREVIEW SECTION -->
+  <!-- CURATED CART PREVIEW SECTION -->
   <div class="my-5 p-4 bg-light rounded-4 border">
     <h3 class="h4 d-flex align-items-center gap-2">
-      <span>🛒</span> My Cart Preview
+      <span>🛒</span> My Curated Summer Cart
       <span class="badge bg-primary ms-2">5 items</span>
     </h3>
+    <p class="text-muted">Here's the perfect summer haul I've curated for you — all from brands I trust!</p>
+    
     <div class="table-responsive">
       <table class="table table-borderless align-middle">
         <thead class="table-light">
           <tr>
             <th>Product</th>
+            <th>Brand</th>
             <th>Size</th>
             <th>Qty</th>
             <th>Price</th>
@@ -101,10 +102,10 @@ featured_image: "images/MyPurchase.png"
           <tr>
             <td>
               <div class="d-flex align-items-center gap-2">
-                <img src="https://cdn.modanisa.com/urun/tesettur-elbise--haki--benin9355144_1.jpg" width="50" height="50" class="rounded-1" alt="Dress" loading="lazy">
-                <span>Yaprak Desenli Elbise</span>
+                <span>👗 <strong>Yaprak Desenli Elbise</strong></span>
               </div>
             </td>
+            <td><span class="badge bg-secondary">Benin</span></td>
             <td>44</td>
             <td>1</td>
             <td>258,99 TL</td>
@@ -112,10 +113,10 @@ featured_image: "images/MyPurchase.png"
           <tr>
             <td>
               <div class="d-flex align-items-center gap-2">
-                <img src="https://cdn.modanisa.com/urun/basic-kalip-onu-nervur-detayli-krep-pantolon--refka_1.jpg" width="50" height="50" class="rounded-1" alt="Pants" loading="lazy">
-                <span>Krep Pantolon</span>
+                <span>👖 <strong>Krep Pantolon</strong></span>
               </div>
             </td>
+            <td><span class="badge bg-secondary">Refka</span></td>
             <td>XXL</td>
             <td>1</td>
             <td>219,99 TL</td>
@@ -123,10 +124,10 @@ featured_image: "images/MyPurchase.png"
           <tr>
             <td>
               <div class="d-flex align-items-center gap-2">
-                <img src="https://cdn.modanisa.com/urun/siyah-isiltili-burgu-detayli-bone_1.jpg" width="50" height="50" class="rounded-1" alt="Turban" loading="lazy">
-                <span>Işıltılı Burgu Bone</span>
+                <span>🧕 <strong>Işıltılı Burgu Bone</strong></span>
               </div>
             </td>
+            <td><span class="badge bg-secondary">Modaefa</span></td>
             <td>—</td>
             <td>1</td>
             <td>1.299,99 TL</td>
@@ -134,10 +135,10 @@ featured_image: "images/MyPurchase.png"
           <tr>
             <td>
               <div class="d-flex align-items-center gap-2">
-                <img src="https://cdn.modanisa.com/urun/havuz-deniz-duz-bone-r990-siyah_1.jpg" width="50" height="50" class="rounded-1" alt="Swim cap" loading="lazy">
-                <span>Havuz Deniz Düz Bone</span>
+                <span>🏊 <strong>Havuz Deniz Düz Bone</strong></span>
               </div>
             </td>
+            <td><span class="badge bg-secondary">R990</span></td>
             <td>—</td>
             <td>1</td>
             <td>1.499,99 TL</td>
@@ -145,11 +146,22 @@ featured_image: "images/MyPurchase.png"
           <tr>
             <td>
               <div class="d-flex align-items-center gap-2">
+                <span>🧥 <strong>Etek Ucu Ve Kol Detaylı Tunik & Pantolon Triko Takım</strong></span>
+              </div>
+            </td>
+            <td><span class="badge bg-secondary">Refka</span></td>
+            <td>XXL-XXXL</td>
+            <td>1</td>
+            <td>1.199,99 TL</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center gap-2">
                 <span>📦 <strong>Subtotal</strong></span>
               </div>
             </td>
-            <td colspan="2"></td>
-            <td class="fw-bold">3.278,96 TL</td>
+            <td colspan="3"></td>
+            <td class="fw-bold">4.478,96 TL</td>
           </tr>
           <tr class="border-top">
             <td>
@@ -157,8 +169,8 @@ featured_image: "images/MyPurchase.png"
                 <span>🏷️ <strong>With RS333 (20% off)</strong></span>
               </div>
             </td>
-            <td colspan="2"></td>
-            <td class="fw-bold text-success">-655,79 TL</td>
+            <td colspan="3"></td>
+            <td class="fw-bold text-success">-895,79 TL</td>
           </tr>
           <tr class="border-top border-primary border-2">
             <td>
@@ -166,14 +178,14 @@ featured_image: "images/MyPurchase.png"
                 <span>🎯 <strong>Total</strong></span>
               </div>
             </td>
-            <td colspan="2"></td>
-            <td class="fw-bold fs-5 text-primary">2.623,17 TL</td>
+            <td colspan="3"></td>
+            <td class="fw-bold fs-5 text-primary">3.583,17 TL</td>
           </tr>
         </tbody>
       </table>
     </div>
     <div class="text-end text-muted small">
-      <i class="bi bi-check-circle-fill text-success"></i> Eligible for 20% discount with code RS333
+      <i class="bi bi-check-circle-fill text-success"></i> All items eligible for 20% discount with code RS333
     </div>
   </div>
 
