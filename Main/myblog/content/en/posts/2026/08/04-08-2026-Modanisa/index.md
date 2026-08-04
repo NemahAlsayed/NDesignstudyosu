@@ -86,7 +86,6 @@ featured_image: "images/MyPurchase.png"
       <span class="badge bg-primary ms-2">5 items</span>
     </h3>
     <p class="text-muted">Here's the perfect summer haul I've curated for you — all from brands I trust!</p>
-    
     <div class="table-responsive">
       <table class="table table-borderless align-middle">
         <thead class="table-light">
