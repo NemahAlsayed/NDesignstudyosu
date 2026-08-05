@@ -80,10 +80,10 @@ draft: false
   <!-- صورتان معاينة من الدليل (قسم تركيا) -->
   <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin: 1.5rem 0 2rem;">
     <div style="flex: 1 1 300px; max-width: 400px; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
-      <img src="turkey-preview-1.jpg" alt="معاينة منتجع حلال في تركيا 1" style="width: 100%; height: auto; display: block;">
+      <img src="images/3.png" alt="معاينة منتجع حلال في تركيا 1" style="width: 100%; height: auto; display: block;">
     </div>
     <div style="flex: 1 1 300px; max-width: 400px; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
-      <img src="turkey-preview-2.jpg" alt="معاينة منتجع حلال في تركيا 2" style="width: 100%; height: auto; display: block;">
+      <img src="images/4.png" alt="معاينة منتجع حلال في تركيا 2" style="width: 100%; height: auto; display: block;">
     </div>
   </div>
 
