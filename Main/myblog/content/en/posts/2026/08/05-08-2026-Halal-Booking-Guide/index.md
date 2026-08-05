@@ -2,6 +2,8 @@
 title: "Discover 30 Halal Luxury Resorts: Your Ultimate GCC Travel Guide"
 date: 2026-08-05
 description: "Explore our handpicked selection of 30 premium halal-friendly resorts across the globe, featuring private pools, women-only facilities, and exclusive GCC benefits."
+tags: ["Travel", "Tourism", "coupon", "summer", "Halal Booking", "Destination"]
+categories: ["Travel"]
 featured_image: "Preview.png"
 draft: false
 ---

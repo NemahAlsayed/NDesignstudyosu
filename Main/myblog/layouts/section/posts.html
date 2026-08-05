@@ -2,6 +2,23 @@
 
 <div class="nds-blog-wrapper">
 
+    {{ $categories := .Site.Taxonomies.categories }}
+    {{ if gt (len $categories) 0 }}
+    <nav class="nds-top-categories" aria-label="{{ i18n "categoriesNavigationLabel" }}">
+        <span class="nds-top-categories-label">{{ i18n "categoriesLabel" }}</span>
+        <div class="nds-top-categories-list">
+            <a href="{{ .RelPermalink }}" class="nds-top-category-link nds-top-category-all">
+                {{ i18n "allPosts" }}
+            </a>
+            {{ range $name, $_ := $categories }}
+                <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="nds-top-category-link">
+                    {{ $name }}
+                </a>
+            {{ end }}
+        </div>
+    </nav>
+    {{ end }}
+
     <!-- Search Bar -->
     <div class="nds-search-bar">
         <input type="text" id="searchInput" placeholder="{{ i18n "searchPlaceholder" }}">

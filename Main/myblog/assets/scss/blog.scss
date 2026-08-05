@@ -18,6 +18,64 @@ $cream:        #f5f0e8;
 }
 
 /* ============================
+   Top Categories Navigation
+============================ */
+.nds-top-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.nds-top-categories-label {
+    font-size: 0.95rem;
+    color: darken($timberwolf, 35%);
+    font-weight: 600;
+}
+
+.nds-top-categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nds-top-category-link {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba($gold, 0.4);
+    background: $cream;
+    color: $anthracite;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.25s ease;
+
+    &:hover {
+        background: lighten($gold, 22%);
+        border-color: $gold;
+        color: #fff;
+        transform: translateY(-1px);
+    }
+}
+
+.nds-top-category-all {
+    background: $raw-umber;
+    border-color: $raw-umber;
+    color: #fff;
+
+    &:hover {
+        background: $gold;
+        border-color: $gold;
+        color: $anthracite;
+    }
+}
+
+html[lang="ar"] .nds-top-categories {
+    direction: rtl;
+    align-items: flex-start;
+}
+
+/* ============================
    Search Bar
 ============================ */
 .nds-search-bar {
