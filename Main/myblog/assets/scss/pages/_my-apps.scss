@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+.nds-apps-page {
+  position: relative;
+  overflow: hidden;
+  padding: 5.5rem 1rem 4rem;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(201, 168, 106, 0.3), transparent 36%),
+    radial-gradient(circle at 85% 12%, rgba(122, 89, 56, 0.18), transparent 34%),
+    linear-gradient(160deg, #171513 0%, #25201b 46%, #151311 100%);
+  color: #f3ede5;
+}
+
+.nds-apps-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  pointer-events: none;
+
+  &.orb-1 {
+    width: 220px;
+    height: 220px;
+    top: 88px;
+    left: -75px;
+    background: radial-gradient(circle, rgba(201, 168, 106, 0.52), transparent 70%);
+  }
+
+  &.orb-2 {
+    width: 260px;
+    height: 260px;
+    right: -85px;
+    bottom: 58px;
+    background: radial-gradient(circle, rgba(237, 214, 176, 0.25), transparent 70%);
+  }
+}
+
+.nds-apps-shell {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.nds-apps-hero {
+  text-align: center;
+  margin-bottom: 2.7rem;
+}
+
+.nds-apps-kicker {
+  display: inline-block;
+  margin: 0;
+  padding: 0.35rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 168, 106, 0.48);
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #dcc298;
+  background: rgba(201, 168, 106, 0.08);
+}
+
+.nds-apps-title {
+  margin: 1.15rem 0 0.6rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 5.5vw, 4rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #f8f2e8;
+}
+
+.nds-apps-subtitle {
+  margin: 0 auto;
+  max-width: 760px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #d7cec2;
+}
+
+.nds-app-feature {
+  position: relative;
+  border-radius: 28px;
+  padding: clamp(1.2rem, 3.5vw, 2.25rem);
+  border: 1px solid rgba(201, 168, 106, 0.24);
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  box-shadow:
+    0 28px 64px -34px rgba(0, 0, 0, 0.72),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.nds-app-badge {
+  display: inline-flex;
+  margin: 0 0 0.8rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #f5d9ab;
+}
+
+.nds-app-name {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+  color: #fff7ea;
+}
+
+.nds-app-blurb {
+  margin: 0.8rem 0 0;
+  max-width: 72ch;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.8;
+  color: #e6ddd2;
+}
+
+.nds-app-actions {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.nds-app-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1.05rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+
+  &.primary {
+    background: linear-gradient(145deg, #f0d8ab, #c8a96c);
+    color: #2d2115;
+    box-shadow: 0 10px 20px -12px rgba(201, 168, 106, 0.9);
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px -14px rgba(201, 168, 106, 0.95);
+    }
+  }
+
+  &.ghost {
+    border: 1px solid rgba(240, 216, 171, 0.5);
+    color: #f0debf;
+    background: rgba(201, 168, 106, 0.09);
+
+    &:hover {
+      transform: translateY(-1px);
+      background: rgba(201, 168, 106, 0.16);
+    }
+  }
+}
+
+.nds-app-langs {
+  margin-top: 1.3rem;
+
+  h3 {
+    margin: 0 0 0.6rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    color: #fae8ca;
+  }
+}
+
+.nds-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.nds-chip {
+  border-radius: 999px;
+  padding: 0.38rem 0.8rem;
+  border: 1px solid rgba(233, 215, 184, 0.35);
+  background: rgba(233, 215, 184, 0.08);
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8rem;
+  color: #f5ead8;
+}
+
+.nds-app-grid {
+  margin-top: 1.55rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nds-app-panel {
+  border-radius: 18px;
+  border: 1px solid rgba(201, 168, 106, 0.24);
+  background: rgba(18, 16, 13, 0.46);
+  padding: 1rem 1rem 1.1rem;
+
+  h3 {
+    margin: 0 0 0.72rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    color: #ffefcf;
+  }
+
+  ul {
+    margin: 0;
+    padding-inline-start: 1rem;
+  }
+
+  li {
+    margin: 0.45rem 0;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.58;
+    color: #efe4d3;
+  }
+}
+
+.nds-app-footnote {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(201, 168, 106, 0.24);
+  font-family: 'Manrope', sans-serif;
+  color: #d8cab4;
+}
+
+html[lang='ar'] .nds-app-feature,
+html[lang='ar'] .nds-apps-hero {
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .nds-apps-page {
+    padding-top: 4.8rem;
+  }
+
+  .nds-app-feature {
+    border-radius: 22px;
+  }
+
+  .nds-app-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nds-app-btn {
+    justify-content: center;
+  }
+}

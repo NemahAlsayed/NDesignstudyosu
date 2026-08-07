@@ -59,6 +59,11 @@ homepageLayout = "Arabic-home"
   url = "/ar/posts/"
   weight = 3
 
+  [[languages.ar.menu.main]]
+  name = "تطبيقاتي"
+  url = "/ar/my-apps/"
+  weight = 4
+
 ############################################
 # ENGLISH
 ############################################
@@ -88,6 +93,11 @@ homepageLayout = "English-home"
   url = "/en/posts/"
   weight = 3
 
+  [[languages.en.menu.main]]
+  name = "My Apps"
+  url = "/en/my-apps/"
+  weight = 4
+
 ############################################
 # TURKISH
 ############################################
@@ -116,6 +126,11 @@ homepageLayout = "Turkish-home"
   name = "Blog"
   url = "/tr/posts/"
   weight = 3
+
+  [[languages.tr.menu.main]]
+  name = "Uygulamalarım"
+  url = "/tr/my-apps/"
+  weight = 4
 
 ############################################
 # SOCIALS

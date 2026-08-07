@@ -1,0 +1,89 @@
+{{ define "main" }}
+
+{{ $app := .Params.app }}
+
+<section class="nds-apps-page">
+    <div class="nds-apps-orb orb-1"></div>
+    <div class="nds-apps-orb orb-2"></div>
+
+    <div class="nds-apps-shell">
+        <header class="nds-apps-hero reveal-on-scroll">
+            <p class="nds-apps-kicker">{{ with .Params.kicker }}{{ . }}{{ else }}My Apps{{ end }}</p>
+            <h1 class="nds-apps-title">{{ .Title }}</h1>
+            {{ with .Params.subtitle }}
+            <p class="nds-apps-subtitle">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        <article class="nds-app-feature reveal-on-scroll">
+            <p class="nds-app-badge">{{ with $app.audience }}{{ . }}{{ end }}</p>
+            <h2 class="nds-app-name">{{ with $app.name }}{{ . }}{{ end }}</h2>
+            <p class="nds-app-blurb">{{ with $app.blurb }}{{ . }}{{ end }}</p>
+
+            <div class="nds-app-actions">
+                {{ with $app.url }}
+                <a class="nds-app-btn primary" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                    {{ with $.Params.labels.ctaPrimary }}{{ . }}{{ else }}Open App{{ end }}
+                </a>
+                {{ end }}
+                {{ with $app.repo }}
+                <a class="nds-app-btn ghost" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                    {{ with $.Params.labels.ctaSecondary }}{{ . }}{{ else }}View Source{{ end }}
+                </a>
+                {{ end }}
+            </div>
+
+            {{ with $app.languages }}
+            <section class="nds-app-langs">
+                <h3>{{ with $.Params.labels.languageTitle }}{{ . }}{{ else }}Languages{{ end }}</h3>
+                <div class="nds-chip-row">
+                    {{ range . }}
+                    <span class="nds-chip">{{ . }}</span>
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
+
+            <div class="nds-app-grid">
+                {{ with $app.features }}
+                <section class="nds-app-panel">
+                    <h3>{{ with $.Params.labels.featuresTitle }}{{ . }}{{ else }}Features{{ end }}</h3>
+                    <ul>
+                        {{ range . }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </section>
+                {{ end }}
+
+                <section class="nds-app-panel">
+                    {{ with $app.sorting }}
+                    <h3>{{ with $.Params.labels.sortingTitle }}{{ . }}{{ else }}Sorting Options{{ end }}</h3>
+                    <ul>
+                        {{ range . }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+
+                    {{ with $app.techStack }}
+                    <h3>{{ with $.Params.labels.techTitle }}{{ . }}{{ else }}Tech Stack{{ end }}</h3>
+                    <ul>
+                        {{ range . }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                </section>
+            </div>
+
+            {{ with .Content }}
+            <div class="nds-app-footnote">
+                {{ . }}
+            </div>
+            {{ end }}
+        </article>
+    </div>
+</section>
+
+{{ end }}
