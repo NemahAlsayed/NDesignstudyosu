@@ -3,7 +3,7 @@ title: "Discover the Luxury Summer Trilogy from Al Dakheel Oud"
 date: 2026-08-12
 draft: false
 description: "Limited summer offer on Oscar Gold, Oscar Silver, and Nawwar perfumes at just 119 SAR with an extra 5% off using code DO64."
-image: "images/Preview.png"
+featured_image: "images/Preview.png"
 categories: ["Perfumes", "Offers"]
 tags: ["Al Dakheel Oud", "Oscar Gold", "Oscar Silver", "Nawwar", "Summer Offer"]
 ---
