@@ -1,6 +1,7 @@
 ---
 title: "Celebrate Diwali with Dyson UAE: Exclusive Offers + Extra 5% Off with Code \"FF\"!"
 date: 2025-10-19
+draft: true
 categories: 
   - "dyson"
   - "hair"

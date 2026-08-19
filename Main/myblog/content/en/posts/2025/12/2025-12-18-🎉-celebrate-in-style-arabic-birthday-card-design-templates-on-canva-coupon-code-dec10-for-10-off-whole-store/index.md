@@ -1,6 +1,7 @@
 ---
 title: "🎉 Celebrate in Style: Arabic Birthday Card Design Templates on Canva- Coupon Code Dec10 for 10% off whole store"
 date: 2025-12-18
+draft: true
 categories: 
   - "arabic"
   - "arabic-designs"
