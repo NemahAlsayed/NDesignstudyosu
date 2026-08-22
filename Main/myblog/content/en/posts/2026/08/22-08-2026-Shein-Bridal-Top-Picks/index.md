@@ -1,5 +1,5 @@
 ---
-title: "Bridal on a Budget 2026: Cream & Rose Gold Shein Picks"
+title: "Bridal on a Budget 2026: Lace & Satin Shein Picks"
 date: 2026-08-22
 draft: false
 tags: ["bridal", "budget", "Shein", "wedding", "2026", "affordable luxury"]
@@ -268,13 +268,13 @@ featured_image: "SheinPreview.png"
         </div>
         <!-- Featured image -->
         <div class="featured">
-            <img src="SheinPreview.png" alt="Bridal on a Budget 2026 - Cream & Rose Gold">
+            <img src="SheinPreview.png" alt="Bridal on a Budget 2026 - Lace & Satin">
         </div>
     </div>
     <!-- Intro article text -->
     <div class="intro-text">
         <p style="margin-bottom:0.5rem;">🌸 <strong>Who said a bride can't be on a budget in 2026?</strong></p>
-        <p>I have curated the <span class="highlight">top bridal picks</span> for you — from dreamy gowns to sparkling jewels, all in <strong>cream &amp; rose gold</strong> tones. 
+        <p>I have curated the <span class="highlight">top bridal picks</span> for you — from dreamy gowns to sparkling jewels, all in <strong>white &amp; Lace and Satin</strong> styles. 
         Affordable luxury is real, and these pieces prove it. Click my link, copy the SKU, and paste it in the Shein search bar. <br>
         <span style="display:inline-block; margin-top:0.4rem; background:#f3e7de; padding:0.2rem 1rem; border-radius:40px; font-size:0.9rem;">✨ every “view on Shein” goes through my exclusive affiliate link</span></p>
     </div>
@@ -296,12 +296,12 @@ featured_image: "SheinPreview.png"
         const items = [
             { category: "Wedding Dress", sku: "sz2411236496185776", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding1.png", desc: "Silky gown with oversized bow & bead embroidery. Long sleeves, back hollow." },
             { category: "Wedding Dress", sku: "sz2407091700948644", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding2", desc: "Full lace floral, sheer long sleeves, high collar, detachable bow & train." },
-            { category: "Wedding Dress", sku: "sz2407292001000161", link: "https://o-201-6764-1.bstny.net", img: "image/Wedding3.png", desc: "V-neck stretch lace, backless, fishtail hem, floor-length elegance." },
+            { category: "Wedding Dress", sku: "sz2407292001000161", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding3.png", desc: "V-neck stretch lace, backless, fishtail hem, floor-length elegance." },
             { category: "Wedding Dress", sku: "sz25090525606266331", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding4.png", desc: "Strapless mermaid, ruched lace, detachable train – perfect for honeymoon." },
-            { category: "Wedding Dress", sku: "sz260415164362004072106", link: "https://o-201-6764-1.bstny.net", img: "image/Wedding5.png", desc: "Floral mesh, spaghetti straps, beach-party chic, versatile & graceful." },
-            { category: "Wedding Dress", sku: "sz2406038086011702", link: "https://o-201-6764-1.bstny.net", img: "image/Wedding6.png", desc: "Hand-beaded off-shoulder, short sleeves, spring/fall bridal gown." },
-            { category: "Wedding Dress", sku: "sz2403267747848966", link: "https://o-201-6764-1.bstny.net", img: "image/Wedding7.png", desc: "V-neck, French lace tulle, backless, A-line hem – party-ready." },
-            { category: "Wedding Dress", sku: "sz25062871581959699", link: "https://o-201-6764-1.bstny.net", img: "image/Wedding8", desc: "One-shoulder lace, long sleeves, satin slit, trailing elegance." },
+            { category: "Wedding Dress", sku: "sz260415164362004072106", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding5.png", desc: "Floral mesh, spaghetti straps, beach-party chic, versatile & graceful." },
+            { category: "Wedding Dress", sku: "sz2406038086011702", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding6.png", desc: "Hand-beaded off-shoulder, short sleeves, spring/fall bridal gown." },
+            { category: "Wedding Dress", sku: "sz2403267747848966", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding7.png", desc: "V-neck, French lace tulle, backless, A-line hem – party-ready." },
+            { category: "Wedding Dress", sku: "sz25062871581959699", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding8", desc: "One-shoulder lace, long sleeves, satin slit, trailing elegance." },
             { category: "Jewelry", sku: "sj25042493638859355", link: "https://o-201-6764-1.bstny.net", img: "images/Jewelry1.png", desc: "5pcs sunflower gold-plated set, French romantic, Dubai style." },
             { category: "Jewelry", sku: "sj260508204526819184228", link: "https://o-201-6764-1.bstny.net", img: "images/Jewelry2.png", desc: "4pcs rose-shaped CZ set: necklace, earrings, ring, bracelet – luxury gift." },
             { category: "Jewelry", sku: "sj260509075645479674306", link: "https://o-201-6764-1.bstny.net", img: "images/Jewelry3.png", desc: "Floral cluster CZ set: earrings, necklace, bracelet, ring – elegant." },
