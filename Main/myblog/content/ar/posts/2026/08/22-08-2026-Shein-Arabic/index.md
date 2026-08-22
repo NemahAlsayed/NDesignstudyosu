@@ -289,7 +289,6 @@ featured_image: "SheinPreview.png"
     </div>
     <!-- الشبكة -->
     <div class="grid" id="bridalGrid"></div>
-
     <div class="footnote">
         <span>💍</span> تم الإختيار بحب · جميع القطع من شي إن · <a href="https://o-201-6764-1.bstny.net" target="_blank" rel="sponsored">عروض حصرية</a> · 2026
     </div>
