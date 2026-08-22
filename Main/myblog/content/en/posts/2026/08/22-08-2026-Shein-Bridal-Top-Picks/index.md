@@ -260,7 +260,7 @@ featured_image: "SheinPreview.png"
 <div class="container">
     <!-- Article header with featured image -->
     <div class="article-header">
-        <h1>✨ <span>bridal</span> · cream & rose gold</h1>
+        <h1>✨ <span>bridal</span> · Lace & Satin</h1>
         <div class="meta">
             <span>📅 August 22, 2026</span> &nbsp;·&nbsp; 
             <span>🏷️ <a href="#">#bridal</a> <a href="#">#budget</a> <a href="#">#Shein</a></span> &nbsp;·&nbsp; 
@@ -295,13 +295,13 @@ featured_image: "SheinPreview.png"
         // Data with descriptive texts
         const items = [
             { category: "Wedding Dress", sku: "sz2411236496185776", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding1.png", desc: "Silky gown with oversized bow & bead embroidery. Long sleeves, back hollow." },
-            { category: "Wedding Dress", sku: "sz2407091700948644", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding2", desc: "Full lace floral, sheer long sleeves, high collar, detachable bow & train." },
+            { category: "Wedding Dress", sku: "sz2407091700948644", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding2.png", desc: "Full lace floral, sheer long sleeves, high collar, detachable bow & train." },
             { category: "Wedding Dress", sku: "sz2407292001000161", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding3.png", desc: "V-neck stretch lace, backless, fishtail hem, floor-length elegance." },
             { category: "Wedding Dress", sku: "sz25090525606266331", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding4.png", desc: "Strapless mermaid, ruched lace, detachable train – perfect for honeymoon." },
             { category: "Wedding Dress", sku: "sz260415164362004072106", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding5.png", desc: "Floral mesh, spaghetti straps, beach-party chic, versatile & graceful." },
             { category: "Wedding Dress", sku: "sz2406038086011702", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding6.png", desc: "Hand-beaded off-shoulder, short sleeves, spring/fall bridal gown." },
             { category: "Wedding Dress", sku: "sz2403267747848966", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding7.png", desc: "V-neck, French lace tulle, backless, A-line hem – party-ready." },
-            { category: "Wedding Dress", sku: "sz25062871581959699", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding8", desc: "One-shoulder lace, long sleeves, satin slit, trailing elegance." },
+            { category: "Wedding Dress", sku: "sz25062871581959699", link: "https://o-201-6764-1.bstny.net", img: "images/Wedding8.png", desc: "One-shoulder lace, long sleeves, satin slit, trailing elegance." },
             { category: "Jewelry", sku: "sj25042493638859355", link: "https://o-201-6764-1.bstny.net", img: "images/Jewelry1.png", desc: "5pcs sunflower gold-plated set, French romantic, Dubai style." },
             { category: "Jewelry", sku: "sj260508204526819184228", link: "https://o-201-6764-1.bstny.net", img: "images/Jewelry2.png", desc: "4pcs rose-shaped CZ set: necklace, earrings, ring, bracelet – luxury gift." },
             { category: "Jewelry", sku: "sj260509075645479674306", link: "https://o-201-6764-1.bstny.net", img: "images/Jewelry3.png", desc: "Floral cluster CZ set: earrings, necklace, bracelet, ring – elegant." },
