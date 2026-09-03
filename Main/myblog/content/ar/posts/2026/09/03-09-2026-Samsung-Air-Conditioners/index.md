@@ -138,4 +138,4 @@ draft: false
 
 ---
 
-<p style="text-align: center; color: #8a7a6a; font-size: 0.85rem; margin-top: 2rem;">—— تم التحرير بقالب <span style="color: #b8944b;">ذهبي عياري</span> لعرض احترافي ——</p>
+<p style="text-align: center; color: #8a7a6a; font-size: 0.85rem; margin-top: 2rem;">—— Designed by  <span style="color: #b8944b;">Nemah Alsayed</span> الرجاء التواصل لطلبات الملفات ——</p>
