@@ -25,7 +25,7 @@ Below, you can see the journey from line to light.
 
 ### Before Coloring – Black Ink Sketch
 
-{{< figure src="images/Castle.jpg" alt="Black ink drawing of the castle, roses, and thrones" caption="The raw ink sketch – sharp lines, deep shadows, and the quiet geometry of the castle." width="100%" >}}
+{{< figure src="images/CastleRoadBW.png" alt="Black ink drawing of the castle, roses, and thrones" caption="The raw ink sketch – sharp lines, deep shadows, and the quiet geometry of the castle." width="100%" >}}
 
 ---
 
